@@ -12,6 +12,8 @@ from .ogistra_rs import OgistraScraper
 from .superprotein_rs import SuperProteinScraper
 from .superior14_rs import Superior14Scraper
 from .atpsport_rs import ATPSportScraper
+from .spartanshop_rs import SpartanShopScraper
+from .xsport_rs import XSportScraper
 
 ALL_SCRAPERS = [
     SupplementStoreScraper,
@@ -27,4 +29,6 @@ ALL_SCRAPERS = [
     SuperProteinScraper,
     Superior14Scraper,
     ATPSportScraper,
+    SpartanShopScraper,
+    XSportScraper,
 ]

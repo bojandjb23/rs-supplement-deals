@@ -1,8 +1,9 @@
 /**
- * Supplement Discount Dashboard - Frontend Logic
+ * RS Supplement Deals - Dashboard Frontend
  *
- * Handles: data loading, product card rendering, filtering,
- * sorting, search, weekly summary, and lazy loading.
+ * Handles: data loading from embedded JSON, product card rendering,
+ * filtering, sorting, search, category tabs, stats bar,
+ * mobile filter drawer, and lazy loading.
  */
 
 // ---- State ----
@@ -10,441 +11,740 @@ let allProducts = [];
 let filteredProducts = [];
 let weeklySummary = {};
 let storeData = {};
-let currentViewMode = 'discounts'; // 'discounts' or 'all'
+let currentViewMode = "discounts";
 let displayedCount = 0;
 const BATCH_SIZE = 60;
 
 // Active filters
 let activeStores = new Set();
-let activeCategory = '';
+let activeCategory = "";
 let minDiscount = 0;
-let searchQuery = '';
-let currentSort = 'discount_desc';
+let searchQuery = "";
+let currentSort = "discount_desc";
+let activeCategoryTab = "";
 
 // ---- Initialization ----
-document.addEventListener('DOMContentLoaded', () => {
-    loadData();
+document.addEventListener("DOMContentLoaded", () => {
+  loadData();
+  setupMobileDrawer();
 });
 
+// ---- Data Loading (PRESERVED - reads from #supplementsData) ----
 function loadData() {
-    const dataEl = document.getElementById('supplementsData');
-    if (!dataEl) {
-        showError('Nema podataka za prikaz.');
-        return;
-    }
+  const dataEl = document.getElementById("supplementsData");
+  if (!dataEl) {
+    showError("Nema podataka za prikaz.");
+    return;
+  }
 
-    let raw = dataEl.textContent.trim();
-    if (!raw || raw === '/* __SUPPLEMENT_DATA_PLACEHOLDER__ */') {
-        showError('Dashboard jos nije generisan. Pokrenite: python supplement_scraper.py');
-        return;
-    }
+  let raw = dataEl.textContent.trim();
+  if (!raw || raw === "/* __SUPPLEMENT_DATA_PLACEHOLDER__ */") {
+    showError(
+      "Dashboard jos nije generisan. Pokrenite: python supplement_scraper.py",
+    );
+    return;
+  }
 
-    try {
-        storeData = JSON.parse(raw);
-    } catch (e) {
-        showError('Greska pri ucitavanju podataka: ' + e.message);
-        return;
-    }
+  try {
+    storeData = JSON.parse(raw);
+  } catch (e) {
+    showError("Greska pri ucitavanju podataka: " + e.message);
+    return;
+  }
 
-    allProducts = storeData.products || [];
-    weeklySummary = storeData.weekly_summary || {};
+  allProducts = storeData.products || [];
+  weeklySummary = storeData.weekly_summary || {};
 
-    // Update header
-    if (storeData.scraped_at) {
-        const date = new Date(storeData.scraped_at);
-        document.getElementById('lastUpdated').textContent =
-            `Poslednje azuriranje: ${formatDate(date)}`;
-    }
+  // Update last-updated timestamp
+  if (storeData.scraped_at) {
+    const date = new Date(storeData.scraped_at);
+    document.getElementById("lastUpdated").textContent =
+      "Azurirano: " + formatDate(date);
+  }
 
-    // Show info if no products scraped yet
-    if (allProducts.length === 0) {
-        const grid = document.getElementById('productGrid');
-        grid.innerHTML = `<div class="no-results" style="display:block;grid-column:1/-1;padding:3rem 1rem;text-align:center;">
-            <h2 style="margin-bottom:1rem;color:#1d1d1f;">Dashboard se ucitava...</h2>
-            <p style="color:#86868b;font-size:1rem;">Podaci se prikupljaju sa srpskih online prodavnica suplemenata.</p>
-            <p style="color:#86868b;font-size:0.9rem;margin-top:0.5rem;">Dashboard se automatski azurira svakih 6 sati.</p>
-            ${storeData.stores_failed && storeData.stores_failed.length > 0
-                ? '<p style="color:#c62828;font-size:0.85rem;margin-top:1rem;">Neke prodavnice trenutno nisu dostupne. Sledece azuriranje ce pokusati ponovo.</p>'
-                : ''}
-        </div>`;
-        return;
-    }
+  // Empty state
+  if (allProducts.length === 0) {
+    const grid = document.getElementById("productGrid");
+    grid.innerHTML = `
+            <div class="col-span-full text-center py-16">
+                <ph-package class="text-5xl text-slate-300 mx-auto mb-4"></ph-package>
+                <h2 class="text-lg font-semibold text-slate-700 mb-2">Dashboard se ucitava...</h2>
+                <p class="text-slate-500 text-sm">Podaci se prikupljaju sa srpskih online prodavnica suplemenata.</p>
+                <p class="text-slate-400 text-xs mt-1">Dashboard se automatski azurira svakih 6 sati.</p>
+                ${
+                  storeData.stores_failed && storeData.stores_failed.length > 0
+                    ? '<p class="text-red-500 text-xs mt-3">Neke prodavnice trenutno nisu dostupne. Sledece azuriranje ce pokusati ponovo.</p>'
+                    : ""
+                }
+            </div>`;
+    return;
+  }
 
-    // Build dynamic filters
-    buildStoreFilters();
-    buildCategoryFilter();
-    renderWeeklySummary();
+  // Build UI
+  buildStoreFilters();
+  buildCategoryFilter();
+  buildCategoryTabs();
+  populateStats();
+  populateFooter();
+  setupEventListeners();
 
-    // Footer
-    const stores = storeData.stores_scraped || [];
-    document.getElementById('storeCount').textContent = stores.length;
-    document.getElementById('footerStores').textContent = stores.join(' | ');
-
-    // Wire up event listeners
-    setupEventListeners();
-
-    // Initial render
-    applyFiltersAndRender();
+  // Initial render
+  applyFiltersAndRender();
 }
 
-// ---- Filter UI Building ----
+// ---- Stats Bar ----
+function populateStats() {
+  const stores = storeData.stores_scraped || [];
+  const totalProducts = allProducts.length;
+  const discounted = allProducts.filter((p) => (p.discount_percent || 0) > 0);
+  const onSaleCount = discounted.length;
+  const avgDiscount =
+    onSaleCount > 0
+      ? Math.round(
+          discounted.reduce((sum, p) => sum + (p.discount_percent || 0), 0) /
+            onSaleCount,
+        )
+      : 0;
+
+  // Header compact stats
+  document.getElementById("headerProductCount").textContent = totalProducts;
+  document.getElementById("headerSaleCount").textContent = onSaleCount;
+
+  // Animate stat counters
+  animateCount("statStores", stores.length);
+  animateCount("statProducts", totalProducts);
+  animateCount("statOnSale", onSaleCount);
+  animateCount("statAvgDiscount", avgDiscount);
+}
+
+function animateCount(elementId, target) {
+  const el = document.getElementById(elementId);
+  if (!el || target === 0) {
+    if (el) el.textContent = "0";
+    return;
+  }
+
+  const duration = 1200;
+  const startTime = performance.now();
+  const easeOutQuart = (t) => 1 - Math.pow(1 - t, 4);
+
+  function update(now) {
+    const elapsed = now - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const eased = easeOutQuart(progress);
+    el.textContent = Math.round(eased * target);
+
+    if (progress < 1) {
+      requestAnimationFrame(update);
+    } else {
+      el.textContent = target;
+    }
+  }
+
+  requestAnimationFrame(update);
+}
+
+// ---- Category Tabs ----
+function buildCategoryTabs() {
+  const container = document.getElementById("categoryTabs");
+  const categories = [
+    ...new Set(allProducts.map((p) => p.category).filter(Boolean)),
+  ].sort();
+
+  // Count per category (only discounted in discount view)
+  function getCatCount(cat) {
+    if (!cat)
+      return allProducts.filter((p) =>
+        currentViewMode === "discounts" ? (p.discount_percent || 0) > 0 : true,
+      ).length;
+    return allProducts.filter(
+      (p) =>
+        p.category === cat &&
+        (currentViewMode === "discounts"
+          ? (p.discount_percent || 0) > 0
+          : true),
+    ).length;
+  }
+
+  const allCount = getCatCount(null);
+
+  let html = `<button class="category-tab whitespace-nowrap px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
+    activeCategoryTab === ""
+      ? "bg-blue-600 text-white"
+      : "text-slate-400 hover:text-white hover:bg-slate-800"
+  }" data-category="">Sve (${allCount})</button>`;
+
+  categories.forEach((cat) => {
+    const count = getCatCount(cat);
+    if (count === 0) return;
+    const isActive = activeCategoryTab === cat;
+    html += `<button class="category-tab whitespace-nowrap px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
+      isActive
+        ? "bg-blue-600 text-white"
+        : "text-slate-400 hover:text-white hover:bg-slate-800"
+    }" data-category="${escapeHtml(cat)}">${escapeHtml(cat)} (${count})</button>`;
+  });
+
+  container.innerHTML = html;
+
+  // Event delegation for category tabs
+  container.querySelectorAll(".category-tab").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      activeCategoryTab = btn.dataset.category;
+      // Also sync with category dropdown
+      activeCategory = activeCategoryTab;
+      document.getElementById("categoryFilter").value = activeCategoryTab;
+      document.getElementById("mobileCategoryFilter").value = activeCategoryTab;
+      applyFiltersAndRender();
+      buildCategoryTabs(); // Refresh active state
+    });
+  });
+}
+
+// ---- Store Filters (checkbox-style for sidebar) ----
 function buildStoreFilters() {
-    const container = document.getElementById('storeFilters');
-    const stores = [...new Set(allProducts.map(p => p.store))].sort();
+  const stores = [...new Set(allProducts.map((p) => p.store))].sort();
+  activeStores = new Set(stores);
 
-    // All stores active by default
-    activeStores = new Set(stores);
+  const desktopContainer = document.getElementById("storeFilters");
+  const mobileContainer = document.getElementById("mobileStoreFilters");
 
-    container.innerHTML = stores.map(store => {
-        const count = allProducts.filter(p => p.store === store).length;
-        return `<span class="store-chip active" data-store="${escapeHtml(store)}" onclick="toggleStore(this)">${escapeHtml(store)} (${count})</span>`;
-    }).join('');
+  function buildCheckboxes(container, prefix) {
+    container.innerHTML = stores
+      .map((store) => {
+        const count = allProducts.filter((p) => p.store === store).length;
+        const id = prefix + "-" + store.replace(/\s+/g, "-").toLowerCase();
+        return `
+                <label for="${id}" class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg hover:bg-slate-50 cursor-pointer transition-colors group">
+                    <input type="checkbox" id="${id}" data-store="${escapeHtml(store)}" checked
+                        class="w-4 h-4 rounded border-slate-300 text-blue-700 focus:ring-blue-500 cursor-pointer shrink-0">
+                    <span class="text-sm text-slate-700 group-hover:text-slate-900 truncate flex-1">${escapeHtml(store)}</span>
+                    <span class="text-xs text-slate-400 bg-slate-100 px-1.5 py-0.5 rounded-full shrink-0">${count}</span>
+                </label>`;
+      })
+      .join("");
+
+    // Wire up checkboxes
+    container.querySelectorAll('input[type="checkbox"]').forEach((cb) => {
+      cb.addEventListener("change", () => {
+        const store = cb.dataset.store;
+        if (cb.checked) {
+          activeStores.add(store);
+        } else {
+          activeStores.delete(store);
+        }
+        // Sync desktop & mobile
+        syncStoreCheckboxes(store, cb.checked);
+        applyFiltersAndRender();
+      });
+    });
+  }
+
+  buildCheckboxes(desktopContainer, "desktop");
+  buildCheckboxes(mobileContainer, "mobile");
 }
 
-function buildCategoryFilter() {
-    const select = document.getElementById('categoryFilter');
-    const categories = [...new Set(allProducts.map(p => p.category).filter(Boolean))].sort();
+function syncStoreCheckboxes(store, checked) {
+  document.querySelectorAll(`input[data-store="${store}"]`).forEach((cb) => {
+    cb.checked = checked;
+  });
+}
 
-    select.innerHTML = '<option value="">Sve kategorije</option>' +
-        categories.map(cat =>
-            `<option value="${escapeHtml(cat)}">${escapeHtml(cat)}</option>`
-        ).join('');
+// ---- Category Dropdown ----
+function buildCategoryFilter() {
+  const categories = [
+    ...new Set(allProducts.map((p) => p.category).filter(Boolean)),
+  ].sort();
+
+  const optionsHtml =
+    '<option value="">Sve kategorije</option>' +
+    categories
+      .map(
+        (cat) =>
+          `<option value="${escapeHtml(cat)}">${escapeHtml(cat)}</option>`,
+      )
+      .join("");
+
+  document.getElementById("categoryFilter").innerHTML = optionsHtml;
+  document.getElementById("mobileCategoryFilter").innerHTML = optionsHtml;
+}
+
+// ---- Footer ----
+function populateFooter() {
+  const stores = storeData.stores_scraped || [];
+  document.getElementById("footerStoreCount").textContent = stores.length;
+
+  const footerLinks = document.getElementById("footerStoreLinks");
+  footerLinks.innerHTML = stores
+    .map(
+      (store) =>
+        `<div class="flex items-center gap-1.5 text-sm text-slate-400 hover:text-slate-300 transition-colors">
+            <ph-storefront class="text-xs shrink-0"></ph-storefront>
+            <span class="truncate">${escapeHtml(store)}</span>
+        </div>`,
+    )
+    .join("");
 }
 
 // ---- Event Listeners ----
 function setupEventListeners() {
-    // Search (debounced)
-    const searchInput = document.getElementById('searchInput');
-    let searchTimeout;
-    searchInput.addEventListener('input', () => {
-        clearTimeout(searchTimeout);
-        searchTimeout = setTimeout(() => {
-            searchQuery = searchInput.value.trim().toLowerCase();
-            applyFiltersAndRender();
-        }, 250);
+  // Search (debounced)
+  const searchInput = document.getElementById("searchInput");
+  let searchTimeout;
+  searchInput.addEventListener("input", () => {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+      searchQuery = searchInput.value.trim().toLowerCase();
+      applyFiltersAndRender();
+    }, 250);
+  });
+
+  // Category dropdown (desktop)
+  document.getElementById("categoryFilter").addEventListener("change", (e) => {
+    activeCategory = e.target.value;
+    activeCategoryTab = e.target.value;
+    document.getElementById("mobileCategoryFilter").value = e.target.value;
+    buildCategoryTabs();
+    applyFiltersAndRender();
+  });
+
+  // Category dropdown (mobile)
+  document
+    .getElementById("mobileCategoryFilter")
+    .addEventListener("change", (e) => {
+      activeCategory = e.target.value;
+      activeCategoryTab = e.target.value;
+      document.getElementById("categoryFilter").value = e.target.value;
+      buildCategoryTabs();
+      applyFiltersAndRender();
     });
 
-    // Category
-    document.getElementById('categoryFilter').addEventListener('change', (e) => {
-        activeCategory = e.target.value;
-        applyFiltersAndRender();
+  // Discount range (desktop)
+  const discountRange = document.getElementById("discountRange");
+  discountRange.addEventListener("input", (e) => {
+    minDiscount = parseInt(e.target.value, 10);
+    document.getElementById("discountRangeValue").textContent =
+      minDiscount + "%";
+    document.getElementById("mobileDiscountRange").value = minDiscount;
+    document.getElementById("mobileDiscountRangeValue").textContent =
+      minDiscount + "%";
+    applyFiltersAndRender();
+  });
+
+  // Discount range (mobile)
+  const mobileDiscountRange = document.getElementById("mobileDiscountRange");
+  mobileDiscountRange.addEventListener("input", (e) => {
+    minDiscount = parseInt(e.target.value, 10);
+    document.getElementById("mobileDiscountRangeValue").textContent =
+      minDiscount + "%";
+    document.getElementById("discountRange").value = minDiscount;
+    document.getElementById("discountRangeValue").textContent =
+      minDiscount + "%";
+    applyFiltersAndRender();
+  });
+
+  // Sort (desktop)
+  document.getElementById("sortSelect").addEventListener("change", (e) => {
+    currentSort = e.target.value;
+    document.getElementById("mobileSortSelect").value = e.target.value;
+    applyFiltersAndRender();
+  });
+
+  // Sort (mobile)
+  document
+    .getElementById("mobileSortSelect")
+    .addEventListener("change", (e) => {
+      currentSort = e.target.value;
+      document.getElementById("sortSelect").value = e.target.value;
+      applyFiltersAndRender();
     });
 
-    // Discount range
-    const discountRange = document.getElementById('discountRange');
-    discountRange.addEventListener('input', (e) => {
-        minDiscount = parseInt(e.target.value, 10);
-        document.getElementById('discountRangeValue').textContent = minDiscount + '%';
-        applyFiltersAndRender();
-    });
+  // View mode buttons (desktop)
+  document
+    .getElementById("btnDiscountsOnly")
+    .addEventListener("click", () => setViewMode("discounts"));
+  document
+    .getElementById("btnAllProducts")
+    .addEventListener("click", () => setViewMode("all"));
 
-    // Sort
-    document.getElementById('sortSelect').addEventListener('change', (e) => {
-        currentSort = e.target.value;
-        applyFiltersAndRender();
-    });
+  // View mode buttons (mobile)
+  document
+    .getElementById("mBtnDiscountsOnly")
+    .addEventListener("click", () => setViewMode("discounts"));
+  document
+    .getElementById("mBtnAllProducts")
+    .addEventListener("click", () => setViewMode("all"));
+
+  // Clear filters
+  document
+    .getElementById("clearFiltersBtn")
+    .addEventListener("click", clearAllFilters);
+  document
+    .getElementById("mobileFilterClear")
+    .addEventListener("click", clearAllFilters);
 }
 
 // ---- View Mode ----
 function setViewMode(mode) {
-    currentViewMode = mode;
-    document.getElementById('btnDiscountsOnly').classList.toggle('active', mode === 'discounts');
-    document.getElementById('btnAllProducts').classList.toggle('active', mode === 'all');
-    applyFiltersAndRender();
+  currentViewMode = mode;
+  const isDiscounts = mode === "discounts";
+
+  // Desktop buttons
+  const btnD = document.getElementById("btnDiscountsOnly");
+  const btnA = document.getElementById("btnAllProducts");
+  btnD.className = `flex-1 py-2 text-xs font-semibold transition-colors ${isDiscounts ? "bg-blue-700 text-white" : "bg-white text-slate-600 hover:bg-slate-50"}`;
+  btnA.className = `flex-1 py-2 text-xs font-semibold transition-colors ${!isDiscounts ? "bg-blue-700 text-white" : "bg-white text-slate-600 hover:bg-slate-50"}`;
+
+  // Mobile buttons
+  const mBtnD = document.getElementById("mBtnDiscountsOnly");
+  const mBtnA = document.getElementById("mBtnAllProducts");
+  mBtnD.className = `flex-1 py-2.5 text-sm font-semibold transition-colors ${isDiscounts ? "bg-blue-700 text-white" : "bg-white text-slate-600"}`;
+  mBtnA.className = `flex-1 py-2.5 text-sm font-semibold transition-colors ${!isDiscounts ? "bg-blue-700 text-white" : "bg-white text-slate-600"}`;
+
+  buildCategoryTabs();
+  applyFiltersAndRender();
 }
 
-// ---- Store Toggle ----
-function toggleStore(chip) {
-    const store = chip.dataset.store;
-    if (activeStores.has(store)) {
-        activeStores.delete(store);
-        chip.classList.remove('active');
-    } else {
-        activeStores.add(store);
-        chip.classList.add('active');
-    }
-    applyFiltersAndRender();
+// ---- Clear Filters ----
+function clearAllFilters() {
+  // Reset state
+  const stores = [...new Set(allProducts.map((p) => p.store))];
+  activeStores = new Set(stores);
+  activeCategory = "";
+  activeCategoryTab = "";
+  minDiscount = 0;
+  searchQuery = "";
+  currentSort = "discount_desc";
+  currentViewMode = "discounts";
+
+  // Reset UI elements
+  document.getElementById("searchInput").value = "";
+  document.getElementById("categoryFilter").value = "";
+  document.getElementById("mobileCategoryFilter").value = "";
+  document.getElementById("discountRange").value = 0;
+  document.getElementById("mobileDiscountRange").value = 0;
+  document.getElementById("discountRangeValue").textContent = "0%";
+  document.getElementById("mobileDiscountRangeValue").textContent = "0%";
+  document.getElementById("sortSelect").value = "discount_desc";
+  document.getElementById("mobileSortSelect").value = "discount_desc";
+
+  // Reset store checkboxes
+  document
+    .querySelectorAll(
+      '#storeFilters input[type="checkbox"], #mobileStoreFilters input[type="checkbox"]',
+    )
+    .forEach((cb) => {
+      cb.checked = true;
+    });
+
+  // Reset view mode
+  setViewMode("discounts");
+
+  // Rebuild tabs
+  buildCategoryTabs();
+
+  // Hide clear button
+  document.getElementById("clearFiltersBtn").classList.add("hidden");
+
+  applyFiltersAndRender();
 }
 
-// ---- Summary Toggle ----
-function toggleSummary() {
-    const content = document.getElementById('summaryContent');
-    const icon = document.getElementById('summaryToggle');
-    content.classList.toggle('hidden');
-    icon.classList.toggle('collapsed');
+// ---- Mobile Filter Drawer ----
+function setupMobileDrawer() {
+  const fab = document.getElementById("mobileFilterFab");
+  const backdrop = document.getElementById("mobileFilterBackdrop");
+  const drawer = document.getElementById("mobileFilterDrawer");
+  const closeBtn = document.getElementById("mobileFilterClose");
+  const applyBtn = document.getElementById("mobileFilterApply");
+
+  function openDrawer() {
+    backdrop.classList.remove("hidden");
+    requestAnimationFrame(() => {
+      backdrop.classList.remove("opacity-0");
+      backdrop.classList.add("opacity-100");
+      drawer.classList.remove("translate-x-full");
+      drawer.classList.add("translate-x-0");
+    });
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeDrawer() {
+    backdrop.classList.remove("opacity-100");
+    backdrop.classList.add("opacity-0");
+    drawer.classList.remove("translate-x-0");
+    drawer.classList.add("translate-x-full");
+    document.body.style.overflow = "";
+    setTimeout(() => backdrop.classList.add("hidden"), 300);
+  }
+
+  fab.addEventListener("click", openDrawer);
+  closeBtn.addEventListener("click", closeDrawer);
+  backdrop.addEventListener("click", closeDrawer);
+  applyBtn.addEventListener("click", () => {
+    applyFiltersAndRender();
+    closeDrawer();
+  });
 }
 
 // ---- Filter + Sort + Render Pipeline ----
 function applyFiltersAndRender() {
-    // Filter
-    filteredProducts = allProducts.filter(p => {
-        // View mode
-        if (currentViewMode === 'discounts' && (p.discount_percent || 0) <= 0) return false;
+  // Filter
+  filteredProducts = allProducts.filter((p) => {
+    // View mode
+    if (currentViewMode === "discounts" && (p.discount_percent || 0) <= 0)
+      return false;
 
-        // Store
-        if (!activeStores.has(p.store)) return false;
+    // Store
+    if (!activeStores.has(p.store)) return false;
 
-        // Category
-        if (activeCategory && p.category !== activeCategory) return false;
+    // Category (from tab or dropdown)
+    if (activeCategory && p.category !== activeCategory) return false;
 
-        // Min discount
-        if (minDiscount > 0 && (p.discount_percent || 0) < minDiscount) return false;
+    // Min discount
+    if (minDiscount > 0 && (p.discount_percent || 0) < minDiscount)
+      return false;
 
-        // Search
-        if (searchQuery) {
-            const haystack = (p.name + ' ' + (p.category || '') + ' ' + p.store).toLowerCase();
-            if (!haystack.includes(searchQuery)) return false;
-        }
+    // Search
+    if (searchQuery) {
+      const haystack = (
+        p.name +
+        " " +
+        (p.category || "") +
+        " " +
+        p.store
+      ).toLowerCase();
+      if (!haystack.includes(searchQuery)) return false;
+    }
 
-        return true;
-    });
+    return true;
+  });
 
-    // Sort
-    sortProducts(filteredProducts, currentSort);
+  // Sort
+  sortProducts(filteredProducts, currentSort);
 
-    // Update count
-    const countEl = document.getElementById('resultsCount');
-    const discountedCount = filteredProducts.filter(p => (p.discount_percent || 0) > 0).length;
-    countEl.textContent = `${filteredProducts.length} proizvoda | ${discountedCount} na popustu`;
+  // Update results count
+  const countEl = document.getElementById("resultsCount");
+  const discountedCount = filteredProducts.filter(
+    (p) => (p.discount_percent || 0) > 0,
+  ).length;
+  countEl.innerHTML = `<span class="font-semibold text-slate-700">${filteredProducts.length}</span> proizvoda`;
+  if (discountedCount > 0 && discountedCount < filteredProducts.length) {
+    countEl.innerHTML += ` <span class="text-slate-300">|</span> <span class="text-emerald-600 font-medium">${discountedCount} na popustu</span>`;
+  }
 
-    // Render
-    displayedCount = 0;
-    document.getElementById('productGrid').innerHTML = '';
-    loadMore();
+  // Show/hide clear filters button
+  const hasActiveFilters =
+    activeCategory ||
+    minDiscount > 0 ||
+    searchQuery ||
+    activeStores.size !==
+      [...new Set(allProducts.map((p) => p.store))].length ||
+    currentViewMode !== "discounts" ||
+    currentSort !== "discount_desc";
+  document
+    .getElementById("clearFiltersBtn")
+    .classList.toggle("hidden", !hasActiveFilters);
+
+  // Render
+  displayedCount = 0;
+  document.getElementById("productGrid").innerHTML = "";
+  loadMore();
 }
 
 function sortProducts(products, criterion) {
-    products.sort((a, b) => {
-        switch (criterion) {
-            case 'discount_desc':
-                return (b.discount_percent || 0) - (a.discount_percent || 0);
-            case 'discount_asc':
-                return (a.discount_percent || 0) - (b.discount_percent || 0);
-            case 'price_asc':
-                return getEffectivePrice(a) - getEffectivePrice(b);
-            case 'price_desc':
-                return getEffectivePrice(b) - getEffectivePrice(a);
-            case 'name_asc':
-                return a.name.localeCompare(b.name, 'sr');
-            case 'name_desc':
-                return b.name.localeCompare(a.name, 'sr');
-            case 'savings_desc':
-                return getSavings(b) - getSavings(a);
-            default:
-                return 0;
-        }
-    });
+  products.sort((a, b) => {
+    switch (criterion) {
+      case "discount_desc":
+        return (b.discount_percent || 0) - (a.discount_percent || 0);
+      case "discount_asc":
+        return (a.discount_percent || 0) - (b.discount_percent || 0);
+      case "price_asc":
+        return getEffectivePrice(a) - getEffectivePrice(b);
+      case "price_desc":
+        return getEffectivePrice(b) - getEffectivePrice(a);
+      case "name_asc":
+        return a.name.localeCompare(b.name, "sr");
+      case "name_desc":
+        return b.name.localeCompare(a.name, "sr");
+      case "savings_desc":
+        return getSavings(b) - getSavings(a);
+      default:
+        return 0;
+    }
+  });
 }
 
 function getEffectivePrice(product) {
-    return product.discount_price || product.original_price || 0;
+  return product.discount_price || product.original_price || 0;
 }
 
 function getSavings(product) {
-    if (product.original_price && product.discount_price) {
-        return product.original_price - product.discount_price;
-    }
-    return 0;
+  if (product.original_price && product.discount_price) {
+    return product.original_price - product.discount_price;
+  }
+  return 0;
 }
 
 // ---- Lazy Loading ----
 function loadMore() {
-    const grid = document.getElementById('productGrid');
-    const end = Math.min(displayedCount + BATCH_SIZE, filteredProducts.length);
-    const fragment = document.createDocumentFragment();
+  const grid = document.getElementById("productGrid");
+  const end = Math.min(displayedCount + BATCH_SIZE, filteredProducts.length);
+  const fragment = document.createDocumentFragment();
 
-    for (let i = displayedCount; i < end; i++) {
-        fragment.appendChild(createProductCard(filteredProducts[i]));
-    }
+  for (let i = displayedCount; i < end; i++) {
+    const card = createProductCard(filteredProducts[i], i);
+    fragment.appendChild(card);
+  }
 
-    grid.appendChild(fragment);
-    displayedCount = end;
+  grid.appendChild(fragment);
+  displayedCount = end;
 
-    // Toggle load more button
-    const loadMoreContainer = document.getElementById('loadMoreContainer');
-    const noResults = document.getElementById('noResults');
+  // Toggle load more button
+  const loadMoreContainer = document.getElementById("loadMoreContainer");
+  const noResults = document.getElementById("noResults");
 
-    if (displayedCount < filteredProducts.length) {
-        loadMoreContainer.style.display = 'block';
-        document.getElementById('loadMoreBtn').textContent =
-            `Ucitaj jos (${filteredProducts.length - displayedCount} preostalo)`;
-    } else {
-        loadMoreContainer.style.display = 'none';
-    }
+  if (displayedCount < filteredProducts.length) {
+    loadMoreContainer.style.display = "block";
+    document.getElementById("loadMoreBtn").innerHTML =
+      `<ph-arrow-down weight="bold" class="text-base"></ph-arrow-down> Ucitaj jos (${filteredProducts.length - displayedCount} preostalo)`;
+  } else {
+    loadMoreContainer.style.display = "none";
+  }
 
-    noResults.style.display = filteredProducts.length === 0 ? 'block' : 'none';
+  noResults.style.display = filteredProducts.length === 0 ? "block" : "none";
 }
 
 // ---- Product Card Rendering ----
-function createProductCard(product) {
-    const card = document.createElement('div');
-    card.className = 'product-card';
+function createProductCard(product, index) {
+  const card = document.createElement("article");
+  card.className =
+    "group bg-white rounded-xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-200 overflow-hidden flex flex-col fade-in-card";
+  card.style.animationDelay = `${Math.min(index % BATCH_SIZE, 20) * 30}ms`;
 
-    const hasDiscount = product.discount_percent > 0 && product.discount_price;
-    const effectivePrice = hasDiscount ? product.discount_price : product.original_price;
-    const savings = hasDiscount ? (product.original_price - product.discount_price) : 0;
+  const hasDiscount = product.discount_percent > 0 && product.discount_price;
+  const effectivePrice = hasDiscount
+    ? product.discount_price
+    : product.original_price;
+  const savings = hasDiscount
+    ? product.original_price - product.discount_price
+    : 0;
 
-    // Discount badge tier
-    let badgeTier = '';
-    if (hasDiscount) {
-        if (product.discount_percent >= 40) badgeTier = 'tier-high';
-        else if (product.discount_percent >= 20) badgeTier = 'tier-medium';
-        else badgeTier = 'tier-low';
-    }
+  // Discount badge color
+  let badgeColor = "";
+  if (hasDiscount) {
+    if (product.discount_percent >= 30) badgeColor = "bg-red-600";
+    else if (product.discount_percent >= 15) badgeColor = "bg-amber-500";
+    else badgeColor = "bg-slate-500";
+  }
 
-    card.innerHTML = `
-        <div class="card-image">
-            ${product.image_url
-                ? `<img src="${escapeHtml(product.image_url)}" alt="${escapeHtml(product.name)}" loading="lazy" onerror="this.parentElement.innerHTML='<span class=\\'no-image\\'>Nema slike</span>'">`
-                : '<span class="no-image">Nema slike</span>'
-            }
-            ${hasDiscount
-                ? `<span class="discount-badge ${badgeTier}">-${product.discount_percent}%</span>`
-                : ''
-            }
-            ${!product.in_stock
-                ? `<div class="out-of-stock-overlay"><span class="out-of-stock-label">Nema na stanju</span></div>`
-                : ''
-            }
+  // Image HTML
+  const imageHtml = product.image_url
+    ? `<img src="${escapeHtml(product.image_url)}" alt="${escapeHtml(product.name)}" loading="lazy" class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+           <div class="absolute inset-0 items-center justify-center text-slate-300 text-sm" style="display:none;">
+               <ph-image class="text-3xl"></ph-image>
+           </div>`
+    : `<div class="flex items-center justify-center text-slate-300">
+               <ph-image class="text-3xl"></ph-image>
+           </div>`;
+
+  // Discount badge
+  const badgeHtml = hasDiscount
+    ? `<span class="absolute top-2 right-2 px-2.5 py-1 rounded-full text-xs font-bold text-white ${badgeColor}">-${product.discount_percent}%</span>`
+    : "";
+
+  // Out of stock overlay
+  const outOfStockHtml = !product.in_stock
+    ? `<div class="absolute inset-0 bg-white/70 flex items-center justify-center z-10">
+               <span class="bg-slate-700 text-white text-xs font-semibold px-3 py-1.5 rounded-full">Nema na stanju</span>
+           </div>`
+    : "";
+
+  // Category badge
+  const categoryHtml = product.category
+    ? `<span class="text-[10px] px-2 py-0.5 bg-slate-100 text-slate-500 rounded-full w-fit mb-2">${escapeHtml(product.category)}</span>`
+    : "";
+
+  // Price section
+  let priceHtml = "";
+  if (hasDiscount) {
+    priceHtml = `
+            <div class="flex items-baseline gap-2">
+                <span class="text-lg font-bold text-red-600">${formatPrice(product.discount_price)}</span>
+                <span class="text-xs text-slate-400 line-through">${formatPrice(product.original_price)}</span>
+            </div>
+            <p class="text-xs text-emerald-600 flex items-center gap-1 mt-0.5">
+                <ph-tag size="12"></ph-tag> Usteda: ${formatPrice(savings)}
+            </p>`;
+  } else {
+    priceHtml = `
+            <div>
+                <span class="text-lg font-bold text-slate-900">${formatPrice(product.original_price)}</span>
+            </div>`;
+  }
+
+  card.innerHTML = `
+        <div class="relative aspect-square bg-slate-50 overflow-hidden">
+            ${imageHtml}
+            ${badgeHtml}
+            ${outOfStockHtml}
         </div>
-        <div class="card-info">
-            <div class="product-name" title="${escapeHtml(product.name)}">${escapeHtml(product.name)}</div>
-            ${product.category
-                ? `<span class="product-category">${escapeHtml(product.category)}</span>`
-                : ''
-            }
-            <div class="price-section">
-                ${hasDiscount
-                    ? `<span class="original-price">${formatPrice(product.original_price)}</span>
-                       <span class="discount-price">${formatPrice(product.discount_price)}</span>
-                       <div class="savings">Usteda: ${formatPrice(savings)}</div>`
-                    : `<span class="regular-price">${formatPrice(product.original_price)}</span>`
-                }
+        <div class="p-4 flex-1 flex flex-col">
+            <h3 class="text-sm font-semibold text-slate-900 line-clamp-2 mb-1" title="${escapeHtml(product.name)}">${escapeHtml(product.name)}</h3>
+            ${categoryHtml}
+            <div class="mt-auto">
+                ${priceHtml}
             </div>
         </div>
-        <div class="card-footer">
-            <span class="store-name">${escapeHtml(product.store)}</span>
-            <a href="${escapeHtml(product.product_url)}" target="_blank" rel="noopener noreferrer" class="buy-link">
-                Kupi <span class="arrow">&rarr;</span>
+        <div class="px-4 py-3 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs text-slate-400 truncate mr-2">${escapeHtml(product.store)}</span>
+            <a href="${escapeHtml(product.product_url)}" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-700 hover:text-white hover:bg-blue-700 px-3 py-1.5 rounded-lg border border-blue-700 transition-colors shrink-0">
+                Kupi <ph-arrow-right weight="bold" size="14"></ph-arrow-right>
             </a>
         </div>
     `;
 
-    return card;
-}
-
-// ---- Weekly Summary ----
-function renderWeeklySummary() {
-    if (!weeklySummary || !weeklySummary.total_discounted) {
-        document.getElementById('weeklySummary').style.display = 'none';
-        return;
-    }
-
-    // Stats
-    const statsHtml = `
-        <div class="stat-box">
-            <div class="stat-value">${weeklySummary.total_products || 0}</div>
-            <div class="stat-label">Ukupno proizvoda</div>
-        </div>
-        <div class="stat-box">
-            <div class="stat-value">${weeklySummary.total_discounted}</div>
-            <div class="stat-label">Na popustu</div>
-        </div>
-        <div class="stat-box">
-            <div class="stat-value">${weeklySummary.avg_discount_percent}%</div>
-            <div class="stat-label">Prosecni popust</div>
-        </div>
-        <div class="stat-box">
-            <div class="stat-value">${weeklySummary.new_discounts_count || 0}</div>
-            <div class="stat-label">Novi popusti ove nedelje</div>
-        </div>
-    `;
-    document.getElementById('summaryStats').innerHTML = statsHtml;
-
-    // Store breakdown
-    const storeBreakdown = weeklySummary.by_store || {};
-    const storeHtml = Object.entries(storeBreakdown)
-        .sort((a, b) => b[1].count - a[1].count)
-        .map(([store, data]) =>
-            `<div class="breakdown-item">
-                <span class="label">${escapeHtml(store)}</span>
-                <span class="value">${data.count} proizvoda <span class="badge">~${data.avg_discount}%</span></span>
-            </div>`
-        ).join('');
-    document.querySelector('#storeBreakdown .breakdown-list').innerHTML = storeHtml || '<p style="font-size:0.85rem;color:#86868b">Nema podataka</p>';
-
-    // Category breakdown
-    const catBreakdown = weeklySummary.by_category || {};
-    const catHtml = Object.entries(catBreakdown)
-        .sort((a, b) => b[1].count - a[1].count)
-        .slice(0, 10)
-        .map(([cat, data]) =>
-            `<div class="breakdown-item">
-                <span class="label">${escapeHtml(cat)}</span>
-                <span class="value">${data.count} <span class="badge">~${data.avg_discount}%</span></span>
-            </div>`
-        ).join('');
-    document.querySelector('#categoryBreakdown .breakdown-list').innerHTML = catHtml || '<p style="font-size:0.85rem;color:#86868b">Nema podataka</p>';
-
-    // Top deals
-    const topDeals = (weeklySummary.top_discounts || []).slice(0, 5);
-    const topHtml = topDeals.map(p =>
-        `<div class="breakdown-item">
-            <span class="label">${escapeHtml(truncate(p.name, 30))}</span>
-            <span class="value"><span class="badge">-${p.discount_percent}%</span> ${formatPrice(p.discount_price)}</span>
-        </div>`
-    ).join('');
-    document.querySelector('#topDeals .breakdown-list').innerHTML = topHtml || '<p style="font-size:0.85rem;color:#86868b">Nema podataka</p>';
-
-    // Week changes
-    let changesHtml = '';
-    if (weeklySummary.new_discounts_count > 0) {
-        changesHtml += `<div class="breakdown-item"><span class="label">Novi popusti</span><span class="value badge" style="background:#e8f5e9;color:#2e7d32">+${weeklySummary.new_discounts_count}</span></div>`;
-    }
-    if (weeklySummary.ended_discounts_count > 0) {
-        changesHtml += `<div class="breakdown-item"><span class="label">Zavrseni popusti</span><span class="value badge" style="background:#fce4ec;color:#c62828">-${weeklySummary.ended_discounts_count}</span></div>`;
-    }
-    if (weeklySummary.deeper_discounts_count > 0) {
-        changesHtml += `<div class="breakdown-item"><span class="label">Veci popusti</span><span class="value badge" style="background:#e8f5e9;color:#2e7d32">${weeklySummary.deeper_discounts_count}</span></div>`;
-    }
-    if (!changesHtml) {
-        changesHtml = '<p style="font-size:0.85rem;color:#86868b">Prvo prikupljanje - nema poredjenja</p>';
-    }
-    document.querySelector('#weekChanges .breakdown-list').innerHTML = changesHtml;
+  return card;
 }
 
 // ---- Utility Functions ----
 function formatPrice(price) {
-    if (price == null || isNaN(price)) return '';
-    return price.toLocaleString('sr-RS', {
-        minimumFractionDigits: 0,
-        maximumFractionDigits: 0,
-    }) + ' RSD';
+  if (price == null || isNaN(price)) return "";
+  return (
+    price.toLocaleString("sr-RS", {
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0,
+    }) + " RSD"
+  );
 }
 
 function formatDate(date) {
-    return date.toLocaleString('sr-RS', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit',
-    });
+  return date.toLocaleString("sr-RS", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
 }
 
 function escapeHtml(str) {
-    if (!str) return '';
-    const div = document.createElement('div');
-    div.textContent = str;
-    return div.innerHTML;
+  if (!str) return "";
+  const div = document.createElement("div");
+  div.textContent = str;
+  return div.innerHTML;
 }
 
 function truncate(str, maxLen) {
-    if (!str) return '';
-    return str.length > maxLen ? str.slice(0, maxLen) + '...' : str;
+  if (!str) return "";
+  return str.length > maxLen ? str.slice(0, maxLen) + "..." : str;
 }
 
 function showError(msg) {
-    const grid = document.getElementById('productGrid');
-    grid.innerHTML = `<div class="no-results" style="display:block;grid-column:1/-1;"><p>${escapeHtml(msg)}</p></div>`;
+  const grid = document.getElementById("productGrid");
+  grid.innerHTML = `
+        <div class="col-span-full text-center py-16">
+            <ph-warning class="text-5xl text-slate-300 mx-auto mb-4"></ph-warning>
+            <p class="text-slate-500">${escapeHtml(msg)}</p>
+        </div>`;
 }

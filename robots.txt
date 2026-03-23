@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bojandjb23.github.io/rs-supplement-deals/

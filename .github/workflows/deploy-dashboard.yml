@@ -82,8 +82,9 @@ jobs:
           with open('_site/index.html', 'w') as f:
               f.write(output)
           "
-          # Copy assets
+          # Copy assets and static files
           cp -r assets _site/assets
+          cp robots.txt _site/robots.txt 2>/dev/null || true
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
