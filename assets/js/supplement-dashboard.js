@@ -731,6 +731,12 @@ function createProductCard(product, index) {
     "group bg-white rounded-xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-200 overflow-hidden flex flex-col fade-in-card";
   card.style.animationDelay = `${Math.min(index % BATCH_SIZE, 20) * 30}ms`;
 
+  // UTM tracking for affiliate/partnership proof
+  const trackedUrl =
+    product.product_url +
+    (product.product_url.includes("?") ? "&" : "?") +
+    "utm_source=rssupplementdeals&utm_medium=referral&utm_campaign=deals";
+
   const hasDiscount = product.discount_percent > 0 && product.discount_price;
   const effectivePrice = hasDiscount
     ? product.discount_price
@@ -801,7 +807,7 @@ function createProductCard(product, index) {
         </div>
         <div class="px-4 py-3 border-t border-slate-100 flex items-center justify-between">
             <span class="text-xs text-slate-400 truncate mr-2">${escapeHtml(product.store)}</span>
-            <a href="${escapeHtml(product.product_url)}" target="_blank" rel="noopener noreferrer"
+            <a href="${escapeHtml(trackedUrl)}" target="_blank" rel="noopener noreferrer"
                 class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#606060] hover:text-white hover:bg-[#606060] px-3 py-1.5 rounded-lg border border-[#606060] transition-colors shrink-0">
                 Kupi <ph-arrow-right weight="bold" size="14"></ph-arrow-right>
             </a>
@@ -852,3 +858,41 @@ function showError(msg) {
             <p class="text-slate-500">${escapeHtml(msg)}</p>
         </div>`;
 }
+
+// ---- FAQ Accordion ----
+function toggleFaq(button) {
+  const answer = button.nextElementSibling;
+  const icon = button.querySelector("ph-caret-down");
+  const isOpen = !answer.classList.contains("hidden");
+
+  // Close all others
+  document
+    .querySelectorAll(".faq-answer")
+    .forEach((a) => a.classList.add("hidden"));
+  document
+    .querySelectorAll(".faq-item ph-caret-down")
+    .forEach((i) => (i.style.transform = ""));
+
+  if (!isOpen) {
+    answer.classList.remove("hidden");
+    if (icon) icon.style.transform = "rotate(180deg)";
+  }
+}
+
+// ---- Newsletter Form Handling ----
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("newsletterForm");
+  if (form) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const email = form.querySelector('input[type="email"]').value;
+      // Store in localStorage for now (can be replaced with real service later)
+      const subs = JSON.parse(localStorage.getItem("rssd_subscribers") || "[]");
+      if (!subs.includes(email)) subs.push(email);
+      localStorage.setItem("rssd_subscribers", JSON.stringify(subs));
+      // Show success
+      form.innerHTML =
+        '<p class="text-white/80 text-sm py-2">Hvala! Uskoro ces primiti prvi pregled popusta.</p>';
+    });
+  }
+});

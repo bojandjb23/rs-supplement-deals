@@ -273,6 +273,103 @@
       </div>
     </section>
 
+    <!-- ===== NEWSLETTER SIGNUP ===== -->
+    <section class="bg-[#333] text-white py-8 sm:py-10">
+      <div class="max-w-2xl mx-auto px-4 text-center">
+        <ph-envelope-simple
+          weight="duotone"
+          class="text-4xl text-[#c0c0c0] mb-3 inline-block"
+        ></ph-envelope-simple>
+        <h2 class="text-xl sm:text-2xl font-bold mb-2">
+          Nedeljni pregled popusta
+        </h2>
+        <p class="text-[#c0c0c0] text-sm mb-5">
+          Svake nedelje u tvoj inbox — najbolji popusti na suplemente iz svih
+          prodavnica u Srbiji. Besplatno.
+        </p>
+        <form
+          action="https://formspree.io/f/placeholder"
+          method="POST"
+          class="flex flex-col sm:flex-row gap-2 max-w-md mx-auto"
+          id="newsletterForm"
+        >
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="tvoj@email.com"
+            class="flex-1 px-4 py-2.5 rounded-md bg-white/10 border border-white/20 text-white placeholder-white/50 text-sm focus:outline-none focus:border-white/50 transition-colors"
+          />
+          <button
+            type="submit"
+            class="px-6 py-2.5 bg-white text-[#333] font-semibold text-sm rounded-md hover:bg-[#f0f0f0] transition-colors shrink-0"
+          >
+            Prijavi se
+          </button>
+        </form>
+        <p class="text-[#999] text-[10px] mt-3">
+          Bez spama. Odjavi se kad god zelis.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="bg-white border-b border-[#d0d0d0] py-8">
+      <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-center text-lg font-bold text-[#333] mb-6">
+          Kako funkcionise
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+          <div class="flex flex-col items-center gap-2">
+            <div
+              class="w-10 h-10 rounded-full bg-[#f0f0f0] flex items-center justify-center"
+            >
+              <ph-magnifying-glass
+                class="text-[#606060] text-xl"
+              ></ph-magnifying-glass>
+            </div>
+            <h3 class="text-sm font-semibold text-[#333]">
+              1. Prikupljamo podatke
+            </h3>
+            <p class="text-xs text-[#999]">
+              Automatski skeniramo 15 prodavnica suplemenata u Srbiji svakih 6
+              sati i pronalazimo sve proizvode na popustu.
+            </p>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <div
+              class="w-10 h-10 rounded-full bg-[#f0f0f0] flex items-center justify-center"
+            >
+              <ph-funnel class="text-[#606060] text-xl"></ph-funnel>
+            </div>
+            <h3 class="text-sm font-semibold text-[#333]">
+              2. Filtriraj i uporedi
+            </h3>
+            <p class="text-xs text-[#999]">
+              Pretrazi po kategoriji, prodavnici, procentu popusta ili imenu.
+              Sve na jednom mestu — bez otvaranja 15 sajtova.
+            </p>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <div
+              class="w-10 h-10 rounded-full bg-[#f0f0f0] flex items-center justify-center"
+            >
+              <ph-shopping-cart
+                class="text-[#606060] text-xl"
+              ></ph-shopping-cart>
+            </div>
+            <h3 class="text-sm font-semibold text-[#333]">
+              3. Kupi po najboljoj ceni
+            </h3>
+            <p class="text-xs text-[#999]">
+              Klikni "Kupi" i bices preusmeren direktno na stranicu proizvoda u
+              originalnoj prodavnici. Kupujes kao i uvek.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== MAIN CONTENT ===== -->
     <div class="flex-1 max-w-[1600px] mx-auto w-full px-4 sm:px-6 py-6">
       <div class="flex gap-6">
@@ -596,6 +693,110 @@
       </div>
     </div>
 
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="bg-white border-t border-[#d0d0d0] py-10" id="faqSection">
+      <div class="max-w-3xl mx-auto px-4">
+        <h2 class="text-lg font-bold text-[#333] mb-6 text-center">
+          Cesta pitanja
+        </h2>
+        <div class="space-y-3" id="faqList">
+          <div
+            class="faq-item border border-[#d0d0d0] rounded-md overflow-hidden"
+          >
+            <button
+              onclick="toggleFaq(this)"
+              class="w-full flex items-center justify-between px-4 py-3 text-left text-sm font-medium text-[#333] hover:bg-[#f5f5f5] transition-colors"
+            >
+              <span>Koje prodavnice su zastupljene?</span>
+              <ph-caret-down
+                class="text-[#999] transition-transform duration-200 shrink-0"
+              ></ph-caret-down>
+            </button>
+            <div class="faq-answer hidden px-4 pb-3 text-sm text-[#666]">
+              Prikupljamo popuste iz 15 online prodavnica u Srbiji: Supplement
+              Store, GymBeam, FitLab, TitaniumSport, Proteini.si, Dobrobit, ExYu
+              Fitness, LAMA, AMG Sport, Ogistra Nutrition, SuperProtein,
+              Superior14, ATP Sport, Spartan Shop i X Sport. Redovno dodajemo
+              nove prodavnice.
+            </div>
+          </div>
+          <div
+            class="faq-item border border-[#d0d0d0] rounded-md overflow-hidden"
+          >
+            <button
+              onclick="toggleFaq(this)"
+              class="w-full flex items-center justify-between px-4 py-3 text-left text-sm font-medium text-[#333] hover:bg-[#f5f5f5] transition-colors"
+            >
+              <span>Koliko cesto se cene azuriraju?</span>
+              <ph-caret-down
+                class="text-[#999] transition-transform duration-200 shrink-0"
+              ></ph-caret-down>
+            </button>
+            <div class="faq-answer hidden px-4 pb-3 text-sm text-[#666]">
+              Cene i popusti se automatski azuriraju svaka 6 sati, 24/7. Podaci
+              se prikupljaju direktno sa sajtova prodavnica kako bi bili sto
+              aktuelniji.
+            </div>
+          </div>
+          <div
+            class="faq-item border border-[#d0d0d0] rounded-md overflow-hidden"
+          >
+            <button
+              onclick="toggleFaq(this)"
+              class="w-full flex items-center justify-between px-4 py-3 text-left text-sm font-medium text-[#333] hover:bg-[#f5f5f5] transition-colors"
+            >
+              <span>Kako da kupim proizvod?</span>
+              <ph-caret-down
+                class="text-[#999] transition-transform duration-200 shrink-0"
+              ></ph-caret-down>
+            </button>
+            <div class="faq-answer hidden px-4 pb-3 text-sm text-[#666]">
+              Kliknite na dugme "Kupi" na kartici proizvoda i bicete preusmereni
+              direktno na stranicu proizvoda u originalnoj prodavnici. Mi ne
+              prodajemo direktno — pomazemo vam da pronadjete najbolje ponude na
+              jednom mestu.
+            </div>
+          </div>
+          <div
+            class="faq-item border border-[#d0d0d0] rounded-md overflow-hidden"
+          >
+            <button
+              onclick="toggleFaq(this)"
+              class="w-full flex items-center justify-between px-4 py-3 text-left text-sm font-medium text-[#333] hover:bg-[#f5f5f5] transition-colors"
+            >
+              <span>Da li je ova usluga besplatna?</span>
+              <ph-caret-down
+                class="text-[#999] transition-transform duration-200 shrink-0"
+              ></ph-caret-down>
+            </button>
+            <div class="faq-answer hidden px-4 pb-3 text-sm text-[#666]">
+              Da, potpuno besplatno. RS Supplement Deals je besplatan alat za
+              poredjenje cena suplemenata u Srbiji. Nas cilj je da vam ustedimo
+              vreme i novac tako sto sve popuste prikazujemo na jednom mestu.
+            </div>
+          </div>
+          <div
+            class="faq-item border border-[#d0d0d0] rounded-md overflow-hidden"
+          >
+            <button
+              onclick="toggleFaq(this)"
+              class="w-full flex items-center justify-between px-4 py-3 text-left text-sm font-medium text-[#333] hover:bg-[#f5f5f5] transition-colors"
+            >
+              <span>Da li garantujete tacnost cena?</span>
+              <ph-caret-down
+                class="text-[#999] transition-transform duration-200 shrink-0"
+              ></ph-caret-down>
+            </button>
+            <div class="faq-answer hidden px-4 pb-3 text-sm text-[#666]">
+              Trudimo se da cene budu sto tacnije i azuriramo ih svakih 6 sati.
+              Medjutim, prodavnice mogu promeniti cene u bilo kom trenutku. Uvek
+              proverite konacnu cenu na sajtu prodavnice pre kupovine.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== FOOTER ===== -->
     <footer class="relative mt-16">
       <div class="bg-[#e5e5e5] rounded-t-3xl pt-12 pb-8 px-6">
@@ -652,6 +853,21 @@
             <p class="text-xs text-[#999]">
               Automatski azurirano &middot; Podaci samo u informativne svrhe
             </p>
+          </div>
+          <!-- Partnership CTA -->
+          <div class="border-t border-[#ccc] mt-6 pt-6 text-center">
+            <p class="text-sm text-[#606060] mb-2">
+              <ph-handshake
+                class="inline-block text-base align-middle mr-1"
+              ></ph-handshake>
+              Imate online prodavnicu suplemenata?
+            </p>
+            <a
+              href="mailto:bojandjb23@gmail.com?subject=RS%20Supplement%20Deals%20-%20Saradnja"
+              class="inline-block text-sm font-semibold text-[#333] hover:text-[#000] underline underline-offset-2"
+            >
+              Kontaktirajte nas za partnerstvo &rarr;
+            </a>
           </div>
         </div>
       </div>
