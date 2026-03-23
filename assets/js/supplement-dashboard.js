@@ -6,6 +6,97 @@
  * mobile filter drawer, and lazy loading.
  */
 
+// ---- Category Normalization Map ----
+const CATEGORY_MAP = {
+  proteini: "Proteini",
+  "whey protein": "Proteini",
+  "vegan protein": "Proteini",
+  kazein: "Proteini",
+  "protein bar": "Proteini",
+  gaineri: "Proteini",
+  gejneri: "Proteini",
+  kreatin: "Kreatin",
+  kreatini: "Kreatin",
+  "kreatin monohidrat": "Kreatin",
+  "amino kiseline": "Amino kiseline",
+  aminokiseline: "Amino kiseline",
+  "aminokiseline u prahu": "Amino kiseline",
+  bcaa: "Amino kiseline",
+  glutamin: "Amino kiseline",
+  citrulin: "Amino kiseline",
+  vitamini: "Vitamini i minerali",
+  minerali: "Vitamini i minerali",
+  magnezijum: "Vitamini i minerali",
+  cink: "Vitamini i minerali",
+  kalcijum: "Vitamini i minerali",
+  kalijum: "Vitamini i minerali",
+  gvožđe: "Vitamini i minerali",
+  hrom: "Vitamini i minerali",
+  selen: "Vitamini i minerali",
+  "kompleksi minerala": "Vitamini i minerali",
+  spirulina: "Vitamini i minerali",
+  probiotici: "Zdravlje",
+  kolagen: "Zdravlje",
+  "hijaluronska kiselina": "Zdravlje",
+  "koenzim q10": "Zdravlje",
+  "omega masne kiseline": "Zdravlje",
+  ašvaganda: "Zdravlje",
+  kurkumin: "Zdravlje",
+  maka: "Zdravlje",
+  tribulus: "Zdravlje",
+  melatonin: "Zdravlje",
+  "zastita zglobova tetiva i ligamenata": "Zdravlje",
+  "korisne masti i biljni ekstrakti": "Zdravlje",
+  mršavljenje: "Mršavljenje",
+  "sagorevaci masti": "Mršavljenje",
+  "l-karnitin": "Mršavljenje",
+  "l carnitine": "Mršavljenje",
+  "pre workout": "Pre-Workout",
+  "no reaktori": "Pre-Workout",
+  "zdrava hrana": "Zdrava hrana",
+  "cokoladice i napici": "Zdrava hrana",
+  akcije: "Ostalo",
+  akcija: "Ostalo",
+  rasprodaja: "Ostalo",
+  suplementi: "Ostalo",
+  ostalo: "Ostalo",
+  biotech: "Ostalo",
+  ostrovit: "Ostalo",
+  nutriversum: "Ostalo",
+  blastex: "Ostalo",
+  "amix nutrition": "Ostalo",
+  "5 stars": "Ostalo",
+  "applied nutrition": "Ostalo",
+  "6pak nutrition": "Ostalo",
+  "extrifit sports nutrition": "Ostalo",
+  vitalikum: "Ostalo",
+};
+
+// ---- Non-supplement filter lists ----
+const NON_SUPPLEMENT_CATS = [
+  "fitnes oprema",
+  "sejkeri",
+  "rukavice za trening",
+  "pojas za teretanu",
+  "majice",
+  "sportska oprema",
+];
+const NON_SUPPLEMENT_KEYWORDS = [
+  "torba",
+  "torbica",
+  "šejker",
+  "shaker",
+  "rukavice",
+  "pojas za",
+  "majica",
+  "čarape",
+  "patike",
+  "držač za",
+  "noževi",
+  "weighted vest",
+  "gym bag",
+];
+
 // ---- State ----
 let allProducts = [];
 let filteredProducts = [];
@@ -54,6 +145,25 @@ function loadData() {
 
   allProducts = storeData.products || [];
   weeklySummary = storeData.weekly_summary || {};
+
+  // Filter out out-of-stock products
+  allProducts = allProducts.filter((p) => p.in_stock !== false);
+
+  // Filter out non-supplement products
+  allProducts = allProducts.filter((p) => {
+    const catLower = (p.category || "").toLowerCase();
+    if (NON_SUPPLEMENT_CATS.some((c) => catLower.includes(c))) return false;
+    const nameLower = (p.name || "").toLowerCase();
+    if (NON_SUPPLEMENT_KEYWORDS.some((kw) => nameLower.includes(kw)))
+      return false;
+    return true;
+  });
+
+  // Normalize categories (68 raw → ~10 clean)
+  allProducts.forEach((p) => {
+    const rawCat = (p.category || "").toLowerCase().trim();
+    p.category = CATEGORY_MAP[rawCat] || "Ostalo";
+  });
 
   // Update last-updated timestamp
   if (storeData.scraped_at) {
@@ -168,20 +278,20 @@ function buildCategoryTabs() {
 
   const allCount = getCatCount(null);
 
-  let html = `<button class="category-tab whitespace-nowrap px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
+  let html = `<button class="category-tab whitespace-nowrap px-4 py-1.5 text-sm font-medium transition-colors border-b-2 ${
     activeCategoryTab === ""
-      ? "bg-blue-600 text-white"
-      : "text-slate-400 hover:text-white hover:bg-slate-800"
+      ? "border-[#333] text-[#333] font-semibold"
+      : "border-transparent text-[#999] hover:text-[#606060]"
   }" data-category="">Sve (${allCount})</button>`;
 
   categories.forEach((cat) => {
     const count = getCatCount(cat);
     if (count === 0) return;
     const isActive = activeCategoryTab === cat;
-    html += `<button class="category-tab whitespace-nowrap px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
+    html += `<button class="category-tab whitespace-nowrap px-4 py-1.5 text-sm font-medium transition-colors border-b-2 ${
       isActive
-        ? "bg-blue-600 text-white"
-        : "text-slate-400 hover:text-white hover:bg-slate-800"
+        ? "border-[#333] text-[#333] font-semibold"
+        : "border-transparent text-[#999] hover:text-[#606060]"
     }" data-category="${escapeHtml(cat)}">${escapeHtml(cat)} (${count})</button>`;
   });
 
@@ -217,7 +327,7 @@ function buildStoreFilters() {
         return `
                 <label for="${id}" class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg hover:bg-slate-50 cursor-pointer transition-colors group">
                     <input type="checkbox" id="${id}" data-store="${escapeHtml(store)}" checked
-                        class="w-4 h-4 rounded border-slate-300 text-blue-700 focus:ring-blue-500 cursor-pointer shrink-0">
+                        class="w-4 h-4 rounded border-slate-300 text-[#606060] focus:ring-[#606060] cursor-pointer shrink-0">
                     <span class="text-sm text-slate-700 group-hover:text-slate-900 truncate flex-1">${escapeHtml(store)}</span>
                     <span class="text-xs text-slate-400 bg-slate-100 px-1.5 py-0.5 rounded-full shrink-0">${count}</span>
                 </label>`;
@@ -278,7 +388,7 @@ function populateFooter() {
   footerLinks.innerHTML = stores
     .map(
       (store) =>
-        `<div class="flex items-center gap-1.5 text-sm text-slate-400 hover:text-slate-300 transition-colors">
+        `<div class="flex items-center gap-1.5 text-sm text-[#606060] hover:text-[#333] transition-colors">
             <ph-storefront class="text-xs shrink-0"></ph-storefront>
             <span class="truncate">${escapeHtml(store)}</span>
         </div>`,
@@ -392,14 +502,14 @@ function setViewMode(mode) {
   // Desktop buttons
   const btnD = document.getElementById("btnDiscountsOnly");
   const btnA = document.getElementById("btnAllProducts");
-  btnD.className = `flex-1 py-2 text-xs font-semibold transition-colors ${isDiscounts ? "bg-blue-700 text-white" : "bg-white text-slate-600 hover:bg-slate-50"}`;
-  btnA.className = `flex-1 py-2 text-xs font-semibold transition-colors ${!isDiscounts ? "bg-blue-700 text-white" : "bg-white text-slate-600 hover:bg-slate-50"}`;
+  btnD.className = `flex-1 py-2 text-xs font-semibold transition-colors ${isDiscounts ? "bg-[#606060] text-white" : "bg-white text-slate-600 hover:bg-slate-50"}`;
+  btnA.className = `flex-1 py-2 text-xs font-semibold transition-colors ${!isDiscounts ? "bg-[#606060] text-white" : "bg-white text-slate-600 hover:bg-slate-50"}`;
 
   // Mobile buttons
   const mBtnD = document.getElementById("mBtnDiscountsOnly");
   const mBtnA = document.getElementById("mBtnAllProducts");
-  mBtnD.className = `flex-1 py-2.5 text-sm font-semibold transition-colors ${isDiscounts ? "bg-blue-700 text-white" : "bg-white text-slate-600"}`;
-  mBtnA.className = `flex-1 py-2.5 text-sm font-semibold transition-colors ${!isDiscounts ? "bg-blue-700 text-white" : "bg-white text-slate-600"}`;
+  mBtnD.className = `flex-1 py-2.5 text-sm font-semibold transition-colors ${isDiscounts ? "bg-[#606060] text-white" : "bg-white text-slate-600"}`;
+  mBtnA.className = `flex-1 py-2.5 text-sm font-semibold transition-colors ${!isDiscounts ? "bg-[#606060] text-white" : "bg-white text-slate-600"}`;
 
   buildCategoryTabs();
   applyFiltersAndRender();
@@ -652,12 +762,7 @@ function createProductCard(product, index) {
     ? `<span class="absolute top-2 right-2 px-2.5 py-1 rounded-full text-xs font-bold text-white ${badgeColor}">-${product.discount_percent}%</span>`
     : "";
 
-  // Out of stock overlay
-  const outOfStockHtml = !product.in_stock
-    ? `<div class="absolute inset-0 bg-white/70 flex items-center justify-center z-10">
-               <span class="bg-slate-700 text-white text-xs font-semibold px-3 py-1.5 rounded-full">Nema na stanju</span>
-           </div>`
-    : "";
+  // Out of stock items are pre-filtered, no overlay needed
 
   // Category badge
   const categoryHtml = product.category
@@ -686,7 +791,6 @@ function createProductCard(product, index) {
         <div class="relative aspect-square bg-slate-50 overflow-hidden">
             ${imageHtml}
             ${badgeHtml}
-            ${outOfStockHtml}
         </div>
         <div class="p-4 flex-1 flex flex-col">
             <h3 class="text-sm font-semibold text-slate-900 line-clamp-2 mb-1" title="${escapeHtml(product.name)}">${escapeHtml(product.name)}</h3>
@@ -698,7 +802,7 @@ function createProductCard(product, index) {
         <div class="px-4 py-3 border-t border-slate-100 flex items-center justify-between">
             <span class="text-xs text-slate-400 truncate mr-2">${escapeHtml(product.store)}</span>
             <a href="${escapeHtml(product.product_url)}" target="_blank" rel="noopener noreferrer"
-                class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-700 hover:text-white hover:bg-blue-700 px-3 py-1.5 rounded-lg border border-blue-700 transition-colors shrink-0">
+                class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#606060] hover:text-white hover:bg-[#606060] px-3 py-1.5 rounded-lg border border-[#606060] transition-colors shrink-0">
                 Kupi <ph-arrow-right weight="bold" size="14"></ph-arrow-right>
             </a>
         </div>

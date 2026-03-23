@@ -25,13 +25,13 @@
       rel="canonical"
       href="https://bojandjb23.github.io/rs-supplement-deals/"
     />
-    <meta name="theme-color" content="#0f172a" />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -41,9 +41,8 @@
       tailwind.config = {
         theme: {
           extend: {
-            fontFamily: {
-              sans: ["Inter", "system-ui", "sans-serif"],
-            },
+            fontFamily: { sans: ["Montserrat", "sans-serif"] },
+            borderRadius: { DEFAULT: "0.35rem" },
           },
         },
       };
@@ -66,9 +65,13 @@
       }
     </script>
   </head>
-  <body class="bg-slate-50 font-sans text-slate-900 min-h-screen flex flex-col">
-    <!-- ===== HEADER (sticky, dark navy) ===== -->
-    <header class="sticky top-0 z-50 bg-slate-900 shadow-lg">
+  <body
+    class="bg-[#f0f0f0] font-sans text-slate-900 min-h-screen flex flex-col"
+  >
+    <!-- ===== HEADER (sticky, white/light) ===== -->
+    <header
+      class="sticky top-0 z-50 bg-white border-b border-[#d0d0d0] shadow-sm"
+    >
       <!-- Top bar -->
       <div
         class="max-w-[1600px] mx-auto px-4 sm:px-6 py-3 flex items-center gap-4"
@@ -77,38 +80,42 @@
         <a href="#" class="flex items-center gap-2 shrink-0">
           <ph-shopping-cart
             weight="bold"
-            class="text-blue-400 text-2xl"
+            class="text-[#606060] text-2xl"
           ></ph-shopping-cart>
-          <span class="text-white font-bold text-lg hidden sm:inline"
+          <span
+            class="text-[#333] font-extrabold tracking-tight text-lg hidden sm:inline"
             >RS Supplement Deals</span
           >
-          <span class="text-white font-bold text-lg sm:hidden">RSSD</span>
+          <span
+            class="text-[#333] font-extrabold tracking-tight text-lg sm:hidden"
+            >RSSD</span
+          >
         </a>
 
         <!-- Search bar -->
         <div class="flex-1 max-w-xl mx-auto relative">
           <ph-magnifying-glass
-            class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-lg pointer-events-none"
+            class="absolute left-3 top-1/2 -translate-y-1/2 text-[#999] text-lg pointer-events-none"
           ></ph-magnifying-glass>
           <input
             type="text"
             id="searchInput"
             placeholder="Pretrazi suplemente..."
             autocomplete="off"
-            class="w-full pl-10 pr-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors"
+            class="w-full pl-10 pr-4 py-2 bg-[#f5f5f5] border border-[#d0d0d0] rounded-lg text-sm text-[#333] placeholder-[#999] focus:outline-none focus:border-[#606060] focus:ring-1 focus:ring-[#606060] transition-colors"
           />
         </div>
 
         <!-- Compact stats -->
         <div class="hidden md:flex items-center gap-4 shrink-0 text-sm">
-          <span class="text-slate-400"
-            ><span class="text-white font-semibold" id="headerProductCount"
+          <span class="text-[#999]"
+            ><span class="text-[#333] font-semibold" id="headerProductCount"
               >0</span
             >
             proizvoda</span
           >
-          <span class="text-slate-400"
-            ><span class="text-emerald-400 font-semibold" id="headerSaleCount"
+          <span class="text-[#999]"
+            ><span class="text-[#333] font-semibold" id="headerSaleCount"
               >0</span
             >
             na akciji</span
@@ -117,7 +124,7 @@
       </div>
 
       <!-- Category tabs -->
-      <div class="border-t border-slate-800">
+      <div class="border-t border-[#d0d0d0]">
         <nav
           class="max-w-[1600px] mx-auto px-4 sm:px-6 overflow-x-auto scrollbar-hide"
           id="categoryTabsNav"
@@ -130,87 +137,71 @@
     </header>
 
     <!-- ===== STATS BAR ===== -->
-    <section class="bg-gradient-to-r from-slate-800 to-slate-900">
-      <div class="max-w-[1600px] mx-auto px-4 sm:px-6 py-4">
+    <section class="bg-white border-b border-[#d0d0d0] grid-pattern">
+      <div class="max-w-[1600px] mx-auto px-4 sm:px-6 py-4 relative z-10">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
           <!-- Stores -->
-          <div class="flex items-center gap-3 bg-white/5 rounded-xl px-4 py-3">
-            <div
-              class="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center shrink-0"
-            >
-              <ph-storefront
-                weight="duotone"
-                class="text-blue-400 text-xl"
-              ></ph-storefront>
-            </div>
+          <div class="flex items-center gap-3 px-4 py-3">
+            <ph-storefront
+              weight="duotone"
+              class="text-[#606060] text-2xl shrink-0"
+            ></ph-storefront>
             <div>
               <div
-                class="text-xl font-bold text-white"
+                class="text-xl font-bold text-[#333]"
                 data-count-target
                 id="statStores"
               >
                 0
               </div>
-              <div class="text-xs text-slate-400">Prodavnica</div>
+              <div class="text-xs text-[#999]">Prodavnica</div>
             </div>
           </div>
           <!-- Products -->
-          <div class="flex items-center gap-3 bg-white/5 rounded-xl px-4 py-3">
-            <div
-              class="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center shrink-0"
-            >
-              <ph-package
-                weight="duotone"
-                class="text-purple-400 text-xl"
-              ></ph-package>
-            </div>
+          <div class="flex items-center gap-3 px-4 py-3">
+            <ph-package
+              weight="duotone"
+              class="text-[#606060] text-2xl shrink-0"
+            ></ph-package>
             <div>
               <div
-                class="text-xl font-bold text-white"
+                class="text-xl font-bold text-[#333]"
                 data-count-target
                 id="statProducts"
               >
                 0
               </div>
-              <div class="text-xs text-slate-400">Proizvoda</div>
+              <div class="text-xs text-[#999]">Proizvoda</div>
             </div>
           </div>
           <!-- On Sale -->
-          <div class="flex items-center gap-3 bg-white/5 rounded-xl px-4 py-3">
-            <div
-              class="w-10 h-10 rounded-lg bg-emerald-500/20 flex items-center justify-center shrink-0"
-            >
-              <ph-tag
-                weight="duotone"
-                class="text-emerald-400 text-xl"
-              ></ph-tag>
-            </div>
+          <div class="flex items-center gap-3 px-4 py-3">
+            <ph-tag
+              weight="duotone"
+              class="text-[#606060] text-2xl shrink-0"
+            ></ph-tag>
             <div>
               <div
-                class="text-xl font-bold text-white"
+                class="text-xl font-bold text-[#333]"
                 data-count-target
                 id="statOnSale"
               >
                 0
               </div>
-              <div class="text-xs text-slate-400">Na popustu</div>
+              <div class="text-xs text-[#999]">Na popustu</div>
             </div>
           </div>
           <!-- Avg Discount -->
-          <div class="flex items-center gap-3 bg-white/5 rounded-xl px-4 py-3">
-            <div
-              class="w-10 h-10 rounded-lg bg-red-500/20 flex items-center justify-center shrink-0"
-            >
-              <ph-percent
-                weight="duotone"
-                class="text-red-400 text-xl"
-              ></ph-percent>
-            </div>
+          <div class="flex items-center gap-3 px-4 py-3">
+            <ph-percent
+              weight="duotone"
+              class="text-[#606060] text-2xl shrink-0"
+            ></ph-percent>
             <div>
-              <div class="text-xl font-bold text-white">
+              <div class="text-xl font-bold text-[#333]">
                 <span data-count-target id="statAvgDiscount">0</span>%
               </div>
-              <div class="text-xs text-slate-400">Prosecni popust</div>
+              <div class="text-xs text-[#999]">Prosecni popust</div>
             </div>
           </div>
         </div>
@@ -226,33 +217,31 @@
             <!-- Filters heading -->
             <div class="flex items-center justify-between">
               <h2
-                class="flex items-center gap-2 text-sm font-semibold text-slate-900"
+                class="flex items-center gap-2 text-xs font-semibold text-[#333] uppercase tracking-wider"
               >
                 <ph-funnel weight="bold" class="text-base"></ph-funnel>
                 Filteri
               </h2>
               <button
                 id="clearFiltersBtn"
-                class="text-xs text-blue-700 hover:text-blue-900 font-medium transition-colors hidden"
+                class="text-xs text-[#606060] hover:text-[#333] font-medium transition-colors hidden"
               >
                 Obrisi filtere
               </button>
             </div>
 
             <!-- View mode -->
-            <div
-              class="bg-white rounded-xl p-4 shadow-sm border border-slate-100"
-            >
+            <div class="bg-white rounded-md p-4 border border-[#d0d0d0]">
               <label
-                class="text-xs font-medium text-slate-500 uppercase tracking-wider mb-2 block"
+                class="text-xs font-semibold text-[#333] uppercase tracking-wider mb-2 block"
                 >Prikaz</label
               >
               <div
-                class="flex rounded-lg overflow-hidden border border-slate-200"
+                class="flex rounded-lg overflow-hidden border border-[#d0d0d0]"
               >
                 <button
                   id="btnDiscountsOnly"
-                  class="flex-1 py-2 text-xs font-semibold transition-colors bg-blue-700 text-white"
+                  class="flex-1 py-2 text-xs font-semibold transition-colors bg-[#606060] text-white"
                 >
                   Na popustu
                 </button>
@@ -266,11 +255,9 @@
             </div>
 
             <!-- Store filters -->
-            <div
-              class="bg-white rounded-xl p-4 shadow-sm border border-slate-100"
-            >
+            <div class="bg-white rounded-md p-4 border border-[#d0d0d0]">
               <label
-                class="text-xs font-medium text-slate-500 uppercase tracking-wider mb-3 block"
+                class="text-xs font-semibold text-[#333] uppercase tracking-wider mb-3 block"
                 >Prodavnice</label
               >
               <div
@@ -282,33 +269,29 @@
             </div>
 
             <!-- Category filter -->
-            <div
-              class="bg-white rounded-xl p-4 shadow-sm border border-slate-100"
-            >
+            <div class="bg-white rounded-md p-4 border border-[#d0d0d0]">
               <label
-                class="text-xs font-medium text-slate-500 uppercase tracking-wider mb-2 block"
+                class="text-xs font-semibold text-[#333] uppercase tracking-wider mb-2 block"
                 >Kategorija</label
               >
               <select
                 id="categoryFilter"
-                class="w-full px-3 py-2 text-sm bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 cursor-pointer"
+                class="w-full px-3 py-2 text-sm bg-[#f5f5f5] border border-[#d0d0d0] rounded-lg focus:outline-none focus:border-[#606060] focus:ring-1 focus:ring-[#606060] cursor-pointer"
               >
                 <option value="">Sve kategorije</option>
               </select>
             </div>
 
             <!-- Discount range -->
-            <div
-              class="bg-white rounded-xl p-4 shadow-sm border border-slate-100"
-            >
+            <div class="bg-white rounded-md p-4 border border-[#d0d0d0]">
               <div class="flex items-center justify-between mb-2">
                 <label
-                  class="text-xs font-medium text-slate-500 uppercase tracking-wider"
+                  class="text-xs font-semibold text-[#333] uppercase tracking-wider"
                   >Min popust</label
                 >
                 <span
                   id="discountRangeValue"
-                  class="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full"
+                  class="text-xs font-bold text-[#606060] bg-[#f0f0f0] px-2 py-0.5 rounded-full"
                   >0%</span
                 >
               </div>
@@ -319,21 +302,19 @@
                 max="80"
                 value="0"
                 step="5"
-                class="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-blue-700"
+                class="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#606060]"
               />
             </div>
 
             <!-- Sort -->
-            <div
-              class="bg-white rounded-xl p-4 shadow-sm border border-slate-100"
-            >
+            <div class="bg-white rounded-md p-4 border border-[#d0d0d0]">
               <label
-                class="text-xs font-medium text-slate-500 uppercase tracking-wider mb-2 block"
+                class="text-xs font-semibold text-[#333] uppercase tracking-wider mb-2 block"
                 >Sortiraj</label
               >
               <select
                 id="sortSelect"
-                class="w-full px-3 py-2 text-sm bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 cursor-pointer"
+                class="w-full px-3 py-2 text-sm bg-[#f5f5f5] border border-[#d0d0d0] rounded-lg focus:outline-none focus:border-[#606060] focus:ring-1 focus:ring-[#606060] cursor-pointer"
               >
                 <option value="discount_desc">Popust % (najveci)</option>
                 <option value="discount_asc">Popust % (najmanji)</option>
@@ -372,7 +353,7 @@
             <button
               id="loadMoreBtn"
               onclick="loadMore()"
-              class="inline-flex items-center gap-2 px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white text-sm font-semibold rounded-xl shadow-sm transition-colors"
+              class="inline-flex items-center gap-2 px-6 py-3 bg-[#606060] hover:bg-[#505050] text-white text-sm font-semibold rounded-xl shadow-sm transition-colors"
             >
               <ph-arrow-down weight="bold" class="text-base"></ph-arrow-down>
               Ucitaj jos proizvoda
@@ -395,7 +376,7 @@
           <!-- Loading -->
           <div id="loading" class="text-center py-16" style="display: none">
             <div
-              class="inline-block w-8 h-8 border-4 border-slate-200 border-t-blue-700 rounded-full animate-spin"
+              class="inline-block w-8 h-8 border-4 border-slate-200 border-t-[#606060] rounded-full animate-spin"
             ></div>
             <p class="text-slate-500 mt-3">Ucitavanje podataka...</p>
           </div>
@@ -406,7 +387,7 @@
     <!-- ===== MOBILE FILTER FAB ===== -->
     <button
       id="mobileFilterFab"
-      class="lg:hidden fixed bottom-6 right-6 z-40 w-14 h-14 bg-blue-700 hover:bg-blue-800 text-white rounded-full shadow-lg flex items-center justify-center transition-all active:scale-95"
+      class="lg:hidden fixed bottom-6 right-6 z-40 w-14 h-14 bg-[#606060] hover:bg-[#505050] text-white rounded-full shadow-lg flex items-center justify-center transition-all active:scale-95"
     >
       <ph-funnel weight="bold" class="text-2xl"></ph-funnel>
     </button>
@@ -418,13 +399,13 @@
     ></div>
     <div
       id="mobileFilterDrawer"
-      class="fixed top-0 right-0 z-50 w-[320px] max-w-[85vw] h-full bg-white shadow-2xl translate-x-full transition-transform duration-300 flex flex-col"
+      class="fixed top-0 right-0 z-50 w-[320px] max-w-[85vw] h-full bg-white border-l border-[#d0d0d0] shadow-2xl translate-x-full transition-transform duration-300 flex flex-col"
     >
       <!-- Drawer header -->
       <div
-        class="flex items-center justify-between px-5 py-4 border-b border-slate-100"
+        class="flex items-center justify-between px-5 py-4 border-b border-[#d0d0d0]"
       >
-        <h2 class="flex items-center gap-2 font-semibold text-slate-900">
+        <h2 class="flex items-center gap-2 font-semibold text-[#333]">
           <ph-funnel weight="bold"></ph-funnel>
           Filteri
         </h2>
@@ -432,7 +413,7 @@
           id="mobileFilterClose"
           class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-100 transition-colors"
         >
-          <ph-x weight="bold" class="text-lg text-slate-500"></ph-x>
+          <ph-x weight="bold" class="text-lg text-[#999]"></ph-x>
         </button>
       </div>
 
@@ -441,13 +422,13 @@
         <!-- View mode (mobile) -->
         <div>
           <label
-            class="text-xs font-medium text-slate-500 uppercase tracking-wider mb-2 block"
+            class="text-xs font-semibold text-[#333] uppercase tracking-wider mb-2 block"
             >Prikaz</label
           >
-          <div class="flex rounded-lg overflow-hidden border border-slate-200">
+          <div class="flex rounded-lg overflow-hidden border border-[#d0d0d0]">
             <button
               id="mBtnDiscountsOnly"
-              class="flex-1 py-2.5 text-sm font-semibold transition-colors bg-blue-700 text-white"
+              class="flex-1 py-2.5 text-sm font-semibold transition-colors bg-[#606060] text-white"
             >
               Na popustu
             </button>
@@ -463,7 +444,7 @@
         <!-- Store filters (mobile) -->
         <div>
           <label
-            class="text-xs font-medium text-slate-500 uppercase tracking-wider mb-3 block"
+            class="text-xs font-semibold text-[#333] uppercase tracking-wider mb-3 block"
             >Prodavnice</label
           >
           <div
@@ -477,12 +458,12 @@
         <!-- Category (mobile) -->
         <div>
           <label
-            class="text-xs font-medium text-slate-500 uppercase tracking-wider mb-2 block"
+            class="text-xs font-semibold text-[#333] uppercase tracking-wider mb-2 block"
             >Kategorija</label
           >
           <select
             id="mobileCategoryFilter"
-            class="w-full px-3 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:border-blue-500"
+            class="w-full px-3 py-2.5 text-sm bg-[#f5f5f5] border border-[#d0d0d0] rounded-lg focus:outline-none focus:border-[#606060]"
           >
             <option value="">Sve kategorije</option>
           </select>
@@ -492,12 +473,12 @@
         <div>
           <div class="flex items-center justify-between mb-2">
             <label
-              class="text-xs font-medium text-slate-500 uppercase tracking-wider"
+              class="text-xs font-semibold text-[#333] uppercase tracking-wider"
               >Min popust</label
             >
             <span
               id="mobileDiscountRangeValue"
-              class="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full"
+              class="text-xs font-bold text-[#606060] bg-[#f0f0f0] px-2 py-0.5 rounded-full"
               >0%</span
             >
           </div>
@@ -508,19 +489,19 @@
             max="80"
             value="0"
             step="5"
-            class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-blue-700"
+            class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#606060]"
           />
         </div>
 
         <!-- Sort (mobile) -->
         <div>
           <label
-            class="text-xs font-medium text-slate-500 uppercase tracking-wider mb-2 block"
+            class="text-xs font-semibold text-[#333] uppercase tracking-wider mb-2 block"
             >Sortiraj</label
           >
           <select
             id="mobileSortSelect"
-            class="w-full px-3 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:border-blue-500"
+            class="w-full px-3 py-2.5 text-sm bg-[#f5f5f5] border border-[#d0d0d0] rounded-lg focus:outline-none focus:border-[#606060]"
           >
             <option value="discount_desc">Popust % (najveci)</option>
             <option value="discount_asc">Popust % (najmanji)</option>
@@ -534,16 +515,16 @@
       </div>
 
       <!-- Drawer footer -->
-      <div class="px-5 py-4 border-t border-slate-100 space-y-2">
+      <div class="px-5 py-4 border-t border-[#d0d0d0] space-y-2">
         <button
           id="mobileFilterClear"
-          class="w-full py-2.5 text-sm font-medium text-slate-600 hover:text-slate-900 border border-slate-200 rounded-lg transition-colors"
+          class="w-full py-2.5 text-sm font-medium text-[#606060] hover:text-[#333] border border-[#d0d0d0] rounded-lg transition-colors"
         >
           Obrisi filtere
         </button>
         <button
           id="mobileFilterApply"
-          class="w-full py-2.5 text-sm font-semibold text-white bg-blue-700 hover:bg-blue-800 rounded-lg transition-colors"
+          class="w-full py-2.5 text-sm font-semibold text-white bg-[#606060] hover:bg-[#505050] rounded-lg transition-colors"
         >
           Primeni
         </button>
@@ -551,53 +532,62 @@
     </div>
 
     <!-- ===== FOOTER ===== -->
-    <footer class="bg-slate-900 text-slate-400 mt-auto">
-      <div class="max-w-[1600px] mx-auto px-4 sm:px-6 py-10">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Store links -->
-          <div>
-            <h3 class="text-white font-semibold text-sm mb-4">Prodavnice</h3>
-            <div class="grid grid-cols-2 gap-x-4 gap-y-2" id="footerStoreLinks">
-              <!-- Populated by JS -->
+    <footer class="relative mt-16">
+      <div class="bg-[#e5e5e5] rounded-t-3xl pt-12 pb-8 px-6">
+        <!-- Subtle gradient glow at top -->
+        <div
+          class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#999] to-transparent"
+        ></div>
+        <div class="max-w-6xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Store links -->
+            <div>
+              <h3 class="text-[#333] font-semibold text-sm mb-4">Prodavnice</h3>
+              <div
+                class="grid grid-cols-2 gap-x-4 gap-y-2"
+                id="footerStoreLinks"
+              >
+                <!-- Populated by JS -->
+              </div>
+            </div>
+            <!-- About -->
+            <div>
+              <h3 class="text-[#333] font-semibold text-sm mb-4">O sajtu</h3>
+              <p class="text-sm leading-relaxed text-[#606060]">
+                RS Supplement Deals prikuplja i poredi cene suplemenata iz
+                <span class="text-[#333] font-medium" id="footerStoreCount"
+                  >0</span
+                >
+                online prodavnica u Srbiji. Podaci se automatski azuriraju
+                svakih 6 sati.
+              </p>
+            </div>
+            <!-- Disclaimer -->
+            <div>
+              <h3 class="text-[#333] font-semibold text-sm mb-4">Napomena</h3>
+              <p class="text-xs leading-relaxed text-[#999]">
+                Cene i popusti se mogu promeniti. Proverite aktuelne cene na
+                sajtu prodavnice pre kupovine. Sajt nije povezan ni sa jednom od
+                navedenih prodavnica. Svi brendovi i nazivi proizvoda pripadaju
+                svojim vlasnicima.
+              </p>
             </div>
           </div>
-          <!-- About -->
-          <div>
-            <h3 class="text-white font-semibold text-sm mb-4">O sajtu</h3>
-            <p class="text-sm leading-relaxed">
-              RS Supplement Deals prikuplja i poredi cene suplemenata iz
-              <span class="text-white font-medium" id="footerStoreCount"
-                >0</span
-              >
-              online prodavnica u Srbiji. Podaci se automatski azuriraju svakih
-              6 sati.
+          <!-- Bottom bar -->
+          <div
+            class="mt-8 pt-6 border-t border-[#d0d0d0] flex flex-col sm:flex-row items-center justify-between gap-2"
+          >
+            <div class="flex items-center gap-2 text-sm">
+              <ph-shopping-cart
+                weight="bold"
+                class="text-[#606060]"
+              ></ph-shopping-cart>
+              <span class="text-[#333] font-semibold">RS Supplement Deals</span>
+            </div>
+            <p class="text-xs text-[#999]">
+              Automatski azurirano &middot; Podaci samo u informativne svrhe
             </p>
           </div>
-          <!-- Disclaimer -->
-          <div>
-            <h3 class="text-white font-semibold text-sm mb-4">Napomena</h3>
-            <p class="text-xs leading-relaxed text-slate-500">
-              Cene i popusti se mogu promeniti. Proverite aktuelne cene na sajtu
-              prodavnice pre kupovine. Sajt nije povezan ni sa jednom od
-              navedenih prodavnica. Svi brendovi i nazivi proizvoda pripadaju
-              svojim vlasnicima.
-            </p>
-          </div>
-        </div>
-        <!-- Bottom bar -->
-        <div
-          class="mt-8 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-2"
-        >
-          <div class="flex items-center gap-2 text-sm">
-            <ph-shopping-cart
-              weight="bold"
-              class="text-blue-400"
-            ></ph-shopping-cart>
-            <span class="text-white font-semibold">RS Supplement Deals</span>
-          </div>
-          <p class="text-xs text-slate-500">
-            Automatski azurirano &middot; Podaci samo u informativne svrhe
-          </p>
         </div>
       </div>
     </footer>

@@ -4,6 +4,21 @@
    Only animations, scrollbar, and edge cases here.
    ============================================ */
 
+/* ---- Grid pattern for stats bar ---- */
+.grid-pattern {
+  position: relative;
+}
+.grid-pattern::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  pointer-events: none;
+}
+
 /* ---- Card fade-in animation ---- */
 @keyframes fadeInUp {
   from {
@@ -50,12 +65,12 @@
 }
 
 .overflow-y-auto::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: #a0a0a0;
   border-radius: 9999px;
 }
 
 .overflow-y-auto::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: #808080;
 }
 
 /* ---- Range slider custom styling ---- */
@@ -65,7 +80,7 @@ input[type="range"]::-webkit-slider-thumb {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #1d4ed8;
+  background: #606060;
   cursor: pointer;
   border: 2px solid white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -75,7 +90,7 @@ input[type="range"]::-moz-range-thumb {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #1d4ed8;
+  background: #606060;
   cursor: pointer;
   border: 2px solid white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -91,7 +106,7 @@ input[type="range"]::-moz-range-thumb {
 
 /* ---- Checkbox styling consistency ---- */
 input[type="checkbox"] {
-  accent-color: #1d4ed8;
+  accent-color: #606060;
 }
 
 /* ---- Prevent layout shift on image load ---- */
