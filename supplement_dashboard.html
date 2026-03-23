@@ -6,13 +6,25 @@
     <title>Suplementi na Popustu u Srbiji | RS Supplement Deals</title>
     <meta
       name="description"
-      content="Svi suplementi na akciji iz 15 online prodavnica u Srbiji. Proteini, kreatin, vitamini - uporedi cene i ustedi."
+      content="Uporedi cene suplemenata na popustu iz 15 online prodavnica u Srbiji. Proteini, kreatin, vitamini i minerali, amino kiseline - sve na jednom mestu. Azurirano svaka 6 sata."
     />
     <meta name="robots" content="index, follow" />
     <meta property="og:title" content="Suplementi na Popustu u Srbiji" />
     <meta
       property="og:description"
-      content="Uporedi cene suplemenata iz 15 prodavnica u Srbiji. Proteini, kreatin, vitamini na popustu."
+      content="Jedno mesto za sve popuste na suplementima u Srbiji. 900+ proizvoda iz 15 prodavnica - proteini, kreatin, vitamini. Azurirano svaka 6 sata."
+    />
+    <meta
+      name="twitter:title"
+      content="Suplementi na Popustu u Srbiji | RS Supplement Deals"
+    />
+    <meta
+      name="twitter:description"
+      content="Uporedi cene suplemenata iz 15 prodavnica u Srbiji. Proteini, kreatin, vitamini na jednom mestu."
+    />
+    <meta
+      name="keywords"
+      content="suplementi popust srbija, proteini akcija, kreatin cena, vitamini popust, supplement deals serbia, suplementi online srbija"
     />
     <meta property="og:type" content="website" />
     <meta
@@ -54,14 +66,54 @@
     <!-- Custom styles (minimal - animations & scrollbar only) -->
     <link rel="stylesheet" href="assets/css/supplement-styles.css" />
 
-    <!-- Structured Data -->
+    <!-- Structured Data: WebSite -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "WebSite",
+        "@id": "https://bojandjb23.github.io/rs-supplement-deals/#website",
         "name": "RS Supplement Deals",
         "url": "https://bojandjb23.github.io/rs-supplement-deals/",
-        "description": "Agregirane cene suplemenata na popustu iz online prodavnica u Srbiji"
+        "description": "Jedno mesto za sve popuste na suplementima u Srbiji. Uporedi cene iz 15 online prodavnica.",
+        "inLanguage": "sr-Latn",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://bojandjb23.github.io/rs-supplement-deals/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+    <!-- Structured Data: FAQPage -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Koje prodavnice suplemenata su zastupljene?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "RS Supplement Deals prikuplja popuste iz 15 prodavnica: Supplement Store, GymBeam, FitLab, TitaniumSport, Proteini.si, Dobrobit, ExYu Fitness, LAMA, AMG Sport, Ogistra Nutrition, SuperProtein, Superior14, ATP Sport, Spartan Shop i X Sport."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Koliko cesto se cene azuriraju?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cene i popusti se automatski azuriraju svaka 6 sati. Podaci se prikupljaju direktno sa sajtova prodavnica kako bi bili sto aktuelniji."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kako da kupim proizvod?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kliknite na dugme 'Kupi' na kartici proizvoda i bicete preusmereni direktno na stranicu proizvoda u originalnoj prodavnici gde mozete obaviti kupovinu."
+            }
+          }
+        ]
       }
     </script>
   </head>
@@ -82,12 +134,14 @@
             weight="bold"
             class="text-[#606060] text-2xl"
           ></ph-shopping-cart>
-          <span
-            class="text-[#333] font-extrabold tracking-tight text-lg hidden sm:inline"
-            >RS Supplement Deals</span
+          <h1
+            class="text-[#333] font-extrabold tracking-tight text-lg hidden sm:inline m-0"
           >
+            RS Supplement Deals
+          </h1>
           <span
             class="text-[#333] font-extrabold tracking-tight text-lg sm:hidden"
+            aria-hidden="true"
             >RSSD</span
           >
         </a>
@@ -135,6 +189,17 @@
         </nav>
       </div>
     </header>
+
+    <!-- Hook: positioning statement (visible, SEO-friendly) -->
+    <div class="bg-white border-b border-[#e0e0e0]">
+      <p
+        class="max-w-[1600px] mx-auto px-4 sm:px-6 py-2 text-xs text-[#999] text-center"
+      >
+        Jedno mesto za sve popuste na suplementima u Srbiji —
+        <span id="headerStoreCount">15</span> prodavnica, ažurirano svakih 6
+        sati
+      </p>
+    </div>
 
     <!-- ===== STATS BAR ===== -->
     <section class="bg-white border-b border-[#d0d0d0] grid-pattern">
