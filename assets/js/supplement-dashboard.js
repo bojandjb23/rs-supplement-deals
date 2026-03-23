@@ -97,6 +97,19 @@ const NON_SUPPLEMENT_KEYWORDS = [
   "gym bag",
 ];
 
+// ---- Category Color Map ----
+const CATEGORY_COLORS = {
+  Proteini: "bg-blue-50 text-blue-700",
+  Kreatin: "bg-purple-50 text-purple-700",
+  "Amino kiseline": "bg-orange-50 text-orange-700",
+  "Vitamini i minerali": "bg-green-50 text-green-700",
+  Zdravlje: "bg-teal-50 text-teal-700",
+  Mršavljenje: "bg-pink-50 text-pink-700",
+  "Pre-Workout": "bg-red-50 text-red-700",
+  "Zdrava hrana": "bg-amber-50 text-amber-700",
+  Ostalo: "bg-slate-100 text-slate-500",
+};
+
 // ---- State ----
 let allProducts = [];
 let filteredProducts = [];
@@ -278,7 +291,7 @@ function buildCategoryTabs() {
 
   const allCount = getCatCount(null);
 
-  let html = `<button class="category-tab whitespace-nowrap px-4 py-1.5 text-sm font-medium transition-colors border-b-2 ${
+  let html = `<button class="category-tab whitespace-nowrap px-4 py-2.5 min-h-[44px] text-sm font-medium transition-colors border-b-2 ${
     activeCategoryTab === ""
       ? "border-[#333] text-[#333] font-semibold"
       : "border-transparent text-[#999] hover:text-[#606060]"
@@ -288,7 +301,7 @@ function buildCategoryTabs() {
     const count = getCatCount(cat);
     if (count === 0) return;
     const isActive = activeCategoryTab === cat;
-    html += `<button class="category-tab whitespace-nowrap px-4 py-1.5 text-sm font-medium transition-colors border-b-2 ${
+    html += `<button class="category-tab whitespace-nowrap px-4 py-2.5 min-h-[44px] text-sm font-medium transition-colors border-b-2 ${
       isActive
         ? "border-[#333] text-[#333] font-semibold"
         : "border-transparent text-[#999] hover:text-[#606060]"
@@ -590,6 +603,12 @@ function setupMobileDrawer() {
   fab.addEventListener("click", openDrawer);
   closeBtn.addEventListener("click", closeDrawer);
   backdrop.addEventListener("click", closeDrawer);
+
+  // Wire up mobile bottom nav filter button
+  const mobileNavFilterBtn = document.getElementById("mobileNavFilter");
+  if (mobileNavFilterBtn) {
+    mobileNavFilterBtn.addEventListener("click", openDrawer);
+  }
   applyBtn.addEventListener("click", () => {
     applyFiltersAndRender();
     closeDrawer();
@@ -715,8 +734,10 @@ function loadMore() {
 
   if (displayedCount < filteredProducts.length) {
     loadMoreContainer.style.display = "block";
-    document.getElementById("loadMoreBtn").innerHTML =
-      `<ph-arrow-down weight="bold" class="text-base"></ph-arrow-down> Ucitaj jos (${filteredProducts.length - displayedCount} preostalo)`;
+    const loadMoreBtn = document.getElementById("loadMoreBtn");
+    loadMoreBtn.innerHTML = `<ph-arrow-down weight="bold" class="text-base"></ph-arrow-down> Ucitaj jos (${filteredProducts.length - displayedCount} preostalo)`;
+    loadMoreBtn.className =
+      "inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold rounded-xl shadow-sm transition-colors";
   } else {
     loadMoreContainer.style.display = "none";
   }
@@ -765,14 +786,16 @@ function createProductCard(product, index) {
 
   // Discount badge
   const badgeHtml = hasDiscount
-    ? `<span class="absolute top-2 right-2 px-2.5 py-1 rounded-full text-xs font-bold text-white ${badgeColor}">-${product.discount_percent}%</span>`
+    ? `<span class="absolute top-2 right-2 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full text-xs sm:text-sm font-bold text-white ${badgeColor}">-${product.discount_percent}%</span>`
     : "";
 
   // Out of stock items are pre-filtered, no overlay needed
 
   // Category badge
+  const catColorClass =
+    CATEGORY_COLORS[product.category] || "bg-slate-100 text-slate-500";
   const categoryHtml = product.category
-    ? `<span class="text-[10px] px-2 py-0.5 bg-slate-100 text-slate-500 rounded-full w-fit mb-2">${escapeHtml(product.category)}</span>`
+    ? `<span class="text-[10px] px-2 py-0.5 ${catColorClass} rounded-full w-fit mb-2">${escapeHtml(product.category)}</span>`
     : "";
 
   // Price section
@@ -808,7 +831,7 @@ function createProductCard(product, index) {
         <div class="px-4 py-3 border-t border-slate-100 flex items-center justify-between">
             <span class="text-xs text-slate-400 truncate mr-2">${escapeHtml(product.store)}</span>
             <a href="${escapeHtml(trackedUrl)}" target="_blank" rel="noopener noreferrer"
-                class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#606060] hover:text-white hover:bg-[#606060] px-3 py-1.5 rounded-lg border border-[#606060] transition-colors shrink-0">
+                class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#606060] hover:text-white hover:bg-[#606060] px-3 py-1.5 min-h-[44px] rounded-lg border border-[#606060] transition-colors shrink-0">
                 Kupi <ph-arrow-right weight="bold" size="14"></ph-arrow-right>
             </a>
         </div>

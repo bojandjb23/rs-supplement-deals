@@ -9,10 +9,7 @@
       content="Vodiči, saveti i recenzije suplemenata. Naučite kako da izaberete prave proteine, kreatin, vitamine i druge suplemente."
     />
     <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://bojandjb23.github.io/rs-supplement-deals/blog/"
-    />
+    <link rel="canonical" href="https://suplementi.deals/blog/" />
     <meta
       property="og:title"
       content="Blog o suplementima | RS Supplement Deals"
@@ -22,10 +19,7 @@
       content="Vodiči, saveti i recenzije suplemenata. Naučite kako da izaberete prave proteine, kreatin, vitamine i druge suplemente."
     />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://bojandjb23.github.io/rs-supplement-deals/blog/"
-    />
+    <meta property="og:url" content="https://suplementi.deals/blog/" />
     <meta property="og:locale" content="sr_RS" />
 
     <!-- Fonts -->
@@ -53,7 +47,7 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
     <!-- Custom styles -->
-    <link rel="stylesheet" href="/rs-supplement-deals/assets/css/supplement-styles.css" />
+    <link rel="stylesheet" href="/assets/css/supplement-styles.css" />
   </head>
 
   <body class="bg-[#f0f0f0] font-sans text-[#333] min-h-screen flex flex-col">
@@ -65,10 +59,7 @@
         class="max-w-[1600px] mx-auto px-4 sm:px-6 py-3 flex items-center justify-between"
       >
         <!-- Logo -->
-        <a
-          href="/rs-supplement-deals/popusti/"
-          class="flex items-center gap-2 shrink-0"
-        >
+        <a href="/" class="flex items-center gap-2 shrink-0">
           <ph-shopping-cart
             weight="bold"
             class="text-[#606060] text-2xl"
@@ -87,19 +78,14 @@
         <!-- Navigation -->
         <nav class="flex items-center gap-6 text-sm font-medium">
           <a
-            href="/rs-supplement-deals/popusti/"
+            href="/popusti/"
             class="text-[#606060] hover:text-[#333] transition-colors"
             >Popusti</a
           >
           <a
-            href="./"
+            href="/blog/"
             class="text-[#333] font-semibold border-b-2 border-[#606060] pb-0.5"
             >Blog</a
-          >
-          <a
-            href="/rs-supplement-deals/popusti/#o-sajtu"
-            class="text-[#606060] hover:text-[#333] transition-colors"
-            >O sajtu</a
           >
         </nav>
       </div>
@@ -152,7 +138,7 @@
               </p>
               <a
                 href="najbolji-proteini-2026.html"
-                class="inline-flex items-center gap-1 text-sm font-semibold text-[#606060] hover:text-[#333] transition-colors"
+                class="inline-flex items-center gap-1 text-sm font-semibold text-[#606060] hover:text-[#333] transition-colors py-2"
               >
                 Citaj vise
                 <ph-arrow-right
@@ -190,7 +176,7 @@
               </p>
               <a
                 href="kreatin-vodic.html"
-                class="inline-flex items-center gap-1 text-sm font-semibold text-[#606060] hover:text-[#333] transition-colors"
+                class="inline-flex items-center gap-1 text-sm font-semibold text-[#606060] hover:text-[#333] transition-colors py-2"
               >
                 Citaj vise
                 <ph-arrow-right
@@ -220,8 +206,8 @@
             vitamini — sve na jednom mestu.
           </p>
           <a
-            href="/rs-supplement-deals/popusti/"
-            class="inline-flex items-center gap-2 bg-[#606060] text-white text-sm font-semibold px-6 py-2.5 rounded-md hover:bg-[#505050] transition-colors"
+            href="/popusti/"
+            class="inline-flex items-center gap-2 bg-emerald-600 text-white text-sm font-semibold px-6 py-2.5 min-h-[44px] rounded-md hover:bg-emerald-700 transition-colors"
           >
             <ph-magnifying-glass
               weight="bold"
@@ -234,7 +220,7 @@
     </main>
 
     <!-- ===== FOOTER ===== -->
-    <footer class="relative mt-auto">
+    <footer class="relative mt-auto pb-20 lg:pb-0">
       <div class="bg-[#e5e5e5] rounded-t-3xl pt-12 pb-8 px-6">
         <div
           class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#999] to-transparent"
@@ -247,14 +233,14 @@
               <ul class="space-y-2">
                 <li>
                   <a
-                    href="/rs-supplement-deals/popusti/"
+                    href="/popusti/"
                     class="text-sm text-[#606060] hover:text-[#333] transition-colors"
                     >Popusti na suplementima</a
                   >
                 </li>
                 <li>
                   <a
-                    href="./"
+                    href="/blog/"
                     class="text-sm text-[#606060] hover:text-[#333] transition-colors"
                     >Blog</a
                   >
@@ -298,5 +284,35 @@
         </div>
       </div>
     </footer>
+
+    <!-- ===== MOBILE BOTTOM NAV ===== -->
+    <nav
+      class="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-[#d0d0d0]"
+      style="padding-bottom: env(safe-area-inset-bottom)"
+    >
+      <div class="grid grid-cols-3 h-16">
+        <a
+          href="/"
+          class="flex flex-col items-center justify-center gap-0.5 text-[#999] hover:text-emerald-600 transition-colors"
+        >
+          <ph-house weight="bold" class="text-xl"></ph-house>
+          <span class="text-[10px] font-medium">Pocetna</span>
+        </a>
+        <a
+          href="/popusti/"
+          class="flex flex-col items-center justify-center gap-0.5 text-[#999] hover:text-emerald-600 transition-colors"
+        >
+          <ph-tag weight="bold" class="text-xl"></ph-tag>
+          <span class="text-[10px] font-medium">Popusti</span>
+        </a>
+        <a
+          href="/blog/"
+          class="flex flex-col items-center justify-center gap-0.5 text-emerald-600 transition-colors"
+        >
+          <ph-article weight="bold" class="text-xl"></ph-article>
+          <span class="text-[10px] font-medium">Blog</span>
+        </a>
+      </div>
+    </nav>
   </body>
 </html>

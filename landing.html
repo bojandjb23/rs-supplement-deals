@@ -22,10 +22,7 @@
       content="Jedno mesto za sve popuste na suplementima u Srbiji. 900+ proizvoda iz 15 prodavnica."
     />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://bojandjb23.github.io/rs-supplement-deals/"
-    />
+    <meta property="og:url" content="https://suplementi.deals/" />
     <meta property="og:locale" content="sr_RS" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
@@ -36,10 +33,7 @@
       name="twitter:description"
       content="Uporedi cene suplemenata iz 15 prodavnica u Srbiji. Proteini, kreatin, vitamini na jednom mestu."
     />
-    <link
-      rel="canonical"
-      href="https://bojandjb23.github.io/rs-supplement-deals/"
-    />
+    <link rel="canonical" href="https://suplementi.deals/" />
     <meta name="theme-color" content="#ffffff" />
 
     <!-- Fonts -->
@@ -74,14 +68,14 @@
       {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "@id": "https://bojandjb23.github.io/rs-supplement-deals/#website",
+        "@id": "https://suplementi.deals/#website",
         "name": "RS Supplement Deals",
-        "url": "https://bojandjb23.github.io/rs-supplement-deals/",
+        "url": "https://suplementi.deals/",
         "description": "Jedno mesto za sve popuste na suplementima u Srbiji. Uporedi cene iz 15 online prodavnica.",
         "inLanguage": "sr-Latn",
         "potentialAction": {
           "@type": "SearchAction",
-          "target": "https://bojandjb23.github.io/rs-supplement-deals/popusti/?q={search_term_string}",
+          "target": "https://suplementi.deals/popusti/?q={search_term_string}",
           "query-input": "required name=search_term_string"
         }
       }
@@ -147,10 +141,7 @@
         class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between"
       >
         <!-- Logo -->
-        <a
-          href="/rs-supplement-deals/"
-          class="flex items-center gap-2 shrink-0"
-        >
+        <a href="/" class="flex items-center gap-2 shrink-0">
           <ph-shopping-cart
             weight="bold"
             class="text-[#606060] text-2xl"
@@ -170,12 +161,12 @@
         <!-- Nav links -->
         <nav class="hidden md:flex items-center gap-6">
           <a
-            href="/rs-supplement-deals/popusti/"
+            href="/popusti/"
             class="text-sm font-medium text-[#606060] hover:text-[#333] transition-colors"
             >Popusti</a
           >
           <a
-            href="/rs-supplement-deals/blog/"
+            href="/blog/"
             class="text-sm font-medium text-[#606060] hover:text-[#333] transition-colors"
             >Blog</a
           >
@@ -188,8 +179,8 @@
 
         <!-- CTA button -->
         <a
-          href="/rs-supplement-deals/popusti/"
-          class="inline-flex items-center gap-1.5 px-5 py-2 bg-[#606060] hover:bg-[#505050] text-white text-sm font-semibold rounded-md transition-colors"
+          href="/popusti/"
+          class="inline-flex items-center gap-1.5 px-5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold rounded-md transition-colors"
         >
           Pogledaj popuste
           <ph-arrow-right weight="bold" class="text-sm"></ph-arrow-right>
@@ -200,18 +191,18 @@
       <div class="md:hidden border-t border-[#d0d0d0]">
         <nav class="flex items-center justify-center gap-6 py-2 px-4">
           <a
-            href="/rs-supplement-deals/popusti/"
-            class="text-xs font-medium text-[#606060] hover:text-[#333] transition-colors"
+            href="/popusti/"
+            class="text-xs font-medium text-[#606060] hover:text-[#333] transition-colors py-2"
             >Popusti</a
           >
           <a
-            href="/rs-supplement-deals/blog/"
-            class="text-xs font-medium text-[#606060] hover:text-[#333] transition-colors"
+            href="/blog/"
+            class="text-xs font-medium text-[#606060] hover:text-[#333] transition-colors py-2"
             >Blog</a
           >
           <a
             href="#o-sajtu"
-            class="text-xs font-medium text-[#606060] hover:text-[#333] transition-colors"
+            class="text-xs font-medium text-[#606060] hover:text-[#333] transition-colors py-2"
             >O sajtu</a
           >
         </nav>
@@ -219,7 +210,9 @@
     </header>
 
     <!-- ===== HERO SECTION ===== -->
-    <section class="bg-white border-b border-[#d0d0d0] grid-pattern">
+    <section
+      class="bg-gradient-to-b from-emerald-50/40 via-white to-[#f0f0f0] border-b border-[#d0d0d0] grid-pattern"
+    >
       <div
         class="max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-24 text-center relative z-10"
       >
@@ -250,7 +243,7 @@
           />
           <button
             type="submit"
-            class="px-6 py-3 bg-[#606060] hover:bg-[#505050] text-white font-semibold text-sm rounded-md transition-colors shrink-0"
+            class="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm rounded-md transition-colors shrink-0"
           >
             Prijavi se za nedeljni pregled
           </button>
@@ -289,7 +282,9 @@
     </section>
 
     <!-- ===== STATS BAR ===== -->
-    <section class="bg-[#f0f0f0] border-b border-[#d0d0d0]">
+    <section
+      class="bg-[#f0f0f0] border-b border-[#d0d0d0] shadow-[0_1px_3px_rgba(0,0,0,0.04)]"
+    >
       <div class="max-w-5xl mx-auto px-4 sm:px-6 py-8">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
           <!-- Stores -->
@@ -298,7 +293,7 @@
           >
             <ph-storefront
               weight="duotone"
-              class="text-[#606060] text-3xl shrink-0"
+              class="text-emerald-600 text-3xl shrink-0"
             ></ph-storefront>
             <div>
               <div class="text-2xl font-bold text-[#333]">15</div>
@@ -311,7 +306,7 @@
           >
             <ph-package
               weight="duotone"
-              class="text-[#606060] text-3xl shrink-0"
+              class="text-emerald-600 text-3xl shrink-0"
             ></ph-package>
             <div>
               <div class="text-2xl font-bold text-[#333]">900+</div>
@@ -324,7 +319,7 @@
           >
             <ph-tag
               weight="duotone"
-              class="text-[#606060] text-3xl shrink-0"
+              class="text-emerald-600 text-3xl shrink-0"
             ></ph-tag>
             <div>
               <div class="text-2xl font-bold text-[#333]">480+</div>
@@ -337,7 +332,7 @@
           >
             <ph-percent
               weight="duotone"
-              class="text-[#606060] text-3xl shrink-0"
+              class="text-emerald-600 text-3xl shrink-0"
             ></ph-percent>
             <div>
               <div class="text-2xl font-bold text-[#333]">~17%</div>
@@ -349,7 +344,9 @@
     </section>
 
     <!-- ===== HOW IT WORKS ===== -->
-    <section class="bg-white border-b border-[#d0d0d0] py-14 sm:py-20">
+    <section
+      class="bg-white border-b border-[#d0d0d0] shadow-[0_1px_3px_rgba(0,0,0,0.04)] py-14 sm:py-20"
+    >
       <div class="max-w-5xl mx-auto px-4 sm:px-6">
         <h2
           class="text-center text-2xl sm:text-3xl font-bold text-[#333] mb-12"
@@ -438,7 +435,9 @@
     </section>
 
     <!-- ===== FEATURED DEALS ===== -->
-    <section class="bg-[#f0f0f0] border-b border-[#d0d0d0] py-14 sm:py-20">
+    <section
+      class="bg-[#f0f0f0] border-b border-[#d0d0d0] shadow-[0_1px_3px_rgba(0,0,0,0.04)] py-14 sm:py-20"
+    >
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
         <h2 class="text-center text-2xl sm:text-3xl font-bold text-[#333] mb-3">
           Trenutni najbolji popusti
@@ -456,8 +455,8 @@
         <!-- CTA below cards -->
         <div class="text-center mt-10">
           <a
-            href="/rs-supplement-deals/popusti/"
-            class="inline-flex items-center gap-2 px-8 py-3.5 bg-[#606060] hover:bg-[#505050] text-white text-sm font-semibold rounded-md shadow-sm transition-colors"
+            href="/popusti/"
+            class="inline-flex items-center gap-2 px-8 py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold rounded-md shadow-sm transition-colors"
           >
             Pogledaj svih 480+ popusta
             <ph-arrow-right weight="bold" class="text-base"></ph-arrow-right>
@@ -467,7 +466,9 @@
     </section>
 
     <!-- ===== STORE TRUST SECTION ===== -->
-    <section class="bg-white border-b border-[#d0d0d0] py-14 sm:py-16">
+    <section
+      class="bg-white border-b border-[#d0d0d0] shadow-[0_1px_3px_rgba(0,0,0,0.04)] py-14 sm:py-16"
+    >
       <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
         <h2 class="text-2xl sm:text-3xl font-bold text-[#333] mb-3">
           Prodavnice koje pratimo
@@ -541,7 +542,9 @@
     </section>
 
     <!-- ===== BLOG PREVIEW ===== -->
-    <section class="bg-[#f0f0f0] border-b border-[#d0d0d0] py-14 sm:py-20">
+    <section
+      class="bg-[#f0f0f0] border-b border-[#d0d0d0] shadow-[0_1px_3px_rgba(0,0,0,0.04)] py-14 sm:py-20"
+    >
       <div class="max-w-5xl mx-auto px-4 sm:px-6">
         <h2 class="text-center text-2xl sm:text-3xl font-bold text-[#333] mb-3">
           Korisni vodiči
@@ -553,7 +556,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
           <!-- Blog card 1 -->
           <a
-            href="/rs-supplement-deals/blog/"
+            href="/blog/"
             class="bg-white rounded-md border border-[#d0d0d0] p-6 hover:shadow-md transition-shadow group block"
           >
             <div
@@ -582,7 +585,7 @@
 
           <!-- Blog card 2 -->
           <a
-            href="/rs-supplement-deals/blog/"
+            href="/blog/"
             class="bg-white rounded-md border border-[#d0d0d0] p-6 hover:shadow-md transition-shadow group block"
           >
             <div
@@ -611,7 +614,7 @@
 
           <!-- Blog card 3 -->
           <a
-            href="/rs-supplement-deals/blog/"
+            href="/blog/"
             class="bg-white rounded-md border border-[#d0d0d0] p-6 hover:shadow-md transition-shadow group block"
           >
             <div
@@ -644,7 +647,7 @@
 
     <!-- ===== FAQ SECTION ===== -->
     <section
-      class="bg-white border-b border-[#d0d0d0] py-14 sm:py-20"
+      class="bg-white border-b border-[#d0d0d0] shadow-[0_1px_3px_rgba(0,0,0,0.04)] py-14 sm:py-20"
       id="faqSection"
     >
       <div class="max-w-3xl mx-auto px-4 sm:px-6">
@@ -767,16 +770,18 @@
     </section>
 
     <!-- ===== SECOND EMAIL CTA ===== -->
-    <section class="bg-[#333] text-white py-14 sm:py-20">
+    <section
+      class="bg-gradient-to-r from-emerald-700 to-emerald-900 text-white py-14 sm:py-20"
+    >
       <div class="max-w-2xl mx-auto px-4 sm:px-6 text-center">
         <ph-envelope-simple
           weight="duotone"
-          class="text-5xl text-[#c0c0c0] mb-4 inline-block"
+          class="text-5xl text-emerald-200 mb-4 inline-block"
         ></ph-envelope-simple>
         <h2 class="text-2xl sm:text-3xl font-bold mb-3">
           Ne propusti nijedan popust
         </h2>
-        <p class="text-[#c0c0c0] text-sm mb-8 leading-relaxed">
+        <p class="text-emerald-100 text-sm mb-8 leading-relaxed">
           Svake nedelje šaljemo pregled najboljih ponuda direktno u tvoj inbox.
         </p>
         <form
@@ -793,19 +798,19 @@
           />
           <button
             type="submit"
-            class="px-6 py-3 bg-white text-[#333] font-semibold text-sm rounded-md hover:bg-[#f0f0f0] transition-colors shrink-0"
+            class="px-6 py-3 bg-white text-emerald-700 font-semibold text-sm rounded-md hover:bg-emerald-50 transition-colors shrink-0"
           >
             Prijavi se
           </button>
         </form>
-        <p class="text-[#999] text-[10px]">
+        <p class="text-emerald-200/60 text-[10px]">
           Bez spama. Odjavi se kad god želiš.
         </p>
       </div>
     </section>
 
     <!-- ===== FOOTER ===== -->
-    <footer class="relative" id="o-sajtu">
+    <footer class="relative pb-20 lg:pb-0" id="o-sajtu">
       <div class="bg-[#e5e5e5] rounded-t-3xl pt-12 pb-8 px-6">
         <div
           class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#999] to-transparent"
@@ -844,13 +849,13 @@
               </p>
               <div class="mt-4 flex gap-4">
                 <a
-                  href="/rs-supplement-deals/popusti/"
-                  class="text-xs font-medium text-[#333] hover:text-[#000] underline underline-offset-2"
+                  href="/popusti/"
+                  class="text-xs font-medium text-[#333] hover:text-[#000] underline underline-offset-2 py-2"
                   >Popusti</a
                 >
                 <a
-                  href="/rs-supplement-deals/blog/"
-                  class="text-xs font-medium text-[#333] hover:text-[#000] underline underline-offset-2"
+                  href="/blog/"
+                  class="text-xs font-medium text-[#333] hover:text-[#000] underline underline-offset-2 py-2"
                   >Blog</a
                 >
               </div>
@@ -891,7 +896,7 @@
             </p>
             <a
               href="mailto:bojandjb23@gmail.com?subject=RS%20Supplement%20Deals%20-%20Saradnja"
-              class="inline-block text-sm font-semibold text-[#333] hover:text-[#000] underline underline-offset-2"
+              class="inline-block text-sm font-semibold text-[#333] hover:text-[#000] underline underline-offset-2 py-2"
             >
               Kontaktirajte nas za partnerstvo &rarr;
             </a>
@@ -920,5 +925,41 @@
         }
       }
     </script>
+
+    <!-- ===== MOBILE BOTTOM NAVIGATION ===== -->
+    <nav
+      class="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-[#d0d0d0] safe-area-bottom"
+    >
+      <div class="grid grid-cols-4 h-16">
+        <a
+          href="/"
+          class="flex flex-col items-center justify-center gap-0.5 text-emerald-600 hover:text-emerald-600 transition-colors"
+        >
+          <ph-house weight="bold" class="text-xl"></ph-house>
+          <span class="text-[10px] font-medium">Pocetna</span>
+        </a>
+        <a
+          href="/popusti/"
+          class="flex flex-col items-center justify-center gap-0.5 text-[#999] hover:text-emerald-600 transition-colors"
+        >
+          <ph-tag weight="bold" class="text-xl"></ph-tag>
+          <span class="text-[10px] font-medium">Popusti</span>
+        </a>
+        <a
+          href="/blog/"
+          class="flex flex-col items-center justify-center gap-0.5 text-[#999] hover:text-emerald-600 transition-colors"
+        >
+          <ph-article weight="bold" class="text-xl"></ph-article>
+          <span class="text-[10px] font-medium">Blog</span>
+        </a>
+        <a
+          href="#o-sajtu"
+          class="flex flex-col items-center justify-center gap-0.5 text-[#999] hover:text-emerald-600 transition-colors"
+        >
+          <ph-info weight="bold" class="text-xl"></ph-info>
+          <span class="text-[10px] font-medium">O sajtu</span>
+        </a>
+      </div>
+    </nav>
   </body>
 </html>

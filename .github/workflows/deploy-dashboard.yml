@@ -111,13 +111,14 @@ jobs:
               pct = p.get('discount_percent', 0)
               price = p.get('discount_price') or p.get('original_price') or 0
               orig = p.get('original_price') or 0
-              url = p.get('product_url', '#')
-              utm_url = url + ('&' if '?' in url else '?') + 'utm_source=rssupplementdeals&utm_medium=referral&utm_campaign=featured'
+              url = html.escape(p.get('product_url', '#'))
+              utm_url = url + ('&amp;' if '?' in p.get('product_url', '#') else '?') + 'utm_source=rssupplementdeals&amp;utm_medium=referral&amp;utm_campaign=featured'
               cards_html += f'''
               <div class=\"bg-white rounded-md border border-[#d0d0d0] overflow-hidden hover:shadow-md transition-shadow flex flex-col\">
                 <div class=\"relative\">
                   <div class=\"aspect-square bg-[#f5f5f5] flex items-center justify-center overflow-hidden\">
-                    <img src=\"{img}\" alt=\"{name}\" loading=\"lazy\" class=\"w-full h-full object-contain p-2\" onerror=\"this.parentElement.innerHTML='<ph-package weight=duotone class=text-5xl text-[#d0d0d0]></ph-package>'\">
+                    <img src=\"{img}\" alt=\"{name}\" loading=\"lazy\" class=\"w-full h-full object-contain p-2\" onerror=\"this.style.display='none';this.nextElementSibling.style.display='flex';\">
+                    <div class=\"absolute inset-0 items-center justify-center text-[#d0d0d0]\" style=\"display:none;\"><ph-package weight=\"duotone\" class=\"text-5xl\"></ph-package></div>
                   </div>
                   <span class=\"absolute top-2 left-2 bg-red-600 text-white text-[10px] font-bold px-2 py-0.5 rounded\">-{pct}%</span>
                 </div>
@@ -128,7 +129,7 @@ jobs:
                     <span class=\"text-sm font-bold text-[#333]\">{int(price):,} RSD</span>
                     <span class=\"text-[10px] text-[#999] line-through\">{int(orig):,} RSD</span>
                   </div>
-                  <a href=\"{utm_url}\" target=\"_blank\" rel=\"noopener\" class=\"w-full block text-center py-1.5 bg-[#606060] text-white text-xs font-semibold rounded hover:bg-[#505050] transition-colors\">Kupi</a>
+                  <a href=\"{utm_url}\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"w-full block text-center py-1.5 bg-[#606060] text-white text-xs font-semibold rounded hover:bg-[#505050] transition-colors\">Kupi</a>
                 </div>
               </div>'''
 
@@ -146,6 +147,7 @@ jobs:
           cp -r assets _site/assets
           cp robots.txt _site/robots.txt 2>/dev/null || true
           cp sitemap.xml _site/sitemap.xml 2>/dev/null || true
+          cp vercel.json _site/vercel.json 2>/dev/null || true
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -158,3 +160,17 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      # Vercel deployment (optional): requires VERCEL_TOKEN, VERCEL_ORG_ID,
+      # and VERCEL_PROJECT_ID to be configured as GitHub repo secrets.
+      # The step is skipped gracefully if the secrets are not set.
+      - name: Deploy to Vercel
+        if: env.VERCEL_TOKEN != ''
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: |
+          npm install -g vercel
+          cd _site
+          vercel deploy --prod --yes --token=$VERCEL_TOKEN

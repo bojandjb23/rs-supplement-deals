@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bojandjb23.github.io/rs-supplement-deals/sitemap.xml
+Sitemap: https://suplementi.deals/sitemap.xml
