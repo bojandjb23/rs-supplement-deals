@@ -1,78 +1,59 @@
-"""Scraper for titaniumsport.rs - Ćuprija-based supplement store (likely WooCommerce)."""
+"""Scraper for titaniumsport.rs - WooCommerce (XStore theme) supplement store."""
 
 import re
+import logging
 from typing import List, Optional, Dict, Any
 from bs4 import BeautifulSoup, Tag
 
 from .base_store import BaseStoreScraper
 
+logger = logging.getLogger(__name__)
+
 
 class TitaniumSportScraper(BaseStoreScraper):
     STORE_NAME = "TitaniumSport"
     BASE_URL = "https://www.titaniumsport.rs"
-    MAX_PAGES = 30
+    MAX_PAGES = 10
 
-    CATEGORY_URLS = [
-        "/kategorija-proizvoda/suplementi/",
-        "/kategorija-proizvoda/proteini/",
-        "/kategorija-proizvoda/kreatin/",
-        "/kategorija-proizvoda/amino-kiseline/",
-        "/kategorija-proizvoda/vitamini/",
-        "/kategorija-proizvoda/spalivaci-masti/",
-    ]
+    SALE_URL = "/product-category/akcije/"
 
     def get_page_urls(self) -> List[str]:
-        """Build paginated URLs for each category."""
+        """Discover paginated URLs from the akcije (sale) category."""
         urls = []
-        for cat_path in self.CATEGORY_URLS:
-            cat_url = f"{self.BASE_URL}{cat_path}"
-            soup = self.fetch_page(cat_url)
-            if not soup:
-                urls.append(cat_url)
-                continue
+        first_url = f"{self.BASE_URL}{self.SALE_URL}"
+        soup = self.fetch_page(first_url)
+        if not soup:
+            return [first_url]
 
-            max_page = 1
-            pagination = soup.select('.page-numbers a, .woocommerce-pagination a')
-            for link in pagination:
-                text = link.get_text(strip=True)
-                href = link.get('href', '')
-                if text.isdigit():
-                    max_page = max(max_page, int(text))
-                else:
-                    match = re.search(r'/page/(\d+)', href)
-                    if match:
-                        max_page = max(max_page, int(match.group(1)))
+        # Find max page from pagination links
+        max_page = 1
+        pagination = soup.select('.page-numbers a, .woocommerce-pagination a, a.page-numbers')
+        for link in pagination:
+            text = link.get_text(strip=True)
+            href = link.get('href', '')
+            if text.isdigit():
+                max_page = max(max_page, int(text))
+            else:
+                match = re.search(r'/page/(\d+)', href)
+                if match:
+                    max_page = max(max_page, int(match.group(1)))
 
-            max_page = min(max_page, self.MAX_PAGES)
-            for page in range(1, max_page + 1):
-                if page == 1:
-                    urls.append(cat_url)
-                else:
-                    urls.append(f"{cat_url}page/{page}/")
+        max_page = min(max_page, self.MAX_PAGES)
+        for page in range(1, max_page + 1):
+            if page == 1:
+                urls.append(first_url)
+            else:
+                urls.append(f"{first_url}page/{page}/")
 
         return urls
 
-    def _category_from_url(self, url: str) -> str:
-        mapping = {
-            'proteini': 'Proteini',
-            'kreatin': 'Kreatin',
-            'amino-kiseline': 'Amino kiseline',
-            'vitamini': 'Vitamini',
-            'spalivaci-masti': 'Spalivači masti',
-            'suplementi': 'Suplementi',
-        }
-        for key, value in mapping.items():
-            if key in url:
-                return value
-        return ""
-
     def get_product_cards(self, soup: BeautifulSoup) -> List[Tag]:
+        """Extract product cards from WooCommerce listing."""
         selectors = [
             'li.product',
             '.products .product',
-            '.product-item',
-            'ul.products li',
-            '.product-card',
+            'ul.products > li',
+            '.product-grid .product',
         ]
         for selector in selectors:
             cards = soup.select(selector)
@@ -81,75 +62,81 @@ class TitaniumSportScraper(BaseStoreScraper):
         return []
 
     def parse_product_card(self, card: Tag) -> Optional[Dict[str, Any]]:
-        """Parse a WooCommerce product card."""
+        """Parse a WooCommerce/XStore product card from the akcije page."""
+        # Product name: look for WooCommerce title, h2, or first meaningful link text
+        name = ""
         name_el = card.select_one(
-            '.woocommerce-loop-product__title, h2, h3, .product-title'
+            '.woocommerce-loop-product__title, '
+            'h2.product-title, h2, h3, '
+            '.product-title'
         )
-        name = self._find_text(name_el)
+        if name_el:
+            name = self._find_text(name_el)
+
+        # If no name from heading, try the first link with product URL
+        if not name:
+            for a in card.select('a[href]'):
+                href = a.get('href', '')
+                if '/proizvod/' in href:
+                    text = self._find_text(a)
+                    if text and len(text) > 2:
+                        name = text
+                        break
+
         if not name:
             return None
 
-        link = card.select_one('a.woocommerce-LoopProduct-link, a[href]')
-        product_url = self._find_attr(link, 'href')
+        # Product URL: first link containing /proizvod/
+        product_url = ""
+        for a in card.select('a[href]'):
+            href = a.get('href', '')
+            if '/proizvod/' in href:
+                product_url = href
+                break
+        if not product_url:
+            link = card.select_one('a[href]')
+            product_url = self._find_attr(link, 'href')
+
+        # Image URL
         image_url = self._find_image_url(card)
 
+        # Prices: WooCommerce uses del (original) and ins (sale)
         original_price = None
         discount_price = None
 
-        del_el = card.select_one('del .woocommerce-Price-amount, del')
-        ins_el = card.select_one('ins .woocommerce-Price-amount, ins')
+        del_el = card.select_one('del')
+        ins_el = card.select_one('ins')
 
         if del_el and ins_el:
-            original_price = self.parse_price(self._find_text(del_el))
-            discount_price = self.parse_price(self._find_text(ins_el))
+            # Get the first Price-amount inside del and ins for clean text
+            del_amount = del_el.select_one('.woocommerce-Price-amount')
+            ins_amount = ins_el.select_one('.woocommerce-Price-amount')
+            original_price = self.parse_price(
+                self._find_text(del_amount) if del_amount else self._find_text(del_el)
+            )
+            discount_price = self.parse_price(
+                self._find_text(ins_amount) if ins_amount else self._find_text(ins_el)
+            )
         else:
-            price_el = card.select_one('.price .woocommerce-Price-amount, .price, .amount')
-            if price_el:
-                original_price = self.parse_price(self._find_text(price_el))
+            # No del/ins: try first individual Price-amount span
+            price_amount = card.select_one('.woocommerce-Price-amount')
+            if price_amount:
+                original_price = self.parse_price(self._find_text(price_amount))
 
-        category = ""
-        cat_el = card.select_one('.product-category, .category')
-        if cat_el:
-            category = self._find_text(cat_el)
-
-        in_stock = 'outofstock' not in ' '.join(card.get('class', []))
+        # Stock status
+        classes = ' '.join(card.get('class', []))
+        in_stock = 'outofstock' not in classes
+        # Also check for "Nema na zalihama" text
+        stock_text = card.get_text()
+        if 'Nema na zalihama' in stock_text:
+            in_stock = False
 
         return self.make_product(
             name=name,
-            category=category,
+            category="Akcije",
             image_url=image_url,
             original_price=original_price,
             discount_price=discount_price,
             product_url=product_url,
             in_stock=in_stock,
         )
-
-    def scrape_all(self) -> List[Dict[str, Any]]:
-        """Override to inject category from URL."""
-        self.products = []
-        urls = self.get_page_urls()
-        if not urls:
-            return self.products
-
-        from tqdm import tqdm
-        import logging
-        logger = logging.getLogger(__name__)
-
-        for url in tqdm(urls, desc=f"Scraping {self.STORE_NAME}", unit="page"):
-            soup = self.fetch_page(url)
-            if not soup:
-                continue
-            category = self._category_from_url(url)
-            cards = self.get_product_cards(soup)
-            for card in cards:
-                try:
-                    product = self.parse_product_card(card)
-                    if product and product.get("name"):
-                        if not product["category"] and category:
-                            product["category"] = category
-                        self.products.append(product)
-                except Exception as e:
-                    logger.warning(f"[{self.STORE_NAME}] Parse error: {e}")
-
-        logger.info(f"[{self.STORE_NAME}] Scraped {len(self.products)} products")
-        return self.products

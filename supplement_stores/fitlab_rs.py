@@ -1,143 +1,187 @@
-"""Scraper for fitlab.rs - Niš-based supplement store (likely WooCommerce)."""
+"""Scraper for fitlab.rs - Nis-based supplement store (Next.js with RSC streaming).
+
+Product data is NOT in traditional HTML elements. Instead, it is embedded as JSON
+within React Server Component (RSC) streaming data inside self.__next_f.push() calls.
+
+The sale page (/sr/akcija) contains an 'initialProducts' array in one of these push
+calls. Each product has: id, name, slug, price, salePrice, discount, image, category,
+brandName, isOnSale, inStock, etc.
+
+Product URLs follow the pattern: https://fitlab.rs/sr/proizvodi/{slug}
+Image URLs are relative paths starting with /products/...
+"""
 
 import re
+import json
+import logging
 from typing import List, Optional, Dict, Any
 from bs4 import BeautifulSoup, Tag
 
 from .base_store import BaseStoreScraper
 
+logger = logging.getLogger(__name__)
+
 
 class FitLabScraper(BaseStoreScraper):
     STORE_NAME = "FitLab"
     BASE_URL = "https://fitlab.rs"
-    MAX_PAGES = 30
-
-    CATEGORY_URLS = [
-        "/product-category/proteini/",
-        "/product-category/kreatin/",
-        "/product-category/amino-kiseline/",
-        "/product-category/vitamini-i-minerali/",
-        "/product-category/pre-workout/",
-        "/product-category/snekovi-i-napici/",
-        "/product-category/za-mrsavljenje/",
-        "/product-category/zdravlje/",
-    ]
+    SALE_URL = "https://fitlab.rs/sr/akcija"
 
     def get_page_urls(self) -> List[str]:
-        """Build paginated URLs for each category."""
-        urls = []
-        for cat_path in self.CATEGORY_URLS:
-            cat_url = f"{self.BASE_URL}{cat_path}"
-            soup = self.fetch_page(cat_url)
-            if not soup:
-                urls.append(cat_url)
-                continue
+        """Return the single sale page URL.
 
-            max_page = 1
-            pagination = soup.select('.page-numbers a, .woocommerce-pagination a, .pagination a')
-            for link in pagination:
-                text = link.get_text(strip=True)
-                href = link.get('href', '')
-                if text.isdigit():
-                    max_page = max(max_page, int(text))
-                else:
-                    match = re.search(r'/page/(\d+)', href)
-                    if match:
-                        max_page = max(max_page, int(match.group(1)))
-
-            max_page = min(max_page, self.MAX_PAGES)
-            for page in range(1, max_page + 1):
-                if page == 1:
-                    urls.append(cat_url)
-                else:
-                    urls.append(f"{cat_url}page/{page}/")
-
-        return urls
-
-    def _extract_category_from_url(self, url: str) -> str:
-        """Extract category name from URL path."""
-        category_map = {
-            'proteini': 'Proteini',
-            'kreatin': 'Kreatin',
-            'amino-kiseline': 'Amino kiseline',
-            'vitamini-i-minerali': 'Vitamini i minerali',
-            'pre-workout': 'Pre-workout',
-            'snekovi-i-napici': 'Snekovi i napici',
-            'za-mrsavljenje': 'Za mršavljenje',
-            'zdravlje': 'Zdravlje',
-        }
-        for key, value in category_map.items():
-            if key in url:
-                return value
-        return ""
+        All products are loaded at once via RSC streaming - no pagination needed.
+        """
+        return [self.SALE_URL]
 
     def get_product_cards(self, soup: BeautifulSoup) -> List[Tag]:
-        """Extract WooCommerce product cards."""
-        selectors = [
-            'li.product',
-            '.products .product',
-            '.product-item',
-            '.product-card',
-            'ul.products li',
-            '.shop-product',
-        ]
-        for selector in selectors:
-            cards = soup.select(selector)
-            if cards:
-                return cards
+        """Not used - products come from JSON, not HTML cards.
+
+        Returns empty list; scrape_all() is overridden to handle JSON extraction.
+        """
         return []
 
     def parse_product_card(self, card: Tag) -> Optional[Dict[str, Any]]:
-        """Parse a WooCommerce product card from FitLab."""
-        # Name
-        name_el = card.select_one(
-            '.woocommerce-loop-product__title, h2.woocommerce-loop-product__title, '
-            'h2, h3, .product-title, .product-name'
-        )
-        name = self._find_text(name_el)
-        if not name:
-            link = card.select_one('a.woocommerce-LoopProduct-link, a[href]')
-            if link:
-                name = link.get('title', '') or self._find_text(link)
+        """Not used - products come from JSON, not HTML cards."""
+        return None
+
+    def _extract_products_from_rsc(self, html: str) -> List[Dict[str, Any]]:
+        """Extract product data from Next.js RSC streaming data.
+
+        The HTML contains script tags with self.__next_f.push([1, "RSC_DATA"])
+        calls. One of these contains an 'initialProducts' key with a JSON array
+        of product objects.
+
+        In the raw HTML, quotes inside the push string are escaped as \"
+        which Python reads as \\". We find the push call containing initialProducts,
+        extract its string content, unescape it, then parse the JSON array.
+
+        Returns a list of raw product dicts from the JSON.
+        """
+        # Search for 'initialProducts' (without surrounding quotes, since
+        # the actual HTML has escaped quotes like \\"initialProducts\\")
+        idx = html.find("initialProducts")
+        if idx == -1:
+            logger.warning(f"[{self.STORE_NAME}] Could not find initialProducts in HTML")
+            return []
+
+        # Find the enclosing self.__next_f.push([1,"..."]) call
+        push_marker = 'self.__next_f.push([1,"'
+        push_start = html.rfind(push_marker, max(0, idx - 5000))
+        if push_start == -1:
+            logger.warning(f"[{self.STORE_NAME}] Could not find push call for initialProducts")
+            return []
+
+        # Content starts after the opening quote of the push string
+        content_start = push_start + len(push_marker)
+
+        # The push call ends with "]) before </script>
+        # Find </script> after the push_start
+        script_end = html.find("</script>", push_start)
+        if script_end == -1:
+            logger.warning(f"[{self.STORE_NAME}] Could not find </script> after push call")
+            return []
+
+        # The string content ends just before the closing "])
+        # which appears right before </script>
+        content_end = html.rfind('"])', content_start, script_end + 1)
+        if content_end == -1:
+            logger.warning(f"[{self.STORE_NAME}] Could not find end of push call string")
+            return []
+
+        raw_string = html[content_start:content_end]
+
+        # Unescape: the push string has \" for quotes and \\\\ for backslashes
+        # In Python's string representation: \\" -> " and \\\\\\\\ -> \\
+        unescaped = raw_string.replace('\\"', '"').replace('\\\\', '\\')
+
+        # Find the initialProducts JSON array in the unescaped content
+        prod_idx = unescaped.find('"initialProducts":')
+        if prod_idx == -1:
+            logger.warning(f"[{self.STORE_NAME}] Could not find initialProducts key after unescaping")
+            return []
+
+        array_start = unescaped.find("[{", prod_idx)
+        if array_start == -1:
+            logger.warning(f"[{self.STORE_NAME}] Could not find product array start")
+            return []
+
+        # Find the matching closing bracket by counting depth
+        depth = 0
+        end_pos = array_start
+        for j in range(array_start, len(unescaped)):
+            if unescaped[j] == "[":
+                depth += 1
+            elif unescaped[j] == "]":
+                depth -= 1
+                if depth == 0:
+                    end_pos = j
+                    break
+
+        products_json = unescaped[array_start : end_pos + 1]
+
+        try:
+            products = json.loads(products_json)
+            logger.info(f"[{self.STORE_NAME}] Extracted {len(products)} products from RSC data")
+            return products
+        except json.JSONDecodeError as e:
+            logger.error(f"[{self.STORE_NAME}] Failed to parse products JSON: {e}")
+            return []
+
+    def _product_from_json(self, item: Dict[str, Any]) -> Optional[Dict[str, Any]]:
+        """Convert a raw FitLab product JSON object to a standardized product dict.
+
+        Expected fields:
+          - id: int
+          - name: str
+          - slug: str
+          - price: int (original price in RSD)
+          - salePrice: int or "$undefined" (discounted price)
+          - discount: str like "-30%" or "$undefined"
+          - image: str (relative path like /products/2023/01/...)
+          - category: str
+          - brandName: str
+          - isOnSale: bool
+          - inStock: bool
+        """
+        name = item.get("name", "")
         if not name:
             return None
 
-        # URL
-        link = card.select_one('a.woocommerce-LoopProduct-link, a[href]')
-        product_url = self._find_attr(link, 'href')
+        slug = item.get("slug", "")
+        product_url = f"{self.BASE_URL}/sr/proizvodi/{slug}" if slug else ""
 
-        # Image
-        image_url = self._find_image_url(card)
+        # Image URL - relative, needs base URL prepended
+        image_path = item.get("image", "")
+        image_url = f"{self.BASE_URL}{image_path}" if image_path else ""
 
-        # Prices (WooCommerce del/ins pattern)
+        # Prices
         original_price = None
         discount_price = None
 
-        del_el = card.select_one('del .woocommerce-Price-amount, del .amount, del')
-        ins_el = card.select_one('ins .woocommerce-Price-amount, ins .amount, ins')
+        price_val = item.get("price")
+        if isinstance(price_val, (int, float)):
+            original_price = float(price_val)
 
-        if del_el and ins_el:
-            original_price = self.parse_price(self._find_text(del_el))
-            discount_price = self.parse_price(self._find_text(ins_el))
-        else:
-            price_el = card.select_one(
-                '.price .woocommerce-Price-amount, .price .amount, '
-                '.price, span.price'
-            )
-            if price_el:
-                original_price = self.parse_price(self._find_text(price_el))
+        sale_val = item.get("salePrice")
+        if isinstance(sale_val, (int, float)):
+            discount_price = float(sale_val)
+        # "$undefined" or None means no sale price
 
-        # Category from the page URL context (set by scrape_all override or from card)
-        category = ""
-        cat_el = card.select_one('.product-category, .posted_in a')
-        if cat_el:
-            category = self._find_text(cat_el)
+        # Category
+        category = item.get("category", "")
+        if not category or category == "Akcija":
+            # Try to get more specific category from categorySlugs
+            slugs = item.get("categorySlugs", [])
+            for s in slugs:
+                if s != "akcija":
+                    category = s.replace("-", " ").title()
+                    break
+            if not category:
+                category = "Akcija"
 
-        # Stock
-        in_stock = 'outofstock' not in card.get('class', [])
-
-        # Sale badge
-        sale_badge = card.select_one('.onsale, .sale-badge')
+        # Stock status
+        in_stock = item.get("inStock", True)
 
         return self.make_product(
             name=name,
@@ -150,34 +194,38 @@ class FitLabScraper(BaseStoreScraper):
         )
 
     def scrape_all(self) -> List[Dict[str, Any]]:
-        """Override to inject category from URL context."""
-        self.products = []
-        urls = self.get_page_urls()
+        """Override base scrape_all to extract products from Next.js RSC JSON data.
 
-        if not urls:
+        Instead of parsing HTML cards, we:
+        1. Fetch the sale page HTML
+        2. Extract the initialProducts JSON from RSC streaming data
+        3. Convert each product JSON object to our standardized format
+        """
+        self.products = []
+
+        logger.info(f"[{self.STORE_NAME}] Fetching sale page: {self.SALE_URL}")
+
+        # We need the raw HTML, not BeautifulSoup - fetch directly
+        self._rate_limit()
+        try:
+            response = self.session.get(self.SALE_URL, timeout=30)
+            response.raise_for_status()
+            html = response.text
+        except Exception as e:
+            logger.error(f"[{self.STORE_NAME}] Failed to fetch {self.SALE_URL}: {e}")
             return self.products
 
-        from tqdm import tqdm
-        import logging
-        logger = logging.getLogger(__name__)
+        raw_products = self._extract_products_from_rsc(html)
 
-        for url in tqdm(urls, desc=f"Scraping {self.STORE_NAME}", unit="page"):
-            soup = self.fetch_page(url)
-            if not soup:
-                continue
-
-            category = self._extract_category_from_url(url)
-            cards = self.get_product_cards(soup)
-
-            for card in cards:
-                try:
-                    product = self.parse_product_card(card)
-                    if product and product.get("name"):
-                        if not product["category"] and category:
-                            product["category"] = category
-                        self.products.append(product)
-                except Exception as e:
-                    logger.warning(f"[{self.STORE_NAME}] Failed to parse product card: {e}")
+        for item in raw_products:
+            try:
+                product = self._product_from_json(item)
+                if product and product.get("name"):
+                    self.products.append(product)
+            except Exception as e:
+                logger.warning(
+                    f"[{self.STORE_NAME}] Failed to parse product: {e}"
+                )
 
         logger.info(f"[{self.STORE_NAME}] Scraped {len(self.products)} products")
         return self.products
