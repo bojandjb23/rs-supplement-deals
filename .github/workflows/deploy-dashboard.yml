@@ -82,8 +82,64 @@ jobs:
           with open('_site/popusti/index.html', 'w') as f:
               f.write(output)
           "
-          # Copy landing page as homepage
-          cp landing.html _site/index.html
+          # Generate landing page with real featured deals
+          python -c "
+          import json, os, html
+
+          data_path = 'data/supplements.json'
+          products = []
+          total_products = 0
+          total_discounted = 0
+          if os.path.exists(data_path):
+              with open(data_path, 'r') as f:
+                  d = json.load(f)
+              products = d.get('products', [])
+              total_products = len(products)
+              # Filter: in-stock + has discount + has image
+              deals = [p for p in products if p.get('in_stock', True) and p.get('discount_percent', 0) >= 20 and p.get('image_url')]
+              deals.sort(key=lambda x: x.get('discount_percent', 0), reverse=True)
+              top6 = deals[:6]
+              total_discounted = len([p for p in products if p.get('discount_percent', 0) > 0 and p.get('in_stock', True)])
+          else:
+              top6 = []
+
+          cards_html = ''
+          for p in top6:
+              name = html.escape(p.get('name', '')[:40])
+              store = html.escape(p.get('store', ''))
+              img = html.escape(p.get('image_url', ''))
+              pct = p.get('discount_percent', 0)
+              price = p.get('discount_price') or p.get('original_price') or 0
+              orig = p.get('original_price') or 0
+              url = p.get('product_url', '#')
+              utm_url = url + ('&' if '?' in url else '?') + 'utm_source=rssupplementdeals&utm_medium=referral&utm_campaign=featured'
+              cards_html += f'''
+              <div class=\"bg-white rounded-md border border-[#d0d0d0] overflow-hidden hover:shadow-md transition-shadow flex flex-col\">
+                <div class=\"relative\">
+                  <div class=\"aspect-square bg-[#f5f5f5] flex items-center justify-center overflow-hidden\">
+                    <img src=\"{img}\" alt=\"{name}\" loading=\"lazy\" class=\"w-full h-full object-contain p-2\" onerror=\"this.parentElement.innerHTML='<ph-package weight=duotone class=text-5xl text-[#d0d0d0]></ph-package>'\">
+                  </div>
+                  <span class=\"absolute top-2 left-2 bg-red-600 text-white text-[10px] font-bold px-2 py-0.5 rounded\">-{pct}%</span>
+                </div>
+                <div class=\"p-3 flex flex-col flex-1\">
+                  <p class=\"text-[10px] text-[#999] mb-1\">{store}</p>
+                  <h3 class=\"text-xs font-semibold text-[#333] line-clamp-2 mb-2 flex-1\">{name}</h3>
+                  <div class=\"flex items-baseline gap-1.5 mb-2\">
+                    <span class=\"text-sm font-bold text-[#333]\">{int(price):,} RSD</span>
+                    <span class=\"text-[10px] text-[#999] line-through\">{int(orig):,} RSD</span>
+                  </div>
+                  <a href=\"{utm_url}\" target=\"_blank\" rel=\"noopener\" class=\"w-full block text-center py-1.5 bg-[#606060] text-white text-xs font-semibold rounded hover:bg-[#505050] transition-colors\">Kupi</a>
+                </div>
+              </div>'''
+
+          with open('landing.html', 'r') as f:
+              landing = f.read()
+          landing = landing.replace('<!-- __FEATURED_DEALS_PLACEHOLDER__ -->', cards_html)
+          landing = landing.replace('480+ popusta', f'{total_discounted}+ popusta')
+          landing = landing.replace('900+ proizvoda', f'{total_products}+ proizvoda')
+          with open('_site/index.html', 'w') as f:
+              f.write(landing)
+          "
           # Copy blog pages
           cp blog/*.html _site/blog/ 2>/dev/null || true
           # Copy assets and static files
