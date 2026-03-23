@@ -29,13 +29,13 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://bojandjb23.github.io/rs-supplement-deals/"
+      content="https://bojandjb23.github.io/rs-supplement-deals/popusti/"
     />
     <meta property="og:locale" content="sr_RS" />
     <meta name="twitter:card" content="summary_large_image" />
     <link
       rel="canonical"
-      href="https://bojandjb23.github.io/rs-supplement-deals/"
+      href="https://bojandjb23.github.io/rs-supplement-deals/popusti/"
     />
     <meta name="theme-color" content="#ffffff" />
 
@@ -64,7 +64,10 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
     <!-- Custom styles (minimal - animations & scrollbar only) -->
-    <link rel="stylesheet" href="assets/css/supplement-styles.css" />
+    <link
+      rel="stylesheet"
+      href="/rs-supplement-deals/assets/css/supplement-styles.css"
+    />
 
     <!-- Structured Data: WebSite -->
     <script type="application/ld+json">
@@ -78,7 +81,7 @@
         "inLanguage": "sr-Latn",
         "potentialAction": {
           "@type": "SearchAction",
-          "target": "https://bojandjb23.github.io/rs-supplement-deals/?q={search_term_string}",
+          "target": "https://bojandjb23.github.io/rs-supplement-deals/popusti/?q={search_term_string}",
           "query-input": "required name=search_term_string"
         }
       }
@@ -124,28 +127,41 @@
     <header
       class="sticky top-0 z-50 bg-white border-b border-[#d0d0d0] shadow-sm"
     >
+      <!-- Nav bar -->
+      <div class="border-b border-[#e0e0e0]">
+        <div
+          class="max-w-[1600px] mx-auto px-4 sm:px-6 py-2 flex items-center gap-6"
+        >
+          <a
+            href="/rs-supplement-deals/"
+            class="flex items-center gap-2 shrink-0"
+          >
+            <ph-shopping-cart
+              weight="bold"
+              class="text-[#606060] text-lg"
+            ></ph-shopping-cart>
+            <span class="text-[#333] font-bold text-sm"
+              >RS Supplement Deals</span
+            >
+          </a>
+          <nav class="flex items-center gap-4 text-sm">
+            <a
+              href="/rs-supplement-deals/popusti/"
+              class="text-[#333] font-semibold border-b-2 border-[#606060] pb-0.5"
+              >Popusti</a
+            >
+            <a
+              href="/rs-supplement-deals/blog/"
+              class="text-[#999] hover:text-[#333] transition-colors"
+              >Blog</a
+            >
+          </nav>
+        </div>
+      </div>
       <!-- Top bar -->
       <div
         class="max-w-[1600px] mx-auto px-4 sm:px-6 py-3 flex items-center gap-4"
       >
-        <!-- Logo -->
-        <a href="#" class="flex items-center gap-2 shrink-0">
-          <ph-shopping-cart
-            weight="bold"
-            class="text-[#606060] text-2xl"
-          ></ph-shopping-cart>
-          <h1
-            class="text-[#333] font-extrabold tracking-tight text-lg hidden sm:inline m-0"
-          >
-            RS Supplement Deals
-          </h1>
-          <span
-            class="text-[#333] font-extrabold tracking-tight text-lg sm:hidden"
-            aria-hidden="true"
-            >RSSD</span
-          >
-        </a>
-
         <!-- Search bar -->
         <div class="flex-1 max-w-xl mx-auto relative">
           <ph-magnifying-glass
@@ -273,109 +289,12 @@
       </div>
     </section>
 
-    <!-- ===== NEWSLETTER SIGNUP ===== -->
-    <section class="bg-[#333] text-white py-8 sm:py-10">
-      <div class="max-w-2xl mx-auto px-4 text-center">
-        <ph-envelope-simple
-          weight="duotone"
-          class="text-4xl text-[#c0c0c0] mb-3 inline-block"
-        ></ph-envelope-simple>
-        <h2 class="text-xl sm:text-2xl font-bold mb-2">
-          Nedeljni pregled popusta
-        </h2>
-        <p class="text-[#c0c0c0] text-sm mb-5">
-          Svake nedelje u tvoj inbox — najbolji popusti na suplemente iz svih
-          prodavnica u Srbiji. Besplatno.
-        </p>
-        <form
-          action="https://formspree.io/f/placeholder"
-          method="POST"
-          class="flex flex-col sm:flex-row gap-2 max-w-md mx-auto"
-          id="newsletterForm"
-        >
-          <input
-            type="email"
-            name="email"
-            required
-            placeholder="tvoj@email.com"
-            class="flex-1 px-4 py-2.5 rounded-md bg-white/10 border border-white/20 text-white placeholder-white/50 text-sm focus:outline-none focus:border-white/50 transition-colors"
-          />
-          <button
-            type="submit"
-            class="px-6 py-2.5 bg-white text-[#333] font-semibold text-sm rounded-md hover:bg-[#f0f0f0] transition-colors shrink-0"
-          >
-            Prijavi se
-          </button>
-        </form>
-        <p class="text-[#999] text-[10px] mt-3">
-          Bez spama. Odjavi se kad god zelis.
-        </p>
-      </div>
-    </section>
-
-    <!-- ===== HOW IT WORKS ===== -->
-    <section class="bg-white border-b border-[#d0d0d0] py-8">
-      <div class="max-w-4xl mx-auto px-4">
-        <h2 class="text-center text-lg font-bold text-[#333] mb-6">
-          Kako funkcionise
-        </h2>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
-          <div class="flex flex-col items-center gap-2">
-            <div
-              class="w-10 h-10 rounded-full bg-[#f0f0f0] flex items-center justify-center"
-            >
-              <ph-magnifying-glass
-                class="text-[#606060] text-xl"
-              ></ph-magnifying-glass>
-            </div>
-            <h3 class="text-sm font-semibold text-[#333]">
-              1. Prikupljamo podatke
-            </h3>
-            <p class="text-xs text-[#999]">
-              Automatski skeniramo 15 prodavnica suplemenata u Srbiji svakih 6
-              sati i pronalazimo sve proizvode na popustu.
-            </p>
-          </div>
-          <div class="flex flex-col items-center gap-2">
-            <div
-              class="w-10 h-10 rounded-full bg-[#f0f0f0] flex items-center justify-center"
-            >
-              <ph-funnel class="text-[#606060] text-xl"></ph-funnel>
-            </div>
-            <h3 class="text-sm font-semibold text-[#333]">
-              2. Filtriraj i uporedi
-            </h3>
-            <p class="text-xs text-[#999]">
-              Pretrazi po kategoriji, prodavnici, procentu popusta ili imenu.
-              Sve na jednom mestu — bez otvaranja 15 sajtova.
-            </p>
-          </div>
-          <div class="flex flex-col items-center gap-2">
-            <div
-              class="w-10 h-10 rounded-full bg-[#f0f0f0] flex items-center justify-center"
-            >
-              <ph-shopping-cart
-                class="text-[#606060] text-xl"
-              ></ph-shopping-cart>
-            </div>
-            <h3 class="text-sm font-semibold text-[#333]">
-              3. Kupi po najboljoj ceni
-            </h3>
-            <p class="text-xs text-[#999]">
-              Klikni "Kupi" i bices preusmeren direktno na stranicu proizvoda u
-              originalnoj prodavnici. Kupujes kao i uvek.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- ===== MAIN CONTENT ===== -->
     <div class="flex-1 max-w-[1600px] mx-auto w-full px-4 sm:px-6 py-6">
       <div class="flex gap-6">
         <!-- ===== SIDEBAR (desktop only) ===== -->
         <aside class="hidden lg:block w-[280px] shrink-0">
-          <div class="sticky top-[120px] space-y-5">
+          <div class="sticky top-[155px] space-y-5">
             <!-- Filters heading -->
             <div class="flex items-center justify-between">
               <h2
@@ -878,6 +797,6 @@
       /* __SUPPLEMENT_DATA_PLACEHOLDER__ */
     </script>
 
-    <script src="assets/js/supplement-dashboard.js"></script>
+    <script src="/rs-supplement-deals/assets/js/supplement-dashboard.js"></script>
   </body>
 </html>

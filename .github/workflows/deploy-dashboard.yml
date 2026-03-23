@@ -44,7 +44,8 @@ jobs:
 
       - name: Prepare deployment directory
         run: |
-          mkdir -p _site
+          mkdir -p _site/popusti _site/blog
+          # Generate dashboard with embedded data
           python -c "
           import json, os
 
@@ -53,7 +54,6 @@ jobs:
               with open(data_path, 'r') as f:
                   data = json.load(f)
           else:
-              # Fallback: empty but valid data so dashboard renders
               from datetime import datetime
               data = {
                   'scraped_at': datetime.now().isoformat(),
@@ -79,12 +79,17 @@ jobs:
               template = f.read()
           json_str = json.dumps(data, ensure_ascii=False)
           output = template.replace('/* __SUPPLEMENT_DATA_PLACEHOLDER__ */', json_str)
-          with open('_site/index.html', 'w') as f:
+          with open('_site/popusti/index.html', 'w') as f:
               f.write(output)
           "
+          # Copy landing page as homepage
+          cp landing.html _site/index.html
+          # Copy blog pages
+          cp blog/*.html _site/blog/ 2>/dev/null || true
           # Copy assets and static files
           cp -r assets _site/assets
           cp robots.txt _site/robots.txt 2>/dev/null || true
+          cp sitemap.xml _site/sitemap.xml 2>/dev/null || true
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
