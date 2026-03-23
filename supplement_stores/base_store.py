@@ -63,7 +63,7 @@ class BaseStoreScraper(ABC):
                 self._rate_limit()
                 response = self.session.get(url, timeout=30)
                 response.raise_for_status()
-                return BeautifulSoup(response.content, "html.parser")
+                return BeautifulSoup(response.content, "lxml")
             except requests.RequestException as e:
                 wait = 2 ** attempt
                 logger.warning(

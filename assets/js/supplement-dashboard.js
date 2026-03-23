@@ -56,6 +56,20 @@ function loadData() {
             `Poslednje azuriranje: ${formatDate(date)}`;
     }
 
+    // Show info if no products scraped yet
+    if (allProducts.length === 0) {
+        const grid = document.getElementById('productGrid');
+        grid.innerHTML = `<div class="no-results" style="display:block;grid-column:1/-1;padding:3rem 1rem;text-align:center;">
+            <h2 style="margin-bottom:1rem;color:#1d1d1f;">Dashboard se ucitava...</h2>
+            <p style="color:#86868b;font-size:1rem;">Podaci se prikupljaju sa srpskih online prodavnica suplemenata.</p>
+            <p style="color:#86868b;font-size:0.9rem;margin-top:0.5rem;">Dashboard se automatski azurira svakih 6 sati.</p>
+            ${storeData.stores_failed && storeData.stores_failed.length > 0
+                ? '<p style="color:#c62828;font-size:0.85rem;margin-top:1rem;">Neke prodavnice trenutno nisu dostupne. Sledece azuriranje ce pokusati ponovo.</p>'
+                : ''}
+        </div>`;
+        return;
+    }
+
     // Build dynamic filters
     buildStoreFilters();
     buildCategoryFilter();
