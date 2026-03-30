@@ -174,11 +174,21 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-      # Vercel deployment (optional): requires VERCEL_TOKEN, VERCEL_ORG_ID,
+      # Vercel deployment: requires VERCEL_TOKEN, VERCEL_ORG_ID,
       # and VERCEL_PROJECT_ID to be configured as GitHub repo secrets.
-      # The step is skipped gracefully if the secrets are not set.
+      - name: Check Vercel secrets
+        id: vercel_check
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          if [ -n "$VERCEL_TOKEN" ]; then
+            echo "configured=true" >> $GITHUB_OUTPUT
+          else
+            echo "configured=false" >> $GITHUB_OUTPUT
+          fi
+
       - name: Deploy to Vercel
-        if: env.VERCEL_TOKEN != ''
+        if: steps.vercel_check.outputs.configured == 'true'
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
@@ -186,4 +196,4 @@ jobs:
         run: |
           npm install -g vercel
           cd _site
-          vercel deploy --prod --yes --token=$VERCEL_TOKEN
+          vercel deploy --prod --prebuilt --yes --token=$VERCEL_TOKEN

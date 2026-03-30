@@ -1,4 +1,7 @@
 {
+  "buildCommand": "bash scripts/vercel-build.sh",
+  "outputDirectory": "_site",
+  "installCommand": "pip install -r requirements.txt",
   "headers": [
     {
       "source": "/(.*)",
