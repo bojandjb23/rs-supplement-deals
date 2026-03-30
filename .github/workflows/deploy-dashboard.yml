@@ -45,6 +45,8 @@ jobs:
         run: python supplement_scraper.py --no-dashboard
 
       - name: Prepare deployment directory
+        env:
+          GA4_MEASUREMENT_ID: ${{ secrets.GA4_MEASUREMENT_ID }}
         run: |
           mkdir -p _site/popusti _site/blog
           # Generate dashboard with embedded data
@@ -147,6 +149,16 @@ jobs:
           cp blog/*.html _site/blog/ 2>/dev/null || true
           # Copy assets and static files
           cp -r assets _site/assets
+          # Copy analytics dashboard
+          mkdir -p _site/analytics
+          cp analytics/index.html _site/analytics/index.html 2>/dev/null || true
+          # Inject GA4 Measurement ID (set GA4_MEASUREMENT_ID as a repo secret)
+          if [ -n "$GA4_MEASUREMENT_ID" ]; then
+            find _site -name "*.html" -exec sed -i "s/content=\"G-XXXXXXXXXX\"/content=\"$GA4_MEASUREMENT_ID\"/g" {} +
+            echo "GA4 ID injected: $GA4_MEASUREMENT_ID"
+          else
+            echo "GA4_MEASUREMENT_ID not set — analytics will use placeholder (inactive)"
+          fi
           cp robots.txt _site/robots.txt 2>/dev/null || true
           cp sitemap.xml _site/sitemap.xml 2>/dev/null || true
           cp vercel.json _site/vercel.json 2>/dev/null || true

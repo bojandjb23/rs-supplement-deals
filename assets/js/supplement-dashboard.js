@@ -769,6 +769,25 @@ const CLICK_STORAGE_KEY = "rssd_clicks";
 const CLICK_MAX_ENTRIES = 5000;
 
 function trackClick(product) {
+  const discountPct = product.discount_percent || 0;
+
+  // Fire GA4 / Plausible affiliate_click event
+  if (window.rssd && window.rssd.trackEvent) {
+    window.rssd.trackEvent("affiliate_click", {
+      store: product.store,
+      product_name: product.name,
+      product_id: product.id || "",
+      discount_pct: discountPct,
+      destination_url: product.product_url,
+    });
+    // Mark the link so the generic outbound handler in analytics.js skips it
+    const buyLink = document.activeElement;
+    if (buyLink && buyLink.tagName === "A") {
+      buyLink.dataset.analyticsTracked = "1";
+    }
+  }
+
+  // Persist to localStorage for the on-site analytics dashboard
   try {
     const entry = {
       ts: Date.now(),
@@ -777,7 +796,7 @@ function trackClick(product) {
       productId: product.id,
       productName: product.name,
       url: product.product_url,
-      discountPct: product.discount_percent || 0,
+      discountPct: discountPct,
     };
     const raw = localStorage.getItem(CLICK_STORAGE_KEY);
     const clicks = raw ? JSON.parse(raw) : [];
@@ -980,6 +999,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const subs = JSON.parse(localStorage.getItem("rssd_subscribers") || "[]");
       if (!subs.includes(email)) subs.push(email);
       localStorage.setItem("rssd_subscribers", JSON.stringify(subs));
+      // Track signup event
+      if (window.rssd && window.rssd.trackEvent) {
+        window.rssd.trackEvent("newsletter_signup", { page: "popusti" });
+      }
       // Show success
       form.innerHTML =
         '<p class="text-white/80 text-sm py-2">Hvala! Uskoro ces primiti prvi pregled popusta.</p>';
