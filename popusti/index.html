@@ -3,24 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Suplementi na Popustu u Srbiji | RS Supplement Deals</title>
+    <title>Popusti na Suplementima u Srbiji — Uporedi Cene | RS Supplement Deals</title>
     <meta
       name="description"
-      content="Uporedi cene suplemenata na popustu iz 15 online prodavnica u Srbiji. Proteini, kreatin, vitamini i minerali, amino kiseline - sve na jednom mestu. Azurirano svaka 6 sata."
+      content="Pronađi najbolje popuste na proteine, kreatin, vitamine i pre-workout iz 15 srpskih prodavnica. Ažurirano svakih 6 sati."
     />
     <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="Suplementi na Popustu u Srbiji" />
+    <meta property="og:title" content="Popusti na Suplementima u Srbiji — Uporedi Cene | RS Supplement Deals" />
     <meta
       property="og:description"
-      content="Jedno mesto za sve popuste na suplementima u Srbiji. 900+ proizvoda iz 15 prodavnica - proteini, kreatin, vitamini. Azurirano svaka 6 sata."
+      content="Pronađi najbolje popuste na proteine, kreatin, vitamine i pre-workout iz 15 srpskih prodavnica. Ažurirano svakih 6 sati."
     />
     <meta
       name="twitter:title"
-      content="Suplementi na Popustu u Srbiji | RS Supplement Deals"
+      content="Popusti na Suplementima u Srbiji — Uporedi Cene | RS Supplement Deals"
     />
     <meta
       name="twitter:description"
-      content="Uporedi cene suplemenata iz 15 prodavnica u Srbiji. Proteini, kreatin, vitamini na jednom mestu."
+      content="Pronađi najbolje popuste na proteine, kreatin, vitamine i pre-workout iz 15 srpskih prodavnica. Ažurirano svakih 6 sati."
     />
     <meta
       name="keywords"
@@ -119,6 +119,28 @@
         ]
       }
     </script>
+
+    <!-- Structured Data: BreadcrumbList -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Početna",
+            "item": "https://suplementi.deals/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Popusti",
+            "item": "https://suplementi.deals/popusti/"
+          }
+        ]
+      }
+    </script>
   </head>
   <body
     class="bg-[#f0f0f0] font-sans text-slate-900 min-h-screen flex flex-col"
@@ -206,13 +228,11 @@
 
     <!-- Hook: positioning statement (visible, SEO-friendly) -->
     <div class="bg-white border-b border-[#e0e0e0]">
-      <p
-        class="max-w-[1600px] mx-auto px-4 sm:px-6 py-2 text-xs text-[#999] text-center"
+      <h1
+        class="max-w-[1600px] mx-auto px-4 sm:px-6 py-2 text-xs text-[#999] text-center font-normal"
       >
-        Jedno mesto za sve popuste na suplementima u Srbiji —
-        <span id="headerStoreCount">15</span> prodavnica, ažurirano svakih 6
-        sati
-      </p>
+        Popusti na suplementima — <span id="headerStoreCount">15</span> prodavnica, ažurirano svakih 6 sati
+      </h1>
     </div>
 
     <!-- ===== STATS BAR ===== -->
@@ -806,6 +826,54 @@
     </script>
 
     <script src="/assets/js/supplement-dashboard.js"></script>
+
+    <!-- Structured Data: Product schemas for top discounted products -->
+    <script>
+      (function () {
+        try {
+          var dataEl = document.getElementById("supplementsData");
+          if (!dataEl) return;
+          var raw = dataEl.textContent.trim();
+          if (!raw || raw.indexOf("{") !== 0) return;
+          var data = JSON.parse(raw);
+          var products = (data.products || []).filter(function (p) {
+            return p.in_stock !== false && (p.discount_percent || 0) > 0 && p.discount_price;
+          });
+          products.sort(function (a, b) {
+            return (b.discount_percent || 0) - (a.discount_percent || 0);
+          });
+          var top = products.slice(0, 20);
+          var scrapeDate = data.scraped_at ? data.scraped_at.split("T")[0] : new Date().toISOString().split("T")[0];
+          var validUntil = new Date(new Date(scrapeDate).getTime() + 7 * 24 * 60 * 60 * 1000).toISOString().split("T")[0];
+          top.forEach(function (p) {
+            var schema = {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": p.name,
+              "description": p.name + " na popustu u Srbiji. Pronađi best cenu iz " + p.store + ".",
+              "offers": {
+                "@type": "Offer",
+                "url": p.product_url,
+                "priceCurrency": "RSD",
+                "price": String(p.discount_price),
+                "priceValidUntil": validUntil,
+                "availability": "https://schema.org/InStock",
+                "seller": {
+                  "@type": "Organization",
+                  "name": p.store,
+                  "url": p.store_url || ""
+                }
+              }
+            };
+            if (p.image_url) schema.image = p.image_url;
+            var script = document.createElement("script");
+            script.type = "application/ld+json";
+            script.text = JSON.stringify(schema);
+            document.head.appendChild(script);
+          });
+        } catch (e) {}
+      })();
+    </script>
 
     <!-- ===== MOBILE BOTTOM NAVIGATION ===== -->
     <nav

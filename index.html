@@ -63,21 +63,36 @@
     <!-- Custom styles -->
     <link rel="stylesheet" href="assets/css/supplement-styles.css" />
 
-    <!-- Structured Data: WebSite -->
+    <!-- Structured Data: Organization + WebSite -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "@id": "https://suplementi.deals/#website",
-        "name": "RS Supplement Deals",
-        "url": "https://suplementi.deals/",
-        "description": "Jedno mesto za sve popuste na suplementima u Srbiji. Uporedi cene iz 15 online prodavnica.",
-        "inLanguage": "sr-Latn",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://suplementi.deals/popusti/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://suplementi.deals/#organization",
+            "name": "RS Supplement Deals",
+            "url": "https://suplementi.deals/",
+            "description": "Jedno mesto za sve popuste na suplementima u Srbiji. Poredimo cene iz 15 online prodavnica.",
+            "inLanguage": "sr-Latn"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://suplementi.deals/#website",
+            "name": "RS Supplement Deals",
+            "url": "https://suplementi.deals/",
+            "description": "Jedno mesto za sve popuste na suplementima u Srbiji. Uporedi cene iz 15 online prodavnica.",
+            "inLanguage": "sr-Latn",
+            "publisher": {
+              "@id": "https://suplementi.deals/#organization"
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://suplementi.deals/popusti/?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
       }
     </script>
 

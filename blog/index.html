@@ -21,6 +21,9 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://suplementi.deals/blog/" />
     <meta property="og:locale" content="sr_RS" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Blog o suplementima | RS Supplement Deals" />
+    <meta name="twitter:description" content="Vodiči, saveti i recenzije suplemenata. Naučite kako da izaberete prave proteine, kreatin, vitamine i druge suplemente." />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -48,6 +51,28 @@
 
     <!-- Custom styles -->
     <link rel="stylesheet" href="/assets/css/supplement-styles.css" />
+
+    <!-- Structured Data: BreadcrumbList -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Početna",
+            "item": "https://suplementi.deals/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://suplementi.deals/blog/"
+          }
+        ]
+      }
+    </script>
   </head>
 
   <body class="bg-[#f0f0f0] font-sans text-[#333] min-h-screen flex flex-col">
