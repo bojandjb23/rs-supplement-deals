@@ -37,7 +37,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
 
@@ -49,6 +49,15 @@
           extend: {
             fontFamily: { sans: ["Montserrat", "sans-serif"] },
             borderRadius: { DEFAULT: "0.35rem" },
+            colors: {
+              brand: {
+                green: "#059669",
+                dark: "#047857",
+                deep: "#065f46",
+                light: "#d1fae5",
+                pale: "#f0fdf4",
+              },
+            },
           },
         },
       };
@@ -124,18 +133,19 @@
           class="max-w-[1600px] mx-auto px-4 sm:px-6 py-2 flex items-center gap-6"
         >
           <a href="/" class="flex items-center gap-2 shrink-0">
-            <ph-shopping-cart
-              weight="bold"
-              class="text-[#606060] text-lg"
-            ></ph-shopping-cart>
-            <span class="text-[#333] font-bold text-sm"
-              >RS Supplement Deals</span
-            >
+            <svg width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="40" height="40" rx="10" fill="#059669"/>
+              <path d="M13 17 C13 12, 27 12, 27 17 C27 21, 13 21, 13 25 C13 30, 27 30, 27 25"
+                    stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+            </svg>
+            <span class="font-extrabold text-sm tracking-tight leading-tight">
+              <span class="text-[#111827]">suplementi</span><span class="text-[#059669]">.deals</span>
+            </span>
           </a>
           <nav class="flex items-center gap-4 text-sm">
             <a
               href="/popusti/"
-              class="text-[#333] font-semibold border-b-2 border-[#606060] pb-0.5"
+              class="text-[#059669] font-semibold border-b-2 border-[#059669] pb-0.5"
               >Popusti</a
             >
             <a
@@ -160,7 +170,7 @@
             id="searchInput"
             placeholder="Pretrazi suplemente..."
             autocomplete="off"
-            class="w-full pl-10 pr-4 py-2 bg-[#f5f5f5] border border-[#d0d0d0] rounded-lg text-sm text-[#333] placeholder-[#999] focus:outline-none focus:border-[#606060] focus:ring-1 focus:ring-[#606060] transition-colors"
+            class="w-full pl-10 pr-4 py-2 bg-[#f5f5f5] border border-[#d0d0d0] rounded-lg text-sm text-[#333] placeholder-[#999] focus:outline-none focus:border-[#059669] focus:ring-1 focus:ring-[#059669] transition-colors"
           />
         </div>
 
@@ -297,7 +307,7 @@
               </h2>
               <button
                 id="clearFiltersBtn"
-                class="text-xs text-[#606060] hover:text-[#333] font-medium transition-colors hidden"
+                class="text-xs text-[#059669] hover:text-[#047857] font-medium transition-colors hidden"
               >
                 Obrisi filtere
               </button>
@@ -314,7 +324,7 @@
               >
                 <button
                   id="btnDiscountsOnly"
-                  class="flex-1 py-2 text-xs font-semibold transition-colors bg-[#606060] text-white"
+                  class="flex-1 py-2 text-xs font-semibold transition-colors bg-[#059669] text-white"
                 >
                   Na popustu
                 </button>
@@ -349,7 +359,7 @@
               >
               <select
                 id="categoryFilter"
-                class="w-full px-3 py-2 text-sm bg-[#f5f5f5] border border-[#d0d0d0] rounded-lg focus:outline-none focus:border-[#606060] focus:ring-1 focus:ring-[#606060] cursor-pointer"
+                class="w-full px-3 py-2 text-sm bg-[#f5f5f5] border border-[#d0d0d0] rounded-lg focus:outline-none focus:border-[#059669] focus:ring-1 focus:ring-[#059669] cursor-pointer"
               >
                 <option value="">Sve kategorije</option>
               </select>
@@ -364,7 +374,7 @@
                 >
                 <span
                   id="discountRangeValue"
-                  class="text-xs font-bold text-[#606060] bg-[#f0f0f0] px-2 py-0.5 rounded-full"
+                  class="text-xs font-bold text-[#059669] bg-[#d1fae5] px-2 py-0.5 rounded-full"
                   >0%</span
                 >
               </div>
@@ -375,7 +385,7 @@
                 max="80"
                 value="0"
                 step="5"
-                class="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#606060]"
+                class="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#059669]"
               />
             </div>
 
@@ -387,7 +397,7 @@
               >
               <select
                 id="sortSelect"
-                class="w-full px-3 py-2 text-sm bg-[#f5f5f5] border border-[#d0d0d0] rounded-lg focus:outline-none focus:border-[#606060] focus:ring-1 focus:ring-[#606060] cursor-pointer"
+                class="w-full px-3 py-2 text-sm bg-[#f5f5f5] border border-[#d0d0d0] rounded-lg focus:outline-none focus:border-[#059669] focus:ring-1 focus:ring-[#059669] cursor-pointer"
               >
                 <option value="discount_desc">Popust % (najveci)</option>
                 <option value="discount_asc">Popust % (najmanji)</option>
@@ -460,7 +470,7 @@
     <!-- ===== MOBILE FILTER FAB ===== -->
     <button
       id="mobileFilterFab"
-      class="lg:hidden fixed bottom-6 right-6 z-40 w-14 h-14 bg-[#606060] hover:bg-[#505050] text-white rounded-full shadow-lg flex items-center justify-center transition-all active:scale-95"
+      class="lg:hidden fixed bottom-6 right-6 z-40 w-14 h-14 bg-[#059669] hover:bg-[#047857] text-white rounded-full shadow-lg flex items-center justify-center transition-all active:scale-95"
     >
       <ph-funnel weight="bold" class="text-2xl"></ph-funnel>
     </button>
@@ -501,7 +511,7 @@
           <div class="flex rounded-lg overflow-hidden border border-[#d0d0d0]">
             <button
               id="mBtnDiscountsOnly"
-              class="flex-1 py-2.5 text-sm font-semibold transition-colors bg-[#606060] text-white"
+              class="flex-1 py-2.5 text-sm font-semibold transition-colors bg-[#059669] text-white"
             >
               Na popustu
             </button>
@@ -536,7 +546,7 @@
           >
           <select
             id="mobileCategoryFilter"
-            class="w-full px-3 py-2.5 text-sm bg-[#f5f5f5] border border-[#d0d0d0] rounded-lg focus:outline-none focus:border-[#606060]"
+            class="w-full px-3 py-2.5 text-sm bg-[#f5f5f5] border border-[#d0d0d0] rounded-lg focus:outline-none focus:border-[#059669]"
           >
             <option value="">Sve kategorije</option>
           </select>
@@ -551,7 +561,7 @@
             >
             <span
               id="mobileDiscountRangeValue"
-              class="text-xs font-bold text-[#606060] bg-[#f0f0f0] px-2 py-0.5 rounded-full"
+              class="text-xs font-bold text-[#059669] bg-[#d1fae5] px-2 py-0.5 rounded-full"
               >0%</span
             >
           </div>
@@ -562,7 +572,7 @@
             max="80"
             value="0"
             step="5"
-            class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#606060]"
+            class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#059669]"
           />
         </div>
 
@@ -574,7 +584,7 @@
           >
           <select
             id="mobileSortSelect"
-            class="w-full px-3 py-2.5 text-sm bg-[#f5f5f5] border border-[#d0d0d0] rounded-lg focus:outline-none focus:border-[#606060]"
+            class="w-full px-3 py-2.5 text-sm bg-[#f5f5f5] border border-[#d0d0d0] rounded-lg focus:outline-none focus:border-[#059669]"
           >
             <option value="discount_desc">Popust % (najveci)</option>
             <option value="discount_asc">Popust % (najmanji)</option>
@@ -597,7 +607,7 @@
         </button>
         <button
           id="mobileFilterApply"
-          class="w-full py-2.5 text-sm font-semibold text-white bg-[#606060] hover:bg-[#505050] rounded-lg transition-colors"
+          class="w-full py-2.5 text-sm font-semibold text-white bg-[#059669] hover:bg-[#047857] rounded-lg transition-colors"
         >
           Primeni
         </button>
@@ -758,11 +768,14 @@
             class="mt-8 pt-6 border-t border-[#d0d0d0] flex flex-col sm:flex-row items-center justify-between gap-2"
           >
             <div class="flex items-center gap-2 text-sm">
-              <ph-shopping-cart
-                weight="bold"
-                class="text-[#606060]"
-              ></ph-shopping-cart>
-              <span class="text-[#333] font-semibold">RS Supplement Deals</span>
+              <svg width="22" height="22" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="10" fill="#059669"/>
+                <path d="M13 17 C13 12, 27 12, 27 17 C27 21, 13 21, 13 25 C13 30, 27 30, 27 25"
+                      stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+              </svg>
+              <span class="font-extrabold tracking-tight">
+                <span class="text-[#111827]">suplementi</span><span class="text-[#059669]">.deals</span>
+              </span>
             </div>
             <p class="text-xs text-[#999]">
               Automatski azurirano &middot; Podaci samo u informativne svrhe
