@@ -130,10 +130,12 @@ class SpartanShopScraper(BaseStoreScraper):
                 self._find_text(ins_amount) if ins_amount else self._find_text(ins_el)
             )
         else:
-            # Only sale price shown (original not displayed on listing)
+            # Only sale price shown (original not displayed on listing).
+            # Assign to original_price so the product has a usable price;
+            # discount_percent will be 0 since we can't compute it without the original.
             price_amount = card.select_one(".woocommerce-Price-amount")
             if price_amount:
-                discount_price = self.parse_price(self._find_text(price_amount))
+                original_price = self.parse_price(self._find_text(price_amount))
 
         # --- Category ---
         category = self._extract_category(card)

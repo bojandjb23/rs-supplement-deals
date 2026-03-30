@@ -24,11 +24,18 @@ from typing import List, Dict, Any
 
 from supplement_stores import ALL_SCRAPERS
 
-# Configure logging
+# Configure logging: console + rotating file
+os.makedirs(os.path.join(os.path.dirname(os.path.abspath(__file__)), "data"), exist_ok=True)
+_log_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "scraper.log")
+
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s [%(levelname)s] %(message)s',
-    datefmt='%H:%M:%S',
+    datefmt='%Y-%m-%d %H:%M:%S',
+    handlers=[
+        logging.StreamHandler(sys.stdout),
+        logging.FileHandler(_log_file, encoding="utf-8"),
+    ],
 )
 logger = logging.getLogger(__name__)
 
@@ -37,6 +44,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 HISTORY_DIR = os.path.join(DATA_DIR, "supplements_history")
 OUTPUT_JSON = os.path.join(DATA_DIR, "supplements.json")
+SCRAPER_LOG = os.path.join(DATA_DIR, "scraper.log")
 DASHBOARD_TEMPLATE = os.path.join(BASE_DIR, "supplement_dashboard.html")
 DASHBOARD_OUTPUT = os.path.join(BASE_DIR, "supplement_dashboard_live.html")
 
@@ -282,6 +290,7 @@ def main():
     all_products = []
     stores_scraped = []
     stores_failed = []
+    store_health: Dict[str, Dict] = {}
 
     print(f"\n{'='*60}")
     print(f"  Serbian Supplement Store Scraper")
@@ -294,10 +303,34 @@ def main():
             products = scraper.scrape_all()
             all_products.extend(products)
             stores_scraped.append(scraper_cls.STORE_NAME)
-            print(f"  ✓ {scraper_cls.STORE_NAME}: {len(products)} products")
+
+            # Health check: detect data quality issues
+            has_prices = sum(1 for p in products if p.get("original_price") or p.get("discount_price"))
+            has_discounts = sum(1 for p in products if p.get("discount_percent", 0) > 0)
+            store_health[scraper_cls.STORE_NAME] = {
+                "total": len(products),
+                "with_prices": has_prices,
+                "with_discounts": has_discounts,
+                "status": "ok",
+            }
+
+            if len(products) == 0:
+                store_health[scraper_cls.STORE_NAME]["status"] = "warn:no_products"
+                logger.warning(f"[{scraper_cls.STORE_NAME}] Scraped 0 products — selector may be broken")
+                print(f"  ! {scraper_cls.STORE_NAME}: 0 products (check selectors)")
+            elif has_prices == 0:
+                store_health[scraper_cls.STORE_NAME]["status"] = "warn:no_prices"
+                logger.warning(
+                    f"[{scraper_cls.STORE_NAME}] No prices found in {len(products)} products — "
+                    "HTML structure may have changed"
+                )
+                print(f"  ! {scraper_cls.STORE_NAME}: {len(products)} products but NO PRICES (check parser)")
+            else:
+                print(f"  ✓ {scraper_cls.STORE_NAME}: {len(products)} products ({has_discounts} discounted)")
         except Exception as e:
-            logger.error(f"Failed to scrape {scraper_cls.STORE_NAME}: {e}")
+            logger.error(f"Failed to scrape {scraper_cls.STORE_NAME}: {e}", exc_info=True)
             stores_failed.append(scraper_cls.STORE_NAME)
+            store_health[scraper_cls.STORE_NAME] = {"total": 0, "status": f"error:{e}"}
             print(f"  ✗ {scraper_cls.STORE_NAME}: FAILED ({e})")
 
     # Filter discounts only if requested
@@ -329,6 +362,7 @@ def main():
         "total_discounted": summary["total_discounted"],
         "products": all_products,
         "weekly_summary": summary,
+        "store_health": store_health,
     }
 
     # Save
@@ -350,6 +384,16 @@ def main():
     print(f"  Stores OK:      {len(stores_scraped)}")
     if stores_failed:
         print(f"  Stores failed:  {len(stores_failed)} ({', '.join(stores_failed)})")
+
+    # Health warnings
+    warn_stores = [
+        (name, h["status"]) for name, h in store_health.items()
+        if not h["status"].startswith("ok") and not h["status"].startswith("error")
+    ]
+    if warn_stores:
+        print(f"\n  DATA QUALITY WARNINGS:")
+        for name, status in warn_stores:
+            print(f"    [{status}] {name}")
     print(f"\n  Data saved to:  {args.output}")
     if not args.no_dashboard:
         print(f"  Dashboard at:   {DASHBOARD_OUTPUT}")
