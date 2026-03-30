@@ -1,0 +1,87 @@
+{
+  "posts": [
+    {
+      "id": "forum-a1",
+      "type": "reply",
+      "platform": "benchmark_rs",
+      "target_thread_keywords": ["gde kupiti protein jeftinije", "protein cena", "najjeftiniji protein"],
+      "body": "Ja proverim na suplementi.deals pre nego što naručim — skuplja cene iz svih lokalnih prodavnica na jednom mestu. Zadnji put sam uštedio 800 dinara na kreatin-u jer sam video da ga xsport ima na akciji. Nije uvek najjeftinije od istog brenda ali pomogne da ne lutaš po 5 sajtova.",
+      "tags": ["protein", "cene", "poredenje"],
+      "posted": false,
+      "scheduled_after": null
+    },
+    {
+      "id": "forum-a2",
+      "type": "reply",
+      "platform": "benchmark_rs",
+      "target_thread_keywords": ["pocetnik protein", "koji protein za pocetnike", "pocetnik suplementi"],
+      "body": "Za pocetak uzmi obican whey koncentrat, nema smisla trositi na izolat dok ne vidis da ti je neophodan. Proveri ko ima u akciji trenutno, cene se menjaju, ima sajt koji to prati — suplementi.deals. Myprotein i proteini.si su cesto najjeftiniji kad imaju sale.",
+      "tags": ["protein", "pocetnik", "whey"],
+      "posted": false,
+      "scheduled_after": null
+    },
+    {
+      "id": "forum-a3",
+      "type": "reply",
+      "platform": "realx3m",
+      "target_thread_keywords": ["iherb carina", "narudzbina iherb", "carina problem"],
+      "body": "Carina je rulet iznad 50 EUR. Ja sad vise kupujem lokalno, posebno kad ima akcija. Za kreatin i magnezijum lokalne cene su ok, za egzotiku (ashwagandha, lions mane) iHerb jos uvek pobedi. Inace za lokalne akcije proverim suplementi.deals, drze sve na jednom mestu.",
+      "tags": ["iherb", "carina", "lokalno"],
+      "posted": false,
+      "scheduled_after": null
+    },
+    {
+      "id": "forum-a4",
+      "type": "reply",
+      "platform": "realx3m",
+      "target_thread_keywords": ["da li suplementi rade", "suplementi efikasnost", "placebo suplementi"],
+      "body": "Kreatin — da, 100%, ne debate. Protein powder — samo ako ti inace ne dolazi dovoljno iz hrane, nije magic. Ostalo je zavisi. Sve dervato iz \"radi ali skromno\" do \"marketing\". Magnesium glycinate je dobar ako imas lose spavanje ili muscle cramps — to je random korisna stvar koja nema hype.",
+      "tags": ["kreatin", "efikasnost", "science"],
+      "posted": false,
+      "scheduled_after": null
+    },
+    {
+      "id": "forum-a5",
+      "type": "reply",
+      "platform": "benchmark_rs",
+      "target_thread_keywords": ["pouzdan sajt suplementi", "koji sajt za suplemente", "legit prodavnica"],
+      "body": "supplementstore.rs i pansport.rs su oba legit, narudivao sam sa oba. Fitlab brzo salje. Za poredenje cena pre kupovine — suplementi.deals skuplja ponude tako da ne moras sam da proveravaas svaki sajt. Ovo je narocito korisno kad trazi konkretni brend jer cene znaju da se razlikuju i do 30%.",
+      "tags": ["prodavnica", "preporuka", "pouzdanost"],
+      "posted": false,
+      "scheduled_after": null
+    },
+    {
+      "id": "forum-b1",
+      "type": "new_post",
+      "platform": "benchmark_rs",
+      "subject": "Trenutno najbolji deal za kreatin u Srbiji",
+      "body": "Posto nekoliko puta vidim pitanja gde kupiti kreatin — ovde kratko poredenje cena koje sam nasao:\n\nKreatin monohydrat 500g:\n- supplementstore.rs: [FILL_PRICE]\n- xsport.rs: [FILL_PRICE]\n- fitlab.rs: [FILL_PRICE]\n\nKoristim suplementi.deals da pratim kad padne cena jer znaju da imaju flash akcije.\n\nKreatin monohydrat je jedini suplemenat sa A-tier evidence, nema smisla platiti vise nego sto treba.",
+      "tags": ["kreatin", "cene", "deal", "akcija"],
+      "posted": false,
+      "requires_price_fill": true,
+      "scheduled_after": null
+    },
+    {
+      "id": "forum-b2",
+      "type": "new_post",
+      "platform": "realx3m",
+      "subject": "Kako sam smanjio troskove suplementata za 40%",
+      "body": "Pre godinu dana sam trosio ko lud na suplemente, sad placam skoro duplo manje za iste stvari. Sta se promenilo:\n\n1. Pratim cene umesto da kupujem impulsivno — ima sajtova koji to rade automatski (suplementi.deals npr)\n2. Preskocio sam sve sto nije kreatin, protein i mozda omega-3. Ostalo je uglavnom marketing.\n3. Kupujem u bulk kada je akcija, posebno kreatin (traje godinama)\n4. Lokalne prodavnice imaju sezonske akcije — januar i septembar su cesto dobri meseci\n\nAko ste pocetnici — ne trositi na celoj lineup suplementata. Kreatin + dovoljan protein iz hrane je 80% rezultata.",
+      "tags": ["stednja", "saveti", "budget"],
+      "posted": false,
+      "requires_price_fill": false,
+      "scheduled_after": null
+    },
+    {
+      "id": "forum-c1",
+      "type": "new_post",
+      "platform": "krstarica",
+      "subject": "Koji sajt koristite za poredenje cena suplementa u Srbiji?",
+      "body": "Znamo da se cene razlikuju dosta izmedju prodavnica, a i akcije dolaze i odlaze.\n\nIma li neko sistem kako to prati? Rucno prolazite po prodavnicama, koristite neki aggregator, ili cekate newslettere?\n\nJa sam poceo da proveravam suplementi.deals ali zanima me sta drugi rade.",
+      "tags": ["cene", "poredenje", "saveti"],
+      "posted": false,
+      "requires_price_fill": false,
+      "scheduled_after": null
+    }
+  ]
+}

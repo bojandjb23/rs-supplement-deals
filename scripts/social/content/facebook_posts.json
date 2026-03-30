@@ -1,0 +1,79 @@
+{
+  "posts": [
+    {
+      "id": "fb-week1",
+      "week": 1,
+      "type": "deal_roundup",
+      "title": "Ovo su trenutno NAJVEĆI popusti na suplemente u Srbiji 🔥",
+      "body": "Ovo su trenutno NAJVEĆI popusti na suplemente u Srbiji 🔥\n\nTop 4 akcije ove nedelje:\n\n💪 [PRODUCT_1]\n   ~~[ORIGINAL_PRICE]~~ → [DISCOUNTED_PRICE] kod [RETAILER_1] (uštedite [SAVINGS_1])\n\n💪 [PRODUCT_2]\n   ~~[ORIGINAL_PRICE]~~ → [DISCOUNTED_PRICE] kod [RETAILER_2] (uštedite [SAVINGS_2])\n\n💪 [PRODUCT_3]\n   ~~[ORIGINAL_PRICE]~~ → [DISCOUNTED_PRICE] kod [RETAILER_3] (uštedite [SAVINGS_3])\n\n💪 [PRODUCT_4]\n   ~~[ORIGINAL_PRICE]~~ → [DISCOUNTED_PRICE] kod [RETAILER_4] (uštedite [SAVINGS_4])\n\nNašao/la na suplementi.deals — sajt koji skuplja sve akcije na jednom mestu.\n\n👉 Proveri sve akcije na suplementi.deals\n\n#suplementi #srbija #fitness #proteini #akcija #deals #bodybuilding",
+      "requires_price_fill": true,
+      "best_day": "monday",
+      "best_time": "18:00",
+      "posted": false,
+      "scheduled_after": null
+    },
+    {
+      "id": "fb-week2",
+      "week": 2,
+      "type": "product_spotlight",
+      "title": "Ovo je trenutno BEST VALUE kreatin u Srbiji",
+      "body": "Ovo je trenutno BEST VALUE kreatin u Srbiji 💥\n\nKreatin monohydrat [WEIGHT]:\n✅ Najniža cena: [BEST_PRICE] kod [BEST_RETAILER]\n\nPoredenje sa konkurencijom:\n• [RETAILER_2]: [PRICE_2]\n• [RETAILER_3]: [PRICE_3]\n• [RETAILER_4]: [PRICE_4]\n\nKreatin je jedini suplemenat sa A-tier naučnim dokazima. Nema smisla platiti više nego što trebaš.\n\nCene su žive — našao/la na suplementi.deals.\n\n👉 Proveri trenutne cene na suplementi.deals\n\n#kreatin #creatine #suplementi #srbija #fitness #bodybuilding #akcija",
+      "requires_price_fill": true,
+      "best_day": "tuesday",
+      "best_time": "12:00",
+      "posted": false,
+      "scheduled_after": null
+    },
+    {
+      "id": "fb-week3",
+      "week": 3,
+      "type": "category_roundup",
+      "title": "Nedeljni pregled akcija po kategorijama 💊",
+      "body": "Nedeljni pregled akcija po kategorijama 💊\n\n🏋️ KREATIN:\n[KREATIN_DEAL] — [KREATIN_PRICE] (↓[KREATIN_SAVINGS]%)\n\n🥤 PROTEINI:\n[PROTEIN_DEAL] — [PROTEIN_PRICE] (↓[PROTEIN_SAVINGS]%)\n\n💊 VITAMINI:\n[VITAMIN_DEAL] — [VITAMIN_PRICE] (↓[VITAMIN_SAVINGS]%)\n\n⚡ PRE-WORKOUT:\n[PREWORKOUT_DEAL] — [PREWORKOUT_PRICE] (↓[PREWORKOUT_SAVINGS]%)\n\nSvi dealovi sa suplementi.deals — tamo naći ćeš sve domaće prodavnice na jednom mestu.\n\n👉 Puna lista akcija: suplementi.deals\n\n#suplementi #srbija #fitness #proteini #kreatin #vitamini #preworkout #akcija",
+      "requires_price_fill": true,
+      "best_day": "wednesday",
+      "best_time": "18:00",
+      "posted": false,
+      "scheduled_after": null
+    },
+    {
+      "id": "fb-week4",
+      "week": 4,
+      "type": "flash_deal",
+      "title": "⏰ VIKEND FLASH DEAL — Ograničeno vreme!",
+      "body": "⏰ VIKEND FLASH DEAL — Ograničeno vreme!\n\n[PRODUCT_NAME] od [BRAND_NAME]\n\n💥 Normalna cena: [ORIGINAL_PRICE]\n🔥 Akcija: [DISCOUNTED_PRICE]\n✅ Uštedite: [SAVINGS_AMOUNT] ([SAVINGS_PCT]%)\n📦 Kod: [RETAILER]\n\nAkcija važi [DEAL_DURATION] — ne čekaj!\n\nNašao/la na suplementi.deals gde pratim sve flash akcije.\n\n👉 Idi direktno na suplementi.deals za link i proveru dostupnosti\n\n#flashdeal #akcija #suplementi #srbija #fitness #vikend #proteini",
+      "requires_price_fill": true,
+      "best_day": "friday",
+      "best_time": "17:00",
+      "posted": false,
+      "scheduled_after": null
+    }
+  ],
+  "target_groups": [
+    {
+      "name": "Suplementi Srbija",
+      "relevance": "high",
+      "notes": "Primary target — dedicated supplement group"
+    },
+    {
+      "name": "Suplementi Srbija 2",
+      "relevance": "high",
+      "notes": "Secondary supplement group"
+    },
+    {
+      "name": "Fitness Srbija",
+      "relevance": "medium",
+      "notes": "Broad fitness community, supplement discussions happen here"
+    },
+    {
+      "name": "Bodybuilding Srbija",
+      "relevance": "medium",
+      "notes": "Bodybuilding focused, receptive to deal sharing"
+    },
+    {
+      "name": "Kupovina i Prodaja Suplementata",
+      "relevance": "high",
+      "notes": "Buy/sell group — highly relevant for deal posts"
+    }
+  ]
+}

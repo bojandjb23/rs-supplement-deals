@@ -1,0 +1,60 @@
+# suplementi.deals Social Posting Config
+# Copy to config.yml and fill in credentials before running.
+
+# ──────────────────────────────────────────────────────────
+# Serbian Forums (Playwright / headless browser)
+# ──────────────────────────────────────────────────────────
+forums:
+  realx3m:
+    enabled: true
+    username: "YOUR_USERNAME"
+    password: "YOUR_PASSWORD"
+    # Supplement section URL for new posts
+    section_url: "https://realx3mforum.com/forumdisplay.php?f=XX"
+
+  benchmark_rs:
+    enabled: true
+    username: "YOUR_USERNAME"
+    password: "YOUR_PASSWORD"
+    # Main supplement thread for replies
+    supplement_thread_url: "https://forum.benchmark.rs/viewtopic.php?t=XXXXX"
+    # Section for new posts
+    section_url: "https://forum.benchmark.rs/viewforum.php?f=XX"
+
+  krstarica:
+    enabled: false
+    username: "YOUR_USERNAME"
+    password: "YOUR_PASSWORD"
+    supplement_thread_url: "https://forum.krstarica.com/viewtopic.php?t=XXXXX"
+    section_url: "https://forum.krstarica.com/viewforum.php?f=XX"
+
+# ──────────────────────────────────────────────────────────
+# Facebook Graph API
+# ──────────────────────────────────────────────────────────
+facebook:
+  enabled: false
+  page_id: "YOUR_PAGE_ID"
+  # Long-lived Page Access Token — see platforms/facebook.py for generation guide
+  page_access_token: "YOUR_PAGE_ACCESS_TOKEN"
+
+# ──────────────────────────────────────────────────────────
+# Reddit (PRAW)
+# ──────────────────────────────────────────────────────────
+reddit:
+  enabled: false
+  # Create app at https://www.reddit.com/prefs/apps (type: script)
+  client_id: "YOUR_CLIENT_ID"
+  client_secret: "YOUR_CLIENT_SECRET"
+  username: "YOUR_REDDIT_USERNAME"
+  password: "YOUR_REDDIT_PASSWORD"
+
+# ──────────────────────────────────────────────────────────
+# General settings
+# ──────────────────────────────────────────────────────────
+settings:
+  # Session/cookie storage for Playwright
+  session_dir: ".sessions"
+  # Log file path (relative to this script's directory)
+  log_file: "poster.log"
+  # Default to dry_run=true for safety — set to false to actually post
+  dry_run: true

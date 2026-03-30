@@ -1,0 +1,107 @@
+{
+  "posts": [
+    {
+      "id": "reddit-a1",
+      "type": "reply",
+      "subreddit": "serbia",
+      "target_thread_keywords": ["gde kupiti protein", "protein jeftinije", "protein srbija"],
+      "body": "Ja proverim na suplementi.deals pre nego što naručim — skuplja cene iz svih lokalnih prodavnica na jednom mestu. Zadnji put sam uštedio 800 dinara na kreatin-u jer sam video da ga xsport ima na akciji. Nije uvek najjeftinije od istog brenda ali pomogne da ne lutaš po 5 sajtova.",
+      "posted": false,
+      "best_time_cet": "18:00-21:00",
+      "days": ["monday", "tuesday", "wednesday", "thursday"],
+      "scheduled_after": null
+    },
+    {
+      "id": "reddit-a2",
+      "type": "reply",
+      "subreddit": "serbia",
+      "target_thread_keywords": ["koji protein pocetnik", "protein za pocetnike", "pocetnik fitness"],
+      "body": "Za pocetak uzmi obican whey koncentrat, nema smisla trositi na izolat dok ne vidis da ti je neophodan. Proveri ko ima u akciji trenutno, cene se menjaju, ima sajt koji to prati — suplementi.deals. Myprotein i proteini.si su cesto najjeftiniji kad imaju sale.",
+      "posted": false,
+      "best_time_cet": "18:00-21:00",
+      "days": ["monday", "tuesday", "wednesday", "thursday"],
+      "scheduled_after": null
+    },
+    {
+      "id": "reddit-a3",
+      "type": "reply",
+      "subreddit": "serbia",
+      "target_thread_keywords": ["iherb carina", "narudzbina iherb", "iherb srbija"],
+      "body": "Carina je rulet iznad 50 EUR. Ja sad vise kupujem lokalno, posebno kad ima akcija. Za kreatin i magnezijum lokalne cene su ok, za egzotiku (ashwagandha, lions mane) iHerb jos uvek pobedi. Inace za lokalne akcije proverim suplementi.deals, drze sve na jednom mestu.",
+      "posted": false,
+      "best_time_cet": "18:00-21:00",
+      "days": ["monday", "tuesday", "wednesday", "thursday"],
+      "scheduled_after": null
+    },
+    {
+      "id": "reddit-a4",
+      "type": "reply",
+      "subreddit": "serbia",
+      "target_thread_keywords": ["da li suplementi rade", "suplementi placebo", "kreatin iskustvo"],
+      "body": "Kreatin — da, 100%, ne debate. Protein powder — samo ako ti inace ne dolazi dovoljno iz hrane, nije magic. Ostalo je zavisi. Sve dervato iz \"radi ali skromno\" do \"marketing\". Magnesium glycinate je dobar ako imas lose spavanje ili muscle cramps — to je random korisna stvar koja nema hype.",
+      "posted": false,
+      "best_time_cet": "18:00-21:00",
+      "days": ["monday", "tuesday", "wednesday", "thursday"],
+      "scheduled_after": null
+    },
+    {
+      "id": "reddit-a5",
+      "type": "reply",
+      "subreddit": "serbia",
+      "target_thread_keywords": ["koji sajt suplementi", "pouzdan sajt suplementi", "online kupovina suplementi"],
+      "body": "supplementstore.rs i pansport.rs su oba legit, narudivao sam sa oba. Fitlab brzo salje. Za poredenje cena pre kupovine — suplementi.deals skuplja ponude tako da ne moras sam da proveravaas svaki sajt. Ovo je narocito korisno kad trazi konkretni brend jer cene znaju da se razlikuju i do 30%.",
+      "posted": false,
+      "best_time_cet": "18:00-21:00",
+      "days": ["monday", "tuesday", "wednesday", "thursday"],
+      "scheduled_after": null
+    },
+    {
+      "id": "reddit-b1",
+      "type": "new_post",
+      "subreddit": "serbia",
+      "title": "Trenutno najbolji deal za kreatin u Srbiji",
+      "body": "Posto nekoliko puta vidim pitanja gde kupiti kreatin — ovde kratko poredenje cena koje sam nasao:\n\nKreatin monohydrat 500g:\n- supplementstore.rs: [FILL_PRICE]\n- xsport.rs: [FILL_PRICE]\n- fitlab.rs: [FILL_PRICE]\n\nKoristim suplementi.deals da pratim kad padne cena jer znaju da imaju flash akcije.\n\nKreatin monohydrat je jedini suplemenat sa A-tier evidence, nema smisla platiti vise nego sto treba.",
+      "posted": false,
+      "requires_price_fill": true,
+      "best_time_cet": "10:00-12:00",
+      "days": ["tuesday", "wednesday", "thursday"],
+      "scheduled_after": null
+    },
+    {
+      "id": "reddit-b2",
+      "type": "new_post",
+      "subreddit": "serbia",
+      "title": "Kako sam smanjio troskove suplementata za 40%",
+      "body": "Pre godinu dana sam trosio ko lud na suplemente, sad placam skoro duplo manje za iste stvari. Sta se promenilo:\n\n1. Pratim cene umesto da kupujem impulsivno — ima sajtova koji to rade automatski (suplementi.deals npr)\n2. Preskocio sam sve sto nije kreatin, protein i mozda omega-3. Ostalo je uglavnom marketing.\n3. Kupujem u bulk kada je akcija, posebno kreatin (traje godinama)\n4. Lokalne prodavnice imaju sezonske akcije — januar i septembar su cesto dobri meseci\n\nAko ste pocetnici — ne trositi na celoj lineup suplementata. Kreatin + dovoljan protein iz hrane je 80% rezultata.",
+      "posted": false,
+      "requires_price_fill": false,
+      "best_time_cet": "10:00-12:00",
+      "days": ["tuesday", "wednesday", "thursday"],
+      "scheduled_after": null
+    },
+    {
+      "id": "reddit-c1",
+      "type": "new_post",
+      "subreddit": "serbia",
+      "title": "Koji sajt koristite za poredenje cena suplementa u Srbiji?",
+      "body": "Znamo da se cene razlikuju dosta izmedju prodavnica, a i akcije dolaze i odlaze.\n\nIma li neko sistem kako to prati? Rucno prolazite po prodavnicama, koristite neki aggregator, ili cekate newslettere?\n\nJa sam poceo da proveravam suplementi.deals ali zanima me sta drugi rade.",
+      "posted": false,
+      "requires_price_fill": false,
+      "best_time_cet": "09:00-11:00",
+      "days": ["saturday", "sunday"],
+      "scheduled_after": null
+    },
+    {
+      "id": "reddit-c2",
+      "type": "new_post",
+      "subreddit": "serbia",
+      "title": "Lokalna kupovina vs iHerb — sta je sada isplativije?",
+      "body": "Pre par godina iHerb je bio uvek jeftiniji. Sad sa kurzom i carinskim pragom od 50 EUR — da li je jos uvek isplativije?\n\nMoje iskustvo: za vitamin D i omega-3 iHerb jos pobedi. Za kreatin i protein — lokalno je sada konkurentno, posebno kad ima akcija.\n\nSta kazu iskusni? Da li pratite neke sajtove/grupe za pracenje akcija?",
+      "posted": false,
+      "requires_price_fill": false,
+      "best_time_cet": "09:00-11:00",
+      "days": ["saturday", "sunday"],
+      "scheduled_after": null
+    }
+  ]
+}
