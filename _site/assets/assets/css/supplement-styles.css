@@ -1,0 +1,120 @@
+/* ============================================
+   RS Supplement Deals - Custom Styles
+   Minimal CSS - Tailwind handles most styling.
+   Only animations, scrollbar, and edge cases here.
+   ============================================ */
+
+/* ---- Grid pattern for stats bar ---- */
+.grid-pattern {
+  position: relative;
+}
+.grid-pattern::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  pointer-events: none;
+}
+
+/* ---- Card fade-in animation ---- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-card {
+  animation: fadeInUp 0.4s ease-out both;
+}
+
+/* ---- Slide-in for mobile drawer ---- */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* ---- Scrollbar hiding for category tabs ---- */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* ---- Custom scrollbar for filter lists ---- */
+.overflow-y-auto::-webkit-scrollbar {
+  width: 4px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background: #a0a0a0;
+  border-radius: 9999px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+  background: #808080;
+}
+
+/* ---- Range slider custom styling ---- */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #059669;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #059669;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* ---- Line clamp fallback ---- */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ---- Checkbox styling consistency ---- */
+input[type="checkbox"] {
+  accent-color: #059669;
+}
+
+/* ---- Prevent layout shift on image load ---- */
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+/* ---- Safe area for mobile bottom nav ---- */
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
