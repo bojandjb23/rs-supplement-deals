@@ -745,6 +745,46 @@ function loadMore() {
   noResults.style.display = filteredProducts.length === 0 ? "block" : "none";
 }
 
+// ---- Click Tracking ----
+const CLICK_STORAGE_KEY = "rssd_clicks";
+const CLICK_MAX_ENTRIES = 5000;
+
+function trackClick(product) {
+  try {
+    const entry = {
+      ts: Date.now(),
+      date: new Date().toISOString().slice(0, 10),
+      store: product.store,
+      productId: product.id,
+      productName: product.name,
+      url: product.product_url,
+      discountPct: product.discount_percent || 0,
+    };
+    const raw = localStorage.getItem(CLICK_STORAGE_KEY);
+    const clicks = raw ? JSON.parse(raw) : [];
+    clicks.push(entry);
+    // Keep only latest N entries to avoid exceeding storage quota
+    if (clicks.length > CLICK_MAX_ENTRIES) clicks.splice(0, clicks.length - CLICK_MAX_ENTRIES);
+    localStorage.setItem(CLICK_STORAGE_KEY, JSON.stringify(clicks));
+  } catch (_) {
+    // localStorage unavailable — silent fail
+  }
+}
+
+function buildTrackedUrl(product) {
+  const storeSlug = (product.store || "unknown")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "_")
+    .replace(/^_|_$/g, "");
+  const base = product.product_url;
+  const sep = base.includes("?") ? "&" : "?";
+  return (
+    base +
+    sep +
+    `utm_source=suplementi_deals&utm_medium=referral&utm_campaign=${storeSlug}&utm_content=${encodeURIComponent(product.id || "product")}`
+  );
+}
+
 // ---- Product Card Rendering ----
 function createProductCard(product, index) {
   const card = document.createElement("article");
@@ -752,11 +792,8 @@ function createProductCard(product, index) {
     "group bg-white rounded-xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-200 overflow-hidden flex flex-col fade-in-card";
   card.style.animationDelay = `${Math.min(index % BATCH_SIZE, 20) * 30}ms`;
 
-  // UTM tracking for affiliate/partnership proof
-  const trackedUrl =
-    product.product_url +
-    (product.product_url.includes("?") ? "&" : "?") +
-    "utm_source=rssupplementdeals&utm_medium=referral&utm_campaign=deals";
+  // UTM tracking with per-store campaign attribution
+  const trackedUrl = buildTrackedUrl(product);
 
   const hasDiscount = product.discount_percent > 0 && product.discount_price;
   const effectivePrice = hasDiscount
@@ -836,6 +873,12 @@ function createProductCard(product, index) {
             </a>
         </div>
     `;
+
+  // Attach click tracker to the buy link
+  const buyLink = card.querySelector("a[target='_blank']");
+  if (buyLink) {
+    buyLink.addEventListener("click", () => trackClick(product));
+  }
 
   return card;
 }
