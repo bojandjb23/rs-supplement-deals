@@ -352,81 +352,49 @@
         >
           Kako funkcioniše
         </h2>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 text-center">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-4 md:gap-0 md:items-start">
           <!-- Step 1 -->
-          <div class="flex flex-col items-center gap-4">
-            <div
-              class="w-16 h-16 rounded-full bg-[#f0f0f0] border border-[#d0d0d0] flex items-center justify-center"
-            >
-              <ph-magnifying-glass
-                weight="duotone"
-                class="text-[#606060] text-3xl"
-              ></ph-magnifying-glass>
+          <div style="background:white;border-radius:16px;padding:32px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;position:relative;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+            <div style="width:80px;height:80px;border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:36px;position:relative;background:linear-gradient(135deg,#d1fae5,#a7f3d0);color:#059669;">
+              <ph-magnifying-glass weight="duotone"></ph-magnifying-glass>
+              <div style="position:absolute;top:-6px;right:-6px;width:22px;height:22px;background:#111827;color:white;border-radius:50%;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;">1</div>
             </div>
             <div>
-              <div
-                class="text-xs font-bold text-[#606060] uppercase tracking-wider mb-1"
-              >
-                Korak 1
-              </div>
-              <h3 class="text-base font-semibold text-[#333] mb-2">
-                Skeniramo 15 prodavnica
-              </h3>
-              <p class="text-sm text-[#666] leading-relaxed">
-                Automatski prikupljamo podatke o cenama i popustima iz svih
-                popularnih online prodavnica suplemenata u Srbiji, svakih 6
-                sati.
-              </p>
+              <div style="font-size:10px;color:#9ca3af;letter-spacing:0.1em;margin-bottom:6px;">KORAK 01</div>
+              <h3 style="font-size:15px;font-weight:700;color:#111827;margin-bottom:8px;">Skeniramo 15 prodavnica</h3>
+              <p style="font-size:12px;color:#6b7280;line-height:1.6;">Automatski prikupljamo popuste iz svih popularnih online prodavnica, svakih 6 sati.</p>
             </div>
+          </div>
+          <!-- Arrow 1→2 -->
+          <div class="hidden md:flex items-start pt-14 px-3">
+            <ph-arrow-right weight="bold" style="color:#9ca3af;font-size:20px;"></ph-arrow-right>
           </div>
           <!-- Step 2 -->
-          <div class="flex flex-col items-center gap-4">
-            <div
-              class="w-16 h-16 rounded-full bg-[#f0f0f0] border border-[#d0d0d0] flex items-center justify-center"
-            >
-              <ph-funnel
-                weight="duotone"
-                class="text-[#606060] text-3xl"
-              ></ph-funnel>
+          <div style="background:white;border-radius:16px;padding:32px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;position:relative;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+            <div style="width:80px;height:80px;border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:36px;position:relative;background:linear-gradient(135deg,#dbeafe,#bfdbfe);color:#2563eb;">
+              <ph-funnel weight="duotone"></ph-funnel>
+              <div style="position:absolute;top:-6px;right:-6px;width:22px;height:22px;background:#111827;color:white;border-radius:50%;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;">2</div>
             </div>
             <div>
-              <div
-                class="text-xs font-bold text-[#606060] uppercase tracking-wider mb-1"
-              >
-                Korak 2
-              </div>
-              <h3 class="text-base font-semibold text-[#333] mb-2">
-                Filtriraj i uporedi
-              </h3>
-              <p class="text-sm text-[#666] leading-relaxed">
-                Pretražuj po kategoriji, prodavnici, procentu popusta ili imenu
-                proizvoda. Sve na jednom mestu.
-              </p>
+              <div style="font-size:10px;color:#9ca3af;letter-spacing:0.1em;margin-bottom:6px;">KORAK 02</div>
+              <h3 style="font-size:15px;font-weight:700;color:#111827;margin-bottom:8px;">Filtriraj i uporedi</h3>
+              <p style="font-size:12px;color:#6b7280;line-height:1.6;">Pretražuj po kategoriji, prodavnici, procentu popusta ili imenu proizvoda. Sve na jednom mestu.</p>
             </div>
           </div>
+          <!-- Arrow 2→3 -->
+          <div class="hidden md:flex items-start pt-14 px-3">
+            <ph-arrow-right weight="bold" style="color:#9ca3af;font-size:20px;"></ph-arrow-right>
+          </div>
           <!-- Step 3 -->
-          <div class="flex flex-col items-center gap-4">
-            <div
-              class="w-16 h-16 rounded-full bg-[#f0f0f0] border border-[#d0d0d0] flex items-center justify-center"
-            >
-              <ph-shopping-cart
-                weight="duotone"
-                class="text-[#606060] text-3xl"
-              ></ph-shopping-cart>
+          <div style="background:white;border-radius:16px;padding:32px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;position:relative;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+            <div style="width:80px;height:80px;border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:36px;position:relative;background:linear-gradient(135deg,#fef3c7,#fde68a);color:#d97706;">
+              <ph-shopping-cart weight="duotone"></ph-shopping-cart>
+              <div style="position:absolute;top:-6px;right:-6px;width:22px;height:22px;background:#111827;color:white;border-radius:50%;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;">3</div>
             </div>
             <div>
-              <div
-                class="text-xs font-bold text-[#606060] uppercase tracking-wider mb-1"
-              >
-                Korak 3
-              </div>
-              <h3 class="text-base font-semibold text-[#333] mb-2">
-                Kupi po najboljoj ceni
-              </h3>
-              <p class="text-sm text-[#666] leading-relaxed">
-                Klikni "Kupi" i bićeš preusmeren direktno na stranicu proizvoda.
-                Kupuješ kao i uvek, samo jeftinije.
-              </p>
+              <div style="font-size:10px;color:#9ca3af;letter-spacing:0.1em;margin-bottom:6px;">KORAK 03</div>
+              <h3 style="font-size:15px;font-weight:700;color:#111827;margin-bottom:8px;">Kupi po najboljoj ceni</h3>
+              <p style="font-size:12px;color:#6b7280;line-height:1.6;">Klikni "Kupi" i bićeš preusmeren direktno na stranicu proizvoda. Kupuješ kao i uvek, samo jeftinije.</p>
             </div>
           </div>
         </div>
