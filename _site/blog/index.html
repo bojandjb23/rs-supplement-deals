@@ -21,6 +21,9 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://suplementi.deals/blog/" />
     <meta property="og:locale" content="sr_RS" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Blog o suplementima | RS Supplement Deals" />
+    <meta name="twitter:description" content="Vodiči, saveti i recenzije suplemenata. Naučite kako da izaberete prave proteine, kreatin, vitamine i druge suplemente." />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -48,6 +51,28 @@
 
     <!-- Custom styles -->
     <link rel="stylesheet" href="/assets/css/supplement-styles.css" />
+
+    <!-- Structured Data: BreadcrumbList -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Početna",
+            "item": "https://suplementi.deals/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://suplementi.deals/blog/"
+          }
+        ]
+      }
+    </script>
   </head>
 
   <body class="bg-[#f0f0f0] font-sans text-[#333] min-h-screen flex flex-col">
@@ -60,19 +85,13 @@
       >
         <!-- Logo -->
         <a href="/" class="flex items-center gap-2 shrink-0">
-          <ph-shopping-cart
-            weight="bold"
-            class="text-[#606060] text-2xl"
-          ></ph-shopping-cart>
-          <span
-            class="text-[#333] font-extrabold tracking-tight text-lg hidden sm:inline"
-            >RS Supplement Deals</span
-          >
-          <span
-            class="text-[#333] font-extrabold tracking-tight text-lg sm:hidden"
-            aria-hidden="true"
-            >RSSD</span
-          >
+          <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="10" fill="#059669"/>
+            <path d="M13 17 C13 12, 27 12, 27 17 C27 21, 13 21, 13 25 C13 30, 27 30, 27 25" stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+          </svg>
+          <span class="font-extrabold tracking-tight text-lg leading-tight">
+            <span class="text-[#111827]">suplementi</span><span class="text-[#059669]">.deals</span>
+          </span>
         </a>
 
         <!-- Navigation -->
@@ -115,12 +134,14 @@
           <article
             class="bg-white rounded-md border border-[#d0d0d0] overflow-hidden hover:shadow-md transition-shadow"
           >
+            <div style="height:160px; background:linear-gradient(135deg,#065f46 0%,#059669 50%,#10b981 100%); position:relative; overflow:hidden; display:flex; align-items:center; justify-content:center;">
+              <div style="position:absolute;inset:0;opacity:0.08;background-image:repeating-linear-gradient(45deg,white 0px,white 1px,transparent 1px,transparent 20px);"></div>
+              <ph-barbell weight="fill" style="font-size:56px;color:rgba(255,255,255,0.9);position:relative;z-index:1;"></ph-barbell>
+              <div style="position:absolute;top:12px;left:12px;background:rgba(255,255,255,0.2);color:white;font-size:10px;font-weight:700;padding:3px 10px;border-radius:99px;">Vodič</div>
+            </div>
             <div class="p-6">
               <div class="flex items-center gap-2 mb-3">
-                <span
-                  class="text-xs font-semibold text-[#606060] bg-[#f0f0f0] px-2.5 py-1 rounded-full"
-                  >Vodic</span
-                >
+                <span style="font-size:10px;font-weight:700;color:#059669;background:#f0fdf4;border:1px solid #d1fae5;padding:2px 10px;border-radius:99px;">VODIČ</span>
                 <span class="text-xs text-[#999]">mart 2026</span>
               </div>
               <h2 class="text-lg font-bold text-[#333] mb-2 leading-snug">
@@ -153,12 +174,14 @@
           <article
             class="bg-white rounded-md border border-[#d0d0d0] overflow-hidden hover:shadow-md transition-shadow"
           >
+            <div style="height:160px; background:linear-gradient(135deg,#1e3a5f 0%,#1d4ed8 50%,#3b82f6 100%); position:relative; overflow:hidden; display:flex; align-items:center; justify-content:center;">
+              <div style="position:absolute;inset:0;opacity:0.08;background-image:repeating-linear-gradient(45deg,white 0px,white 1px,transparent 1px,transparent 20px);"></div>
+              <ph-lightning weight="fill" style="font-size:56px;color:rgba(255,255,255,0.9);position:relative;z-index:1;"></ph-lightning>
+              <div style="position:absolute;top:12px;left:12px;background:rgba(255,255,255,0.2);color:white;font-size:10px;font-weight:700;padding:3px 10px;border-radius:99px;">Vodič</div>
+            </div>
             <div class="p-6">
               <div class="flex items-center gap-2 mb-3">
-                <span
-                  class="text-xs font-semibold text-[#606060] bg-[#f0f0f0] px-2.5 py-1 rounded-full"
-                  >Vodic</span
-                >
+                <span style="font-size:10px;font-weight:700;color:#059669;background:#f0fdf4;border:1px solid #d1fae5;padding:2px 10px;border-radius:99px;">VODIČ</span>
                 <span class="text-xs text-[#999]">mart 2026</span>
               </div>
               <h2 class="text-lg font-bold text-[#333] mb-2 leading-snug">
@@ -183,6 +206,79 @@
                   weight="bold"
                   class="text-base"
                 ></ph-arrow-right>
+              </a>
+            </div>
+          </article>
+          <!-- Card 3: Gde kupiti whey protein najjeftinije -->
+          <article
+            class="bg-white rounded-md border border-[#d0d0d0] overflow-hidden hover:shadow-md transition-shadow"
+          >
+            <div style="height:160px; background:linear-gradient(135deg,#14532d 0%,#16a34a 50%,#4ade80 100%); position:relative; overflow:hidden; display:flex; align-items:center; justify-content:center;">
+              <div style="position:absolute;inset:0;opacity:0.08;background-image:repeating-linear-gradient(45deg,white 0px,white 1px,transparent 1px,transparent 20px);"></div>
+              <ph-tag weight="fill" style="font-size:56px;color:rgba(255,255,255,0.9);position:relative;z-index:1;"></ph-tag>
+              <div style="position:absolute;top:12px;left:12px;background:rgba(255,255,255,0.2);color:white;font-size:10px;font-weight:700;padding:3px 10px;border-radius:99px;">Poređenje cena</div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span style="font-size:10px;font-weight:700;color:#059669;background:#f0fdf4;border:1px solid #d1fae5;padding:2px 10px;border-radius:99px;">CENE</span>
+                <span class="text-xs text-[#999]">mart 2026</span>
+              </div>
+              <h2 class="text-lg font-bold text-[#333] mb-2 leading-snug">
+                <a
+                  href="whey-protein-cena-poredenje-srbija-2026.html"
+                  class="hover:text-[#606060] transition-colors"
+                >
+                  Whey protein cena Srbija 2026 – poređenje iz 12 prodavnica
+                </a>
+              </h2>
+              <p class="text-sm text-[#606060] leading-relaxed mb-4">
+                Aktuelno poređenje cena whey proteina iz 12 srpskih prodavnica.
+                Ko ima najjeftiniji protein, gde su popusti do -28%, i kako
+                izračunati pravu vrednost po porciji.
+              </p>
+              <a
+                href="whey-protein-cena-poredenje-srbija-2026.html"
+                class="inline-flex items-center gap-1 text-sm font-semibold text-[#606060] hover:text-[#333] transition-colors py-2"
+              >
+                Citaj vise
+                <ph-arrow-right weight="bold" class="text-base"></ph-arrow-right>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 4: Kreatin cena poređenje -->
+          <article
+            class="bg-white rounded-md border border-[#d0d0d0] overflow-hidden hover:shadow-md transition-shadow"
+          >
+            <div style="height:160px; background:linear-gradient(135deg,#312e81 0%,#4f46e5 50%,#818cf8 100%); position:relative; overflow:hidden; display:flex; align-items:center; justify-content:center;">
+              <div style="position:absolute;inset:0;opacity:0.08;background-image:repeating-linear-gradient(45deg,white 0px,white 1px,transparent 1px,transparent 20px);"></div>
+              <ph-chart-bar weight="fill" style="font-size:56px;color:rgba(255,255,255,0.9);position:relative;z-index:1;"></ph-chart-bar>
+              <div style="position:absolute;top:12px;left:12px;background:rgba(255,255,255,0.2);color:white;font-size:10px;font-weight:700;padding:3px 10px;border-radius:99px;">Poređenje cena</div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span style="font-size:10px;font-weight:700;color:#059669;background:#f0fdf4;border:1px solid #d1fae5;padding:2px 10px;border-radius:99px;">CENE</span>
+                <span class="text-xs text-[#999]">mart 2026</span>
+              </div>
+              <h2 class="text-lg font-bold text-[#333] mb-2 leading-snug">
+                <a
+                  href="kreatin-cena-srbija-poredenje-2026.html"
+                  class="hover:text-[#606060] transition-colors"
+                >
+                  Kreatin cena Srbija 2026 – poređenje iz 8 prodavnica
+                </a>
+              </h2>
+              <p class="text-sm text-[#606060] leading-relaxed mb-4">
+                Poredili smo cene kreatin monohidrata iz 8 srpskih prodavnica.
+                Najjeftiniji od 1.750 RSD. Cena po gramu, šta tražiti i kada
+                kupiti.
+              </p>
+              <a
+                href="kreatin-cena-srbija-poredenje-2026.html"
+                class="inline-flex items-center gap-1 text-sm font-semibold text-[#606060] hover:text-[#333] transition-colors py-2"
+              >
+                Citaj vise
+                <ph-arrow-right weight="bold" class="text-base"></ph-arrow-right>
               </a>
             </div>
           </article>
@@ -271,11 +367,13 @@
             class="mt-8 pt-6 border-t border-[#d0d0d0] flex flex-col sm:flex-row items-center justify-between gap-2"
           >
             <div class="flex items-center gap-2 text-sm">
-              <ph-shopping-cart
-                weight="bold"
-                class="text-[#606060]"
-              ></ph-shopping-cart>
-              <span class="text-[#333] font-semibold">RS Supplement Deals</span>
+              <svg width="24" height="24" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="10" fill="#059669"/>
+                <path d="M13 17 C13 12, 27 12, 27 17 C27 21, 13 21, 13 25 C13 30, 27 30, 27 25" stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+              </svg>
+              <span class="font-extrabold tracking-tight leading-tight">
+                <span class="text-[#111827]">suplementi</span><span class="text-[#059669]">.deals</span>
+              </span>
             </div>
             <p class="text-xs text-[#999]">
               Automatski azurirano &middot; Podaci samo u informativne svrhe
