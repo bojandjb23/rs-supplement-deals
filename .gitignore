@@ -1,6 +1,6 @@
 __pycache__/
 *.pyc
-data/
+/data/
 supplement_dashboard_live.html
 .env
 .venv/

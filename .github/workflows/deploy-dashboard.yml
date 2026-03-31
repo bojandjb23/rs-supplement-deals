@@ -147,6 +147,9 @@ jobs:
           "
           # Copy blog pages
           cp blog/*.html _site/blog/ 2>/dev/null || true
+          # Copy supplements data so category pages can fetch /data/supplements.json
+          mkdir -p _site/data
+          cp data/supplements.json _site/data/supplements.json 2>/dev/null || echo "Warning: data/supplements.json not found"
           # Copy category pages
           mkdir -p _site/kreatin _site/proteini
           cp kreatin/index.html _site/kreatin/index.html 2>/dev/null || true
