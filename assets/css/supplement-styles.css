@@ -118,3 +118,36 @@ input[type="checkbox"] {
 .safe-area-bottom {
   padding-bottom: env(safe-area-inset-bottom);
 }
+
+/* ---- Mobile Readability Foundation (<640px) ---- */
+@media (max-width: 639px) {
+  /* Ensure minimum 16px root so rem units stay readable */
+  html {
+    font-size: 16px;
+  }
+
+  /* Touch targets: any interactive element should be at least 44px tall */
+  button,
+  a,
+  select,
+  input[type="checkbox"],
+  input[type="radio"] {
+    min-height: 44px;
+  }
+
+  /* Exempt purely decorative / inline elements from the min-height rule */
+  span > button,
+  .line-clamp-2 a,
+  .badge-btn {
+    min-height: unset;
+  }
+
+  /* Very narrow screens (<380px): single-column product grid */
+}
+
+@media (max-width: 379px) {
+  #productGrid,
+  .grid.grid-cols-2:not(.stats-grid) {
+    grid-template-columns: 1fr !important;
+  }
+}

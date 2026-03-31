@@ -769,6 +769,25 @@ const CLICK_STORAGE_KEY = "rssd_clicks";
 const CLICK_MAX_ENTRIES = 5000;
 
 function trackClick(product) {
+  const discountPct = product.discount_percent || 0;
+
+  // Fire GA4 / Plausible affiliate_click event
+  if (window.rssd && window.rssd.trackEvent) {
+    window.rssd.trackEvent("affiliate_click", {
+      store: product.store,
+      product_name: product.name,
+      product_id: product.id || "",
+      discount_pct: discountPct,
+      destination_url: product.product_url,
+    });
+    // Mark the link so the generic outbound handler in analytics.js skips it
+    const buyLink = document.activeElement;
+    if (buyLink && buyLink.tagName === "A") {
+      buyLink.dataset.analyticsTracked = "1";
+    }
+  }
+
+  // Persist to localStorage for the on-site analytics dashboard
   try {
     const entry = {
       ts: Date.now(),
@@ -777,7 +796,7 @@ function trackClick(product) {
       productId: product.id,
       productName: product.name,
       url: product.product_url,
-      discountPct: product.discount_percent || 0,
+      discountPct: discountPct,
     };
     const raw = localStorage.getItem(CLICK_STORAGE_KEY);
     const clicks = raw ? JSON.parse(raw) : [];
@@ -851,14 +870,14 @@ function createProductCard(product, index) {
   const catColorClass =
     CATEGORY_COLORS[product.category] || "bg-slate-100 text-slate-500";
   const categoryHtml = product.category
-    ? `<span class="text-[10px] px-2 py-0.5 ${catColorClass} rounded-full w-fit">${escapeHtml(product.category)}</span>`
+    ? `<span class="text-xs px-2 py-0.5 ${catColorClass} rounded-full w-fit">${escapeHtml(product.category)}</span>`
     : "";
 
   // Store colored dot
   const storeColor = STORE_COLORS[product.store] || "#9ca3af";
   const storeHtml = `<div class="flex items-center gap-1.5">
     <span style="background:${storeColor}" class="w-2 h-2 rounded-full shrink-0 inline-block"></span>
-    <span class="text-[10px] font-semibold text-[#6b7280] truncate">${escapeHtml(product.store)}</span>
+    <span class="text-xs font-semibold text-[#6b7280] truncate">${escapeHtml(product.store)}</span>
   </div>`;
 
   // Price section
@@ -887,7 +906,7 @@ function createProductCard(product, index) {
         <div class="p-3 flex-1 flex flex-col gap-1.5">
             ${storeHtml}
             ${categoryHtml}
-            <h3 class="text-xs font-semibold text-[#111827] line-clamp-2 flex-1" title="${escapeHtml(product.name)}">${escapeHtml(product.name)}</h3>
+            <h3 class="text-sm font-semibold text-[#111827] line-clamp-2 flex-1" title="${escapeHtml(product.name)}">${escapeHtml(product.name)}</h3>
             <div class="mt-auto pt-1">
                 ${priceHtml}
             </div>
@@ -980,6 +999,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const subs = JSON.parse(localStorage.getItem("rssd_subscribers") || "[]");
       if (!subs.includes(email)) subs.push(email);
       localStorage.setItem("rssd_subscribers", JSON.stringify(subs));
+      // Track signup event
+      if (window.rssd && window.rssd.trackEvent) {
+        window.rssd.trackEvent("newsletter_signup", { page: "popusti" });
+      }
       // Show success
       form.innerHTML =
         '<p class="text-white/80 text-sm py-2">Hvala! Uskoro ces primiti prvi pregled popusta.</p>';
