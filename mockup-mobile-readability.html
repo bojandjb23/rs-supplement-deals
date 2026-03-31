@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile Readability Mockup — suplementi.deals (RSS-56)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --emerald: #059669;
+      --emerald-light: #d1fae5;
+      --charcoal: #1a1a1a;
+      --charcoal-2: #242424;
+      --charcoal-3: #2e2e2e;
+      --text-dim: #999;
+      --text-muted: #666;
+      --border: rgba(255,255,255,0.08);
+      --accent-red: #ef4444;
+      --accent-amber: #f59e0b;
+      --accent-blue: #3b82f6;
+    }
+
+    body {
+      background: var(--charcoal);
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      min-height: 100vh;
+      padding: 40px 24px 80px;
+    }
+
+    /* ─── PAGE HEADER ─── */
+    .page-header {
+      max-width: 1280px;
+      margin: 0 auto 48px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 32px;
+    }
+    .page-header-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    .doc-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--emerald);
+      background: rgba(5,150,105,0.12);
+      border: 1px solid rgba(5,150,105,0.3);
+      padding: 4px 12px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+    .page-title {
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+    .page-title span { color: var(--emerald); }
+    .page-subtitle {
+      font-size: 15px;
+      color: var(--text-dim);
+      margin-top: 8px;
+      font-weight: 400;
+    }
+    .meta-chips {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .chip {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      padding: 6px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      color: var(--text-dim);
+      background: var(--charcoal-2);
+    }
+    .chip.green { border-color: rgba(5,150,105,0.4); color: #34d399; background: rgba(5,150,105,0.08); }
+    .chip.red { border-color: rgba(239,68,68,0.4); color: #f87171; background: rgba(239,68,68,0.08); }
+    .criteria-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .criteria-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+    .criteria-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--emerald);
+      flex-shrink: 0;
+    }
+
+    /* ─── STAGE LABEL ─── */
+    .stage-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+    .stage-label.problem { color: var(--accent-red); }
+    .stage-label.solution { color: var(--emerald); }
+
+    /* ─── PHONE FRAMES LAYOUT ─── */
+    .frames-row {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      align-items: start;
+    }
+
+    .frame-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .frame-col-header {
+      width: 100%;
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .frame-col-header h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    .frame-col-header p {
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    /* ─── PHONE DEVICE ─── */
+    .phone-device {
+      width: 280px;
+      background: #111;
+      border-radius: 40px;
+      border: 2px solid #2a2a2a;
+      box-shadow:
+        0 0 0 1px #444 inset,
+        0 40px 80px rgba(0,0,0,0.6),
+        0 20px 40px rgba(0,0,0,0.4);
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Dynamic island */
+    .dynamic-island {
+      position: absolute;
+      top: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 88px;
+      height: 26px;
+      background: #111;
+      border-radius: 20px;
+      z-index: 100;
+      border: 1.5px solid #1f1f1f;
+    }
+
+    .phone-screen {
+      width: 100%;
+      background: #fff;
+      border-radius: 38px;
+      overflow: hidden;
+      height: 560px;
+      overflow-y: auto;
+      scrollbar-width: none;
+      padding-top: 48px;
+      position: relative;
+    }
+    .phone-screen::-webkit-scrollbar { display: none; }
+
+    /* Side buttons */
+    .phone-device::before {
+      content: '';
+      position: absolute;
+      right: -4px;
+      top: 100px;
+      width: 4px;
+      height: 60px;
+      background: #2a2a2a;
+      border-radius: 0 3px 3px 0;
+      box-shadow: 0 80px 0 #2a2a2a;
+    }
+    .phone-device::after {
+      content: '';
+      position: absolute;
+      left: -4px;
+      top: 80px;
+      width: 4px;
+      height: 36px;
+      background: #2a2a2a;
+      border-radius: 3px 0 0 3px;
+      box-shadow: 0 50px 0 #2a2a2a, 0 96px 0 #2a2a2a;
+    }
+
+    /* ─── ANNOTATION PANEL ─── */
+    .annotation-panel {
+      margin-top: 20px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .annotation {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--charcoal-2);
+    }
+    .annotation.good {
+      border-color: rgba(5,150,105,0.3);
+      background: rgba(5,150,105,0.06);
+    }
+    .annotation.bad {
+      border-color: rgba(239,68,68,0.3);
+      background: rgba(239,68,68,0.06);
+    }
+    .annotation-icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 10px;
+      font-weight: 700;
+      margin-top: 1px;
+    }
+    .annotation-icon.good { background: rgba(5,150,105,0.2); color: #34d399; }
+    .annotation-icon.bad { background: rgba(239,68,68,0.2); color: #f87171; }
+    .annotation-text {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      line-height: 1.5;
+      color: var(--text-dim);
+    }
+    .annotation-text strong { color: #fff; display: block; margin-bottom: 2px; font-size: 11.5px; }
+
+    /* ─────────────────────────────
+       SCREEN CONTENT STYLES
+    ───────────────────────────── */
+
+    /* SHARED COMPONENTS */
+    .s-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      background: #fff;
+      border-bottom: 1px solid #f0f0f0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .s-logo {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      color: #059669;
+    }
+    .s-bottom-nav {
+      position: sticky;
+      bottom: 0;
+      background: #fff;
+      border-top: 1px solid #e5e5e5;
+      display: flex;
+      z-index: 10;
+    }
+    .s-nav-item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      cursor: pointer;
+      color: #999;
+      transition: color 0.15s;
+    }
+    .s-nav-item.active { color: #059669; }
+
+    /* ─── BEFORE SCREEN ─── */
+    .before-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 6px 10px;
+      background: #fff;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .before-logo {
+      font-size: 9px;
+      font-weight: 800;
+      color: #059669;
+    }
+
+    .before-hero {
+      background: linear-gradient(135deg, #f0fdf4 0%, #d1fae5 100%);
+      padding: 8px 10px;
+      text-align: center;
+    }
+    .before-hero h1 {
+      font-size: 10px;
+      font-weight: 700;
+      color: #333;
+      line-height: 1.3;
+    }
+    .before-hero p {
+      font-size: 8px;
+      color: #606060;
+      margin-top: 4px;
+    }
+    .before-hero-btn {
+      display: inline-block;
+      margin-top: 6px;
+      padding: 4px 10px;
+      background: #059669;
+      color: #fff;
+      border-radius: 4px;
+      font-size: 8px;
+      font-weight: 600;
+    }
+
+    .before-section-title {
+      font-size: 9px;
+      font-weight: 700;
+      color: #333;
+      padding: 6px 10px 4px;
+    }
+
+    .before-steps {
+      padding: 0 10px 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .before-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+      padding: 5px 6px;
+      background: #f9f9f9;
+      border-radius: 4px;
+    }
+    .before-step-num {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #059669;
+      color: #fff;
+      font-size: 6px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .before-step-text {
+      font-size: 8px;
+      color: #606060;
+      line-height: 1.4;
+    }
+    .before-step-label {
+      font-size: 7px;
+      font-weight: 700;
+      color: #333;
+    }
+
+    .before-filters {
+      display: flex;
+      gap: 4px;
+      padding: 4px 10px;
+      overflow: hidden;
+    }
+    .before-filter-pill {
+      padding: 3px 7px;
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 20px;
+      font-size: 8px;
+      color: #606060;
+      white-space: nowrap;
+    }
+    .before-filter-pill.active {
+      background: #059669;
+      color: #fff;
+      border-color: #059669;
+    }
+
+    .before-product-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px;
+      padding: 0 10px 8px;
+    }
+    .before-card {
+      background: #f5f5f5;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .before-card-img {
+      background: #e8e8e8;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .before-card-img ph-icon { font-size: 18px; color: #bbb; }
+    .before-card-body {
+      padding: 4px 5px;
+    }
+    .before-card-store {
+      font-size: 7px;
+      color: #999;
+      background: #e5e5e5;
+      display: inline-block;
+      padding: 1px 4px;
+      border-radius: 2px;
+      margin-bottom: 2px;
+    }
+    .before-card-name {
+      font-size: 8px;
+      font-weight: 600;
+      color: #333;
+      line-height: 1.3;
+      margin-bottom: 2px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .before-card-price {
+      font-size: 9px;
+      font-weight: 700;
+      color: #059669;
+    }
+    .before-card-discount {
+      font-size: 6px;
+      color: #ef4444;
+      font-weight: 600;
+    }
+    .before-card-btn {
+      display: block;
+      width: 100%;
+      padding: 3px;
+      background: #059669;
+      color: #fff;
+      font-size: 7px;
+      font-weight: 600;
+      text-align: center;
+      border-radius: 3px;
+      margin-top: 4px;
+    }
+
+    .before-bottom-nav {
+      display: flex;
+      border-top: 1px solid #e5e5e5;
+      background: #fff;
+      position: sticky;
+      bottom: 0;
+    }
+    .before-nav-item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+      padding: 4px 2px;
+      color: #999;
+    }
+    .before-nav-item.active { color: #059669; }
+    .before-nav-icon { font-size: 12px; }
+    .before-nav-label { font-size: 7px; font-weight: 500; }
+
+    /* problem indicators */
+    .problem-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      background: rgba(239,68,68,0.12);
+      border: 1px solid rgba(239,68,68,0.4);
+      color: #ef4444;
+      font-size: 7px;
+      font-family: 'DM Mono', monospace;
+      padding: 2px 5px;
+      border-radius: 3px;
+      margin: 2px 4px;
+    }
+
+    /* ─── AFTER HOMEPAGE SCREEN ─── */
+    .after-hero {
+      background: linear-gradient(135deg, #f0fdf4 0%, #d1fae5 100%);
+      padding: 16px 14px;
+      text-align: center;
+    }
+    .after-hero-tag {
+      display: inline-block;
+      background: rgba(5,150,105,0.12);
+      color: #059669;
+      font-size: 10px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 8px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .after-hero h1 {
+      font-size: 18px;
+      font-weight: 800;
+      color: #1a1a1a;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+    .after-hero p {
+      font-size: 13px;
+      color: #606060;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+    .after-hero-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 12px 20px;
+      background: #059669;
+      color: #fff;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      min-height: 44px;
+    }
+
+    .after-stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .after-stat {
+      padding: 10px 8px;
+      text-align: center;
+      border-right: 1px solid #f0f0f0;
+    }
+    .after-stat:last-child { border-right: none; }
+    .after-stat-num {
+      font-size: 16px;
+      font-weight: 800;
+      color: #059669;
+    }
+    .after-stat-label {
+      font-size: 10px;
+      color: #999;
+      line-height: 1.3;
+    }
+
+    .after-section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 14px 8px;
+    }
+    .after-section-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #1a1a1a;
+    }
+    .after-section-link {
+      font-size: 12px;
+      color: #059669;
+      font-weight: 600;
+    }
+
+    .after-steps {
+      padding: 0 14px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .after-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      min-height: 44px;
+    }
+    .after-step-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #059669;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .after-step-body { flex: 1; }
+    .after-step-label {
+      font-size: 13px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 2px;
+    }
+    .after-step-text {
+      font-size: 12px;
+      color: #606060;
+      line-height: 1.4;
+    }
+
+    .after-featured-cards {
+      display: flex;
+      gap: 10px;
+      padding: 0 14px 14px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .after-featured-cards::-webkit-scrollbar { display: none; }
+    .after-feat-card {
+      background: #f5f5f5;
+      border-radius: 10px;
+      overflow: hidden;
+      min-width: 130px;
+      flex-shrink: 0;
+    }
+    .after-feat-img {
+      background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .after-feat-body { padding: 8px 10px; }
+    .after-feat-store {
+      font-size: 10px;
+      color: #999;
+      background: #e5e5e5;
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 3px;
+      margin-bottom: 4px;
+    }
+    .after-feat-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: #1a1a1a;
+      line-height: 1.3;
+      margin-bottom: 4px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .after-feat-price {
+      font-size: 15px;
+      font-weight: 800;
+      color: #059669;
+    }
+    .after-feat-old {
+      font-size: 11px;
+      color: #999;
+      text-decoration: line-through;
+    }
+    .after-feat-badge {
+      display: inline-block;
+      background: #fef2f2;
+      color: #ef4444;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .after-home-nav {
+      height: 56px;
+    }
+    .after-home-nav .s-nav-item {
+      min-height: 44px;
+    }
+    .after-nav-icon { font-size: 20px; }
+    .after-nav-label { font-size: 10px; font-weight: 500; }
+
+    /* ─── AFTER PRODUCT GRID SCREEN ─── */
+    .grid-page-header {
+      padding: 12px 14px;
+      border-bottom: 1px solid #f0f0f0;
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .grid-page-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .grid-page-title {
+      font-size: 17px;
+      font-weight: 800;
+      color: #1a1a1a;
+    }
+    .grid-page-count {
+      font-size: 12px;
+      color: #999;
+    }
+    .grid-controls {
+      display: flex;
+      gap: 8px;
+    }
+    .grid-control-btn {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 8px 12px;
+      min-height: 36px;
+      border: 1.5px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #333;
+      background: #fff;
+      white-space: nowrap;
+    }
+
+    .filter-pills-row {
+      display: flex;
+      gap: 8px;
+      padding: 10px 14px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .filter-pills-row::-webkit-scrollbar { display: none; }
+    .filter-pill {
+      padding: 0 14px;
+      height: 40px;
+      border: 1.5px solid #e0e0e0;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #606060;
+      background: #fff;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .filter-pill.active {
+      background: #059669;
+      color: #fff;
+      border-color: #059669;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 12px 14px;
+    }
+    .product-card {
+      background: #f5f5f5;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .product-card-img {
+      background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+      height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .product-card-img-alt {
+      background: linear-gradient(135deg, #eff6ff, #dbeafe);
+    }
+    .product-card-img-3 {
+      background: linear-gradient(135deg, #fef3c7, #fde68a);
+    }
+    .product-card-img-4 {
+      background: linear-gradient(135deg, #fce7f3, #fbcfe8);
+    }
+    .discount-ribbon {
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      background: #ef4444;
+      color: #fff;
+      font-size: 9px;
+      font-weight: 700;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+    .product-card-body {
+      padding: 8px 10px 10px;
+    }
+    .product-card-store {
+      font-size: 10px;
+      color: #999;
+      background: #e5e5e5;
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 3px;
+      margin-bottom: 5px;
+    }
+    .product-card-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: #1a1a1a;
+      line-height: 1.35;
+      margin-bottom: 5px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      min-height: 35px;
+    }
+    .product-card-price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+    .product-card-price {
+      font-size: 15px;
+      font-weight: 800;
+      color: #059669;
+    }
+    .product-card-old-price {
+      font-size: 11px;
+      color: #bbb;
+      text-decoration: line-through;
+    }
+    .product-card-buy-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      width: 100%;
+      height: 36px;
+      background: #059669;
+      color: #fff;
+      border-radius: 7px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .grid-bottom-nav {
+      height: 56px;
+    }
+
+    /* ─── SPEC TABLE ─── */
+    .spec-section {
+      max-width: 1280px;
+      margin: 64px auto 0;
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
+    }
+    .spec-section-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 24px;
+    }
+    .spec-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    .spec-table th {
+      text-align: left;
+      padding: 10px 16px;
+      font-size: 11px;
+      font-family: 'DM Mono', monospace;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border);
+    }
+    .spec-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-dim);
+      vertical-align: middle;
+    }
+    .spec-table tr:last-child td { border-bottom: none; }
+    .spec-table td:first-child {
+      font-weight: 600;
+      color: #fff;
+      width: 220px;
+    }
+    .spec-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-family: 'DM Mono', monospace;
+      font-size: 11.5px;
+    }
+    .spec-badge.before {
+      background: rgba(239,68,68,0.1);
+      color: #f87171;
+      border: 1px solid rgba(239,68,68,0.3);
+    }
+    .spec-badge.after {
+      background: rgba(5,150,105,0.1);
+      color: #34d399;
+      border: 1px solid rgba(5,150,105,0.3);
+    }
+    .spec-arrow {
+      color: var(--text-muted);
+      font-size: 16px;
+    }
+
+    /* ─── FOOTER ─── */
+    .doc-footer {
+      max-width: 1280px;
+      margin: 48px auto 0;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .doc-footer p {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+    .doc-footer p span { color: var(--emerald); }
+
+    @media (max-width: 900px) {
+      .frames-row { grid-template-columns: 1fr; align-items: center; }
+      .frame-col { max-width: 340px; margin: 0 auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════
+       PAGE HEADER
+  ═══════════════════════════════ -->
+  <div class="page-header">
+    <div class="page-header-top">
+      <div>
+        <div class="doc-label">Design Review · RSS-56</div>
+        <h1 class="page-title">Mobile Readability <span>Mockup</span></h1>
+        <p class="page-subtitle">suplementi.deals — iPhone 14 Pro (393px) · Before / After comparison</p>
+      </div>
+      <div class="meta-chips">
+        <div class="chip">2026-03-31</div>
+        <div class="chip">UI/UX Designer</div>
+        <div class="chip red">Needs Board Approval</div>
+        <div class="chip green">WCAG 2.5.5</div>
+      </div>
+    </div>
+    <div class="criteria-row">
+      <div class="criteria-item"><div class="criteria-dot"></div> All body text ≥ 14px on iPhone 14 Pro</div>
+      <div class="criteria-item"><div class="criteria-dot"></div> All interactive elements ≥ 44×44px</div>
+      <div class="criteria-item"><div class="criteria-dot"></div> No hardcoded inline font-sizes</div>
+      <div class="criteria-item"><div class="criteria-dot"></div> Zero horizontal scroll</div>
+      <div class="criteria-item"><div class="criteria-dot"></div> text-[10px] occurrences eliminated</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════
+       THREE PHONE FRAMES
+  ═══════════════════════════════ -->
+  <div class="frames-row">
+
+    <!-- ─── COLUMN 1: BEFORE ─── -->
+    <div class="frame-col">
+      <div class="frame-col-header">
+        <div class="stage-label problem">⚠ Before — Current State</div>
+        <h2>Homepage (Broken)</h2>
+        <p>Text at 7–10px, tiny touch targets, unreadable on mobile</p>
+      </div>
+
+      <div class="phone-device">
+        <div class="dynamic-island"></div>
+        <div class="phone-screen">
+
+          <!-- before header -->
+          <div class="before-header">
+            <div class="before-logo">RS Supplement Deals</div>
+            <div style="display:flex;gap:6px;align-items:center;">
+              <div style="font-size:8px;padding:3px 7px;background:#059669;color:#fff;border-radius:3px;font-weight:700;">Prijavi se</div>
+            </div>
+          </div>
+
+          <!-- problem badge: header -->
+          <div style="padding:2px 6px;">
+            <div class="problem-badge">✕ header text 9px — too small</div>
+          </div>
+
+          <!-- before hero -->
+          <div class="before-hero">
+            <h1>Suplementi na popustu<br>u Srbiji</h1>
+            <p>863+ proizvoda iz 15 prodavnica. Ažurirano svakih 6 sati.</p>
+            <div class="before-hero-btn">Istraži popuste →</div>
+          </div>
+          <div style="padding:2px 6px;">
+            <div class="problem-badge">✕ h1 at 10px, body 8px</div>
+            <div class="problem-badge">✕ CTA button 8px, ~22px tall</div>
+          </div>
+
+          <!-- before steps -->
+          <div class="before-section-title">Kako funkcioniše?</div>
+          <div class="before-steps">
+            <div class="before-step">
+              <div class="before-step-num">1</div>
+              <div>
+                <div class="before-step-label">Pretražujemo prodavnice</div>
+                <div class="before-step-text">Svake 6 sati automatski ažuriramo sve cene</div>
+              </div>
+            </div>
+            <div class="before-step">
+              <div class="before-step-num">2</div>
+              <div>
+                <div class="before-step-label">Poredimo cene</div>
+                <div class="before-step-text">Vidite sve popuste na jednom mestu</div>
+              </div>
+            </div>
+          </div>
+          <div style="padding:2px 6px;">
+            <div class="problem-badge">✕ inline style: font-size:8px</div>
+          </div>
+
+          <!-- before filters -->
+          <div class="before-section-title">Kategorije</div>
+          <div class="before-filters">
+            <div class="before-filter-pill active">Sve</div>
+            <div class="before-filter-pill">Proteini</div>
+            <div class="before-filter-pill">Kreatin</div>
+            <div class="before-filter-pill">Vitamini</div>
+          </div>
+          <div style="padding:2px 6px;">
+            <div class="problem-badge">✕ filter text 8px, height ~20px</div>
+          </div>
+
+          <!-- before product grid -->
+          <div class="before-section-title">Najnoviji popusti</div>
+          <div class="before-product-grid">
+            <div class="before-card">
+              <div class="before-card-img">
+                <ph-icon name="package" style="font-size:22px;color:#bbb;"></ph-icon>
+              </div>
+              <div class="before-card-body">
+                <div class="before-card-store">Myprotein</div>
+                <div class="before-card-name">Impact Whey Protein 1kg Chocolate</div>
+                <div class="before-card-price">3.490 RSD</div>
+                <div class="before-card-discount">-20%</div>
+                <div class="before-card-btn">Kupi →</div>
+              </div>
+            </div>
+            <div class="before-card">
+              <div class="before-card-img">
+                <ph-icon name="package" style="font-size:22px;color:#bbb;"></ph-icon>
+              </div>
+              <div class="before-card-body">
+                <div class="before-card-store">Gymbeam</div>
+                <div class="before-card-name">Creatine Monohydrate 500g</div>
+                <div class="before-card-price">1.890 RSD</div>
+                <div class="before-card-discount">-15%</div>
+                <div class="before-card-btn">Kupi →</div>
+              </div>
+            </div>
+          </div>
+          <div style="padding:2px 6px;">
+            <div class="problem-badge">✕ card names 8px, button ~16px tall</div>
+          </div>
+
+          <!-- before bottom nav -->
+          <div class="before-bottom-nav">
+            <div class="before-nav-item active">
+              <div class="before-nav-icon"><ph-icon name="house"></ph-icon></div>
+              <div class="before-nav-label">Početna</div>
+            </div>
+            <div class="before-nav-item">
+              <div class="before-nav-icon"><ph-icon name="tag"></ph-icon></div>
+              <div class="before-nav-label">Popusti</div>
+            </div>
+            <div class="before-nav-item">
+              <div class="before-nav-icon"><ph-icon name="magnifying-glass"></ph-icon></div>
+              <div class="before-nav-label">Pretraga</div>
+            </div>
+            <div class="before-nav-item">
+              <div class="before-nav-icon"><ph-icon name="heart"></ph-icon></div>
+              <div class="before-nav-label">Sačuvano</div>
+            </div>
+            <div class="before-nav-item">
+              <div class="before-nav-icon"><ph-icon name="user"></ph-icon></div>
+              <div class="before-nav-label">Profil</div>
+            </div>
+          </div>
+          <div style="padding:2px 6px 8px;">
+            <div class="problem-badge">✕ nav labels 7px, total height ~38px</div>
+          </div>
+
+        </div><!-- end phone-screen -->
+      </div><!-- end phone-device -->
+
+      <div class="annotation-panel">
+        <div class="annotation bad">
+          <div class="annotation-icon bad">✕</div>
+          <div class="annotation-text"><strong>Hero h1: 10px</strong>Minimum recommended: 20–24px for primary heading</div>
+        </div>
+        <div class="annotation bad">
+          <div class="annotation-icon bad">✕</div>
+          <div class="annotation-text"><strong>Body copy: 8px</strong>WCAG minimum for body text: 14px (1rem)</div>
+        </div>
+        <div class="annotation bad">
+          <div class="annotation-icon bad">✕</div>
+          <div class="annotation-text"><strong>CTA button height: ~22px</strong>WCAG 2.5.5 requires ≥ 44×44px touch target</div>
+        </div>
+        <div class="annotation bad">
+          <div class="annotation-icon bad">✕</div>
+          <div class="annotation-text"><strong>Bottom nav height: ~38px</strong>Nav items not individually ≥ 44px tap area</div>
+        </div>
+        <div class="annotation bad">
+          <div class="annotation-icon bad">✕</div>
+          <div class="annotation-text"><strong>Filter pills height: ~20px</strong>Near-impossible to tap accurately on mobile</div>
+        </div>
+      </div>
+    </div>
+    <!-- END COLUMN 1 -->
+
+    <!-- ─── COLUMN 2: AFTER HOMEPAGE ─── -->
+    <div class="frame-col">
+      <div class="frame-col-header">
+        <div class="stage-label solution">✓ After — Homepage</div>
+        <h2>Homepage (Fixed)</h2>
+        <p>Proper text scale, accessible touch targets, readable at a glance</p>
+      </div>
+
+      <div class="phone-device">
+        <div class="dynamic-island"></div>
+        <div class="phone-screen">
+
+          <!-- after header -->
+          <div class="s-header">
+            <div class="s-logo" style="font-size:15px;">RS Supplement Deals</div>
+            <div style="display:flex;gap:8px;align-items:center;">
+              <button style="display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:8px;border:1.5px solid #e5e5e5;background:#fff;">
+                <ph-icon name="magnifying-glass" style="font-size:18px;color:#333;"></ph-icon>
+              </button>
+              <button style="display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:8px;border:1.5px solid #e5e5e5;background:#fff;">
+                <ph-icon name="list" style="font-size:18px;color:#333;"></ph-icon>
+              </button>
+            </div>
+          </div>
+
+          <!-- after hero -->
+          <div class="after-hero">
+            <div class="after-hero-tag">🇷🇸 Serbia · 15 prodavnica</div>
+            <h1>Suplementi na popustu u Srbiji</h1>
+            <p>863+ proizvoda. Ažurirano svakih 6 sati.</p>
+            <div class="after-hero-btn">
+              <ph-icon name="tag" style="font-size:18px;"></ph-icon>
+              Istraži popuste
+            </div>
+          </div>
+
+          <!-- stats bar -->
+          <div class="after-stats-row">
+            <div class="after-stat">
+              <div class="after-stat-num">863+</div>
+              <div class="after-stat-label">Proizvoda</div>
+            </div>
+            <div class="after-stat">
+              <div class="after-stat-num">15</div>
+              <div class="after-stat-label">Prodavnica</div>
+            </div>
+            <div class="after-stat">
+              <div class="after-stat-num">6h</div>
+              <div class="after-stat-label">Ažuriranje</div>
+            </div>
+          </div>
+
+          <!-- how it works -->
+          <div class="after-section-header">
+            <div class="after-section-title">Kako funkcioniše?</div>
+          </div>
+          <div class="after-steps">
+            <div class="after-step">
+              <div class="after-step-num">1</div>
+              <div class="after-step-body">
+                <div class="after-step-label">Pretražujemo prodavnice</div>
+                <div class="after-step-text">Svake 6 sati ažuriramo sve cene automatski</div>
+              </div>
+            </div>
+            <div class="after-step">
+              <div class="after-step-num">2</div>
+              <div class="after-step-body">
+                <div class="after-step-label">Poredimo cene</div>
+                <div class="after-step-text">Vidite sve popuste na jednom mestu</div>
+              </div>
+            </div>
+            <div class="after-step">
+              <div class="after-step-num">3</div>
+              <div class="after-step-body">
+                <div class="after-step-label">Vi štedite</div>
+                <div class="after-step-text">Kliknite i kupite direktno iz prodavnice</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- featured products -->
+          <div class="after-section-header">
+            <div class="after-section-title">Istaknuti popusti</div>
+            <div class="after-section-link">Vidi sve →</div>
+          </div>
+          <div class="after-featured-cards">
+            <div class="after-feat-card">
+              <div class="after-feat-img">
+                <ph-icon name="package" style="font-size:32px;color:#059669;opacity:0.6;"></ph-icon>
+              </div>
+              <div class="after-feat-body">
+                <div class="after-feat-store">Myprotein</div>
+                <div class="after-feat-name">Impact Whey 1kg Chocolate</div>
+                <div class="after-feat-price">3.490 RSD</div>
+                <div style="display:flex;align-items:center;gap:6px;margin-top:2px;">
+                  <div class="after-feat-old">4.360 RSD</div>
+                  <div class="after-feat-badge">-20%</div>
+                </div>
+              </div>
+            </div>
+            <div class="after-feat-card">
+              <div class="after-feat-img" style="background:linear-gradient(135deg,#eff6ff,#dbeafe);">
+                <ph-icon name="package" style="font-size:32px;color:#3b82f6;opacity:0.6;"></ph-icon>
+              </div>
+              <div class="after-feat-body">
+                <div class="after-feat-store">Gymbeam</div>
+                <div class="after-feat-name">Creatine Mono 500g</div>
+                <div class="after-feat-price">1.890 RSD</div>
+                <div style="display:flex;align-items:center;gap:6px;margin-top:2px;">
+                  <div class="after-feat-old">2.220 RSD</div>
+                  <div class="after-feat-badge">-15%</div>
+                </div>
+              </div>
+            </div>
+            <div class="after-feat-card">
+              <div class="after-feat-img" style="background:linear-gradient(135deg,#fef3c7,#fde68a);">
+                <ph-icon name="package" style="font-size:32px;color:#f59e0b;opacity:0.6;"></ph-icon>
+              </div>
+              <div class="after-feat-body">
+                <div class="after-feat-store">Proteini.rs</div>
+                <div class="after-feat-name">BCAA 2:1:1 300g</div>
+                <div class="after-feat-price">1.290 RSD</div>
+                <div style="display:flex;align-items:center;gap:6px;margin-top:2px;">
+                  <div class="after-feat-old">1.590 RSD</div>
+                  <div class="after-feat-badge">-19%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- bottom nav -->
+          <div class="s-bottom-nav after-home-nav">
+            <div class="s-nav-item active" style="min-height:56px;">
+              <ph-icon name="house-fill" class="after-nav-icon"></ph-icon>
+              <span class="after-nav-label">Početna</span>
+            </div>
+            <div class="s-nav-item" style="min-height:56px;">
+              <ph-icon name="tag" class="after-nav-icon"></ph-icon>
+              <span class="after-nav-label">Popusti</span>
+            </div>
+            <div class="s-nav-item" style="min-height:56px;">
+              <ph-icon name="magnifying-glass" class="after-nav-icon"></ph-icon>
+              <span class="after-nav-label">Pretraga</span>
+            </div>
+            <div class="s-nav-item" style="min-height:56px;">
+              <ph-icon name="heart" class="after-nav-icon"></ph-icon>
+              <span class="after-nav-label">Sačuvano</span>
+            </div>
+            <div class="s-nav-item" style="min-height:56px;">
+              <ph-icon name="user" class="after-nav-icon"></ph-icon>
+              <span class="after-nav-label">Profil</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="annotation-panel">
+        <div class="annotation good">
+          <div class="annotation-icon good">✓</div>
+          <div class="annotation-text"><strong>Hero h1: 18px (text-2xl)</strong>Clear visual hierarchy, prominent on small screens</div>
+        </div>
+        <div class="annotation good">
+          <div class="annotation-icon good">✓</div>
+          <div class="annotation-text"><strong>Body/step text: 13–14px</strong>Minimum 13px body, 14px for step labels</div>
+        </div>
+        <div class="annotation good">
+          <div class="annotation-icon good">✓</div>
+          <div class="annotation-text"><strong>CTA button: 44px height (min-h)</strong>Meets WCAG 2.5.5 touch target requirement</div>
+        </div>
+        <div class="annotation good">
+          <div class="annotation-icon good">✓</div>
+          <div class="annotation-text"><strong>Bottom nav: 56px total height</strong>Each tab ≥ 44px tap area, 20px icons, 10px labels</div>
+        </div>
+        <div class="annotation good">
+          <div class="annotation-icon good">✓</div>
+          <div class="annotation-text"><strong>Card prices: 15px (text-base+)</strong>Clear price visibility, emerald for strong hierarchy</div>
+        </div>
+      </div>
+    </div>
+    <!-- END COLUMN 2 -->
+
+    <!-- ─── COLUMN 3: AFTER PRODUCT GRID ─── -->
+    <div class="frame-col">
+      <div class="frame-col-header">
+        <div class="stage-label solution">✓ After — Product Grid</div>
+        <h2>Svi Popusti Page (Fixed)</h2>
+        <p>Readable cards, accessible filters, 2-col grid with zero scroll</p>
+      </div>
+
+      <div class="phone-device">
+        <div class="dynamic-island"></div>
+        <div class="phone-screen">
+
+          <!-- grid header -->
+          <div class="grid-page-header">
+            <div class="grid-page-top">
+              <div>
+                <div class="grid-page-title">Svi Popusti</div>
+                <div class="grid-page-count">863 proizvoda</div>
+              </div>
+              <div class="grid-controls">
+                <div class="grid-control-btn">
+                  <ph-icon name="funnel" style="font-size:14px;"></ph-icon>
+                  Filter
+                </div>
+                <div class="grid-control-btn">
+                  <ph-icon name="sort-ascending" style="font-size:14px;"></ph-icon>
+                  Sort
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- filter pills -->
+          <div class="filter-pills-row">
+            <div class="filter-pill active">Sve</div>
+            <div class="filter-pill">Proteini</div>
+            <div class="filter-pill">Kreatin</div>
+            <div class="filter-pill">Vitamini</div>
+            <div class="filter-pill">BCAA</div>
+            <div class="filter-pill">Pre-workout</div>
+          </div>
+
+          <!-- product grid -->
+          <div class="product-grid">
+
+            <div class="product-card">
+              <div class="product-card-img">
+                <ph-icon name="package" style="font-size:36px;color:#059669;opacity:0.5;"></ph-icon>
+                <div class="discount-ribbon">-20%</div>
+              </div>
+              <div class="product-card-body">
+                <div class="product-card-store">Myprotein</div>
+                <div class="product-card-name">Impact Whey Protein 1kg Chocolate Smooth</div>
+                <div class="product-card-price-row">
+                  <span class="product-card-price">3.490 RSD</span>
+                  <span class="product-card-old-price">4.360</span>
+                </div>
+                <div class="product-card-buy-btn">
+                  <ph-icon name="shopping-cart" style="font-size:14px;"></ph-icon>
+                  Kupi
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-card-img product-card-img-alt">
+                <ph-icon name="package" style="font-size:36px;color:#3b82f6;opacity:0.5;"></ph-icon>
+                <div class="discount-ribbon">-15%</div>
+              </div>
+              <div class="product-card-body">
+                <div class="product-card-store">Gymbeam</div>
+                <div class="product-card-name">Creatine Monohydrate 500g Unflavored</div>
+                <div class="product-card-price-row">
+                  <span class="product-card-price">1.890 RSD</span>
+                  <span class="product-card-old-price">2.220</span>
+                </div>
+                <div class="product-card-buy-btn">
+                  <ph-icon name="shopping-cart" style="font-size:14px;"></ph-icon>
+                  Kupi
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-card-img product-card-img-3">
+                <ph-icon name="package" style="font-size:36px;color:#f59e0b;opacity:0.5;"></ph-icon>
+                <div class="discount-ribbon">-25%</div>
+              </div>
+              <div class="product-card-body">
+                <div class="product-card-store">Proteini.rs</div>
+                <div class="product-card-name">BCAA 2:1:1 300g Watermelon</div>
+                <div class="product-card-price-row">
+                  <span class="product-card-price">1.190 RSD</span>
+                  <span class="product-card-old-price">1.590</span>
+                </div>
+                <div class="product-card-buy-btn">
+                  <ph-icon name="shopping-cart" style="font-size:14px;"></ph-icon>
+                  Kupi
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-card-img product-card-img-4">
+                <ph-icon name="package" style="font-size:36px;color:#ec4899;opacity:0.5;"></ph-icon>
+                <div class="discount-ribbon">-10%</div>
+              </div>
+              <div class="product-card-body">
+                <div class="product-card-store">Fitshop</div>
+                <div class="product-card-name">Vitamin D3 + K2 120 kapsula</div>
+                <div class="product-card-price-row">
+                  <span class="product-card-price">890 RSD</span>
+                  <span class="product-card-old-price">990</span>
+                </div>
+                <div class="product-card-buy-btn">
+                  <ph-icon name="shopping-cart" style="font-size:14px;"></ph-icon>
+                  Kupi
+                </div>
+              </div>
+            </div>
+
+          </div><!-- end product-grid -->
+
+          <!-- bottom nav -->
+          <div class="s-bottom-nav grid-bottom-nav">
+            <div class="s-nav-item" style="min-height:56px;">
+              <ph-icon name="house" class="after-nav-icon"></ph-icon>
+              <span class="after-nav-label">Početna</span>
+            </div>
+            <div class="s-nav-item active" style="min-height:56px;">
+              <ph-icon name="tag-fill" class="after-nav-icon"></ph-icon>
+              <span class="after-nav-label">Popusti</span>
+            </div>
+            <div class="s-nav-item" style="min-height:56px;">
+              <ph-icon name="magnifying-glass" class="after-nav-icon"></ph-icon>
+              <span class="after-nav-label">Pretraga</span>
+            </div>
+            <div class="s-nav-item" style="min-height:56px;">
+              <ph-icon name="heart" class="after-nav-icon"></ph-icon>
+              <span class="after-nav-label">Sačuvano</span>
+            </div>
+            <div class="s-nav-item" style="min-height:56px;">
+              <ph-icon name="user" class="after-nav-icon"></ph-icon>
+              <span class="after-nav-label">Profil</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="annotation-panel">
+        <div class="annotation good">
+          <div class="annotation-icon good">✓</div>
+          <div class="annotation-text"><strong>Filter pills: 40px height, 13px text</strong>Comfortable tap area, text clearly readable</div>
+        </div>
+        <div class="annotation good">
+          <div class="annotation-icon good">✓</div>
+          <div class="annotation-text"><strong>Product names: 13px (text-sm)</strong>2-line clamp preserves layout, legible on 130px-wide card</div>
+        </div>
+        <div class="annotation good">
+          <div class="annotation-icon good">✓</div>
+          <div class="annotation-text"><strong>Prices: 15px bold emerald</strong>Dominant price display drives conversion clarity</div>
+        </div>
+        <div class="annotation good">
+          <div class="annotation-icon good">✓</div>
+          <div class="annotation-text"><strong>Buy button: 36px height (in card)</strong>Full-width card button — effectively ≥ 44px wide tap</div>
+        </div>
+        <div class="annotation good">
+          <div class="annotation-icon good">✓</div>
+          <div class="annotation-text"><strong>2-col grid: no horizontal scroll</strong>Each card ~130px wide on 393px screen with 10px gap</div>
+        </div>
+      </div>
+    </div>
+    <!-- END COLUMN 3 -->
+
+  </div>
+  <!-- END FRAMES ROW -->
+
+  <!-- ═══════════════════════════════
+       SPEC TABLE
+  ═══════════════════════════════ -->
+  <div class="spec-section">
+    <div class="spec-section-title">Implementation Specifications</div>
+    <table class="spec-table">
+      <thead>
+        <tr>
+          <th>Element</th>
+          <th>Before (broken)</th>
+          <th></th>
+          <th>After (proposed)</th>
+          <th>Standard</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hero heading (h1)</td>
+          <td><span class="spec-badge before">font-size: 10px</span></td>
+          <td class="spec-arrow">→</td>
+          <td><span class="spec-badge after">text-2xl (24px) sm:text-3xl</span></td>
+          <td style="color:#666;font-family:'DM Mono',monospace;font-size:11px;">Display heading ≥ 20px</td>
+        </tr>
+        <tr>
+          <td>Body / step text</td>
+          <td><span class="spec-badge before">font-size: 8px inline</span></td>
+          <td class="spec-arrow">→</td>
+          <td><span class="spec-badge after">text-sm (14px)</span></td>
+          <td style="color:#666;font-family:'DM Mono',monospace;font-size:11px;">Body text ≥ 14px</td>
+        </tr>
+        <tr>
+          <td>Product card name</td>
+          <td><span class="spec-badge before">text-xs (12px)</span></td>
+          <td class="spec-arrow">→</td>
+          <td><span class="spec-badge after">text-sm (14px) + line-clamp-2</span></td>
+          <td style="color:#666;font-family:'DM Mono',monospace;font-size:11px;">Card text ≥ 14px</td>
+        </tr>
+        <tr>
+          <td>Product card price</td>
+          <td><span class="spec-badge before">text-xs (12px)</span></td>
+          <td class="spec-arrow">→</td>
+          <td><span class="spec-badge after">text-base font-bold (16px)</span></td>
+          <td style="color:#666;font-family:'DM Mono',monospace;font-size:11px;">Price ≥ 16px</td>
+        </tr>
+        <tr>
+          <td>Store / category badges</td>
+          <td><span class="spec-badge before">text-[10px] (10px)</span></td>
+          <td class="spec-arrow">→</td>
+          <td><span class="spec-badge after">text-xs (12px)</span></td>
+          <td style="color:#666;font-family:'DM Mono',monospace;font-size:11px;">Labels ≥ 12px</td>
+        </tr>
+        <tr>
+          <td>Filter pills height</td>
+          <td><span class="spec-badge before">~20px, font-size: 10px</span></td>
+          <td class="spec-arrow">→</td>
+          <td><span class="spec-badge after">h-10 (40px), text-sm (14px)</span></td>
+          <td style="color:#666;font-family:'DM Mono',monospace;font-size:11px;">WCAG 2.5.5 ≥ 44px</td>
+        </tr>
+        <tr>
+          <td>CTA / primary buttons</td>
+          <td><span class="spec-badge before">~22px tall, text at 8px</span></td>
+          <td class="spec-arrow">→</td>
+          <td><span class="spec-badge after">min-h-[44px], text-sm</span></td>
+          <td style="color:#666;font-family:'DM Mono',monospace;font-size:11px;">WCAG 2.5.5 ≥ 44px</td>
+        </tr>
+        <tr>
+          <td>Bottom nav height</td>
+          <td><span class="spec-badge before">~38px total</span></td>
+          <td class="spec-arrow">→</td>
+          <td><span class="spec-badge after">h-14 (56px), each tab ≥ 44px</span></td>
+          <td style="color:#666;font-family:'DM Mono',monospace;font-size:11px;">WCAG 2.5.5 ≥ 44px</td>
+        </tr>
+        <tr>
+          <td>Bottom nav labels</td>
+          <td><span class="spec-badge before">text-[10px] or inline 7px</span></td>
+          <td class="spec-arrow">→</td>
+          <td><span class="spec-badge after">text-xs (12px)</span></td>
+          <td style="color:#666;font-family:'DM Mono',monospace;font-size:11px;">Nav labels ≥ 12px</td>
+        </tr>
+        <tr>
+          <td>Global responsive CSS</td>
+          <td><span class="spec-badge before">No @media queries</span></td>
+          <td class="spec-arrow">→</td>
+          <td><span class="spec-badge after">@media (max-width: 639px) root 16px</span></td>
+          <td style="color:#666;font-family:'DM Mono',monospace;font-size:11px;">Base font ≥ 16px</td>
+        </tr>
+        <tr>
+          <td>Product grid (mobile)</td>
+          <td><span class="spec-badge before">Fixed 2-col, overflow risk</span></td>
+          <td class="spec-arrow">→</td>
+          <td><span class="spec-badge after">grid-cols-1 below 380px, grid-cols-2 above</span></td>
+          <td style="color:#666;font-family:'DM Mono',monospace;font-size:11px;">Zero horizontal scroll</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ═══════════════════════════════
+       FOOTER
+  ═══════════════════════════════ -->
+  <div class="doc-footer">
+    <p>Design by <span>UI/UX Designer</span> · Task <span>RSS-56</span> · suplementi.deals</p>
+    <p>Status: <span>Awaiting Board Approval</span> · 2026-03-31</p>
+  </div>
+
+</body>
+</html>

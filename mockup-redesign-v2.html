@@ -1,0 +1,1175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Design Spec — suplementi.deals v2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Montserrat', 'sans-serif'], mono: ['DM Mono', 'monospace'] },
+          colors: {
+            emerald: { 50: '#f0fdf4', 100: '#dcfce7', 500: '#10b981', 600: '#059669', 700: '#047857', 800: '#065f46', 900: '#064e3b' },
+            ink: '#111827', muted: '#6b7280', border: '#e5e7eb', surface: '#f9fafb',
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    :root {
+      --green: #059669;
+      --green-dark: #047857;
+      --green-deep: #065f46;
+      --green-light: #d1fae5;
+      --green-pale: #f0fdf4;
+      --ink: #111827;
+      --ink-mid: #374151;
+      --ink-muted: #6b7280;
+      --ink-faint: #9ca3af;
+      --border: #e5e7eb;
+      --surface: #f9fafb;
+    }
+    body { font-family: 'Montserrat', sans-serif; background: #0f1117; color: #e5e7eb; }
+
+    /* ── SPEC CHROME ── */
+    .spec-sidebar { background: #0f1117; border-right: 1px solid #1f2937; }
+    .spec-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #4b5563;
+      font-weight: 500;
+    }
+    .section-num {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--green);
+      letter-spacing: 0.08em;
+    }
+    .annotation {
+      background: #fbbf24;
+      color: #111827;
+      font-size: 10px;
+      font-weight: 700;
+      font-family: 'DM Mono', monospace;
+      padding: 2px 8px;
+      border-radius: 99px;
+      letter-spacing: 0.06em;
+    }
+    .fix-badge {
+      background: #059669;
+      color: white;
+      font-size: 9px;
+      font-weight: 700;
+      font-family: 'DM Mono', monospace;
+      padding: 2px 7px;
+      border-radius: 99px;
+      letter-spacing: 0.06em;
+    }
+    .problem-badge {
+      background: #7f1d1d;
+      color: #fca5a5;
+      font-size: 9px;
+      font-weight: 700;
+      font-family: 'DM Mono', monospace;
+      padding: 2px 7px;
+      border-radius: 99px;
+      letter-spacing: 0.06em;
+    }
+    .spec-card {
+      background: #161b27;
+      border: 1px solid #1f2937;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .spec-section {
+      border-bottom: 1px solid #1f2937;
+    }
+    .problem-box {
+      background: rgba(127,29,29,0.15);
+      border: 1px solid rgba(252,165,165,0.2);
+      border-radius: 8px;
+    }
+    .callout-arrow {
+      color: #fbbf24;
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    /* ── SITE CHROME RESETS (used inside mockup previews) ── */
+    .preview-wrap { background: #f0f0f0; border-radius: 10px; overflow: hidden; }
+    .preview-header {
+      background: white;
+      border-bottom: 1px solid #d0d0d0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .preview-logo { display: flex; align-items: center; gap: 8px; text-decoration: none; }
+    .preview-logo-text { font-weight: 800; font-size: 16px; letter-spacing: -0.02em; line-height: 1; }
+    .preview-nav { display: flex; gap: 20px; }
+    .preview-nav a { font-size: 13px; font-weight: 500; color: #6b7280; text-decoration: none; }
+    .preview-nav a.active { color: #111827; border-bottom: 2px solid #059669; padding-bottom: 2px; }
+
+    /* Blog card thumbnail visual */
+    .card-thumb {
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .card-thumb-protein {
+      background: linear-gradient(135deg, #065f46 0%, #059669 50%, #10b981 100%);
+    }
+    .card-thumb-kreatin {
+      background: linear-gradient(135deg, #1e3a5f 0%, #1d4ed8 50%, #3b82f6 100%);
+    }
+    .thumb-pattern {
+      position: absolute;
+      inset: 0;
+      opacity: 0.08;
+      background-image: repeating-linear-gradient(
+        45deg,
+        white 0px, white 1px,
+        transparent 1px, transparent 20px
+      );
+    }
+    .thumb-icon { position: relative; z-index: 1; font-size: 56px; color: rgba(255,255,255,0.9); }
+    .thumb-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255,255,255,0.3);
+      color: white;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 99px;
+      letter-spacing: 0.06em;
+    }
+    .thumb-cat-icon {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      width: 32px;
+      height: 32px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Article hero */
+    .article-hero {
+      position: relative;
+      min-height: 260px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 32px 40px;
+      overflow: hidden;
+    }
+    .article-hero-kreatin {
+      background: linear-gradient(135deg, #1e3a5f 0%, #1e40af 60%, #2563eb 100%);
+    }
+    .article-hero-protein {
+      background: linear-gradient(135deg, #064e3b 0%, #065f46 50%, #059669 100%);
+    }
+    .article-hero-pattern {
+      position: absolute;
+      inset: 0;
+      opacity: 0.06;
+      background-image:
+        radial-gradient(circle at 20% 50%, white 1px, transparent 1px),
+        radial-gradient(circle at 80% 20%, white 1px, transparent 1px),
+        radial-gradient(circle at 60% 80%, white 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+    .article-hero-grid {
+      position: absolute;
+      inset: 0;
+      opacity: 0.04;
+      background-image:
+        linear-gradient(white 1px, transparent 1px),
+        linear-gradient(90deg, white 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    .article-hero-icon-bg {
+      position: absolute;
+      right: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 120px;
+      color: rgba(255,255,255,0.08);
+    }
+    .article-hero-content { position: relative; z-index: 1; }
+
+    /* Steps redesign */
+    .step-card {
+      background: white;
+      border-radius: 16px;
+      padding: 32px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+    .step-icon-wrap {
+      width: 80px;
+      height: 80px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      position: relative;
+    }
+    .step-icon-1 { background: linear-gradient(135deg, #d1fae5, #a7f3d0); color: #059669; }
+    .step-icon-2 { background: linear-gradient(135deg, #dbeafe, #bfdbfe); color: #2563eb; }
+    .step-icon-3 { background: linear-gradient(135deg, #fef3c7, #fde68a); color: #d97706; }
+    .step-num {
+      position: absolute;
+      top: -6px;
+      right: -6px;
+      width: 22px;
+      height: 22px;
+      background: #111827;
+      color: white;
+      border-radius: 50%;
+      font-size: 11px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'DM Mono', monospace;
+    }
+    .step-bg-accent {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      opacity: 0.06;
+    }
+    .step-connector {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 24px;
+    }
+
+    /* Blog cover template */
+    .cover-template {
+      position: relative;
+      aspect-ratio: 16/7;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 28px 36px;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+    .cover-vodic {
+      background: linear-gradient(135deg, #064e3b 0%, #065f46 40%, #047857 70%, #059669 100%);
+    }
+    .cover-recenzija {
+      background: linear-gradient(135deg, #1e1b4b 0%, #312e81 40%, #3730a3 70%, #4338ca 100%);
+    }
+    .cover-geo {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+    }
+    .cover-circle-1 {
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 240px; height: 240px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.06);
+    }
+    .cover-circle-2 {
+      position: absolute;
+      bottom: -40px; left: 30%;
+      width: 160px; height: 160px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.04);
+    }
+    .cover-line {
+      position: absolute;
+      top: 0; right: 120px;
+      width: 1px; height: 100%;
+      background: rgba(255,255,255,0.06);
+    }
+    .cover-content { position: relative; z-index: 1; }
+    .cover-logo-area { position: absolute; top: 20px; left: 24px; z-index: 1; }
+    .cover-big-icon {
+      position: absolute;
+      right: 36px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 100px;
+      color: rgba(255,255,255,0.1);
+    }
+
+    /* Before/After split */
+    .ba-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .ba-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .ba-before .ba-label { color: #ef4444; }
+    .ba-after .ba-label { color: #10b981; }
+
+    .toc-item { font-size: 12px; color: #6b7280; font-family: 'DM Mono', monospace; padding: 6px 0; border-bottom: 1px solid #1f2937; cursor: pointer; transition: color 0.15s; }
+    .toc-item:hover { color: #059669; }
+    .toc-item .dot { width: 6px; height: 6px; border-radius: 50%; background: #1f2937; margin-right: 10px; display: inline-block; }
+    .toc-item.active .dot { background: #059669; }
+
+    @keyframes pulse-green { 0%,100% { opacity:1 } 50% { opacity:0.5 } }
+    .live-dot { width: 6px; height: 6px; border-radius: 50%; background: #059669; display: inline-block; animation: pulse-green 2s ease-in-out infinite; }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- SPEC HEADER                                                  -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div style="background:#0a0e18; border-bottom: 1px solid #1f2937; padding: 20px 40px; display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; z-index:100;">
+  <div style="display:flex; align-items:center; gap:16px;">
+    <!-- Logo -->
+    <svg width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="40" height="40" rx="10" fill="#059669"/>
+      <path d="M13 17 C13 12, 27 12, 27 17 C27 21, 13 21, 13 25 C13 30, 27 30, 27 25" stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    </svg>
+    <div>
+      <div style="font-size:13px; font-weight:800; color:#f9fafb; letter-spacing:-0.02em;">suplementi.deals</div>
+      <div style="font-family:'DM Mono',monospace; font-size:10px; color:#4b5563; letter-spacing:0.08em;">DESIGN SPEC v2 — REDESIGN</div>
+    </div>
+  </div>
+  <div style="display:flex; align-items:center; gap:24px;">
+    <div style="display:flex; align-items:center; gap:6px;">
+      <span class="live-dot"></span>
+      <span style="font-family:'DM Mono',monospace; font-size:10px; color:#6b7280;">6 SECTIONS</span>
+    </div>
+    <div style="font-family:'DM Mono',monospace; font-size:10px; color:#6b7280; background:#111827; border:1px solid #1f2937; padding:4px 12px; border-radius:6px;">2026-03-30</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- LAYOUT BODY                                                  -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div style="display:grid; grid-template-columns:220px 1fr; min-height:calc(100vh - 64px);">
+
+  <!-- SIDEBAR TOC -->
+  <aside class="spec-sidebar" style="padding:28px 20px; position:sticky; top:64px; height:calc(100vh - 64px); overflow-y:auto;">
+    <div class="spec-label" style="margin-bottom:16px;">Contents</div>
+    <a href="#s1" style="text-decoration:none; display:block;" class="toc-item active"><span class="dot"></span>01 — Blog Header Fix</a>
+    <a href="#s2" style="text-decoration:none; display:block;" class="toc-item"><span class="dot"></span>02 — Blog Card Redesign</a>
+    <a href="#s3" style="text-decoration:none; display:block;" class="toc-item"><span class="dot"></span>03 — Post Header Fix</a>
+    <a href="#s4" style="text-decoration:none; display:block;" class="toc-item"><span class="dot"></span>04 — Article Hero Banner</a>
+    <a href="#s5" style="text-decoration:none; display:block;" class="toc-item"><span class="dot"></span>05 — Steps Visual Upgrade</a>
+    <a href="#s6" style="text-decoration:none; display:block;" class="toc-item"><span class="dot"></span>06 — Blog Cover Template</a>
+
+    <div style="margin-top:40px;">
+      <div class="spec-label" style="margin-bottom:12px;">Brand Tokens</div>
+      <div style="display:flex; flex-direction:column; gap:6px;">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <div style="width:16px; height:16px; border-radius:4px; background:#059669;"></div>
+          <span style="font-family:'DM Mono',monospace; font-size:10px; color:#6b7280;">#059669 primary</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <div style="width:16px; height:16px; border-radius:4px; background:#111827;"></div>
+          <span style="font-family:'DM Mono',monospace; font-size:10px; color:#6b7280;">#111827 ink</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <div style="width:16px; height:16px; border-radius:4px; background:#f9fafb; border:1px solid #374151;"></div>
+          <span style="font-family:'DM Mono',monospace; font-size:10px; color:#6b7280;">#f9fafb surface</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <div style="width:16px; height:16px; border-radius:4px; background:#e5e7eb;"></div>
+          <span style="font-family:'DM Mono',monospace; font-size:10px; color:#6b7280;">#e5e7eb border</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <div style="width:16px; height:16px; border-radius:4px; background:#6b7280;"></div>
+          <span style="font-family:'DM Mono',monospace; font-size:10px; color:#6b7280;">#6b7280 muted</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:32px;">
+      <div class="spec-label" style="margin-bottom:12px;">Font</div>
+      <div style="font-size:11px; color:#6b7280; line-height:1.8;">
+        Montserrat<br>
+        <span style="font-family:'DM Mono',monospace; font-size:10px; color:#4b5563;">300–900</span>
+      </div>
+    </div>
+
+    <div style="margin-top:32px;">
+      <div class="spec-label" style="margin-bottom:12px;">Priority</div>
+      <div style="display:flex; flex-direction:column; gap:6px;">
+        <div style="display:flex; align-items:center; gap:6px;"><div style="width:6px;height:6px;border-radius:50%;background:#ef4444;"></div><span style="font-size:10px;color:#6b7280;font-family:'DM Mono',monospace;">CRITICAL fix</span></div>
+        <div style="display:flex; align-items:center; gap:6px;"><div style="width:6px;height:6px;border-radius:50%;background:#f59e0b;"></div><span style="font-size:10px;color:#6b7280;font-family:'DM Mono',monospace;">IMPROVEMENT</span></div>
+        <div style="display:flex; align-items:center; gap:6px;"><div style="width:6px;height:6px;border-radius:50%;background:#059669;"></div><span style="font-size:10px;color:#6b7280;font-family:'DM Mono',monospace;">NEW feature</span></div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main style="padding:0; overflow:hidden;">
+
+    <!-- ══════════════════════════════════════════ -->
+    <!-- SECTION 1: Blog Index Header Fix            -->
+    <!-- ══════════════════════════════════════════ -->
+    <section id="s1" class="spec-section" style="padding:48px 48px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+        <span class="section-num">01 /</span>
+        <h2 style="font-size:20px; font-weight:800; color:#f9fafb; letter-spacing:-0.02em;">Blog Index — Header Logo Fix</h2>
+        <span style="display:inline-flex; align-items:center; gap:4px; background:#7f1d1d; color:#fca5a5; font-size:9px; font-weight:700; font-family:'DM Mono',monospace; padding:2px 8px; border-radius:99px; letter-spacing:0.06em;">
+          <div style="width:5px;height:5px;border-radius:50%;background:#ef4444;"></div> CRITICAL FIX
+        </span>
+      </div>
+      <p style="font-size:13px; color:#6b7280; margin-bottom:32px; max-width:600px; line-height:1.6;">The blog index page (<code style="font-family:'DM Mono',monospace; background:#1f2937; padding:1px 6px; border-radius:4px; font-size:11px;">blog/index.html</code>) uses a generic shopping cart icon as the logo. The homepage uses the correct SVG wordmark logo. Replace header logo on all blog pages to match.</p>
+
+      <div class="ba-wrap">
+        <!-- BEFORE -->
+        <div class="ba-before">
+          <div class="ba-label">✗ BEFORE — Current blog/index.html header</div>
+          <div class="preview-wrap">
+            <div class="preview-header" style="opacity:0.7; border: 2px solid rgba(239,68,68,0.3); border-radius:10px 10px 0 0;">
+              <a class="preview-logo">
+                <!-- Old: shopping cart icon -->
+                <div style="width:24px;height:24px;display:flex;align-items:center;justify-content:center;">
+                  <ph-shopping-cart weight="bold" style="font-size:22px; color:#606060;"></ph-shopping-cart>
+                </div>
+                <span style="font-family:'Montserrat',sans-serif; font-weight:800; font-size:15px; color:#333;">RS Supplement Deals</span>
+              </a>
+              <div class="preview-nav">
+                <a href="#">Popusti</a>
+                <a href="#" style="color:#333; font-weight:600; border-bottom:2px solid #606060; padding-bottom:2px;">Blog</a>
+              </div>
+            </div>
+            <div style="background:#f0f0f0; padding:12px 20px; text-align:center;">
+              <span style="font-family:'DM Mono',monospace; font-size:10px; color:#9ca3af;">shopping-cart icon — does not match brand</span>
+            </div>
+          </div>
+          <div style="margin-top:8px; display:flex; align-items:center; gap:6px;">
+            <span style="font-family:'DM Mono',monospace; font-size:10px; color:#ef4444;">✗</span>
+            <span style="font-size:11px; color:#6b7280;">Generic icon, inconsistent with homepage brand logo</span>
+          </div>
+        </div>
+
+        <!-- AFTER -->
+        <div class="ba-after">
+          <div class="ba-label">✓ AFTER — Updated blog/index.html header</div>
+          <div class="preview-wrap">
+            <div class="preview-header" style="border: 2px solid rgba(5,150,105,0.3); border-radius:10px 10px 0 0;">
+              <a class="preview-logo">
+                <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="40" height="40" rx="10" fill="#059669"/>
+                  <path d="M13 17 C13 12, 27 12, 27 17 C27 21, 13 21, 13 25 C13 30, 27 30, 27 25" stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+                </svg>
+                <span style="font-family:'Montserrat',sans-serif; font-weight:800; font-size:16px; letter-spacing:-0.02em; line-height:1;">
+                  <span style="color:#111827;">suplementi</span><span style="color:#059669;">.deals</span>
+                </span>
+              </a>
+              <div class="preview-nav" style="display:flex; gap:20px;">
+                <a href="#" style="font-size:13px; font-weight:500; color:#6b7280; text-decoration:none;">Popusti</a>
+                <a href="#" style="font-size:13px; font-weight:600; color:#111827; text-decoration:none; border-bottom:2px solid #059669; padding-bottom:2px;">Blog</a>
+              </div>
+            </div>
+            <div style="background:#f0f0f0; padding:12px 20px; text-align:center;">
+              <span style="font-family:'DM Mono',monospace; font-size:10px; color:#059669;">SVG wordmark logo — matches homepage exactly</span>
+            </div>
+          </div>
+          <div style="margin-top:8px; display:flex; align-items:center; gap:6px;">
+            <span style="font-family:'DM Mono',monospace; font-size:10px; color:#059669;">✓</span>
+            <span style="font-size:11px; color:#6b7280;">Consistent brand logo, proper wordmark with emerald ".deals"</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Code snippet -->
+      <div style="margin-top:24px; background:#0a0e18; border:1px solid #1f2937; border-radius:8px; padding:16px;">
+        <div style="font-family:'DM Mono',monospace; font-size:10px; color:#4b5563; margin-bottom:10px; letter-spacing:0.08em;">IMPLEMENTATION — Replace in blog/index.html + blog/*.html headers</div>
+        <pre style="font-family:'DM Mono',monospace; font-size:11px; color:#d1d5db; line-height:1.7; overflow-x:auto;"><span style="color:#6b7280;"><!-- REMOVE this (old logo): --></span>
+<span style="color:#ef4444;">&lt;ph-shopping-cart weight="bold" class="text-[#606060] text-2xl"&gt;&lt;/ph-shopping-cart&gt;
+&lt;span class="..."&gt;RS Supplement Deals&lt;/span&gt;</span>
+
+<span style="color:#6b7280;"><!-- ADD this (new logo): --></span>
+<span style="color:#86efac;">&lt;svg width="30" height="30" viewBox="0 0 40 40" fill="none"&gt;
+  &lt;rect width="40" height="40" rx="10" fill="#059669"/&gt;
+  &lt;path d="M13 17 C13 12,27 12,27 17 C27 21,13 21,13 25 C13 30,27 30,27 25"
+        stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none"/&gt;
+&lt;/svg&gt;
+&lt;span class="font-extrabold tracking-tight text-lg leading-tight"&gt;
+  &lt;span class="text-[#111827]"&gt;suplementi&lt;/span&gt;
+  &lt;span class="text-[#059669]"&gt;.deals&lt;/span&gt;
+&lt;/span&gt;</span></pre>
+      </div>
+      <div style="margin-top:10px; background:#161b27; border:1px solid #1f2937; border-radius:6px; padding:10px 14px; display:flex; align-items:center; gap:8px;">
+        <ph-files weight="duotone" style="color:#f59e0b; font-size:16px;"></ph-files>
+        <span style="font-size:11px; color:#6b7280;">Apply to: <code style="font-family:'DM Mono',monospace; color:#d1d5db;">blog/index.html</code> · <code style="font-family:'DM Mono',monospace; color:#d1d5db;">blog/kreatin-vodic.html</code> · <code style="font-family:'DM Mono',monospace; color:#d1d5db;">blog/najbolji-proteini-2026.html</code> · all future posts</span>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!-- SECTION 2: Blog Card Redesign               -->
+    <!-- ══════════════════════════════════════════ -->
+    <section id="s2" class="spec-section" style="padding:48px 48px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+        <span class="section-num">02 /</span>
+        <h2 style="font-size:20px; font-weight:800; color:#f9fafb; letter-spacing:-0.02em;">Blog Index — Card Visual Thumbnails</h2>
+        <span style="display:inline-flex; align-items:center; gap:4px; background:#451a03; color:#fcd34d; font-size:9px; font-weight:700; font-family:'DM Mono',monospace; padding:2px 8px; border-radius:99px; letter-spacing:0.06em;">
+          <div style="width:5px;height:5px;border-radius:50%;background:#f59e0b;"></div> IMPROVEMENT
+        </span>
+      </div>
+      <p style="font-size:13px; color:#6b7280; margin-bottom:32px; max-width:620px; line-height:1.6;">Blog cards on <code style="font-family:'DM Mono',monospace; background:#1f2937; padding:1px 6px; border-radius:4px; font-size:11px;">blog/index.html</code> are text-only boxes with no visual thumbnail. Add on-brand CSS-generated thumbnails — no real photos needed. Each card gets a gradient header with topic icon + category badge.</p>
+
+      <!-- Card comparison -->
+      <div class="ba-wrap" style="margin-bottom:32px;">
+        <div class="ba-before">
+          <div class="ba-label">✗ BEFORE — Text-only card</div>
+          <div style="background:white; border:1px solid #d0d0d0; border-radius:8px; overflow:hidden; border: 2px solid rgba(239,68,68,0.2);">
+            <div style="padding:24px;">
+              <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
+                <span style="font-size:11px; font-weight:600; color:#606060; background:#f0f0f0; padding:3px 10px; border-radius:99px;">Vodič</span>
+                <span style="font-size:11px; color:#999;">mart 2026</span>
+              </div>
+              <h2 style="font-size:15px; font-weight:700; color:#333; margin-bottom:8px; line-height:1.4;">Kreatin: Kompletni vodič za početnike</h2>
+              <p style="font-size:12px; color:#606060; line-height:1.6; margin-bottom:16px;">Sve što treba da znate o kreatinu — kako funkcioniše, koji tip je najbolji, kako ga koristiti…</p>
+              <a href="#" style="font-size:12px; font-weight:600; color:#606060; text-decoration:none;">Čitaj više →</a>
+            </div>
+          </div>
+          <div style="margin-top:8px; font-size:11px; color:#ef4444; font-family:'DM Mono',monospace;">✗ No visual — feels like a list, not editorial content</div>
+        </div>
+
+        <div class="ba-after">
+          <div class="ba-label">✓ AFTER — Card with visual thumbnail</div>
+          <div style="background:white; border-radius:10px; overflow:hidden; border: 2px solid rgba(5,150,105,0.3); box-shadow:0 4px 16px rgba(0,0,0,0.12);">
+            <!-- Thumbnail -->
+            <div class="card-thumb card-thumb-kreatin">
+              <div class="thumb-pattern"></div>
+              <ph-lightning weight="fill" class="thumb-icon"></ph-lightning>
+              <div class="thumb-badge">Vodič</div>
+              <div class="thumb-cat-icon">
+                <ph-lightning weight="fill" style="font-size:16px; color:rgba(255,255,255,0.8);"></ph-lightning>
+              </div>
+            </div>
+            <!-- Body -->
+            <div style="padding:20px;">
+              <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+                <span style="font-size:10px; font-weight:700; color:#059669; background:#f0fdf4; border:1px solid #d1fae5; padding:2px 10px; border-radius:99px; letter-spacing:0.04em;">VODIČ</span>
+                <span style="font-size:11px; color:#9ca3af; font-family:'DM Mono',monospace;">mart 2026</span>
+              </div>
+              <h2 style="font-size:15px; font-weight:700; color:#111827; margin-bottom:8px; line-height:1.4;">Kreatin: Kompletni vodič za početnike</h2>
+              <p style="font-size:12px; color:#6b7280; line-height:1.6; margin-bottom:16px;">Sve što treba da znate o kreatinu — kako funkcioniše, koji tip je najbolji, kako ga koristiti…</p>
+              <div style="display:flex; align-items:center; justify-content:space-between;">
+                <a href="#" style="display:inline-flex; align-items:center; gap:4px; font-size:12px; font-weight:600; color:#059669; text-decoration:none;">
+                  Čitaj više <ph-arrow-right weight="bold" style="font-size:12px;"></ph-arrow-right>
+                </a>
+                <span style="font-size:10px; color:#9ca3af; font-family:'DM Mono',monospace;">~8 min čitanja</span>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top:8px; font-size:11px; color:#059669; font-family:'DM Mono',monospace;">✓ Visual thumbnail, better hierarchy, reading time</div>
+        </div>
+      </div>
+
+      <!-- Both cards side by side -->
+      <div style="margin-bottom:16px;">
+        <div class="spec-label" style="margin-bottom:12px; color:#6b7280;">BOTH CARDS — Final grid (blog/index.html)</div>
+        <div style="background:#f0f0f0; border-radius:12px; padding:24px;">
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; max-width:720px; margin:0 auto;">
+
+            <!-- Card 1: Proteini -->
+            <div style="background:white; border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+              <div class="card-thumb card-thumb-protein">
+                <div class="thumb-pattern"></div>
+                <ph-barbell weight="fill" class="thumb-icon"></ph-barbell>
+                <div class="thumb-badge">Vodič</div>
+                <div class="thumb-cat-icon">
+                  <ph-barbell weight="fill" style="font-size:16px; color:rgba(255,255,255,0.8);"></ph-barbell>
+                </div>
+              </div>
+              <div style="padding:18px;">
+                <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+                  <span style="font-size:10px; font-weight:700; color:#059669; background:#f0fdf4; border:1px solid #d1fae5; padding:2px 9px; border-radius:99px;">VODIČ</span>
+                  <span style="font-size:10px; color:#9ca3af; font-family:'DM Mono',monospace;">mart 2026</span>
+                </div>
+                <h2 style="font-size:14px; font-weight:700; color:#111827; margin-bottom:6px; line-height:1.4;">Najbolji proteini u Srbiji 2026 — Vodič za kupovinu</h2>
+                <p style="font-size:11px; color:#6b7280; line-height:1.6; margin-bottom:14px;">Kompletni vodič za izbor proteina: whey koncentrat vs izolat, kazein, veganski proteini…</p>
+                <div style="display:flex; align-items:center; justify-content:space-between;">
+                  <a href="#" style="display:inline-flex; align-items:center; gap:4px; font-size:11px; font-weight:600; color:#059669; text-decoration:none;">Čitaj više <ph-arrow-right weight="bold" style="font-size:11px;"></ph-arrow-right></a>
+                  <span style="font-size:10px; color:#9ca3af; font-family:'DM Mono',monospace;">~10 min</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Kreatin -->
+            <div style="background:white; border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+              <div class="card-thumb card-thumb-kreatin">
+                <div class="thumb-pattern"></div>
+                <ph-lightning weight="fill" class="thumb-icon"></ph-lightning>
+                <div class="thumb-badge">Vodič</div>
+                <div class="thumb-cat-icon">
+                  <ph-lightning weight="fill" style="font-size:16px; color:rgba(255,255,255,0.8);"></ph-lightning>
+                </div>
+              </div>
+              <div style="padding:18px;">
+                <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+                  <span style="font-size:10px; font-weight:700; color:#059669; background:#f0fdf4; border:1px solid #d1fae5; padding:2px 9px; border-radius:99px;">VODIČ</span>
+                  <span style="font-size:10px; color:#9ca3af; font-family:'DM Mono',monospace;">mart 2026</span>
+                </div>
+                <h2 style="font-size:14px; font-weight:700; color:#111827; margin-bottom:6px; line-height:1.4;">Kreatin: Kompletni vodič za početnike</h2>
+                <p style="font-size:11px; color:#6b7280; line-height:1.6; margin-bottom:14px;">Sve što treba da znate o kreatinu — kako funkcioniše, koji tip je najbolji, doziranje…</p>
+                <div style="display:flex; align-items:center; justify-content:space-between;">
+                  <a href="#" style="display:inline-flex; align-items:center; gap:4px; font-size:11px; font-weight:600; color:#059669; text-decoration:none;">Čitaj više <ph-arrow-right weight="bold" style="font-size:11px;"></ph-arrow-right></a>
+                  <span style="font-size:10px; color:#9ca3af; font-family:'DM Mono',monospace;">~8 min</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Annotations -->
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-top:16px;">
+        <div style="background:#161b27; border:1px solid #1f2937; border-radius:8px; padding:12px;">
+          <div style="font-size:10px; color:#059669; font-family:'DM Mono',monospace; font-weight:700; margin-bottom:4px;">THUMBNAIL COLORS</div>
+          <div style="font-size:11px; color:#6b7280; line-height:1.5;">Protein cards: emerald gradient. Kreatin cards: blue gradient. Future posts: assign by topic type.</div>
+        </div>
+        <div style="background:#161b27; border:1px solid #1f2937; border-radius:8px; padding:12px;">
+          <div style="font-size:10px; color:#059669; font-family:'DM Mono',monospace; font-weight:700; margin-bottom:4px;">ICON SYSTEM</div>
+          <div style="font-size:11px; color:#6b7280; line-height:1.5;">Use Phosphor Icons matching article topic. Protein → ph-barbell. Kreatin → ph-lightning. Vitamins → ph-leaf.</div>
+        </div>
+        <div style="background:#161b27; border:1px solid #1f2937; border-radius:8px; padding:12px;">
+          <div style="font-size:10px; color:#059669; font-family:'DM Mono',monospace; font-weight:700; margin-bottom:4px;">NO IMAGES NEEDED</div>
+          <div style="font-size:11px; color:#6b7280; line-height:1.5;">100% CSS + SVG thumbnails. Zero external image dependencies. Consistent, always on-brand.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!-- SECTION 3: Blog Post Header Fix             -->
+    <!-- ══════════════════════════════════════════ -->
+    <section id="s3" class="spec-section" style="padding:48px 48px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+        <span class="section-num">03 /</span>
+        <h2 style="font-size:20px; font-weight:800; color:#f9fafb; letter-spacing:-0.02em;">Blog Post Pages — Header Logo Fix</h2>
+        <span style="display:inline-flex; align-items:center; gap:4px; background:#7f1d1d; color:#fca5a5; font-size:9px; font-weight:700; font-family:'DM Mono',monospace; padding:2px 8px; border-radius:99px; letter-spacing:0.06em;">
+          <div style="width:5px;height:5px;border-radius:50%;background:#ef4444;"></div> CRITICAL FIX
+        </span>
+      </div>
+      <p style="font-size:13px; color:#6b7280; margin-bottom:32px; max-width:600px; line-height:1.6;">Both blog post pages (<code style="font-family:'DM Mono',monospace; background:#1f2937; padding:1px 6px; border-radius:4px; font-size:11px;">kreatin-vodic.html</code> and <code style="font-family:'DM Mono',monospace; background:#1f2937; padding:1px 6px; border-radius:4px; font-size:11px;">najbolji-proteini-2026.html</code>) also use the shopping cart icon logo. Same fix as Section 01.</p>
+
+      <div style="background:#f0f0f0; border-radius:12px; overflow:hidden;">
+        <!-- Corrected blog post header -->
+        <div class="preview-header" style="border-bottom:1px solid #e5e7eb;">
+          <a class="preview-logo">
+            <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="40" height="40" rx="10" fill="#059669"/>
+              <path d="M13 17 C13 12, 27 12, 27 17 C27 21, 13 21, 13 25 C13 30, 27 30, 27 25" stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+            </svg>
+            <span style="font-family:'Montserrat',sans-serif; font-weight:800; font-size:16px; letter-spacing:-0.02em;">
+              <span style="color:#111827;">suplementi</span><span style="color:#059669;">.deals</span>
+            </span>
+          </a>
+          <div style="display:flex; gap:20px; align-items:center;">
+            <a href="#" style="font-size:13px; font-weight:500; color:#6b7280; text-decoration:none;">Popusti</a>
+            <a href="#" style="font-size:13px; font-weight:600; color:#111827; text-decoration:none; border-bottom:2px solid #059669; padding-bottom:2px;">Blog</a>
+          </div>
+        </div>
+        <!-- Breadcrumb preview -->
+        <div style="padding:12px 20px; background:#f9fafb; border-bottom:1px solid #e5e7eb;">
+          <nav style="font-size:11px; color:#9ca3af; font-family:'DM Mono',monospace;">
+            <a href="#" style="color:#9ca3af; text-decoration:none; hover:color:#6b7280;">Blog</a>
+            <span style="margin:0 6px;">/</span>
+            <span style="color:#6b7280;">Kreatin vodič</span>
+          </nav>
+        </div>
+        <div style="padding:12px 20px; text-align:center; background:#f0f0f0;">
+          <span style="font-family:'DM Mono',monospace; font-size:10px; color:#059669;">✓ Correct header — same SVG wordmark as homepage</span>
+        </div>
+      </div>
+
+      <div style="margin-top:16px; background:#161b27; border:1px solid #1f2937; border-radius:8px; padding:12px 16px; display:flex; align-items:center; gap:10px;">
+        <ph-info weight="fill" style="color:#3b82f6; font-size:16px; flex-shrink:0;"></ph-info>
+        <span style="font-size:11px; color:#6b7280; line-height:1.5;">Same code snippet as Section 01 applies here. Consider extracting header into a shared include/partial if using a static site generator, to prevent future inconsistencies.</span>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!-- SECTION 4: Article Hero Banner              -->
+    <!-- ══════════════════════════════════════════ -->
+    <section id="s4" class="spec-section" style="padding:48px 48px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+        <span class="section-num">04 /</span>
+        <h2 style="font-size:20px; font-weight:800; color:#f9fafb; letter-spacing:-0.02em;">Blog Post Pages — Article Hero Banner</h2>
+        <span style="display:inline-flex; align-items:center; gap:4px; background:#064e3b; color:#6ee7b7; font-size:9px; font-weight:700; font-family:'DM Mono',monospace; padding:2px 8px; border-radius:99px; letter-spacing:0.06em;">
+          <div style="width:5px;height:5px;border-radius:50%;background:#059669;"></div> NEW FEATURE
+        </span>
+      </div>
+      <p style="font-size:13px; color:#6b7280; margin-bottom:32px; max-width:620px; line-height:1.6;">Blog posts currently jump from the header directly into article text — no visual break. Add a full-width article hero banner below the header and breadcrumb, above the article body. 100% CSS/HTML, no images needed.</p>
+
+      <!-- VARIANT 1: Kreatin (Blue) -->
+      <div style="margin-bottom:8px; display:flex; align-items:center; gap:8px;">
+        <div style="font-family:'DM Mono',monospace; font-size:10px; color:#6b7280; letter-spacing:0.08em; text-transform:uppercase;">Variant A — kreatin-vodic.html</div>
+        <div style="height:1px; flex:1; background:#1f2937;"></div>
+      </div>
+      <div style="background:#f0f0f0; border-radius:12px; overflow:hidden; margin-bottom:28px;">
+        <!-- Corrected header -->
+        <div class="preview-header">
+          <a class="preview-logo">
+            <svg width="28" height="28" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#059669"/><path d="M13 17 C13 12,27 12,27 17 C27 21,13 21,13 25 C13 30,27 30,27 25" stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none"/></svg>
+            <span style="font-family:'Montserrat',sans-serif; font-weight:800; font-size:15px; letter-spacing:-0.02em;"><span style="color:#111827;">suplementi</span><span style="color:#059669;">.deals</span></span>
+          </a>
+          <div style="display:flex; gap:20px;"><a href="#" style="font-size:12px; font-weight:500; color:#6b7280; text-decoration:none;">Popusti</a><a href="#" style="font-size:12px; font-weight:600; color:#111827; text-decoration:none; border-bottom:2px solid #059669; padding-bottom:2px;">Blog</a></div>
+        </div>
+        <!-- Breadcrumb -->
+        <div style="padding:8px 20px; background:white; border-bottom:1px solid #e5e7eb;">
+          <span style="font-size:11px; color:#9ca3af; font-family:'DM Mono',monospace;"><a href="#" style="color:#9ca3af; text-decoration:none;">Blog</a> / <span style="color:#6b7280;">Kreatin vodič</span></span>
+        </div>
+        <!-- NEW: Article Hero -->
+        <div class="article-hero article-hero-kreatin">
+          <div class="article-hero-pattern"></div>
+          <div class="article-hero-grid"></div>
+          <div class="article-hero-icon-bg">
+            <ph-lightning weight="fill"></ph-lightning>
+          </div>
+          <div class="article-hero-content">
+            <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;">
+              <span style="background:rgba(255,255,255,0.2); backdrop-filter:blur(4px); border:1px solid rgba(255,255,255,0.3); color:white; font-size:10px; font-weight:700; padding:3px 12px; border-radius:99px; letter-spacing:0.06em;">VODIČ</span>
+              <span style="display:flex; align-items:center; gap:5px; color:rgba(255,255,255,0.6); font-size:11px;">
+                <ph-clock weight="regular" style="font-size:13px;"></ph-clock>
+                8 min čitanja
+              </span>
+            </div>
+            <h1 style="font-size:28px; font-weight:900; color:white; letter-spacing:-0.02em; line-height:1.2; margin-bottom:14px; max-width:560px;">Kreatin: Kompletni vodič za početnike</h1>
+            <div style="display:flex; align-items:center; gap:8px; color:rgba(255,255,255,0.6); font-size:12px;">
+              <span>RS Supplement Deals Tim</span>
+              <span style="opacity:0.4;">·</span>
+              <time>mart 2026</time>
+            </div>
+          </div>
+        </div>
+        <!-- Article begins -->
+        <div style="background:white; padding:24px 28px;">
+          <p style="font-size:13px; color:#374151; line-height:1.7; max-width:680px;">Ako biste morali da izaberete samo jedan suplement pored proteina, kreatin bi trebalo da bude na vrhu liste…</p>
+        </div>
+        <div style="padding:8px 20px; background:#f0f0f0; text-align:center;">
+          <span style="font-family:'DM Mono',monospace; font-size:10px; color:#059669;">✓ Full-width hero — blue gradient matches kreatin/energy theme</span>
+        </div>
+      </div>
+
+      <!-- VARIANT 2: Proteini (Green) -->
+      <div style="margin-bottom:8px; display:flex; align-items:center; gap:8px;">
+        <div style="font-family:'DM Mono',monospace; font-size:10px; color:#6b7280; letter-spacing:0.08em; text-transform:uppercase;">Variant B — najbolji-proteini-2026.html</div>
+        <div style="height:1px; flex:1; background:#1f2937;"></div>
+      </div>
+      <div style="background:#f0f0f0; border-radius:12px; overflow:hidden; margin-bottom:24px;">
+        <div class="preview-header">
+          <a class="preview-logo">
+            <svg width="28" height="28" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#059669"/><path d="M13 17 C13 12,27 12,27 17 C27 21,13 21,13 25 C13 30,27 30,27 25" stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none"/></svg>
+            <span style="font-family:'Montserrat',sans-serif; font-weight:800; font-size:15px; letter-spacing:-0.02em;"><span style="color:#111827;">suplementi</span><span style="color:#059669;">.deals</span></span>
+          </a>
+          <div style="display:flex; gap:20px;"><a href="#" style="font-size:12px; font-weight:500; color:#6b7280; text-decoration:none;">Popusti</a><a href="#" style="font-size:12px; font-weight:600; color:#111827; text-decoration:none; border-bottom:2px solid #059669; padding-bottom:2px;">Blog</a></div>
+        </div>
+        <div style="padding:8px 20px; background:white; border-bottom:1px solid #e5e7eb;">
+          <span style="font-size:11px; color:#9ca3af; font-family:'DM Mono',monospace;"><a href="#" style="color:#9ca3af; text-decoration:none;">Blog</a> / <span style="color:#6b7280;">Proteini 2026</span></span>
+        </div>
+        <div class="article-hero article-hero-protein">
+          <div class="article-hero-pattern"></div>
+          <div class="article-hero-grid"></div>
+          <div class="article-hero-icon-bg">
+            <ph-barbell weight="fill"></ph-barbell>
+          </div>
+          <div class="article-hero-content">
+            <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;">
+              <span style="background:rgba(255,255,255,0.2); backdrop-filter:blur(4px); border:1px solid rgba(255,255,255,0.3); color:white; font-size:10px; font-weight:700; padding:3px 12px; border-radius:99px; letter-spacing:0.06em;">VODIČ</span>
+              <span style="display:flex; align-items:center; gap:5px; color:rgba(255,255,255,0.6); font-size:11px;">
+                <ph-clock weight="regular" style="font-size:13px;"></ph-clock>
+                10 min čitanja
+              </span>
+            </div>
+            <h1 style="font-size:28px; font-weight:900; color:white; letter-spacing:-0.02em; line-height:1.2; margin-bottom:14px; max-width:560px;">Najbolji proteini u Srbiji 2026 — Vodič za kupovinu</h1>
+            <div style="display:flex; align-items:center; gap:8px; color:rgba(255,255,255,0.6); font-size:12px;">
+              <span>RS Supplement Deals Tim</span>
+              <span style="opacity:0.4;">·</span>
+              <time>mart 2026</time>
+            </div>
+          </div>
+        </div>
+        <div style="background:white; padding:24px 28px;">
+          <p style="font-size:13px; color:#374151; line-height:1.7; max-width:680px;">Kompletni vodič za izbor proteina u Srbiji — whey koncentrat vs izolat, kazein, veganski proteini…</p>
+        </div>
+        <div style="padding:8px 20px; background:#f0f0f0; text-align:center;">
+          <span style="font-family:'DM Mono',monospace; font-size:10px; color:#059669;">✓ Emerald gradient matches brand primary color + barbell icon</span>
+        </div>
+      </div>
+
+      <!-- Implementation notes -->
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+        <div style="background:#0a0e18; border:1px solid #1f2937; border-radius:8px; padding:16px;">
+          <div style="font-family:'DM Mono',monospace; font-size:10px; color:#4b5563; margin-bottom:10px; letter-spacing:0.08em;">HTML PLACEMENT</div>
+          <pre style="font-family:'DM Mono',monospace; font-size:10px; color:#d1d5db; line-height:1.8; overflow-x:auto;">&lt;!-- After &lt;/header&gt; breadcrumb --&gt;
+<span style="color:#86efac;">&lt;section class="article-hero"&gt;
+  &lt;!-- pattern divs --&gt;
+  &lt;!-- icon-bg ph-lightning/ph-barbell --&gt;
+  &lt;div class="hero-content"&gt;
+    &lt;!-- badge + time --&gt;
+    &lt;!-- h1 --&gt;
+    &lt;!-- author + date --&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</span>
+&lt;!-- Then article body below --&gt;</pre>
+        </div>
+        <div style="background:#161b27; border:1px solid #1f2937; border-radius:8px; padding:16px;">
+          <div style="font-family:'DM Mono',monospace; font-size:10px; color:#4b5563; margin-bottom:10px; letter-spacing:0.08em;">COLOR RULES FOR FUTURE POSTS</div>
+          <div style="display:flex; flex-direction:column; gap:6px;">
+            <div style="display:flex; align-items:center; gap:8px; font-size:11px; color:#6b7280;"><div style="width:12px;height:12px;border-radius:3px;background:linear-gradient(135deg,#064e3b,#059669);flex-shrink:0;"></div>Protein / Nutrition → Emerald</div>
+            <div style="display:flex; align-items:center; gap:8px; font-size:11px; color:#6b7280;"><div style="width:12px;height:12px;border-radius:3px;background:linear-gradient(135deg,#1e3a5f,#2563eb);flex-shrink:0;"></div>Kreatin / Energy → Blue</div>
+            <div style="display:flex; align-items:center; gap:8px; font-size:11px; color:#6b7280;"><div style="width:12px;height:12px;border-radius:3px;background:linear-gradient(135deg,#78350f,#d97706);flex-shrink:0;"></div>Vitamins / Immunity → Amber</div>
+            <div style="display:flex; align-items:center; gap:8px; font-size:11px; color:#6b7280;"><div style="width:12px;height:12px;border-radius:3px;background:linear-gradient(135deg,#4a1d96,#7c3aed);flex-shrink:0;"></div>Review / Recenzija → Purple</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!-- SECTION 5: Steps Visual Upgrade             -->
+    <!-- ══════════════════════════════════════════ -->
+    <section id="s5" class="spec-section" style="padding:48px 48px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+        <span class="section-num">05 /</span>
+        <h2 style="font-size:20px; font-weight:800; color:#f9fafb; letter-spacing:-0.02em;">Homepage — "Kako funkcioniše" Steps</h2>
+        <span style="display:inline-flex; align-items:center; gap:4px; background:#451a03; color:#fcd34d; font-size:9px; font-weight:700; font-family:'DM Mono',monospace; padding:2px 8px; border-radius:99px; letter-spacing:0.06em;">
+          <div style="width:5px;height:5px;border-radius:50%;background:#f59e0b;"></div> IMPROVEMENT
+        </span>
+      </div>
+      <p style="font-size:13px; color:#6b7280; margin-bottom:32px; max-width:620px; line-height:1.6;">The homepage "How it works" steps use small gray icon circles (64×64px, bg-[#f0f0f0]) with Phosphor icons. Visually weak — needs more weight, color differentiation, and stronger illustration to make the process feel trustworthy and clear.</p>
+
+      <!-- Before vs After -->
+      <div class="ba-wrap" style="margin-bottom:28px;">
+        <div class="ba-before">
+          <div class="ba-label">✗ BEFORE — Current step cards</div>
+          <div style="background:white; border-radius:12px; border: 2px solid rgba(239,68,68,0.2); padding:24px; display:flex; flex-direction:column; align-items:center; gap:12px; text-align:center;">
+            <div style="width:64px; height:64px; border-radius:50%; background:#f0f0f0; border:1px solid #d0d0d0; display:flex; align-items:center; justify-content:center;">
+              <ph-magnifying-glass weight="duotone" style="font-size:28px; color:#606060;"></ph-magnifying-glass>
+            </div>
+            <div>
+              <div style="font-size:10px; font-weight:700; color:#606060; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:4px;">Korak 1</div>
+              <h3 style="font-size:14px; font-weight:600; color:#333; margin-bottom:6px;">Skeniramo 15 prodavnica</h3>
+              <p style="font-size:12px; color:#666; line-height:1.5;">Automatski prikupljamo podatke svakih 6 sati.</p>
+            </div>
+          </div>
+          <div style="margin-top:8px; font-size:11px; color:#ef4444; font-family:'DM Mono',monospace;">✗ Small gray circle, no visual weight, all 3 steps look identical</div>
+        </div>
+        <div class="ba-after">
+          <div class="ba-label">✓ AFTER — Redesigned step card</div>
+          <div class="step-card" style="border: 2px solid rgba(5,150,105,0.2);">
+            <div class="step-icon-wrap step-icon-1">
+              <ph-magnifying-glass weight="duotone" style="font-size:36px;"></ph-magnifying-glass>
+              <div class="step-num">1</div>
+            </div>
+            <div class="step-bg-accent" style="background:#059669;"></div>
+            <div>
+              <div style="font-family:'DM Mono',monospace; font-size:10px; font-weight:500; color:#9ca3af; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:6px;">Korak 01</div>
+              <h3 style="font-size:15px; font-weight:700; color:#111827; margin-bottom:8px;">Skeniramo 15 prodavnica</h3>
+              <p style="font-size:12px; color:#6b7280; line-height:1.6;">Automatski prikupljamo podatke o cenama i popustima iz svih popularnih online prodavnica, svakih 6 sati.</p>
+            </div>
+          </div>
+          <div style="margin-top:8px; font-size:11px; color:#059669; font-family:'DM Mono',monospace;">✓ Color-coded icon, visible step number, more descriptive text</div>
+        </div>
+      </div>
+
+      <!-- Full 3-step row -->
+      <div style="margin-bottom:16px;">
+        <div class="spec-label" style="margin-bottom:12px; color:#6b7280;">ALL 3 STEPS — Final layout (index.html "Kako funkcioniše" section)</div>
+        <div style="background:white; border-radius:12px; padding:32px 24px;">
+          <h2 style="text-align:center; font-size:22px; font-weight:800; color:#111827; margin-bottom:32px; letter-spacing:-0.02em;">Kako funkcioniše</h2>
+          <div style="display:grid; grid-template-columns:1fr auto 1fr auto 1fr; gap:0; align-items:start;">
+
+            <!-- Step 1 -->
+            <div class="step-card" style="box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+              <div class="step-icon-wrap step-icon-1">
+                <ph-magnifying-glass weight="duotone" style="font-size:36px;"></ph-magnifying-glass>
+                <div class="step-num">1</div>
+              </div>
+              <div class="step-bg-accent" style="background:#059669;"></div>
+              <div>
+                <div style="font-family:'DM Mono',monospace; font-size:10px; color:#9ca3af; letter-spacing:0.1em; margin-bottom:6px;">KORAK 01</div>
+                <h3 style="font-size:14px; font-weight:700; color:#111827; margin-bottom:8px;">Skeniramo 15 prodavnica</h3>
+                <p style="font-size:12px; color:#6b7280; line-height:1.6;">Automatski prikupljamo popuste iz svih popularnih online prodavnica, svakih 6 sati.</p>
+              </div>
+            </div>
+
+            <!-- Connector 1→2 -->
+            <div style="display:flex; align-items:center; justify-content:center; padding:0 12px; margin-top:56px;">
+              <div style="display:flex; flex-direction:column; align-items:center; gap:4px;">
+                <div style="width:40px; height:2px; background:linear-gradient(90deg,#e5e7eb,#059669); border-radius:2px;"></div>
+                <ph-arrow-right weight="bold" style="color:#9ca3af; font-size:16px; margin-top:-2px;"></ph-arrow-right>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="step-card" style="box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+              <div class="step-icon-wrap step-icon-2">
+                <ph-funnel weight="duotone" style="font-size:36px;"></ph-funnel>
+                <div class="step-num">2</div>
+              </div>
+              <div class="step-bg-accent" style="background:#2563eb;"></div>
+              <div>
+                <div style="font-family:'DM Mono',monospace; font-size:10px; color:#9ca3af; letter-spacing:0.1em; margin-bottom:6px;">KORAK 02</div>
+                <h3 style="font-size:14px; font-weight:700; color:#111827; margin-bottom:8px;">Filtriraj i uporedi</h3>
+                <p style="font-size:12px; color:#6b7280; line-height:1.6;">Pretražuj po kategoriji, prodavnici ili procentu popusta. Sve na jednom mestu.</p>
+              </div>
+            </div>
+
+            <!-- Connector 2→3 -->
+            <div style="display:flex; align-items:center; justify-content:center; padding:0 12px; margin-top:56px;">
+              <div style="display:flex; flex-direction:column; align-items:center; gap:4px;">
+                <div style="width:40px; height:2px; background:linear-gradient(90deg,#e5e7eb,#d97706); border-radius:2px;"></div>
+                <ph-arrow-right weight="bold" style="color:#9ca3af; font-size:16px; margin-top:-2px;"></ph-arrow-right>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="step-card" style="box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+              <div class="step-icon-wrap step-icon-3">
+                <ph-shopping-cart weight="duotone" style="font-size:36px;"></ph-shopping-cart>
+                <div class="step-num">3</div>
+              </div>
+              <div class="step-bg-accent" style="background:#d97706;"></div>
+              <div>
+                <div style="font-family:'DM Mono',monospace; font-size:10px; color:#9ca3af; letter-spacing:0.1em; margin-bottom:6px;">KORAK 03</div>
+                <h3 style="font-size:14px; font-weight:700; color:#111827; margin-bottom:8px;">Kupi po najboljoj ceni</h3>
+                <p style="font-size:12px; color:#6b7280; line-height:1.6;">Klikni "Kupi" i bićeš preusmeren direktno na prodavnicu. Kupuješ kao i uvek, samo jeftinije.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Annotations -->
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-top:16px;">
+        <div style="background:#161b27; border:1px solid #1f2937; border-radius:8px; padding:12px;">
+          <div style="font-size:10px; color:#059669; font-family:'DM Mono',monospace; font-weight:700; margin-bottom:4px;">ICON BG COLORS</div>
+          <div style="font-size:11px; color:#6b7280; line-height:1.5;">Step 1 → Emerald (search/gather). Step 2 → Blue (filter/think). Step 3 → Amber (action/buy). Creates visual progression.</div>
+        </div>
+        <div style="background:#161b27; border:1px solid #1f2937; border-radius:8px; padding:12px;">
+          <div style="font-size:10px; color:#059669; font-family:'DM Mono',monospace; font-weight:700; margin-bottom:4px;">STEP NUMBERS</div>
+          <div style="font-size:11px; color:#6b7280; line-height:1.5;">Dark pill badge (absolute top-right on icon) in DM Mono. Unambiguous ordering, works even if CSS icons don't render.</div>
+        </div>
+        <div style="background:#161b27; border:1px solid #1f2937; border-radius:8px; padding:12px;">
+          <div style="font-size:10px; color:#059669; font-family:'DM Mono',monospace; font-weight:700; margin-bottom:4px;">CONNECTORS</div>
+          <div style="font-size:11px; color:#6b7280; line-height:1.5;">Gradient line + arrow between steps on desktop. Hidden on mobile (grid collapses to 1 col, natural vertical flow).</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!-- SECTION 6: Blog Cover Template              -->
+    <!-- ══════════════════════════════════════════ -->
+    <section id="s6" style="padding:48px 48px 80px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+        <span class="section-num">06 /</span>
+        <h2 style="font-size:20px; font-weight:800; color:#f9fafb; letter-spacing:-0.02em;">Reusable Blog Post Cover Template</h2>
+        <span style="display:inline-flex; align-items:center; gap:4px; background:#064e3b; color:#6ee7b7; font-size:9px; font-weight:700; font-family:'DM Mono',monospace; padding:2px 8px; border-radius:99px; letter-spacing:0.06em;">
+          <div style="width:5px;height:5px;border-radius:50%;background:#059669;"></div> NEW SYSTEM
+        </span>
+      </div>
+      <p style="font-size:13px; color:#6b7280; margin-bottom:32px; max-width:640px; line-height:1.6;">Each new blog post needs an on-brand cover image that's auto-generated from CSS — no design tools required. Two variants: <strong style="color:#d1d5db;">Vodič</strong> (guide) and <strong style="color:#d1d5db;">Recenzija</strong> (review). Copy-paste the HTML block into each new post.</p>
+
+      <!-- Variant 1: Vodič -->
+      <div style="margin-bottom:8px; display:flex; align-items:center; gap:8px;">
+        <div style="font-family:'DM Mono',monospace; font-size:10px; color:#6b7280; letter-spacing:0.08em; text-transform:uppercase;">Template A — "Vodič" (Guide) Posts</div>
+        <div style="height:1px; flex:1; background:#1f2937;"></div>
+      </div>
+      <div style="margin-bottom:24px;">
+        <div class="cover-template cover-vodic">
+          <div class="cover-geo">
+            <div class="cover-circle-1"></div>
+            <div class="cover-circle-2"></div>
+            <div class="cover-line"></div>
+            <div style="position:absolute; top:0; left:0; right:0; bottom:0; opacity:0.04; background-image:linear-gradient(white 1px,transparent 1px),linear-gradient(90deg,white 1px,transparent 1px); background-size:28px 28px;"></div>
+          </div>
+          <!-- Logo top-left -->
+          <div class="cover-logo-area">
+            <div style="display:flex; align-items:center; gap:8px;">
+              <svg width="24" height="24" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="rgba(255,255,255,0.2)"/><path d="M13 17 C13 12,27 12,27 17 C27 21,13 21,13 25 C13 30,27 30,27 25" stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none"/></svg>
+              <span style="font-family:'Montserrat',sans-serif; font-weight:800; font-size:13px; color:rgba(255,255,255,0.8);">suplementi.deals</span>
+            </div>
+          </div>
+          <!-- Big bg icon -->
+          <div class="cover-big-icon">
+            <ph-barbell weight="fill"></ph-barbell>
+          </div>
+          <!-- Content bottom-left -->
+          <div class="cover-content">
+            <div style="display:inline-flex; align-items:center; gap:6px; background:rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.25); border-radius:99px; padding:4px 14px; margin-bottom:12px;">
+              <ph-book-open weight="fill" style="font-size:12px; color:rgba(255,255,255,0.8);"></ph-book-open>
+              <span style="font-size:11px; font-weight:700; color:white; letter-spacing:0.06em;">VODIČ</span>
+            </div>
+            <div style="font-size:24px; font-weight:900; color:white; letter-spacing:-0.02em; line-height:1.2; max-width:460px; text-shadow:0 2px 20px rgba(0,0,0,0.2);">Naziv članka ide ovde — Vodič</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Variant 2: Recenzija -->
+      <div style="margin-bottom:8px; display:flex; align-items:center; gap:8px;">
+        <div style="font-family:'DM Mono',monospace; font-size:10px; color:#6b7280; letter-spacing:0.08em; text-transform:uppercase;">Template B — "Recenzija" (Review) Posts</div>
+        <div style="height:1px; flex:1; background:#1f2937;"></div>
+      </div>
+      <div style="margin-bottom:28px;">
+        <div class="cover-template cover-recenzija">
+          <div class="cover-geo">
+            <div class="cover-circle-1" style="background:rgba(255,255,255,0.05);"></div>
+            <div class="cover-circle-2" style="background:rgba(255,255,255,0.03);"></div>
+            <div class="cover-line" style="right:80px;"></div>
+            <div style="position:absolute; top:0; left:0; right:0; bottom:0; opacity:0.04; background-image:linear-gradient(white 1px,transparent 1px),linear-gradient(90deg,white 1px,transparent 1px); background-size:28px 28px;"></div>
+          </div>
+          <div class="cover-logo-area">
+            <div style="display:flex; align-items:center; gap:8px;">
+              <svg width="24" height="24" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="rgba(255,255,255,0.15)"/><path d="M13 17 C13 12,27 12,27 17 C27 21,13 21,13 25 C13 30,27 30,27 25" stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none"/></svg>
+              <span style="font-family:'Montserrat',sans-serif; font-weight:800; font-size:13px; color:rgba(255,255,255,0.8);">suplementi.deals</span>
+            </div>
+          </div>
+          <div class="cover-big-icon">
+            <ph-star weight="fill"></ph-star>
+          </div>
+          <div class="cover-content">
+            <div style="display:inline-flex; align-items:center; gap:6px; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.2); border-radius:99px; padding:4px 14px; margin-bottom:12px;">
+              <ph-star weight="fill" style="font-size:12px; color:rgba(255,255,255,0.8);"></ph-star>
+              <span style="font-size:11px; font-weight:700; color:white; letter-spacing:0.06em;">RECENZIJA</span>
+            </div>
+            <div style="font-size:24px; font-weight:900; color:white; letter-spacing:-0.02em; line-height:1.2; max-width:460px; text-shadow:0 2px 20px rgba(0,0,0,0.2);">Naziv proizvoda ili recenzije ide ovde</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CSS code -->
+      <div style="background:#0a0e18; border:1px solid #1f2937; border-radius:8px; padding:16px; margin-bottom:16px;">
+        <div style="font-family:'DM Mono',monospace; font-size:10px; color:#4b5563; margin-bottom:10px; letter-spacing:0.08em;">COPY-PASTE TEMPLATE — Paste above article body in any new blog post</div>
+        <pre style="font-family:'DM Mono',monospace; font-size:11px; color:#d1d5db; line-height:1.8; overflow-x:auto;"><span style="color:#6b7280;">&lt;!-- Blog Post Cover — Template A (Vodič / emerald) --&gt;</span>
+<span style="color:#86efac;">&lt;div class="article-hero-cover" style="
+  position:relative; min-height:240px; border-radius:0;
+  display:flex; flex-direction:column; justify-content:flex-end;
+  padding:28px 36px; overflow:hidden;
+  background:linear-gradient(135deg,#064e3b 0%,#065f46 40%,#047857 70%,#059669 100%);
+"&gt;
+  &lt;!-- geometric pattern overlay --&gt;
+  &lt;div style="position:absolute;inset:0;overflow:hidden;"&gt;
+    &lt;div style="position:absolute;top:-60px;right:-60px;width:240px;height:240px;
+                border-radius:50%;background:rgba(255,255,255,0.06);"&gt;&lt;/div&gt;
+    &lt;div style="position:absolute;bottom:-40px;left:30%;width:160px;height:160px;
+                border-radius:50%;background:rgba(255,255,255,0.04);"&gt;&lt;/div&gt;
+    &lt;div style="position:absolute;inset:0;opacity:0.04;
+                background-image:linear-gradient(white 1px,transparent 1px),
+                linear-gradient(90deg,white 1px,transparent 1px);
+                background-size:28px 28px;"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- logo --&gt;
+  &lt;div style="position:absolute;top:20px;left:24px;z-index:1;
+              display:flex;align-items:center;gap:8px;"&gt;
+    &lt;svg width="22" height="22" viewBox="0 0 40 40" fill="none"&gt;
+      &lt;rect width="40" height="40" rx="10" fill="rgba(255,255,255,0.2)"/&gt;
+      &lt;path d="M13 17 C13 12,27 12,27 17 C27 21,13 21,13 25 C13 30,27 30,27 25"
+            stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none"/&gt;
+    &lt;/svg&gt;
+    &lt;span style="font-weight:800;font-size:13px;color:rgba(255,255,255,0.8);"&gt;
+      suplementi.deals&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;!-- bg icon (change per post topic) --&gt;
+  &lt;ph-barbell weight="fill" style="position:absolute;right:36px;top:50%;
+    transform:translateY(-50%);font-size:100px;color:rgba(255,255,255,0.1);"&gt;
+  &lt;/ph-barbell&gt;
+  &lt;!-- content --&gt;
+  &lt;div style="position:relative;z-index:1;"&gt;
+    &lt;span style="...category badge..."&gt;VODIČ&lt;/span&gt;
+    &lt;h1 style="font-size:26px;font-weight:900;color:white;..."&gt;
+      <!-- ARTICLE TITLE HERE --&gt;
+    &lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</span></pre>
+      </div>
+
+      <!-- Summary table -->
+      <div style="background:#161b27; border:1px solid #1f2937; border-radius:8px; overflow:hidden;">
+        <div style="padding:12px 16px; border-bottom:1px solid #1f2937; font-family:'DM Mono',monospace; font-size:10px; color:#4b5563; letter-spacing:0.08em;">TEMPLATE CUSTOMIZATION PER POST</div>
+        <table style="width:100%; border-collapse:collapse; font-size:12px;">
+          <thead>
+            <tr style="border-bottom:1px solid #1f2937;">
+              <th style="text-align:left; padding:10px 16px; color:#6b7280; font-family:'DM Mono',monospace; font-size:10px; font-weight:500;">WHAT TO CHANGE</th>
+              <th style="text-align:left; padding:10px 16px; color:#6b7280; font-family:'DM Mono',monospace; font-size:10px; font-weight:500;">VODIČ posts</th>
+              <th style="text-align:left; padding:10px 16px; color:#6b7280; font-family:'DM Mono',monospace; font-size:10px; font-weight:500;">RECENZIJA posts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid #1f2937;">
+              <td style="padding:10px 16px; color:#d1d5db;">Background gradient</td>
+              <td style="padding:10px 16px; color:#6ee7b7; font-family:'DM Mono',monospace;">Emerald #064e3b → #059669</td>
+              <td style="padding:10px 16px; color:#c4b5fd; font-family:'DM Mono',monospace;">Indigo #1e1b4b → #4338ca</td>
+            </tr>
+            <tr style="border-bottom:1px solid #1f2937;">
+              <td style="padding:10px 16px; color:#d1d5db;">Background icon</td>
+              <td style="padding:10px 16px; color:#6ee7b7; font-family:'DM Mono',monospace;">ph-barbell / ph-lightning / ph-leaf</td>
+              <td style="padding:10px 16px; color:#c4b5fd; font-family:'DM Mono',monospace;">ph-star / ph-seal-check</td>
+            </tr>
+            <tr style="border-bottom:1px solid #1f2937;">
+              <td style="padding:10px 16px; color:#d1d5db;">Category badge label</td>
+              <td style="padding:10px 16px; color:#6ee7b7; font-family:'DM Mono',monospace;">VODIČ</td>
+              <td style="padding:10px 16px; color:#c4b5fd; font-family:'DM Mono',monospace;">RECENZIJA</td>
+            </tr>
+            <tr>
+              <td style="padding:10px 16px; color:#d1d5db;">H1 title</td>
+              <td style="padding:10px 16px; color:#9ca3af;" colspan="2">The article title — copy from &lt;title&gt; tag</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- FOOTER                                                       -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div style="background:#0a0e18; border-top:1px solid #1f2937; padding:20px 40px; display:flex; align-items:center; justify-content:space-between;">
+  <div style="display:flex; align-items:center; gap:12px;">
+    <svg width="20" height="20" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#059669"/><path d="M13 17 C13 12,27 12,27 17 C27 21,13 21,13 25 C13 30,27 30,27 25" stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none"/></svg>
+    <span style="font-family:'DM Mono',monospace; font-size:10px; color:#4b5563;">suplementi.deals · Design Spec v2 · RSS-18</span>
+  </div>
+  <div style="font-family:'DM Mono',monospace; font-size:10px; color:#4b5563;">
+    2 CRITICAL · 2 IMPROVEMENTS · 2 NEW FEATURES
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1323 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>suplementi.deals — Brand Guidelines</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green:      #059669;
+      --green-dark: #047857;
+      --green-deep: #065f46;
+      --green-light:#d1fae5;
+      --green-pale: #f0fdf4;
+      --ink:        #111827;
+      --ink-mid:    #374151;
+      --ink-muted:  #6b7280;
+      --ink-faint:  #9ca3af;
+      --border:     #e5e7eb;
+      --surface:    #f9fafb;
+      --white:      #ffffff;
+      --red:        #dc2626;
+      --amber:      #d97706;
+      --slate:      #64748b;
+
+      --font: "Montserrat", sans-serif;
+      --mono: "DM Mono", monospace;
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font);
+      background: #f4f4f4;
+      color: var(--ink);
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    /* ---- Page layout ---- */
+    .page { max-width: 960px; margin: 0 auto; padding: 0 24px 80px; }
+
+    /* ---- Cover ---- */
+    .cover {
+      background: var(--ink);
+      color: white;
+      padding: 80px 48px;
+      margin: 0 -24px 64px;
+      position: relative;
+      overflow: hidden;
+    }
+    .cover::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 400px; height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(5,150,105,0.25) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .cover::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; left: -60px;
+      width: 280px; height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(5,150,105,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .cover-eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 16px;
+    }
+    .cover-title {
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      margin-bottom: 12px;
+    }
+    .cover-title span { color: var(--green); }
+    .cover-sub {
+      font-size: 15px;
+      color: rgba(255,255,255,0.5);
+      font-weight: 400;
+      margin-bottom: 40px;
+    }
+    .cover-meta {
+      display: flex;
+      gap: 24px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.35);
+      font-weight: 500;
+    }
+
+    /* ---- Section ---- */
+    .section {
+      margin-bottom: 64px;
+    }
+    .section-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 6px;
+    }
+    .section-title {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+    .section-desc {
+      font-size: 14px;
+      color: var(--ink-muted);
+      margin-bottom: 32px;
+      max-width: 560px;
+    }
+    .section-rule {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin-bottom: 32px;
+    }
+
+    /* ---- Cards ---- */
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+    .card-pad { padding: 32px; }
+
+    /* ---- Logo section ---- */
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .logo-swatch {
+      border-radius: var(--radius-md);
+      padding: 40px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .logo-swatch-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .logo-swatch--light { background: white; border: 1px solid var(--border); }
+    .logo-swatch--light .logo-swatch-label { color: var(--ink-muted); }
+    .logo-swatch--dark  { background: var(--ink); }
+    .logo-swatch--dark  .logo-swatch-label { color: rgba(255,255,255,0.4); }
+    .logo-swatch--green { background: var(--green); }
+    .logo-swatch--green .logo-swatch-label { color: rgba(255,255,255,0.6); }
+    .logo-swatch--pale  { background: var(--green-pale); border: 1px solid var(--green-light); }
+    .logo-swatch--pale  .logo-swatch-label { color: var(--green); }
+
+    /* ---- Color palette ---- */
+    .palette-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+    }
+    .color-chip {
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+    .color-swatch {
+      height: 72px;
+    }
+    .color-info {
+      background: white;
+      padding: 10px 12px;
+    }
+    .color-name {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .color-hex {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--ink-muted);
+      margin-top: 2px;
+    }
+    .color-role {
+      font-size: 10px;
+      color: var(--ink-faint);
+      margin-top: 3px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 600;
+    }
+
+    /* ---- Discount badge tier ---- */
+    .badge-tier-grid {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .badge-example {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      font-size: 13px;
+      font-weight: 900;
+      color: white;
+      font-family: var(--font);
+    }
+    .badge--red    { background: var(--red); }
+    .badge--amber  { background: var(--amber); }
+    .badge--slate  { background: var(--slate); }
+    .badge-tier-label { font-size: 11px; color: var(--ink-muted); font-weight: 600; }
+
+    /* ---- Typography specimens ---- */
+    .type-row {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .type-row:last-child { border-bottom: none; }
+    .type-meta {
+      font-size: 11px;
+      font-family: var(--mono);
+      color: var(--ink-faint);
+      margin-bottom: 6px;
+    }
+
+    /* ---- Spacing scale ---- */
+    .spacing-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .spacing-row:last-child { border-bottom: none; }
+    .spacing-bar {
+      background: var(--green-light);
+      height: 8px;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+    .spacing-label { font-size: 12px; font-family: var(--mono); color: var(--ink-muted); width: 80px; flex-shrink: 0; }
+    .spacing-desc  { font-size: 12px; color: var(--ink-muted); }
+
+    /* ---- Iconography grid ---- */
+    .icon-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+      gap: 12px;
+    }
+    .icon-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      padding: 16px 8px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+    }
+    .icon-item span {
+      font-size: 10px;
+      color: var(--ink-faint);
+      text-align: center;
+      font-weight: 600;
+    }
+
+    /* ---- Voice & tone ---- */
+    .tone-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    @media (max-width: 560px) {
+      .tone-grid { grid-template-columns: 1fr; }
+    }
+    .tone-card {
+      padding: 20px;
+      border-radius: var(--radius-sm);
+    }
+    .tone-card--do   { background: #f0fdf4; border: 1px solid #bbf7d0; }
+    .tone-card--dont { background: #fef2f2; border: 1px solid #fecaca; }
+    .tone-card-header {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .tone-card--do   .tone-card-header { color: var(--green); }
+    .tone-card--dont .tone-card-header { color: var(--red); }
+    .tone-item {
+      font-size: 13px;
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      color: var(--ink-mid);
+    }
+    .tone-item:last-child { border-bottom: none; }
+
+    /* ---- Logo don'ts ---- */
+    .donts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 16px;
+    }
+    .dont-item {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+    }
+    .dont-preview {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--surface);
+      position: relative;
+    }
+    .dont-preview::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 3px solid #fecaca;
+      border-radius: 7px 7px 0 0;
+      pointer-events: none;
+    }
+    .dont-label {
+      padding: 10px 12px;
+      font-size: 11px;
+      color: var(--red);
+      font-weight: 700;
+      background: #fff5f5;
+      border-top: 1px solid #fecaca;
+    }
+
+    /* ---- Table of contents ---- */
+    .toc {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .toc-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 16px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      color: var(--ink-mid);
+      font-size: 13px;
+      font-weight: 600;
+      transition: background 0.15s;
+    }
+    .toc-item:hover { background: var(--surface); color: var(--ink); }
+    .toc-num {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--green);
+      width: 24px;
+      flex-shrink: 0;
+    }
+
+    /* ---- Component preview: header ---- */
+    .comp-header {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+    .comp-header-bar1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      height: 48px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .comp-header-bar2 {
+      padding: 10px 20px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .comp-header-bar3 {
+      padding: 8px 20px;
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+    }
+
+    /* ---- Footer ---- */
+    .book-footer {
+      margin-top: 80px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      color: var(--ink-faint);
+    }
+
+    /* ---- Pill tag ---- */
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 12px;
+      border-radius: var(--radius-full);
+      font-size: 12px;
+      font-weight: 700;
+      border: 1px solid;
+    }
+    .pill--active { background: var(--green); color: white; border-color: var(--green); }
+    .pill--idle   { background: white; color: #666; border-color: #ddd; }
+  </style>
+</head>
+
+<body>
+
+<!-- ============================================================  COVER -->
+<div class="cover">
+  <div class="page" style="padding-bottom:0;">
+    <div class="cover-eyebrow">Brand Guidelines v1.0</div>
+    <h1 class="cover-title">suplementi<span>.</span>deals</h1>
+    <p class="cover-sub">Visual identity, voice, and design system for RS Supplement Deals</p>
+    <div class="cover-meta">
+      <span>Version 1.0</span>
+      <span>·</span>
+      <span>March 2026</span>
+      <span>·</span>
+      <span>UI/UX Designer — RSS-11</span>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- ============================================================ TOC -->
+  <div class="section">
+    <div class="section-label">Contents</div>
+    <h2 class="section-title">What's inside</h2>
+    <p class="section-desc">A complete reference for anyone building on or communicating for suplementi.deals.</p>
+    <div class="card">
+      <div class="card-pad" style="padding:16px;">
+        <nav class="toc">
+          <a href="#logo"       class="toc-item"><span class="toc-num">01</span> Logo & Icon Mark</a>
+          <a href="#colors"     class="toc-item"><span class="toc-num">02</span> Color Palette</a>
+          <a href="#typography" class="toc-item"><span class="toc-num">03</span> Typography</a>
+          <a href="#badges"     class="toc-item"><span class="toc-num">04</span> Discount Badge System</a>
+          <a href="#spacing"    class="toc-item"><span class="toc-num">05</span> Spacing & Radius</a>
+          <a href="#icons"      class="toc-item"><span class="toc-num">06</span> Iconography</a>
+          <a href="#components" class="toc-item"><span class="toc-num">07</span> Key Components</a>
+          <a href="#voice"      class="toc-item"><span class="toc-num">08</span> Voice & Tone</a>
+          <a href="#donts"      class="toc-item"><span class="toc-num">09</span> Logo Do's & Don'ts</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================================ 01: LOGO -->
+  <div class="section" id="logo">
+    <div class="section-label">01 — Logo & Icon Mark</div>
+    <h2 class="section-title">The mark</h2>
+    <p class="section-desc">A bold, geometric "S" formed from two stacked arcs — reading simultaneously as a supplement capsule, a currency symbol, and a downward-trending price. Paired with the wordmark "suplementi.deals" in Montserrat ExtraBold.</p>
+    <hr class="section-rule" />
+
+    <!-- Logo variants -->
+    <div class="logo-grid" style="margin-bottom:24px;">
+
+      <!-- Light background: icon + wordmark -->
+      <div class="logo-swatch logo-swatch--light">
+        <svg width="180" height="48" viewBox="0 0 180 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="suplementi.deals logo — light variant">
+          <!-- Icon mark -->
+          <rect x="0" y="4" width="40" height="40" rx="10" fill="#059669"/>
+          <!-- S shape: top arc -->
+          <path d="M13 19 C13 14, 27 14, 27 19 C27 23, 13 23, 13 27 C13 32, 27 32, 27 27"
+                stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+          <!-- Wordmark -->
+          <text x="52" y="22" font-family="Montserrat, sans-serif" font-weight="800" font-size="14" fill="#111827" letter-spacing="-0.3">suplementi</text>
+          <text x="52" y="38" font-family="Montserrat, sans-serif" font-weight="800" font-size="14" fill="#059669" letter-spacing="-0.3">.deals</text>
+        </svg>
+        <span class="logo-swatch-label">Primary — Light</span>
+      </div>
+
+      <!-- Dark background: icon + wordmark -->
+      <div class="logo-swatch logo-swatch--dark">
+        <svg width="180" height="48" viewBox="0 0 180 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="suplementi.deals logo — dark variant">
+          <rect x="0" y="4" width="40" height="40" rx="10" fill="#059669"/>
+          <path d="M13 19 C13 14, 27 14, 27 19 C27 23, 13 23, 13 27 C13 32, 27 32, 27 27"
+                stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+          <text x="52" y="22" font-family="Montserrat, sans-serif" font-weight="800" font-size="14" fill="white" letter-spacing="-0.3">suplementi</text>
+          <text x="52" y="38" font-family="Montserrat, sans-serif" font-weight="800" font-size="14" fill="#34d399" letter-spacing="-0.3">.deals</text>
+        </svg>
+        <span class="logo-swatch-label">Reversed — Dark</span>
+      </div>
+
+      <!-- Green background: white icon + wordmark -->
+      <div class="logo-swatch logo-swatch--green">
+        <svg width="180" height="48" viewBox="0 0 180 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="suplementi.deals logo — green variant">
+          <rect x="0" y="4" width="40" height="40" rx="10" fill="rgba(255,255,255,0.2)"/>
+          <path d="M13 19 C13 14, 27 14, 27 19 C27 23, 13 23, 13 27 C13 32, 27 32, 27 27"
+                stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+          <text x="52" y="22" font-family="Montserrat, sans-serif" font-weight="800" font-size="14" fill="white" letter-spacing="-0.3">suplementi</text>
+          <text x="52" y="38" font-family="Montserrat, sans-serif" font-weight="800" font-size="14" fill="rgba(255,255,255,0.7)" letter-spacing="-0.3">.deals</text>
+        </svg>
+        <span class="logo-swatch-label">On Brand Green</span>
+      </div>
+
+      <!-- Pale background: standard -->
+      <div class="logo-swatch logo-swatch--pale">
+        <svg width="180" height="48" viewBox="0 0 180 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="suplementi.deals logo — pale variant">
+          <rect x="0" y="4" width="40" height="40" rx="10" fill="#059669"/>
+          <path d="M13 19 C13 14, 27 14, 27 19 C27 23, 13 23, 13 27 C13 32, 27 32, 27 27"
+                stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+          <text x="52" y="22" font-family="Montserrat, sans-serif" font-weight="800" font-size="14" fill="#065f46" letter-spacing="-0.3">suplementi</text>
+          <text x="52" y="38" font-family="Montserrat, sans-serif" font-weight="800" font-size="14" fill="#059669" letter-spacing="-0.3">.deals</text>
+        </svg>
+        <span class="logo-swatch-label">On Pale Green</span>
+      </div>
+
+    </div>
+
+    <!-- Icon mark alone (sizes) -->
+    <div class="card card-pad" style="margin-bottom:16px;">
+      <p style="font-size:12px;font-weight:700;color:var(--ink-muted);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:20px;">Icon mark — size scale</p>
+      <div style="display:flex;align-items:flex-end;gap:24px;flex-wrap:wrap;">
+
+        <!-- 64px -->
+        <div style="display:flex;flex-direction:column;align-items:center;gap:8px;">
+          <svg width="64" height="64" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="48" height="48" rx="12" fill="#059669"/>
+            <path d="M14 21 C14 15, 34 15, 34 21 C34 27, 14 27, 14 33 C14 39, 34 39, 34 33"
+                  stroke="white" stroke-width="4" stroke-linecap="round" fill="none"/>
+          </svg>
+          <span style="font-size:10px;font-family:var(--mono);color:var(--ink-faint);">64px</span>
+        </div>
+
+        <!-- 48px -->
+        <div style="display:flex;flex-direction:column;align-items:center;gap:8px;">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="48" height="48" rx="12" fill="#059669"/>
+            <path d="M14 21 C14 15, 34 15, 34 21 C34 27, 14 27, 14 33 C14 39, 34 39, 34 33"
+                  stroke="white" stroke-width="4" stroke-linecap="round" fill="none"/>
+          </svg>
+          <span style="font-size:10px;font-family:var(--mono);color:var(--ink-faint);">48px</span>
+        </div>
+
+        <!-- 32px -->
+        <div style="display:flex;flex-direction:column;align-items:center;gap:8px;">
+          <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="48" height="48" rx="12" fill="#059669"/>
+            <path d="M14 21 C14 15, 34 15, 34 21 C34 27, 14 27, 14 33 C14 39, 34 39, 34 33"
+                  stroke="white" stroke-width="4" stroke-linecap="round" fill="none"/>
+          </svg>
+          <span style="font-size:10px;font-family:var(--mono);color:var(--ink-faint);">32px</span>
+        </div>
+
+        <!-- 24px -->
+        <div style="display:flex;flex-direction:column;align-items:center;gap:8px;">
+          <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="48" height="48" rx="12" fill="#059669"/>
+            <path d="M14 21 C14 15, 34 15, 34 21 C34 27, 14 27, 14 33 C14 39, 34 39, 34 33"
+                  stroke="white" stroke-width="4" stroke-linecap="round" fill="none"/>
+          </svg>
+          <span style="font-size:10px;font-family:var(--mono);color:var(--ink-faint);">24px · min</span>
+        </div>
+
+        <!-- 16px: favicon -->
+        <div style="display:flex;flex-direction:column;align-items:center;gap:8px;">
+          <svg width="16" height="16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="48" height="48" rx="12" fill="#059669"/>
+            <path d="M14 21 C14 15, 34 15, 34 21 C34 27, 14 27, 14 33 C14 39, 34 39, 34 33"
+                  stroke="white" stroke-width="5" stroke-linecap="round" fill="none"/>
+          </svg>
+          <span style="font-size:10px;font-family:var(--mono);color:var(--ink-faint);">16px · favicon</span>
+        </div>
+
+        <div style="flex:1;min-width:160px;padding:12px 16px;background:var(--surface);border:1px solid var(--border);border-radius:8px;">
+          <div style="font-size:11px;font-weight:700;color:var(--ink-muted);margin-bottom:6px;">MINIMUM SIZE</div>
+          <div style="font-size:13px;color:var(--ink);">24px for icon mark alone.<br>Do not use at smaller sizes — use a simplified flat square with "SD" text instead.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Clearspace -->
+    <div class="card card-pad">
+      <p style="font-size:12px;font-weight:700;color:var(--ink-muted);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">Clear space rule</p>
+      <div style="display:flex;align-items:center;gap:24px;flex-wrap:wrap;">
+        <div style="position:relative;padding:20px;border:1px dashed #059669;border-radius:8px;display:inline-block;">
+          <svg width="120" height="32" viewBox="0 0 120 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="32" height="32" rx="8" fill="#059669"/>
+            <path d="M9 13 C9 9, 23 9, 23 13 C23 16, 9 16, 9 19 C9 23, 23 23, 23 19"
+                  stroke="white" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <text x="40" y="14" font-family="Montserrat, sans-serif" font-weight="800" font-size="9.5" fill="#111827" letter-spacing="-0.2">suplementi</text>
+            <text x="40" y="26" font-family="Montserrat, sans-serif" font-weight="800" font-size="9.5" fill="#059669" letter-spacing="-0.2">.deals</text>
+          </svg>
+          <!-- Arrows indicating clearspace -->
+          <div style="position:absolute;top:-20px;left:50%;transform:translateX(-50%);font-size:10px;color:#059669;font-weight:700;white-space:nowrap;">↕ ½× icon height</div>
+          <div style="position:absolute;left:-48px;top:50%;transform:translateY(-50%);font-size:10px;color:#059669;font-weight:700;white-space:nowrap;">½× →</div>
+        </div>
+        <p style="font-size:13px;color:var(--ink-muted);max-width:280px;">Maintain clear space equal to ½ the icon height on all sides. No other elements should enter this zone.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================================ 02: COLORS -->
+  <div class="section" id="colors">
+    <div class="section-label">02 — Color Palette</div>
+    <h2 class="section-title">Colors</h2>
+    <p class="section-desc">Emerald green communicates value, freshness, and savings. The ink scale provides neutral structure. Accent colors are reserved for system states only.</p>
+    <hr class="section-rule" />
+
+    <div class="palette-grid" style="margin-bottom:24px;">
+
+      <!-- Brand Green -->
+      <div class="color-chip">
+        <div class="color-swatch" style="background:#059669;"></div>
+        <div class="color-info">
+          <div class="color-name">Brand Green</div>
+          <div class="color-hex">#059669</div>
+          <div class="color-role">Primary · CTA · Accent</div>
+        </div>
+      </div>
+
+      <div class="color-chip">
+        <div class="color-swatch" style="background:#047857;"></div>
+        <div class="color-info">
+          <div class="color-name">Green Dark</div>
+          <div class="color-hex">#047857</div>
+          <div class="color-role">Hover state</div>
+        </div>
+      </div>
+
+      <div class="color-chip">
+        <div class="color-swatch" style="background:#065f46;"></div>
+        <div class="color-info">
+          <div class="color-name">Green Deep</div>
+          <div class="color-hex">#065f46</div>
+          <div class="color-role">Active / pressed</div>
+        </div>
+      </div>
+
+      <div class="color-chip">
+        <div class="color-swatch" style="background:#d1fae5; border:1px solid #a7f3d0;"></div>
+        <div class="color-info">
+          <div class="color-name">Green Light</div>
+          <div class="color-hex">#d1fae5</div>
+          <div class="color-role">Savings chip border</div>
+        </div>
+      </div>
+
+      <div class="color-chip">
+        <div class="color-swatch" style="background:#f0fdf4; border:1px solid #d1fae5;"></div>
+        <div class="color-info">
+          <div class="color-name">Green Pale</div>
+          <div class="color-hex">#f0fdf4</div>
+          <div class="color-role">Email banner bg</div>
+        </div>
+      </div>
+
+      <!-- Ink scale -->
+      <div class="color-chip">
+        <div class="color-swatch" style="background:#111827;"></div>
+        <div class="color-info">
+          <div class="color-name">Ink</div>
+          <div class="color-hex">#111827</div>
+          <div class="color-role">Headings · logo dark</div>
+        </div>
+      </div>
+
+      <div class="color-chip">
+        <div class="color-swatch" style="background:#374151;"></div>
+        <div class="color-info">
+          <div class="color-name">Ink Mid</div>
+          <div class="color-hex">#374151</div>
+          <div class="color-role">Body text</div>
+        </div>
+      </div>
+
+      <div class="color-chip">
+        <div class="color-swatch" style="background:#6b7280;"></div>
+        <div class="color-info">
+          <div class="color-name">Ink Muted</div>
+          <div class="color-hex">#6b7280</div>
+          <div class="color-role">Secondary text</div>
+        </div>
+      </div>
+
+      <div class="color-chip">
+        <div class="color-swatch" style="background:#e5e7eb; border:1px solid #d1d5db;"></div>
+        <div class="color-info">
+          <div class="color-name">Border</div>
+          <div class="color-hex">#e5e7eb</div>
+          <div class="color-role">Dividers · card edges</div>
+        </div>
+      </div>
+
+      <div class="color-chip">
+        <div class="color-swatch" style="background:#f9fafb; border:1px solid #e5e7eb;"></div>
+        <div class="color-info">
+          <div class="color-name">Surface</div>
+          <div class="color-hex">#f9fafb</div>
+          <div class="color-role">Card backgrounds</div>
+        </div>
+      </div>
+
+      <!-- State colors -->
+      <div class="color-chip">
+        <div class="color-swatch" style="background:#dc2626;"></div>
+        <div class="color-info">
+          <div class="color-name">Discount Red</div>
+          <div class="color-hex">#dc2626</div>
+          <div class="color-role">30%+ badge</div>
+        </div>
+      </div>
+
+      <div class="color-chip">
+        <div class="color-swatch" style="background:#d97706;"></div>
+        <div class="color-info">
+          <div class="color-name">Discount Amber</div>
+          <div class="color-hex">#d97706</div>
+          <div class="color-role">15–29% badge</div>
+        </div>
+      </div>
+
+      <div class="color-chip">
+        <div class="color-swatch" style="background:#64748b;"></div>
+        <div class="color-info">
+          <div class="color-name">Discount Slate</div>
+          <div class="color-hex">#64748b</div>
+          <div class="color-role">&lt;15% badge</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Accessibility -->
+    <div class="card card-pad">
+      <p style="font-size:12px;font-weight:700;color:var(--ink-muted);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">Contrast compliance</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;">
+        <div style="padding:12px;background:var(--surface);border:1px solid var(--border);border-radius:8px;">
+          <div style="font-size:13px;font-weight:700;color:#059669;">White on #059669</div>
+          <div style="font-size:11px;color:var(--ink-muted);margin-top:4px;">Ratio: 3.9:1 · AA Large ✓</div>
+          <div style="font-size:11px;color:var(--ink-faint);">Use for CTA buttons, badges</div>
+        </div>
+        <div style="padding:12px;background:var(--surface);border:1px solid var(--border);border-radius:8px;">
+          <div style="font-size:13px;font-weight:700;color:#111827;">#111827 on white</div>
+          <div style="font-size:11px;color:var(--ink-muted);margin-top:4px;">Ratio: 16.1:1 · AAA ✓</div>
+          <div style="font-size:11px;color:var(--ink-faint);">Body text, headings</div>
+        </div>
+        <div style="padding:12px;background:var(--surface);border:1px solid var(--border);border-radius:8px;">
+          <div style="font-size:13px;font-weight:700;color:#065f46;">White on #065f46</div>
+          <div style="font-size:11px;color:var(--ink-muted);margin-top:4px;">Ratio: 7.5:1 · AAA ✓</div>
+          <div style="font-size:11px;color:var(--ink-faint);">Pressed states, deep accents</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================================ 03: TYPOGRAPHY -->
+  <div class="section" id="typography">
+    <div class="section-label">03 — Typography</div>
+    <h2 class="section-title">Type system</h2>
+    <p class="section-desc">Montserrat exclusively — a geometric sans-serif that reads as both athletic and approachable. Use weight variation (not size alone) to create hierarchy.</p>
+    <hr class="section-rule" />
+
+    <div class="card card-pad">
+
+      <div class="type-row">
+        <div class="type-meta">Display · 900 · -0.03em · 40–52px</div>
+        <div style="font-size:42px;font-weight:900;letter-spacing:-0.03em;line-height:1.05;color:var(--ink);">Suplementi na<br><span style="color:var(--green);">popustu</span></div>
+      </div>
+
+      <div class="type-row">
+        <div class="type-meta">H1 · 800 · -0.02em · 28–32px</div>
+        <div style="font-size:28px;font-weight:800;letter-spacing:-0.02em;line-height:1.15;color:var(--ink);">Svi popusti iz 15 prodavnica</div>
+      </div>
+
+      <div class="type-row">
+        <div class="type-meta">H2 · 700 · -0.01em · 20–22px</div>
+        <div style="font-size:20px;font-weight:700;letter-spacing:-0.01em;line-height:1.3;color:var(--ink);">Whey protein na akciji</div>
+      </div>
+
+      <div class="type-row">
+        <div class="type-meta">Product name · 600 · 0 · 13–14px</div>
+        <div style="font-size:14px;font-weight:600;line-height:1.4;color:var(--ink);">GymBeam 100% Whey Protein Čokolada 2kg</div>
+      </div>
+
+      <div class="type-row">
+        <div class="type-meta">Body · 400 · 0 · 14–15px · line-height 1.6</div>
+        <div style="font-size:14px;font-weight:400;line-height:1.6;color:#374151;max-width:520px;">Automatski prikupljamo popuste iz 15 online prodavnica svakih 6 sati. Proteini, kreatin, vitamini, amino kiseline — sve na jednom mestu.</div>
+      </div>
+
+      <div class="type-row">
+        <div class="type-meta">Label / UI · 700 · +0.1em · 10–11px · uppercase</div>
+        <div style="font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#6b7280;">Prodavnice · Kategorija · Filteri</div>
+      </div>
+
+      <div class="type-row">
+        <div class="type-meta">Price — discount · 900 · 0 · 18–20px</div>
+        <div style="font-size:20px;font-weight:900;color:#059669;">3.299 RSD</div>
+      </div>
+
+      <div class="type-row">
+        <div class="type-meta">Price — original (struck) · 400 · 0 · 12–13px</div>
+        <div style="font-size:13px;font-weight:400;color:#9ca3af;text-decoration:line-through;">5.999 RSD</div>
+      </div>
+
+      <div class="type-row" style="border-bottom:none;">
+        <div class="type-meta">Code / hex values · DM Mono 400 · 12px</div>
+        <div style="font-size:12px;font-family:var(--mono);color:#059669;">#059669 · utm_source=suplementi_deals</div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ============================================================ 04: BADGES -->
+  <div class="section" id="badges">
+    <div class="section-label">04 — Discount Badge System</div>
+    <h2 class="section-title">Discount tiers</h2>
+    <p class="section-desc">Color communicates urgency. The 3-tier system guides users to the best deals at a glance without reading the number.</p>
+    <hr class="section-rule" />
+
+    <div class="card card-pad">
+      <div class="badge-tier-grid" style="margin-bottom:32px;">
+
+        <div class="badge-example">
+          <span class="badge badge--red">-45%</span>
+          <div class="badge-tier-label">30% and above</div>
+          <div style="font-size:11px;color:var(--ink-faint);text-align:center;">Red<br>#dc2626<br>High urgency</div>
+        </div>
+
+        <div style="color:var(--ink-faint);font-size:20px;align-self:center;">→</div>
+
+        <div class="badge-example">
+          <span class="badge badge--amber">-22%</span>
+          <div class="badge-tier-label">15–29%</div>
+          <div style="font-size:11px;color:var(--ink-faint);text-align:center;">Amber<br>#d97706<br>Good deal</div>
+        </div>
+
+        <div style="color:var(--ink-faint);font-size:20px;align-self:center;">→</div>
+
+        <div class="badge-example">
+          <span class="badge badge--slate">-8%</span>
+          <div class="badge-tier-label">1–14%</div>
+          <div style="font-size:11px;color:var(--ink-faint);text-align:center;">Slate<br>#64748b<br>Minor saving</div>
+        </div>
+
+        <div style="color:var(--ink-faint);font-size:20px;align-self:center;">→</div>
+
+        <div class="badge-example">
+          <span style="display:inline-flex;align-items:center;padding:4px 12px;border-radius:9999px;font-size:13px;font-weight:900;color:#9ca3af;border:1.5px solid #e5e7eb;">—</span>
+          <div class="badge-tier-label">No discount</div>
+          <div style="font-size:11px;color:var(--ink-faint);text-align:center;">No badge shown<br>CTA muted to<br>#606060</div>
+        </div>
+      </div>
+
+      <div style="padding-top:20px;border-top:1px solid var(--border);">
+        <p style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--ink-muted);margin-bottom:12px;">Badge placement</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:13px;color:var(--ink-mid);">
+          <div>
+            <div style="font-weight:700;color:var(--ink);margin-bottom:4px;">Position</div>
+            Top-left corner of the product image. 10px from edges. Never right-aligned (conflicts with image focal point).
+          </div>
+          <div>
+            <div style="font-weight:700;color:var(--ink);margin-bottom:4px;">Typography</div>
+            Montserrat 900 weight. Font size 12–13px. Padding: 4px 10px. Border-radius: 9999px (pill shape).
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================================ 05: SPACING -->
+  <div class="section" id="spacing">
+    <div class="section-label">05 — Spacing & Radius</div>
+    <h2 class="section-title">Spatial system</h2>
+    <p class="section-desc">A base-4 spacing scale. Rounded corners signal approachability — heavier radius on containers, lighter on compact UI elements.</p>
+    <hr class="section-rule" />
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;flex-wrap:wrap;" >
+      <!-- Spacing -->
+      <div class="card card-pad">
+        <p style="font-size:12px;font-weight:700;color:var(--ink-muted);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">Spacing scale</p>
+        <div class="spacing-row"><div class="spacing-label">4px</div><div class="spacing-bar" style="width:4px;"></div><div class="spacing-desc">Icon gap, tight stacking</div></div>
+        <div class="spacing-row"><div class="spacing-label">8px</div><div class="spacing-bar" style="width:8px;"></div><div class="spacing-desc">Badge padding, pill gap</div></div>
+        <div class="spacing-row"><div class="spacing-label">12px</div><div class="spacing-bar" style="width:12px;"></div><div class="spacing-desc">Card padding sm, grid gap sm</div></div>
+        <div class="spacing-row"><div class="spacing-label">16px</div><div class="spacing-bar" style="width:16px;"></div><div class="spacing-desc">Mobile page padding</div></div>
+        <div class="spacing-row"><div class="spacing-label">20px</div><div class="spacing-bar" style="width:20px;"></div><div class="spacing-desc">Header padding, card padding</div></div>
+        <div class="spacing-row"><div class="spacing-label">24px</div><div class="spacing-bar" style="width:24px;"></div><div class="spacing-desc">Desktop padding, grid gap md</div></div>
+        <div class="spacing-row"><div class="spacing-label">32px</div><div class="spacing-bar" style="width:32px;"></div><div class="spacing-desc">Section spacing, card padding lg</div></div>
+        <div class="spacing-row"><div class="spacing-label">48px</div><div class="spacing-bar" style="width:48px;"></div><div class="spacing-desc">Hero section inner, row height</div></div>
+        <div class="spacing-row"><div class="spacing-label">64px+</div><div class="spacing-bar" style="width:64px;"></div><div class="spacing-desc">Between major sections</div></div>
+      </div>
+
+      <!-- Radius -->
+      <div class="card card-pad">
+        <p style="font-size:12px;font-weight:700;color:var(--ink-muted);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">Border radius scale</p>
+
+        <div style="space:12px;">
+          <div style="display:flex;align-items:center;gap:16px;padding:12px 0;border-bottom:1px solid var(--border);">
+            <div style="width:32px;height:32px;background:var(--green-pale);border:1.5px solid var(--green-light);border-radius:4px;flex-shrink:0;"></div>
+            <div><div style="font-family:var(--mono);font-size:12px;color:var(--green);">4px</div><div style="font-size:12px;color:var(--ink-muted);">Input fields, small chips</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:16px;padding:12px 0;border-bottom:1px solid var(--border);">
+            <div style="width:32px;height:32px;background:var(--green-pale);border:1.5px solid var(--green-light);border-radius:8px;flex-shrink:0;"></div>
+            <div><div style="font-family:var(--mono);font-size:12px;color:var(--green);">8px · rounded-lg</div><div style="font-size:12px;color:var(--ink-muted);">Sidebar filter panels, dropdowns</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:16px;padding:12px 0;border-bottom:1px solid var(--border);">
+            <div style="width:32px;height:32px;background:var(--green-pale);border:1.5px solid var(--green-light);border-radius:12px;flex-shrink:0;"></div>
+            <div><div style="font-family:var(--mono);font-size:12px;color:var(--green);">12px · rounded-xl</div><div style="font-size:12px;color:var(--ink-muted);">Search bar, buttons</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:16px;padding:12px 0;border-bottom:1px solid var(--border);">
+            <div style="width:40px;height:32px;background:var(--green-pale);border:1.5px solid var(--green-light);border-radius:16px;flex-shrink:0;"></div>
+            <div><div style="font-family:var(--mono);font-size:12px;color:var(--green);">16px · rounded-2xl</div><div style="font-size:12px;color:var(--ink-muted);">Product cards, header, banners</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:16px;padding:12px 0;">
+            <div style="width:48px;height:24px;background:var(--green-pale);border:1.5px solid var(--green-light);border-radius:9999px;flex-shrink:0;"></div>
+            <div><div style="font-family:var(--mono);font-size:12px;color:var(--green);">9999px · rounded-full</div><div style="font-size:12px;color:var(--ink-muted);">Discount badges, category pills, tags</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================================ 06: ICONS -->
+  <div class="section" id="icons">
+    <div class="section-label">06 — Iconography</div>
+    <h2 class="section-title">Icon library</h2>
+    <p class="section-desc">Phosphor Icons exclusively. Use <strong>bold</strong> weight for UI actions, <strong>duotone</strong> for illustrative stats, <strong>fill</strong> for active/selected states, <strong>regular</strong> for inactive/secondary.</p>
+    <hr class="section-rule" />
+
+    <div class="card card-pad">
+      <p style="font-size:12px;font-weight:700;color:var(--ink-muted);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">Approved icon set — category navigation</p>
+      <div class="icon-grid" style="margin-bottom:24px;">
+        <div class="icon-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="#374151"><path d="M216,72H56a8,8,0,0,1,0-16H216a8,8,0,0,1,0,16Zm8,56a8,8,0,0,0-8-8H56a8,8,0,0,0,0,16H216A8,8,0,0,0,224,128Zm0,64a8,8,0,0,0-8-8H56a8,8,0,0,0,0,16H216A8,8,0,0,0,224,192Z"/></svg>
+          <span>Sve</span>
+        </div>
+        <div class="icon-item">
+          <!-- barbell icon approximation -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="#374151"><path d="M232,104H216V88a16,16,0,0,0-16-16H184V56a16,16,0,0,0-16-16H152a16,16,0,0,0-16,16V104H120V56A16,16,0,0,0,104,40H88A16,16,0,0,0,72,56V72H56A16,16,0,0,0,40,88v16H24a8,8,0,0,0,0,16H40v16a16,16,0,0,0,16,16H72v16a16,16,0,0,0,16,16h16a16,16,0,0,0,16-16V152h16v48a16,16,0,0,0,16,16h16a16,16,0,0,0,16-16V152h16a16,16,0,0,0,16-16V120h16a8,8,0,0,0,0-16ZM88,200H88V56h16V200Zm112,0H184V56h16V168h16Z"/></svg>
+          <span>Proteini</span>
+        </div>
+        <div class="icon-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="#374151"><path d="M213.85,125.46l-112,120a8,8,0,0,1-13.69-7l14.66-73.33L48.15,130.54a8,8,0,0,1,1-13.69l112-48a8,8,0,0,1,10.47,10.61L129.45,160h74.4a8,8,0,0,1,10,10.46Z"/></svg>
+          <span>Kreatin</span>
+        </div>
+        <div class="icon-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="#374151"><path d="M226.76,69.58A8,8,0,0,0,219.73,64C157.8,61.81,117.06,52.57,79.91,24.33a8,8,0,0,0-11.64,2.67C44.39,70.48,32,99.38,32,128a96,96,0,0,0,192,0C224,108.61,221.63,88.78,226.76,69.58ZM128,208a80,80,0,0,1-80-80c0-22.83,9.26-48,27.51-85.55C109.31,67.8,150.7,77.42,208,81.58,205.38,95.55,208,112,208,128A80.09,80.09,0,0,1,128,208Z"/></svg>
+          <span>Vitamini</span>
+        </div>
+        <div class="icon-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="#374151"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm48-88a48,48,0,1,1-48-48A48.05,48.05,0,0,1,176,128Zm-80,0a32,32,0,1,0,32-32A32,32,0,0,0,96,128Z"/></svg>
+          <span>Amino</span>
+        </div>
+        <div class="icon-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="#374151"><path d="M197.58,106.1c-5.16-11.77-16.59-19.94-29.42-21.48a32,32,0,0,0-57.67-8.29A43.45,43.45,0,0,0,88,72a44,44,0,0,0-4,87.73V208a16,16,0,0,0,32,0V172.06a43.69,43.69,0,0,0,12.22-2.62,32,32,0,0,0,57.67-8.29C200.35,156,208,145,208,132A43.74,43.74,0,0,0,197.58,106.1Z"/></svg>
+          <span>Fat Burner</span>
+        </div>
+        <div class="icon-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="#374151"><path d="M213.85,125.46l-112,120a8,8,0,0,1-13.69-7l14.66-73.33L48.15,130.54a8,8,0,0,1,1-13.69l112-48a8,8,0,0,1,10.47,10.61L129.45,160h74.4a8,8,0,0,1,10,10.46Z"/></svg>
+          <span>Pre-Workout</span>
+        </div>
+        <div class="icon-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="#374151"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,16a88.07,88.07,0,0,1,85.22,66H42.78A88.07,88.07,0,0,1,128,40Zm0,176A88,88,0,0,1,42.78,150H213.22A88,88,0,0,1,128,216Z"/></svg>
+          <span>Minerali</span>
+        </div>
+      </div>
+
+      <p style="font-size:12px;font-weight:700;color:var(--ink-muted);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:12px;">Weight usage guide</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;">
+        <div style="padding:12px;background:var(--surface);border:1px solid var(--border);border-radius:8px;">
+          <div style="font-weight:700;color:var(--ink);font-size:13px;margin-bottom:4px;">bold</div>
+          <div style="font-size:12px;color:var(--ink-muted);">CTA icons, nav actions, header controls</div>
+        </div>
+        <div style="padding:12px;background:var(--surface);border:1px solid var(--border);border-radius:8px;">
+          <div style="font-weight:700;color:var(--ink);font-size:13px;margin-bottom:4px;">duotone</div>
+          <div style="font-size:12px;color:var(--ink-muted);">Stats bar illustrations, empty states</div>
+        </div>
+        <div style="padding:12px;background:var(--surface);border:1px solid var(--border);border-radius:8px;">
+          <div style="font-weight:700;color:var(--ink);font-size:13px;margin-bottom:4px;">fill</div>
+          <div style="font-size:12px;color:var(--ink-muted);">Active/selected state (mobile nav, active tab)</div>
+        </div>
+        <div style="padding:12px;background:var(--surface);border:1px solid var(--border);border-radius:8px;">
+          <div style="font-weight:700;color:var(--ink);font-size:13px;margin-bottom:4px;">regular</div>
+          <div style="font-size:12px;color:var(--ink-muted);">Inactive nav, secondary labels</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================================ 07: COMPONENTS -->
+  <div class="section" id="components">
+    <div class="section-label">07 — Key Components</div>
+    <h2 class="section-title">Component reference</h2>
+    <p class="section-desc">Anatomy of the primary UI patterns. See <code style="font-family:var(--mono);font-size:12px;background:#f0f0f0;padding:2px 6px;border-radius:4px;">mockup-redesign.html</code> for interactive versions.</p>
+    <hr class="section-rule" />
+
+    <!-- Category pill anatomy -->
+    <div class="card card-pad" style="margin-bottom:16px;">
+      <p style="font-size:12px;font-weight:700;color:var(--ink-muted);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">Category pills — states</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px;">
+        <span class="pill pill--active">
+          <svg width="13" height="13" viewBox="0 0 256 256" fill="white"><path d="M213.85,125.46l-112,120a8,8,0,0,1-13.69-7l14.66-73.33L48.15,130.54a8,8,0,0,1,1-13.69l112-48a8,8,0,0,1,10.47,10.61L129.45,160h74.4a8,8,0,0,1,10,10.46Z"/></svg>
+          Kreatin
+        </span>
+        <span class="pill pill--idle">Proteini</span>
+        <span class="pill pill--idle">Vitamini</span>
+        <span style="font-size:12px;color:var(--ink-muted);">← Active · Idle → </span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:12px;">
+        <div>
+          <div style="font-weight:700;color:var(--ink);margin-bottom:4px;">Active state</div>
+          <div style="color:var(--ink-muted);">bg: #059669 · text: white · border: #059669<br>Font: 700 · Padding: 5px 12px · radius: full</div>
+        </div>
+        <div>
+          <div style="font-weight:700;color:var(--ink);margin-bottom:4px;">Idle state</div>
+          <div style="color:var(--ink-muted);">bg: white · text: #666 · border: #ddd<br>Hover: bg #f0f0f0 · border #606060 · text #333</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Buy button states -->
+    <div class="card card-pad" style="margin-bottom:16px;">
+      <p style="font-size:12px;font-weight:700;color:var(--ink-muted);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">Buy button — states</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end;">
+        <div style="display:flex;flex-direction:column;gap:6px;align-items:center;">
+          <button style="width:160px;padding:12px;background:#059669;color:white;font-size:13px;font-weight:700;border:none;border-radius:0 0 16px 16px;cursor:default;font-family:var(--font);display:flex;align-items:center;justify-content:center;gap:6px;">
+            Kupi
+            <svg width="14" height="14" viewBox="0 0 256 256" fill="white"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg>
+          </button>
+          <span style="font-size:11px;color:var(--ink-faint);">Default</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px;align-items:center;">
+          <button style="width:160px;padding:12px;background:#047857;color:white;font-size:13px;font-weight:700;border:none;border-radius:0 0 16px 16px;cursor:default;font-family:var(--font);display:flex;align-items:center;justify-content:center;gap:6px;">
+            Kupi
+            <svg width="14" height="14" viewBox="0 0 256 256" fill="white"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg>
+          </button>
+          <span style="font-size:11px;color:var(--ink-faint);">Hover</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px;align-items:center;">
+          <button style="width:160px;padding:12px;background:#606060;color:white;font-size:13px;font-weight:700;border:none;border-radius:0 0 16px 16px;cursor:default;font-family:var(--font);display:flex;align-items:center;justify-content:center;gap:6px;">
+            Pogledaj
+            <svg width="14" height="14" viewBox="0 0 256 256" fill="white"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg>
+          </button>
+          <span style="font-size:11px;color:var(--ink-faint);">No discount</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Store dot system -->
+    <div class="card card-pad">
+      <p style="font-size:12px;font-weight:700;color:var(--ink-muted);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">Store color system</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;">
+        <div style="display:flex;align-items:center;gap:8px;padding:8px 12px;background:var(--surface);border-radius:8px;border:1px solid var(--border);">
+          <div style="width:8px;height:8px;border-radius:50%;background:#f59e0b;flex-shrink:0;"></div>
+          <span style="font-size:12px;font-weight:600;color:var(--ink);">GymBeam</span>
+          <span style="font-family:var(--mono);font-size:10px;color:var(--ink-faint);margin-left:auto;">#f59e0b</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;padding:8px 12px;background:var(--surface);border-radius:8px;border:1px solid var(--border);">
+          <div style="width:8px;height:8px;border-radius:50%;background:#3b82f6;flex-shrink:0;"></div>
+          <span style="font-size:12px;font-weight:600;color:var(--ink);">Supplement Store</span>
+          <span style="font-family:var(--mono);font-size:10px;color:var(--ink-faint);margin-left:auto;">#3b82f6</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;padding:8px 12px;background:var(--surface);border-radius:8px;border:1px solid var(--border);">
+          <div style="width:8px;height:8px;border-radius:50%;background:#8b5cf6;flex-shrink:0;"></div>
+          <span style="font-size:12px;font-weight:600;color:var(--ink);">FitLab</span>
+          <span style="font-family:var(--mono);font-size:10px;color:var(--ink-faint);margin-left:auto;">#8b5cf6</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;padding:8px 12px;background:var(--surface);border-radius:8px;border:1px solid var(--border);">
+          <div style="width:8px;height:8px;border-radius:50%;background:#ef4444;flex-shrink:0;"></div>
+          <span style="font-size:12px;font-weight:600;color:var(--ink);">TitaniumSport</span>
+          <span style="font-family:var(--mono);font-size:10px;color:var(--ink-faint);margin-left:auto;">#ef4444</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;padding:8px 12px;background:var(--surface);border-radius:8px;border:1px solid var(--border);">
+          <div style="width:8px;height:8px;border-radius:50%;background:#06b6d4;flex-shrink:0;"></div>
+          <span style="font-size:12px;font-weight:600;color:var(--ink);">Proteini.si</span>
+          <span style="font-family:var(--mono);font-size:10px;color:var(--ink-faint);margin-left:auto;">#06b6d4</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;padding:8px 12px;background:var(--surface);border-radius:8px;border:1px solid var(--border);">
+          <div style="width:8px;height:8px;border-radius:50%;background:#10b981;flex-shrink:0;"></div>
+          <span style="font-size:12px;font-weight:600;color:var(--ink);">Dobrobit</span>
+          <span style="font-family:var(--mono);font-size:10px;color:var(--ink-faint);margin-left:auto;">#10b981</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;padding:8px 12px;background:var(--surface);border-radius:8px;border:1px solid var(--border);">
+          <div style="width:8px;height:8px;border-radius:50%;background:#f97316;flex-shrink:0;"></div>
+          <span style="font-size:12px;font-weight:600;color:var(--ink);">ExYu Fitness</span>
+          <span style="font-family:var(--mono);font-size:10px;color:var(--ink-faint);margin-left:auto;">#f97316</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;padding:8px 12px;background:var(--surface);border-radius:8px;border:1px solid var(--border);">
+          <div style="width:8px;height:8px;border-radius:50%;background:#ec4899;flex-shrink:0;"></div>
+          <span style="font-size:12px;font-weight:600;color:var(--ink);">SuperProtein</span>
+          <span style="font-family:var(--mono);font-size:10px;color:var(--ink-faint);margin-left:auto;">#ec4899</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;padding:8px 12px;background:var(--surface);border-radius:8px;border:1px solid var(--border);">
+          <div style="width:8px;height:8px;border-radius:50%;background:#6366f1;flex-shrink:0;"></div>
+          <span style="font-size:12px;font-weight:600;color:var(--ink);">ATP Sport</span>
+          <span style="font-family:var(--mono);font-size:10px;color:var(--ink-faint);margin-left:auto;">#6366f1</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;padding:8px 12px;background:var(--surface);border-radius:8px;border:1px solid var(--border);">
+          <div style="width:8px;height:8px;border-radius:50%;background:#84cc16;flex-shrink:0;"></div>
+          <span style="font-size:12px;font-weight:600;color:var(--ink);">LAMA</span>
+          <span style="font-family:var(--mono);font-size:10px;color:var(--ink-faint);margin-left:auto;">#84cc16</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================================ 08: VOICE & TONE -->
+  <div class="section" id="voice">
+    <div class="section-label">08 — Voice & Tone</div>
+    <h2 class="section-title">How we communicate</h2>
+    <p class="section-desc">suplementi.deals speaks like a knowledgeable friend who found a great deal and wants to share it — not like a marketing department.</p>
+    <hr class="section-rule" />
+
+    <div class="tone-grid">
+      <div class="tone-card tone-card--do">
+        <div class="tone-card-header">✓ Do</div>
+        <div class="tone-item">Ušteda: 2.700 RSD — concrete number</div>
+        <div class="tone-item">Ažurirano pre 2 sata — specific recency</div>
+        <div class="tone-item">45% popust — lead with the discount</div>
+        <div class="tone-item">15 prodavnica — precise, not "many"</div>
+        <div class="tone-item">Bez spama. Odjavi se kad god. — honest</div>
+        <div class="tone-item">Kupi → — direct, single action</div>
+      </div>
+      <div class="tone-card tone-card--dont">
+        <div class="tone-card-header">✗ Don't</div>
+        <div class="tone-item">Neverovatna ušteda! — vague superlatives</div>
+        <div class="tone-item">Redovno ažuriramo — passive non-commitment</div>
+        <div class="tone-item">Velika akcija na proteine — no number = no trust</div>
+        <div class="tone-item">Mnoge prodavnice — imprecise</div>
+        <div class="tone-item">Pretplati se na newsletter — corporate-feel</div>
+        <div class="tone-item">Klikni ovde za detalje — weak, no direction</div>
+      </div>
+    </div>
+
+    <div class="card card-pad" style="margin-top:16px;">
+      <p style="font-size:12px;font-weight:700;color:var(--ink-muted);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:12px;">Brand personality axes</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:13px;">
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-weight:700;color:var(--green);">Trustworthy</span>
+            <span style="color:var(--ink-faint);">Flashy</span>
+          </div>
+          <div style="height:6px;background:var(--border);border-radius:3px;position:relative;">
+            <div style="position:absolute;left:0;width:25%;height:100%;background:var(--green);border-radius:3px;"></div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-weight:700;color:var(--green);">Practical</span>
+            <span style="color:var(--ink-faint);">Inspirational</span>
+          </div>
+          <div style="height:6px;background:var(--border);border-radius:3px;position:relative;">
+            <div style="position:absolute;left:0;width:30%;height:100%;background:var(--green);border-radius:3px;"></div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-weight:700;color:var(--green);">Concise</span>
+            <span style="color:var(--ink-faint);">Verbose</span>
+          </div>
+          <div style="height:6px;background:var(--border);border-radius:3px;position:relative;">
+            <div style="position:absolute;left:0;width:20%;height:100%;background:var(--green);border-radius:3px;"></div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-weight:700;color:var(--green);">Data-first</span>
+            <span style="color:var(--ink-faint);">Emotion-first</span>
+          </div>
+          <div style="height:6px;background:var(--border);border-radius:3px;position:relative;">
+            <div style="position:absolute;left:0;width:25%;height:100%;background:var(--green);border-radius:3px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================================ 09: DON'TS -->
+  <div class="section" id="donts">
+    <div class="section-label">09 — Logo Do's & Don'ts</div>
+    <h2 class="section-title">Logo misuse</h2>
+    <p class="section-desc">These rules protect the logo's legibility and brand consistency across all surfaces.</p>
+    <hr class="section-rule" />
+
+    <div class="donts-grid">
+
+      <div class="dont-item">
+        <div class="dont-preview">
+          <svg width="120" height="32" viewBox="0 0 120 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity:0.4;filter:grayscale(1);">
+            <rect x="0" y="0" width="32" height="32" rx="8" fill="#059669"/>
+            <path d="M9 13 C9 9, 23 9, 23 13 C23 16, 9 16, 9 19 C9 23, 23 23, 23 19" stroke="white" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <text x="40" y="14" font-family="Montserrat,sans-serif" font-weight="800" font-size="9.5" fill="#111" letter-spacing="-0.2">suplementi</text>
+            <text x="40" y="26" font-family="Montserrat,sans-serif" font-weight="800" font-size="9.5" fill="#059669" letter-spacing="-0.2">.deals</text>
+          </svg>
+        </div>
+        <div class="dont-label">Don't desaturate</div>
+      </div>
+
+      <div class="dont-item">
+        <div class="dont-preview">
+          <svg width="120" height="32" viewBox="0 0 120 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform:skewX(-12deg);">
+            <rect x="0" y="0" width="32" height="32" rx="8" fill="#059669"/>
+            <path d="M9 13 C9 9, 23 9, 23 13 C23 16, 9 16, 9 19 C9 23, 23 23, 23 19" stroke="white" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <text x="40" y="14" font-family="Montserrat,sans-serif" font-weight="800" font-size="9.5" fill="#111" letter-spacing="-0.2">suplementi</text>
+            <text x="40" y="26" font-family="Montserrat,sans-serif" font-weight="800" font-size="9.5" fill="#059669" letter-spacing="-0.2">.deals</text>
+          </svg>
+        </div>
+        <div class="dont-label">Don't skew or distort</div>
+      </div>
+
+      <div class="dont-item">
+        <div class="dont-preview" style="background:#ff5f57;">
+          <svg width="120" height="32" viewBox="0 0 120 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="32" height="32" rx="8" fill="#059669"/>
+            <path d="M9 13 C9 9, 23 9, 23 13 C23 16, 9 16, 9 19 C9 23, 23 23, 23 19" stroke="white" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <text x="40" y="14" font-family="Montserrat,sans-serif" font-weight="800" font-size="9.5" fill="white" letter-spacing="-0.2">suplementi</text>
+            <text x="40" y="26" font-family="Montserrat,sans-serif" font-weight="800" font-size="9.5" fill="white" letter-spacing="-0.2">.deals</text>
+          </svg>
+        </div>
+        <div class="dont-label">Don't use on clashing bg</div>
+      </div>
+
+      <div class="dont-item">
+        <div class="dont-preview">
+          <svg width="120" height="32" viewBox="0 0 120 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="32" height="32" rx="8" fill="#ff0000"/>
+            <path d="M9 13 C9 9, 23 9, 23 13 C23 16, 9 16, 9 19 C9 23, 23 23, 23 19" stroke="white" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <text x="40" y="14" font-family="Montserrat,sans-serif" font-weight="800" font-size="9.5" fill="#111" letter-spacing="-0.2">suplementi</text>
+            <text x="40" y="26" font-family="Montserrat,sans-serif" font-weight="800" font-size="9.5" fill="#ff0000" letter-spacing="-0.2">.deals</text>
+          </svg>
+        </div>
+        <div class="dont-label">Don't recolor the icon</div>
+      </div>
+
+      <div class="dont-item">
+        <div class="dont-preview">
+          <svg width="120" height="32" viewBox="0 0 120 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform:scale(0.5);transform-origin:left center;">
+            <rect x="0" y="0" width="32" height="32" rx="8" fill="#059669"/>
+            <path d="M9 13 C9 9, 23 9, 23 13 C23 16, 9 16, 9 19 C9 23, 23 23, 23 19" stroke="white" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <text x="40" y="14" font-family="Montserrat,sans-serif" font-weight="800" font-size="9.5" fill="#111" letter-spacing="-0.2">suplementi</text>
+            <text x="40" y="26" font-family="Montserrat,sans-serif" font-weight="800" font-size="9.5" fill="#059669" letter-spacing="-0.2">.deals</text>
+          </svg>
+        </div>
+        <div class="dont-label">Don't use below min size</div>
+      </div>
+
+      <div class="dont-item">
+        <div class="dont-preview">
+          <div style="position:relative;">
+            <svg width="120" height="32" viewBox="0 0 120 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0" y="0" width="32" height="32" rx="8" fill="#059669"/>
+              <path d="M9 13 C9 9, 23 9, 23 13 C23 16, 9 16, 9 19 C9 23, 23 23, 23 19" stroke="white" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <text x="40" y="14" font-family="Montserrat,sans-serif" font-weight="800" font-size="9.5" fill="#111" letter-spacing="-0.2">suplementi</text>
+              <text x="40" y="26" font-family="Montserrat,sans-serif" font-weight="800" font-size="9.5" fill="#059669" letter-spacing="-0.2">.deals</text>
+            </svg>
+            <div style="position:absolute;top:-8px;right:-16px;font-size:18px;font-weight:900;color:#ff5f57;">SALE!</div>
+          </div>
+        </div>
+        <div class="dont-label">Don't add elements inside clearspace</div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <div class="book-footer">
+    <div>
+      <div style="font-weight:700;color:var(--ink-mid);margin-bottom:2px;">suplementi.deals Brand Guidelines</div>
+      <div>Version 1.0 · March 2026 · UI/UX Designer agent · RSS-11</div>
+    </div>
+    <div style="text-align:right;">
+      <div style="font-weight:700;color:var(--ink-mid);margin-bottom:2px;">Questions?</div>
+      <div>Comment on RSS-11 with feedback</div>
+    </div>
+  </div>
+
+</div><!-- /page -->
+
+</body>
+</html>
