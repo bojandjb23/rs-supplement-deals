@@ -88,10 +88,10 @@
       }
     </script>
   </head>
-  <body class="bg-[#f0f0f0] font-sans text-slate-900 min-h-screen flex flex-col">
+  <body class="bg-[#f9fafb] font-sans text-slate-900 min-h-screen flex flex-col">
 
     <!-- ===== HEADER ===== -->
-    <header class="sticky top-0 z-50 bg-white border-b border-[#d0d0d0] shadow-sm">
+    <header class="sticky top-0 z-50 bg-white border-b border-[#e5e7eb] shadow-sm">
       <!-- Nav bar -->
       <div class="border-b border-[#e0e0e0]">
         <div class="max-w-[1600px] mx-auto px-4 sm:px-6 py-2 flex items-center gap-6">
@@ -106,8 +106,8 @@
             </span>
           </a>
           <nav class="flex items-center gap-4 text-sm">
-            <a href="/popusti/" class="text-[#999] hover:text-[#333] transition-colors">Popusti</a>
-            <a href="/blog/" class="text-[#999] hover:text-[#333] transition-colors">Blog</a>
+            <a href="/popusti/" class="text-[#999] hover:text-[#059669] transition-colors">Popusti</a>
+            <a href="/blog/" class="text-[#999] hover:text-[#059669] transition-colors">Blog</a>
           </nav>
         </div>
       </div>
@@ -120,12 +120,12 @@
             id="searchInput"
             placeholder="Pretrazi proteine..."
             autocomplete="off"
-            class="w-full pl-10 pr-4 py-2 bg-[#f5f5f5] border border-[#d0d0d0] rounded-lg text-sm text-[#333] placeholder-[#999] focus:outline-none focus:border-[#059669] focus:ring-1 focus:ring-[#059669] transition-colors"
+            class="w-full pl-10 pr-4 py-2 bg-white border border-[#e5e7eb] rounded-lg text-sm text-[#111827] placeholder-[#9ca3af] focus:outline-none focus:border-[#059669] focus:ring-1 focus:ring-[#059669] transition-colors"
           />
         </div>
         <div class="hidden md:flex items-center gap-4 shrink-0 text-sm">
-          <span class="text-[#999]"><span class="text-[#333] font-semibold" id="headerProductCount">0</span> proizvoda</span>
-          <span class="text-[#999]"><span class="text-[#333] font-semibold" id="headerSaleCount">0</span> na akciji</span>
+          <span class="text-[#999]"><span class="text-[#111827] font-semibold" id="headerProductCount">0</span> proizvoda</span>
+          <span class="text-[#999]"><span class="text-[#111827] font-semibold" id="headerSaleCount">0</span> na akciji</span>
         </div>
       </div>
     </header>
@@ -141,7 +141,7 @@
           <label class="text-xs text-[#999] hidden sm:block">Sortiraj:</label>
           <select
             id="sortSelect"
-            class="px-3 py-2.5 text-sm bg-[#f5f5f5] border border-[#d0d0d0] rounded-lg focus:outline-none focus:border-[#059669] cursor-pointer"
+            class="px-3 py-2.5 text-sm bg-white border border-[#e5e7eb] rounded-lg focus:outline-none focus:border-[#059669] cursor-pointer"
           >
             <option value="price_asc">Cena (najniža)</option>
             <option value="price_desc">Cena (najviša)</option>
@@ -185,33 +185,33 @@
         <div class="max-w-6xl mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 class="text-[#333] font-semibold text-sm mb-4">Kategorije</h3>
+              <h3 class="text-[#111827] font-semibold text-sm mb-4">Kategorije</h3>
               <div class="flex flex-col gap-2">
-                <a href="/popusti/" class="text-sm text-[#606060] hover:text-[#059669] transition-colors">Svi popusti</a>
-                <a href="/kreatin/" class="text-sm text-[#606060] hover:text-[#059669] transition-colors">Kreatin</a>
+                <a href="/popusti/" class="text-sm text-[#374151] hover:text-[#059669] transition-colors">Svi popusti</a>
+                <a href="/kreatin/" class="text-sm text-[#374151] hover:text-[#059669] transition-colors">Kreatin</a>
                 <a href="/proteini/" class="text-sm text-[#059669] font-medium">Proteini</a>
-                <a href="/blog/" class="text-sm text-[#606060] hover:text-[#059669] transition-colors">Blog</a>
+                <a href="/blog/" class="text-sm text-[#374151] hover:text-[#059669] transition-colors">Blog</a>
               </div>
             </div>
             <div>
-              <h3 class="text-[#333] font-semibold text-sm mb-4">O sajtu</h3>
-              <p class="text-sm leading-relaxed text-[#606060]">
+              <h3 class="text-[#111827] font-semibold text-sm mb-4">O sajtu</h3>
+              <p class="text-sm leading-relaxed text-[#374151]">
                 RS Supplement Deals prikuplja i poredi cene suplemenata iz 15 online prodavnica u Srbiji. Podaci se automatski azuriraju svakih 6 sati.
               </p>
             </div>
             <div>
-              <h3 class="text-[#333] font-semibold text-sm mb-4">Napomena</h3>
+              <h3 class="text-[#111827] font-semibold text-sm mb-4">Napomena</h3>
               <p class="text-xs leading-relaxed text-[#999]">
                 Cene i popusti se mogu promeniti. Proverite aktuelne cene na sajtu prodavnice pre kupovine. Sajt nije povezan ni sa jednom od navedenih prodavnica.
               </p>
             </div>
           </div>
-          <div class="mt-8 pt-6 border-t border-[#d0d0d0] flex flex-col sm:flex-row items-center justify-between gap-2">
+          <div class="mt-8 pt-6 border-t border-[#e5e7eb] flex flex-col sm:flex-row items-center justify-between gap-2">
             <p class="text-xs text-[#999]">© 2026 suplementi.deals — Poređenje cena suplemenata u Srbiji</p>
             <div class="flex items-center gap-4 text-xs text-[#999]">
-              <a href="/" class="hover:text-[#333] transition-colors">Početna</a>
-              <a href="/popusti/" class="hover:text-[#333] transition-colors">Popusti</a>
-              <a href="/blog/" class="hover:text-[#333] transition-colors">Blog</a>
+              <a href="/" class="hover:text-[#059669] transition-colors">Početna</a>
+              <a href="/popusti/" class="hover:text-[#059669] transition-colors">Popusti</a>
+              <a href="/blog/" class="hover:text-[#059669] transition-colors">Blog</a>
             </div>
           </div>
         </div>
@@ -219,7 +219,7 @@
     </footer>
 
     <!-- ===== MOBILE BOTTOM NAVIGATION ===== -->
-    <nav class="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-[#d0d0d0] safe-area-bottom">
+    <nav class="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-[#e5e7eb] safe-area-bottom">
       <div class="grid grid-cols-4 h-16">
         <a href="/" class="flex flex-col items-center justify-center gap-0.5 text-[#999] hover:text-emerald-600 transition-colors">
           <ph-house weight="bold" class="text-xl"></ph-house>
