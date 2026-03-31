@@ -870,14 +870,14 @@ function createProductCard(product, index) {
   const catColorClass =
     CATEGORY_COLORS[product.category] || "bg-slate-100 text-slate-500";
   const categoryHtml = product.category
-    ? `<span class="text-[10px] px-2 py-0.5 ${catColorClass} rounded-full w-fit">${escapeHtml(product.category)}</span>`
+    ? `<span class="text-xs px-2 py-0.5 ${catColorClass} rounded-full w-fit">${escapeHtml(product.category)}</span>`
     : "";
 
   // Store colored dot
   const storeColor = STORE_COLORS[product.store] || "#9ca3af";
   const storeHtml = `<div class="flex items-center gap-1.5">
     <span style="background:${storeColor}" class="w-2 h-2 rounded-full shrink-0 inline-block"></span>
-    <span class="text-[10px] font-semibold text-[#6b7280] truncate">${escapeHtml(product.store)}</span>
+    <span class="text-xs font-semibold text-[#6b7280] truncate">${escapeHtml(product.store)}</span>
   </div>`;
 
   // Price section
@@ -906,7 +906,7 @@ function createProductCard(product, index) {
         <div class="p-3 flex-1 flex flex-col gap-1.5">
             ${storeHtml}
             ${categoryHtml}
-            <h3 class="text-xs font-semibold text-[#111827] line-clamp-2 flex-1" title="${escapeHtml(product.name)}">${escapeHtml(product.name)}</h3>
+            <h3 class="text-sm font-semibold text-[#111827] line-clamp-2 flex-1" title="${escapeHtml(product.name)}">${escapeHtml(product.name)}</h3>
             <div class="mt-auto pt-1">
                 ${priceHtml}
             </div>

@@ -86,14 +86,14 @@ for p in top6:
           <img src=\"{img}\" alt=\"{name}\" loading=\"lazy\" class=\"w-full h-full object-contain p-2\" onerror=\"this.style.display='none';this.nextElementSibling.style.display='flex';\">
           <div class=\"absolute inset-0 items-center justify-center text-[#d0d0d0]\" style=\"display:none;\"><ph-package weight=\"duotone\" class=\"text-5xl\"></ph-package></div>
         </div>
-        <span class=\"absolute top-2 left-2 bg-red-600 text-white text-[10px] font-bold px-2 py-0.5 rounded\">-{pct}%</span>
+        <span class=\"absolute top-2 left-2 bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded\">-{pct}%</span>
       </div>
       <div class=\"p-3 flex flex-col flex-1\">
-        <p class=\"text-[10px] text-[#999] mb-1\">{store}</p>
+        <p class=\"text-xs text-[#999] mb-1\">{store}</p>
         <h3 class=\"text-xs font-semibold text-[#333] line-clamp-2 mb-2 flex-1\">{name}</h3>
         <div class=\"flex items-baseline gap-1.5 mb-2\">
           <span class=\"text-sm font-bold text-[#333]\">{int(price):,} RSD</span>
-          <span class=\"text-[10px] text-[#999] line-through\">{int(orig):,} RSD</span>
+          <span class=\"text-xs text-[#999] line-through\">{int(orig):,} RSD</span>
         </div>
         <a href=\"{utm_url}\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"w-full block text-center py-1.5 bg-[#606060] text-white text-xs font-semibold rounded hover:bg-[#505050] transition-colors\">Kupi</a>
       </div>
