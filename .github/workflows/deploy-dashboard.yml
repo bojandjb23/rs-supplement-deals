@@ -147,6 +147,10 @@ jobs:
           "
           # Copy blog pages
           cp blog/*.html _site/blog/ 2>/dev/null || true
+          # Copy category pages
+          mkdir -p _site/kreatin _site/proteini
+          cp kreatin/index.html _site/kreatin/index.html 2>/dev/null || true
+          cp proteini/index.html _site/proteini/index.html 2>/dev/null || true
           # Copy assets and static files
           cp -r assets _site/assets
           # Copy analytics dashboard
