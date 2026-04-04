@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-04T06:53:01.016676",
+  "scraped_at": "2026-04-04T12:38:03.195481",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -19,7 +19,7 @@
   ],
   "stores_failed": [],
   "total_products": 1243,
-  "total_discounted": 941,
+  "total_discounted": 953,
   "products": [
     {
       "id": "supplement-store_100-whey-prostar-239kg",
@@ -2692,21 +2692,6 @@
       "date_scraped": "2026-04-04"
     },
     {
-      "id": "proteinisi_btl-muscle-jolt-turkesterone-120-kapsula",
-      "name": "BTL MUSCLE JOLT-TURKESTERONE, 120 kapsula",
-      "store": "Proteini.si",
-      "store_url": "https://proteinisi.rs",
-      "category": "Biljni Ekstrakti",
-      "image_url": "https://proteinisi.rs/wp-content/uploads/Jolt-2-300x300.jpg",
-      "original_price": 2790.0,
-      "discount_price": 2232.0,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://proteinisi.rs/proizvod/btl-muscle-jolt-turkesterone-120-kapsula/",
-      "in_stock": true,
-      "date_scraped": "2026-04-04"
-    },
-    {
       "id": "proteinisi_cregaatine-60-kesica-1203-g",
       "name": "CreGAAtine, 60 kesica (120,3 g)",
       "store": "Proteini.si",
@@ -3637,21 +3622,6 @@
       "date_scraped": "2026-04-04"
     },
     {
-      "id": "proteinisi_olimp-chela-mzb-zma-60-kapsula",
-      "name": "OLIMP CHELA-MZB (ZMA), 60 kapsula",
-      "store": "Proteini.si",
-      "store_url": "https://proteinisi.rs",
-      "category": "Akcija",
-      "image_url": "https://proteinisi.rs/wp-content/uploads/CHELA-MZB-300x300.jpg",
-      "original_price": 1990.0,
-      "discount_price": 1591.99,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://proteinisi.rs/proizvod/olimp-chela-mzb-zma-60-kapsula/",
-      "in_stock": true,
-      "date_scraped": "2026-04-04"
-    },
-    {
       "id": "proteinisi_olimp-creatine-monohydrate-powder-250g",
       "name": "OLIMP CREATINE MONOHYDRATE POWDER, 250g",
       "store": "Proteini.si",
@@ -4323,36 +4293,6 @@
       "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://proteinisi.rs/proizvod/ostrovit-tst-complex-dark-210g/",
-      "in_stock": true,
-      "date_scraped": "2026-04-04"
-    },
-    {
-      "id": "proteinisi_ostrovit-vitamin-d3-4000-iu-120-kapsula",
-      "name": "OSTROVIT VITAMIN D3 4000 IU, 120 kapsula",
-      "store": "Proteini.si",
-      "store_url": "https://proteinisi.rs",
-      "category": "Akcija",
-      "image_url": "https://proteinisi.rs/wp-content/uploads/12163-300x300.jpg",
-      "original_price": 2190.0,
-      "discount_price": 1752.0,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://proteinisi.rs/proizvod/ostrovit-vitamin-d3-4000-iu-120-kapsula/",
-      "in_stock": true,
-      "date_scraped": "2026-04-04"
-    },
-    {
-      "id": "proteinisi_ostrovit-zinc-picolinate-200-tableta",
-      "name": "OSTROVIT Zinc Picolinate, 200 tableta",
-      "store": "Proteini.si",
-      "store_url": "https://proteinisi.rs",
-      "category": "Minerali",
-      "image_url": "https://proteinisi.rs/wp-content/uploads/11564-300x300.jpg",
-      "original_price": 1490.0,
-      "discount_price": 1192.01,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://proteinisi.rs/proizvod/ostrovit-zinc-picolinate-200-tableta/",
       "in_stock": true,
       "date_scraped": "2026-04-04"
     },
@@ -5167,21 +5107,6 @@
       "date_scraped": "2026-04-04"
     },
     {
-      "id": "proteinisi_usn-blue-lab-100-whey-protein-2000g",
-      "name": "USN BLUE LAB 100% WHEY PROTEIN, 2000g",
-      "store": "Proteini.si",
-      "store_url": "https://proteinisi.rs",
-      "category": "Akcija",
-      "image_url": "https://proteinisi.rs/wp-content/uploads/9210-300x300.jpg",
-      "original_price": 11000.0,
-      "discount_price": 8800.01,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://proteinisi.rs/proizvod/usn-blue-lab-100-whey-protein-2000g/",
-      "in_stock": true,
-      "date_scraped": "2026-04-04"
-    },
-    {
       "id": "proteinisi_usn-diet-fuel-1000g",
       "name": "USN DIET FUEL, 1000g",
       "store": "Proteini.si",
@@ -5587,6 +5512,21 @@
       "date_scraped": "2026-04-04"
     },
     {
+      "id": "proteinisi_btl-muscle-jolt-turkesterone-120-kapsula",
+      "name": "BTL MUSCLE JOLT-TURKESTERONE, 120 kapsula",
+      "store": "Proteini.si",
+      "store_url": "https://proteinisi.rs",
+      "category": "Biljni Ekstrakti",
+      "image_url": "https://proteinisi.rs/wp-content/uploads/Jolt-2-300x300.jpg",
+      "original_price": 2790.0,
+      "discount_price": 2232.0,
+      "discount_percent": 20,
+      "currency": "RSD",
+      "product_url": "https://proteinisi.rs/proizvod/btl-muscle-jolt-turkesterone-120-kapsula/",
+      "in_stock": false,
+      "date_scraped": "2026-04-04"
+    },
+    {
       "id": "proteinisi_btl-peruvian-maca-120-kapsula",
       "name": "BTL PERUVIAN MACA, 120 kapsula",
       "store": "Proteini.si",
@@ -5962,6 +5902,21 @@
       "date_scraped": "2026-04-04"
     },
     {
+      "id": "proteinisi_olimp-chela-mzb-zma-60-kapsula",
+      "name": "OLIMP CHELA-MZB (ZMA), 60 kapsula",
+      "store": "Proteini.si",
+      "store_url": "https://proteinisi.rs",
+      "category": "Akcija",
+      "image_url": "https://proteinisi.rs/wp-content/uploads/CHELA-MZB-300x300.jpg",
+      "original_price": 1990.0,
+      "discount_price": 1591.99,
+      "discount_percent": 20,
+      "currency": "RSD",
+      "product_url": "https://proteinisi.rs/proizvod/olimp-chela-mzb-zma-60-kapsula/",
+      "in_stock": false,
+      "date_scraped": "2026-04-04"
+    },
+    {
       "id": "proteinisi_olimp-creatine-xplode-powder-500g",
       "name": "OLIMP CREATINE XPLODE POWDER, 500g",
       "store": "Proteini.si",
@@ -6217,6 +6172,21 @@
       "date_scraped": "2026-04-04"
     },
     {
+      "id": "proteinisi_ostrovit-vitamin-d3-4000-iu-120-kapsula",
+      "name": "OSTROVIT VITAMIN D3 4000 IU, 120 kapsula",
+      "store": "Proteini.si",
+      "store_url": "https://proteinisi.rs",
+      "category": "Akcija",
+      "image_url": "https://proteinisi.rs/wp-content/uploads/12163-300x300.jpg",
+      "original_price": 2190.0,
+      "discount_price": 1752.0,
+      "discount_percent": 20,
+      "currency": "RSD",
+      "product_url": "https://proteinisi.rs/proizvod/ostrovit-vitamin-d3-4000-iu-120-kapsula/",
+      "in_stock": false,
+      "date_scraped": "2026-04-04"
+    },
+    {
       "id": "proteinisi_ostrovit-vitamin-d3-2000iu-softgels-60-kaps",
       "name": "Ostrovit Vitamin D3, 2000IU softgels, 60 kaps",
       "store": "Proteini.si",
@@ -6243,6 +6213,21 @@
       "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://proteinisi.rs/proizvod/ostrovit-whey-protein-700g/",
+      "in_stock": false,
+      "date_scraped": "2026-04-04"
+    },
+    {
+      "id": "proteinisi_ostrovit-zinc-picolinate-200-tableta",
+      "name": "OSTROVIT Zinc Picolinate, 200 tableta",
+      "store": "Proteini.si",
+      "store_url": "https://proteinisi.rs",
+      "category": "Minerali",
+      "image_url": "https://proteinisi.rs/wp-content/uploads/11564-300x300.jpg",
+      "original_price": 1490.0,
+      "discount_price": 1192.01,
+      "discount_percent": 20,
+      "currency": "RSD",
+      "product_url": "https://proteinisi.rs/proizvod/ostrovit-zinc-picolinate-200-tableta/",
       "in_stock": false,
       "date_scraped": "2026-04-04"
     },
@@ -7098,6 +7083,21 @@
       "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://proteinisi.rs/proizvod/tortilla-mexicana-390g-fit/",
+      "in_stock": false,
+      "date_scraped": "2026-04-04"
+    },
+    {
+      "id": "proteinisi_usn-blue-lab-100-whey-protein-2000g",
+      "name": "USN BLUE LAB 100% WHEY PROTEIN, 2000g",
+      "store": "Proteini.si",
+      "store_url": "https://proteinisi.rs",
+      "category": "Akcija",
+      "image_url": "https://proteinisi.rs/wp-content/uploads/9210-300x300.jpg",
+      "original_price": 11000.0,
+      "discount_price": 8800.01,
+      "discount_percent": 20,
+      "currency": "RSD",
+      "product_url": "https://proteinisi.rs/proizvod/usn-blue-lab-100-whey-protein-2000g/",
       "in_stock": false,
       "date_scraped": "2026-04-04"
     },
@@ -15532,21 +15532,6 @@
       "date_scraped": "2026-04-04"
     },
     {
-      "id": "exyu-fitness_ostrovit-tribulus-terrestris-90-60-kapsula",
-      "name": "Ostrovit Tribulus Terrestris 90, 60 kapsula",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/50017__1_.webp",
-      "original_price": 1590.0,
-      "discount_price": 1400.0,
-      "discount_percent": 12,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/regulatori-hormona/tribulus/ostrovit-tribulus-terrestris-90-60-kapsula/",
-      "in_stock": true,
-      "date_scraped": "2026-04-04"
-    },
-    {
       "id": "exyu-fitness_nutriversum-bcaa-flow-211-360-gr",
       "name": "Nutriversum BCAA Flow 2:1:1 - 360 gr",
       "store": "ExYu Fitness",
@@ -15918,6 +15903,21 @@
       "discount_percent": 14,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/biotech-vegan-protein-2000gr/",
+      "in_stock": false,
+      "date_scraped": "2026-04-04"
+    },
+    {
+      "id": "exyu-fitness_ostrovit-tribulus-terrestris-90-60-kapsula",
+      "name": "Ostrovit Tribulus Terrestris 90, 60 kapsula",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/50017__1_.webp",
+      "original_price": 1590.0,
+      "discount_price": 1400.0,
+      "discount_percent": 12,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/regulatori-hormona/tribulus/ostrovit-tribulus-terrestris-90-60-kapsula/",
       "in_stock": false,
       "date_scraped": "2026-04-04"
     },
@@ -17519,8 +17519,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/4129-home_default/jim-beef-proteinski-beef-jerky.jpg",
       "original_price": 380.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 323.0,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/katalog/1561-4051-jim-beef-proteinski-beef-jerky.html#/353-ukus-red_hot_beef_jerky",
       "in_stock": true,
@@ -17624,8 +17624,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/4592-home_default/pro-mass-gainer-5200g-basic-supplements.jpg",
       "original_price": 8490.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 7216.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/proteini/1649-4368-pro-mass-gainer-5200g-basic-supplements.html#/283-ukus-milk_chocolate",
       "in_stock": true,
@@ -17639,8 +17639,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/4589-home_default/pro-mass-gainer-2600g-basic-supplements.jpg",
       "original_price": 4990.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 4241.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/proteini/1648-4367-pro-mass-gainer-2600g-basic-supplements.html#/248-ukus-strawberry",
       "in_stock": true,
@@ -17669,8 +17669,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/3079-home_default/protein-pancake-mix-proteinske-palacinke.jpg",
       "original_price": 1890.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1606.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/zdrava-ishrana/1313-3385-protein-pancake-mix-proteinske-palacinke.html#/29-ukus-vanila",
       "in_stock": true,
@@ -17684,8 +17684,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/4485-home_default/smarter-protein-pancake-55g.jpg",
       "original_price": 290.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 246.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/zdrava-ishrana/1624-4271-smarter-protein-pancake-55g.html#/370-ukus-red_velvet_white_chocolate_cream_filling",
       "in_stock": true,
@@ -17699,8 +17699,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/1565-home_default/glutamine-powder-kyowa-quality-600-grama.jpg",
       "original_price": 3670.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 3119.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/l-glutamine/809-glutamine-powder-kyowa-quality-600-grama.html",
       "in_stock": true,
@@ -17714,8 +17714,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/1566-home_default/bcaa-powder-300-grama.jpg",
       "original_price": 2950.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2507.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/bcaa/813-1664-bcaa-powder-300-grama.html#/166-ukus-narandza_limun",
       "in_stock": true,
@@ -17729,8 +17729,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/2621-home_default/the-amino-whey-hydro3500g.jpg",
       "original_price": 8190.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 6961.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/proteini/12-3894-the-amino-whey-hydro3500g.html#/33-ukus-jaffa",
       "in_stock": true,
@@ -17744,8 +17744,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/3778-home_default/pro-whey-227kg-premium-whey-protein.jpg",
       "original_price": 7890.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 6706.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/proteini/1200-4218-pro-whey-227kg-premium-whey-protein.html#/276-ukus-raffaello",
       "in_stock": true,
@@ -17759,8 +17759,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/3783-home_default/pro-whey-908grama-basic-supplements.jpg",
       "original_price": 3690.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 3136.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/proteini/1204-3036-pro-whey-908grama-basic-supplements.html#/276-ukus-raffaello",
       "in_stock": true,
@@ -17774,8 +17774,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/4509-home_default/testo-pro-180-kapsula-basic-supplements.jpg",
       "original_price": 2690.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2286.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/stimulatori-hormona/1210-testo-pro-180-kapsula-basic-supplements.html",
       "in_stock": true,
@@ -17789,8 +17789,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/3850-home_default/shredx-pro-200kapsula-basic-supplements.jpg",
       "original_price": 2890.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2456.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/sagorevaci-masti/1209-shredx-pro-200kapsula-basic-supplements.html",
       "in_stock": true,
@@ -18669,9 +18669,9 @@
   ],
   "weekly_summary": {
     "week_of": "2026-03-30",
-    "generated_at": "2026-04-04 06:53",
+    "generated_at": "2026-04-04 12:38",
     "total_products": 1243,
-    "total_discounted": 941,
+    "total_discounted": 953,
     "avg_discount_percent": 17.6,
     "top_discounts": [
       {
@@ -19022,9 +19022,9 @@
         "avg_discount": 14.4
       },
       "Ogistra Nutrition": {
-        "count": 14,
+        "count": 26,
         "store_url": "https://www.ogistra-nutrition-shop.com",
-        "avg_discount": 20.7
+        "avg_discount": 18.1
       },
       "SuperProtein": {
         "count": 28,
@@ -19091,10 +19091,6 @@
         "count": 1,
         "avg_discount": 20.0
       },
-      "Biljni Ekstrakti": {
-        "count": 3,
-        "avg_discount": 20.0
-      },
       "Termogenetici": {
         "count": 2,
         "avg_discount": 20.0
@@ -19137,6 +19133,10 @@
       },
       "Asvaganda": {
         "count": 2,
+        "avg_discount": 20.0
+      },
+      "Biljni Ekstrakti": {
+        "count": 3,
         "avg_discount": 20.0
       },
       "Bez Grize Savesti": {
@@ -19248,8 +19248,8 @@
         "avg_discount": 22.0
       },
       "Ostalo": {
-        "count": 48,
-        "avg_discount": 22.2
+        "count": 60,
+        "avg_discount": 20.8
       },
       "Aminokiseline u prahu": {
         "count": 6,
@@ -19381,7 +19381,7 @@
     "Ogistra Nutrition": {
       "total": 26,
       "with_prices": 26,
-      "with_discounts": 14,
+      "with_discounts": 26,
       "status": "ok"
     },
     "SuperProtein": {
