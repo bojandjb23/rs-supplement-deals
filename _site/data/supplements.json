@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-06T07:20:55.174682",
+  "scraped_at": "2026-04-06T12:53:13.277580",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -18,8 +18,8 @@
     "X Sport"
   ],
   "stores_failed": [],
-  "total_products": 909,
-  "total_discounted": 606,
+  "total_products": 908,
+  "total_discounted": 618,
   "products": [
     {
       "id": "supplement-store_100-whey-prostar-239kg",
@@ -28,7 +28,7 @@
       "store_url": "https://www.supplementstore.rs",
       "category": "Akcija",
       "image_url": "https://supplementstore.rs/image/cache/catalog/proizvodi/ultimate-nutrition/150_Prostar_Strawberry-free-228x228.jpg",
-      "original_price": 9300.0,
+      "original_price": 9700.0,
       "discount_price": null,
       "discount_percent": 0,
       "currency": "RSD",
@@ -43,7 +43,7 @@
       "store_url": "https://www.supplementstore.rs",
       "category": "Akcija",
       "image_url": "https://supplementstore.rs/image/cache/catalog/proizvodi/ultimate-nutrition/147_Prostar_Strawberry_2LB-free-228x228.jpg",
-      "original_price": 4600.0,
+      "original_price": 4800.0,
       "discount_price": null,
       "discount_percent": 0,
       "currency": "RSD",
@@ -118,7 +118,7 @@
       "store_url": "https://www.supplementstore.rs",
       "category": "Akcija",
       "image_url": "https://supplementstore.rs/image/cache/catalog/proizvodi/ultimate-nutrition/UN_IsoCool_2-free-228x228.jpg",
-      "original_price": 13500.0,
+      "original_price": 14000.0,
       "discount_price": null,
       "discount_percent": 0,
       "currency": "RSD",
@@ -133,7 +133,7 @@
       "store_url": "https://www.supplementstore.rs",
       "category": "Akcija",
       "image_url": "https://supplementstore.rs/image/cache/catalog/proizvodi/ultimate-nutrition/253_ISoCool907gChoc-free-228x228.jpg",
-      "original_price": 6550.0,
+      "original_price": 6900.0,
       "discount_price": null,
       "discount_percent": 0,
       "currency": "RSD",
@@ -163,7 +163,7 @@
       "store_url": "https://www.supplementstore.rs",
       "category": "Akcija",
       "image_url": "https://supplementstore.rs/image/cache/catalog/proizvodi/ultimate-nutrition/iso-sensation-93-b01-free-228x228.jpg",
-      "original_price": 13000.0,
+      "original_price": 13500.0,
       "discount_price": null,
       "discount_percent": 0,
       "currency": "RSD",
@@ -178,7 +178,7 @@
       "store_url": "https://www.supplementstore.rs",
       "category": "Akcija",
       "image_url": "https://supplementstore.rs/image/cache/catalog/proizvodi/ultimate-nutrition/280_ISO93910gChoc-free-228x228.jpg",
-      "original_price": 6350.0,
+      "original_price": 6700.0,
       "discount_price": null,
       "discount_percent": 0,
       "currency": "RSD",
@@ -8013,7 +8013,7 @@
       "discount_percent": 9,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/sagas-rc-02-za-normalan-metabolizam-homocisteina-i-nervni-sistem",
-      "in_stock": true,
+      "in_stock": false,
       "date_scraped": "2026-04-06"
     },
     {
@@ -9483,7 +9483,7 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/solgar-hrom-pikolinat-100-mcg-za-normalnu-koncentraciju-glukoze-u-krvi",
-      "in_stock": false,
+      "in_stock": true,
       "date_scraped": "2026-04-06"
     },
     {
@@ -10222,21 +10222,6 @@
       "date_scraped": "2026-04-06"
     },
     {
-      "id": "exyu-fitness_tesla-whey-charger-100-5000-gr",
-      "name": "Tesla Whey Charger 100, 5000 gr",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/tesla_whey_charger_5_kg.webp",
-      "original_price": 11900.0,
-      "discount_price": 9500.0,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/tesla-whey-charger-100/",
-      "in_stock": true,
-      "date_scraped": "2026-04-06"
-    },
-    {
       "id": "exyu-fitness_5-stars-whey-protein-3000grrasprodaja",
       "name": "5 Stars Whey Protein, 3000gr(Rasprodaja)",
       "store": "ExYu Fitness",
@@ -10248,21 +10233,6 @@
       "discount_percent": 24,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/proteini/whey-protein/5-star-whey-protein-3000gr/",
-      "in_stock": true,
-      "date_scraped": "2026-04-06"
-    },
-    {
-      "id": "exyu-fitness_yamamoto-bcaa-811-300-grrok-626",
-      "name": "Yamamoto BCAA 8:1:1- 300 gr(rok 6/26)",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/yamamoto-bcaa-8-1-1-300-gr-4260.webp",
-      "original_price": 2950.0,
-      "discount_price": 2369.0,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/aminokiseline/bcaa/yamamoto-bcaa-8-1-1-300-gr/",
       "in_stock": true,
       "date_scraped": "2026-04-06"
     },
@@ -10492,21 +10462,6 @@
       "date_scraped": "2026-04-06"
     },
     {
-      "id": "exyu-fitness_applied-nutrition-bcaa-amino-hydrate-450-gr",
-      "name": "Applied Nutrition BCAA Amino Hydrate, 450 gr",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/applied-nutrition-bcaa-amino-hydrate-450-gr-5003.webp",
-      "original_price": 3490.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/aminokiseline/bcaa/applied-nutrition-bcaa-amino-hydrate-450-gr/",
-      "in_stock": false,
-      "date_scraped": "2026-04-06"
-    },
-    {
       "id": "exyu-fitness_vitalikum-antioxidant-matrix-90-capsrok-526",
       "name": "Vitalikum Antioxidant Matrix, 90 caps(rok 5/26)",
       "store": "ExYu Fitness",
@@ -10534,6 +10489,21 @@
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/aminokiseline/nutriversum-bcaa-flow-2-1-1-360-gr/",
       "in_stock": true,
+      "date_scraped": "2026-04-06"
+    },
+    {
+      "id": "exyu-fitness_applied-nutrition-bcaa-amino-hydrate-450-gr",
+      "name": "Applied Nutrition BCAA Amino Hydrate, 450 gr",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/applied-nutrition-bcaa-amino-hydrate-450-gr-5003.webp",
+      "original_price": 3490.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/aminokiseline/bcaa/applied-nutrition-bcaa-amino-hydrate-450-gr/",
+      "in_stock": false,
       "date_scraped": "2026-04-06"
     },
     {
@@ -10702,21 +10672,6 @@
       "date_scraped": "2026-04-06"
     },
     {
-      "id": "exyu-fitness_vitalikum-maca-matrix",
-      "name": "Vitalikum Maca Matrix",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/maca_matrix_60_caps.webp",
-      "original_price": 1350.0,
-      "discount_price": 1200.0,
-      "discount_percent": 11,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/tvoji-ciljevi/suplementi-za-bolje-zdravlje/vitalikum-maca-matrix/",
-      "in_stock": true,
-      "date_scraped": "2026-04-06"
-    },
-    {
       "id": "exyu-fitness_ostrovit-vitamin-b12-methylcobalamin",
       "name": "Ostrovit Vitamin B12 Methylcobalamin",
       "store": "ExYu Fitness",
@@ -10769,8 +10724,8 @@
       "category": "Rasprodaja",
       "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/superior-whey-core-5000gr-4863.webp",
       "original_price": 10500.0,
-      "discount_price": 8600.0,
-      "discount_percent": 18,
+      "discount_price": 9200.0,
+      "discount_percent": 12,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/superior-whey-core-5000gr/",
       "in_stock": false,
@@ -10788,6 +10743,36 @@
       "discount_percent": 8,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/proteini/tesla-whey-charger-100-protein-2270gr/",
+      "in_stock": false,
+      "date_scraped": "2026-04-06"
+    },
+    {
+      "id": "exyu-fitness_tesla-whey-charger-100-5000-gr",
+      "name": "Tesla Whey Charger 100, 5000 gr",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/tesla_whey_charger_5_kg.webp",
+      "original_price": 11900.0,
+      "discount_price": 9500.0,
+      "discount_percent": 20,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/tesla-whey-charger-100/",
+      "in_stock": false,
+      "date_scraped": "2026-04-06"
+    },
+    {
+      "id": "exyu-fitness_yamamoto-bcaa-811-300-grrok-626",
+      "name": "Yamamoto BCAA 8:1:1- 300 gr(rok 6/26)",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/yamamoto-bcaa-8-1-1-300-gr-4260.webp",
+      "original_price": 2950.0,
+      "discount_price": 2369.0,
+      "discount_percent": 20,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/aminokiseline/bcaa/yamamoto-bcaa-8-1-1-300-gr/",
       "in_stock": false,
       "date_scraped": "2026-04-06"
     },
@@ -11088,6 +11073,21 @@
       "discount_percent": 9,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/pre-workout-suplementi/ostrovit-caffeine-supreme-pure/",
+      "in_stock": false,
+      "date_scraped": "2026-04-06"
+    },
+    {
+      "id": "exyu-fitness_vitalikum-maca-matrix",
+      "name": "Vitalikum Maca Matrix",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/maca_matrix_60_caps.webp",
+      "original_price": 1350.0,
+      "discount_price": 1200.0,
+      "discount_percent": 11,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/tvoji-ciljevi/suplementi-za-bolje-zdravlje/vitalikum-maca-matrix/",
       "in_stock": false,
       "date_scraped": "2026-04-06"
     },
@@ -12509,8 +12509,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/4129-home_default/jim-beef-proteinski-beef-jerky.jpg",
       "original_price": 380.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 323.0,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/katalog/1561-4051-jim-beef-proteinski-beef-jerky.html#/353-ukus-red_hot_beef_jerky",
       "in_stock": true,
@@ -12614,8 +12614,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/4592-home_default/pro-mass-gainer-5200g-basic-supplements.jpg",
       "original_price": 8490.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 7216.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/proteini/1649-4368-pro-mass-gainer-5200g-basic-supplements.html#/283-ukus-milk_chocolate",
       "in_stock": true,
@@ -12629,8 +12629,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/4589-home_default/pro-mass-gainer-2600g-basic-supplements.jpg",
       "original_price": 4990.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 4241.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/proteini/1648-4367-pro-mass-gainer-2600g-basic-supplements.html#/248-ukus-strawberry",
       "in_stock": true,
@@ -12659,8 +12659,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/3079-home_default/protein-pancake-mix-proteinske-palacinke.jpg",
       "original_price": 1890.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1606.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/zdrava-ishrana/1313-3385-protein-pancake-mix-proteinske-palacinke.html#/29-ukus-vanila",
       "in_stock": true,
@@ -12674,8 +12674,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/4485-home_default/smarter-protein-pancake-55g.jpg",
       "original_price": 290.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 246.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/zdrava-ishrana/1624-4271-smarter-protein-pancake-55g.html#/370-ukus-red_velvet_white_chocolate_cream_filling",
       "in_stock": true,
@@ -12689,8 +12689,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/1565-home_default/glutamine-powder-kyowa-quality-600-grama.jpg",
       "original_price": 3670.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 3119.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/l-glutamine/809-glutamine-powder-kyowa-quality-600-grama.html",
       "in_stock": true,
@@ -12704,8 +12704,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/1566-home_default/bcaa-powder-300-grama.jpg",
       "original_price": 2950.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2507.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/bcaa/813-1664-bcaa-powder-300-grama.html#/166-ukus-narandza_limun",
       "in_stock": true,
@@ -12719,8 +12719,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/2621-home_default/the-amino-whey-hydro3500g.jpg",
       "original_price": 8190.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 6961.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/proteini/12-3894-the-amino-whey-hydro3500g.html#/33-ukus-jaffa",
       "in_stock": true,
@@ -12734,8 +12734,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/3778-home_default/pro-whey-227kg-premium-whey-protein.jpg",
       "original_price": 7890.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 6706.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/proteini/1200-4218-pro-whey-227kg-premium-whey-protein.html#/276-ukus-raffaello",
       "in_stock": true,
@@ -12749,8 +12749,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/3783-home_default/pro-whey-908grama-basic-supplements.jpg",
       "original_price": 3690.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 3136.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/proteini/1204-3036-pro-whey-908grama-basic-supplements.html#/276-ukus-raffaello",
       "in_stock": true,
@@ -12764,8 +12764,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/4509-home_default/testo-pro-180-kapsula-basic-supplements.jpg",
       "original_price": 2690.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2286.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/stimulatori-hormona/1210-testo-pro-180-kapsula-basic-supplements.html",
       "in_stock": true,
@@ -12779,8 +12779,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/3850-home_default/shredx-pro-200kapsula-basic-supplements.jpg",
       "original_price": 2890.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2456.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/sagorevaci-masti/1209-shredx-pro-200kapsula-basic-supplements.html",
       "in_stock": true,
@@ -13327,21 +13327,6 @@
       "date_scraped": "2026-04-06"
     },
     {
-      "id": "superior14_tesla-whey-charger-100-poklon",
-      "name": "TESLA WHEY CHARGER 100 + POKLON",
-      "store": "Superior14",
-      "store_url": "https://www.superior14.rs",
-      "category": "Proteini",
-      "image_url": "https://images.superior14.rs/1746022063/product-medium/tesla-whey-charger-100-poklon.webp",
-      "original_price": 9490.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://www.superior14.rs/proizvodi/proteini/tesla-whey-charger-100-poklon/",
-      "in_stock": true,
-      "date_scraped": "2026-04-06"
-    },
-    {
       "id": "superior14_superior14-krealka-max-gratisi",
       "name": "SUPERIOR14 KREALKA MAX + GRATISI",
       "store": "Superior14",
@@ -13659,9 +13644,9 @@
   ],
   "weekly_summary": {
     "week_of": "2026-04-06",
-    "generated_at": "2026-04-06 07:20",
-    "total_products": 909,
-    "total_discounted": 606,
+    "generated_at": "2026-04-06 12:53",
+    "total_products": 908,
+    "total_discounted": 618,
     "avg_discount_percent": 16.2,
     "top_discounts": [
       {
@@ -13994,7 +13979,7 @@
       "ExYu Fitness": {
         "count": 65,
         "store_url": "https://www.exyu-fitness.rs",
-        "avg_discount": 14.5
+        "avg_discount": 14.4
       },
       "LAMA": {
         "count": 34,
@@ -14007,9 +13992,9 @@
         "avg_discount": 14.4
       },
       "Ogistra Nutrition": {
-        "count": 14,
+        "count": 26,
         "store_url": "https://www.ogistra-nutrition-shop.com",
-        "avg_discount": 20.7
+        "avg_discount": 18.1
       },
       "SuperProtein": {
         "count": 28,
@@ -14145,8 +14130,8 @@
         "avg_discount": 22.0
       },
       "Ostalo": {
-        "count": 48,
-        "avg_discount": 22.2
+        "count": 60,
+        "avg_discount": 20.8
       },
       "Aminokiseline u prahu": {
         "count": 6,
@@ -14282,7 +14267,7 @@
     "Ogistra Nutrition": {
       "total": 26,
       "with_prices": 26,
-      "with_discounts": 14,
+      "with_discounts": 26,
       "status": "ok"
     },
     "SuperProtein": {
@@ -14292,8 +14277,8 @@
       "status": "ok"
     },
     "Superior14": {
-      "total": 3,
-      "with_prices": 3,
+      "total": 2,
+      "with_prices": 2,
       "with_discounts": 0,
       "status": "ok"
     },
