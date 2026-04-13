@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-13T07:53:29.638938",
+  "scraped_at": "2026-04-13T13:08:47.887735",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -19,7 +19,7 @@
   ],
   "stores_failed": [],
   "total_products": 883,
-  "total_discounted": 585,
+  "total_discounted": 618,
   "products": [
     {
       "id": "supplement-store_100-whey-prostar-239kg",
@@ -697,21 +697,6 @@
       "date_scraped": "2026-04-13"
     },
     {
-      "id": "gymbeam_italijanski-tost-hleb-gymbeam",
-      "name": "Italijanski tost hleb - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/i/t/italian_toast_bread_pan_bauletto_350_g_gymbeam_01.png",
-      "original_price": 547.95,
-      "discount_price": 400.0,
-      "discount_percent": 27,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/italijanski-tost-hleb-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-04-13"
-    },
-    {
       "id": "gymbeam_katanac-quadguard-gymbeam",
       "name": "Katanac QuadGuard - GymBeam",
       "store": "GymBeam",
@@ -1248,6 +1233,21 @@
       "discount_percent": 80,
       "currency": "RSD",
       "product_url": "https://gymbeam.rs/univerzalni-drzac-za-mobilni-telefon-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-04-13"
+    },
+    {
+      "id": "gymbeam_italijanski-tost-hleb-gymbeam",
+      "name": "Italijanski tost hleb - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/i/t/italian_toast_bread_pan_bauletto_350_g_gymbeam_01.png",
+      "original_price": 547.95,
+      "discount_price": 400.0,
+      "discount_percent": 27,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/italijanski-tost-hleb-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-04-13"
     },
@@ -2924,8 +2924,8 @@
       "category": "Magnezijum",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-magnezijum-bisglicinat-100mg.png?v=1736253847",
       "original_price": 2880.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2300.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-magnezijum-bisglicinat-100mg-podrska-za-misice-srce-i-energiju",
       "in_stock": true,
@@ -3348,7 +3348,7 @@
       "discount_percent": 10,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/nutriversum-iso-pro-1000g-40-porcija-visoko-kvalitetni-izolat-proteina-surutke",
-      "in_stock": true,
+      "in_stock": false,
       "date_scraped": "2026-04-13"
     },
     {
@@ -4019,8 +4019,8 @@
       "category": "Maka",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/bioandina-crna-maka-kompleks-60-kapsula.png?v=1736367725",
       "original_price": 2810.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2250.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/bioandina-crna-maka-kompleks-60-kapsula-za-plodnost-i-mentalni-fokus",
       "in_stock": true,
@@ -4739,8 +4739,8 @@
       "category": "Cink",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-cink-15-mg-kompleks-50-kapsula.jpg?v=1733132358",
       "original_price": 1610.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1290.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-cink-15-mg-kompleks-50-kapsula-imunitet-i-zdravlje-koze",
       "in_stock": true,
@@ -4874,8 +4874,8 @@
       "category": "Akcije",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-folat-400-mcg-complex-50-kapsula.jpg?v=1732969526",
       "original_price": 2255.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1800.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-folat-kompleks-400-mg-50-kapsula-podrska-energiji-i-vitalnosti",
       "in_stock": true,
@@ -5039,8 +5039,8 @@
       "category": "Maka",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/bioandina-crvena-maka-kompleks-60-kapsula.png?v=1736367224",
       "original_price": 2390.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1910.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/bioandina-crvena-maka-kompleks-60-kapsula-hormonska-ravnoteza-i-energija",
       "in_stock": true,
@@ -5174,8 +5174,8 @@
       "category": "Akcije",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-vitamin-d3-1000-iu-k2-50-mg-kompleks-50-kapsula.jpg?v=1733069347",
       "original_price": 3235.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2590.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-vitamin-d3-1000-iu-k2-50-mcg-kompleks-50-kapsula",
       "in_stock": true,
@@ -5414,8 +5414,8 @@
       "category": "Akcije",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/b-complex-sa-vitaminom-c-terranova.jpg?v=1732964050",
       "original_price": 2030.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1620.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-b-kompleks-sa-vitaminom-c-50-kapsula-podrska-energiji-i-imunitetu",
       "in_stock": true,
@@ -5759,8 +5759,8 @@
       "category": "Koenzim Q10",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-koenzim-q10-100-mg-50-kapsula.jpg?v=1732966258",
       "original_price": 4940.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 3950.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-coq10-kompleks-100-mg-50-kapsula-energija-i-srcana-podrska",
       "in_stock": true,
@@ -6134,8 +6134,8 @@
       "category": "Akcije",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-prenatal-kompleks-50-kapsula.png?v=1736199494",
       "original_price": 2420.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1940.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-prenatal-kompleks-50-kapsula-multivitamini-za-trudnice-i-dojilje",
       "in_stock": true,
@@ -6299,8 +6299,8 @@
       "category": "Gvožđe",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-easy-iron-20-mg-kompleks-50-kapsula.jpg?v=1732966796",
       "original_price": 1540.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1230.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-easy-iron-20-mg-kompleks-50-kapsula-podrska-energiji-i-krvnoj-slici",
       "in_stock": true,
@@ -6839,8 +6839,8 @@
       "category": "Kurkumin",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-silimarin-500mg.png?v=1736333944",
       "original_price": 3235.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2590.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-silimarin-500mg-50-kapsula-za-zastitu-i-regeneraciju-jetre",
       "in_stock": true,
@@ -7139,8 +7139,8 @@
       "category": "Ašvaganda",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-fermentisana-asvaganda-50-kapsula.jpg?v=1732967489",
       "original_price": 3235.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2590.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-fermentisana-asvaganda-50-kapsula-ravnoteza-i-vitalnost",
       "in_stock": true,
@@ -7154,8 +7154,8 @@
       "category": "Hrom",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-hrom-200-mcg-50-kapsula.jpg?v=1732967091",
       "original_price": 1770.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1420.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-hrom-kompleks-200-mg-50-kapsula-podrska-metabolizmu-secera",
       "in_stock": true,
@@ -7184,8 +7184,8 @@
       "category": "Akcije",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-living-multinutrient-kompleks-50-kapsula.jpg?v=1733051183",
       "original_price": 3055.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2440.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-living-multinutrient-50-kapsula-sveobuhvatna-dnevna-podrska",
       "in_stock": true,
@@ -7394,8 +7394,8 @@
       "category": "Maka",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/bioandina-premium-mix-aktivirana-maka-60-kapsula.png?v=1736366304",
       "original_price": 1960.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1570.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/bioandina-premium-mix-aktivirana-maka-60-kapsula-hormonska-ravnoteza",
       "in_stock": true,
@@ -7754,8 +7754,8 @@
       "category": "Akcije",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/alfa-lipoinska-kiselina-300-mg-terranova-50-kapsula-1.jpg?v=1733127885",
       "original_price": 3210.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2570.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-alfaliponska-kiselina-300-mg-kompleks-50-kapsula-antioksidans",
       "in_stock": true,
@@ -8024,8 +8024,8 @@
       "category": "Kurkumin",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-fermentisana-kurkuma-50-kapsula.jpg?v=1732969287",
       "original_price": 3940.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 3150.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-fermentisana-kurkuma-50-kapsula-antioksidativna-podrska",
       "in_stock": true,
@@ -8039,8 +8039,8 @@
       "category": "Akcije",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-vitamin-c-250-mg-kompleks-50-kapsula.jpg?v=1733057868",
       "original_price": 2255.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1800.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-vitamin-c-multi-askorbat-kompleks-250-mg-50-kapsula",
       "in_stock": true,
@@ -8099,8 +8099,8 @@
       "category": "Akcije",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-life-drink-227g.jpg?v=1733055856",
       "original_price": 5445.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 4360.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-life-drink-sveobuhvatan-prah-za-energiju-imunitet-i-vitalnost-227g",
       "in_stock": true,
@@ -8114,8 +8114,8 @@
       "category": "Kompleksi minerala",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-sinergija-za-vid.png?v=1736331763",
       "original_price": 4035.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 3230.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-sinergija-za-vid-50-kapsula-prirodna-zastita-za-oci-i-vid",
       "in_stock": true,
@@ -8159,8 +8159,8 @@
       "category": "Koenzim Q10",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/coq_10_dobrobit.jpg?v=1736197164",
       "original_price": 2775.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2220.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-koenzim-q10-30mg-50-kapsula-prirodna-energija-i-podrska-srcu",
       "in_stock": true,
@@ -8264,8 +8264,8 @@
       "category": "Akcije",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-green-ph-alkalni-prah-40g.jpg?v=1733136113",
       "original_price": 3850.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 3080.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-green-ph-alkalni-super-blend-prah-40g-za-ph-ravnotezu-i-vitalnost",
       "in_stock": true,
@@ -8369,8 +8369,8 @@
       "category": "Akcije",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/beauty-complex-terranova.jpg?v=1732964660",
       "original_price": 2420.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1940.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-beauty-complex-koza-kosa-nokti-50-kapsula-prirodna-lepota",
       "in_stock": true,
@@ -8729,8 +8729,8 @@
       "category": "Akcije",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-fermentisana-caga-50-kapsula.png?v=1732969049",
       "original_price": 2799.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2240.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-fermentisana-caga-50-kapsula-imunitet-i-antioksidativna-podrska",
       "in_stock": true,
@@ -8819,8 +8819,8 @@
       "category": "Magnezijum",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-magnezijum-kalcijum-2-1-kompleks-50-kapsula.jpg?v=1733045449",
       "original_price": 1685.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1350.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-magnezijum-kalcijum-kompleks-2-1-50-kapsula-podrska-kostima",
       "in_stock": true,
@@ -8879,8 +8879,8 @@
       "category": "Akcije",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-beta-glukani-250-mg-50-kapsula.jpg?v=1732965020",
       "original_price": 3940.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 3150.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-beta-glukani-kompleks-250-mg-50-kapsula-imunitetska-podrska",
       "in_stock": true,
@@ -8999,8 +8999,8 @@
       "category": "Akcije",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-beta-karoten-50-kapsula.png?v=1736282260",
       "original_price": 2985.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2390.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-beta-karoten-50-kapsula-prirodna-zastita-za-oci-i-kozu",
       "in_stock": true,
@@ -9014,8 +9014,8 @@
       "category": "Akcije",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/antioxidant-nutrient-complex-terranova-50-kapsula.jpg?v=1733128150",
       "original_price": 2775.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2220.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-antioksidativni-nutrijent-kompleks-50-kapsula-zastita-celija",
       "in_stock": true,
@@ -9179,8 +9179,8 @@
       "category": "Vitamini",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/bioandina-camu-camu-vitamin-c-kompleks-60-kapsula.png?v=1736365322",
       "original_price": 1820.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1460.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/bioandina-camu-camu-vitamin-c-kompleks-60-kapsula-100-prirodni-vitamin-c",
       "in_stock": true,
@@ -9749,8 +9749,8 @@
       "category": "Omega masne kiseline",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-omega-ulje-3-6-7-9-250-ml.jpg?v=1733136925",
       "original_price": 4260.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 3410.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-omega-3-6-7-9-ulje-250-ml-podrska-srcu-i-kozi",
       "in_stock": false,
@@ -10139,8 +10139,8 @@
       "category": "Akcije",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-vollagen-glukozamin-kompleks.png?v=1733132931",
       "original_price": 2480.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1980.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-vollagen-glukozamin-kompleks-podrska-zglobovima-i-hrskavici",
       "in_stock": false,
@@ -10154,8 +10154,8 @@
       "category": "Akcije",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-fermentisani-astragalus.png?v=1732968782",
       "original_price": 3190.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2550.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-fermentisani-astragalus-50-kapsula-imunitet-i-vitalnost",
       "in_stock": false,
@@ -10169,8 +10169,8 @@
       "category": "Akcije",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-biotin-kompleks-300-mg-50-kapsula.png?v=1732965905",
       "original_price": 1090.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 870.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-biotin-300-mg-kompleks-50-kapsula-podrska-kosi-kozi-i-noktima",
       "in_stock": false,
@@ -13269,10 +13269,10 @@
   ],
   "weekly_summary": {
     "week_of": "2026-04-13",
-    "generated_at": "2026-04-13 07:53",
+    "generated_at": "2026-04-13 13:08",
     "total_products": 883,
-    "total_discounted": 585,
-    "avg_discount_percent": 16.0,
+    "total_discounted": 618,
+    "avg_discount_percent": 16.2,
     "top_discounts": [
       {
         "id": "gymbeam_univerzalni-drzac-za-mobilni-telefon-gymbeam",
@@ -13597,9 +13597,9 @@
         "avg_discount": 22.0
       },
       "Dobrobit": {
-        "count": 293,
+        "count": 326,
         "store_url": "https://dobrobit.rs",
-        "avg_discount": 10.5
+        "avg_discount": 11.4
       },
       "ExYu Fitness": {
         "count": 66,
@@ -13654,8 +13654,8 @@
         "avg_discount": 20.0
       },
       "Akcije": {
-        "count": 116,
-        "avg_discount": 14.2
+        "count": 133,
+        "avg_discount": 15.0
       },
       "Proteini": {
         "count": 79,
@@ -13666,32 +13666,32 @@
         "avg_discount": 22.0
       },
       "Ašvaganda": {
-        "count": 5,
-        "avg_discount": 10.4
+        "count": 6,
+        "avg_discount": 12.0
       },
       "Vitamini": {
-        "count": 19,
-        "avg_discount": 11.2
+        "count": 20,
+        "avg_discount": 11.6
+      },
+      "Magnezijum": {
+        "count": 12,
+        "avg_discount": 13.1
       },
       "Kolagen": {
         "count": 6,
         "avg_discount": 10.5
       },
-      "Magnezijum": {
-        "count": 10,
-        "avg_discount": 11.7
-      },
       "Omega masne kiseline": {
-        "count": 13,
-        "avg_discount": 12.4
+        "count": 14,
+        "avg_discount": 12.9
       },
       "Mršavljenje": {
         "count": 5,
         "avg_discount": 15.0
       },
       "Cink": {
-        "count": 2,
-        "avg_discount": 10.5
+        "count": 3,
+        "avg_discount": 13.7
       },
       "Selen": {
         "count": 5,
@@ -13700,6 +13700,10 @@
       "Probiotici": {
         "count": 15,
         "avg_discount": 15.2
+      },
+      "Maka": {
+        "count": 5,
+        "avg_discount": 14.6
       },
       "Gaineri": {
         "count": 6,
@@ -13714,28 +13718,24 @@
         "avg_discount": 9.4
       },
       "Koenzim Q10": {
-        "count": 9,
-        "avg_discount": 9.4
+        "count": 11,
+        "avg_discount": 11.4
       },
       "Gvožđe": {
-        "count": 2,
-        "avg_discount": 10.5
+        "count": 3,
+        "avg_discount": 13.7
       },
       "Kurkumin": {
-        "count": 3,
-        "avg_discount": 6.0
+        "count": 5,
+        "avg_discount": 11.6
       },
       "Hrom": {
-        "count": 1,
-        "avg_discount": 5.0
+        "count": 2,
+        "avg_discount": 12.5
       },
       "Melatonin": {
         "count": 2,
         "avg_discount": 13.0
-      },
-      "Maka": {
-        "count": 2,
-        "avg_discount": 6.5
       },
       "Hijaluronska kiselina": {
         "count": 3,
@@ -13746,8 +13746,8 @@
         "avg_discount": 15.0
       },
       "Kompleksi minerala": {
-        "count": 2,
-        "avg_discount": 12.0
+        "count": 3,
+        "avg_discount": 14.7
       },
       "Kalcijum": {
         "count": 1,
@@ -13867,7 +13867,7 @@
     "Dobrobit": {
       "total": 540,
       "with_prices": 540,
-      "with_discounts": 293,
+      "with_discounts": 326,
       "status": "ok"
     },
     "ExYu Fitness": {
