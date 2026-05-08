@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-08T13:13:32.853301",
+  "scraped_at": "2026-05-08T19:07:21.606644",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -18,8 +18,8 @@
     "X Sport"
   ],
   "stores_failed": [],
-  "total_products": 813,
-  "total_discounted": 517,
+  "total_products": 811,
+  "total_discounted": 529,
   "products": [
     {
       "id": "supplement-store_100-whey-prostar-239kg",
@@ -622,6 +622,21 @@
       "date_scraped": "2026-05-08"
     },
     {
+      "id": "gymbeam_sportska-boca-sipsdips-pink-550-ml-beastpink",
+      "name": "Sportska boca Sips&Dips Pink 550 ml - BeastPink",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/s/p/sport_bottle_sips_dips_pink_50ml_beastpink_1.jpg",
+      "original_price": 600.0,
+      "discount_price": 120.0,
+      "discount_percent": 80,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/sportska-boca-sips-dips-pink-550-ml-beastpink.html",
+      "in_stock": true,
+      "date_scraped": "2026-05-08"
+    },
+    {
       "id": "gymbeam_ranac-the-adventure-eggplant-gymbeam",
       "name": "Ranac The Adventure Eggplant - GymBeam",
       "store": "GymBeam",
@@ -787,21 +802,6 @@
       "date_scraped": "2026-05-08"
     },
     {
-      "id": "gymbeam_ekstrakt-crne-ribizle-gymbeam",
-      "name": "Ekstrakt crne ribizle - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/b/l/blackcurrant_extract_60_caps_gymbeam.png",
-      "original_price": 1453.33,
-      "discount_price": 1090.0,
-      "discount_percent": 25,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/ekstrakt-crne-ribizle-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-05-08"
-    },
-    {
       "id": "gymbeam_sportska-flasa-hyper-hydrator-22-l-pink-beastpink",
       "name": "Sportska flaša Hyper Hydrator 2.2 l Pink - Beastpink",
       "store": "GymBeam",
@@ -832,47 +832,47 @@
       "date_scraped": "2026-05-08"
     },
     {
-      "id": "gymbeam_bio-obareni-pirinac-dugog-zrna-gymbeam",
-      "name": "BIO Obareni pirinač dugog zrna - GymBeam",
+      "id": "gymbeam_bio-crveni-jasmin-pirinac-neoljusten-gymbeam",
+      "name": "BIO Crveni jasmin pirinač (neoljušten) - GymBeam",
       "store": "GymBeam",
       "store_url": "https://www.gymbeam.rs",
       "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/b/i/bio-parboiled-rice-mockup.jpg",
-      "original_price": 378.79,
-      "discount_price": 250.0,
-      "discount_percent": 34,
+      "image_url": "https://gymbeam.rs/media/catalog/product/b/i/bio-red-jasmine-rice-mockup.jpg",
+      "original_price": 550.72,
+      "discount_price": 380.0,
+      "discount_percent": 31,
       "currency": "RSD",
-      "product_url": "https://gymbeam.rs/bio-obareni-pirinac-dugog-zrna-gymbeam.html",
+      "product_url": "https://gymbeam.rs/bio-crveni-jasmin-pirinac-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-05-08"
     },
     {
-      "id": "gymbeam_bio-smei-pirinac-dugog-zrna-gymbeam",
-      "name": "BIO smeđi pirinač dugog zrna - GymBeam",
+      "id": "gymbeam_bio-proteinska-kasa-vanavita",
+      "name": "BIO proteinska kaša - VanaVita",
       "store": "GymBeam",
       "store_url": "https://www.gymbeam.rs",
       "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/b/i/bio-brown-rice-mockup.jpg",
-      "original_price": 378.79,
-      "discount_price": 250.0,
-      "discount_percent": 34,
+      "image_url": "https://gymbeam.rs/media/catalog/product/b/i/bio_protein_porridge_raspberry.png",
+      "original_price": 1243.59,
+      "discount_price": 970.0,
+      "discount_percent": 22,
       "currency": "RSD",
-      "product_url": "https://gymbeam.rs/bio-smedi-pirinac-dugog-zrna-gymbeam.html",
+      "product_url": "https://gymbeam.rs/bio-proteinska-kasa-vanavita.html",
       "in_stock": true,
       "date_scraped": "2026-05-08"
     },
     {
-      "id": "gymbeam_magnezijum-hlorid-gymbeam",
-      "name": "Magnezijum hlorid - GymBeam",
+      "id": "gymbeam_ulje-borazine-gymbeam",
+      "name": "Ulje boražine - GymBeam",
       "store": "GymBeam",
       "store_url": "https://www.gymbeam.rs",
       "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/m/a/magnesium_chloride_90_caps_gymbeam.png",
-      "original_price": 848.1,
-      "discount_price": 670.0,
-      "discount_percent": 21,
+      "image_url": "https://gymbeam.rs/media/catalog/product/b/o/borage_oil_90_sofgels_gymbeam_1_.png",
+      "original_price": 2203.12,
+      "discount_price": 1410.0,
+      "discount_percent": 36,
       "currency": "RSD",
-      "product_url": "https://gymbeam.rs/magnezijum-hlorid-gymbeam.html",
+      "product_url": "https://gymbeam.rs/ulje-borazine-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-05-08"
     },
@@ -892,32 +892,17 @@
       "date_scraped": "2026-05-08"
     },
     {
-      "id": "gymbeam_set-za-kuvanje-na-otvorenom-outdoor-gymbeam",
-      "name": "Set za kuvanje na otvorenom Outdoor - GymBeam",
+      "id": "gymbeam_water-powerball-gymbeam",
+      "name": "Water Powerball - GymBeam",
       "store": "GymBeam",
       "store_url": "https://www.gymbeam.rs",
       "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/c/o/cooking_1.jpg",
-      "original_price": 4564.52,
-      "discount_price": 2830.0,
-      "discount_percent": 38,
+      "image_url": "https://gymbeam.rs/media/catalog/product/w/a/water_powerball_-_gymbeam_1.jpg",
+      "original_price": 7272.73,
+      "discount_price": 4000.0,
+      "discount_percent": 45,
       "currency": "RSD",
-      "product_url": "https://gymbeam.rs/set-za-kuvanje-na-otvorenom-outdoor-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-05-08"
-    },
-    {
-      "id": "gymbeam_torba-za-prostirku-za-jogu-gymbeam",
-      "name": "Torba za prostirku za jogu - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/y/o/yoga_mat_bag_black_-_gymbeam-1.jpg.jpg",
-      "original_price": 2600.0,
-      "discount_price": 1950.0,
-      "discount_percent": 25,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/yoga-mat-bag-black-gymbeam.html",
+      "product_url": "https://gymbeam.rs/water-powerball-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-05-08"
     },
@@ -997,92 +982,47 @@
       "date_scraped": "2026-05-08"
     },
     {
-      "id": "gymbeam_katanac-quadguard-gymbeam",
-      "name": "Katanac QuadGuard - GymBeam",
+      "id": "gymbeam_ekstrakt-crne-ribizle-gymbeam",
+      "name": "Ekstrakt crne ribizle - GymBeam",
       "store": "GymBeam",
       "store_url": "https://www.gymbeam.rs",
       "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/t/h/the_quadguard_padlock_-_gymbeam_01.jpg",
-      "original_price": 1000.0,
-      "discount_price": 700.0,
-      "discount_percent": 30,
+      "image_url": "https://gymbeam.rs/media/catalog/product/b/l/blackcurrant_extract_60_caps_gymbeam.png",
+      "original_price": 1453.33,
+      "discount_price": 1090.0,
+      "discount_percent": 25,
       "currency": "RSD",
-      "product_url": "https://gymbeam.rs/katanac-quadguard-gymbeam.html",
+      "product_url": "https://gymbeam.rs/ekstrakt-crne-ribizle-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-05-08"
     },
     {
-      "id": "gymbeam_psenicna-tortilja-gymbeam",
-      "name": "Pšenična tortilja - GymBeam",
+      "id": "gymbeam_bio-obareni-pirinac-dugog-zrna-gymbeam",
+      "name": "BIO Obareni pirinač dugog zrna - GymBeam",
       "store": "GymBeam",
       "store_url": "https://www.gymbeam.rs",
       "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/t/o/tortilla_3x110_g_gymbeam.png",
-      "original_price": 308.64,
+      "image_url": "https://gymbeam.rs/media/catalog/product/b/i/bio-parboiled-rice-mockup.jpg",
+      "original_price": 378.79,
       "discount_price": 250.0,
-      "discount_percent": 19,
+      "discount_percent": 34,
       "currency": "RSD",
-      "product_url": "https://gymbeam.rs/psenicna-tortilja-gymbeam.html",
+      "product_url": "https://gymbeam.rs/bio-obareni-pirinac-dugog-zrna-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-05-08"
     },
     {
-      "id": "gymbeam_bio-proteinska-kasa-vanavita",
-      "name": "BIO proteinska kaša - VanaVita",
+      "id": "gymbeam_bio-smei-pirinac-dugog-zrna-gymbeam",
+      "name": "BIO smeđi pirinač dugog zrna - GymBeam",
       "store": "GymBeam",
       "store_url": "https://www.gymbeam.rs",
       "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/b/i/bio_protein_porridge_raspberry.png",
-      "original_price": 1243.59,
-      "discount_price": 970.0,
-      "discount_percent": 22,
+      "image_url": "https://gymbeam.rs/media/catalog/product/b/i/bio-brown-rice-mockup.jpg",
+      "original_price": 378.79,
+      "discount_price": 250.0,
+      "discount_percent": 34,
       "currency": "RSD",
-      "product_url": "https://gymbeam.rs/bio-proteinska-kasa-vanavita.html",
-      "in_stock": true,
-      "date_scraped": "2026-05-08"
-    },
-    {
-      "id": "gymbeam_ulje-borazine-gymbeam",
-      "name": "Ulje boražine - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/b/o/borage_oil_90_sofgels_gymbeam_1_.png",
-      "original_price": 2203.12,
-      "discount_price": 1410.0,
-      "discount_percent": 36,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/ulje-borazine-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-05-08"
-    },
-    {
-      "id": "gymbeam_reflektujuci-prsluk-pulse-gymbeam",
-      "name": "Reflektujući prsluk Pulse - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/p/u/pulse_reflective_vest_-_gymbeam-1.jpg",
-      "original_price": 2842.86,
-      "discount_price": 1990.0,
-      "discount_percent": 30,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/reflektujuci-prsluk-pulse-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-05-08"
-    },
-    {
-      "id": "gymbeam_hidroksitirozol-ekstrakt-masline-gymbeam",
-      "name": "Hidroksitirozol (ekstrakt masline) - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/h/y/hydroxytyrosol_60_caps_label_gymbeam_1_.jpg",
-      "original_price": 1094.59,
-      "discount_price": 810.0,
-      "discount_percent": 26,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/hidroksitirozol-gymbeam.html",
+      "product_url": "https://gymbeam.rs/bio-smedi-pirinac-dugog-zrna-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-05-08"
     },
@@ -1102,6 +1042,81 @@
       "date_scraped": "2026-05-08"
     },
     {
+      "id": "gymbeam_xbeam-focus-xp-gymbeam",
+      "name": "XBEAM Focus XP - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/f/o/focus_xp_351_g_strawberry-kiwi_gymbeam.png",
+      "original_price": 3883.33,
+      "discount_price": 2330.0,
+      "discount_percent": 40,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/focus-xp-stim-free-xbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-05-08"
+    },
+    {
+      "id": "gymbeam_set-za-kuvanje-na-otvorenom-outdoor-gymbeam",
+      "name": "Set za kuvanje na otvorenom Outdoor - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/c/o/cooking_1.jpg",
+      "original_price": 4564.52,
+      "discount_price": 2830.0,
+      "discount_percent": 38,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/set-za-kuvanje-na-otvorenom-outdoor-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-05-08"
+    },
+    {
+      "id": "gymbeam_psenicna-tortilja-gymbeam",
+      "name": "Pšenična tortilja - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/t/o/tortilla_3x110_g_gymbeam.png",
+      "original_price": 308.64,
+      "discount_price": 250.0,
+      "discount_percent": 19,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/psenicna-tortilja-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-05-08"
+    },
+    {
+      "id": "gymbeam_magnezijum-hlorid-gymbeam",
+      "name": "Magnezijum hlorid - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/m/a/magnesium_chloride_90_caps_gymbeam.png",
+      "original_price": 848.1,
+      "discount_price": 670.0,
+      "discount_percent": 21,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/magnezijum-hlorid-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-05-08"
+    },
+    {
+      "id": "gymbeam_hidroksitirozol-ekstrakt-masline-gymbeam",
+      "name": "Hidroksitirozol (ekstrakt masline) - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/h/y/hydroxytyrosol_60_caps_label_gymbeam_1_.jpg",
+      "original_price": 1094.59,
+      "discount_price": 810.0,
+      "discount_percent": 26,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/hidroksitirozol-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-05-08"
+    },
+    {
       "id": "gymbeam_italijanski-tost-hleb-gymbeam",
       "name": "Italijanski tost hleb - GymBeam",
       "store": "GymBeam",
@@ -1113,51 +1128,6 @@
       "discount_percent": 40,
       "currency": "RSD",
       "product_url": "https://gymbeam.rs/italijanski-tost-hleb-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-05-08"
-    },
-    {
-      "id": "gymbeam_bio-crveni-jasmin-pirinac-neoljusten-gymbeam",
-      "name": "BIO Crveni jasmin pirinač (neoljušten) - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/b/i/bio-red-jasmine-rice-mockup.jpg",
-      "original_price": 550.72,
-      "discount_price": 380.0,
-      "discount_percent": 31,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/bio-crveni-jasmin-pirinac-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-05-08"
-    },
-    {
-      "id": "gymbeam_sejker-tritan-gradient-orange-500-ml-gymbeam",
-      "name": "Šejker Tritan Gradient Orange 500 ml - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/s/h/shaker_tritan_gradient_orange_500_ml_gymbeam_1.jpg",
-      "original_price": 1250.0,
-      "discount_price": 850.0,
-      "discount_percent": 32,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/sejker-tritan-gradient-orange-500-ml-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-05-08"
-    },
-    {
-      "id": "gymbeam_water-powerball-gymbeam",
-      "name": "Water Powerball - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/w/a/water_powerball_-_gymbeam_1.jpg",
-      "original_price": 7272.73,
-      "discount_price": 4000.0,
-      "discount_percent": 45,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/water-powerball-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-05-08"
     },
@@ -1177,6 +1147,21 @@
       "date_scraped": "2026-05-08"
     },
     {
+      "id": "gymbeam_katanac-quadguard-gymbeam",
+      "name": "Katanac QuadGuard - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/t/h/the_quadguard_padlock_-_gymbeam_01.jpg",
+      "original_price": 1000.0,
+      "discount_price": 700.0,
+      "discount_percent": 30,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/katanac-quadguard-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-05-08"
+    },
+    {
       "id": "gymbeam_prsluk-sa-opterecenjem-tactical-weight-vest-black-gymbeam",
       "name": "Prsluk sa opterećenjem Tactical Weight Vest Black - GymBeam",
       "store": "GymBeam",
@@ -1192,32 +1177,17 @@
       "date_scraped": "2026-05-08"
     },
     {
-      "id": "gymbeam_xbeam-focus-xp-gymbeam",
-      "name": "XBEAM Focus XP - GymBeam",
+      "id": "gymbeam_torba-za-prostirku-za-jogu-gymbeam",
+      "name": "Torba za prostirku za jogu - GymBeam",
       "store": "GymBeam",
       "store_url": "https://www.gymbeam.rs",
       "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/f/o/focus_xp_351_g_strawberry-kiwi_gymbeam.png",
-      "original_price": 3883.33,
-      "discount_price": 2330.0,
-      "discount_percent": 40,
+      "image_url": "https://gymbeam.rs/media/catalog/product/y/o/yoga_mat_bag_black_-_gymbeam-1.jpg.jpg",
+      "original_price": 2600.0,
+      "discount_price": 1950.0,
+      "discount_percent": 25,
       "currency": "RSD",
-      "product_url": "https://gymbeam.rs/focus-xp-stim-free-xbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-05-08"
-    },
-    {
-      "id": "gymbeam_sportska-boca-sipsdips-pink-550-ml-beastpink",
-      "name": "Sportska boca Sips&Dips Pink 550 ml - BeastPink",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/s/p/sport_bottle_sips_dips_pink_50ml_beastpink_1.jpg",
-      "original_price": 120.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/sportska-boca-sips-dips-pink-550-ml-beastpink.html",
+      "product_url": "https://gymbeam.rs/yoga-mat-bag-black-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-05-08"
     },
@@ -1293,21 +1263,6 @@
       "discount_percent": 25,
       "currency": "RSD",
       "product_url": "https://fitlab.rs/sr/proizvodi/protein-shake-700g-creatin-300g-ostrovit",
-      "in_stock": true,
-      "date_scraped": "2026-05-08"
-    },
-    {
-      "id": "fitlab_pro-whey-100-227-kg-crea-pro-500g-basic-supplements",
-      "name": "Pro Whey 100% 2.27 kg + Crea Pro 500g - Basic Supplements",
-      "store": "FitLab",
-      "store_url": "https://fitlab.rs",
-      "category": "Suplementi",
-      "image_url": "https://fitlab.rs/products/2025/12/1CF0B836-A116-4779-82AE-AD6473986F58-scaled-e1765028630131.jpeg",
-      "original_price": 11080.0,
-      "discount_price": 9418.0,
-      "discount_percent": 15,
-      "currency": "RSD",
-      "product_url": "https://fitlab.rs/sr/proizvodi/pro-whey-100-2-27-kg-creapro-500g-basic-supplements",
       "in_stock": true,
       "date_scraped": "2026-05-08"
     },
@@ -1578,6 +1533,21 @@
       "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://fitlab.rs/sr/proizvodi/bcaa-12-000-457g-ultimate-nutrition",
+      "in_stock": true,
+      "date_scraped": "2026-05-08"
+    },
+    {
+      "id": "fitlab_creatine-monohydrate-sa-taurinom-300g-6pak",
+      "name": "Creatine monohydrate sa taurinom 300g - 6PAK",
+      "store": "FitLab",
+      "store_url": "https://fitlab.rs",
+      "category": "Suplementi",
+      "image_url": "https://fitlab.rs/products/2023/08/72EE6779-70DE-4566-8DB2-75501DB42D31-scaled-e1742940572944.jpeg",
+      "original_price": 2190.0,
+      "discount_price": 1750.0,
+      "discount_percent": 20,
+      "currency": "RSD",
+      "product_url": "https://fitlab.rs/sr/proizvodi/creatine-monohydrate-taurin-300g-6pak",
       "in_stock": true,
       "date_scraped": "2026-05-08"
     },
@@ -2129,8 +2099,8 @@
       "category": "Proteini",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/5-stars-whey-protein-3kg-cokolada.jpg?v=1741094353",
       "original_price": 7900.0,
-      "discount_price": 6950.0,
-      "discount_percent": 12,
+      "discount_price": 6760.0,
+      "discount_percent": 14,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/5-stars-whey-protein-3kg-visokokvalitetni-protein-za-rast-misica-i-oporavak",
       "in_stock": true,
@@ -2804,8 +2774,8 @@
       "category": "Ašvaganda",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/basic-supplements-ashwagandha-ksm-66-90-kapsula.png?v=1739884785",
       "original_price": 2690.0,
-      "discount_price": 2550.0,
-      "discount_percent": 5,
+      "discount_price": 2240.0,
+      "discount_percent": 17,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/basic-supplements-ksm-66-ashwagandha-90-kapsula-smanjenje-stresa-i-energija",
       "in_stock": true,
@@ -3044,8 +3014,8 @@
       "category": "Magnezijum",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-magnezijum-bisglicinat-100mg.png?v=1736253847",
       "original_price": 2880.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2370.0,
+      "discount_percent": 18,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-magnezijum-bisglicinat-100mg-podrska-za-misice-srce-i-energiju",
       "in_stock": true,
@@ -3059,8 +3029,8 @@
       "category": "Kolagen",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-kolagen-400g-malina.webp?v=1778226745",
       "original_price": 3200.0,
-      "discount_price": 2720.0,
-      "discount_percent": 15,
+      "discount_price": 2560.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/ostrovit-kolagen-vitamin-c-400g-breskva-za-kozu-i-zglobove",
       "in_stock": true,
@@ -3344,8 +3314,8 @@
       "category": "Akcije",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/eng_pm_OstroVit-Magnesium-Glycinate-90-capsules-26641_1.png?v=1738506769",
       "original_price": 1590.0,
-      "discount_price": 1460.0,
-      "discount_percent": 8,
+      "discount_price": 1090.0,
+      "discount_percent": 31,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/ostrovit-magnezijum-glicinat-90-kapsula-optimalna-apsorpcija-za-podrsku-organizmu",
       "in_stock": true,
@@ -3359,8 +3329,8 @@
       "category": "Omega masne kiseline",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-omega-3-extreme-90-kapsula.png?v=1734105938",
       "original_price": 2520.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1990.0,
+      "discount_percent": 21,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/ostrovit-omega-3-extreme-90-kapsula-podrska-srcu-mozgu-i-imunitetu",
       "in_stock": true,
@@ -3449,8 +3419,8 @@
       "category": "Cink",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-zinc-picolinate-200-tableta.png?v=1734112888",
       "original_price": 1620.0,
-      "discount_price": 1460.0,
-      "discount_percent": 10,
+      "discount_price": 1390.0,
+      "discount_percent": 14,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/ostrovit-cink-pikolinat-200-tableta-za-imunitet-i-kozu",
       "in_stock": true,
@@ -3494,8 +3464,8 @@
       "category": "Omega masne kiseline",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-omega-3-ultra-90-kapsula.png?v=1734107513",
       "original_price": 1590.0,
-      "discount_price": 1350.0,
-      "discount_percent": 15,
+      "discount_price": 1290.0,
+      "discount_percent": 19,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/ostrovit-omega-3-ultra-90-kapsula-visoka-koncentracija-za-zdravlje-srca-i-mozga",
       "in_stock": true,
@@ -3539,8 +3509,8 @@
       "category": "Mršavljenje",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/qnt-care-day-burner-90-kapsula.webp?v=1742032765",
       "original_price": 2800.0,
-      "discount_price": 2520.0,
-      "discount_percent": 10,
+      "discount_price": 2420.0,
+      "discount_percent": 14,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/qnt-day-burner-prirodni-sagorevac-masti-za-energiju-i-metabolizam",
       "in_stock": true,
@@ -3569,8 +3539,8 @@
       "category": "Kolagen",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-msm-plus-300-g-natural.png?v=1734104397",
       "original_price": 2100.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1790.0,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/ostrovit-msm-plus-300-g-natural-podrska-zglobovima-kozi-i-kosi",
       "in_stock": true,
@@ -3614,8 +3584,8 @@
       "category": "Magnezijum",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-magnezijum-citrat-400-mg-b6-90-tableta.png?v=1734089867",
       "original_price": 1290.0,
-      "discount_price": 980.0,
-      "discount_percent": 24,
+      "discount_price": 920.0,
+      "discount_percent": 29,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/ostrovit-magnezijum-citrat-400-mg-b6-energija-i-podrska-nervnom-sistemu",
       "in_stock": true,
@@ -4109,8 +4079,8 @@
       "category": "Koenzim Q10",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-ubichinon-dobrobit.jpg?v=1741728121",
       "original_price": 2890.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2390.0,
+      "discount_percent": 17,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/ostrovit-ubichinon-q10-vege-60-kapsula-prirodna-energija-i-podrska-za-zdravlje",
       "in_stock": true,
@@ -4439,8 +4409,8 @@
       "category": "L-karnitin",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/HAYA_ACETYL-L-CARNITINE-_1000MG_100CAPS.jpg?v=1738580556",
       "original_price": 2890.0,
-      "discount_price": 2450.0,
-      "discount_percent": 15,
+      "discount_price": 2390.0,
+      "discount_percent": 17,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/haya-labs-acetyl-l-karnitin-1000-mg-povecanje-energije-i-sagorevanje-masti",
       "in_stock": true,
@@ -4844,8 +4814,8 @@
       "category": "Kolagen",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/nutriversum-kolagen-peptidi-200g.webp?v=1741900938",
       "original_price": 2400.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1920.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/nutriversum-kolagen-peptidi-200g-za-zdravlje-zglobova-koze-i-kose",
       "in_stock": true,
@@ -4889,8 +4859,8 @@
       "category": "Magnezijum",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/master-of-pharmacy-magnesium-duo.webp?v=1741953247",
       "original_price": 1650.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1290.0,
+      "discount_percent": 22,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/m-e-v-feller-magnezijum-duo-60-tableta-za-ravnotezu-elektrolita-i-zdravlje-kostiju",
       "in_stock": true,
@@ -4919,8 +4889,8 @@
       "category": "Maka",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/bioandina-crvena-maka-kompleks-60-kapsula.png?v=1736367224",
       "original_price": 2390.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2190.0,
+      "discount_percent": 8,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/bioandina-crvena-maka-kompleks-60-kapsula-hormonska-ravnoteza-i-energija",
       "in_stock": true,
@@ -4934,8 +4904,8 @@
       "category": "Kurkumin",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/157_pm_HAYA_CURCUMIN-500MG_60CAPS.jpg?v=1738589410",
       "original_price": 1500.0,
-      "discount_price": 1380.0,
-      "discount_percent": 8,
+      "discount_price": 1340.0,
+      "discount_percent": 11,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/haya-labs-curcumin-turmeric-extract-500mg-za-podrsku-zglobovima-imunitetu-i-varenju",
       "in_stock": true,
@@ -5609,8 +5579,8 @@
       "category": "Amino kiseline",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/Haya_Labs_N-Acetyl_L-Cysteine_600mg.jpg?v=1738614522",
       "original_price": 1500.0,
-      "discount_price": 1380.0,
-      "discount_percent": 8,
+      "discount_price": 1340.0,
+      "discount_percent": 11,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/haya-labs-n-acetyl-l-cysteine-600mg-snazan-antioksidans-i-podrska-imunitetu",
       "in_stock": true,
@@ -5654,8 +5624,8 @@
       "category": "Proteini",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/vegan-protein-908g-biljni-protein-iz-pirinca-i-graska-vanila-dobrobit.webp?v=1752096686",
       "original_price": 2750.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2390.0,
+      "discount_percent": 13,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/basic-supplements-vegan-protein-908g-cist-misicni-rast",
       "in_stock": true,
@@ -5669,8 +5639,8 @@
       "category": "Proteini",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/vegan-protein-908g-biljni-protein-iz-pirinca-i-graska-dobrobit.webp?v=1752096686",
       "original_price": 2750.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2390.0,
+      "discount_percent": 13,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/basic-supplements-vegan-protein-908g-cist-misicni-rast",
       "in_stock": true,
@@ -5879,8 +5849,8 @@
       "category": "Omega masne kiseline",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/solgar-full-spectrum-omega-salmon-oil.webp?v=1738365903",
       "original_price": 5690.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 4790.0,
+      "discount_percent": 16,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/wild-alaskan-full-spectrum-omega-zdravlje-srca-zglobova-i-imuniteta",
       "in_stock": true,
@@ -6014,8 +5984,8 @@
       "category": "Vitamini",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/master-of-pharmacy-vitamin-b-complex-sa-vitaminom-c-60-tableta-dobrobit.webp?v=1757253733",
       "original_price": 1960.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1490.0,
+      "discount_percent": 24,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/m-e-v-feller-vitamin-b-kompleks-c-60-tableta-podrska-nervnom-sistemu-i-energiji",
       "in_stock": true,
@@ -6059,11 +6029,11 @@
       "category": "Koenzim Q10",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/master-of-pharmacy-coq10-a60.webp?v=1743804326",
       "original_price": 2800.0,
-      "discount_price": 2380.0,
-      "discount_percent": 15,
+      "discount_price": 2360.0,
+      "discount_percent": 16,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/m-e-v-feller-coq10-100mg-za-zdravlje-srca-i-kardiovaskularni-sistem",
-      "in_stock": false,
+      "in_stock": true,
       "date_scraped": "2026-05-08"
     },
     {
@@ -6989,8 +6959,8 @@
       "category": "Akcije",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/2001-quercetin-500-mg.jpg?v=1738616367",
       "original_price": 2890.0,
-      "discount_price": 2660.0,
-      "discount_percent": 8,
+      "discount_price": 2590.0,
+      "discount_percent": 10,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/haya-labs-100-quercetin-500mg-podrska-imunitetu-i-smanjenje-upala",
       "in_stock": true,
@@ -7844,8 +7814,8 @@
       "category": "Akcije",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-vitamin-c-1000-g.png?v=1734112302",
       "original_price": 1890.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1490.0,
+      "discount_percent": 21,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/ostrovit-vitamin-c-1000-g-prirodni-prah-za-imunitet-i-energiju",
       "in_stock": true,
@@ -8894,8 +8864,8 @@
       "category": "Maka",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/biotech-usa-maca-60-kapsula-dobrobit.webp?v=1759403795",
       "original_price": 1890.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1590.0,
+      "discount_percent": 16,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/biotechusa-maca",
       "in_stock": true,
@@ -9044,8 +9014,8 @@
       "category": "Vitamini",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/natural-wealth-ester-c-500-mg-60-tableta.png?v=1733225647",
       "original_price": 2290.0,
-      "discount_price": 1940.0,
-      "discount_percent": 15,
+      "discount_price": 1790.0,
+      "discount_percent": 22,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/natural-wealth-ester-c-500-mg-60-tableta-blaga-formula-za-imunitet",
       "in_stock": true,
@@ -10198,9 +10168,9 @@
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
       "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/iso-whey-zero-tir.webp",
-      "original_price": 9950.0,
-      "discount_price": 9400.0,
-      "discount_percent": 6,
+      "original_price": 10500.0,
+      "discount_price": 9800.0,
+      "discount_percent": 7,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/proteini/whey-protein-isolate/biotech-isowhey-zero/",
       "in_stock": true,
@@ -10218,21 +10188,6 @@
       "discount_percent": 10,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/proteini/scitec-100-whey-protein-professional-2-35-kg/",
-      "in_stock": true,
-      "date_scraped": "2026-05-08"
-    },
-    {
-      "id": "exyu-fitness_tesla-whey-charger-100-5000-gr",
-      "name": "Tesla Whey Charger 100, 5000 gr",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/tesla_whey_charger_5_kg.webp",
-      "original_price": 11900.0,
-      "discount_price": 9800.0,
-      "discount_percent": 18,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/tesla-whey-charger-100/",
       "in_stock": true,
       "date_scraped": "2026-05-08"
     },
@@ -10818,6 +10773,21 @@
       "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/superior-whey-core-5000gr/",
+      "in_stock": false,
+      "date_scraped": "2026-05-08"
+    },
+    {
+      "id": "exyu-fitness_tesla-whey-charger-100-5000-gr",
+      "name": "Tesla Whey Charger 100, 5000 gr",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/tesla_whey_charger_5_kg.webp",
+      "original_price": 11900.0,
+      "discount_price": 9800.0,
+      "discount_percent": 18,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/tesla-whey-charger-100/",
       "in_stock": false,
       "date_scraped": "2026-05-08"
     },
@@ -12219,10 +12189,10 @@
   ],
   "weekly_summary": {
     "week_of": "2026-05-04",
-    "generated_at": "2026-05-08 13:13",
-    "total_products": 813,
-    "total_discounted": 517,
-    "avg_discount_percent": 16.9,
+    "generated_at": "2026-05-08 19:07",
+    "total_products": 811,
+    "total_discounted": 529,
+    "avg_discount_percent": 17.2,
     "top_discounts": [
       {
         "id": "gymbeam_flasa-thirst-trap-shadow-500-ml-beastpink",
@@ -12236,6 +12206,21 @@
         "discount_percent": 80,
         "currency": "RSD",
         "product_url": "https://gymbeam.rs/flasa-thirst-trap-shadow-500-ml-beastpink.html",
+        "in_stock": true,
+        "date_scraped": "2026-05-08"
+      },
+      {
+        "id": "gymbeam_sportska-boca-sipsdips-pink-550-ml-beastpink",
+        "name": "Sportska boca Sips&Dips Pink 550 ml - BeastPink",
+        "store": "GymBeam",
+        "store_url": "https://www.gymbeam.rs",
+        "category": "Rasprodaja",
+        "image_url": "https://gymbeam.rs/media/catalog/product/s/p/sport_bottle_sips_dips_pink_50ml_beastpink_1.jpg",
+        "original_price": 600.0,
+        "discount_price": 120.0,
+        "discount_percent": 80,
+        "currency": "RSD",
+        "product_url": "https://gymbeam.rs/sportska-boca-sips-dips-pink-550-ml-beastpink.html",
         "in_stock": true,
         "date_scraped": "2026-05-08"
       },
@@ -12508,21 +12493,6 @@
         "product_url": "https://gymbeam.rs/flasa-od-bambusa-infuse-500-ml-vanavita.html",
         "in_stock": true,
         "date_scraped": "2026-05-08"
-      },
-      {
-        "id": "gymbeam_water-powerball-gymbeam",
-        "name": "Water Powerball - GymBeam",
-        "store": "GymBeam",
-        "store_url": "https://www.gymbeam.rs",
-        "category": "Rasprodaja",
-        "image_url": "https://gymbeam.rs/media/catalog/product/w/a/water_powerball_-_gymbeam_1.jpg",
-        "original_price": 7272.73,
-        "discount_price": 4000.0,
-        "discount_percent": 45,
-        "currency": "RSD",
-        "product_url": "https://gymbeam.rs/water-powerball-gymbeam.html",
-        "in_stock": true,
-        "date_scraped": "2026-05-08"
       }
     ],
     "by_store": {
@@ -12532,14 +12502,14 @@
         "avg_discount": 18.5
       },
       "GymBeam": {
-        "count": 48,
+        "count": 47,
         "store_url": "https://www.gymbeam.rs",
-        "avg_discount": 34.5
+        "avg_discount": 35.6
       },
       "FitLab": {
         "count": 22,
         "store_url": "https://fitlab.rs",
-        "avg_discount": 21.9
+        "avg_discount": 22.1
       },
       "TitaniumSport": {
         "count": 25,
@@ -12552,9 +12522,9 @@
         "avg_discount": 40.0
       },
       "Dobrobit": {
-        "count": 272,
+        "count": 285,
         "store_url": "https://dobrobit.rs",
-        "avg_discount": 10.8
+        "avg_discount": 11.3
       },
       "ExYu Fitness": {
         "count": 63,
@@ -12588,8 +12558,8 @@
         "avg_discount": 19.9
       },
       "Rasprodaja": {
-        "count": 110,
-        "avg_discount": 23.6
+        "count": 109,
+        "avg_discount": 24.0
       },
       "Najprodavanije": {
         "count": 2,
@@ -12597,19 +12567,19 @@
       },
       "Suplementi": {
         "count": 16,
-        "avg_discount": 21.9
+        "avg_discount": 22.2
       },
       "Preporučujemo": {
         "count": 4,
         "avg_discount": 22.5
       },
       "Akcije": {
-        "count": 110,
-        "avg_discount": 14.1
+        "count": 111,
+        "avg_discount": 14.4
       },
       "Proteini": {
-        "count": 58,
-        "avg_discount": 9.6
+        "count": 60,
+        "avg_discount": 9.7
       },
       "Kreatin": {
         "count": 4,
@@ -12617,35 +12587,39 @@
       },
       "Ašvaganda": {
         "count": 5,
-        "avg_discount": 10.4
+        "avg_discount": 12.8
       },
       "Magnezijum": {
-        "count": 10,
-        "avg_discount": 11.7
+        "count": 12,
+        "avg_discount": 13.5
       },
       "Vitamini": {
-        "count": 20,
-        "avg_discount": 11.1
+        "count": 21,
+        "avg_discount": 12.0
       },
       "Kolagen": {
-        "count": 5,
-        "avg_discount": 10.8
+        "count": 7,
+        "avg_discount": 13.4
       },
       "Mršavljenje": {
         "count": 5,
-        "avg_discount": 15.0
+        "avg_discount": 15.8
       },
       "Omega masne kiseline": {
-        "count": 13,
-        "avg_discount": 12.2
+        "count": 15,
+        "avg_discount": 13.3
       },
       "Cink": {
         "count": 2,
-        "avg_discount": 10.5
+        "avg_discount": 12.5
       },
       "Probiotici": {
         "count": 15,
         "avg_discount": 15.2
+      },
+      "Koenzim Q10": {
+        "count": 10,
+        "avg_discount": 10.7
       },
       "Gaineri": {
         "count": 6,
@@ -12653,29 +12627,25 @@
       },
       "L-karnitin": {
         "count": 4,
-        "avg_discount": 9.5
+        "avg_discount": 10.0
       },
       "Amino kiseline": {
         "count": 22,
-        "avg_discount": 9.1
+        "avg_discount": 9.3
       },
       "Gvožđe": {
         "count": 2,
         "avg_discount": 10.5
       },
+      "Maka": {
+        "count": 3,
+        "avg_discount": 9.7
+      },
       "Kurkumin": {
         "count": 3,
-        "avg_discount": 6.0
-      },
-      "Koenzim Q10": {
-        "count": 9,
-        "avg_discount": 9.9
+        "avg_discount": 7.0
       },
       "Hrom": {
-        "count": 1,
-        "avg_discount": 5.0
-      },
-      "Maka": {
         "count": 1,
         "avg_discount": 5.0
       },
@@ -12741,7 +12711,7 @@
     "GymBeam": {
       "total": 50,
       "with_prices": 50,
-      "with_discounts": 48,
+      "with_discounts": 49,
       "status": "ok"
     },
     "FitLab": {
@@ -12765,7 +12735,7 @@
     "Dobrobit": {
       "total": 536,
       "with_prices": 536,
-      "with_discounts": 272,
+      "with_discounts": 285,
       "status": "ok"
     },
     "ExYu Fitness": {
