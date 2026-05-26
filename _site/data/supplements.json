@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-26T09:39:24.639538",
+  "scraped_at": "2026-05-26T14:49:27.321607",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -18,8 +18,8 @@
     "X Sport"
   ],
   "stores_failed": [],
-  "total_products": 860,
-  "total_discounted": 570,
+  "total_products": 867,
+  "total_discounted": 578,
   "products": [
     {
       "id": "supplement-store_100-whey-prostar-239kg",
@@ -532,21 +532,6 @@
       "date_scraped": "2026-05-26"
     },
     {
-      "id": "gymbeam_bio-greens-mix-vanavita",
-      "name": "BIO Greens Mix - VanaVita",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/s/k/sk-whs-2.jpg",
-      "original_price": 2350.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/bio-greens-mix-vanavita.html",
-      "in_stock": true,
-      "date_scraped": "2026-05-26"
-    },
-    {
       "id": "gymbeam_bio-zero-penne-gymbeam",
       "name": "BIO ZERO Penne - GymBeam",
       "store": "GymBeam",
@@ -663,6 +648,21 @@
       "discount_percent": 30,
       "currency": "RSD",
       "product_url": "https://gymbeam.rs/magnezijum-glukonat-caps-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-05-26"
+    },
+    {
+      "id": "gymbeam_womens-hyper-fitness-gloves-black-beastpink",
+      "name": "Women‘s Hyper Fitness Gloves Black - BeastPink",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/w/o/women_s_hyper_fitness_gloves_black_-_beastpink-1_2_.jpg",
+      "original_price": 1500.0,
+      "discount_price": 1110.0,
+      "discount_percent": 26,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/women-s-hyper-fitness-gloves-black-beastpink.html",
       "in_stock": true,
       "date_scraped": "2026-05-26"
     },
@@ -847,51 +847,6 @@
       "date_scraped": "2026-05-26"
     },
     {
-      "id": "gymbeam_ranac-running-hydropack-propace-gymbeam",
-      "name": "Ranac Running Hydropack ProPace - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/r/u/running_hydropack_propace_-_gymbeam-1.jpg",
-      "original_price": 7169.23,
-      "discount_price": 4660.0,
-      "discount_percent": 35,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/running-hydropack-propace-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-05-26"
-    },
-    {
-      "id": "gymbeam_sejker-steel-650-ml-white-beastpink",
-      "name": "Šejker Steel 650 ml White - BeastPink",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/s/t/steel_shaker_650_ml_white_beastpink_1.jpg",
-      "original_price": 1785.71,
-      "discount_price": 1000.0,
-      "discount_percent": 44,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/sejker-steel-650-ml-white-beastpink.html",
-      "in_stock": true,
-      "date_scraped": "2026-05-26"
-    },
-    {
-      "id": "gymbeam_termo-flasa-white-500-ml-beastpink",
-      "name": "Termo flaša White 500 ml - BeastPink",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/t/h/thermo_tumbler_500_ml_white_beastpink_1.jpg",
-      "original_price": 1795.45,
-      "discount_price": 790.0,
-      "discount_percent": 56,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/termo-flasa-white-500-ml-beastpink.html",
-      "in_stock": true,
-      "date_scraped": "2026-05-26"
-    },
-    {
       "id": "gymbeam_termos-sense-vacuum-arona-500-ml-beastpink",
       "name": "Termos Sense Vacuum Arona 500 ml - BeastPink",
       "store": "GymBeam",
@@ -907,32 +862,122 @@
       "date_scraped": "2026-05-26"
     },
     {
-      "id": "gymbeam_flasa-hydrator-189-l-beastpink",
-      "name": "Flaša Hydrator 1,89 l - BeastPink",
+      "id": "gymbeam_sejker-tritan-gradient-orange-500-ml-gymbeam",
+      "name": "Šejker Tritan Gradient Orange 500 ml - GymBeam",
       "store": "GymBeam",
       "store_url": "https://www.gymbeam.rs",
       "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/f/l/fl_as_a_hydrator_1_89_pink_-_beastpink-1.jpg",
-      "original_price": 952.38,
-      "discount_price": 400.0,
-      "discount_percent": 58,
+      "image_url": "https://gymbeam.rs/media/catalog/product/s/h/shaker_tritan_gradient_orange_500_ml_gymbeam_1.jpg",
+      "original_price": 1250.0,
+      "discount_price": 850.0,
+      "discount_percent": 32,
       "currency": "RSD",
-      "product_url": "https://gymbeam.rs/flasa-hydrator-1-89-l-beastpink.html",
+      "product_url": "https://gymbeam.rs/sejker-tritan-gradient-orange-500-ml-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-05-26"
     },
     {
-      "id": "gymbeam_dusek-za-spavanje-na-naduvavanje-black-gymbeam",
-      "name": "Dušek za spavanje na naduvavanje Black - GymBeam",
+      "id": "gymbeam_reflektujuci-prsluk-pulse-gymbeam",
+      "name": "Reflektujući prsluk Pulse - GymBeam",
       "store": "GymBeam",
       "store_url": "https://www.gymbeam.rs",
       "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/i/n/inflatable_sleeping_mattress_black_-_gymbeam-1.jpg",
-      "original_price": 3883.33,
-      "discount_price": 2330.0,
-      "discount_percent": 40,
+      "image_url": "https://gymbeam.rs/media/catalog/product/p/u/pulse_reflective_vest_-_gymbeam-1.jpg",
+      "original_price": 2842.86,
+      "discount_price": 1990.0,
+      "discount_percent": 30,
       "currency": "RSD",
-      "product_url": "https://gymbeam.rs/dusek-za-spavanje-na-naduvavanje-black-gymbeam.html",
+      "product_url": "https://gymbeam.rs/reflektujuci-prsluk-pulse-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-05-26"
+    },
+    {
+      "id": "gymbeam_ranac-za-hranu-fit-prep-black-gymbeam",
+      "name": "Ranac za hranu FIT Prep Black - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/f/i/fit_prep_food_backpack_black_-_gymbeam-1.jpg",
+      "original_price": 6287.88,
+      "discount_price": 4150.0,
+      "discount_percent": 34,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/ranac-za-hranu-fit-prep-black-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-05-26"
+    },
+    {
+      "id": "gymbeam_boca-hydrator-189-l-white-beastpink",
+      "name": "Boca Hydrator 1.89 l White - BeastPink",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/h/y/hydrator_bottle_1_89_l_white_-_beastpink-1-bc.jpg",
+      "original_price": 952.38,
+      "discount_price": 400.0,
+      "discount_percent": 58,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/boca-hydrator-1-89-l-white-beastpink.html",
+      "in_stock": true,
+      "date_scraped": "2026-05-26"
+    },
+    {
+      "id": "gymbeam_vijaca-devotion-pink-beastpink",
+      "name": "Vijača Devotion pink - BeastPink",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/_/v/_vihadlo_devotion_pink_-_beastpink-1.jpg",
+      "original_price": 1564.1,
+      "discount_price": 610.0,
+      "discount_percent": 61,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/vijaca-devotion-pink-beastpink.html",
+      "in_stock": true,
+      "date_scraped": "2026-05-26"
+    },
+    {
+      "id": "gymbeam_gumice-za-kosu-work-it-beastpink",
+      "name": "Gumice za kosu Work-it - BeastPink",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/s/c/scrunchies_work-it_-_beastpink-1.jpg",
+      "original_price": 944.44,
+      "discount_price": 340.0,
+      "discount_percent": 64,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/gumice-za-kosu-work-it-beastpink.html",
+      "in_stock": true,
+      "date_scraped": "2026-05-26"
+    },
+    {
+      "id": "gymbeam_staklena-flasa-infuser-400-ml-gymbeam",
+      "name": "Staklena flaša Infuser 400 ml - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/g/l/glass_infuser_bottle_400_ml_-_gymbeam-1.jpg",
+      "original_price": 1953.12,
+      "discount_price": 1250.0,
+      "discount_percent": 36,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/staklena-flasa-infuser-400-ml-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-05-26"
+    },
+    {
+      "id": "gymbeam_terapeutski-steznik-za-skocni-zglob-i-stopalo-hot-cold-gymbeam",
+      "name": "Terapeutski steznik za skočni zglob i stopalo Hot-Cold - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/t/h/therapeutic_ankle___foot_brace_hot_cold__gymbeam_1_.jpg",
+      "original_price": 3092.59,
+      "discount_price": 1670.0,
+      "discount_percent": 46,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/terapeutski-steznik-za-skocni-zglob-i-stopalo-hot-cold-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-05-26"
     },
@@ -982,17 +1027,62 @@
       "date_scraped": "2026-05-26"
     },
     {
-      "id": "gymbeam_ranac-za-hranu-fit-prep-black-gymbeam",
-      "name": "Ranac za hranu FIT Prep Black - GymBeam",
+      "id": "gymbeam_ranac-running-hydropack-propace-gymbeam",
+      "name": "Ranac Running Hydropack ProPace - GymBeam",
       "store": "GymBeam",
       "store_url": "https://www.gymbeam.rs",
       "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/f/i/fit_prep_food_backpack_black_-_gymbeam-1.jpg",
-      "original_price": 6287.88,
-      "discount_price": 4150.0,
-      "discount_percent": 34,
+      "image_url": "https://gymbeam.rs/media/catalog/product/r/u/running_hydropack_propace_-_gymbeam-1.jpg",
+      "original_price": 7169.23,
+      "discount_price": 4660.0,
+      "discount_percent": 35,
       "currency": "RSD",
-      "product_url": "https://gymbeam.rs/ranac-za-hranu-fit-prep-black-gymbeam.html",
+      "product_url": "https://gymbeam.rs/running-hydropack-propace-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-05-26"
+    },
+    {
+      "id": "gymbeam_peskir-za-teretanu-mini-white-beastpink",
+      "name": "Peškir za teretanu Mini White - BeastPink",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/m/i/mini_fitness_towel_white_-_beastpink-1.jpg",
+      "original_price": 1000.0,
+      "discount_price": 390.0,
+      "discount_percent": 61,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/peskir-za-teretanu-mini-white-beastpink.html",
+      "in_stock": true,
+      "date_scraped": "2026-05-26"
+    },
+    {
+      "id": "gymbeam_sejker-steel-650-ml-white-beastpink",
+      "name": "Šejker Steel 650 ml White - BeastPink",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/s/t/steel_shaker_650_ml_white_beastpink_1.jpg",
+      "original_price": 1785.71,
+      "discount_price": 1000.0,
+      "discount_percent": 44,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/sejker-steel-650-ml-white-beastpink.html",
+      "in_stock": true,
+      "date_scraped": "2026-05-26"
+    },
+    {
+      "id": "gymbeam_termo-flasa-white-500-ml-beastpink",
+      "name": "Termo flaša White 500 ml - BeastPink",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/t/h/thermo_tumbler_500_ml_white_beastpink_1.jpg",
+      "original_price": 1795.45,
+      "discount_price": 790.0,
+      "discount_percent": 56,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/termo-flasa-white-500-ml-beastpink.html",
       "in_stock": true,
       "date_scraped": "2026-05-26"
     },
@@ -1012,47 +1102,32 @@
       "date_scraped": "2026-05-26"
     },
     {
-      "id": "gymbeam_sklopiva-flasa-grey-500-ml-beastpink",
-      "name": "Sklopiva flaša Grey 500 ml - BeastPink",
+      "id": "gymbeam_bio-proteinska-kasa-vanavita",
+      "name": "BIO proteinska kaša - VanaVita",
       "store": "GymBeam",
       "store_url": "https://www.gymbeam.rs",
       "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/f/o/foldable_bottle_grey_500_ml_-_beastpink-01.jpg",
-      "original_price": 1142.86,
+      "image_url": "https://gymbeam.rs/media/catalog/product/b/i/bio_protein_porridge_raspberry.png",
+      "original_price": 1243.59,
+      "discount_price": 970.0,
+      "discount_percent": 22,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/bio-proteinska-kasa-vanavita.html",
+      "in_stock": true,
+      "date_scraped": "2026-05-26"
+    },
+    {
+      "id": "gymbeam_flasa-hydrator-189-l-beastpink",
+      "name": "Flaša Hydrator 1,89 l - BeastPink",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/f/l/fl_as_a_hydrator_1_89_pink_-_beastpink-1.jpg",
+      "original_price": 952.38,
       "discount_price": 400.0,
-      "discount_percent": 65,
+      "discount_percent": 58,
       "currency": "RSD",
-      "product_url": "https://gymbeam.rs/sklopiva-flasa-grey-500-ml-beastpink.html",
-      "in_stock": true,
-      "date_scraped": "2026-05-26"
-    },
-    {
-      "id": "gymbeam_sejker-tritan-gradient-orange-500-ml-gymbeam",
-      "name": "Šejker Tritan Gradient Orange 500 ml - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/s/h/shaker_tritan_gradient_orange_500_ml_gymbeam_1.jpg",
-      "original_price": 1250.0,
-      "discount_price": 850.0,
-      "discount_percent": 32,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/sejker-tritan-gradient-orange-500-ml-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-05-26"
-    },
-    {
-      "id": "gymbeam_vijaca-devotion-pink-beastpink",
-      "name": "Vijača Devotion pink - BeastPink",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/_/v/_vihadlo_devotion_pink_-_beastpink-1.jpg",
-      "original_price": 1564.1,
-      "discount_price": 610.0,
-      "discount_percent": 61,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/vijaca-devotion-pink-beastpink.html",
+      "product_url": "https://gymbeam.rs/flasa-hydrator-1-89-l-beastpink.html",
       "in_stock": true,
       "date_scraped": "2026-05-26"
     },
@@ -1072,47 +1147,47 @@
       "date_scraped": "2026-05-26"
     },
     {
-      "id": "gymbeam_gumice-za-kosu-work-it-beastpink",
-      "name": "Gumice za kosu Work-it - BeastPink",
+      "id": "gymbeam_italijanski-tost-hleb-gymbeam",
+      "name": "Italijanski tost hleb - GymBeam",
       "store": "GymBeam",
       "store_url": "https://www.gymbeam.rs",
       "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/s/c/scrunchies_work-it_-_beastpink-1.jpg",
-      "original_price": 944.44,
-      "discount_price": 340.0,
-      "discount_percent": 64,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/gumice-za-kosu-work-it-beastpink.html",
-      "in_stock": true,
-      "date_scraped": "2026-05-26"
-    },
-    {
-      "id": "gymbeam_xbeam-focus-xp-gymbeam",
-      "name": "XBEAM Focus XP - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/f/o/focus_xp_351_g_strawberry-kiwi_gymbeam.png",
-      "original_price": 3883.33,
-      "discount_price": 2330.0,
+      "image_url": "https://gymbeam.rs/media/catalog/product/i/t/italian_toast_bread_pan_bauletto_350_g_gymbeam_01.png",
+      "original_price": 550.0,
+      "discount_price": 330.0,
       "discount_percent": 40,
       "currency": "RSD",
-      "product_url": "https://gymbeam.rs/focus-xp-stim-free-xbeam.html",
+      "product_url": "https://gymbeam.rs/italijanski-tost-hleb-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-05-26"
     },
     {
-      "id": "gymbeam_peskir-za-teretanu-mini-white-beastpink",
-      "name": "Peškir za teretanu Mini White - BeastPink",
+      "id": "gymbeam_ekstrakt-crne-ribizle-gymbeam",
+      "name": "Ekstrakt crne ribizle - GymBeam",
       "store": "GymBeam",
       "store_url": "https://www.gymbeam.rs",
       "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/m/i/mini_fitness_towel_white_-_beastpink-1.jpg",
-      "original_price": 1000.0,
-      "discount_price": 390.0,
-      "discount_percent": 61,
+      "image_url": "https://gymbeam.rs/media/catalog/product/b/l/blackcurrant_extract_60_caps_gymbeam.png",
+      "original_price": 1453.33,
+      "discount_price": 1090.0,
+      "discount_percent": 25,
       "currency": "RSD",
-      "product_url": "https://gymbeam.rs/peskir-za-teretanu-mini-white-beastpink.html",
+      "product_url": "https://gymbeam.rs/ekstrakt-crne-ribizle-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-05-26"
+    },
+    {
+      "id": "gymbeam_sklopiva-flasa-grey-500-ml-beastpink",
+      "name": "Sklopiva flaša Grey 500 ml - BeastPink",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/f/o/foldable_bottle_grey_500_ml_-_beastpink-01.jpg",
+      "original_price": 1142.86,
+      "discount_price": 400.0,
+      "discount_percent": 65,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/sklopiva-flasa-grey-500-ml-beastpink.html",
       "in_stock": true,
       "date_scraped": "2026-05-26"
     },
@@ -1147,6 +1222,36 @@
       "date_scraped": "2026-05-26"
     },
     {
+      "id": "gymbeam_prsluk-sa-opterecenjem-tactical-weight-vest-black-gymbeam",
+      "name": "Prsluk sa opterećenjem Tactical Weight Vest Black - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/t/a/tactical_weight_vest_black_-_gymbeam-1.jpg",
+      "original_price": 11840.0,
+      "discount_price": 8880.0,
+      "discount_percent": 25,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/tactical-weight-vest-black-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-05-26"
+    },
+    {
+      "id": "gymbeam_xbeam-focus-xp-gymbeam",
+      "name": "XBEAM Focus XP - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/f/o/focus_xp_351_g_strawberry-kiwi_gymbeam.png",
+      "original_price": 3883.33,
+      "discount_price": 2330.0,
+      "discount_percent": 40,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/focus-xp-stim-free-xbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-05-26"
+    },
+    {
       "id": "gymbeam_set-za-kuvanje-na-otvorenom-outdoor-gymbeam",
       "name": "Set za kuvanje na otvorenom Outdoor - GymBeam",
       "store": "GymBeam",
@@ -1162,32 +1267,17 @@
       "date_scraped": "2026-05-26"
     },
     {
-      "id": "gymbeam_staklena-flasa-infuser-400-ml-gymbeam",
-      "name": "Staklena flaša Infuser 400 ml - GymBeam",
+      "id": "gymbeam_dusek-za-spavanje-na-naduvavanje-black-gymbeam",
+      "name": "Dušek za spavanje na naduvavanje Black - GymBeam",
       "store": "GymBeam",
       "store_url": "https://www.gymbeam.rs",
       "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/g/l/glass_infuser_bottle_400_ml_-_gymbeam-1.jpg",
-      "original_price": 1953.12,
-      "discount_price": 1250.0,
-      "discount_percent": 36,
+      "image_url": "https://gymbeam.rs/media/catalog/product/i/n/inflatable_sleeping_mattress_black_-_gymbeam-1.jpg",
+      "original_price": 3883.33,
+      "discount_price": 2330.0,
+      "discount_percent": 40,
       "currency": "RSD",
-      "product_url": "https://gymbeam.rs/staklena-flasa-infuser-400-ml-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-05-26"
-    },
-    {
-      "id": "gymbeam_terapeutski-steznik-za-skocni-zglob-i-stopalo-hot-cold-gymbeam",
-      "name": "Terapeutski steznik za skočni zglob i stopalo Hot-Cold - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/t/h/therapeutic_ankle___foot_brace_hot_cold__gymbeam_1_.jpg",
-      "original_price": 3092.59,
-      "discount_price": 1670.0,
-      "discount_percent": 46,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/terapeutski-steznik-za-skocni-zglob-i-stopalo-hot-cold-gymbeam.html",
+      "product_url": "https://gymbeam.rs/dusek-za-spavanje-na-naduvavanje-black-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-05-26"
     },
@@ -1542,7 +1632,7 @@
       "store": "FitLab",
       "store_url": "https://fitlab.rs",
       "category": "Suplementi",
-      "image_url": "https://fitlab.rs/products/2024/11/protein-izolat-whey-e1747912910262.png",
+      "image_url": "https://fitlab.rs/products/2026/05/whey-protein-5stars-3kg-1779789381099.png",
       "original_price": 7990.0,
       "discount_price": 6790.0,
       "discount_percent": 15,
@@ -10222,21 +10312,6 @@
       "date_scraped": "2026-05-26"
     },
     {
-      "id": "exyu-fitness_universal-animal-flex-44-paketica",
-      "name": "Universal Animal Flex 44 paketića",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/animal-flex.webp",
-      "original_price": 6500.0,
-      "discount_price": 5990.0,
-      "discount_percent": 8,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/universal-animal-flex-44-paketica/",
-      "in_stock": true,
-      "date_scraped": "2026-05-26"
-    },
-    {
       "id": "exyu-fitness_applied-nutrition-critical-whey-2000-gr",
       "name": "Applied Nutrition Critical Whey, 2000 gr",
       "store": "ExYu Fitness",
@@ -10728,6 +10803,21 @@
       "discount_percent": 10,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/proteini/scitec-100-whey-isolate-2000gr/",
+      "in_stock": false,
+      "date_scraped": "2026-05-26"
+    },
+    {
+      "id": "exyu-fitness_universal-animal-flex-44-paketica",
+      "name": "Universal Animal Flex 44 paketića",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/animal-flex.webp",
+      "original_price": 6500.0,
+      "discount_price": 5990.0,
+      "discount_percent": 8,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/universal-animal-flex-44-paketica/",
       "in_stock": false,
       "date_scraped": "2026-05-26"
     },
@@ -11737,6 +11827,36 @@
       "date_scraped": "2026-05-26"
     },
     {
+      "id": "amg-sport_advanced-whey-protein-900gr",
+      "name": "ADVANCED WHEY PROTEIN 900GR",
+      "store": "AMG Sport",
+      "store_url": "https://amgsport.net",
+      "category": "Naughty Boy",
+      "image_url": "https://amgsport.net/wp-content/uploads/2024/10/ADVANCED-WHEY-900g-CHOCOLATE-BROWNIE.jpg",
+      "original_price": 4200.0,
+      "discount_price": 3900.0,
+      "discount_percent": 7,
+      "currency": "RSD",
+      "product_url": "https://amgsport.net/prodavnica/advanced-whey-protein-900gr/",
+      "in_stock": true,
+      "date_scraped": "2026-05-26"
+    },
+    {
+      "id": "amg-sport_advanced-whey-protein-2kg",
+      "name": "ADVANCED WHEY PROTEIN 2KG",
+      "store": "AMG Sport",
+      "store_url": "https://amgsport.net",
+      "category": "Naughty Boy",
+      "image_url": "https://amgsport.net/wp-content/uploads/2024/10/Advanced-whey-2010g-chocolate-brownie.jpg",
+      "original_price": 7600.0,
+      "discount_price": 6950.0,
+      "discount_percent": 9,
+      "currency": "RSD",
+      "product_url": "https://amgsport.net/prodavnica/advanced-whey-protein-2kg/",
+      "in_stock": true,
+      "date_scraped": "2026-05-26"
+    },
+    {
       "id": "amg-sport_micellar-casein",
       "name": "MICELLAR CASEIN",
       "store": "AMG Sport",
@@ -12412,6 +12532,21 @@
       "date_scraped": "2026-05-26"
     },
     {
+      "id": "ogistra-nutrition_rabeko-zero-syrup-slatki-prelivi-bez-secera-350ml",
+      "name": "Rabeko Zero Syrup – Slatki prelivi bez šećera (350ml)",
+      "store": "Ogistra Nutrition",
+      "store_url": "https://www.ogistra-nutrition-shop.com",
+      "category": "Ostalo",
+      "image_url": "https://www.ogistra-nutrition-shop.com/4602-home_default/rabeko-zero-syrup-slatki-prelivi-bez-secera-350ml.jpg",
+      "original_price": 650.0,
+      "discount_price": 552.5,
+      "discount_percent": 15,
+      "currency": "RSD",
+      "product_url": "https://www.ogistra-nutrition-shop.com/zdrava-ishrana/1651-4380-rabeko-zero-syrup-slatki-prelivi-bez-secera-350ml.html#/267-ukus-chocolate",
+      "in_stock": true,
+      "date_scraped": "2026-05-26"
+    },
+    {
       "id": "ogistra-nutrition_beauty-paket-collagen-coenzyme-q10",
       "name": "BEAUTY PAKET - COLLAGEN + COENZYME Q10",
       "store": "Ogistra Nutrition",
@@ -12438,21 +12573,6 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/katalog/1561-4051-jim-beef-proteinski-beef-jerky.html#/353-ukus-red_hot_beef_jerky",
-      "in_stock": true,
-      "date_scraped": "2026-05-26"
-    },
-    {
-      "id": "ogistra-nutrition_rabeko-zero-syrup-slatki-prelivi-bez-secera-350ml",
-      "name": "Rabeko Zero Syrup – Slatki prelivi bez šećera (350ml)",
-      "store": "Ogistra Nutrition",
-      "store_url": "https://www.ogistra-nutrition-shop.com",
-      "category": "Ostalo",
-      "image_url": "https://www.ogistra-nutrition-shop.com/4602-home_default/rabeko-zero-syrup-slatki-prelivi-bez-secera-350ml.jpg",
-      "original_price": 650.0,
-      "discount_price": 552.5,
-      "discount_percent": 15,
-      "currency": "RSD",
-      "product_url": "https://www.ogistra-nutrition-shop.com/zdrava-ishrana/1651-4380-rabeko-zero-syrup-slatki-prelivi-bez-secera-350ml.html#/267-ukus-chocolate",
       "in_stock": true,
       "date_scraped": "2026-05-26"
     },
@@ -12573,21 +12693,6 @@
       "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/super-akcije/595-ogistra-akcijski-paket-oporavak-izgradnja-misica.html",
-      "in_stock": true,
-      "date_scraped": "2026-05-26"
-    },
-    {
-      "id": "ogistra-nutrition_pro-mass-5200gr-basic-supplements",
-      "name": "PRO MASS / 5200GR - BASIC SUPPLEMENTS",
-      "store": "Ogistra Nutrition",
-      "store_url": "https://www.ogistra-nutrition-shop.com",
-      "category": "Ostalo",
-      "image_url": "https://www.ogistra-nutrition-shop.com/2590-home_default/pro-mass-gainer-5200g-basic-supplements.jpg",
-      "original_price": 8490.0,
-      "discount_price": 4245.0,
-      "discount_percent": 50,
-      "currency": "RSD",
-      "product_url": "https://www.ogistra-nutrition-shop.com/proteini/1219-3053-pro-mass-gainer-5200g-basic-supplements.html#/248-ukus-strawberry",
       "in_stock": true,
       "date_scraped": "2026-05-26"
     },
@@ -12924,10 +13029,10 @@
   ],
   "weekly_summary": {
     "week_of": "2026-05-25",
-    "generated_at": "2026-05-26 09:39",
-    "total_products": 860,
-    "total_discounted": 570,
-    "avg_discount_percent": 16.6,
+    "generated_at": "2026-05-26 14:49",
+    "total_products": 867,
+    "total_discounted": 578,
+    "avg_discount_percent": 16.7,
     "top_discounts": [
       {
         "id": "atp-sport_bcaa-drink-330ml",
@@ -13080,6 +13185,21 @@
         "date_scraped": "2026-05-26"
       },
       {
+        "id": "gymbeam_boca-hydrator-189-l-white-beastpink",
+        "name": "Boca Hydrator 1.89 l White - BeastPink",
+        "store": "GymBeam",
+        "store_url": "https://www.gymbeam.rs",
+        "category": "Rasprodaja",
+        "image_url": "https://gymbeam.rs/media/catalog/product/h/y/hydrator_bottle_1_89_l_white_-_beastpink-1-bc.jpg",
+        "original_price": 952.38,
+        "discount_price": 400.0,
+        "discount_percent": 58,
+        "currency": "RSD",
+        "product_url": "https://gymbeam.rs/boca-hydrator-1-89-l-white-beastpink.html",
+        "in_stock": true,
+        "date_scraped": "2026-05-26"
+      },
+      {
         "id": "gymbeam_flasa-hydrator-189-l-beastpink",
         "name": "Flaša Hydrator 1,89 l - BeastPink",
         "store": "GymBeam",
@@ -13200,21 +13320,6 @@
         "date_scraped": "2026-05-26"
       },
       {
-        "id": "ogistra-nutrition_pro-mass-5200gr-basic-supplements",
-        "name": "PRO MASS / 5200GR - BASIC SUPPLEMENTS",
-        "store": "Ogistra Nutrition",
-        "store_url": "https://www.ogistra-nutrition-shop.com",
-        "category": "Ostalo",
-        "image_url": "https://www.ogistra-nutrition-shop.com/2590-home_default/pro-mass-gainer-5200g-basic-supplements.jpg",
-        "original_price": 8490.0,
-        "discount_price": 4245.0,
-        "discount_percent": 50,
-        "currency": "RSD",
-        "product_url": "https://www.ogistra-nutrition-shop.com/proteini/1219-3053-pro-mass-gainer-5200g-basic-supplements.html#/248-ukus-strawberry",
-        "in_stock": true,
-        "date_scraped": "2026-05-26"
-      },
-      {
         "id": "x-sport_ostrovit-gainer",
         "name": "OSTROVIT Gainer",
         "store": "X Sport",
@@ -13237,9 +13342,9 @@
         "avg_discount": 19.1
       },
       "GymBeam": {
-        "count": 41,
+        "count": 48,
         "store_url": "https://www.gymbeam.rs",
-        "avg_discount": 36.7
+        "avg_discount": 36.0
       },
       "FitLab": {
         "count": 21,
@@ -13267,14 +13372,14 @@
         "avg_discount": 28.0
       },
       "AMG Sport": {
-        "count": 49,
+        "count": 51,
         "store_url": "https://amgsport.net",
-        "avg_discount": 14.4
+        "avg_discount": 14.1
       },
       "Ogistra Nutrition": {
-        "count": 12,
+        "count": 11,
         "store_url": "https://www.ogistra-nutrition-shop.com",
-        "avg_discount": 22.5
+        "avg_discount": 20.0
       },
       "ATP Sport": {
         "count": 8,
@@ -13293,8 +13398,8 @@
         "avg_discount": 19.1
       },
       "Rasprodaja": {
-        "count": 103,
-        "avg_discount": 24.2
+        "count": 110,
+        "avg_discount": 24.7
       },
       "Preporučujemo": {
         "count": 1,
@@ -13409,8 +13514,8 @@
         "avg_discount": 22.0
       },
       "Ostalo": {
-        "count": 55,
-        "avg_discount": 26.8
+        "count": 54,
+        "avg_discount": 26.4
       },
       "Aminokiseline u prahu": {
         "count": 6,
@@ -13427,6 +13532,10 @@
       "Nutriversum": {
         "count": 4,
         "avg_discount": 12.5
+      },
+      "Naughty Boy": {
+        "count": 2,
+        "avg_discount": 8.0
       },
       "BioTech": {
         "count": 8,
@@ -13496,9 +13605,9 @@
       "status": "ok"
     },
     "GymBeam": {
-      "total": 48,
-      "with_prices": 48,
-      "with_discounts": 41,
+      "total": 54,
+      "with_prices": 54,
+      "with_discounts": 48,
       "status": "ok"
     },
     "FitLab": {
@@ -13538,15 +13647,15 @@
       "status": "ok"
     },
     "AMG Sport": {
-      "total": 49,
-      "with_prices": 49,
-      "with_discounts": 49,
+      "total": 51,
+      "with_prices": 51,
+      "with_discounts": 51,
       "status": "ok"
     },
     "Ogistra Nutrition": {
-      "total": 14,
-      "with_prices": 14,
-      "with_discounts": 12,
+      "total": 13,
+      "with_prices": 13,
+      "with_discounts": 11,
       "status": "ok"
     },
     "SuperProtein": {
