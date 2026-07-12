@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-12T13:01:26.370149",
+  "scraped_at": "2026-07-12T18:54:54.723819",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -9997,21 +9997,6 @@
       "date_scraped": "2026-07-12"
     },
     {
-      "id": "exyu-fitness_5-stars-mass-gainer-5000-gr",
-      "name": "5 Stars Mass Gainer, 5000 gr",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/5star-gainer.webp",
-      "original_price": 5900.0,
-      "discount_price": 5200.0,
-      "discount_percent": 12,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/gaineri/5-star-mass-gainer-5000-gr/",
-      "in_stock": true,
-      "date_scraped": "2026-07-12"
-    },
-    {
       "id": "exyu-fitness_nutriversum-iso-pro-1kg",
       "name": "Nutriversum ISO Pro - 1kg",
       "store": "ExYu Fitness",
@@ -10023,6 +10008,21 @@
       "discount_percent": 14,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/proteini/whey-protein-isolate/nutriversum-iso-pro-1kg/",
+      "in_stock": true,
+      "date_scraped": "2026-07-12"
+    },
+    {
+      "id": "exyu-fitness_5-stars-mass-gainer-5000-gr",
+      "name": "5 Stars Mass Gainer, 5000 gr",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/5star-gainer.webp",
+      "original_price": 5900.0,
+      "discount_price": 5200.0,
+      "discount_percent": 12,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/gaineri/5-star-mass-gainer-5000-gr/",
       "in_stock": true,
       "date_scraped": "2026-07-12"
     },
@@ -12714,7 +12714,7 @@
   ],
   "weekly_summary": {
     "week_of": "2026-07-06",
-    "generated_at": "2026-07-12 13:01",
+    "generated_at": "2026-07-12 18:54",
     "total_products": 846,
     "total_discounted": 524,
     "avg_discount_percent": 18.8,
