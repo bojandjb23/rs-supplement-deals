@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-03T09:27:31.129372",
+  "scraped_at": "2026-08-03T14:20:08.547559",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -18,8 +18,8 @@
     "X Sport"
   ],
   "stores_failed": [],
-  "total_products": 850,
-  "total_discounted": 487,
+  "total_products": 851,
+  "total_discounted": 488,
   "products": [
     {
       "id": "supplement-store_100-whey-prostar-239kg",
@@ -487,6 +487,21 @@
       "date_scraped": "2026-08-03"
     },
     {
+      "id": "gymbeam_vitality-complex-gymbeam-poklon",
+      "name": "Vitality Complex - GymBeam + poklon",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/v/i/vitebeve.jpg",
+      "original_price": 900.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/multivitamin-vitality-complex-60-tab-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-08-03"
+    },
+    {
       "id": "gymbeam_colla-pink-beastpink-poklon",
       "name": "Colla Pink - BeastPink + poklon",
       "store": "GymBeam",
@@ -612,7 +627,7 @@
       "store": "GymBeam",
       "store_url": "https://www.gymbeam.rs",
       "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/s/g/sggesb.jpg",
+      "image_url": "https://gymbeam.rs/media/catalog/product/t/h/thor_lemon-lime_210_g_gymbeam.png",
       "original_price": 2000.0,
       "discount_price": null,
       "discount_percent": 0,
@@ -642,7 +657,7 @@
       "store": "GymBeam",
       "store_url": "https://www.gymbeam.rs",
       "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/2/6/26-07-2026-daily-bezlabel-clear-whey-isofue-1000g-gymbeam-67804.jpg",
+      "image_url": "https://gymbeam.rs/media/catalog/product/c/l/clearwheyisofue_green_apple_1000_g_gymbeam.png",
       "original_price": 3490.0,
       "discount_price": null,
       "discount_percent": 0,
@@ -787,6 +802,21 @@
       "date_scraped": "2026-08-03"
     },
     {
+      "id": "gymbeam_hmb-750-mg-gymbeam",
+      "name": "HMB 750 mg - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/h/m/hmb_180_tabs_gymbeam_1_.png",
+      "original_price": 2283.33,
+      "discount_price": 1370.0,
+      "discount_percent": 40,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/hmb-750mg-gym-beam.html",
+      "in_stock": true,
+      "date_scraped": "2026-08-03"
+    },
+    {
       "id": "gymbeam_bio-testenina-od-sociva-fusilli-vanavita",
       "name": "BIO testenina od sočiva - Fusilli - VanaVita",
       "store": "GymBeam",
@@ -922,21 +952,6 @@
       "date_scraped": "2026-08-03"
     },
     {
-      "id": "gymbeam_zero-sauce-curry-gymbeam",
-      "name": "ZERO SAUCE curry - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/z/e/zero_sauce_curry_350_ml_gymbeam.png",
-      "original_price": 647.06,
-      "discount_price": 550.0,
-      "discount_percent": 15,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/kari-sos-bez-kalori-a-350-ml-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-08-03"
-    },
-    {
       "id": "gymbeam_testenina-od-leblebija-gymbeam",
       "name": "Testenina od leblebija - GymBeam",
       "store": "GymBeam",
@@ -963,6 +978,21 @@
       "discount_percent": 24,
       "currency": "RSD",
       "product_url": "https://gymbeam.rs/bio-zero-lasagna-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-08-03"
+    },
+    {
+      "id": "gymbeam_zero-sauce-curry-gymbeam",
+      "name": "ZERO SAUCE curry - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/z/e/zero_sauce_curry_350_ml_gymbeam.png",
+      "original_price": 647.06,
+      "discount_price": 550.0,
+      "discount_percent": 15,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/kari-sos-bez-kalori-a-350-ml-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-08-03"
     },
@@ -1027,21 +1057,6 @@
       "date_scraped": "2026-08-03"
     },
     {
-      "id": "gymbeam_testenina-sa-spanacem-gymbeam",
-      "name": "Testenina sa spanaćem - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/s/p/spinach_pasta_fusilli_300_g_gymbeam.png",
-      "original_price": 259.26,
-      "discount_price": 210.0,
-      "discount_percent": 19,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/testenina-sa-spanacem-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-08-03"
-    },
-    {
       "id": "gymbeam_visoko-proteinski-wrap-gymbeam",
       "name": "Visoko proteinski wrap - GymBeam",
       "store": "GymBeam",
@@ -1053,21 +1068,6 @@
       "discount_percent": 31,
       "currency": "RSD",
       "product_url": "https://gymbeam.rs/visoko-proteinski-wrap-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-08-03"
-    },
-    {
-      "id": "gymbeam_gluten-free-gnocchi-gymbeam",
-      "name": "Gluten-free Gnocchi - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/g/n/gnocchi_mockup_1_.jpg",
-      "original_price": 320.51,
-      "discount_price": 250.0,
-      "discount_percent": 22,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/gluten-free-gnocchi-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-08-03"
     },
@@ -1087,17 +1087,32 @@
       "date_scraped": "2026-08-03"
     },
     {
-      "id": "gymbeam_nut-butter-2go-puter-od-kikirikija-gymbeam",
-      "name": "Nut Butter 2GO - puter od kikirikija - GymBeam",
+      "id": "gymbeam_testenina-sa-spanacem-gymbeam",
+      "name": "Testenina sa spanaćem - GymBeam",
       "store": "GymBeam",
       "store_url": "https://www.gymbeam.rs",
       "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/n/u/nut_butter_2go_peanut_butter_80_g_gymbeam_no_bg.png",
-      "original_price": 236.84,
-      "discount_price": 180.0,
-      "discount_percent": 24,
+      "image_url": "https://gymbeam.rs/media/catalog/product/s/p/spinach_pasta_fusilli_300_g_gymbeam.png",
+      "original_price": 259.26,
+      "discount_price": 210.0,
+      "discount_percent": 19,
       "currency": "RSD",
-      "product_url": "https://gymbeam.rs/nut-butter-2go-puter-od-kikirikija-gymbeam.html",
+      "product_url": "https://gymbeam.rs/testenina-sa-spanacem-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-08-03"
+    },
+    {
+      "id": "gymbeam_gluten-free-gnocchi-gymbeam",
+      "name": "Gluten-free Gnocchi - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/g/n/gnocchi_mockup_1_.jpg",
+      "original_price": 320.51,
+      "discount_price": 250.0,
+      "discount_percent": 22,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/gluten-free-gnocchi-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-08-03"
     },
@@ -1113,6 +1128,21 @@
       "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://gymbeam.rs/bio-zero-thai-rezanci-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-08-03"
+    },
+    {
+      "id": "gymbeam_nut-butter-2go-puter-od-kikirikija-gymbeam",
+      "name": "Nut Butter 2GO - puter od kikirikija - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/n/u/nut_butter_2go_peanut_butter_80_g_gymbeam_no_bg.png",
+      "original_price": 236.84,
+      "discount_price": 180.0,
+      "discount_percent": 24,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/nut-butter-2go-puter-od-kikirikija-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-08-03"
     },
@@ -1312,21 +1342,6 @@
       "date_scraped": "2026-08-03"
     },
     {
-      "id": "gymbeam_triple-blend-protein-gymbeam-poklon",
-      "name": "Triple Blend Protein - GymBeam + poklon",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/d/a/daily-bezlabel-26-07-4.jpg",
-      "original_price": 3290.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/triple-blend-protein-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-08-03"
-    },
-    {
       "id": "gymbeam_bezglutenske-testenine-penne-gymbeam",
       "name": "Bezglutenske testenine penne - GymBeam",
       "store": "GymBeam",
@@ -1372,6 +1387,66 @@
       "date_scraped": "2026-08-03"
     },
     {
+      "id": "gymbeam_torba-essential-daily-black-strix",
+      "name": "Torba Essential Daily Black - STRIX",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/e/s/essential_daily_bag_black_-_strix-1.jpg",
+      "original_price": 4596.49,
+      "discount_price": 2620.0,
+      "discount_percent": 43,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/essential-daily-bag-black-strix.html",
+      "in_stock": true,
+      "date_scraped": "2026-08-03"
+    },
+    {
+      "id": "gymbeam_gluten-free-pasta-spaghetti-gymbeam",
+      "name": "Gluten-Free Pasta Spaghetti - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/g/l/gluten-free-pasta-spaghetti-400g-mockup-14-07-2026.jpg",
+      "original_price": 300.0,
+      "discount_price": 240.0,
+      "discount_percent": 20,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/gluten-free-pasta-spaghetti-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-08-03"
+    },
+    {
+      "id": "gymbeam_pojas-za-hidrataciju-rider-gymbeam",
+      "name": "Pojas za hidrataciju Rider - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/h/y/hydration_hip_pack_rider_-_gymbeam-1.jpg",
+      "original_price": 5253.73,
+      "discount_price": 3520.0,
+      "discount_percent": 33,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/pojas-za-hidrataciju-rider-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-08-03"
+    },
+    {
+      "id": "gymbeam_triple-blend-protein-gymbeam-poklon",
+      "name": "Triple Blend Protein - GymBeam + poklon",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/d/a/daily-bezlabel-26-07-4.jpg",
+      "original_price": 3290.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/triple-blend-protein-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-08-03"
+    },
+    {
       "id": "gymbeam_zero-sauce-bolognese-gymbeam",
       "name": "ZERO SAUCE Bolognese - GymBeam",
       "store": "GymBeam",
@@ -1387,17 +1462,47 @@
       "date_scraped": "2026-08-03"
     },
     {
-      "id": "gymbeam_torba-essential-daily-black-strix",
-      "name": "Torba Essential Daily Black - STRIX",
+      "id": "gymbeam_protein-fusion-gymbeam-pokloni",
+      "name": "Protein Fusion - GymBeam + pokloni",
       "store": "GymBeam",
       "store_url": "https://www.gymbeam.rs",
       "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/e/s/essential_daily_bag_black_-_strix-1.jpg",
-      "original_price": 4596.49,
-      "discount_price": 2620.0,
-      "discount_percent": 43,
+      "image_url": "https://gymbeam.rs/media/catalog/product/d/a/daily-bezlabel-extra-daily-sale-protein-fusion-118369.jpg",
+      "original_price": 4390.0,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
-      "product_url": "https://gymbeam.rs/essential-daily-bag-black-strix.html",
+      "product_url": "https://gymbeam.rs/protein-fusion-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-08-03"
+    },
+    {
+      "id": "gymbeam_fuesix-gymbeam",
+      "name": "FueSix - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/f/u/fuesix_cookie_cream_2000_g_gymbeam.png",
+      "original_price": 5045.98,
+      "discount_price": 4390.0,
+      "discount_percent": 13,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/protein-fuesix-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-08-03"
+    },
+    {
+      "id": "gymbeam_biciklisticki-ranac-hydropack-gymbeam",
+      "name": "Biciklistički ranac Hydropack - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/c/y/cycling_hydropack_-_gymbeam-1.jpg",
+      "original_price": 5281.25,
+      "discount_price": 3380.0,
+      "discount_percent": 36,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/biciklisticki-ranac-hydropack-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-08-03"
     },
@@ -1488,96 +1593,6 @@
       "discount_percent": 31,
       "currency": "RSD",
       "product_url": "https://gymbeam.rs/aquaflow-swimming-cap-orange-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-08-03"
-    },
-    {
-      "id": "gymbeam_gluten-free-pasta-spaghetti-gymbeam",
-      "name": "Gluten-Free Pasta Spaghetti - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/g/l/gluten-free-pasta-spaghetti-400g-mockup-14-07-2026.jpg",
-      "original_price": 300.0,
-      "discount_price": 240.0,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/gluten-free-pasta-spaghetti-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-08-03"
-    },
-    {
-      "id": "gymbeam_biciklisticki-ranac-hydropack-gymbeam",
-      "name": "Biciklistički ranac Hydropack - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/c/y/cycling_hydropack_-_gymbeam-1.jpg",
-      "original_price": 5281.25,
-      "discount_price": 3380.0,
-      "discount_percent": 36,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/biciklisticki-ranac-hydropack-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-08-03"
-    },
-    {
-      "id": "gymbeam_pojas-za-hidrataciju-rider-gymbeam",
-      "name": "Pojas za hidrataciju Rider - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/h/y/hydration_hip_pack_rider_-_gymbeam-1.jpg",
-      "original_price": 5253.73,
-      "discount_price": 3520.0,
-      "discount_percent": 33,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/pojas-za-hidrataciju-rider-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-08-03"
-    },
-    {
-      "id": "gymbeam_fuesix-gymbeam",
-      "name": "FueSix - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/f/u/fuesix_cookie_cream_2000_g_gymbeam.png",
-      "original_price": 3896.55,
-      "discount_price": 3390.0,
-      "discount_percent": 13,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/protein-fuesix-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-08-03"
-    },
-    {
-      "id": "gymbeam_protein-fusion-gymbeam-pokloni",
-      "name": "Protein Fusion - GymBeam + pokloni",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/d/a/daily-bezlabel-extra-daily-sale-protein-fusion-118369.jpg",
-      "original_price": 4390.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/protein-fusion-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-08-03"
-    },
-    {
-      "id": "gymbeam_hmb-750-mg-gymbeam",
-      "name": "HMB 750 mg - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/h/m/hmb_180_tabs_gymbeam_1_.png",
-      "original_price": 1370.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/hmb-750mg-gym-beam.html",
       "in_stock": true,
       "date_scraped": "2026-08-03"
     },
@@ -10407,10 +10422,10 @@
       "store": "ExYu Fitness",
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/ADVANCED-WHEY-900g-VANILLA-ICE-CREAM.webp",
-      "original_price": 3950.0,
-      "discount_price": 2700.0,
-      "discount_percent": 32,
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/Rasberry.webp",
+      "original_price": 7200.0,
+      "discount_price": 6500.0,
+      "discount_percent": 10,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/naughty-boy-advanced-whey-protein/",
       "in_stock": true,
@@ -10458,21 +10473,6 @@
       "discount_percent": 38,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/ostrovit-omega-3/",
-      "in_stock": true,
-      "date_scraped": "2026-08-03"
-    },
-    {
-      "id": "exyu-fitness_ostrovit-ashwagandha-ksm-66-vege",
-      "name": "Ostrovit Ashwagandha KSM-66 Vege",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/Ashwagandha-KSM-66.webp",
-      "original_price": 3200.0,
-      "discount_price": 2500.0,
-      "discount_percent": 22,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/zdravlje/ostrovit-ashwagandha-ksm-66-vege/",
       "in_stock": true,
       "date_scraped": "2026-08-03"
     },
@@ -10848,6 +10848,21 @@
       "discount_percent": 14,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/aminokiseline/power-citrulline/",
+      "in_stock": false,
+      "date_scraped": "2026-08-03"
+    },
+    {
+      "id": "exyu-fitness_ostrovit-ashwagandha-ksm-66-vege",
+      "name": "Ostrovit Ashwagandha KSM-66 Vege",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/Ashwagandha-KSM-66.webp",
+      "original_price": 3200.0,
+      "discount_price": 2500.0,
+      "discount_percent": 22,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/zdravlje/ostrovit-ashwagandha-ksm-66-vege/",
       "in_stock": false,
       "date_scraped": "2026-08-03"
     },
@@ -12077,7 +12092,7 @@
       "discount_price": 4245.0,
       "discount_percent": 50,
       "currency": "RSD",
-      "product_url": "https://www.ogistra-nutrition-shop.com/proteini/1649-4368-pro-mass-gainer-5200g-basic-supplements.html#/283-ukus-milk_chocolate",
+      "product_url": "https://www.ogistra-nutrition-shop.com/proteini/1649-4369-pro-mass-gainer-5200g-basic-supplements.html#/248-ukus-strawberry",
       "in_stock": true,
       "date_scraped": "2026-08-03"
     },
@@ -12774,9 +12789,9 @@
   ],
   "weekly_summary": {
     "week_of": "2026-08-03",
-    "generated_at": "2026-08-03 09:27",
-    "total_products": 850,
-    "total_discounted": 487,
+    "generated_at": "2026-08-03 14:20",
+    "total_products": 851,
+    "total_discounted": 488,
     "avg_discount_percent": 18.5,
     "top_discounts": [
       {
@@ -13000,7 +13015,7 @@
         "discount_price": 4245.0,
         "discount_percent": 50,
         "currency": "RSD",
-        "product_url": "https://www.ogistra-nutrition-shop.com/proteini/1649-4368-pro-mass-gainer-5200g-basic-supplements.html#/283-ukus-milk_chocolate",
+        "product_url": "https://www.ogistra-nutrition-shop.com/proteini/1649-4369-pro-mass-gainer-5200g-basic-supplements.html#/248-ukus-strawberry",
         "in_stock": true,
         "date_scraped": "2026-08-03"
       },
@@ -13087,9 +13102,9 @@
         "avg_discount": 18.5
       },
       "GymBeam": {
-        "count": 59,
+        "count": 60,
         "store_url": "https://www.gymbeam.rs",
-        "avg_discount": 24.9
+        "avg_discount": 25.2
       },
       "FitLab": {
         "count": 21,
@@ -13109,7 +13124,7 @@
       "ExYu Fitness": {
         "count": 57,
         "store_url": "https://www.exyu-fitness.rs",
-        "avg_discount": 15.4
+        "avg_discount": 15.1
       },
       "LAMA": {
         "count": 44,
@@ -13133,7 +13148,7 @@
         "avg_discount": 19.3
       },
       "Rasprodaja": {
-        "count": 116,
+        "count": 117,
         "avg_discount": 20.3
       },
       "Preporucujemo": {
@@ -13276,9 +13291,9 @@
       "status": "ok"
     },
     "GymBeam": {
-      "total": 75,
-      "with_prices": 75,
-      "with_discounts": 59,
+      "total": 76,
+      "with_prices": 76,
+      "with_discounts": 60,
       "status": "ok"
     },
     "FitLab": {
