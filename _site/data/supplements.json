@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-24T06:41:37.077128",
+  "scraped_at": "2026-08-24T12:33:04.424080",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -18,8 +18,8 @@
     "X Sport"
   ],
   "stores_failed": [],
-  "total_products": 915,
-  "total_discounted": 430,
+  "total_products": 916,
+  "total_discounted": 438,
   "products": [
     {
       "id": "supplement-store_100-whey-prostar-239kg",
@@ -457,21 +457,6 @@
       "date_scraped": "2026-08-24"
     },
     {
-      "id": "gymbeam_just-whey-grass-fed-protein-gymbeam",
-      "name": "Just Whey Grass-Fed Protein – GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/w/t/wt.jpg",
-      "original_price": 220.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/just-whey-protein-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-08-24"
-    },
-    {
       "id": "gymbeam_ginger-shot-gymbeam",
       "name": "Ginger Shot - GymBeam",
       "store": "GymBeam",
@@ -648,21 +633,6 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://gymbeam.rs/proteinski-kroasan-sa-kakao-punjenjem-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-08-24"
-    },
-    {
-      "id": "gymbeam_articular-drink-gymbeam",
-      "name": "Articular Drink - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/g/v/gvewwer.jpg",
-      "original_price": 250.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/iskrana-za-zglobove-articular-drink-390-g-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-08-24"
     },
@@ -978,6 +948,21 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://gymbeam.rs/sportski-grudnjak-varsity-black-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-08-24"
+    },
+    {
+      "id": "gymbeam_bcaa-411-instant-gymbeam",
+      "name": "BCAA 4:1:1 Instant - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/b/z/bzeuzu.jpg",
+      "original_price": 170.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/bcaa-instant-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-08-24"
     },
@@ -2002,21 +1987,6 @@
       "date_scraped": "2026-08-24"
     },
     {
-      "id": "gymbeam_mens-varsity-tank-top-black-gymbeam",
-      "name": "Men‘s Varsity Tank Top Black - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/m/e/men-s-varsity-tank-top-black-gymbeam-1_1.jpg",
-      "original_price": 2600.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/men-s-varsity-tank-top-black-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-08-24"
-    },
-    {
       "id": "gymbeam_zenski-duks-varsity-grey-gymbeam",
       "name": "Ženski duks Varsity Grey - GymBeam",
       "store": "GymBeam",
@@ -2988,6 +2958,21 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://gymbeam.rs/high-protein-granola-gymbeam-120361.html",
+      "in_stock": true,
+      "date_scraped": "2026-08-24"
+    },
+    {
+      "id": "gymbeam_mens-varsity-tank-top-black-gymbeam",
+      "name": "Men‘s Varsity Tank Top Black - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/m/e/men-s-varsity-tank-top-black-gymbeam-1_1.jpg",
+      "original_price": 2600.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/men-s-varsity-tank-top-black-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-08-24"
     },
@@ -11782,6 +11767,21 @@
       "date_scraped": "2026-08-24"
     },
     {
+      "id": "exyu-fitness_biotech-iso-whey-zero",
+      "name": "Biotech Iso Whey Zero",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/iso-whey-zero-tir.webp",
+      "original_price": 10500.0,
+      "discount_price": 9800.0,
+      "discount_percent": 7,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/proteini/whey-protein-isolate/biotech-isowhey-zero/",
+      "in_stock": true,
+      "date_scraped": "2026-08-24"
+    },
+    {
       "id": "exyu-fitness_5-stars-whey-protein-3000gr",
       "name": "5 Stars Whey Protein, 3000gr",
       "store": "ExYu Fitness",
@@ -12734,8 +12734,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/3822-home_default/paket-za-misicni-rast.jpg",
       "original_price": 18610.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 15818.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/super-akcije/1503-paket-za-misicni-rast.html",
       "in_stock": true,
@@ -12794,8 +12794,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/4129-home_default/jim-beef-proteinski-beef-jerky.jpg",
       "original_price": 380.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 323.0,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/katalog/1561-4051-jim-beef-proteinski-beef-jerky.html#/353-ukus-red_hot_beef_jerky",
       "in_stock": true,
@@ -12929,8 +12929,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/4871-home_default/ansitex-magnezijum-melisa-safran.jpg",
       "original_price": 1790.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1521.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/biljni-ekstrati/1701-ansitex-magnezijum-melisa-safran.html",
       "in_stock": true,
@@ -12944,8 +12944,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/1566-home_default/bcaa-powder-300-grama.jpg",
       "original_price": 2950.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2507.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/bcaa/813-1664-bcaa-powder-300-grama.html#/166-ukus-narandza_limun",
       "in_stock": true,
@@ -13109,8 +13109,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/4991-home_default/ostrovit-kreatin-monohidrat-500g-ukus-kola-bez-secera-166-doza.jpg",
       "original_price": 2620.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2227.0,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/katalog/1721-4582-ostrovit-kreatin-monohidrat-500g-ukus-kola-bez-secera-166-doza.html#/147-ukus-cola",
       "in_stock": true,
@@ -13124,8 +13124,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/4992-home_default/deload-sleepy-shot-60ml-melatonin-gaba-i-l-teanin-za-bolji-san.jpg",
       "original_price": 210.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 178.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/katalog/1722-deload-sleepy-shot-60ml-melatonin-gaba-i-l-teanin-za-bolji-san.html",
       "in_stock": true,
@@ -13499,8 +13499,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/2614-home_default/the-amino-whey-hydro3500g.jpg",
       "original_price": 10260.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 8721.0,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/proteini/12-2085-the-amino-whey-hydro3500g.html#/159-ukus-bounty_coko_kokos",
       "in_stock": true,
@@ -13578,6 +13578,21 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://www.superior14.rs/proizvodi/proteini/biotech-power-protein-4kg-poklon-sejker/",
+      "in_stock": true,
+      "date_scraped": "2026-08-24"
+    },
+    {
+      "id": "superior14_superior14-whey-core-poklon",
+      "name": "SUPERIOR14 WHEY CORE + POKLON",
+      "store": "Superior14",
+      "store_url": "https://www.superior14.rs",
+      "category": "Proteini",
+      "image_url": "https://images.superior14.rs/1781088973/product-medium/superior14-whey-core-poklon.webp",
+      "original_price": 9890.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://www.superior14.rs/proizvodi/proteini/superior14-whey-core-poklon/",
       "in_stock": true,
       "date_scraped": "2026-08-24"
     },
@@ -13749,9 +13764,9 @@
   ],
   "weekly_summary": {
     "week_of": "2026-08-24",
-    "generated_at": "2026-08-24 06:41",
-    "total_products": 915,
-    "total_discounted": 430,
+    "generated_at": "2026-08-24 12:33",
+    "total_products": 916,
+    "total_discounted": 438,
     "avg_discount_percent": 17.4,
     "top_discounts": [
       {
@@ -14087,14 +14102,14 @@
         "avg_discount": 10.7
       },
       "ExYu Fitness": {
-        "count": 59,
+        "count": 60,
         "store_url": "https://www.exyu-fitness.rs",
-        "avg_discount": 15.4
+        "avg_discount": 15.2
       },
       "Ogistra Nutrition": {
-        "count": 57,
+        "count": 64,
         "store_url": "https://www.ogistra-nutrition-shop.com",
-        "avg_discount": 30.2
+        "avg_discount": 28.5
       },
       "X Sport": {
         "count": 9,
@@ -14108,8 +14123,8 @@
         "avg_discount": 19.7
       },
       "Rasprodaja": {
-        "count": 94,
-        "avg_discount": 21.3
+        "count": 95,
+        "avg_discount": 21.2
       },
       "Preporucujemo": {
         "count": 2,
@@ -14244,8 +14259,8 @@
         "avg_discount": 22.0
       },
       "Ostalo": {
-        "count": 57,
-        "avg_discount": 30.2
+        "count": 64,
+        "avg_discount": 28.5
       }
     },
     "new_discounts_count": 0,
@@ -14263,8 +14278,8 @@
       "status": "ok"
     },
     "GymBeam": {
-      "total": 171,
-      "with_prices": 171,
+      "total": 170,
+      "with_prices": 170,
       "with_discounts": 35,
       "status": "ok"
     },
@@ -14293,9 +14308,9 @@
       "status": "ok"
     },
     "ExYu Fitness": {
-      "total": 68,
-      "with_prices": 68,
-      "with_discounts": 68,
+      "total": 69,
+      "with_prices": 69,
+      "with_discounts": 69,
       "status": "ok"
     },
     "LAMA": {
@@ -14313,7 +14328,7 @@
     "Ogistra Nutrition": {
       "total": 64,
       "with_prices": 64,
-      "with_discounts": 57,
+      "with_discounts": 64,
       "status": "ok"
     },
     "SuperProtein": {
@@ -14323,8 +14338,8 @@
       "status": "warn:no_products"
     },
     "Superior14": {
-      "total": 3,
-      "with_prices": 3,
+      "total": 4,
+      "with_prices": 4,
       "with_discounts": 0,
       "status": "ok"
     },
