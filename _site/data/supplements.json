@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-25T06:33:54.966906",
+  "scraped_at": "2026-08-25T12:33:23.480691",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -18,8 +18,8 @@
     "X Sport"
   ],
   "stores_failed": [],
-  "total_products": 915,
-  "total_discounted": 430,
+  "total_products": 916,
+  "total_discounted": 437,
   "products": [
     {
       "id": "supplement-store_100-whey-prostar-239kg",
@@ -547,6 +547,21 @@
       "date_scraped": "2026-08-25"
     },
     {
+      "id": "gymbeam_zensen-gymbeam",
+      "name": "Ženšen - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/g/i/ginseng_90_caps_gymbeam.png",
+      "original_price": 1250.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/zensen-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-08-25"
+    },
+    {
       "id": "gymbeam_fuenight-gymbeam-poklon",
       "name": "FueNight - GymBeam + poklon",
       "store": "GymBeam",
@@ -772,8 +787,8 @@
       "date_scraped": "2026-08-25"
     },
     {
-      "id": "gymbeam_true-gain-gymbeam-pokloni",
-      "name": "True Gain - GymBeam + pokloni",
+      "id": "gymbeam_gainer-true-gain-gymbeam-pokloni",
+      "name": "Gainer True Gain - GymBeam + pokloni",
       "store": "GymBeam",
       "store_url": "https://www.gymbeam.rs",
       "category": "Rasprodaja",
@@ -1897,6 +1912,21 @@
       "date_scraped": "2026-08-25"
     },
     {
+      "id": "gymbeam_msm-optimsm-gymbeam-pokloni",
+      "name": "MSM OptiMSM® - GymBeam + pokloni",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/b/w/bwtrwy.jpg",
+      "original_price": 2100.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/msm-optimsmr-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-08-25"
+    },
+    {
       "id": "gymbeam_hand-paddle-aquaflow-black-gymbeam",
       "name": "Hand Paddle AquaFlow Black - GymBeam",
       "store": "GymBeam",
@@ -2857,21 +2887,6 @@
       "date_scraped": "2026-08-25"
     },
     {
-      "id": "gymbeam_bio-ginger-shot-sa-matcha-cajem-vanavita",
-      "name": "BIO Ginger shot sa matcha čajem - VanaVita",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/b/i/bio_ginger_shot_matcha_60_ml_vanavita.png",
-      "original_price": 310.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/bio-ginger-shot-sa-maca-cajem-vanavita.html",
-      "in_stock": true,
-      "date_scraped": "2026-08-25"
-    },
-    {
       "id": "gymbeam_penasti-valjak-za-vezbanje-fitness-roller-green-gymbeam",
       "name": "Penasti valjak za vežbanje Fitness Roller Green - GymBeam",
       "store": "GymBeam",
@@ -2898,21 +2913,6 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://gymbeam.rs/zenska-dukserica-athlete-black-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-08-25"
-    },
-    {
-      "id": "gymbeam_zensen-gymbeam",
-      "name": "Ženšen - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/g/i/ginseng_90_caps_gymbeam.png",
-      "original_price": 1250.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/zensen-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-08-25"
     },
@@ -2988,6 +2988,21 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://gymbeam.rs/women-s-basic-t-shirt-3pack-black-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-08-25"
+    },
+    {
+      "id": "gymbeam_bio-ginger-shot-sa-matcha-cajem-vanavita",
+      "name": "BIO Ginger shot sa matcha čajem - VanaVita",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/b/i/bio_ginger_shot_matcha_60_ml_vanavita.png",
+      "original_price": 310.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/bio-ginger-shot-sa-maca-cajem-vanavita.html",
       "in_stock": true,
       "date_scraped": "2026-08-25"
     },
@@ -5913,7 +5928,7 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/nutriversum-proteinski-sejk-za-zene-wshape-500g-zamena-za-obrok-uz-8-vitamina",
-      "in_stock": true,
+      "in_stock": false,
       "date_scraped": "2026-08-25"
     },
     {
@@ -12734,8 +12749,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/3822-home_default/paket-za-misicni-rast.jpg",
       "original_price": 18610.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 15818.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/super-akcije/1503-paket-za-misicni-rast.html",
       "in_stock": true,
@@ -12794,8 +12809,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/4129-home_default/jim-beef-proteinski-beef-jerky.jpg",
       "original_price": 380.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 323.0,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/katalog/1561-4051-jim-beef-proteinski-beef-jerky.html#/353-ukus-red_hot_beef_jerky",
       "in_stock": true,
@@ -12929,8 +12944,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/4871-home_default/ansitex-magnezijum-melisa-safran.jpg",
       "original_price": 1790.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1521.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/biljni-ekstrati/1701-ansitex-magnezijum-melisa-safran.html",
       "in_stock": true,
@@ -12944,8 +12959,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/1566-home_default/bcaa-powder-300-grama.jpg",
       "original_price": 2950.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2507.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/bcaa/813-1664-bcaa-powder-300-grama.html#/166-ukus-narandza_limun",
       "in_stock": true,
@@ -13094,8 +13109,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/4991-home_default/ostrovit-kreatin-monohidrat-500g-ukus-kola-bez-secera-166-doza.jpg",
       "original_price": 2620.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2227.0,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/katalog/1721-4582-ostrovit-kreatin-monohidrat-500g-ukus-kola-bez-secera-166-doza.html#/147-ukus-cola",
       "in_stock": true,
@@ -13109,8 +13124,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/4992-home_default/deload-sleepy-shot-60ml-melatonin-gaba-i-l-teanin-za-bolji-san.jpg",
       "original_price": 210.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 178.5,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/katalog/1722-deload-sleepy-shot-60ml-melatonin-gaba-i-l-teanin-za-bolji-san.html",
       "in_stock": true,
@@ -13484,8 +13499,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/2614-home_default/the-amino-whey-hydro3500g.jpg",
       "original_price": 10260.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 8721.0,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/proteini/12-2085-the-amino-whey-hydro3500g.html#/159-ukus-bounty_coko_kokos",
       "in_stock": true,
@@ -13749,10 +13764,10 @@
   ],
   "weekly_summary": {
     "week_of": "2026-08-24",
-    "generated_at": "2026-08-25 06:33",
-    "total_products": 915,
-    "total_discounted": 430,
-    "avg_discount_percent": 17.4,
+    "generated_at": "2026-08-25 12:33",
+    "total_products": 916,
+    "total_discounted": 437,
+    "avg_discount_percent": 17.3,
     "top_discounts": [
       {
         "id": "titaniumsport_muscular-regenerative-booster-krema",
@@ -14092,9 +14107,9 @@
         "avg_discount": 15.3
       },
       "Ogistra Nutrition": {
-        "count": 56,
+        "count": 63,
         "store_url": "https://www.ogistra-nutrition-shop.com",
-        "avg_discount": 30.4
+        "avg_discount": 28.7
       },
       "X Sport": {
         "count": 9,
@@ -14240,8 +14255,8 @@
         "avg_discount": 22.0
       },
       "Ostalo": {
-        "count": 56,
-        "avg_discount": 30.4
+        "count": 63,
+        "avg_discount": 28.7
       }
     },
     "new_discounts_count": 0,
@@ -14259,8 +14274,8 @@
       "status": "ok"
     },
     "GymBeam": {
-      "total": 170,
-      "with_prices": 170,
+      "total": 171,
+      "with_prices": 171,
       "with_discounts": 35,
       "status": "ok"
     },
@@ -14309,7 +14324,7 @@
     "Ogistra Nutrition": {
       "total": 63,
       "with_prices": 63,
-      "with_discounts": 56,
+      "with_discounts": 63,
       "status": "ok"
     },
     "SuperProtein": {
