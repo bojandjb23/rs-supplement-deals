@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-30T10:58:32.042863",
+  "scraped_at": "2026-08-30T15:47:18.190036",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -19,7 +19,7 @@
   ],
   "stores_failed": [],
   "total_products": 818,
-  "total_discounted": 449,
+  "total_discounted": 454,
   "products": [
     {
       "id": "supplement-store_100-whey-prostar-239kg",
@@ -11444,8 +11444,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/4950-home_default/sily-caps-milk-thistle-60-kapsula-yamamoto-nutrition.jpg",
       "original_price": 2160.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1512.0,
+      "discount_percent": 30,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/katalog/1711-sily-caps-milk-thistle-60-kapsula-yamamoto-nutrition.html",
       "in_stock": true,
@@ -11453,7 +11453,7 @@
     },
     {
       "id": "ogistra-nutrition_ansitex-30-kapsula-yamamoto-nutrition-magnezijum-melisa-i-safran",
-      "name": "Ansitex – 30 kapsula | YAMAMOTO NUTRITION – Magnezijum, Melisa i Šafran",
+      "name": "Ansitex – 30 kapsula - YAMAMOTO NUTRITION – Magnezijum, Melisa i Šafran",
       "store": "Ogistra Nutrition",
       "store_url": "https://www.ogistra-nutrition-shop.com",
       "category": "Ostalo",
@@ -11954,8 +11954,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/1546-home_default/vitamin-c-1000mg-90tableta-yamamoto-nutrition.jpg",
       "original_price": 1790.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1432.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/vitamini-i-minerali/988-vitamin-c-1000mg-90tableta-yamamoto-nutrition.html",
       "in_stock": true,
@@ -12059,8 +12059,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/1560-home_default/iso-fuji-700g-whey-protein-yamamoto-nutrition.jpg",
       "original_price": 5690.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 3983.0,
+      "discount_percent": 30,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/proteini/808-1997-iso-fuji-700g-whey-protein-yamamoto-nutrition.html#/28-ukus-cokolada",
       "in_stock": true,
@@ -12074,8 +12074,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/1579-home_default/multi-vitamin-yamamoto-nutrition-60-tableta.jpg",
       "original_price": 1550.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1162.5,
+      "discount_percent": 25,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/katalog/806-multi-vitamin-yamamoto-nutrition-60-tableta.html",
       "in_stock": true,
@@ -12089,8 +12089,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/1946-home_default/the-nutrition-bcaa-1000-gr.jpg",
       "original_price": 4700.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2820.0,
+      "discount_percent": 40,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/bcaa/80-255-the-nutrition-bcaa-1000-gr.html#/38-ukus-narandza",
       "in_stock": true,
@@ -12294,10 +12294,10 @@
   ],
   "weekly_summary": {
     "week_of": "2026-08-24",
-    "generated_at": "2026-08-30 10:58",
+    "generated_at": "2026-08-30 15:47",
     "total_products": 818,
-    "total_discounted": 449,
-    "avg_discount_percent": 18.7,
+    "total_discounted": 454,
+    "avg_discount_percent": 18.8,
     "top_discounts": [
       {
         "id": "lama_carbo-1000-g",
@@ -12642,9 +12642,9 @@
         "avg_discount": 29.6
       },
       "Ogistra Nutrition": {
-        "count": 38,
+        "count": 43,
         "store_url": "https://www.ogistra-nutrition-shop.com",
-        "avg_discount": 37.2
+        "avg_discount": 36.3
       },
       "X Sport": {
         "count": 9,
@@ -12786,8 +12786,8 @@
         "avg_discount": 22.0
       },
       "Ostalo": {
-        "count": 77,
-        "avg_discount": 33.4
+        "count": 82,
+        "avg_discount": 33.1
       }
     },
     "new_discounts_count": 0,
@@ -12855,7 +12855,7 @@
     "Ogistra Nutrition": {
       "total": 46,
       "with_prices": 46,
-      "with_discounts": 38,
+      "with_discounts": 43,
       "status": "ok"
     },
     "SuperProtein": {
