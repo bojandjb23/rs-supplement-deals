@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-01T10:51:56.751178",
+  "scraped_at": "2026-09-01T15:50:10.784568",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -18,7 +18,7 @@
     "X Sport"
   ],
   "stores_failed": [],
-  "total_products": 772,
+  "total_products": 773,
   "total_discounted": 429,
   "products": [
     {
@@ -93,6 +93,21 @@
       "discount_percent": 40,
       "currency": "RSD",
       "product_url": "https://gymbeam.rs/sportska-torba-barrel-baby-pink-beastpink.html",
+      "in_stock": true,
+      "date_scraped": "2026-09-01"
+    },
+    {
+      "id": "gymbeam_proteinski-mug-cake-mix-500-g-gymbeam-pokloni",
+      "name": "Proteinski Mug Cake Mix 500 g - GymBeam + pokloni",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/e/v/evry.jpg",
+      "original_price": 1900.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/proteinski-mug-cake-mix-500-g-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-09-01"
     },
@@ -952,21 +967,6 @@
       "date_scraped": "2026-09-01"
     },
     {
-      "id": "fitlab_calcium-matrix-90tb-d3k2-vitalikum",
-      "name": "Calcium matrix 90tb (D3+K2) - Vitalikum",
-      "store": "FitLab",
-      "store_url": "https://fitlab.rs",
-      "category": "Akcija",
-      "image_url": "https://fitlab.rs/products/2025/07/vitalikum-calcium-matrix-90tab-600x600-1-e1753037584816.jpg",
-      "original_price": 990.0,
-      "discount_price": 790.0,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://fitlab.rs/sr/proizvodi/calcium-matrix-90tb-d3k2-vitalikum",
-      "in_stock": true,
-      "date_scraped": "2026-09-01"
-    },
-    {
       "id": "fitlab_collagen-300g-l-carnitin-500ml-maximalium",
       "name": "Collagen 300g + L-Carnitin 500ml - Maximalium",
       "store": "FitLab",
@@ -1023,6 +1023,21 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://fitlab.rs/sr/proizvodi/creatine-monohydrate-300g-maximalium",
+      "in_stock": true,
+      "date_scraped": "2026-09-01"
+    },
+    {
+      "id": "fitlab_bcaa-12000-457g-ultimate-nutrition",
+      "name": "BCAA 12.000 457g - Ultimate Nutrition",
+      "store": "FitLab",
+      "store_url": "https://fitlab.rs",
+      "category": "Akcija",
+      "image_url": "https://fitlab.rs/products/2026/05/bcaa-12-000-457g-ultimate-nutrition-amino-kiseline-1779707366353.webp",
+      "original_price": 4690.0,
+      "discount_price": 3990.0,
+      "discount_percent": 15,
+      "currency": "RSD",
+      "product_url": "https://fitlab.rs/sr/proizvodi/bcaa-12-000-457g-ultimate-nutrition",
       "in_stock": true,
       "date_scraped": "2026-09-01"
     },
@@ -11604,8 +11619,8 @@
   ],
   "weekly_summary": {
     "week_of": "2026-08-31",
-    "generated_at": "2026-09-01 10:51",
-    "total_products": 772,
+    "generated_at": "2026-09-01 15:50",
+    "total_products": 773,
     "total_discounted": 429,
     "avg_discount_percent": 18.9,
     "top_discounts": [
@@ -11919,7 +11934,7 @@
       "FitLab": {
         "count": 20,
         "store_url": "https://fitlab.rs",
-        "avg_discount": 19.8
+        "avg_discount": 19.5
       },
       "TitaniumSport": {
         "count": 24,
@@ -11964,7 +11979,7 @@
       },
       "Akcija": {
         "count": 19,
-        "avg_discount": 21.1
+        "avg_discount": 20.8
       },
       "Preporucujemo": {
         "count": 1,
@@ -12098,8 +12113,8 @@
       "status": "warn:no_products"
     },
     "GymBeam": {
-      "total": 43,
-      "with_prices": 43,
+      "total": 44,
+      "with_prices": 44,
       "with_discounts": 34,
       "status": "ok"
     },
