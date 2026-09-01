@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-01T15:50:10.784568",
+  "scraped_at": "2026-09-01T20:21:31.600098",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -9337,21 +9337,6 @@
       "date_scraped": "2026-09-01"
     },
     {
-      "id": "exyu-fitness_tesla-creatine-monohidrat",
-      "name": "Tesla Creatine Monohidrat",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/Tesla-500g-e1727969868134.webp",
-      "original_price": 2100.0,
-      "discount_price": 1700.0,
-      "discount_percent": 19,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/kreatin/kreatin-monohidrat/tesla-creatine-monohidrat-500gr/",
-      "in_stock": true,
-      "date_scraped": "2026-09-01"
-    },
-    {
       "id": "exyu-fitness_haya-acetyl-l-carnitine-1000-mg-100-kapsula",
       "name": "Haya Acetyl L-Carnitine 1000 mg, 100 kapsula",
       "store": "ExYu Fitness",
@@ -9888,6 +9873,21 @@
       "discount_percent": 8,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/scitec-100-whey-protein-professional-920-gr/",
+      "in_stock": false,
+      "date_scraped": "2026-09-01"
+    },
+    {
+      "id": "exyu-fitness_tesla-creatine-monohidrat",
+      "name": "Tesla Creatine Monohidrat",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/Tesla-500g-e1727969868134.webp",
+      "original_price": 2100.0,
+      "discount_price": 1700.0,
+      "discount_percent": 19,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/kreatin/kreatin-monohidrat/tesla-creatine-monohidrat-500gr/",
       "in_stock": false,
       "date_scraped": "2026-09-01"
     },
@@ -11619,7 +11619,7 @@
   ],
   "weekly_summary": {
     "week_of": "2026-08-31",
-    "generated_at": "2026-09-01 15:50",
+    "generated_at": "2026-09-01 20:21",
     "total_products": 773,
     "total_discounted": 429,
     "avg_discount_percent": 18.9,
