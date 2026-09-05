@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-05T14:18:35.344793",
+  "scraped_at": "2026-09-05T19:45:46.790445",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -9217,6 +9217,21 @@
       "date_scraped": "2026-09-05"
     },
     {
+      "id": "exyu-fitness_superior-whey-core-5000g",
+      "name": "Superior Whey Core, 5000g",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/superior-whey-core-5000gr-4863.webp",
+      "original_price": 13500.0,
+      "discount_price": 10500.0,
+      "discount_percent": 22,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/superior-whey-core-5000gr/",
+      "in_stock": true,
+      "date_scraped": "2026-09-05"
+    },
+    {
       "id": "exyu-fitness_vitalikum-matrix-pro-isolate-2700-grsejker-gratis",
       "name": "Vitalikum Matrix Pro Isolate - 2700 gr(šejker gratis)",
       "store": "ExYu Fitness",
@@ -9694,21 +9709,6 @@
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/kreatin/kreatini-novije-generacije/vitalikum-crea-beta-matrix/",
       "in_stock": true,
-      "date_scraped": "2026-09-05"
-    },
-    {
-      "id": "exyu-fitness_superior-whey-core-5000g",
-      "name": "Superior Whey Core, 5000g",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/superior-whey-core-5000gr-4863.webp",
-      "original_price": 13500.0,
-      "discount_price": 10500.0,
-      "discount_percent": 22,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/superior-whey-core-5000gr/",
-      "in_stock": false,
       "date_scraped": "2026-09-05"
     },
     {
@@ -11694,7 +11694,7 @@
   ],
   "weekly_summary": {
     "week_of": "2026-08-31",
-    "generated_at": "2026-09-05 14:18",
+    "generated_at": "2026-09-05 19:45",
     "total_products": 778,
     "total_discounted": 432,
     "avg_discount_percent": 18.9,
