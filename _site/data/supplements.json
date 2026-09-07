@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-07T11:10:12.802298",
+  "scraped_at": "2026-09-07T16:57:51.476748",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -19,7 +19,7 @@
   ],
   "stores_failed": [],
   "total_products": 739,
-  "total_discounted": 393,
+  "total_discounted": 395,
   "products": [
     {
       "id": "gymbeam_multifunkcionalna-daska-za-sklekove-gymbeam-pokloni",
@@ -202,6 +202,21 @@
       "date_scraped": "2026-09-07"
     },
     {
+      "id": "gymbeam_bueno-puter-od-lesnika-gymbeam-pokloni",
+      "name": "Bueno puter od lešnika - GymBeam + pokloni",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/c/w/cwat.jpg",
+      "original_price": 1450.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/bueno-puter-od-lesnika-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-09-07"
+    },
+    {
       "id": "gymbeam_kreatin-double-energy-gymbeam-pokloni",
       "name": "Kreatin Double Energy - GymBeam + pokloni",
       "store": "GymBeam",
@@ -363,21 +378,6 @@
       "discount_percent": 25,
       "currency": "RSD",
       "product_url": "https://gymbeam.rs/hand-paddle-aquaflow-black-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-09-07"
-    },
-    {
-      "id": "gymbeam_casa-za-trcanje-black-gymbeam",
-      "name": "Čaša za trčanje Black - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/r/u/running_cup_black_-_gymbeam-1.jpg",
-      "original_price": 850.0,
-      "discount_price": 510.0,
-      "discount_percent": 40,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/running-cup-black-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-09-07"
     },
@@ -678,6 +678,36 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://gymbeam.rs/dmae-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-09-07"
+    },
+    {
+      "id": "fitlab_omega-3-extreme-90gelcaps-tribulus-90-saponina-60cap-ostrovit",
+      "name": "Omega 3 Extreme 90gelcaps / Tribulus 90% saponina 60cap - OstroVit",
+      "store": "FitLab",
+      "store_url": "https://fitlab.rs",
+      "category": "Akcija",
+      "image_url": "https://fitlab.rs/products/2026/09/omega-3-ostrovit-tribulus-terrestris-90-saponina-epa-dha-paket-1788799954767.png",
+      "original_price": 3980.0,
+      "discount_price": 3380.0,
+      "discount_percent": 15,
+      "currency": "RSD",
+      "product_url": "https://fitlab.rs/sr/proizvodi/omega-3-extreme-90gelcaps-tribulus-90-saponina-60cap-ostrovit",
+      "in_stock": true,
+      "date_scraped": "2026-09-07"
+    },
+    {
+      "id": "fitlab_bcaa-advanced-450g-creatine-sa-ukusom-300g-ostrovit",
+      "name": "BCAA Advanced 450g / Creatine sa UKUSOM 300g - OstroVit",
+      "store": "FitLab",
+      "store_url": "https://fitlab.rs",
+      "category": "Akcija",
+      "image_url": "https://fitlab.rs/products/2026/09/ostrovit-bcaa-advanced-450g-creatine-monohydrate-300g-paket-1788799044254.png",
+      "original_price": 4940.0,
+      "discount_price": 4190.0,
+      "discount_percent": 15,
+      "currency": "RSD",
+      "product_url": "https://fitlab.rs/sr/proizvodi/bcaa-advanced-450g-creatine-sa-ukusom-300g-ostrovit",
       "in_stock": true,
       "date_scraped": "2026-09-07"
     },
@@ -1008,36 +1038,6 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://fitlab.rs/sr/proizvodi/creatine-monohydrate-300g-maximalium",
-      "in_stock": true,
-      "date_scraped": "2026-09-07"
-    },
-    {
-      "id": "fitlab_bcaa-12000-457g-ultimate-nutrition",
-      "name": "BCAA 12.000 457g - Ultimate Nutrition",
-      "store": "FitLab",
-      "store_url": "https://fitlab.rs",
-      "category": "Akcija",
-      "image_url": "https://fitlab.rs/products/2026/05/bcaa-12-000-457g-ultimate-nutrition-amino-kiseline-1779707366353.webp",
-      "original_price": 4690.0,
-      "discount_price": 3990.0,
-      "discount_percent": 15,
-      "currency": "RSD",
-      "product_url": "https://fitlab.rs/sr/proizvodi/bcaa-12-000-457g-ultimate-nutrition",
-      "in_stock": true,
-      "date_scraped": "2026-09-07"
-    },
-    {
-      "id": "fitlab_creatine-monohydrate-500g-citrulin-beta-alanin-taurin-arginin-maximalium",
-      "name": "Creatine Monohydrate 500g (+Citrulin/ Beta-alanin/ Taurin/ Arginin) - Maximalium",
-      "store": "FitLab",
-      "store_url": "https://fitlab.rs",
-      "category": "Akcija",
-      "image_url": "https://fitlab.rs/products/2024/02/Kreatin-monohidrat-500g-GRATIS-TAURIN-100g-–-Maximalium.webp",
-      "original_price": 3190.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://fitlab.rs/sr/proizvodi/creatine-monohydrate-500g-maximalium",
       "in_stock": true,
       "date_scraped": "2026-09-07"
     },
@@ -9267,7 +9267,7 @@
       "store": "ExYu Fitness",
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/5star-whey-3000gr.webp",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/62066.webp",
       "original_price": 7900.0,
       "discount_price": 6800.0,
       "discount_percent": 14,
@@ -9303,6 +9303,21 @@
       "discount_percent": 9,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/proteini/whey-protein/ostrovit-oats-and-whey/",
+      "in_stock": true,
+      "date_scraped": "2026-09-07"
+    },
+    {
+      "id": "exyu-fitness_nutrex-lipo-6-black-ultra-concentrate-60-caps",
+      "name": "Nutrex Lipo 6 Black Ultra Concentrate  60 caps",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/lipo6-60kaps.webp",
+      "original_price": 4600.0,
+      "discount_price": 4100.0,
+      "discount_percent": 11,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/sagorevaci-masti/nutrex-lipo-6-black-60-caps/",
       "in_stock": true,
       "date_scraped": "2026-09-07"
     },
@@ -9607,6 +9622,21 @@
       "date_scraped": "2026-09-07"
     },
     {
+      "id": "exyu-fitness_ostrovit-caffeine-supreme-pure",
+      "name": "Ostrovit Caffeine Supreme Pure",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/ostrovit-caffeine.webp",
+      "original_price": 3400.0,
+      "discount_price": 3100.0,
+      "discount_percent": 9,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/pre-workout-suplementi/ostrovit-caffeine-supreme-pure/",
+      "in_stock": true,
+      "date_scraped": "2026-09-07"
+    },
+    {
       "id": "exyu-fitness_nutrex-lipo-6-intense-uc",
       "name": "Nutrex Lipo 6 Intense  UC",
       "store": "ExYu Fitness",
@@ -9768,21 +9798,6 @@
       "discount_percent": 24,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/proteini/tesla-iso-zero-100/",
-      "in_stock": false,
-      "date_scraped": "2026-09-07"
-    },
-    {
-      "id": "exyu-fitness_nutrex-lipo-6-black-ultra-concentrate-60-caps",
-      "name": "Nutrex Lipo 6 Black Ultra Concentrate  60 caps",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/lipo6-60kaps.webp",
-      "original_price": 4600.0,
-      "discount_price": 4100.0,
-      "discount_percent": 11,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/sagorevaci-masti/nutrex-lipo-6-black-60-caps/",
       "in_stock": false,
       "date_scraped": "2026-09-07"
     },
@@ -10008,21 +10023,6 @@
       "discount_percent": 22,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/zoomad-labs-caretaker/",
-      "in_stock": false,
-      "date_scraped": "2026-09-07"
-    },
-    {
-      "id": "exyu-fitness_ostrovit-caffeine-supreme-pure",
-      "name": "Ostrovit Caffeine Supreme Pure",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/ostrovit-caffeine.webp",
-      "original_price": 3400.0,
-      "discount_price": 3100.0,
-      "discount_percent": 9,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/pre-workout-suplementi/ostrovit-caffeine-supreme-pure/",
       "in_stock": false,
       "date_scraped": "2026-09-07"
     },
@@ -10889,8 +10889,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/1117-home_default/x3m-terminator-180-kapsula.jpg",
       "original_price": 3070.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2456.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/gh-i-testo-boosteri/194-x3m-terminator-180-kapsula.html",
       "in_stock": true,
@@ -10904,8 +10904,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/1825-home_default/the-acetyl-l-carnitine-150-kapsula.jpg",
       "original_price": 2750.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2200.0,
+      "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/l-carnitini-i-tecni-sagorevaci/647-the-acetyl-l-carnitine-150-kapsula.html",
       "in_stock": true,
@@ -11109,9 +11109,9 @@
   ],
   "weekly_summary": {
     "week_of": "2026-09-07",
-    "generated_at": "2026-09-07 11:10",
+    "generated_at": "2026-09-07 16:57",
     "total_products": 739,
-    "total_discounted": 393,
+    "total_discounted": 395,
     "avg_discount_percent": 17.8,
     "top_discounts": [
       {
@@ -11417,14 +11417,14 @@
     ],
     "by_store": {
       "GymBeam": {
-        "count": 32,
+        "count": 31,
         "store_url": "https://www.gymbeam.rs",
-        "avg_discount": 35.1
+        "avg_discount": 34.9
       },
       "FitLab": {
-        "count": 19,
+        "count": 20,
         "store_url": "https://fitlab.rs",
-        "avg_discount": 19.5
+        "avg_discount": 19.2
       },
       "TitaniumSport": {
         "count": 24,
@@ -11447,9 +11447,9 @@
         "avg_discount": 15.3
       },
       "Ogistra Nutrition": {
-        "count": 49,
+        "count": 51,
         "store_url": "https://www.ogistra-nutrition-shop.com",
-        "avg_discount": 36.0
+        "avg_discount": 35.4
       },
       "X Sport": {
         "count": 9,
@@ -11459,12 +11459,12 @@
     },
     "by_category": {
       "Rasprodaja": {
-        "count": 93,
-        "avg_discount": 22.1
+        "count": 92,
+        "avg_discount": 21.9
       },
       "Akcija": {
-        "count": 18,
-        "avg_discount": 20.8
+        "count": 19,
+        "avg_discount": 20.5
       },
       "Preporucujemo": {
         "count": 1,
@@ -11579,8 +11579,8 @@
         "avg_discount": 22.0
       },
       "Ostalo": {
-        "count": 49,
-        "avg_discount": 36.0
+        "count": 51,
+        "avg_discount": 35.4
       }
     },
     "new_discounts_count": 0,
@@ -11600,13 +11600,13 @@
     "GymBeam": {
       "total": 44,
       "with_prices": 44,
-      "with_discounts": 32,
+      "with_discounts": 31,
       "status": "ok"
     },
     "FitLab": {
       "total": 24,
       "with_prices": 24,
-      "with_discounts": 19,
+      "with_discounts": 20,
       "status": "ok"
     },
     "TitaniumSport": {
@@ -11648,7 +11648,7 @@
     "Ogistra Nutrition": {
       "total": 54,
       "with_prices": 54,
-      "with_discounts": 49,
+      "with_discounts": 51,
       "status": "ok"
     },
     "SuperProtein": {
