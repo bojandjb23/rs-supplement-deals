@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-07T16:57:51.476748",
+  "scraped_at": "2026-09-07T20:59:26.382155",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -19,7 +19,7 @@
   ],
   "stores_failed": [],
   "total_products": 739,
-  "total_discounted": 395,
+  "total_discounted": 403,
   "products": [
     {
       "id": "gymbeam_multifunkcionalna-daska-za-sklekove-gymbeam-pokloni",
@@ -168,21 +168,6 @@
       "discount_percent": 30,
       "currency": "RSD",
       "product_url": "https://gymbeam.rs/flasa-nomad-1800-ml-strix.html",
-      "in_stock": true,
-      "date_scraped": "2026-09-07"
-    },
-    {
-      "id": "gymbeam_thor-fuel-vitargo-gymbeam-pokloni",
-      "name": "Thor Fuel + Vitargo - GymBeam + pokloni",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/t/h/thor_5.jpg",
-      "original_price": 2600.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/pre-workout-stimulans-thor-fuel-vitargo-600-g-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-09-07"
     },
@@ -378,6 +363,21 @@
       "discount_percent": 25,
       "currency": "RSD",
       "product_url": "https://gymbeam.rs/hand-paddle-aquaflow-black-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-09-07"
+    },
+    {
+      "id": "gymbeam_casa-za-trcanje-black-gymbeam",
+      "name": "Čaša za trčanje Black - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/r/u/running_cup_black_-_gymbeam-1.jpg",
+      "original_price": 850.0,
+      "discount_price": 510.0,
+      "discount_percent": 40,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/running-cup-black-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-09-07"
     },
@@ -682,6 +682,96 @@
       "date_scraped": "2026-09-07"
     },
     {
+      "id": "fitlab_omega-3-pro-300gelcaps-zinc-bisglycinate-100cap-basic-supplements",
+      "name": "Omega 3 pro 300gelcaps / Zinc Bisglycinate 100cap - Basic Supplements",
+      "store": "FitLab",
+      "store_url": "https://fitlab.rs",
+      "category": "Akcija",
+      "image_url": "https://fitlab.rs/products/2026/09/omega-3-pro-zinc-bisglycinate-corechelate-basic-supplements-paket-1788808766411.png",
+      "original_price": 3880.0,
+      "discount_price": 3290.0,
+      "discount_percent": 15,
+      "currency": "RSD",
+      "product_url": "https://fitlab.rs/sr/proizvodi/omega-3-pro-300gelcaps-zinc-bisglycinate-100cap-basic-supplements",
+      "in_stock": true,
+      "date_scraped": "2026-09-07"
+    },
+    {
+      "id": "fitlab_collagen-pro-400g-magnesium-bisglycinate-120cap-basic-supplements",
+      "name": "Collagen pro 400g / Magnesium Bisglycinate 120cap - Basic Supplements",
+      "store": "FitLab",
+      "store_url": "https://fitlab.rs",
+      "category": "Akcija",
+      "image_url": "https://fitlab.rs/products/2026/09/collagen-pro-400g-magnesium-bisglycinate-120cap-basic-supplements-paket-1788807720132.png",
+      "original_price": 4860.0,
+      "discount_price": 4130.0,
+      "discount_percent": 15,
+      "currency": "RSD",
+      "product_url": "https://fitlab.rs/sr/proizvodi/collagen-pro-400g-magnesium-bisglycinate-120cap-basic-supplements",
+      "in_stock": true,
+      "date_scraped": "2026-09-07"
+    },
+    {
+      "id": "fitlab_pro-whey-100-227kg-l-citrulline-400g-crea-pro-500g-basic-supplements",
+      "name": "Pro Whey 100% 2.27kg / L-Citrulline 400g / Crea pro 500g - Basic Supplements",
+      "store": "FitLab",
+      "store_url": "https://fitlab.rs",
+      "category": "Akcija",
+      "image_url": "https://fitlab.rs/products/2026/09/pro-whey-100-2-27kg-l-citrulline-pro-crea-pro-basic-supplements-paket-1788806177649.png",
+      "original_price": 15150.0,
+      "discount_price": 12870.0,
+      "discount_percent": 15,
+      "currency": "RSD",
+      "product_url": "https://fitlab.rs/sr/proizvodi/pro-whey-100-2-27kg-l-citrulline-400g-crea-pro-500g-basic-supplements",
+      "in_stock": true,
+      "date_scraped": "2026-09-07"
+    },
+    {
+      "id": "fitlab_magnesium-bisglycinate-120cap-ashwagandha-ksm-66-90cap-basic-supplements",
+      "name": "Magnesium Bisglycinate 120cap / Ashwagandha KSM-66 90cap - Basic Supplements",
+      "store": "FitLab",
+      "store_url": "https://fitlab.rs",
+      "category": "Akcija",
+      "image_url": "https://fitlab.rs/products/2026/09/magnesium-bisglycinate-120cap-ashwagandha-ksm-66-90cap-basic-supplements-paket-1788803370071.png",
+      "original_price": 5060.0,
+      "discount_price": 4290.0,
+      "discount_percent": 15,
+      "currency": "RSD",
+      "product_url": "https://fitlab.rs/sr/proizvodi/magnesium-bisglycinate-120cap-ashwagandha-ksm-66-90cap-basic-supplements",
+      "in_stock": true,
+      "date_scraped": "2026-09-07"
+    },
+    {
+      "id": "fitlab_zinc-picolinate-200tb-omega-3-ultra-90cap-ostrovit",
+      "name": "Zinc Picolinate 200tb / Omega 3 Ultra 90cap - OstroVit",
+      "store": "FitLab",
+      "store_url": "https://fitlab.rs",
+      "category": "Akcija",
+      "image_url": "https://fitlab.rs/products/2026/09/zinc-picolinate-omega-3-ultra-epa-dha-330-220-ostrovit-paket-1788801448967.png",
+      "original_price": 3180.0,
+      "discount_price": 2690.0,
+      "discount_percent": 15,
+      "currency": "RSD",
+      "product_url": "https://fitlab.rs/sr/proizvodi/zinc-picolinate-200tb-omega-3-ultra-90cap-ostrovit",
+      "in_stock": true,
+      "date_scraped": "2026-09-07"
+    },
+    {
+      "id": "fitlab_magnesium-glycinate-90cap-ashwagandha-ksm-66-120tb-ostrovit",
+      "name": "Magnesium Glycinate 90cap / Ashwagandha KSM-66 120tb - Ostrovit",
+      "store": "FitLab",
+      "store_url": "https://fitlab.rs",
+      "category": "Akcija",
+      "image_url": "https://fitlab.rs/products/2026/09/magnesium-glycinate-ashwagandha-vege-ksm-66-ostrovit-paket-1788800776696.png",
+      "original_price": 4780.0,
+      "discount_price": 4060.0,
+      "discount_percent": 15,
+      "currency": "RSD",
+      "product_url": "https://fitlab.rs/sr/proizvodi/magnesium-glycinate-90cap-ashwagandha-ksm-66-120tb-ostrovit",
+      "in_stock": true,
+      "date_scraped": "2026-09-07"
+    },
+    {
       "id": "fitlab_omega-3-extreme-90gelcaps-tribulus-90-saponina-60cap-ostrovit",
       "name": "Omega 3 Extreme 90gelcaps / Tribulus 90% saponina 60cap - OstroVit",
       "store": "FitLab",
@@ -948,96 +1038,6 @@
       "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://fitlab.rs/sr/proizvodi/100-pure-creatine-monohydrate-powder-300g-body-attack",
-      "in_stock": true,
-      "date_scraped": "2026-09-07"
-    },
-    {
-      "id": "fitlab_whey-pro-2kg-creatine-ostrovit-300g-nutriversum",
-      "name": "Whey Pro 2kg + Creatine ostrovit 300g - Nutriversum",
-      "store": "FitLab",
-      "store_url": "https://fitlab.rs",
-      "category": "Akcija",
-      "image_url": "https://fitlab.rs/products/2025/10/kreatin-creatin-whey-protein-surutka-misicna-masa-snaga-izdrzljivost-pansport-ogistra-scaled-e1760546512618.jpeg",
-      "original_price": 9170.0,
-      "discount_price": 7330.0,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://fitlab.rs/sr/proizvodi/whey-pro-2kg-creatine-ostrovit-300g-nutriversum",
-      "in_stock": true,
-      "date_scraped": "2026-09-07"
-    },
-    {
-      "id": "fitlab_critical-whey-2kg-gratis-kreatin-applied-nutritiontm",
-      "name": "Critical whey 2kg + gratis KREATIN - Applied Nutrition™",
-      "store": "FitLab",
-      "store_url": "https://fitlab.rs",
-      "category": "Najprodavanije",
-      "image_url": "https://fitlab.rs/products/2026/05/critical-whey-2-27kg-gratis-creatine-applied-nutrition-poklon-kreatin-1779444220724.jpeg",
-      "original_price": 7790.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://fitlab.rs/sr/proizvodi/critical-whey-2-27kg-gratis-creatine-applied-nutrition",
-      "in_stock": true,
-      "date_scraped": "2026-09-07"
-    },
-    {
-      "id": "fitlab_collagen-300g-l-carnitin-500ml-maximalium",
-      "name": "Collagen 300g + L-Carnitin 500ml - Maximalium",
-      "store": "FitLab",
-      "store_url": "https://fitlab.rs",
-      "category": "Akcija",
-      "image_url": "https://fitlab.rs/products/2025/06/Kolagen-collagen-maximalium-whey-mrsavljenje-sagorevac-masti-imunitet-snaga.jpeg",
-      "original_price": 4440.0,
-      "discount_price": 3552.0,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://fitlab.rs/sr/proizvodi/collagen-300g-l-carnitin-500ml-maximalium",
-      "in_stock": true,
-      "date_scraped": "2026-09-07"
-    },
-    {
-      "id": "fitlab_creatine-monohydrate-micronized-300g-naughty-boy",
-      "name": "Creatine monohydrate micronized 300g - Naughty Boy",
-      "store": "FitLab",
-      "store_url": "https://fitlab.rs",
-      "category": "Akcija",
-      "image_url": "https://fitlab.rs/products/2024/02/Creatine-monohidrat-micronized-300g-–-Naughty-Boy.webp",
-      "original_price": 2490.0,
-      "discount_price": 1990.0,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://fitlab.rs/sr/proizvodi/creatine-monohidrat-micronized-300g-naughty-boy",
-      "in_stock": true,
-      "date_scraped": "2026-09-07"
-    },
-    {
-      "id": "fitlab_ubichinon-q10-60cap100mg-ostrovit",
-      "name": "Ubichinon Q10 60cap/100mg - OstroVit",
-      "store": "FitLab",
-      "store_url": "https://fitlab.rs",
-      "category": "Akcija",
-      "image_url": "https://fitlab.rs/products/2025/06/Ubichinon-Q10-100-e1748791681645.webp",
-      "original_price": 2890.0,
-      "discount_price": 2312.0,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://fitlab.rs/sr/proizvodi/ubichinon-q10-60cap-100mg-ostrovit",
-      "in_stock": true,
-      "date_scraped": "2026-09-07"
-    },
-    {
-      "id": "fitlab_creatine-300g-citrulin-beta-alanin-taurin-arginin-maximalium",
-      "name": "Creatine 300g (+Citrulin/ Beta-alanin/ Taurin/ Arginin) - Maximalium",
-      "store": "FitLab",
-      "store_url": "https://fitlab.rs",
-      "category": "Akcija",
-      "image_url": "https://fitlab.rs/products/2024/12/Kreatin-creatin-creatine-maximalimu-citrulin-citruline-snaga-oporavak-pumpa-prework-misicna-masa.jpeg",
-      "original_price": 2590.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://fitlab.rs/sr/proizvodi/creatine-monohydrate-300g-maximalium",
       "in_stock": true,
       "date_scraped": "2026-09-07"
     },
@@ -5399,8 +5399,8 @@
       "category": "Probiotici",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/probiotic-md-20-kaps.webp?v=1764107271",
       "original_price": 2370.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1780.0,
+      "discount_percent": 25,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/kaltex-probiotic-md-60-milijardi",
       "in_stock": true,
@@ -5519,8 +5519,8 @@
       "category": "Probiotici",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/probiotic-forte-prebiotic.webp?v=1764106690",
       "original_price": 900.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 675.0,
+      "discount_percent": 25,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/kaltex-probiotic-forte-30-milijardi-cfu",
       "in_stock": true,
@@ -6284,8 +6284,8 @@
       "category": "Probiotici",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/probiotic-prebiotic.webp?v=1764106155",
       "original_price": 770.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 580.0,
+      "discount_percent": 25,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/kaltex-probiotic-prebiotic-10-milijardi",
       "in_stock": true,
@@ -7094,8 +7094,8 @@
       "category": "Probiotici",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/gastro-biotic.webp?v=1764104900",
       "original_price": 900.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 675.0,
+      "discount_percent": 25,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/kaltex-gastro-biotic-probiotici-enzimi",
       "in_stock": true,
@@ -7514,8 +7514,8 @@
       "category": "Probiotici",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/s-boulardii-prebiotic.webp?v=1764107054",
       "original_price": 770.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 580.0,
+      "discount_percent": 25,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/kaltex-s-boulardii-efikasna-zastita-od-dijareje",
       "in_stock": true,
@@ -9802,21 +9802,6 @@
       "date_scraped": "2026-09-07"
     },
     {
-      "id": "exyu-fitness_dymatize-iso-100-hydrolyzed-protein-22-kg",
-      "name": "Dymatize ISO-100 Hydrolyzed Protein 2,2 kg",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/iso-100-hydrolyzed-protein-2-2-kg-4233.webp",
-      "original_price": 12500.0,
-      "discount_price": 11500.0,
-      "discount_percent": 8,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/proteini/whey-protein-isolate/dymatize-iso-100-hydrolyzed-protein-2-2-kg/",
-      "in_stock": false,
-      "date_scraped": "2026-09-07"
-    },
-    {
       "id": "exyu-fitness_extrifit-enox-shock-690grrok-626",
       "name": "ExtriFit E.Nox Shock 690gr(rok 6/26)",
       "store": "ExYu Fitness",
@@ -9828,6 +9813,21 @@
       "discount_percent": 24,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/pre-workout-suplementi/extrifit-e-nox-shock-690gr/",
+      "in_stock": false,
+      "date_scraped": "2026-09-07"
+    },
+    {
+      "id": "exyu-fitness_dymatize-iso-100-hydrolyzed-protein-22-kg",
+      "name": "Dymatize ISO-100 Hydrolyzed Protein 2,2 kg",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/iso-100-hydrolyzed-protein-2-2-kg-4233.webp",
+      "original_price": 12500.0,
+      "discount_price": 11500.0,
+      "discount_percent": 8,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/proteini/whey-protein-isolate/dymatize-iso-100-hydrolyzed-protein-2-2-kg/",
       "in_stock": false,
       "date_scraped": "2026-09-07"
     },
@@ -11109,10 +11109,10 @@
   ],
   "weekly_summary": {
     "week_of": "2026-09-07",
-    "generated_at": "2026-09-07 16:57",
+    "generated_at": "2026-09-07 20:59",
     "total_products": 739,
-    "total_discounted": 395,
-    "avg_discount_percent": 17.8,
+    "total_discounted": 403,
+    "avg_discount_percent": 17.9,
     "top_discounts": [
       {
         "id": "titaniumsport_muscular-regenerative-booster-krema",
@@ -11417,14 +11417,14 @@
     ],
     "by_store": {
       "GymBeam": {
-        "count": 31,
+        "count": 32,
         "store_url": "https://www.gymbeam.rs",
-        "avg_discount": 34.9
+        "avg_discount": 35.1
       },
       "FitLab": {
-        "count": 20,
+        "count": 22,
         "store_url": "https://fitlab.rs",
-        "avg_discount": 19.2
+        "avg_discount": 18.0
       },
       "TitaniumSport": {
         "count": 24,
@@ -11437,9 +11437,9 @@
         "avg_discount": 40.0
       },
       "Dobrobit": {
-        "count": 198,
+        "count": 203,
         "store_url": "https://dobrobit.rs",
-        "avg_discount": 10.6
+        "avg_discount": 11.0
       },
       "ExYu Fitness": {
         "count": 61,
@@ -11459,12 +11459,12 @@
     },
     "by_category": {
       "Rasprodaja": {
-        "count": 92,
-        "avg_discount": 21.9
+        "count": 93,
+        "avg_discount": 22.1
       },
       "Akcija": {
-        "count": 19,
-        "avg_discount": 20.5
+        "count": 21,
+        "avg_discount": 19.0
       },
       "Preporucujemo": {
         "count": 1,
@@ -11511,8 +11511,8 @@
         "avg_discount": 10.0
       },
       "Probiotici": {
-        "count": 10,
-        "avg_discount": 10.3
+        "count": 15,
+        "avg_discount": 15.2
       },
       "Ašvaganda": {
         "count": 4,
@@ -11600,13 +11600,13 @@
     "GymBeam": {
       "total": 44,
       "with_prices": 44,
-      "with_discounts": 31,
+      "with_discounts": 32,
       "status": "ok"
     },
     "FitLab": {
       "total": 24,
       "with_prices": 24,
-      "with_discounts": 20,
+      "with_discounts": 22,
       "status": "ok"
     },
     "TitaniumSport": {
@@ -11624,7 +11624,7 @@
     "Dobrobit": {
       "total": 507,
       "with_prices": 507,
-      "with_discounts": 198,
+      "with_discounts": 203,
       "status": "ok"
     },
     "ExYu Fitness": {
