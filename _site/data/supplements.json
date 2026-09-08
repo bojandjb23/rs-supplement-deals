@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-08T10:22:44.229267",
+  "scraped_at": "2026-09-08T15:44:23.346445",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -18,8 +18,8 @@
     "X Sport"
   ],
   "stores_failed": [],
-  "total_products": 700,
-  "total_discounted": 379,
+  "total_products": 699,
+  "total_discounted": 377,
   "products": [
     {
       "id": "gymbeam_multifunkcionalna-daska-za-sklekove-gymbeam-pokloni",
@@ -213,21 +213,6 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://gymbeam.rs/proteinski-mug-cake-mix-500-g-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-09-08"
-    },
-    {
-      "id": "gymbeam_kreatin-double-energy-gymbeam-pokloni",
-      "name": "Kreatin Double Energy - GymBeam + pokloni",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/b/h/bhrsth_12.jpg",
-      "original_price": 1850.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/dvostruka-energija-kreatina-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-09-08"
     },
@@ -648,6 +633,21 @@
       "discount_percent": 25,
       "currency": "RSD",
       "product_url": "https://gymbeam.rs/kinezioloska-traka-k-tape-orange-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-09-08"
+    },
+    {
+      "id": "gymbeam_kreatin-double-energy-gymbeam-pokloni",
+      "name": "Kreatin Double Energy - GymBeam + pokloni",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/b/h/bhrsth_12.jpg",
+      "original_price": 1850.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/dvostruka-energija-kreatina-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-09-08"
     },
@@ -3913,9 +3913,9 @@
       "store_url": "https://dobrobit.rs",
       "category": "Omega masne kiseline",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/solgar-full-spectrum-omega-salmon-oil.webp?v=1738365903",
-      "original_price": 5690.0,
-      "discount_price": 5650.0,
-      "discount_percent": 1,
+      "original_price": 5650.0,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/wild-alaskan-full-spectrum-omega-zdravlje-srca-zglobova-i-imuniteta",
       "in_stock": true,
@@ -9202,6 +9202,21 @@
       "date_scraped": "2026-09-08"
     },
     {
+      "id": "exyu-fitness_applied-nutrition-zinc-bisglycinate",
+      "name": "Applied Nutrition Zinc Bisglycinate",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/Applied-Nutrition-Zinc-Bisglycinate.webp",
+      "original_price": 1750.0,
+      "discount_price": 1490.0,
+      "discount_percent": 15,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/zdravlje/vitamini/applied-nutrition-zinc-bisglycinate/",
+      "in_stock": true,
+      "date_scraped": "2026-09-08"
+    },
+    {
       "id": "exyu-fitness_scitec-100-whey-protein-professional-2-35-kg",
       "name": "Scitec 100% Whey Protein Professional - 2, 35 kg",
       "store": "ExYu Fitness",
@@ -9513,21 +9528,6 @@
       "discount_percent": 11,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/tvoji-ciljevi/suplementi-za-bolje-zdravlje/vitalikum-maca-matrix/",
-      "in_stock": false,
-      "date_scraped": "2026-09-08"
-    },
-    {
-      "id": "exyu-fitness_applied-nutrition-zinc-bisglycinate",
-      "name": "Applied Nutrition Zinc Bisglycinate",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/Applied-Nutrition-Zinc-Bisglycinate.webp",
-      "original_price": 1750.0,
-      "discount_price": 1490.0,
-      "discount_percent": 15,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/zdravlje/vitamini/applied-nutrition-zinc-bisglycinate/",
       "in_stock": false,
       "date_scraped": "2026-09-08"
     },
@@ -10402,21 +10402,6 @@
       "date_scraped": "2026-09-08"
     },
     {
-      "id": "x-sport_ultimate-nutrition-creatine-monohydrate-1kg",
-      "name": "Ultimate Nutrition Creatine Monohydrate (1kg)",
-      "store": "X Sport",
-      "store_url": "https://www.xsport.rs",
-      "category": "Akcije",
-      "image_url": "https://www.xsport.rs/images/products/139.gif",
-      "original_price": 5980.0,
-      "discount_price": 5690.0,
-      "discount_percent": 5,
-      "currency": "RSD",
-      "product_url": "https://www.xsport.rs/proizvod/ult_creatine_monohydrate_1kg",
-      "in_stock": true,
-      "date_scraped": "2026-09-08"
-    },
-    {
       "id": "x-sport_x-sport-sportska-flasa-bidon",
       "name": "X SPORT Sportska flaša (bidon)",
       "store": "X Sport",
@@ -10458,6 +10443,21 @@
       "discount_percent": 10,
       "currency": "RSD",
       "product_url": "https://www.xsport.rs/proizvod/ostrovit-creatine-300-limun",
+      "in_stock": true,
+      "date_scraped": "2026-09-08"
+    },
+    {
+      "id": "x-sport_6pak-milky-shake-whey-700g",
+      "name": "6Pak Milky Shake Whey (700g)",
+      "store": "X Sport",
+      "store_url": "https://www.xsport.rs",
+      "category": "Akcije",
+      "image_url": "https://www.xsport.rs/images/products/2331.gif",
+      "original_price": 2490.0,
+      "discount_price": 1890.0,
+      "discount_percent": 24,
+      "currency": "RSD",
+      "product_url": "https://www.xsport.rs/proizvod/6pak_milky_shake_whey_700g",
       "in_stock": true,
       "date_scraped": "2026-09-08"
     },
@@ -10505,28 +10505,13 @@
       "product_url": "https://www.xsport.rs/proizvod/yea-protein-500g",
       "in_stock": true,
       "date_scraped": "2026-09-08"
-    },
-    {
-      "id": "x-sport_now-propolis-1500",
-      "name": "NOW Propolis 1500",
-      "store": "X Sport",
-      "store_url": "https://www.xsport.rs",
-      "category": "Akcije",
-      "image_url": "https://www.xsport.rs/images/products/2990.png",
-      "original_price": 3990.0,
-      "discount_price": 2490.0,
-      "discount_percent": 38,
-      "currency": "RSD",
-      "product_url": "https://www.xsport.rs/proizvod/now-propolis-1500",
-      "in_stock": false,
-      "date_scraped": "2026-09-08"
     }
   ],
   "weekly_summary": {
     "week_of": "2026-09-07",
-    "generated_at": "2026-09-08 10:22",
-    "total_products": 700,
-    "total_discounted": 379,
+    "generated_at": "2026-09-08 15:44",
+    "total_products": 699,
+    "total_discounted": 377,
     "avg_discount_percent": 17.7,
     "top_discounts": [
       {
@@ -10847,7 +10832,7 @@
         "avg_discount": 40.0
       },
       "Dobrobit": {
-        "count": 203,
+        "count": 202,
         "store_url": "https://dobrobit.rs",
         "avg_discount": 11.0
       },
@@ -10862,9 +10847,9 @@
         "avg_discount": 35.4
       },
       "X Sport": {
-        "count": 9,
+        "count": 8,
         "store_url": "https://www.xsport.rs",
-        "avg_discount": 19.4
+        "avg_discount": 19.5
       }
     },
     "by_category": {
@@ -10905,12 +10890,12 @@
         "avg_discount": 13.1
       },
       "Akcije": {
-        "count": 69,
-        "avg_discount": 10.9
+        "count": 68,
+        "avg_discount": 10.7
       },
       "Omega masne kiseline": {
-        "count": 15,
-        "avg_discount": 11.4
+        "count": 14,
+        "avg_discount": 12.1
       },
       "Cink": {
         "count": 2,
@@ -11034,7 +11019,7 @@
     "Dobrobit": {
       "total": 507,
       "with_prices": 507,
-      "with_discounts": 203,
+      "with_discounts": 202,
       "status": "ok"
     },
     "ExYu Fitness": {
@@ -11086,9 +11071,9 @@
       "status": "warn:no_products"
     },
     "X Sport": {
-      "total": 9,
-      "with_prices": 9,
-      "with_discounts": 9,
+      "total": 8,
+      "with_prices": 8,
+      "with_discounts": 8,
       "status": "ok"
     }
   }
