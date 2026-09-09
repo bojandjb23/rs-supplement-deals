@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-09T10:29:31.548803",
+  "scraped_at": "2026-09-09T15:38:54.637043",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -18,7 +18,7 @@
     "X Sport"
   ],
   "stores_failed": [],
-  "total_products": 779,
+  "total_products": 778,
   "total_discounted": 440,
   "products": [
     {
@@ -138,6 +138,21 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://gymbeam.rs/fitnes-pojas-core-black-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-09-09"
+    },
+    {
+      "id": "gymbeam_collagen-hydrate-gymbeam-pokloni",
+      "name": "Collagen Hydrate - GymBeam + pokloni",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/d/a/daily-bezlabel-26-08-3.jpg",
+      "original_price": 1850.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/collagen-hydrate-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-09-09"
     },
@@ -603,36 +618,6 @@
       "discount_percent": 25,
       "currency": "RSD",
       "product_url": "https://gymbeam.rs/kinezioloska-traka-k-tape-orange-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-09-09"
-    },
-    {
-      "id": "gymbeam_magnezijum-citrat-gymbeam",
-      "name": "Magnezijum citrat - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/6/9/69676.jpg",
-      "original_price": 1300.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/magnezijum-citrat-caps-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-09-09"
-    },
-    {
-      "id": "gymbeam_kreatin-double-energy-gymbeam-pokloni",
-      "name": "Kreatin Double Energy - GymBeam + pokloni",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/b/h/bhrsth_12.jpg",
-      "original_price": 1850.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/dvostruka-energija-kreatina-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-09-09"
     },
@@ -9232,6 +9217,21 @@
       "date_scraped": "2026-09-09"
     },
     {
+      "id": "exyu-fitness_scitec-100-whey-protein-professional-2-35-kg",
+      "name": "Scitec 100% Whey Protein Professional - 2, 35 kg",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/100-whey-protein-professional-2-35-kg-4831.webp",
+      "original_price": 9900.0,
+      "discount_price": 9500.0,
+      "discount_percent": 4,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/proteini/scitec-100-whey-protein-professional-2-35-kg/",
+      "in_stock": true,
+      "date_scraped": "2026-09-09"
+    },
+    {
       "id": "exyu-fitness_5-stars-whey-protein-3000gr",
       "name": "5 Stars Whey Protein, 3000gr",
       "store": "ExYu Fitness",
@@ -9438,6 +9438,21 @@
       "discount_percent": 16,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/regulatori-hormona/nutriversum-tst-complex-210-gr/",
+      "in_stock": true,
+      "date_scraped": "2026-09-09"
+    },
+    {
+      "id": "exyu-fitness_yamamoto-glutamine-powder-600-gr",
+      "name": "Yamamoto Glutamine Powder 600 gr",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/yamamoto-glutamine-powder-600-gr-4005.webp",
+      "original_price": 4100.0,
+      "discount_price": 3670.0,
+      "discount_percent": 10,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/aminokiseline/yamamoto-glutamine-powder-600-gr/",
       "in_stock": true,
       "date_scraped": "2026-09-09"
     },
@@ -9727,21 +9742,6 @@
       "date_scraped": "2026-09-09"
     },
     {
-      "id": "exyu-fitness_scitec-100-whey-protein-professional-2-35-kg",
-      "name": "Scitec 100% Whey Protein Professional - 2, 35 kg",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/100-whey-protein-professional-2-35-kg-4831.webp",
-      "original_price": 9900.0,
-      "discount_price": 9100.0,
-      "discount_percent": 8,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/proteini/scitec-100-whey-protein-professional-2-35-kg/",
-      "in_stock": false,
-      "date_scraped": "2026-09-09"
-    },
-    {
       "id": "exyu-fitness_tesla-whey-charger-100-5000-gr",
       "name": "Tesla Whey Charger 100, 5000 gr",
       "store": "ExYu Fitness",
@@ -9888,21 +9888,6 @@
       "discount_percent": 60,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/zdravlje/vitalikum-antioxidant-matrix-90-caps/",
-      "in_stock": false,
-      "date_scraped": "2026-09-09"
-    },
-    {
-      "id": "exyu-fitness_yamamoto-glutamine-powder-600-gr",
-      "name": "Yamamoto Glutamine Powder 600 gr",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/yamamoto-glutamine-powder-600-gr-4005.webp",
-      "original_price": 4100.0,
-      "discount_price": 3670.0,
-      "discount_percent": 10,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/aminokiseline/yamamoto-glutamine-powder-600-gr/",
       "in_stock": false,
       "date_scraped": "2026-09-09"
     },
@@ -11709,8 +11694,8 @@
   ],
   "weekly_summary": {
     "week_of": "2026-09-07",
-    "generated_at": "2026-09-09 10:29",
-    "total_products": 779,
+    "generated_at": "2026-09-09 15:38",
+    "total_products": 778,
     "total_discounted": 440,
     "avg_discount_percent": 18.9,
     "top_discounts": [
@@ -12065,7 +12050,7 @@
     "by_category": {
       "Rasprodaja": {
         "count": 93,
-        "avg_discount": 21.7
+        "avg_discount": 21.6
       },
       "Akcija": {
         "count": 22,
@@ -12199,8 +12184,8 @@
       "status": "warn:no_products"
     },
     "GymBeam": {
-      "total": 42,
-      "with_prices": 42,
+      "total": 41,
+      "with_prices": 41,
       "with_discounts": 31,
       "status": "ok"
     },
