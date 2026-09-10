@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-10T10:21:03.466339",
+  "scraped_at": "2026-09-10T15:36:23.810327",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -18,9 +18,24 @@
     "X Sport"
   ],
   "stores_failed": [],
-  "total_products": 745,
-  "total_discounted": 410,
+  "total_products": 746,
+  "total_discounted": 412,
   "products": [
+    {
+      "id": "gymbeam_proamino-bez-stimulansa-gymbeam-pokloni",
+      "name": "ProAMINO bez stimulansa - GymBeam + pokloni",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/v/z/vzare.jpg",
+      "original_price": 2100.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/proamino-bez-stimulansa-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-09-10"
+    },
     {
       "id": "gymbeam_multifunkcionalna-daska-za-sklekove-gymbeam-pokloni",
       "name": "Multifunkcionalna daska za sklekove - GymBeam + pokloni",
@@ -52,21 +67,6 @@
       "date_scraped": "2026-09-10"
     },
     {
-      "id": "gymbeam_beast-burn-beastpink",
-      "name": "Beast Burn - BeastPink",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/b/e/beast_burn_120_caps_beastpink_wb_1_.png",
-      "original_price": 2250.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/sagorevac-masti-beast-burn-120-kaps-beast-pink.html",
-      "in_stock": true,
-      "date_scraped": "2026-09-10"
-    },
-    {
       "id": "gymbeam_hydrobeeftm-protein-gymbeam-poklon",
       "name": "HydroBeef™ Protein - GymBeam + poklon",
       "store": "GymBeam",
@@ -78,21 +78,6 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://gymbeam.rs/hydrobeeftm-protein-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-09-10"
-    },
-    {
-      "id": "gymbeam_fuenight-gymbeam-poklon",
-      "name": "FueNight - GymBeam + poklon",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/f/u/fuenight.jpg",
-      "original_price": 6490.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/fuenight-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-09-10"
     },
@@ -393,6 +378,21 @@
       "discount_percent": 25,
       "currency": "RSD",
       "product_url": "https://gymbeam.rs/hand-paddle-aquaflow-black-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-09-10"
+    },
+    {
+      "id": "gymbeam_bio-wheat-semolina-gymbeam",
+      "name": "BIO wheat semolina - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/b/i/bio-wheat-semolina-500g-mockup.jpg",
+      "original_price": 300.0,
+      "discount_price": 210.0,
+      "discount_percent": 30,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/bio-wheat-semolina-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-09-10"
     },
@@ -1654,6 +1654,21 @@
       "currency": "RSD",
       "product_url": "https://www.titaniumsport.rs/proizvod/whey-shake-227-kg/",
       "in_stock": false,
+      "date_scraped": "2026-09-10"
+    },
+    {
+      "id": "proteinisi_proteinisi-protein-wafer",
+      "name": "PROTEINI.SI PROTEIN WAFER",
+      "store": "Proteini.si",
+      "store_url": "https://proteinisi.rs",
+      "category": "Akcija",
+      "image_url": "https://proteinisi.rs/wp-content/uploads/11988-300x300.png",
+      "original_price": 220.0,
+      "discount_price": 140.8,
+      "discount_percent": 36,
+      "currency": "RSD",
+      "product_url": "https://proteinisi.rs/proizvod/proteini-si-protein-wafer/",
+      "in_stock": true,
       "date_scraped": "2026-09-10"
     },
     {
@@ -11199,10 +11214,10 @@
   ],
   "weekly_summary": {
     "week_of": "2026-09-07",
-    "generated_at": "2026-09-10 10:21",
-    "total_products": 745,
-    "total_discounted": 410,
-    "avg_discount_percent": 18.3,
+    "generated_at": "2026-09-10 15:36",
+    "total_products": 746,
+    "total_discounted": 412,
+    "avg_discount_percent": 18.4,
     "top_discounts": [
       {
         "id": "titaniumsport_muscular-regenerative-booster-krema",
@@ -11507,9 +11522,9 @@
     ],
     "by_store": {
       "GymBeam": {
-        "count": 41,
+        "count": 42,
         "store_url": "https://www.gymbeam.rs",
-        "avg_discount": 35.0
+        "avg_discount": 34.9
       },
       "FitLab": {
         "count": 22,
@@ -11522,9 +11537,9 @@
         "avg_discount": 21.5
       },
       "Proteini.si": {
-        "count": 1,
+        "count": 2,
         "store_url": "https://proteinisi.rs",
-        "avg_discount": 40.0
+        "avg_discount": 38.0
       },
       "Dobrobit": {
         "count": 202,
@@ -11549,12 +11564,12 @@
     },
     "by_category": {
       "Rasprodaja": {
-        "count": 103,
+        "count": 104,
         "avg_discount": 23.1
       },
       "Akcija": {
-        "count": 22,
-        "avg_discount": 19.3
+        "count": 23,
+        "avg_discount": 20.0
       },
       "Preporucujemo": {
         "count": 1,
@@ -11686,7 +11701,7 @@
     "GymBeam": {
       "total": 50,
       "with_prices": 50,
-      "with_discounts": 41,
+      "with_discounts": 42,
       "status": "ok"
     },
     "FitLab": {
@@ -11702,9 +11717,9 @@
       "status": "ok"
     },
     "Proteini.si": {
-      "total": 1,
-      "with_prices": 1,
-      "with_discounts": 1,
+      "total": 2,
+      "with_prices": 2,
+      "with_discounts": 2,
       "status": "ok"
     },
     "Dobrobit": {
