@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-12T09:52:04.887678",
+  "scraped_at": "2026-09-12T14:43:07.721507",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -19,7 +19,7 @@
   ],
   "stores_failed": [],
   "total_products": 785,
-  "total_discounted": 450,
+  "total_discounted": 449,
   "products": [
     {
       "id": "gymbeam_proamino-bez-stimulansa-gymbeam-pokloni",
@@ -472,21 +472,6 @@
       "date_scraped": "2026-09-12"
     },
     {
-      "id": "gymbeam_vegan-reds-blend-gymbeam",
-      "name": "Vegan Reds Blend - GymBeam",
-      "store": "GymBeam",
-      "store_url": "https://www.gymbeam.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://gymbeam.rs/media/catalog/product/v/e/vegan_reds_blend_mockup.jpg",
-      "original_price": 2497.62,
-      "discount_price": 1049.0,
-      "discount_percent": 58,
-      "currency": "RSD",
-      "product_url": "https://gymbeam.rs/vegan-reds-blend-gymbeam.html",
-      "in_stock": true,
-      "date_scraped": "2026-09-12"
-    },
-    {
       "id": "gymbeam_biciklisticki-ranac-hydropack-gymbeam",
       "name": "Biciklistički ranac Hydropack - GymBeam",
       "store": "GymBeam",
@@ -708,6 +693,21 @@
       "discount_percent": 25,
       "currency": "RSD",
       "product_url": "https://gymbeam.rs/kinezioloska-traka-k-tape-orange-gymbeam.html",
+      "in_stock": true,
+      "date_scraped": "2026-09-12"
+    },
+    {
+      "id": "gymbeam_vegan-reds-blend-gymbeam",
+      "name": "Vegan Reds Blend - GymBeam",
+      "store": "GymBeam",
+      "store_url": "https://www.gymbeam.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://gymbeam.rs/media/catalog/product/v/e/vegan_reds_blend_mockup.jpg",
+      "original_price": 1049.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://gymbeam.rs/vegan-reds-blend-gymbeam.html",
       "in_stock": true,
       "date_scraped": "2026-09-12"
     },
@@ -9357,10 +9357,10 @@
       "store": "ExYu Fitness",
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/62059-strawberry.webp",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/62059-chocolate.webp",
       "original_price": 7400.0,
-      "discount_price": 6100.0,
-      "discount_percent": 18,
+      "discount_price": 6500.0,
+      "discount_percent": 12,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/proteini/whey-protein-isolate/5-stars-whey-isolate-2-kg/",
       "in_stock": true,
@@ -9742,21 +9742,6 @@
       "date_scraped": "2026-09-12"
     },
     {
-      "id": "exyu-fitness_ostrovit-vitamin-d3-4000-iu-professional",
-      "name": "Ostrovit Vitamin D3 4000 IU Professional",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/ostrovit-vitaminD-4000.webp",
-      "original_price": 2190.0,
-      "discount_price": 1990.0,
-      "discount_percent": 9,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/zdravlje/vitamini/ostrovit-vitamin-d3-4000-iu-professional/",
-      "in_stock": true,
-      "date_scraped": "2026-09-12"
-    },
-    {
       "id": "exyu-fitness_naughty-boy-noogandharok-1126",
       "name": "Naughty Boy Noogandha(Rok 11/26)",
       "store": "ExYu Fitness",
@@ -10113,6 +10098,21 @@
       "discount_percent": 22,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/zoomad-labs-caretaker/",
+      "in_stock": false,
+      "date_scraped": "2026-09-12"
+    },
+    {
+      "id": "exyu-fitness_ostrovit-vitamin-d3-4000-iu-professional",
+      "name": "Ostrovit Vitamin D3 4000 IU Professional",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/ostrovit-vitaminD-4000.webp",
+      "original_price": 2190.0,
+      "discount_price": 1990.0,
+      "discount_percent": 9,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/zdravlje/vitamini/ostrovit-vitamin-d3-4000-iu-professional/",
       "in_stock": false,
       "date_scraped": "2026-09-12"
     },
@@ -11799,10 +11799,10 @@
   ],
   "weekly_summary": {
     "week_of": "2026-09-07",
-    "generated_at": "2026-09-12 09:52",
+    "generated_at": "2026-09-12 14:43",
     "total_products": 785,
-    "total_discounted": 450,
-    "avg_discount_percent": 19.2,
+    "total_discounted": 449,
+    "avg_discount_percent": 19.1,
     "top_discounts": [
       {
         "id": "lama_kid-vita-gummies-60-gumenih-bombona",
@@ -11862,21 +11862,6 @@
         "currency": "RSD",
         "product_url": "https://www.exyu-fitness.rs/suplementi/zdravlje/vitalikum-antioxidant-matrix-90-caps/",
         "in_stock": false,
-        "date_scraped": "2026-09-12"
-      },
-      {
-        "id": "gymbeam_vegan-reds-blend-gymbeam",
-        "name": "Vegan Reds Blend - GymBeam",
-        "store": "GymBeam",
-        "store_url": "https://www.gymbeam.rs",
-        "category": "Rasprodaja",
-        "image_url": "https://gymbeam.rs/media/catalog/product/v/e/vegan_reds_blend_mockup.jpg",
-        "original_price": 2497.62,
-        "discount_price": 1049.0,
-        "discount_percent": 58,
-        "currency": "RSD",
-        "product_url": "https://gymbeam.rs/vegan-reds-blend-gymbeam.html",
-        "in_stock": true,
         "date_scraped": "2026-09-12"
       },
       {
@@ -12103,13 +12088,28 @@
         "product_url": "https://www.ogistra-nutrition-shop.com/proteinske-cokoladice/1706-4545-freaker-protein-bar.html#/394-ukus-torta_della_nonna",
         "in_stock": true,
         "date_scraped": "2026-09-12"
+      },
+      {
+        "id": "ogistra-nutrition_elasticni-steznici-za-zglob-basic-wrist-wraps",
+        "name": "ELASTIČNI STEZNICI ZA ZGLOB - BASIC WRIST WRAPS",
+        "store": "Ogistra Nutrition",
+        "store_url": "https://www.ogistra-nutrition-shop.com",
+        "category": "Ostalo",
+        "image_url": "https://www.ogistra-nutrition-shop.com/3055-home_default/elasticni-steznici-za-zglob-basic-wrist-wraps.jpg",
+        "original_price": 590.0,
+        "discount_price": 295.0,
+        "discount_percent": 50,
+        "currency": "RSD",
+        "product_url": "https://www.ogistra-nutrition-shop.com/bb-i-fitness-oprema/1305-4534-elasticni-steznici-za-zglob-basic-wrist-wraps.html#/11-boja-crna",
+        "in_stock": true,
+        "date_scraped": "2026-09-12"
       }
     ],
     "by_store": {
       "GymBeam": {
-        "count": 41,
+        "count": 40,
         "store_url": "https://www.gymbeam.rs",
-        "avg_discount": 34.3
+        "avg_discount": 33.7
       },
       "FitLab": {
         "count": 22,
@@ -12134,7 +12134,7 @@
       "ExYu Fitness": {
         "count": 62,
         "store_url": "https://www.exyu-fitness.rs",
-        "avg_discount": 14.9
+        "avg_discount": 14.8
       },
       "LAMA": {
         "count": 39,
@@ -12154,8 +12154,8 @@
     },
     "by_category": {
       "Rasprodaja": {
-        "count": 103,
-        "avg_discount": 22.6
+        "count": 102,
+        "avg_discount": 22.2
       },
       "Akcija": {
         "count": 23,
@@ -12291,7 +12291,7 @@
     "GymBeam": {
       "total": 47,
       "with_prices": 47,
-      "with_discounts": 41,
+      "with_discounts": 40,
       "status": "ok"
     },
     "FitLab": {
