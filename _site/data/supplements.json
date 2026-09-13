@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-13T15:22:23.597341",
+  "scraped_at": "2026-09-13T20:05:16.869390",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -18,7 +18,7 @@
     "X Sport"
   ],
   "stores_failed": [],
-  "total_products": 699,
+  "total_products": 703,
   "total_discounted": 383,
   "products": [
     {
@@ -10387,6 +10387,66 @@
       "date_scraped": "2026-09-13"
     },
     {
+      "id": "superior14_biotech-power-protein-4kg-poklon-sejker",
+      "name": "BIOTECH POWER PROTEIN 4KG + POKLON SEJKER",
+      "store": "Superior14",
+      "store_url": "https://www.superior14.rs",
+      "category": "Proteini",
+      "image_url": "https://images.superior14.rs/1778674823/product-medium/biotech-power-protein-4kg-poklon-sejker.webp",
+      "original_price": 6190.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://www.superior14.rs/proizvodi/proteini/biotech-power-protein-4kg-poklon-sejker/",
+      "in_stock": true,
+      "date_scraped": "2026-09-13"
+    },
+    {
+      "id": "superior14_superior14-whey-core-5kg-poklon",
+      "name": "SUPERIOR14 WHEY CORE 5KG + POKLON",
+      "store": "Superior14",
+      "store_url": "https://www.superior14.rs",
+      "category": "Proteini",
+      "image_url": "https://images.superior14.rs/1788253911/product-medium/superior14-whey-core-5kg-poklon.webp",
+      "original_price": 10490.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://www.superior14.rs/proizvodi/proteini/superior14-whey-core-5kg-poklon/",
+      "in_stock": true,
+      "date_scraped": "2026-09-13"
+    },
+    {
+      "id": "superior14_5-stars-whey-protein",
+      "name": "5 Stars Whey Protein",
+      "store": "Superior14",
+      "store_url": "https://www.superior14.rs",
+      "category": "Proteini",
+      "image_url": "https://images.superior14.rs/1788247206/product-medium/5-stars-whey-protein.webp",
+      "original_price": 6790.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://www.superior14.rs/proizvodi/proteini/5-stars-whey-protein/",
+      "in_stock": true,
+      "date_scraped": "2026-09-13"
+    },
+    {
+      "id": "superior14_superior14-krealka-max-gratis-majica",
+      "name": "SUPERIOR14 KREALKA MAX + GRATIS MAJICA",
+      "store": "Superior14",
+      "store_url": "https://www.superior14.rs",
+      "category": "Kreatini",
+      "image_url": "https://images.superior14.rs/1775638486/product-medium/superior14-krealka-max-gratis-majica.webp",
+      "original_price": 2390.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://www.superior14.rs/proizvodi/kreatini/superior14-krealka-max-gratis-majica/",
+      "in_stock": true,
+      "date_scraped": "2026-09-13"
+    },
+    {
       "id": "x-sport_ultimate-nutrition-creatine-monohydrate-300g",
       "name": "Ultimate Nutrition Creatine Monohydrate (300g)",
       "store": "X Sport",
@@ -10509,8 +10569,8 @@
   ],
   "weekly_summary": {
     "week_of": "2026-09-07",
-    "generated_at": "2026-09-13 15:22",
-    "total_products": 699,
+    "generated_at": "2026-09-13 20:05",
+    "total_products": 703,
     "total_discounted": 383,
     "avg_discount_percent": 17.7,
     "top_discounts": [
@@ -11049,10 +11109,10 @@
       "status": "warn:no_products"
     },
     "Superior14": {
-      "total": 0,
-      "with_prices": 0,
+      "total": 4,
+      "with_prices": 4,
       "with_discounts": 0,
-      "status": "warn:no_products"
+      "status": "ok"
     },
     "ATP Sport": {
       "total": 0,
