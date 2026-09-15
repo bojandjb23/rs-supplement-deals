@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-15T16:00:09.019970",
+  "scraped_at": "2026-09-15T20:44:05.911886",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -18,8 +18,8 @@
     "X Sport"
   ],
   "stores_failed": [],
-  "total_products": 696,
-  "total_discounted": 394,
+  "total_products": 681,
+  "total_discounted": 378,
   "products": [
     {
       "id": "fitlab_whey-protein-450g-workout-nutrition",
@@ -9472,201 +9472,6 @@
       "date_scraped": "2026-09-15"
     },
     {
-      "id": "ogistra-nutrition_agelin-bodybalance-15-g-bioaktivnog-kolagena-po-kesici-20-kesica",
-      "name": "Agelin Bodybalance® – 15 g bioaktivnog kolagena po kesici, 20 kesica",
-      "store": "Ogistra Nutrition",
-      "store_url": "https://www.ogistra-nutrition-shop.com",
-      "category": "Ostalo",
-      "image_url": "https://www.ogistra-nutrition-shop.com/4940-home_default/agelin-bodybalanceR-15-g-bioaktivnog-kolagena-po-kesici-20-kesica.jpg",
-      "original_price": 3990.0,
-      "discount_price": 3192.0,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://www.ogistra-nutrition-shop.com/kolagen/1702-agelin-bodybalanceR-15-g-bioaktivnog-kolagena-po-kesici-20-kesica.html",
-      "in_stock": true,
-      "date_scraped": "2026-09-15"
-    },
-    {
-      "id": "ogistra-nutrition_sily-caps-milk-thistle-60-kapsula-yamamoto-nutrition",
-      "name": "Sily CAPS – Milk Thistle, 60 kapsula YAMAMOTO NUTRITION",
-      "store": "Ogistra Nutrition",
-      "store_url": "https://www.ogistra-nutrition-shop.com",
-      "category": "Ostalo",
-      "image_url": "https://www.ogistra-nutrition-shop.com/4950-home_default/sily-caps-milk-thistle-60-kapsula-yamamoto-nutrition.jpg",
-      "original_price": 2160.0,
-      "discount_price": 1512.0,
-      "discount_percent": 30,
-      "currency": "RSD",
-      "product_url": "https://www.ogistra-nutrition-shop.com/katalog/1711-sily-caps-milk-thistle-60-kapsula-yamamoto-nutrition.html",
-      "in_stock": true,
-      "date_scraped": "2026-09-15"
-    },
-    {
-      "id": "ogistra-nutrition_ansitex-30-kapsula-yamamoto-nutrition-magnezijum-melisa-i-safran",
-      "name": "Ansitex – 30 kapsula - YAMAMOTO NUTRITION – Magnezijum, Melisa i Šafran",
-      "store": "Ogistra Nutrition",
-      "store_url": "https://www.ogistra-nutrition-shop.com",
-      "category": "Ostalo",
-      "image_url": "https://www.ogistra-nutrition-shop.com/4871-home_default/ansitex-magnezijum-melisa-safran.jpg",
-      "original_price": 1790.0,
-      "discount_price": 1432.0,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://www.ogistra-nutrition-shop.com/biljni-ekstrati/1701-ansitex-magnezijum-melisa-safran.html",
-      "in_stock": true,
-      "date_scraped": "2026-09-15"
-    },
-    {
-      "id": "ogistra-nutrition_the-amino-whey-hydro-protein-35kg",
-      "name": "THE Amino Whey  Hydro protein 3.5KG",
-      "store": "Ogistra Nutrition",
-      "store_url": "https://www.ogistra-nutrition-shop.com",
-      "category": "Ostalo",
-      "image_url": "https://www.ogistra-nutrition-shop.com/2614-home_default/the-amino-whey-hydro3500g.jpg",
-      "original_price": 10260.0,
-      "discount_price": 8208.0,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://www.ogistra-nutrition-shop.com/proteini/12-3894-the-amino-whey-hydro3500g.html#/33-ukus-jaffa",
-      "in_stock": true,
-      "date_scraped": "2026-09-15"
-    },
-    {
-      "id": "ogistra-nutrition_multi-vitamin-yamamoto-nutrition-60-tableta",
-      "name": "Multi VITAMIN Yamamoto® Nutrition 60 tableta",
-      "store": "Ogistra Nutrition",
-      "store_url": "https://www.ogistra-nutrition-shop.com",
-      "category": "Ostalo",
-      "image_url": "https://www.ogistra-nutrition-shop.com/1579-home_default/multi-vitamin-yamamoto-nutrition-60-tableta.jpg",
-      "original_price": 1550.0,
-      "discount_price": 1162.5,
-      "discount_percent": 25,
-      "currency": "RSD",
-      "product_url": "https://www.ogistra-nutrition-shop.com/katalog/806-multi-vitamin-yamamoto-nutrition-60-tableta.html",
-      "in_stock": true,
-      "date_scraped": "2026-09-15"
-    },
-    {
-      "id": "ogistra-nutrition_vitamin-c-1000mg-90-tableta",
-      "name": "VITAMIN C 1000MG - 90 TABLETA",
-      "store": "Ogistra Nutrition",
-      "store_url": "https://www.ogistra-nutrition-shop.com",
-      "category": "Ostalo",
-      "image_url": "https://www.ogistra-nutrition-shop.com/1546-home_default/vitamin-c-1000mg-90tableta-yamamoto-nutrition.jpg",
-      "original_price": 1790.0,
-      "discount_price": 1432.0,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://www.ogistra-nutrition-shop.com/vitamini-i-minerali/988-vitamin-c-1000mg-90tableta-yamamoto-nutrition.html",
-      "in_stock": true,
-      "date_scraped": "2026-09-15"
-    },
-    {
-      "id": "ogistra-nutrition_the-bcaa-1000g-aminokiseline",
-      "name": "THE BCAA - 1000G (AMINOKISELINE)",
-      "store": "Ogistra Nutrition",
-      "store_url": "https://www.ogistra-nutrition-shop.com",
-      "category": "Ostalo",
-      "image_url": "https://www.ogistra-nutrition-shop.com/1946-home_default/the-nutrition-bcaa-1000-gr.jpg",
-      "original_price": 4700.0,
-      "discount_price": 2820.0,
-      "discount_percent": 40,
-      "currency": "RSD",
-      "product_url": "https://www.ogistra-nutrition-shop.com/bcaa/80-255-the-nutrition-bcaa-1000-gr.html#/38-ukus-narandza",
-      "in_stock": true,
-      "date_scraped": "2026-09-15"
-    },
-    {
-      "id": "ogistra-nutrition_testorol-40-caplets",
-      "name": "TestoROL 40 Caplets",
-      "store": "Ogistra Nutrition",
-      "store_url": "https://www.ogistra-nutrition-shop.com",
-      "category": "Ostalo",
-      "image_url": "https://www.ogistra-nutrition-shop.com/1572-home_default/testorol-yamamoto-nurition-40-caplets.jpg",
-      "original_price": 2490.0,
-      "discount_price": 1867.5,
-      "discount_percent": 25,
-      "currency": "RSD",
-      "product_url": "https://www.ogistra-nutrition-shop.com/gh-i-testo-boosteri/859-testorol-yamamoto-nurition-40-caplets.html",
-      "in_stock": true,
-      "date_scraped": "2026-09-15"
-    },
-    {
-      "id": "ogistra-nutrition_iso-fuji-700g-yamamoto-nutrition",
-      "name": "Iso-FUJI® 700G - YAMAMOTO NUTRITION",
-      "store": "Ogistra Nutrition",
-      "store_url": "https://www.ogistra-nutrition-shop.com",
-      "category": "Ostalo",
-      "image_url": "https://www.ogistra-nutrition-shop.com/1560-home_default/iso-fuji-700g-whey-protein-yamamoto-nutrition.jpg",
-      "original_price": 5690.0,
-      "discount_price": 3983.0,
-      "discount_percent": 30,
-      "currency": "RSD",
-      "product_url": "https://www.ogistra-nutrition-shop.com/proteini/808-1997-iso-fuji-700g-whey-protein-yamamoto-nutrition.html#/28-ukus-cokolada",
-      "in_stock": true,
-      "date_scraped": "2026-09-15"
-    },
-    {
-      "id": "ogistra-nutrition_the-fat-burner-120-kapsula-sagorevac-masti",
-      "name": "THE Fat Burner 120 kapsula / SAGOREVAC MASTI",
-      "store": "Ogistra Nutrition",
-      "store_url": "https://www.ogistra-nutrition-shop.com",
-      "category": "Ostalo",
-      "image_url": "https://www.ogistra-nutrition-shop.com/1109-home_default/the-fat-burner-120-kapsula.jpg",
-      "original_price": 2290.0,
-      "discount_price": 1603.0,
-      "discount_percent": 30,
-      "currency": "RSD",
-      "product_url": "https://www.ogistra-nutrition-shop.com/sagorevaci-masti-tabcaps/646-the-fat-burner-120-kapsula.html",
-      "in_stock": true,
-      "date_scraped": "2026-09-15"
-    },
-    {
-      "id": "ogistra-nutrition_acetyl-l-carnitine-pro-150-vegan-capsule",
-      "name": "ACETYL L-CARNITINE PRO / 150 VEGAN CAPSULE",
-      "store": "Ogistra Nutrition",
-      "store_url": "https://www.ogistra-nutrition-shop.com",
-      "category": "Ostalo",
-      "image_url": "https://www.ogistra-nutrition-shop.com/4404-home_default/acetyl-l-carnitine-pro-150-vegan-capsule.jpg",
-      "original_price": 2750.0,
-      "discount_price": 2200.0,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://www.ogistra-nutrition-shop.com/l-carnitini-i-tecni-sagorevaci/1252-acetyl-l-carnitine-pro-150-vegan-capsule.html",
-      "in_stock": true,
-      "date_scraped": "2026-09-15"
-    },
-    {
-      "id": "ogistra-nutrition_the-fiber-digestivna-vlakna-600g-the-nutrition",
-      "name": "THE FIBER DIGESTIVNA VLAKNA 600g - THE NUTRITION",
-      "store": "Ogistra Nutrition",
-      "store_url": "https://www.ogistra-nutrition-shop.com",
-      "category": "Ostalo",
-      "image_url": "https://www.ogistra-nutrition-shop.com/2063-home_default/the-fiber.jpg",
-      "original_price": 2210.0,
-      "discount_price": 1105.0,
-      "discount_percent": 50,
-      "currency": "RSD",
-      "product_url": "https://www.ogistra-nutrition-shop.com/preparati-za-digestivni-trakt/292-the-fiber.html",
-      "in_stock": true,
-      "date_scraped": "2026-09-15"
-    },
-    {
-      "id": "ogistra-nutrition_crispy-beef-jerky-65-proteinana-ovaj-proizvod-se-ne-odobrava-dodatni-popust",
-      "name": "Crispy Beef Jerky 65% proteina(na ovaj proizvod se ne odobrava dodatni popust)",
-      "store": "Ogistra Nutrition",
-      "store_url": "https://www.ogistra-nutrition-shop.com",
-      "category": "Ostalo",
-      "image_url": "https://www.ogistra-nutrition-shop.com/4129-home_default/jim-beef-proteinski-beef-jerky.jpg",
-      "original_price": 380.0,
-      "discount_price": 304.0,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://www.ogistra-nutrition-shop.com/katalog/1561-4051-jim-beef-proteinski-beef-jerky.html#/353-ukus-red_hot_beef_jerky",
-      "in_stock": true,
-      "date_scraped": "2026-09-15"
-    },
-    {
       "id": "ogistra-nutrition_the-beast-300g-blue-ice",
       "name": "THE Beast 300g / Blue Ice",
       "store": "Ogistra Nutrition",
@@ -9764,8 +9569,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/4586-home_default/the-kreatine-500-kreatin-monohidrat.jpg",
       "original_price": 3290.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2303.0,
+      "discount_percent": 30,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/kreatin-monohidrat/1645-the-kreatine-500-kreatin-monohidrat.html",
       "in_stock": true,
@@ -10162,36 +9967,6 @@
       "date_scraped": "2026-09-15"
     },
     {
-      "id": "ogistra-nutrition_cream-of-rice-pirincani-griz-2000g-basic-supplements",
-      "name": "CREAM OF RICE - PIRINČANI GRIZ 2000G BASIC SUPPLEMENTS",
-      "store": "Ogistra Nutrition",
-      "store_url": "https://www.ogistra-nutrition-shop.com",
-      "category": "Ostalo",
-      "image_url": "https://www.ogistra-nutrition-shop.com/3083-home_default/cream-of-rice-pirincani-griz-2000g-basic-supplements.jpg",
-      "original_price": 3190.0,
-      "discount_price": 2552.0,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://www.ogistra-nutrition-shop.com/zdrava-ishrana/1314-cream-of-rice-pirincani-griz-2000g-basic-supplements.html",
-      "in_stock": true,
-      "date_scraped": "2026-09-15"
-    },
-    {
-      "id": "ogistra-nutrition_protein-pancake-mix-700g-proteinske-palacinke",
-      "name": "PROTEIN PANCAKE MIX 700G - PROTEINSKE PALAČINKE",
-      "store": "Ogistra Nutrition",
-      "store_url": "https://www.ogistra-nutrition-shop.com",
-      "category": "Ostalo",
-      "image_url": "https://www.ogistra-nutrition-shop.com/3079-home_default/protein-pancake-mix-proteinske-palacinke.jpg",
-      "original_price": 1890.0,
-      "discount_price": 1134.0,
-      "discount_percent": 40,
-      "currency": "RSD",
-      "product_url": "https://www.ogistra-nutrition-shop.com/zdrava-ishrana/1313-3385-protein-pancake-mix-proteinske-palacinke.html#/29-ukus-vanila",
-      "in_stock": true,
-      "date_scraped": "2026-09-15"
-    },
-    {
       "id": "ogistra-nutrition_creapowder-500g-yamamoto-nutrition",
       "name": "CREAPOWDER 500G - YAMAMOTO NUTRITION",
       "store": "Ogistra Nutrition",
@@ -10203,21 +9978,6 @@
       "discount_percent": 40,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/kreatin-monohidrat/811-creapowder-kreatin-monohidrat-yamamoto-nutrition.html",
-      "in_stock": true,
-      "date_scraped": "2026-09-15"
-    },
-    {
-      "id": "ogistra-nutrition_prostar-whey-907-grama",
-      "name": "Prostar Whey 907 grama",
-      "store": "Ogistra Nutrition",
-      "store_url": "https://www.ogistra-nutrition-shop.com",
-      "category": "Ostalo",
-      "image_url": "https://www.ogistra-nutrition-shop.com/527-home_default/prostar-whey-907-grama.jpg",
-      "original_price": 5000.0,
-      "discount_price": 4000.0,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://www.ogistra-nutrition-shop.com/proteini/501-4085-prostar-whey-907-grama.html#/31-ukus-jagoda",
       "in_stock": true,
       "date_scraped": "2026-09-15"
     },
@@ -10242,12 +10002,12 @@
       "store": "Ogistra Nutrition",
       "store_url": "https://www.ogistra-nutrition-shop.com",
       "category": "Ostalo",
-      "image_url": "https://www.ogistra-nutrition-shop.com/3778-home_default/pro-whey-227kg-premium-whey-protein.jpg",
-      "original_price": 9260.0,
-      "discount_price": 7408.0,
-      "discount_percent": 20,
+      "image_url": "https://www.ogistra-nutrition-shop.com/3775-home_default/pro-whey-227kg-premium-whey-protein.jpg",
+      "original_price": 7716.67,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
-      "product_url": "https://www.ogistra-nutrition-shop.com/proteini/1200-4218-pro-whey-227kg-premium-whey-protein.html#/276-ukus-raffaello",
+      "product_url": "https://www.ogistra-nutrition-shop.com/proteini/1200-4349-pro-whey-227kg-premium-whey-protein.html#/43-ukus-cookie_and_cream",
       "in_stock": true,
       "date_scraped": "2026-09-15"
     },
@@ -10278,6 +10038,21 @@
       "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/l-carnitini-i-tecni-sagorevaci/647-the-acetyl-l-carnitine-150-kapsula.html",
+      "in_stock": true,
+      "date_scraped": "2026-09-15"
+    },
+    {
+      "id": "ogistra-nutrition_pro-whey-908gr-basic-supplements",
+      "name": "PRO WHEY  / 908GR - BASIC SUPPLEMENTS",
+      "store": "Ogistra Nutrition",
+      "store_url": "https://www.ogistra-nutrition-shop.com",
+      "category": "Ostalo",
+      "image_url": "https://www.ogistra-nutrition-shop.com/3784-home_default/pro-whey-908grama-basic-supplements.jpg",
+      "original_price": 4560.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://www.ogistra-nutrition-shop.com/proteini/1204-3031-pro-whey-908grama-basic-supplements.html#/243-ukus-cookie_s_cream",
       "in_stock": true,
       "date_scraped": "2026-09-15"
     },
@@ -10464,10 +10239,10 @@
   ],
   "weekly_summary": {
     "week_of": "2026-09-14",
-    "generated_at": "2026-09-15 16:00",
-    "total_products": 696,
-    "total_discounted": 394,
-    "avg_discount_percent": 16.6,
+    "generated_at": "2026-09-15 20:44",
+    "total_products": 681,
+    "total_discounted": 378,
+    "avg_discount_percent": 16.2,
     "top_discounts": [
       {
         "id": "titaniumsport_muscular-regenerative-booster-krema",
@@ -10497,21 +10272,6 @@
         "currency": "RSD",
         "product_url": "https://www.exyu-fitness.rs/suplementi/zdravlje/vitalikum-antioxidant-matrix-90-caps/",
         "in_stock": false,
-        "date_scraped": "2026-09-15"
-      },
-      {
-        "id": "ogistra-nutrition_the-fiber-digestivna-vlakna-600g-the-nutrition",
-        "name": "THE FIBER DIGESTIVNA VLAKNA 600g - THE NUTRITION",
-        "store": "Ogistra Nutrition",
-        "store_url": "https://www.ogistra-nutrition-shop.com",
-        "category": "Ostalo",
-        "image_url": "https://www.ogistra-nutrition-shop.com/2063-home_default/the-fiber.jpg",
-        "original_price": 2210.0,
-        "discount_price": 1105.0,
-        "discount_percent": 50,
-        "currency": "RSD",
-        "product_url": "https://www.ogistra-nutrition-shop.com/preparati-za-digestivni-trakt/292-the-fiber.html",
-        "in_stock": true,
         "date_scraped": "2026-09-15"
       },
       {
@@ -10617,21 +10377,6 @@
         "currency": "RSD",
         "product_url": "https://proteinisi.rs/proizvod/green-330ml/",
         "in_stock": false,
-        "date_scraped": "2026-09-15"
-      },
-      {
-        "id": "ogistra-nutrition_the-bcaa-1000g-aminokiseline",
-        "name": "THE BCAA - 1000G (AMINOKISELINE)",
-        "store": "Ogistra Nutrition",
-        "store_url": "https://www.ogistra-nutrition-shop.com",
-        "category": "Ostalo",
-        "image_url": "https://www.ogistra-nutrition-shop.com/1946-home_default/the-nutrition-bcaa-1000-gr.jpg",
-        "original_price": 4700.0,
-        "discount_price": 2820.0,
-        "discount_percent": 40,
-        "currency": "RSD",
-        "product_url": "https://www.ogistra-nutrition-shop.com/bcaa/80-255-the-nutrition-bcaa-1000-gr.html#/38-ukus-narandza",
-        "in_stock": true,
         "date_scraped": "2026-09-15"
       },
       {
@@ -10768,6 +10513,36 @@
         "product_url": "https://www.ogistra-nutrition-shop.com/sportska-garderoba/1673-4476-bs-mens-tracksuit-bottoms.html#/5-boja-siva/25-velicina-xl",
         "in_stock": true,
         "date_scraped": "2026-09-15"
+      },
+      {
+        "id": "ogistra-nutrition_bs-mens-tracksuit-bottoms-wide",
+        "name": "BS Men’s Tracksuit Bottoms / Wide",
+        "store": "Ogistra Nutrition",
+        "store_url": "https://www.ogistra-nutrition-shop.com",
+        "category": "Ostalo",
+        "image_url": "https://www.ogistra-nutrition-shop.com/4679-home_default/bs-mens-tracksuit-bottoms-wide.jpg",
+        "original_price": 5000.0,
+        "discount_price": 3000.0,
+        "discount_percent": 40,
+        "currency": "RSD",
+        "product_url": "https://www.ogistra-nutrition-shop.com/katalog/1672-4470-bs-mens-tracksuit-bottoms-wide.html#/7-boja-bez/25-velicina-xl",
+        "in_stock": true,
+        "date_scraped": "2026-09-15"
+      },
+      {
+        "id": "ogistra-nutrition_bs-mens-oversized-sweatshirt",
+        "name": "BS Men’s Oversized Sweatshirt",
+        "store": "Ogistra Nutrition",
+        "store_url": "https://www.ogistra-nutrition-shop.com",
+        "category": "Ostalo",
+        "image_url": "https://www.ogistra-nutrition-shop.com/4692-home_default/bs-mens-oversized-sweatshirt.jpg",
+        "original_price": 5000.0,
+        "discount_price": 3000.0,
+        "discount_percent": 40,
+        "currency": "RSD",
+        "product_url": "https://www.ogistra-nutrition-shop.com/sportska-garderoba/1671-4466-bs-mens-oversized-sweatshirt.html#/7-boja-bez/25-velicina-xl",
+        "in_stock": true,
+        "date_scraped": "2026-09-15"
       }
     ],
     "by_store": {
@@ -10797,9 +10572,9 @@
         "avg_discount": 15.1
       },
       "Ogistra Nutrition": {
-        "count": 52,
+        "count": 36,
         "store_url": "https://www.ogistra-nutrition-shop.com",
-        "avg_discount": 35.1
+        "avg_discount": 39.0
       },
       "X Sport": {
         "count": 8,
@@ -10925,8 +10700,8 @@
         "avg_discount": 15.1
       },
       "Ostalo": {
-        "count": 52,
-        "avg_discount": 35.1
+        "count": 36,
+        "avg_discount": 39.0
       }
     },
     "new_discounts_count": 0,
@@ -10992,9 +10767,9 @@
       "status": "warn:no_products"
     },
     "Ogistra Nutrition": {
-      "total": 54,
-      "with_prices": 54,
-      "with_discounts": 52,
+      "total": 39,
+      "with_prices": 39,
+      "with_discounts": 36,
       "status": "ok"
     },
     "SuperProtein": {
