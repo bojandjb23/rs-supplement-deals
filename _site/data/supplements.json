@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-18T10:20:41.913587",
+  "scraped_at": "2026-09-18T15:33:06.889220",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -18,7 +18,7 @@
     "X Sport"
   ],
   "stores_failed": [],
-  "total_products": 681,
+  "total_products": 683,
   "total_discounted": 379,
   "products": [
     {
@@ -10057,6 +10057,36 @@
       "date_scraped": "2026-09-18"
     },
     {
+      "id": "ogistra-nutrition_paket-za-njega",
+      "name": "PAKET ZA NJEGA",
+      "store": "Ogistra Nutrition",
+      "store_url": "https://www.ogistra-nutrition-shop.com",
+      "category": "Ostalo",
+      "image_url": "https://www.ogistra-nutrition-shop.com/3830-home_default/promotivni-paket-whey-protein-creatine-tribulus-snizenje.jpg",
+      "original_price": 6920.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://www.ogistra-nutrition-shop.com/paketi-proizvoda/1310-promotivni-paket-whey-protein-creatine-tribulus-snizenje.html",
+      "in_stock": true,
+      "date_scraped": "2026-09-18"
+    },
+    {
+      "id": "ogistra-nutrition_paket-za-nju",
+      "name": "PAKET ZA NJU",
+      "store": "Ogistra Nutrition",
+      "store_url": "https://www.ogistra-nutrition-shop.com",
+      "category": "Ostalo",
+      "image_url": "https://www.ogistra-nutrition-shop.com/3637-home_default/the-nutrition-xxl-paket-2-na-ovaj-paket-se-ne-odobrava-dodatni-popust-.jpg",
+      "original_price": 7848.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://www.ogistra-nutrition-shop.com/paketi-proizvoda/1309-the-nutrition-xxl-paket-2-na-ovaj-paket-se-ne-odobrava-dodatni-popust-.html",
+      "in_stock": true,
+      "date_scraped": "2026-09-18"
+    },
+    {
       "id": "superior14_biotech-power-protein-4kg-poklon-sejker",
       "name": "BIOTECH POWER PROTEIN 4KG + POKLON SEJKER",
       "store": "Superior14",
@@ -10239,8 +10269,8 @@
   ],
   "weekly_summary": {
     "week_of": "2026-09-14",
-    "generated_at": "2026-09-18 10:20",
-    "total_products": 681,
+    "generated_at": "2026-09-18 15:33",
+    "total_products": 683,
     "total_discounted": 379,
     "avg_discount_percent": 16.2,
     "top_discounts": [
@@ -10767,8 +10797,8 @@
       "status": "warn:no_products"
     },
     "Ogistra Nutrition": {
-      "total": 39,
-      "with_prices": 39,
+      "total": 41,
+      "with_prices": 41,
       "with_discounts": 37,
       "status": "ok"
     },
