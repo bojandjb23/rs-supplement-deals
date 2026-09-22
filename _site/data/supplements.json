@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-22T10:41:47.969811",
+  "scraped_at": "2026-09-22T16:02:49.949741",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -19,7 +19,7 @@
   ],
   "stores_failed": [],
   "total_products": 680,
-  "total_discounted": 349,
+  "total_discounted": 350,
   "products": [
     {
       "id": "fitlab_whey-protein-450g-workout-nutrition",
@@ -3823,9 +3823,9 @@
       "store_url": "https://dobrobit.rs",
       "category": "Omega masne kiseline",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-3-6-9.jpg?v=1789479044",
-      "original_price": null,
-      "discount_price": null,
-      "discount_percent": 0,
+      "original_price": 1890.0,
+      "discount_price": 1590.0,
+      "discount_percent": 16,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/ostrovit-omega-3-6-9-adek-sveobuhvatna-podrska-zdravlju-i-imunitetu",
       "in_stock": true,
@@ -10224,9 +10224,9 @@
   ],
   "weekly_summary": {
     "week_of": "2026-09-21",
-    "generated_at": "2026-09-22 10:41",
+    "generated_at": "2026-09-22 16:02",
     "total_products": 680,
-    "total_discounted": 349,
+    "total_discounted": 350,
     "avg_discount_percent": 15.9,
     "top_discounts": [
       {
@@ -10547,9 +10547,9 @@
         "avg_discount": 38.0
       },
       "Dobrobit": {
-        "count": 196,
+        "count": 197,
         "store_url": "https://dobrobit.rs",
-        "avg_discount": 10.6
+        "avg_discount": 10.7
       },
       "ExYu Fitness": {
         "count": 61,
@@ -10605,8 +10605,8 @@
         "avg_discount": 12.8
       },
       "Omega masne kiseline": {
-        "count": 13,
-        "avg_discount": 12.2
+        "count": 14,
+        "avg_discount": 12.5
       },
       "Cink": {
         "count": 2,
@@ -10733,8 +10733,8 @@
     },
     "Dobrobit": {
       "total": 507,
-      "with_prices": 506,
-      "with_discounts": 196,
+      "with_prices": 507,
+      "with_discounts": 197,
       "status": "ok"
     },
     "ExYu Fitness": {
