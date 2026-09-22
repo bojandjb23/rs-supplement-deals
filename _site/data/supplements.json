@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-22T16:02:49.949741",
+  "scraped_at": "2026-09-22T20:44:18.451726",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -18,8 +18,8 @@
     "X Sport"
   ],
   "stores_failed": [],
-  "total_products": 680,
-  "total_discounted": 350,
+  "total_products": 681,
+  "total_discounted": 351,
   "products": [
     {
       "id": "fitlab_whey-protein-450g-workout-nutrition",
@@ -1053,7 +1053,7 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/the-amino-whey-hydro-hidrolizovani-whey-protein-za-misicni-rast",
-      "in_stock": true,
+      "in_stock": false,
       "date_scraped": "2026-09-22"
     },
     {
@@ -1068,7 +1068,7 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/the-amino-whey-hydro-hidrolizovani-whey-protein-za-misicni-rast",
-      "in_stock": true,
+      "in_stock": false,
       "date_scraped": "2026-09-22"
     },
     {
@@ -1083,7 +1083,7 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/the-amino-whey-hydro-hidrolizovani-whey-protein-za-misicni-rast",
-      "in_stock": true,
+      "in_stock": false,
       "date_scraped": "2026-09-22"
     },
     {
@@ -8582,7 +8582,7 @@
       "discount_price": 10500.0,
       "discount_percent": 22,
       "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/superior-whey-core-5000gr/",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/proteini/superior-whey-core-5000gr/",
       "in_stock": true,
       "date_scraped": "2026-09-22"
     },
@@ -8607,7 +8607,7 @@
       "store": "ExYu Fitness",
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/62066-strawberry.webp",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/5star-whey-3000gr.webp",
       "original_price": 7900.0,
       "discount_price": 6800.0,
       "discount_percent": 14,
@@ -9037,21 +9037,6 @@
       "date_scraped": "2026-09-22"
     },
     {
-      "id": "exyu-fitness_vitalikum-maca-matrix",
-      "name": "Vitalikum Maca Matrix",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/maca_matrix_60_caps.webp",
-      "original_price": 1350.0,
-      "discount_price": 1200.0,
-      "discount_percent": 11,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/tvoji-ciljevi/suplementi-za-bolje-zdravlje/vitalikum-maca-matrix/",
-      "in_stock": true,
-      "date_scraped": "2026-09-22"
-    },
-    {
       "id": "exyu-fitness_active-pharma-magnesium-bisglicynate",
       "name": "Active Pharma Magnesium Bisglicynate",
       "store": "ExYu Fitness",
@@ -9063,6 +9048,21 @@
       "discount_percent": 17,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/zdravlje/active-pharma-magnesium-bisglicynate/",
+      "in_stock": true,
+      "date_scraped": "2026-09-22"
+    },
+    {
+      "id": "exyu-fitness_vitalikum-maca-matrix",
+      "name": "Vitalikum Maca Matrix",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/maca_matrix_60_caps.webp",
+      "original_price": 1350.0,
+      "discount_price": 1200.0,
+      "discount_percent": 11,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/tvoji-ciljevi/suplementi-za-bolje-zdravlje/vitalikum-maca-matrix/",
       "in_stock": true,
       "date_scraped": "2026-09-22"
     },
@@ -9093,6 +9093,21 @@
       "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/zdravlje/vitamini/applied-nutrition-zinc-bisglycinate/",
+      "in_stock": true,
+      "date_scraped": "2026-09-22"
+    },
+    {
+      "id": "exyu-fitness_nutriversum-l-lysine-caps",
+      "name": "Nutriversum L-Lysine Caps",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/nutriversum-lysine.webp",
+      "original_price": 1200.0,
+      "discount_price": 1080.0,
+      "discount_percent": 10,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/aminokiseline/aminokiseline-tablete/nutriversum-l-lysine-caps/",
       "in_stock": true,
       "date_scraped": "2026-09-22"
     },
@@ -10224,10 +10239,10 @@
   ],
   "weekly_summary": {
     "week_of": "2026-09-21",
-    "generated_at": "2026-09-22 16:02",
-    "total_products": 680,
-    "total_discounted": 350,
-    "avg_discount_percent": 15.9,
+    "generated_at": "2026-09-22 20:44",
+    "total_products": 681,
+    "total_discounted": 351,
+    "avg_discount_percent": 15.8,
     "top_discounts": [
       {
         "id": "titaniumsport_muscular-regenerative-booster-krema",
@@ -10552,9 +10567,9 @@
         "avg_discount": 10.7
       },
       "ExYu Fitness": {
-        "count": 61,
+        "count": 62,
         "store_url": "https://www.exyu-fitness.rs",
-        "avg_discount": 15.2
+        "avg_discount": 15.1
       },
       "Ogistra Nutrition": {
         "count": 37,
@@ -10685,8 +10700,8 @@
         "avg_discount": 22.0
       },
       "Rasprodaja": {
-        "count": 61,
-        "avg_discount": 15.2
+        "count": 62,
+        "avg_discount": 15.1
       },
       "Ostalo": {
         "count": 37,
@@ -10738,9 +10753,9 @@
       "status": "ok"
     },
     "ExYu Fitness": {
-      "total": 70,
-      "with_prices": 70,
-      "with_discounts": 70,
+      "total": 71,
+      "with_prices": 71,
+      "with_discounts": 71,
       "status": "ok"
     },
     "LAMA": {
