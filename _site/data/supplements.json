@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-23T10:33:58.524462",
+  "scraped_at": "2026-09-23T15:52:58.438542",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -18,7 +18,7 @@
     "X Sport"
   ],
   "stores_failed": [],
-  "total_products": 681,
+  "total_products": 682,
   "total_discounted": 351,
   "products": [
     {
@@ -10087,17 +10087,17 @@
       "date_scraped": "2026-09-23"
     },
     {
-      "id": "superior14_5-stars-whey-protein",
-      "name": "5 Stars Whey Protein",
+      "id": "superior14_5stars-whey-protein",
+      "name": "5Stars Whey Protein",
       "store": "Superior14",
       "store_url": "https://www.superior14.rs",
       "category": "Proteini",
-      "image_url": "https://images.superior14.rs/1788247206/product-medium/5-stars-whey-protein.webp",
+      "image_url": "https://images.superior14.rs/1788247206/product-medium/5stars-whey-protein.webp",
       "original_price": 6790.0,
       "discount_price": null,
       "discount_percent": 0,
       "currency": "RSD",
-      "product_url": "https://www.superior14.rs/proizvodi/proteini/5-stars-whey-protein/",
+      "product_url": "https://www.superior14.rs/proizvodi/proteini/5stars-whey-protein/",
       "in_stock": true,
       "date_scraped": "2026-09-23"
     },
@@ -10113,6 +10113,21 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://www.superior14.rs/proizvodi/kreatini/superior14-krealka-max-gratis-majica/",
+      "in_stock": true,
+      "date_scraped": "2026-09-23"
+    },
+    {
+      "id": "superior14_ostrovit-supreme-pure-creatine-500g",
+      "name": "Ostrovit Supreme Pure Creatine 500g",
+      "store": "Superior14",
+      "store_url": "https://www.superior14.rs",
+      "category": "Kreatini",
+      "image_url": "https://images.superior14.rs/1790172577/product-medium/ostrovit-supreme-pure-creatine-500g.webp",
+      "original_price": 2300.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://www.superior14.rs/proizvodi/kreatini/ostrovit-supreme-pure-creatine-500g/",
       "in_stock": true,
       "date_scraped": "2026-09-23"
     },
@@ -10239,8 +10254,8 @@
   ],
   "weekly_summary": {
     "week_of": "2026-09-21",
-    "generated_at": "2026-09-23 10:33",
-    "total_products": 681,
+    "generated_at": "2026-09-23 15:52",
+    "total_products": 682,
     "total_discounted": 351,
     "avg_discount_percent": 15.8,
     "top_discounts": [
@@ -10783,8 +10798,8 @@
       "status": "warn:no_products"
     },
     "Superior14": {
-      "total": 4,
-      "with_prices": 4,
+      "total": 5,
+      "with_prices": 5,
       "with_discounts": 0,
       "status": "ok"
     },
