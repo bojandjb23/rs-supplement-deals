@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-23T15:52:58.438542",
+  "scraped_at": "2026-09-23T20:56:31.675736",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -18,8 +18,8 @@
     "X Sport"
   ],
   "stores_failed": [],
-  "total_products": 682,
-  "total_discounted": 351,
+  "total_products": 683,
+  "total_discounted": 352,
   "products": [
     {
       "id": "fitlab_whey-protein-450g-workout-nutrition",
@@ -194,8 +194,8 @@
       "category": "Preporucujemo",
       "image_url": "https://fitlab.rs/products/2026/05/whey-pro-protein-2kg-nutriversum-1779709834882.jpeg",
       "original_price": 6880.0,
-      "discount_price": 5490.0,
-      "discount_percent": 20,
+      "discount_price": 5850.0,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://fitlab.rs/sr/proizvodi/whey-pro-protein-2kg-nutriversum",
       "in_stock": true,
@@ -8607,7 +8607,7 @@
       "store": "ExYu Fitness",
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/62066.webp",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/62066-strawberry.webp",
       "original_price": 7900.0,
       "discount_price": 6800.0,
       "discount_percent": 14,
@@ -8677,21 +8677,6 @@
       "date_scraped": "2026-09-23"
     },
     {
-      "id": "exyu-fitness_nutriversum-iso-pro-1kg",
-      "name": "Nutriversum ISO Pro - 1kg",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/iso-pro-1kg-3898.webp",
-      "original_price": 4500.0,
-      "discount_price": 3990.0,
-      "discount_percent": 11,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/proteini/whey-protein-isolate/nutriversum-iso-pro-1kg/",
-      "in_stock": true,
-      "date_scraped": "2026-09-23"
-    },
-    {
       "id": "exyu-fitness_5-stars-mass-gainer-5000-gr",
       "name": "5 Stars Mass Gainer, 5000 gr",
       "store": "ExYu Fitness",
@@ -8703,6 +8688,21 @@
       "discount_percent": 12,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/gaineri/5-star-mass-gainer-5000-gr/",
+      "in_stock": true,
+      "date_scraped": "2026-09-23"
+    },
+    {
+      "id": "exyu-fitness_nutriversum-iso-pro-1kg",
+      "name": "Nutriversum ISO Pro - 1kg",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/iso-pro-1kg-3898.webp",
+      "original_price": 4500.0,
+      "discount_price": 3990.0,
+      "discount_percent": 11,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/proteini/whey-protein-isolate/nutriversum-iso-pro-1kg/",
       "in_stock": true,
       "date_scraped": "2026-09-23"
     },
@@ -8793,6 +8793,21 @@
       "discount_percent": 14,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/biotech-vegan-protein-2000gr/",
+      "in_stock": true,
+      "date_scraped": "2026-09-23"
+    },
+    {
+      "id": "exyu-fitness_applied-nutrition-creatine-monohydrate",
+      "name": "Applied Nutrition Creatine Monohydrate",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/applied-creatine-500gr.webp",
+      "original_price": 3500.0,
+      "discount_price": 2975.0,
+      "discount_percent": 15,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/kreatin/kreatin-monohidrat/applied-nutrition-creatine-monohydrate/",
       "in_stock": true,
       "date_scraped": "2026-09-23"
     },
@@ -10254,9 +10269,9 @@
   ],
   "weekly_summary": {
     "week_of": "2026-09-21",
-    "generated_at": "2026-09-23 15:52",
-    "total_products": 682,
-    "total_discounted": 351,
+    "generated_at": "2026-09-23 20:56",
+    "total_products": 683,
+    "total_discounted": 352,
     "avg_discount_percent": 15.8,
     "top_discounts": [
       {
@@ -10564,7 +10579,7 @@
       "FitLab": {
         "count": 22,
         "store_url": "https://fitlab.rs",
-        "avg_discount": 17.7
+        "avg_discount": 17.5
       },
       "TitaniumSport": {
         "count": 23,
@@ -10582,7 +10597,7 @@
         "avg_discount": 10.7
       },
       "ExYu Fitness": {
-        "count": 62,
+        "count": 63,
         "store_url": "https://www.exyu-fitness.rs",
         "avg_discount": 15.1
       },
@@ -10604,7 +10619,7 @@
       },
       "Preporucujemo": {
         "count": 1,
-        "avg_discount": 20.0
+        "avg_discount": 15.0
       },
       "Preporučujemo": {
         "count": 1,
@@ -10715,7 +10730,7 @@
         "avg_discount": 22.0
       },
       "Rasprodaja": {
-        "count": 62,
+        "count": 63,
         "avg_discount": 15.1
       },
       "Ostalo": {
@@ -10768,9 +10783,9 @@
       "status": "ok"
     },
     "ExYu Fitness": {
-      "total": 71,
-      "with_prices": 71,
-      "with_discounts": 71,
+      "total": 72,
+      "with_prices": 72,
+      "with_discounts": 72,
       "status": "ok"
     },
     "LAMA": {
