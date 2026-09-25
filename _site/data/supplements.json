@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-25T10:54:04.725636",
+  "scraped_at": "2026-09-25T16:13:35.673239",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -8992,21 +8992,6 @@
       "date_scraped": "2026-09-25"
     },
     {
-      "id": "exyu-fitness_ostrovit-caffeine-supreme-pure",
-      "name": "Ostrovit Caffeine Supreme Pure",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/ostrovit-caffeine.webp",
-      "original_price": 3100.0,
-      "discount_price": 2635.0,
-      "discount_percent": 15,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/pre-workout-suplementi/ostrovit-caffeine-supreme-pure/",
-      "in_stock": true,
-      "date_scraped": "2026-09-25"
-    },
-    {
       "id": "exyu-fitness_nutrex-lipo-6-intense-uc",
       "name": "Nutrex Lipo 6 Intense  UC",
       "store": "ExYu Fitness",
@@ -9423,6 +9408,21 @@
       "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/zoomad-labs-moonstruck/",
+      "in_stock": false,
+      "date_scraped": "2026-09-25"
+    },
+    {
+      "id": "exyu-fitness_ostrovit-caffeine-supreme-pure",
+      "name": "Ostrovit Caffeine Supreme Pure",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/ostrovit-caffeine.webp",
+      "original_price": 3100.0,
+      "discount_price": 2635.0,
+      "discount_percent": 15,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/pre-workout-suplementi/ostrovit-caffeine-supreme-pure/",
       "in_stock": false,
       "date_scraped": "2026-09-25"
     },
@@ -10854,7 +10854,7 @@
   ],
   "weekly_summary": {
     "week_of": "2026-09-21",
-    "generated_at": "2026-09-25 10:54",
+    "generated_at": "2026-09-25 16:13",
     "total_products": 722,
     "total_discounted": 387,
     "avg_discount_percent": 16.9,
