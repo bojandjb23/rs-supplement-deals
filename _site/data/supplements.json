@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-27T16:06:33.551246",
+  "scraped_at": "2026-09-27T20:39:58.689672",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -8602,21 +8602,6 @@
       "date_scraped": "2026-09-27"
     },
     {
-      "id": "exyu-fitness_5-stars-whey-protein-3000gr",
-      "name": "5 Stars Whey Protein, 3000gr",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/62066.webp",
-      "original_price": 7900.0,
-      "discount_price": 6800.0,
-      "discount_percent": 14,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/proteini/whey-protein/5-star-whey-protein-3000gr/",
-      "in_stock": true,
-      "date_scraped": "2026-09-27"
-    },
-    {
       "id": "exyu-fitness_5-stars-whey-isolate-2-kg",
       "name": "5 Stars Whey Isolate - 2 kg",
       "store": "ExYu Fitness",
@@ -9138,6 +9123,21 @@
       "discount_percent": 18,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/tesla-whey-charger-100/",
+      "in_stock": false,
+      "date_scraped": "2026-09-27"
+    },
+    {
+      "id": "exyu-fitness_5-stars-whey-protein-3000gr",
+      "name": "5 Stars Whey Protein, 3000gr",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/62066.webp",
+      "original_price": 7900.0,
+      "discount_price": 6800.0,
+      "discount_percent": 14,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/proteini/whey-protein/5-star-whey-protein-3000gr/",
       "in_stock": false,
       "date_scraped": "2026-09-27"
     },
@@ -10884,7 +10884,7 @@
   ],
   "weekly_summary": {
     "week_of": "2026-09-21",
-    "generated_at": "2026-09-27 16:06",
+    "generated_at": "2026-09-27 20:39",
     "total_products": 724,
     "total_discounted": 389,
     "avg_discount_percent": 17.7,
