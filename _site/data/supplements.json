@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-28T12:28:04.351150",
+  "scraped_at": "2026-09-28T22:49:17.923965",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -19,7 +19,7 @@
   ],
   "stores_failed": [],
   "total_products": 724,
-  "total_discounted": 391,
+  "total_discounted": 389,
   "products": [
     {
       "id": "fitlab_whey-protein-450g-workout-nutrition",
@@ -10154,8 +10154,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/4907-home_default/pro-bar-60g-basic-supplements.jpg",
       "original_price": 210.0,
-      "discount_price": 178.5,
-      "discount_percent": 15,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/proteinske-cokoladice/1218-3510-pro-bar-60g-basic-supplements.html#/299-ukus-chocolate_strawberry",
       "in_stock": true,
@@ -10604,8 +10604,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/1574-home_default/creapowder-kreatin-monohidrat-yamamoto-nutrition.jpg",
       "original_price": 4770.0,
-      "discount_price": 4054.5,
-      "discount_percent": 15,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/kreatin-monohidrat/811-creapowder-kreatin-monohidrat-yamamoto-nutrition.html",
       "in_stock": true,
@@ -10884,9 +10884,9 @@
   ],
   "weekly_summary": {
     "week_of": "2026-09-28",
-    "generated_at": "2026-09-28 12:28",
+    "generated_at": "2026-09-28 22:49",
     "total_products": 724,
-    "total_discounted": 391,
+    "total_discounted": 389,
     "avg_discount_percent": 17.8,
     "top_discounts": [
       {
@@ -11222,9 +11222,9 @@
         "avg_discount": 36.6
       },
       "Ogistra Nutrition": {
-        "count": 39,
+        "count": 37,
         "store_url": "https://www.ogistra-nutrition-shop.com",
-        "avg_discount": 36.8
+        "avg_discount": 38.0
       },
       "X Sport": {
         "count": 8,
@@ -11354,8 +11354,8 @@
         "avg_discount": 15.0
       },
       "Ostalo": {
-        "count": 76,
-        "avg_discount": 36.7
+        "count": 74,
+        "avg_discount": 37.3
       }
     },
     "new_discounts_count": 0,
@@ -11423,7 +11423,7 @@
     "Ogistra Nutrition": {
       "total": 39,
       "with_prices": 39,
-      "with_discounts": 39,
+      "with_discounts": 37,
       "status": "ok"
     },
     "SuperProtein": {
