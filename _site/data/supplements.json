@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-29T11:54:23.252809",
+  "scraped_at": "2026-09-29T17:23:17.331994",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -18,8 +18,8 @@
     "X Sport"
   ],
   "stores_failed": [],
-  "total_products": 683,
-  "total_discounted": 352,
+  "total_products": 684,
+  "total_discounted": 353,
   "products": [
     {
       "id": "fitlab_whey-protein-450g-workout-nutrition",
@@ -8782,6 +8782,21 @@
       "date_scraped": "2026-09-29"
     },
     {
+      "id": "exyu-fitness_applied-nutrition-creatine-monohydrate",
+      "name": "Applied Nutrition Creatine Monohydrate",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/applied-creatine-500gr.webp",
+      "original_price": 3500.0,
+      "discount_price": 2975.0,
+      "discount_percent": 15,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/kreatin/kreatin-monohidrat/applied-nutrition-creatine-monohydrate/",
+      "in_stock": true,
+      "date_scraped": "2026-09-29"
+    },
+    {
       "id": "exyu-fitness_nutriversum-tst-complex-210-gr",
       "name": "Nutriversum TST Complex 210 gr",
       "store": "ExYu Fitness",
@@ -9097,6 +9112,21 @@
       "date_scraped": "2026-09-29"
     },
     {
+      "id": "exyu-fitness_active-pharma-d3mk7-vitamin-d3-k2",
+      "name": "Active Pharma D3&MK7 (Vitamin D3 + K2)",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/activpharma-d3k2.webp",
+      "original_price": 2290.0,
+      "discount_price": 1900.0,
+      "discount_percent": 17,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/active-pharma-vitamin-d3-k2-d3mk7/",
+      "in_stock": true,
+      "date_scraped": "2026-09-29"
+    },
+    {
       "id": "exyu-fitness_scitec-100-whey-protein-professional-2-35-kg",
       "name": "Scitec 100% Whey Protein Professional - 2, 35 kg",
       "store": "ExYu Fitness",
@@ -9273,21 +9303,6 @@
       "discount_percent": 60,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/zdravlje/vitalikum-antioxidant-matrix-90-caps/",
-      "in_stock": false,
-      "date_scraped": "2026-09-29"
-    },
-    {
-      "id": "exyu-fitness_applied-nutrition-creatine-monohydrate",
-      "name": "Applied Nutrition Creatine Monohydrate",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/applied-creatine-500gr.webp",
-      "original_price": 3900.0,
-      "discount_price": 3500.0,
-      "discount_percent": 10,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/kreatin/kreatin-monohidrat/applied-nutrition-creatine-monohydrate/",
       "in_stock": false,
       "date_scraped": "2026-09-29"
     },
@@ -10218,7 +10233,7 @@
       "discount_percent": 24,
       "currency": "RSD",
       "product_url": "https://www.xsport.rs/proizvod/6pak_milky_shake_whey_700g",
-      "in_stock": true,
+      "in_stock": false,
       "date_scraped": "2026-09-29"
     },
     {
@@ -10269,9 +10284,9 @@
   ],
   "weekly_summary": {
     "week_of": "2026-09-28",
-    "generated_at": "2026-09-29 11:54",
-    "total_products": 683,
-    "total_discounted": 352,
+    "generated_at": "2026-09-29 17:23",
+    "total_products": 684,
+    "total_discounted": 353,
     "avg_discount_percent": 15.8,
     "top_discounts": [
       {
@@ -10597,9 +10612,9 @@
         "avg_discount": 10.7
       },
       "ExYu Fitness": {
-        "count": 63,
+        "count": 64,
         "store_url": "https://www.exyu-fitness.rs",
-        "avg_discount": 15.0
+        "avg_discount": 15.2
       },
       "Ogistra Nutrition": {
         "count": 37,
@@ -10730,8 +10745,8 @@
         "avg_discount": 22.0
       },
       "Rasprodaja": {
-        "count": 63,
-        "avg_discount": 15.0
+        "count": 64,
+        "avg_discount": 15.2
       },
       "Ostalo": {
         "count": 37,
@@ -10783,9 +10798,9 @@
       "status": "ok"
     },
     "ExYu Fitness": {
-      "total": 72,
-      "with_prices": 72,
-      "with_discounts": 72,
+      "total": 73,
+      "with_prices": 73,
+      "with_discounts": 73,
       "status": "ok"
     },
     "LAMA": {
