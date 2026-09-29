@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-29T03:29:51.983197",
+  "scraped_at": "2026-09-29T11:54:23.252809",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -2662,21 +2662,6 @@
       "date_scraped": "2026-09-29"
     },
     {
-      "id": "dobrobit_now-foods-vitamin-d-3-k-2-podrska-za-kosti-i-srce",
-      "name": "NOW Foods Vitamin D-3 & K-2 – Podrška za Kosti i Srce",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Akcije",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/now-foods-vitamin-d-3-k-2-120-kapsula.png?v=1730818301",
-      "original_price": 2350.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/now-foods-vitamin-d-3-k-2-podrska-za-kosti-i-srce-1",
-      "in_stock": true,
-      "date_scraped": "2026-09-29"
-    },
-    {
       "id": "dobrobit_swanson-nac-n-acetil-cistein-600-mg-100-kapsula-za-jetru-i-detoksikaciju",
       "name": "Swanson NAC, N-Acetil Cistein 600 mg, 100 Kapsula - Za Jetru i Detoksikaciju",
       "store": "Dobrobit",
@@ -2688,6 +2673,21 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/swanson-nac-n-acetil-cistein-600-mg-100-kapsula-za-jetru-i-detoksikaciju",
+      "in_stock": true,
+      "date_scraped": "2026-09-29"
+    },
+    {
+      "id": "dobrobit_now-foods-vitamin-d-3-k-2-podrska-za-kosti-i-srce",
+      "name": "NOW Foods Vitamin D-3 & K-2 – Podrška za Kosti i Srce",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Akcije",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/now-foods-vitamin-d-3-k-2-120-kapsula.png?v=1730818301",
+      "original_price": 2350.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/now-foods-vitamin-d-3-k-2-podrska-za-kosti-i-srce-1",
       "in_stock": true,
       "date_scraped": "2026-09-29"
     },
@@ -3037,21 +3037,6 @@
       "date_scraped": "2026-09-29"
     },
     {
-      "id": "dobrobit_ostrovit-holin-200g-prirodna-podrska-za-mozak-i-jetru",
-      "name": "OstroVit Holin 200g – Prirodna Podrška za Mozak i Jetru",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Akcije",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-holin-200g.png?v=1734008972",
-      "original_price": 1890.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/ostrovit-holin-200g-prirodna-podrska-za-mozak-i-jetru",
-      "in_stock": true,
-      "date_scraped": "2026-09-29"
-    },
-    {
       "id": "dobrobit_swanson-inozitol-650-mg-100-kapsula-podrska-nervima-i-mentalnom-zdravlju",
       "name": "Swanson Inozitol 650 mg, 100 Kapsula - Podrška Nervima i Mentalnom Zdravlju",
       "store": "Dobrobit",
@@ -3082,17 +3067,17 @@
       "date_scraped": "2026-09-29"
     },
     {
-      "id": "dobrobit_now-foods-hrom-pikolinat-podrska-metabolizmu-i-regulaciji-secera-u-krvi",
-      "name": "NOW Foods Hrom Pikolinat – Podrška Metabolizmu i Regulaciji Šećera u Krvi",
+      "id": "dobrobit_ostrovit-holin-200g-prirodna-podrska-za-mozak-i-jetru",
+      "name": "OstroVit Holin 200g – Prirodna Podrška za Mozak i Jetru",
       "store": "Dobrobit",
       "store_url": "https://dobrobit.rs",
-      "category": "Hrom",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/now-foods-hrom-pikolinat-200-mcg-100-kapsula.png?v=1732553249",
-      "original_price": 1350.0,
+      "category": "Akcije",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-holin-200g.png?v=1734008972",
+      "original_price": 1890.0,
       "discount_price": null,
       "discount_percent": 0,
       "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/now-foods-hrom-pikolinat-podrska-metabolizmu-i-regulaciji-secera-u-krvi",
+      "product_url": "https://dobrobit.rs/products/ostrovit-holin-200g-prirodna-podrska-za-mozak-i-jetru",
       "in_stock": true,
       "date_scraped": "2026-09-29"
     },
@@ -3108,6 +3093,21 @@
       "discount_percent": 5,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/swanson-flush-free-niacin-500-mg-podrska-energiji-i-metabolizmu",
+      "in_stock": true,
+      "date_scraped": "2026-09-29"
+    },
+    {
+      "id": "dobrobit_now-foods-hrom-pikolinat-podrska-metabolizmu-i-regulaciji-secera-u-krvi",
+      "name": "NOW Foods Hrom Pikolinat – Podrška Metabolizmu i Regulaciji Šećera u Krvi",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Hrom",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/now-foods-hrom-pikolinat-200-mcg-100-kapsula.png?v=1732553249",
+      "original_price": 1350.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/now-foods-hrom-pikolinat-podrska-metabolizmu-i-regulaciji-secera-u-krvi",
       "in_stock": true,
       "date_scraped": "2026-09-29"
     },
@@ -3502,21 +3502,6 @@
       "date_scraped": "2026-09-29"
     },
     {
-      "id": "dobrobit_now-foods-l-lysine-500-mg-podrska-za-sintezu-kolagena-i-imunitet",
-      "name": "NOW Foods L-Lysine 500 mg - Podrška Za Sintezu Kolagena i Imunitet",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Amino kiseline",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/now-foods-l-lysine-500-mg.png?v=1737551376",
-      "original_price": 1450.0,
-      "discount_price": 1290.0,
-      "discount_percent": 11,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/now-foods-l-lysine-500-mg-podrska-za-sintezu-kolagena-i-imunitet",
-      "in_stock": true,
-      "date_scraped": "2026-09-29"
-    },
-    {
       "id": "dobrobit_now-foods-magnezijum-400-mg-podrska-za-misice-i-energiju",
       "name": "NOW Foods Magnezijum 400 mg – Podrška za Mišiće i Energiju",
       "store": "Dobrobit",
@@ -3528,6 +3513,21 @@
       "discount_percent": 6,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/now-foods-magnezijum-400-mg-podrska-za-misice-i-energiju",
+      "in_stock": true,
+      "date_scraped": "2026-09-29"
+    },
+    {
+      "id": "dobrobit_now-foods-l-lysine-500-mg-podrska-za-sintezu-kolagena-i-imunitet",
+      "name": "NOW Foods L-Lysine 500 mg - Podrška Za Sintezu Kolagena i Imunitet",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Amino kiseline",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/now-foods-l-lysine-500-mg.png?v=1737551376",
+      "original_price": 1450.0,
+      "discount_price": 1290.0,
+      "discount_percent": 11,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/now-foods-l-lysine-500-mg-podrska-za-sintezu-kolagena-i-imunitet",
       "in_stock": true,
       "date_scraped": "2026-09-29"
     },
@@ -4593,7 +4593,7 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/sagas-rc-08-alfa-lipoinska-kiselina-i-hrom-za-normalan-nivo-glukoze",
-      "in_stock": true,
+      "in_stock": false,
       "date_scraped": "2026-09-29"
     },
     {
@@ -8607,7 +8607,7 @@
       "store": "ExYu Fitness",
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/62059-chocolate.webp",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/5star-whey-isolate.webp",
       "original_price": 7400.0,
       "discount_price": 6500.0,
       "discount_percent": 12,
@@ -10269,7 +10269,7 @@
   ],
   "weekly_summary": {
     "week_of": "2026-09-28",
-    "generated_at": "2026-09-29 03:29",
+    "generated_at": "2026-09-29 11:54",
     "total_products": 683,
     "total_discounted": 352,
     "avg_discount_percent": 15.8,
