@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-01T12:08:27.423814",
+  "scraped_at": "2026-10-01T22:11:33.679352",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -19,7 +19,7 @@
   ],
   "stores_failed": [],
   "total_products": 718,
-  "total_discounted": 386,
+  "total_discounted": 384,
   "products": [
     {
       "id": "fitlab_whey-protein-450g-workout-nutrition",
@@ -2493,7 +2493,7 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/now-foods-melatonin-3-mg-prirodna-podrska-za-zdrav-san",
-      "in_stock": true,
+      "in_stock": false,
       "date_scraped": "2026-10-01"
     },
     {
@@ -8713,9 +8713,9 @@
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
       "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/IMG_20260902_122222.webp",
-      "original_price": 4650.0,
-      "discount_price": 3990.0,
-      "discount_percent": 14,
+      "original_price": 3990.0,
+      "discount_price": 3391.0,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/proteini/whey-protein-isolate/applied-nutrition-critical-whey-450-gr/",
       "in_stock": true,
@@ -8743,8 +8743,8 @@
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
       "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/pwo-pre-workout-drink-210-gr-3991.webp",
-      "original_price": 2890.0,
-      "discount_price": 2450.0,
+      "original_price": 2450.0,
+      "discount_price": 2082.0,
       "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/pre-workout-suplementi/nutriversum-pwo-pre-workout-drink-210-gr/",
@@ -8808,6 +8808,21 @@
       "discount_percent": 16,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/regulatori-hormona/nutriversum-tst-complex-210-gr/",
+      "in_stock": true,
+      "date_scraped": "2026-10-01"
+    },
+    {
+      "id": "exyu-fitness_yamamoto-glutamine-powder-600-gr",
+      "name": "Yamamoto Glutamine Powder 600 gr",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/yamamoto-glutamine-powder-600-gr-4005.webp",
+      "original_price": 3670.0,
+      "discount_price": 3119.0,
+      "discount_percent": 15,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/aminokiseline/yamamoto-glutamine-powder-600-gr/",
       "in_stock": true,
       "date_scraped": "2026-10-01"
     },
@@ -8893,9 +8908,9 @@
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
       "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/amix-pro-testof-200-100tbl-4767.webp",
-      "original_price": 2990.0,
-      "discount_price": 2250.0,
-      "discount_percent": 25,
+      "original_price": 2250.0,
+      "discount_price": 2025.0,
+      "discount_percent": 10,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/regulatori-hormona/amixprotestof-200-100tbl/",
       "in_stock": true,
@@ -8923,9 +8938,9 @@
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
       "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/nutriversum-eaa-with-vitamin-b6-360-gr-5266.webp",
-      "original_price": 2690.0,
-      "discount_price": 2420.0,
-      "discount_percent": 10,
+      "original_price": 2420.0,
+      "discount_price": 2057.0,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/aminokiseline/eaa-aminokiseline/nutriversum-eaa-with-vitamin-b6-360-gr/",
       "in_stock": true,
@@ -8943,21 +8958,6 @@
       "discount_percent": 12,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/zdravlje/suplementi-za-imunitet/nutriversum-magnesium-bisglycinate/",
-      "in_stock": true,
-      "date_scraped": "2026-10-01"
-    },
-    {
-      "id": "exyu-fitness_ostrovit-omega-3",
-      "name": "Ostrovit Omega 3",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/ostrovit-omega.webp",
-      "original_price": 1590.0,
-      "discount_price": 980.0,
-      "discount_percent": 38,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/ostrovit-omega-3/",
       "in_stock": true,
       "date_scraped": "2026-10-01"
     },
@@ -9018,21 +9018,6 @@
       "discount_percent": 19,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/tvoji-ciljevi/suplementi-za-bolje-zdravlje/naughty-boy-noogandha/",
-      "in_stock": true,
-      "date_scraped": "2026-10-01"
-    },
-    {
-      "id": "exyu-fitness_ostrovit-vitamin-b12-methylcobalamin",
-      "name": "Ostrovit Vitamin B12 Methylcobalamin",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/vitamin-b12.webp",
-      "original_price": 1200.0,
-      "discount_price": 960.0,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/zdravlje/vitamini/ostrovit-vitamin-b12-methylcobalamin/",
       "in_stock": true,
       "date_scraped": "2026-10-01"
     },
@@ -9292,21 +9277,6 @@
       "date_scraped": "2026-10-01"
     },
     {
-      "id": "exyu-fitness_yamamoto-glutamine-powder-600-gr",
-      "name": "Yamamoto Glutamine Powder 600 gr",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/yamamoto-glutamine-powder-600-gr-4005.webp",
-      "original_price": 4100.0,
-      "discount_price": 3670.0,
-      "discount_percent": 10,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/aminokiseline/yamamoto-glutamine-powder-600-gr/",
-      "in_stock": false,
-      "date_scraped": "2026-10-01"
-    },
-    {
       "id": "exyu-fitness_ultimate-beta-k-200kaprok-926",
       "name": "Ultimate Beta K  200kap(rok 9/26)",
       "store": "ExYu Fitness",
@@ -9328,9 +9298,9 @@
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
       "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/ostrovit-fat-burner-for-women-60-kapsula-5127.webp",
-      "original_price": 2400.0,
-      "discount_price": 2100.0,
-      "discount_percent": 12,
+      "original_price": 2100.0,
+      "discount_price": 1785.0,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/sagorevaci-masti/ostrovit-fat-burner-for-women-60-kapsula/",
       "in_stock": false,
@@ -9373,11 +9343,26 @@
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
       "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/nutriversum-beta-alanine-200-gr-5244.webp",
-      "original_price": 2100.0,
-      "discount_price": 1900.0,
-      "discount_percent": 10,
+      "original_price": 1900.0,
+      "discount_price": 1615.0,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/aminokiseline/ostale-aminokiseline/nutriversum-beta-alanine-200-gr/",
+      "in_stock": false,
+      "date_scraped": "2026-10-01"
+    },
+    {
+      "id": "exyu-fitness_ostrovit-omega-3",
+      "name": "Ostrovit Omega 3",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/ostrovit-omega.webp",
+      "original_price": 980.0,
+      "discount_price": 833.0,
+      "discount_percent": 15,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/ostrovit-omega-3/",
       "in_stock": false,
       "date_scraped": "2026-10-01"
     },
@@ -9388,9 +9373,9 @@
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
       "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/power-citrulline.webp",
-      "original_price": 2100.0,
-      "discount_price": 1800.0,
-      "discount_percent": 14,
+      "original_price": 1800.0,
+      "discount_price": 1620.0,
+      "discount_percent": 10,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/aminokiseline/power-citrulline/",
       "in_stock": false,
@@ -9418,11 +9403,26 @@
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
       "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/ostrovit-caffeine.webp",
-      "original_price": 3400.0,
-      "discount_price": 3100.0,
-      "discount_percent": 9,
+      "original_price": 3100.0,
+      "discount_price": 2635.0,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/pre-workout-suplementi/ostrovit-caffeine-supreme-pure/",
+      "in_stock": false,
+      "date_scraped": "2026-10-01"
+    },
+    {
+      "id": "exyu-fitness_army-1-whey-proteinpromocija",
+      "name": "Army 1 Whey Protein(Promocija)",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/whey4kgwhitestraw.webp",
+      "original_price": 12900.0,
+      "discount_price": 10600.0,
+      "discount_percent": 18,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/army-1-whey-protein-promocija/",
       "in_stock": false,
       "date_scraped": "2026-10-01"
     },
@@ -9442,17 +9442,17 @@
       "date_scraped": "2026-10-01"
     },
     {
-      "id": "exyu-fitness_army-1-whey-proteinpromocija",
-      "name": "Army 1 Whey Protein(Promocija)",
+      "id": "exyu-fitness_ostrovit-vitamin-b12-methylcobalamin",
+      "name": "Ostrovit Vitamin B12 Methylcobalamin",
       "store": "ExYu Fitness",
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/whey4kgwhitestraw.webp",
-      "original_price": 12900.0,
-      "discount_price": 10600.0,
-      "discount_percent": 18,
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/vitamin-b12.webp",
+      "original_price": 1200.0,
+      "discount_price": 960.0,
+      "discount_percent": 20,
       "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/army-1-whey-protein-promocija/",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/zdravlje/vitamini/ostrovit-vitamin-b12-methylcobalamin/",
       "in_stock": false,
       "date_scraped": "2026-10-01"
     },
@@ -10064,8 +10064,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/4907-home_default/pro-bar-60g-basic-supplements.jpg",
       "original_price": 210.0,
-      "discount_price": 178.5,
-      "discount_percent": 15,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/proteinske-cokoladice/1218-3510-pro-bar-60g-basic-supplements.html#/299-ukus-chocolate_strawberry",
       "in_stock": true,
@@ -10514,8 +10514,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/1574-home_default/creapowder-kreatin-monohidrat-yamamoto-nutrition.jpg",
       "original_price": 4770.0,
-      "discount_price": 4054.5,
-      "discount_percent": 15,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/kreatin-monohidrat/811-creapowder-kreatin-monohidrat-yamamoto-nutrition.html",
       "in_stock": true,
@@ -10794,10 +10794,10 @@
   ],
   "weekly_summary": {
     "week_of": "2026-09-28",
-    "generated_at": "2026-10-01 12:08",
+    "generated_at": "2026-10-01 22:11",
     "total_products": 718,
-    "total_discounted": 386,
-    "avg_discount_percent": 17.4,
+    "total_discounted": 384,
+    "avg_discount_percent": 17.3,
     "top_discounts": [
       {
         "id": "lama_prosta-gold-30-tableta",
@@ -11124,7 +11124,7 @@
       "ExYu Fitness": {
         "count": 63,
         "store_url": "https://www.exyu-fitness.rs",
-        "avg_discount": 15.2
+        "avg_discount": 14.9
       },
       "LAMA": {
         "count": 32,
@@ -11132,9 +11132,9 @@
         "avg_discount": 34.6
       },
       "Ogistra Nutrition": {
-        "count": 39,
+        "count": 37,
         "store_url": "https://www.ogistra-nutrition-shop.com",
-        "avg_discount": 36.8
+        "avg_discount": 38.0
       },
       "X Sport": {
         "count": 8,
@@ -11261,11 +11261,11 @@
       },
       "Rasprodaja": {
         "count": 63,
-        "avg_discount": 15.2
+        "avg_discount": 14.9
       },
       "Ostalo": {
-        "count": 71,
-        "avg_discount": 35.8
+        "count": 69,
+        "avg_discount": 36.4
       }
     },
     "new_discounts_count": 0,
@@ -11333,7 +11333,7 @@
     "Ogistra Nutrition": {
       "total": 39,
       "with_prices": 39,
-      "with_discounts": 39,
+      "with_discounts": 37,
       "status": "ok"
     },
     "SuperProtein": {
