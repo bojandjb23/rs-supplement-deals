@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-03T10:52:56.962093",
+  "scraped_at": "2026-10-03T15:29:01.895621",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -8722,21 +8722,6 @@
       "date_scraped": "2026-10-03"
     },
     {
-      "id": "exyu-fitness_tesla-creatine-monohidrat",
-      "name": "Tesla Creatine Monohidrat",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/Tesla-500g-e1727969868134.webp",
-      "original_price": 2100.0,
-      "discount_price": 1800.0,
-      "discount_percent": 14,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/kreatin/kreatin-monohidrat/tesla-creatine-monohidrat-500gr/",
-      "in_stock": true,
-      "date_scraped": "2026-10-03"
-    },
-    {
       "id": "exyu-fitness_haya-acetyl-l-carnitine-1000-mg-100-kapsula",
       "name": "Haya Acetyl L-Carnitine 1000 mg, 100 kapsula",
       "store": "ExYu Fitness",
@@ -8748,6 +8733,21 @@
       "discount_percent": 10,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/sagorevaci-masti/haya-acetyl-l-carnitine-1000-mg-100-kapsula/",
+      "in_stock": true,
+      "date_scraped": "2026-10-03"
+    },
+    {
+      "id": "exyu-fitness_tesla-creatine-monohidrat",
+      "name": "Tesla Creatine Monohidrat",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/Tesla-500g-e1727969868134.webp",
+      "original_price": 2100.0,
+      "discount_price": 1800.0,
+      "discount_percent": 14,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/kreatin/kreatin-monohidrat/tesla-creatine-monohidrat-500gr/",
       "in_stock": true,
       "date_scraped": "2026-10-03"
     },
@@ -10794,7 +10794,7 @@
   ],
   "weekly_summary": {
     "week_of": "2026-09-28",
-    "generated_at": "2026-10-03 10:52",
+    "generated_at": "2026-10-03 15:29",
     "total_products": 718,
     "total_discounted": 382,
     "avg_discount_percent": 17.4,
