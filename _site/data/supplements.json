@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-03T15:29:01.895621",
+  "scraped_at": "2026-10-03T20:26:17.999795",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -629,8 +629,8 @@
       "category": "Akcije",
       "image_url": "https://www.titaniumsport.rs/wp-content/uploads/2019/03/OPTIMUM-NUTRITION-GOLD-STANDARD-100_-WHEY-2270-g-300x300.webp",
       "original_price": 15990.0,
-      "discount_price": 14990.0,
-      "discount_percent": 6,
+      "discount_price": 14490.0,
+      "discount_percent": 9,
       "currency": "RSD",
       "product_url": "https://www.titaniumsport.rs/proizvod/optimum-nutrition-gold-standard-100-whey/",
       "in_stock": true,
@@ -10794,7 +10794,7 @@
   ],
   "weekly_summary": {
     "week_of": "2026-09-28",
-    "generated_at": "2026-10-03 15:29",
+    "generated_at": "2026-10-03 20:26",
     "total_products": 718,
     "total_discounted": 382,
     "avg_discount_percent": 17.4,
@@ -11109,7 +11109,7 @@
       "TitaniumSport": {
         "count": 23,
         "store_url": "https://www.titaniumsport.rs",
-        "avg_discount": 21.3
+        "avg_discount": 21.5
       },
       "Proteini.si": {
         "count": 2,
@@ -11157,7 +11157,7 @@
       },
       "Akcije": {
         "count": 91,
-        "avg_discount": 13.4
+        "avg_discount": 13.5
       },
       "Proteini": {
         "count": 5,
