@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-04T11:35:27.463336",
+  "scraped_at": "2026-10-04T16:13:55.055772",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -1293,7 +1293,7 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/biotech-usa-vegan-protein-biljni-proteinski-prah-za-misicni-razvoj",
-      "in_stock": false,
+      "in_stock": true,
       "date_scraped": "2026-10-04"
     },
     {
@@ -1308,7 +1308,7 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/biotech-usa-vegan-protein-biljni-proteinski-prah-za-misicni-razvoj",
-      "in_stock": false,
+      "in_stock": true,
       "date_scraped": "2026-10-04"
     },
     {
@@ -10794,7 +10794,7 @@
   ],
   "weekly_summary": {
     "week_of": "2026-09-28",
-    "generated_at": "2026-10-04 11:35",
+    "generated_at": "2026-10-04 16:13",
     "total_products": 718,
     "total_discounted": 380,
     "avg_discount_percent": 17.4,
