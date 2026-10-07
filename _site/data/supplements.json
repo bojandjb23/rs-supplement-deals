@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-07T12:23:17.545029",
+  "scraped_at": "2026-10-07T22:29:39.661197",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -19,7 +19,7 @@
   ],
   "stores_failed": [],
   "total_products": 719,
-  "total_discounted": 389,
+  "total_discounted": 383,
   "products": [
     {
       "id": "fitlab_whey-protein-450g-workout-nutrition",
@@ -3779,8 +3779,8 @@
       "category": "Kreatin",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/creatine-monohydrate-300g-6-pak.png?v=1757243870",
       "original_price": 2300.0,
-      "discount_price": 1840.0,
-      "discount_percent": 20,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/6pak-creatine-monohydrate-300g-snaga-i-energija",
       "in_stock": true,
@@ -10079,8 +10079,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/4907-home_default/pro-bar-60g-basic-supplements.jpg",
       "original_price": 210.0,
-      "discount_price": 178.5,
-      "discount_percent": 15,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/proteinske-cokoladice/1218-3510-pro-bar-60g-basic-supplements.html#/299-ukus-chocolate_strawberry",
       "in_stock": true,
@@ -10529,8 +10529,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/1574-home_default/creapowder-kreatin-monohidrat-yamamoto-nutrition.jpg",
       "original_price": 4770.0,
-      "discount_price": 4054.5,
-      "discount_percent": 15,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/kreatin-monohidrat/811-creapowder-kreatin-monohidrat-yamamoto-nutrition.html",
       "in_stock": true,
@@ -10559,8 +10559,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/3775-home_default/pro-whey-227kg-premium-whey-protein.jpg",
       "original_price": 9260.0,
-      "discount_price": 7871.0,
-      "discount_percent": 15,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/proteini/1200-4349-pro-whey-227kg-premium-whey-protein.html#/43-ukus-cookie_and_cream",
       "in_stock": true,
@@ -10574,8 +10574,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/1117-home_default/x3m-terminator-180-kapsula.jpg",
       "original_price": 3070.0,
-      "discount_price": 2609.5,
-      "discount_percent": 15,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/gh-i-testo-boosteri/194-x3m-terminator-180-kapsula.html",
       "in_stock": true,
@@ -10604,8 +10604,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/3784-home_default/pro-whey-908grama-basic-supplements.jpg",
       "original_price": 4560.0,
-      "discount_price": 3876.0,
-      "discount_percent": 15,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/proteini/1204-3031-pro-whey-908grama-basic-supplements.html#/243-ukus-cookie_s_cream",
       "in_stock": true,
@@ -10758,7 +10758,7 @@
       "discount_percent": 24,
       "currency": "RSD",
       "product_url": "https://www.xsport.rs/proizvod/6pak_milky_shake_whey_700g",
-      "in_stock": true,
+      "in_stock": false,
       "date_scraped": "2026-10-07"
     },
     {
@@ -10809,10 +10809,10 @@
   ],
   "weekly_summary": {
     "week_of": "2026-10-05",
-    "generated_at": "2026-10-07 12:23",
+    "generated_at": "2026-10-07 22:29",
     "total_products": 719,
-    "total_discounted": 389,
-    "avg_discount_percent": 17.5,
+    "total_discounted": 383,
+    "avg_discount_percent": 17.6,
     "top_discounts": [
       {
         "id": "lama_prosta-gold-30-tableta",
@@ -11132,9 +11132,9 @@
         "avg_discount": 38.0
       },
       "Dobrobit": {
-        "count": 200,
+        "count": 199,
         "store_url": "https://dobrobit.rs",
-        "avg_discount": 11.2
+        "avg_discount": 11.1
       },
       "ExYu Fitness": {
         "count": 63,
@@ -11147,9 +11147,9 @@
         "avg_discount": 34.6
       },
       "Ogistra Nutrition": {
-        "count": 39,
+        "count": 34,
         "store_url": "https://www.ogistra-nutrition-shop.com",
-        "avg_discount": 36.4
+        "avg_discount": 39.6
       },
       "X Sport": {
         "count": 8,
@@ -11223,8 +11223,8 @@
         "avg_discount": 9.8
       },
       "Kreatin": {
-        "count": 3,
-        "avg_discount": 24.3
+        "count": 2,
+        "avg_discount": 26.5
       },
       "Gvožđe": {
         "count": 2,
@@ -11283,8 +11283,8 @@
         "avg_discount": 15.1
       },
       "Ostalo": {
-        "count": 71,
-        "avg_discount": 35.6
+        "count": 66,
+        "avg_discount": 37.1
       }
     },
     "new_discounts_count": 0,
@@ -11328,7 +11328,7 @@
     "Dobrobit": {
       "total": 508,
       "with_prices": 508,
-      "with_discounts": 200,
+      "with_discounts": 199,
       "status": "ok"
     },
     "ExYu Fitness": {
@@ -11352,7 +11352,7 @@
     "Ogistra Nutrition": {
       "total": 39,
       "with_prices": 39,
-      "with_discounts": 39,
+      "with_discounts": 34,
       "status": "ok"
     },
     "SuperProtein": {
