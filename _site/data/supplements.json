@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-18T15:12:08.843954",
+  "scraped_at": "2026-10-18T19:56:23.727511",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -8552,7 +8552,7 @@
       "discount_price": 6190.0,
       "discount_percent": 11,
       "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/suplementi/biotech-power-protein-4-kg/",
+      "product_url": "https://www.exyu-fitness.rs/proteini/biotech-power-protein-4-kg/",
       "in_stock": true,
       "date_scraped": "2026-10-18"
     },
@@ -10149,7 +10149,7 @@
   ],
   "weekly_summary": {
     "week_of": "2026-10-12",
-    "generated_at": "2026-10-18 15:12",
+    "generated_at": "2026-10-18 19:56",
     "total_products": 675,
     "total_discounted": 390,
     "avg_discount_percent": 16.6,
