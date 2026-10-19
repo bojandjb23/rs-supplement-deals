@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-19T11:42:26.515353",
+  "scraped_at": "2026-10-19T18:03:46.647903",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -19,8 +19,23 @@
   ],
   "stores_failed": [],
   "total_products": 675,
-  "total_discounted": 362,
+  "total_discounted": 363,
   "products": [
+    {
+      "id": "fitlab_angel-dust-270g60serv-skull-labs",
+      "name": "Angel dust 270g/60serv - Skull Labs",
+      "store": "FitLab",
+      "store_url": "https://fitlab.rs",
+      "category": "Akcija",
+      "image_url": "https://fitlab.rs/products/2026/10/skull-labs-angel-dust-supplement-jar-1792413486158.png",
+      "original_price": 3490.0,
+      "discount_price": 2960.0,
+      "discount_percent": 15,
+      "currency": "RSD",
+      "product_url": "https://fitlab.rs/sr/proizvodi/angel-dust-270g-60serv-skull-labs",
+      "in_stock": true,
+      "date_scraped": "2026-10-19"
+    },
     {
       "id": "fitlab_whey-protein-450g-workout-nutrition",
       "name": "Whey Protein 450g - Workout Nutrition",
@@ -363,21 +378,6 @@
       "discount_percent": 25,
       "currency": "RSD",
       "product_url": "https://fitlab.rs/sr/proizvodi/protein-shake-700g-creatin-300g-ostrovit",
-      "in_stock": true,
-      "date_scraped": "2026-10-19"
-    },
-    {
-      "id": "fitlab_whey-protein-3kg-creatine-500g-5starsostrovit",
-      "name": "Whey protein 3kg + Creatine 500g - 5Stars/OstroVit",
-      "store": "FitLab",
-      "store_url": "https://fitlab.rs",
-      "category": "Akcija",
-      "image_url": "https://fitlab.rs/products/2026/06/837ecc22-fbcf-4941-9755-adc39880aa4d-1780841088017.jpeg",
-      "original_price": 11600.0,
-      "discount_price": 9270.0,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://fitlab.rs/sr/proizvodi/whey-protein-3kg-creatine-500g-5stars-ostrovit",
       "in_stock": true,
       "date_scraped": "2026-10-19"
     },
@@ -1953,7 +1953,7 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/nutriversum-vitamin-d3-k2-120-kapsula-podrska-imunitetu-i-zdravlju-kostiju",
-      "in_stock": true,
+      "in_stock": false,
       "date_scraped": "2026-10-19"
     },
     {
@@ -2714,8 +2714,8 @@
       "category": "Vitamini",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/7nutrition-vitamin-d3-2000-iu-120-kapsula.png?v=1740950793",
       "original_price": 1300.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 1170.0,
+      "discount_percent": 10,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/7nutrition-vitamin-d3-2000-iu-120-kapsula-podrska-imunitetu-i-kostima",
       "in_stock": true,
@@ -8562,7 +8562,7 @@
       "store": "ExYu Fitness",
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/superior-whey-core-5000gr-4863.webp",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/core-5000gr-jagoda.webp",
       "original_price": 13500.0,
       "discount_price": 10500.0,
       "discount_percent": 22,
@@ -8587,21 +8587,6 @@
       "date_scraped": "2026-10-19"
     },
     {
-      "id": "exyu-fitness_5-stars-whey-protein-3000gr",
-      "name": "5 Stars Whey Protein, 3000gr",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/62066-strawberry.webp",
-      "original_price": 7900.0,
-      "discount_price": 6800.0,
-      "discount_percent": 14,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/proteini/whey-protein/5-star-whey-protein-3000gr/",
-      "in_stock": true,
-      "date_scraped": "2026-10-19"
-    },
-    {
       "id": "exyu-fitness_5-stars-whey-isolate-2-kg",
       "name": "5 Stars Whey Isolate - 2 kg",
       "store": "ExYu Fitness",
@@ -8613,6 +8598,21 @@
       "discount_percent": 18,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/proteini/whey-protein-isolate/5-stars-whey-isolate-2-kg/",
+      "in_stock": true,
+      "date_scraped": "2026-10-19"
+    },
+    {
+      "id": "exyu-fitness_optimum-gold-standard-2-kg",
+      "name": "Optimum Gold Standard  2 kg",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/gold-standard.webp",
+      "original_price": 14990.0,
+      "discount_price": 12600.0,
+      "discount_percent": 16,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/proteini/optimum-gold-standard-whey-protein/",
       "in_stock": true,
       "date_scraped": "2026-10-19"
     },
@@ -9112,6 +9112,21 @@
       "date_scraped": "2026-10-19"
     },
     {
+      "id": "exyu-fitness_5-stars-whey-protein-3000gr",
+      "name": "5 Stars Whey Protein, 3000gr",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/62066-strawberry.webp",
+      "original_price": 7900.0,
+      "discount_price": 6800.0,
+      "discount_percent": 14,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/proteini/whey-protein/5-star-whey-protein-3000gr/",
+      "in_stock": false,
+      "date_scraped": "2026-10-19"
+    },
+    {
       "id": "exyu-fitness_tesla-whey-charger-100-protein-2270gr",
       "name": "Tesla Whey Charger 100 Protein,  2270gr",
       "store": "ExYu Fitness",
@@ -9138,21 +9153,6 @@
       "discount_percent": 12,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/proteini/whey-protein/dymatize-elite-whey-protein-2-1-kg/",
-      "in_stock": false,
-      "date_scraped": "2026-10-19"
-    },
-    {
-      "id": "exyu-fitness_optimum-gold-standard-2-kg",
-      "name": "Optimum Gold Standard  2 kg",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/gold-standard.webp",
-      "original_price": 14990.0,
-      "discount_price": 12600.0,
-      "discount_percent": 16,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/proteini/optimum-gold-standard-whey-protein/",
       "in_stock": false,
       "date_scraped": "2026-10-19"
     },
@@ -10149,9 +10149,9 @@
   ],
   "weekly_summary": {
     "week_of": "2026-10-19",
-    "generated_at": "2026-10-19 11:42",
+    "generated_at": "2026-10-19 18:03",
     "total_products": 675,
-    "total_discounted": 362,
+    "total_discounted": 363,
     "avg_discount_percent": 16.1,
     "top_discounts": [
       {
@@ -10459,7 +10459,7 @@
       "FitLab": {
         "count": 22,
         "store_url": "https://fitlab.rs",
-        "avg_discount": 18.9
+        "avg_discount": 18.6
       },
       "TitaniumSport": {
         "count": 23,
@@ -10472,7 +10472,7 @@
         "avg_discount": 38.0
       },
       "Dobrobit": {
-        "count": 213,
+        "count": 214,
         "store_url": "https://dobrobit.rs",
         "avg_discount": 11.8
       },
@@ -10495,7 +10495,7 @@
     "by_category": {
       "Akcija": {
         "count": 22,
-        "avg_discount": 20.7
+        "avg_discount": 20.5
       },
       "Preporučujemo": {
         "count": 1,
@@ -10518,8 +10518,8 @@
         "avg_discount": 13.7
       },
       "Vitamini": {
-        "count": 19,
-        "avg_discount": 11.5
+        "count": 20,
+        "avg_discount": 11.4
       },
       "Magnezijum": {
         "count": 11,
@@ -10655,7 +10655,7 @@
     "Dobrobit": {
       "total": 506,
       "with_prices": 506,
-      "with_discounts": 213,
+      "with_discounts": 214,
       "status": "ok"
     },
     "ExYu Fitness": {
