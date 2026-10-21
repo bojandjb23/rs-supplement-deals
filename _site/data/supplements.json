@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-21T10:54:45.082024",
+  "scraped_at": "2026-10-21T16:22:36.587352",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -19,7 +19,7 @@
   ],
   "stores_failed": [],
   "total_products": 713,
-  "total_discounted": 366,
+  "total_discounted": 367,
   "products": [
     {
       "id": "fitlab_whey-protein-450g-workout-nutrition",
@@ -202,21 +202,6 @@
       "date_scraped": "2026-10-21"
     },
     {
-      "id": "fitlab_11-gratis-epo-core-vo2max-120cap-amixtm",
-      "name": "1+1 GRATIS Epo-Core VO2Max 120cap - Amix™",
-      "store": "FitLab",
-      "store_url": "https://fitlab.rs",
-      "category": "Akcija",
-      "image_url": "https://fitlab.rs/products/2026/07/d009ca01-4d79-46a1-a782-91aac88a4cf6-1783272035944.jpeg",
-      "original_price": 2990.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://fitlab.rs/sr/proizvodi/1-1-gratis-epo-core-vo2max-120cap-amix",
-      "in_stock": true,
-      "date_scraped": "2026-10-21"
-    },
-    {
       "id": "fitlab_whey-isolate-2kg-gratis-10-x-bcaa-shot-5stars",
       "name": "Whey isolate 2kg + GRATIS 10 x BCAA shot - 5stars",
       "store": "FitLab",
@@ -378,6 +363,21 @@
       "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://fitlab.rs/sr/proizvodi/broncho-protect-500ml-natura-therapy",
+      "in_stock": true,
+      "date_scraped": "2026-10-21"
+    },
+    {
+      "id": "fitlab_creatine-monohydrate-powder-317g-optimum-nutrition",
+      "name": "Creatine Monohydrate Powder 317g - Optimum Nutrition",
+      "store": "FitLab",
+      "store_url": "https://fitlab.rs",
+      "category": "Preporucujemo",
+      "image_url": "https://fitlab.rs/products/2025/10/creatine1-724x-e1761843583167.webp",
+      "original_price": 3870.0,
+      "discount_price": 3290.0,
+      "discount_percent": 15,
+      "currency": "RSD",
+      "product_url": "https://fitlab.rs/sr/proizvodi/micronized-creatine-monohydrate-powder-317g-optimum-nutrition",
       "in_stock": true,
       "date_scraped": "2026-10-21"
     },
@@ -8617,6 +8617,21 @@
       "date_scraped": "2026-10-21"
     },
     {
+      "id": "exyu-fitness_optimum-gold-standard-2-kg",
+      "name": "Optimum Gold Standard  2 kg",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/gold-standard.webp",
+      "original_price": 14990.0,
+      "discount_price": 12600.0,
+      "discount_percent": 16,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/proteini/optimum-gold-standard-whey-protein/",
+      "in_stock": true,
+      "date_scraped": "2026-10-21"
+    },
+    {
       "id": "exyu-fitness_ostrovit-oatswhey",
       "name": "Ostrovit Oats&Whey",
       "store": "ExYu Fitness",
@@ -9153,21 +9168,6 @@
       "discount_percent": 12,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/proteini/whey-protein/dymatize-elite-whey-protein-2-1-kg/",
-      "in_stock": false,
-      "date_scraped": "2026-10-21"
-    },
-    {
-      "id": "exyu-fitness_optimum-gold-standard-2-kg",
-      "name": "Optimum Gold Standard  2 kg",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/gold-standard.webp",
-      "original_price": 14990.0,
-      "discount_price": 12600.0,
-      "discount_percent": 16,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/proteini/optimum-gold-standard-whey-protein/",
       "in_stock": false,
       "date_scraped": "2026-10-21"
     },
@@ -10719,9 +10719,9 @@
   ],
   "weekly_summary": {
     "week_of": "2026-10-19",
-    "generated_at": "2026-10-21 10:54",
+    "generated_at": "2026-10-21 16:22",
     "total_products": 713,
-    "total_discounted": 366,
+    "total_discounted": 367,
     "avg_discount_percent": 17.5,
     "top_discounts": [
       {
@@ -11027,9 +11027,9 @@
     ],
     "by_store": {
       "FitLab": {
-        "count": 22,
+        "count": 23,
         "store_url": "https://fitlab.rs",
-        "avg_discount": 17.3
+        "avg_discount": 17.2
       },
       "TitaniumSport": {
         "count": 23,
@@ -11073,7 +11073,7 @@
         "avg_discount": 19.4
       },
       "Preporucujemo": {
-        "count": 1,
+        "count": 2,
         "avg_discount": 15.0
       },
       "Preporučujemo": {
@@ -11212,7 +11212,7 @@
     "FitLab": {
       "total": 24,
       "with_prices": 24,
-      "with_discounts": 22,
+      "with_discounts": 23,
       "status": "ok"
     },
     "TitaniumSport": {
