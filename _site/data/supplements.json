@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-21T16:22:36.587352",
+  "scraped_at": "2026-10-21T21:05:04.138415",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -21,21 +21,6 @@
   "total_products": 713,
   "total_discounted": 367,
   "products": [
-    {
-      "id": "fitlab_whey-protein-450g-workout-nutrition",
-      "name": "Whey Protein 450g - Workout Nutrition",
-      "store": "FitLab",
-      "store_url": "https://fitlab.rs",
-      "category": "Akcija",
-      "image_url": "https://fitlab.rs/products/2026/09/workout-whey-protein-koncentrat-proteina-surutke-1789330102702.webp",
-      "original_price": 2450.0,
-      "discount_price": 1960.0,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://fitlab.rs/sr/proizvodi/whey-protein-450g-workout-nutrition",
-      "in_stock": true,
-      "date_scraped": "2026-10-21"
-    },
     {
       "id": "fitlab_krea-genic-maximum-554g70serv-weider",
       "name": "Krea-Genic Maximum 554g/70serv - Weider",
@@ -254,8 +239,8 @@
       "category": "Akcija",
       "image_url": "https://fitlab.rs/products/2026/05/whey-protein-5stars-3kg-1779789381099.png",
       "original_price": 8750.0,
-      "discount_price": 6990.0,
-      "discount_percent": 20,
+      "discount_price": 7430.0,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://fitlab.rs/sr/proizvodi/whey-protein-5stars-3kg",
       "in_stock": true,
@@ -378,6 +363,21 @@
       "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://fitlab.rs/sr/proizvodi/micronized-creatine-monohydrate-powder-317g-optimum-nutrition",
+      "in_stock": true,
+      "date_scraped": "2026-10-21"
+    },
+    {
+      "id": "fitlab_whey-pro-2kg-creatine-ostrovit-300g-nutriversum",
+      "name": "Whey Pro 2kg + Creatine ostrovit 300g - Nutriversum",
+      "store": "FitLab",
+      "store_url": "https://fitlab.rs",
+      "category": "Akcija",
+      "image_url": "https://fitlab.rs/products/2025/10/kreatin-creatin-whey-protein-surutka-misicna-masa-snaga-izdrzljivost-pansport-ogistra-scaled-e1760546512618.jpeg",
+      "original_price": 9170.0,
+      "discount_price": 7330.0,
+      "discount_percent": 20,
+      "currency": "RSD",
+      "product_url": "https://fitlab.rs/sr/proizvodi/whey-pro-2kg-creatine-ostrovit-300g-nutriversum",
       "in_stock": true,
       "date_scraped": "2026-10-21"
     },
@@ -663,7 +663,7 @@
       "discount_percent": 13,
       "currency": "RSD",
       "product_url": "https://www.titaniumsport.rs/proizvod/optimum-nutrition-gold-standard-100-whey-908-g/",
-      "in_stock": false,
+      "in_stock": true,
       "date_scraped": "2026-10-21"
     },
     {
@@ -8592,7 +8592,7 @@
       "store": "ExYu Fitness",
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/62066.webp",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/62066-strawberry.webp",
       "original_price": 7900.0,
       "discount_price": 6800.0,
       "discount_percent": 14,
@@ -10719,7 +10719,7 @@
   ],
   "weekly_summary": {
     "week_of": "2026-10-19",
-    "generated_at": "2026-10-21 16:22",
+    "generated_at": "2026-10-21 21:05",
     "total_products": 713,
     "total_discounted": 367,
     "avg_discount_percent": 17.5,
@@ -11029,7 +11029,7 @@
       "FitLab": {
         "count": 23,
         "store_url": "https://fitlab.rs",
-        "avg_discount": 17.2
+        "avg_discount": 17.0
       },
       "TitaniumSport": {
         "count": 23,
@@ -11070,7 +11070,7 @@
     "by_category": {
       "Akcija": {
         "count": 22,
-        "avg_discount": 19.4
+        "avg_discount": 19.1
       },
       "Preporucujemo": {
         "count": 2,
