@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-22T10:55:08.249900",
+  "scraped_at": "2026-10-22T16:22:05.867115",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -1008,7 +1008,7 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/the-amino-whey-hydro-hidrolizovani-whey-protein-za-misicni-rast",
-      "in_stock": false,
+      "in_stock": true,
       "date_scraped": "2026-10-22"
     },
     {
@@ -1053,7 +1053,7 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/the-amino-whey-hydro-hidrolizovani-whey-protein-za-misicni-rast",
-      "in_stock": false,
+      "in_stock": true,
       "date_scraped": "2026-10-22"
     },
     {
@@ -8238,7 +8238,7 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-fermentisana-kurkuma-50-kapsula-antioksidativna-podrska",
-      "in_stock": false,
+      "in_stock": true,
       "date_scraped": "2026-10-22"
     },
     {
@@ -10292,7 +10292,7 @@
       "discount_price": 1860.0,
       "discount_percent": 40,
       "currency": "RSD",
-      "product_url": "https://www.ogistra-nutrition-shop.com/sportska-garderoba/1669-4448-bs-men-s-oversize-t-shirt.html#/2-velicina-m/361-boja-mint",
+      "product_url": "https://www.ogistra-nutrition-shop.com/sportska-garderoba/1669-4453-bs-men-s-oversize-t-shirt.html#/8-boja-belo/25-velicina-xl",
       "in_stock": true,
       "date_scraped": "2026-10-22"
     },
@@ -10719,7 +10719,7 @@
   ],
   "weekly_summary": {
     "week_of": "2026-10-19",
-    "generated_at": "2026-10-22 10:55",
+    "generated_at": "2026-10-22 16:22",
     "total_products": 713,
     "total_discounted": 367,
     "avg_discount_percent": 17.5,
