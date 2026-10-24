@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-24T15:07:53.331892",
+  "scraped_at": "2026-10-24T20:01:50.246525",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -18,8 +18,8 @@
     "X Sport"
   ],
   "stores_failed": [],
-  "total_products": 711,
-  "total_discounted": 367,
+  "total_products": 708,
+  "total_discounted": 352,
   "products": [
     {
       "id": "fitlab_krea-genic-maximum-554g70serv-weider",
@@ -944,8 +944,8 @@
       "category": "Proteini",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/5-stars-whey-protein-3kg-cokolada.jpg?v=1741094353",
       "original_price": 8600.0,
-      "discount_price": 7740.0,
-      "discount_percent": 10,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/5-stars-whey-protein-3kg-visokokvalitetni-protein-za-rast-misica-i-oporavak",
       "in_stock": true,
@@ -2504,8 +2504,8 @@
       "category": "Magnezijum",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-magnezijum-citrat-400-mg-b6-90-tableta.png?v=1734089867",
       "original_price": 1290.0,
-      "discount_price": 980.0,
-      "discount_percent": 24,
+      "discount_price": 1160.0,
+      "discount_percent": 10,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/ostrovit-magnezijum-citrat-400-mg-b6-energija-i-podrska-nervnom-sistemu",
       "in_stock": true,
@@ -2549,8 +2549,8 @@
       "category": "Akcije",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/174-l.jpg?v=1738609893",
       "original_price": 1600.0,
-      "discount_price": 1380.0,
-      "discount_percent": 14,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/haya-labs-l-theanine-200mg-za-podrsku-imunitetu-memoriji-i-balansiranje-holesterola",
       "in_stock": true,
@@ -2819,8 +2819,8 @@
       "category": "Probiotici",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/2022_pm_HAYA_10-Billion-Acidophilus-30-Caps_150x70_ccc9595a-18cb-42b1-9ded-a9497e7d37d9.jpg?v=1738615648",
       "original_price": 1000.0,
-      "discount_price": 870.0,
-      "discount_percent": 13,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/haya-labs-10-billion-acidophilus-bifidus-imunitet-i-zdravlje-creva",
       "in_stock": true,
@@ -2998,9 +2998,9 @@
       "store_url": "https://dobrobit.rs",
       "category": "Omega masne kiseline",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/7nutrition-omega3-100-vege-caps-dobrobit.webp?v=1749123030",
-      "original_price": 2500.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "original_price": 2625.0,
+      "discount_price": 2500.0,
+      "discount_percent": 5,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/7nutrition-omega-3-100-kapsula-podrska-srcu-i-mozgu",
       "in_stock": true,
@@ -3089,8 +3089,8 @@
       "category": "L-karnitin",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/HAYA_ACETYL-L-CARNITINE-_1000MG_100CAPS.jpg?v=1738580556",
       "original_price": 2890.0,
-      "discount_price": 2390.0,
-      "discount_percent": 17,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/haya-labs-acetyl-l-karnitin-1000-mg-povecanje-energije-i-sagorevanje-masti",
       "in_stock": true,
@@ -3644,8 +3644,8 @@
       "category": "Amino kiseline",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/Haya_Labs_N-Acetyl_L-Cysteine_600mg.jpg?v=1738614522",
       "original_price": 1500.0,
-      "discount_price": 1340.0,
-      "discount_percent": 11,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/haya-labs-n-acetyl-l-cysteine-600mg-snazan-antioksidans-i-podrska-imunitetu",
       "in_stock": true,
@@ -4034,8 +4034,8 @@
       "category": "Magnezijum",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/master-of-pharmacy-magnesium-duo.webp?v=1741953247",
       "original_price": 1800.0,
-      "discount_price": 1460.0,
-      "discount_percent": 19,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/m-e-v-feller-magnezijum-duo-60-tableta-za-ravnotezu-elektrolita-i-zdravlje-kostiju",
       "in_stock": true,
@@ -4049,8 +4049,8 @@
       "category": "Kurkumin",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/157_pm_HAYA_CURCUMIN-500MG_60CAPS.jpg?v=1738589410",
       "original_price": 1500.0,
-      "discount_price": 1340.0,
-      "discount_percent": 11,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/haya-labs-curcumin-turmeric-extract-500mg-za-podrsku-zglobovima-imunitetu-i-varenju",
       "in_stock": true,
@@ -4229,8 +4229,8 @@
       "category": "Omega masne kiseline",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/master-of-pharmacy-super-epa-fish-oil-1000mg-sgc.webp?v=1743805528",
       "original_price": 2020.0,
-      "discount_price": 1790.0,
-      "discount_percent": 11,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/m-e-v-feller-super-epa-riblje-ulje-1000-mg-sgc-za-zdravlje-srca-i-kardiovaskularni-sistem",
       "in_stock": true,
@@ -4844,8 +4844,8 @@
       "category": "Koenzim Q10",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/master-of-pharmacy-coq10-a30.webp?v=1743804264",
       "original_price": 1550.0,
-      "discount_price": 1340.0,
-      "discount_percent": 14,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/m-e-v-feller-coq10-100mg-za-zdravlje-srca-i-kardiovaskularni-sistem",
       "in_stock": true,
@@ -6044,8 +6044,8 @@
       "category": "Akcije",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/master-of-pharmacy-ginkgo-biloba.webp?v=1743804512",
       "original_price": 1550.0,
-      "discount_price": 1390.0,
-      "discount_percent": 10,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/m-e-v-feller-ginkgo-biloba-60-tableta-za-poboljsanje-kognitivnih-funkcija-i-cirkulacije",
       "in_stock": true,
@@ -6539,8 +6539,8 @@
       "category": "Probiotici",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/master-of-pharmacy-probifast-a10.webp?v=1743804892",
       "original_price": 1150.0,
-      "discount_price": 920.0,
-      "discount_percent": 20,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/mev-feller-probifast-10-kesica-probiotik-za-probavu-i-imunitet",
       "in_stock": true,
@@ -7334,8 +7334,8 @@
       "category": "Akcije",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/master-of-pharmacy-beta-cd-glucan.webp?v=1743686294",
       "original_price": 2400.0,
-      "discount_price": 2190.0,
-      "discount_percent": 9,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/m-e-v-feller-beta-cd-glukan-60-tableta-ojacajte-imunitet-i-povecajte-otpornost-na-infekcije",
       "in_stock": true,
@@ -8174,25 +8174,10 @@
       "category": "Vitamini",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/master-of-pharmacy-vitamin-c-with-bioflavonoids.webp?v=1743806475",
       "original_price": 1400.0,
-      "discount_price": 1290.0,
-      "discount_percent": 8,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/m-e-v-feller-vitamin-c-s-bioflavonoidima-60-tableta-jacanje-imunoloskog-sistema-i-smanjenje-umora",
-      "in_stock": false,
-      "date_scraped": "2026-10-24"
-    },
-    {
-      "id": "dobrobit_natural-wealth-b-kompleks-100-tableta-podrska-energiji-i-metabolizmu",
-      "name": "Natural Wealth B-Kompleks, 100 Tableta - Podrška Energiji i Metabolizmu",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Vitamini",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/natural-wealth-b-kompleks-100-tableta.png?v=1733155329",
-      "original_price": 1400.0,
-      "discount_price": 1290.0,
-      "discount_percent": 8,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/natural-wealth-b-kompleks-100-tableta-podrska-energiji-i-metabolizmu",
       "in_stock": false,
       "date_scraped": "2026-10-24"
     },
@@ -8223,21 +8208,6 @@
       "discount_percent": 11,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/nutriversum-kid-vita-gummies-ukusni-multivitamini-za-decu",
-      "in_stock": false,
-      "date_scraped": "2026-10-24"
-    },
-    {
-      "id": "dobrobit_natural-wealth-kalcijum-magnezijum-cink-100-tableta-podrska-kostima-i-imunitetu",
-      "name": "Natural Wealth Kalcijum-Magnezijum-Cink, 100 Tableta - Podrška Kostima i Imunitetu",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Cink",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/natural-wealth-helirani-kalcijum-magnezijum-cink-100-tableta.jpg?v=1733236027",
-      "original_price": 1780.0,
-      "discount_price": 1590.0,
-      "discount_percent": 11,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/natural-wealth-kalcijum-magnezijum-cink-100-tableta-podrska-kostima-i-imunitetu",
       "in_stock": false,
       "date_scraped": "2026-10-24"
     },
@@ -8298,21 +8268,6 @@
       "discount_percent": 14,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/salvit-vitamin-d3-800iu-60-tableta-za-zdravlje-kostiju-i-imunitet",
-      "in_stock": false,
-      "date_scraped": "2026-10-24"
-    },
-    {
-      "id": "dobrobit_natural-wealth-ester-c-500-mg-60-tableta-blaga-formula-za-imunitet",
-      "name": "Natural Wealth Ester-C 500 mg, 60 Tableta - Blaga Formula za Imunitet",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Vitamini",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/natural-wealth-ester-c-500-mg-60-tableta.png?v=1733225647",
-      "original_price": 2290.0,
-      "discount_price": 1790.0,
-      "discount_percent": 22,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/natural-wealth-ester-c-500-mg-60-tableta-blaga-formula-za-imunitet",
       "in_stock": false,
       "date_scraped": "2026-10-24"
     },
@@ -8992,21 +8947,6 @@
       "date_scraped": "2026-10-24"
     },
     {
-      "id": "exyu-fitness_ostrovit-vitamin-b12-methylcobalamin",
-      "name": "Ostrovit Vitamin B12 Methylcobalamin",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/vitamin-b12.webp",
-      "original_price": 1200.0,
-      "discount_price": 960.0,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/zdravlje/vitamini/ostrovit-vitamin-b12-methylcobalamin/",
-      "in_stock": true,
-      "date_scraped": "2026-10-24"
-    },
-    {
       "id": "exyu-fitness_naughty-boy-noogandharok-1126",
       "name": "Naughty Boy Noogandha(Rok 11/26)",
       "store": "ExYu Fitness",
@@ -9438,6 +9378,21 @@
       "discount_percent": 22,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/zoomad-labs-caretaker/",
+      "in_stock": false,
+      "date_scraped": "2026-10-24"
+    },
+    {
+      "id": "exyu-fitness_ostrovit-vitamin-b12-methylcobalamin",
+      "name": "Ostrovit Vitamin B12 Methylcobalamin",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/vitamin-b12.webp",
+      "original_price": 1200.0,
+      "discount_price": 960.0,
+      "discount_percent": 20,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/zdravlje/vitamini/ostrovit-vitamin-b12-methylcobalamin/",
       "in_stock": false,
       "date_scraped": "2026-10-24"
     },
@@ -10689,10 +10644,10 @@
   ],
   "weekly_summary": {
     "week_of": "2026-10-19",
-    "generated_at": "2026-10-24 15:07",
-    "total_products": 711,
-    "total_discounted": 367,
-    "avg_discount_percent": 17.5,
+    "generated_at": "2026-10-24 20:01",
+    "total_products": 708,
+    "total_discounted": 352,
+    "avg_discount_percent": 17.6,
     "top_discounts": [
       {
         "id": "lama_fat-burnervege-60-kapsula",
@@ -11012,9 +10967,9 @@
         "avg_discount": 38.0
       },
       "Dobrobit": {
-        "count": 184,
+        "count": 169,
         "store_url": "https://dobrobit.rs",
-        "avg_discount": 10.5
+        "avg_discount": 10.1
       },
       "ExYu Fitness": {
         "count": 65,
@@ -11051,28 +11006,24 @@
         "avg_discount": 15.0
       },
       "Akcije": {
-        "count": 89,
-        "avg_discount": 13.5
-      },
-      "Proteini": {
-        "count": 5,
-        "avg_discount": 11.0
+        "count": 86,
+        "avg_discount": 13.6
       },
       "Kolagen": {
         "count": 6,
         "avg_discount": 13.7
       },
       "Vitamini": {
-        "count": 19,
-        "avg_discount": 10.9
+        "count": 16,
+        "avg_discount": 10.6
       },
       "Magnezijum": {
-        "count": 9,
-        "avg_discount": 12.8
+        "count": 8,
+        "avg_discount": 10.2
       },
       "Omega masne kiseline": {
         "count": 14,
-        "avg_discount": 12.9
+        "avg_discount": 12.4
       },
       "Ašvaganda": {
         "count": 4,
@@ -11087,24 +11038,16 @@
         "avg_discount": 14.7
       },
       "Amino kiseline": {
-        "count": 22,
-        "avg_discount": 9.2
+        "count": 21,
+        "avg_discount": 9.1
       },
-      "Probiotici": {
-        "count": 7,
-        "avg_discount": 9.7
-      },
-      "L-karnitin": {
-        "count": 3,
-        "avg_discount": 10.0
+      "Proteini": {
+        "count": 4,
+        "avg_discount": 11.2
       },
       "Gvožđe": {
         "count": 2,
         "avg_discount": 10.5
-      },
-      "Kurkumin": {
-        "count": 2,
-        "avg_discount": 9.0
       },
       "Melatonin": {
         "count": 2,
@@ -11115,8 +11058,8 @@
         "avg_discount": 9.0
       },
       "Koenzim Q10": {
-        "count": 8,
-        "avg_discount": 9.8
+        "count": 7,
+        "avg_discount": 9.1
       },
       "Maka": {
         "count": 1,
@@ -11126,9 +11069,21 @@
         "count": 1,
         "avg_discount": 5.0
       },
+      "Probiotici": {
+        "count": 5,
+        "avg_discount": 7.0
+      },
       "Hijaluronska kiselina": {
         "count": 3,
         "avg_discount": 12.0
+      },
+      "L-karnitin": {
+        "count": 2,
+        "avg_discount": 6.5
+      },
+      "Kurkumin": {
+        "count": 1,
+        "avg_discount": 7.0
       },
       "Kompleksi minerala": {
         "count": 2,
@@ -11143,8 +11098,8 @@
         "avg_discount": 10.0
       },
       "Cink": {
-        "count": 2,
-        "avg_discount": 10.5
+        "count": 1,
+        "avg_discount": 10.0
       },
       "Kalijum": {
         "count": 1,
@@ -11202,9 +11157,9 @@
       "status": "ok"
     },
     "Dobrobit": {
-      "total": 506,
-      "with_prices": 506,
-      "with_discounts": 184,
+      "total": 503,
+      "with_prices": 503,
+      "with_discounts": 169,
       "status": "ok"
     },
     "ExYu Fitness": {
