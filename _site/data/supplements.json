@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-25T10:29:38.500883",
+  "scraped_at": "2026-10-25T15:21:38.825185",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -9292,21 +9292,6 @@
       "date_scraped": "2026-10-25"
     },
     {
-      "id": "exyu-fitness_nutriversum-beta-alanine-200-gr",
-      "name": "Nutriversum Beta Alanine, 200 gr",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/nutriversum-beta-alanine-200-gr-5244.webp",
-      "original_price": 1900.0,
-      "discount_price": 1615.0,
-      "discount_percent": 15,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/aminokiseline/ostale-aminokiseline/nutriversum-beta-alanine-200-gr/",
-      "in_stock": false,
-      "date_scraped": "2026-10-25"
-    },
-    {
       "id": "exyu-fitness_army-1-whey-proteinpromocija",
       "name": "Army 1 Whey Protein(Promocija)",
       "store": "ExYu Fitness",
@@ -9318,6 +9303,21 @@
       "discount_percent": 18,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/army-1-whey-protein-promocija/",
+      "in_stock": false,
+      "date_scraped": "2026-10-25"
+    },
+    {
+      "id": "exyu-fitness_nutriversum-beta-alanine-200-gr",
+      "name": "Nutriversum Beta Alanine, 200 gr",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/nutriversum-beta-alanine-200-gr-5244.webp",
+      "original_price": 1900.0,
+      "discount_price": 1615.0,
+      "discount_percent": 15,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/aminokiseline/ostale-aminokiseline/nutriversum-beta-alanine-200-gr/",
       "in_stock": false,
       "date_scraped": "2026-10-25"
     },
@@ -10119,7 +10119,7 @@
   ],
   "weekly_summary": {
     "week_of": "2026-10-19",
-    "generated_at": "2026-10-25 10:29",
+    "generated_at": "2026-10-25 15:21",
     "total_products": 673,
     "total_discounted": 321,
     "avg_discount_percent": 15.6,
