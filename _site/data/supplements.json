@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-27T17:06:42.892526",
+  "scraped_at": "2026-10-27T21:39:49.237991",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -1203,7 +1203,7 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/the-amino-whey-hydro-hidrolizovani-whey-protein-za-misicni-rast",
-      "in_stock": false,
+      "in_stock": true,
       "date_scraped": "2026-10-27"
     },
     {
@@ -8058,7 +8058,7 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/salvit-omega-vit-d-15ml-kompleks-za-decu-sa-omega-3-i-vitaminom-d",
-      "in_stock": false,
+      "in_stock": true,
       "date_scraped": "2026-10-27"
     },
     {
@@ -8178,7 +8178,7 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/m-e-v-feller-vitamin-c-s-bioflavonoidima-60-tableta-jacanje-imunoloskog-sistema-i-smanjenje-umora",
-      "in_stock": false,
+      "in_stock": true,
       "date_scraped": "2026-10-27"
     },
     {
@@ -8283,7 +8283,7 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/solgar-kalcijum-citrat-sa-vitaminom-d3-podrska-zdravlju-kostiju-i-zuba",
-      "in_stock": false,
+      "in_stock": true,
       "date_scraped": "2026-10-27"
     },
     {
@@ -11019,7 +11019,7 @@
   ],
   "weekly_summary": {
     "week_of": "2026-10-26",
-    "generated_at": "2026-10-27 17:06",
+    "generated_at": "2026-10-27 21:39",
     "total_products": 733,
     "total_discounted": 374,
     "avg_discount_percent": 18.1,
