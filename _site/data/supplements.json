@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-28T11:54:10.815543",
+  "scraped_at": "2026-10-28T17:43:16.438463",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -21,6 +21,36 @@
   "total_products": 734,
   "total_discounted": 374,
   "products": [
+    {
+      "id": "fitlab_ashwagandha-mind-energy-60cap-gratis-vitamin-c-dialabs",
+      "name": "Ashwagandha Mind Energy 60cap +GRATIS Vitamin C - DiaLabs",
+      "store": "FitLab",
+      "store_url": "https://fitlab.rs",
+      "category": "Akcija",
+      "image_url": "https://fitlab.rs/products/2026/10/ashwagandha-mind-energy-asvaganda-maka-60-kapsula-1793198374190.jpeg",
+      "original_price": 2090.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://fitlab.rs/sr/proizvodi/ashwagandha-mind-energy-60cap-gratis-vitamin-c-dialabs",
+      "in_stock": true,
+      "date_scraped": "2026-10-28"
+    },
+    {
+      "id": "fitlab_magnezijum-bisglicinat-60cap-gratis-vitamin-c-dialabs",
+      "name": "Magnezijum Bisglicinat 60cap +GRATIS Vitamin C - DiaLabs",
+      "store": "FitLab",
+      "store_url": "https://fitlab.rs",
+      "category": "Akcija",
+      "image_url": "https://fitlab.rs/products/2026/10/dialabs-magnesium-bisglycinate-b6-b12-60-kapsula-1793198126636.jpeg",
+      "original_price": 1990.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://fitlab.rs/sr/proizvodi/magnezijum-bisglicinat-60cap-gratis-vitamin-c-dialabs",
+      "in_stock": true,
+      "date_scraped": "2026-10-28"
+    },
     {
       "id": "fitlab_krea-genic-maximum-554g70serv-weider",
       "name": "Krea-Genic Maximum 554g/70serv - Weider",
@@ -348,36 +378,6 @@
       "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://fitlab.rs/sr/proizvodi/micronized-creatine-monohydrate-powder-317g-optimum-nutrition",
-      "in_stock": true,
-      "date_scraped": "2026-10-28"
-    },
-    {
-      "id": "fitlab_whey-pro-2kg-creatine-ostrovit-300g-nutriversum",
-      "name": "Whey Pro 2kg + Creatine ostrovit 300g - Nutriversum",
-      "store": "FitLab",
-      "store_url": "https://fitlab.rs",
-      "category": "Akcija",
-      "image_url": "https://fitlab.rs/products/2025/10/kreatin-creatin-whey-protein-surutka-misicna-masa-snaga-izdrzljivost-pansport-ogistra-scaled-e1760546512618.jpeg",
-      "original_price": 9170.0,
-      "discount_price": 7330.0,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://fitlab.rs/sr/proizvodi/whey-pro-2kg-creatine-ostrovit-300g-nutriversum",
-      "in_stock": true,
-      "date_scraped": "2026-10-28"
-    },
-    {
-      "id": "fitlab_critical-whey-2kg-gratis-kreatin-applied-nutritiontm",
-      "name": "Critical whey 2kg + gratis KREATIN - Applied Nutrition™",
-      "store": "FitLab",
-      "store_url": "https://fitlab.rs",
-      "category": "Najprodavanije",
-      "image_url": "https://fitlab.rs/products/2026/05/critical-whey-2-27kg-gratis-creatine-applied-nutrition-poklon-kreatin-1779444220724.jpeg",
-      "original_price": 7790.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://fitlab.rs/sr/proizvodi/critical-whey-2-27kg-gratis-creatine-applied-nutrition",
       "in_stock": true,
       "date_scraped": "2026-10-28"
     },
@@ -944,8 +944,8 @@
       "category": "Proteini",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/5-stars-whey-protein-3kg-cokolada.jpg?v=1741094353",
       "original_price": 8600.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 7740.0,
+      "discount_percent": 10,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/5-stars-whey-protein-3kg-visokokvalitetni-protein-za-rast-misica-i-oporavak",
       "in_stock": true,
@@ -7953,7 +7953,7 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/nutriversum-vitamin-d3-k2-120-kapsula-podrska-imunitetu-i-zdravlju-kostiju",
-      "in_stock": false,
+      "in_stock": true,
       "date_scraped": "2026-10-28"
     },
     {
@@ -8118,7 +8118,7 @@
       "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/nutriversum-taurine-1000mg-aminokiselina-za-povecanje-snage-i-oporavak-misica",
-      "in_stock": false,
+      "in_stock": true,
       "date_scraped": "2026-10-28"
     },
     {
@@ -11034,7 +11034,7 @@
   ],
   "weekly_summary": {
     "week_of": "2026-10-26",
-    "generated_at": "2026-10-28 11:54",
+    "generated_at": "2026-10-28 17:43",
     "total_products": 734,
     "total_discounted": 374,
     "avg_discount_percent": 18.1,
@@ -11342,9 +11342,9 @@
     ],
     "by_store": {
       "FitLab": {
-        "count": 22,
+        "count": 21,
         "store_url": "https://fitlab.rs",
-        "avg_discount": 17.0
+        "avg_discount": 16.9
       },
       "TitaniumSport": {
         "count": 23,
@@ -11357,7 +11357,7 @@
         "avg_discount": 38.0
       },
       "Dobrobit": {
-        "count": 168,
+        "count": 169,
         "store_url": "https://dobrobit.rs",
         "avg_discount": 10.1
       },
@@ -11384,7 +11384,7 @@
     },
     "by_category": {
       "Akcija": {
-        "count": 21,
+        "count": 20,
         "avg_discount": 19.3
       },
       "Preporucujemo": {
@@ -11398,6 +11398,10 @@
       "Akcije": {
         "count": 86,
         "avg_discount": 13.6
+      },
+      "Proteini": {
+        "count": 5,
+        "avg_discount": 11.0
       },
       "Kolagen": {
         "count": 6,
@@ -11430,10 +11434,6 @@
       "Amino kiseline": {
         "count": 21,
         "avg_discount": 9.1
-      },
-      "Proteini": {
-        "count": 4,
-        "avg_discount": 11.2
       },
       "Gvožđe": {
         "count": 2,
@@ -11527,7 +11527,7 @@
     "FitLab": {
       "total": 24,
       "with_prices": 24,
-      "with_discounts": 22,
+      "with_discounts": 21,
       "status": "ok"
     },
     "TitaniumSport": {
@@ -11545,7 +11545,7 @@
     "Dobrobit": {
       "total": 503,
       "with_prices": 503,
-      "with_discounts": 168,
+      "with_discounts": 169,
       "status": "ok"
     },
     "ExYu Fitness": {
