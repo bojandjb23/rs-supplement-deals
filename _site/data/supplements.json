@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-31T11:30:51.414345",
+  "scraped_at": "2026-10-31T16:37:38.271270",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -222,7 +222,7 @@
       "store": "FitLab",
       "store_url": "https://fitlab.rs",
       "category": "Akcija",
-      "image_url": "https://fitlab.rs/products/2026/09/zinc-picolinate-omega-3-ultra-epa-dha-330-220-ostrovit-paket-1788801448967.png",
+      "image_url": "https://fitlab.rs/products/2026/10/ostrovit-omega-3-ultra-90-kapsula-zinc-picolinate-200-tableta-1793459250112.png",
       "original_price": 3180.0,
       "discount_price": 2690.0,
       "discount_percent": 15,
@@ -8727,10 +8727,10 @@
       "store": "ExYu Fitness",
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/tesla-cretaine-300gr.webp",
-      "original_price": 2500.0,
-      "discount_price": 2200.0,
-      "discount_percent": 12,
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/Tesla-500g-e1727969868134.webp",
+      "original_price": 2100.0,
+      "discount_price": 1800.0,
+      "discount_percent": 14,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/kreatin/kreatin-monohidrat/tesla-creatine-monohidrat-500gr/",
       "in_stock": true,
@@ -10509,7 +10509,7 @@
   ],
   "weekly_summary": {
     "week_of": "2026-10-26",
-    "generated_at": "2026-10-31 11:30",
+    "generated_at": "2026-10-31 16:37",
     "total_products": 699,
     "total_discounted": 344,
     "avg_discount_percent": 16.2,
@@ -10839,7 +10839,7 @@
       "ExYu Fitness": {
         "count": 65,
         "store_url": "https://www.exyu-fitness.rs",
-        "avg_discount": 14.6
+        "avg_discount": 14.7
       },
       "Ogistra Nutrition": {
         "count": 55,
@@ -10967,7 +10967,7 @@
       },
       "Rasprodaja": {
         "count": 64,
-        "avg_discount": 14.6
+        "avg_discount": 14.7
       },
       "Kratak rok": {
         "count": 1,
