@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-03T13:20:13.949852",
+  "scraped_at": "2026-11-03T22:44:38.564913",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -18,7 +18,7 @@
     "X Sport"
   ],
   "stores_failed": [],
-  "total_products": 702,
+  "total_products": 703,
   "total_discounted": 343,
   "products": [
     {
@@ -8932,6 +8932,21 @@
       "date_scraped": "2026-11-03"
     },
     {
+      "id": "exyu-fitness_ostrovit-vitamin-b12-methylcobalamin",
+      "name": "Ostrovit Vitamin B12 Methylcobalamin",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/vitamin-b12.webp",
+      "original_price": 1200.0,
+      "discount_price": 960.0,
+      "discount_percent": 20,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/zdravlje/vitamini/ostrovit-vitamin-b12-methylcobalamin/",
+      "in_stock": true,
+      "date_scraped": "2026-11-03"
+    },
+    {
       "id": "exyu-fitness_naughty-boy-noogandharok-1126",
       "name": "Naughty Boy Noogandha(Rok 11/26)",
       "store": "ExYu Fitness",
@@ -9003,6 +9018,21 @@
       "discount_percent": 17,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/active-pharma-d3-and-mk7-vitamin-d3-k2/",
+      "in_stock": true,
+      "date_scraped": "2026-11-03"
+    },
+    {
+      "id": "exyu-fitness_biotech-power-protein-1000-gr",
+      "name": "Biotech Power Protein 1000 gr",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/powwr-protein-1000gr.webp",
+      "original_price": 2700.0,
+      "discount_price": 2430.0,
+      "discount_percent": 10,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/proteini/biotech-power-protein-1000-gr/",
       "in_stock": true,
       "date_scraped": "2026-11-03"
     },
@@ -9333,21 +9363,6 @@
       "discount_percent": 22,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/zoomad-labs-caretaker/",
-      "in_stock": false,
-      "date_scraped": "2026-11-03"
-    },
-    {
-      "id": "exyu-fitness_ostrovit-vitamin-b12-methylcobalamin",
-      "name": "Ostrovit Vitamin B12 Methylcobalamin",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/vitamin-b12.webp",
-      "original_price": 1200.0,
-      "discount_price": 960.0,
-      "discount_percent": 20,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/zdravlje/vitamini/ostrovit-vitamin-b12-methylcobalamin/",
       "in_stock": false,
       "date_scraped": "2026-11-03"
     },
@@ -10379,8 +10394,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/5081-home_default/basic-core-shorts-sorc-za-trening.jpg",
       "original_price": 1990.0,
-      "discount_price": 1691.5,
-      "discount_percent": 15,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/katalog/1731-4603-basic-core-shorts-sorc-za-trening.html#/2-velicina-m/11-boja-crna",
       "in_stock": true,
@@ -10554,8 +10569,8 @@
   ],
   "weekly_summary": {
     "week_of": "2026-11-02",
-    "generated_at": "2026-11-03 13:20",
-    "total_products": 702,
+    "generated_at": "2026-11-03 22:44",
+    "total_products": 703,
     "total_discounted": 343,
     "avg_discount_percent": 17.5,
     "top_discounts": [
@@ -10882,9 +10897,9 @@
         "avg_discount": 10.2
       },
       "ExYu Fitness": {
-        "count": 64,
+        "count": 65,
         "store_url": "https://www.exyu-fitness.rs",
-        "avg_discount": 14.9
+        "avg_discount": 14.8
       },
       "LAMA": {
         "count": 30,
@@ -10892,9 +10907,9 @@
         "avg_discount": 38.0
       },
       "Ogistra Nutrition": {
-        "count": 30,
+        "count": 29,
         "store_url": "https://www.ogistra-nutrition-shop.com",
-        "avg_discount": 39.3
+        "avg_discount": 40.2
       },
       "X Sport": {
         "count": 8,
@@ -11012,12 +11027,12 @@
         "avg_discount": 22.0
       },
       "Rasprodaja": {
-        "count": 64,
-        "avg_discount": 14.9
+        "count": 65,
+        "avg_discount": 14.8
       },
       "Ostalo": {
-        "count": 60,
-        "avg_discount": 38.7
+        "count": 59,
+        "avg_discount": 39.1
       }
     },
     "new_discounts_count": 0,
@@ -11065,9 +11080,9 @@
       "status": "ok"
     },
     "ExYu Fitness": {
-      "total": 73,
-      "with_prices": 73,
-      "with_discounts": 72,
+      "total": 74,
+      "with_prices": 74,
+      "with_discounts": 73,
       "status": "ok"
     },
     "LAMA": {
@@ -11085,7 +11100,7 @@
     "Ogistra Nutrition": {
       "total": 30,
       "with_prices": 30,
-      "with_discounts": 30,
+      "with_discounts": 29,
       "status": "ok"
     },
     "SuperProtein": {
