@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-05T13:46:49.795452",
+  "scraped_at": "2026-11-05T23:05:02.427895",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -8737,14 +8737,29 @@
       "date_scraped": "2026-11-05"
     },
     {
+      "id": "exyu-fitness_haya-acetyl-l-carnitine-1000-mg-100-kapsula",
+      "name": "Haya Acetyl L-Carnitine 1000 mg, 100 kapsula",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/haya-acetyl-l-carnitine-1000-mg-100-kapsula-4955.webp",
+      "original_price": 2890.0,
+      "discount_price": 2600.0,
+      "discount_percent": 10,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/sagorevaci-masti/haya-acetyl-l-carnitine-1000-mg-100-kapsula/",
+      "in_stock": true,
+      "date_scraped": "2026-11-05"
+    },
+    {
       "id": "exyu-fitness_nutriversum-pwo-pre-workout-drink-210-gr",
       "name": "Nutriversum PWO PRE-Workout drink- 210 gr",
       "store": "ExYu Fitness",
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
       "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/pwo-pre-workout-drink-210-gr-3991.webp",
-      "original_price": 2890.0,
-      "discount_price": 2450.0,
+      "original_price": 2450.0,
+      "discount_price": 2082.0,
       "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/pre-workout-suplementi/nutriversum-pwo-pre-workout-drink-210-gr/",
@@ -8938,9 +8953,9 @@
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
       "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/nutriversum-eaa-with-vitamin-b6-360-gr-5266.webp",
-      "original_price": 2690.0,
-      "discount_price": 2420.0,
-      "discount_percent": 10,
+      "original_price": 2420.0,
+      "discount_price": 2057.0,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/aminokiseline/eaa-aminokiseline/nutriversum-eaa-with-vitamin-b6-360-gr/",
       "in_stock": true,
@@ -8953,9 +8968,9 @@
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
       "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/ostrovit-omega.webp",
-      "original_price": 1590.0,
-      "discount_price": 980.0,
-      "discount_percent": 38,
+      "original_price": 980.0,
+      "discount_price": 833.0,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/ostrovit-omega-3/",
       "in_stock": true,
@@ -9082,6 +9097,21 @@
       "date_scraped": "2026-11-05"
     },
     {
+      "id": "exyu-fitness_applied-nutrition-zinc-bisglycinate",
+      "name": "Applied Nutrition Zinc Bisglycinate",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/Applied-Nutrition-Zinc-Bisglycinate.webp",
+      "original_price": 1750.0,
+      "discount_price": 1490.0,
+      "discount_percent": 15,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/zdravlje/vitamini/applied-nutrition-zinc-bisglycinate/",
+      "in_stock": true,
+      "date_scraped": "2026-11-05"
+    },
+    {
       "id": "exyu-fitness_nutriversum-l-lysine-caps",
       "name": "Nutriversum L-Lysine Caps",
       "store": "ExYu Fitness",
@@ -9108,6 +9138,21 @@
       "discount_percent": 17,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/suplementi/active-pharma-d3-and-mk7-vitamin-d3-k2/",
+      "in_stock": true,
+      "date_scraped": "2026-11-05"
+    },
+    {
+      "id": "exyu-fitness_ostrovit-creatine-monohydrate-natural-1000-g",
+      "name": "Ostrovit Creatine Monohydrate Natural - 1000 g",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/OstroVit-Creatine-Monohydrate-1000-gr.webp",
+      "original_price": 3900.0,
+      "discount_price": 3490.0,
+      "discount_percent": 11,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/kreatin/kreatin-monohidrat/ostrovit-creatine-monohydrate-natural-1000-g/",
       "in_stock": true,
       "date_scraped": "2026-11-05"
     },
@@ -9232,21 +9277,6 @@
       "date_scraped": "2026-11-05"
     },
     {
-      "id": "exyu-fitness_haya-acetyl-l-carnitine-1000-mg-100-kapsula",
-      "name": "Haya Acetyl L-Carnitine 1000 mg, 100 kapsula",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/haya-acetyl-l-carnitine-1000-mg-100-kapsula-4955.webp",
-      "original_price": 2890.0,
-      "discount_price": 2600.0,
-      "discount_percent": 10,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/sagorevaci-masti/haya-acetyl-l-carnitine-1000-mg-100-kapsula/",
-      "in_stock": false,
-      "date_scraped": "2026-11-05"
-    },
-    {
       "id": "exyu-fitness_scitec-100-whey-protein-professional-920-gr",
       "name": "Scitec 100% Whey Protein Professional - 920 gr",
       "store": "ExYu Fitness",
@@ -9283,9 +9313,9 @@
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
       "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/yamamoto-glutamine-powder-600-gr-4005.webp",
-      "original_price": 4100.0,
-      "discount_price": 3670.0,
-      "discount_percent": 10,
+      "original_price": 3670.0,
+      "discount_price": 3119.0,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/aminokiseline/yamamoto-glutamine-powder-600-gr/",
       "in_stock": false,
@@ -9313,9 +9343,9 @@
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
       "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/amix-pro-testof-200-100tbl-4767.webp",
-      "original_price": 2990.0,
-      "discount_price": 2250.0,
-      "discount_percent": 25,
+      "original_price": 2250.0,
+      "discount_price": 2025.0,
+      "discount_percent": 10,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/regulatori-hormona/amixprotestof-200-100tbl/",
       "in_stock": false,
@@ -9328,9 +9358,9 @@
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
       "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/ostrovit-fat-burner-for-women-60-kapsula-5127.webp",
-      "original_price": 2400.0,
-      "discount_price": 2100.0,
-      "discount_percent": 12,
+      "original_price": 2100.0,
+      "discount_price": 1785.0,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/sagorevaci-masti/ostrovit-fat-burner-for-women-60-kapsula/",
       "in_stock": false,
@@ -9388,9 +9418,9 @@
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
       "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/nutriversum-beta-alanine-200-gr-5244.webp",
-      "original_price": 2100.0,
-      "discount_price": 1900.0,
-      "discount_percent": 10,
+      "original_price": 1900.0,
+      "discount_price": 1615.0,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/aminokiseline/ostale-aminokiseline/nutriversum-beta-alanine-200-gr/",
       "in_stock": false,
@@ -9403,9 +9433,9 @@
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
       "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/power-citrulline.webp",
-      "original_price": 2100.0,
-      "discount_price": 1800.0,
-      "discount_percent": 14,
+      "original_price": 1800.0,
+      "discount_price": 1620.0,
+      "discount_percent": 10,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/aminokiseline/power-citrulline/",
       "in_stock": false,
@@ -9418,9 +9448,9 @@
       "store_url": "https://www.exyu-fitness.rs",
       "category": "Rasprodaja",
       "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/ostrovit-caffeine.webp",
-      "original_price": 3400.0,
-      "discount_price": 3100.0,
-      "discount_percent": 9,
+      "original_price": 3100.0,
+      "discount_price": 2635.0,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/pre-workout-suplementi/ostrovit-caffeine-supreme-pure/",
       "in_stock": false,
@@ -9457,21 +9487,6 @@
       "date_scraped": "2026-11-05"
     },
     {
-      "id": "exyu-fitness_applied-nutrition-zinc-bisglycinate",
-      "name": "Applied Nutrition Zinc Bisglycinate",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/Applied-Nutrition-Zinc-Bisglycinate.webp",
-      "original_price": 1750.0,
-      "discount_price": 1490.0,
-      "discount_percent": 15,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/zdravlje/vitamini/applied-nutrition-zinc-bisglycinate/",
-      "in_stock": false,
-      "date_scraped": "2026-11-05"
-    },
-    {
       "id": "exyu-fitness_scitec-tribu-2000",
       "name": "Scitec Tribu 2000",
       "store": "ExYu Fitness",
@@ -9502,21 +9517,6 @@
       "date_scraped": "2026-11-05"
     },
     {
-      "id": "exyu-fitness_ostrovit-creatine-monohydrate-natural-1000-g",
-      "name": "Ostrovit Creatine Monohydrate Natural - 1000 g",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/OstroVit-Creatine-Monohydrate-1000-gr.webp",
-      "original_price": 3900.0,
-      "discount_price": 3490.0,
-      "discount_percent": 11,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/kreatin/kreatin-monohidrat/ostrovit-creatine-monohydrate-natural-1000-g/",
-      "in_stock": false,
-      "date_scraped": "2026-11-05"
-    },
-    {
       "id": "exyu-fitness_ostrovit-glutathione-vege200-mg-90-kapsula",
       "name": "Ostrovit Glutathione Vege200 mg, 90 kapsula",
       "store": "ExYu Fitness",
@@ -9524,8 +9524,8 @@
       "category": "Kratak rok",
       "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/ostrovit-glutathione-vege200-mg-90-kapsula-5025.webp",
       "original_price": 2900.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "discount_price": 2465.0,
+      "discount_percent": 15,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/aminokiseline/ostale-aminokiseline/ostrovit-glutathione-vege200-mg-90-kapsula/",
       "in_stock": true,
@@ -10484,8 +10484,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/5081-home_default/basic-core-shorts-sorc-za-trening.jpg",
       "original_price": 1990.0,
-      "discount_price": 1691.5,
-      "discount_percent": 15,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/katalog/1731-4603-basic-core-shorts-sorc-za-trening.html#/2-velicina-m/11-boja-crna",
       "in_stock": true,
@@ -10674,7 +10674,7 @@
   ],
   "weekly_summary": {
     "week_of": "2026-11-02",
-    "generated_at": "2026-11-05 13:46",
+    "generated_at": "2026-11-05 23:05",
     "total_products": 710,
     "total_discounted": 349,
     "avg_discount_percent": 17.5,
@@ -11002,9 +11002,9 @@
         "avg_discount": 10.2
       },
       "ExYu Fitness": {
-        "count": 64,
+        "count": 65,
         "store_url": "https://www.exyu-fitness.rs",
-        "avg_discount": 14.7
+        "avg_discount": 14.4
       },
       "LAMA": {
         "count": 30,
@@ -11012,9 +11012,9 @@
         "avg_discount": 38.0
       },
       "Ogistra Nutrition": {
-        "count": 30,
+        "count": 29,
         "store_url": "https://www.ogistra-nutrition-shop.com",
-        "avg_discount": 39.3
+        "avg_discount": 40.2
       },
       "X Sport": {
         "count": 8,
@@ -11133,11 +11133,15 @@
       },
       "Rasprodaja": {
         "count": 64,
-        "avg_discount": 14.7
+        "avg_discount": 14.4
+      },
+      "Kratak rok": {
+        "count": 1,
+        "avg_discount": 15.0
       },
       "Ostalo": {
-        "count": 60,
-        "avg_discount": 38.7
+        "count": 59,
+        "avg_discount": 39.1
       }
     },
     "new_discounts_count": 0,
@@ -11187,7 +11191,7 @@
     "ExYu Fitness": {
       "total": 73,
       "with_prices": 73,
-      "with_discounts": 72,
+      "with_discounts": 73,
       "status": "ok"
     },
     "LAMA": {
@@ -11205,7 +11209,7 @@
     "Ogistra Nutrition": {
       "total": 30,
       "with_prices": 30,
-      "with_discounts": 30,
+      "with_discounts": 29,
       "status": "ok"
     },
     "SuperProtein": {
