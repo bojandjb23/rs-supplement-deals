@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-06T13:32:33.378033",
+  "scraped_at": "2026-11-06T22:36:52.685711",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -19,8 +19,23 @@
   ],
   "stores_failed": [],
   "total_products": 884,
-  "total_discounted": 373,
+  "total_discounted": 372,
   "products": [
+    {
+      "id": "fitlab_critical-whey-2kg-gratis-amino-fuel-91g-applied-nutritiontm",
+      "name": "Critical whey 2kg + gratis AMINO FUEL 91g - Applied Nutrition™",
+      "store": "FitLab",
+      "store_url": "https://fitlab.rs",
+      "category": "Najprodavanije",
+      "image_url": "https://fitlab.rs/products/2026/11/applied-nutrition-critical-whey-2kg-cokolada-milkshake-gratis-amino-fuel-1793994661207.jpeg",
+      "original_price": 7790.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://fitlab.rs/sr/proizvodi/critical-whey-2kg-gratis-amino-fuel-91g-applied-nutrition",
+      "in_stock": true,
+      "date_scraped": "2026-11-06"
+    },
     {
       "id": "fitlab_shilajit-himalajska-smola-60g-shilafit",
       "name": "Shilajit Himalajska Smola 60g - ShilaFIT®",
@@ -303,21 +318,6 @@
       "discount_percent": 20,
       "currency": "RSD",
       "product_url": "https://fitlab.rs/sr/proizvodi/whey-pro-2kg-creatine-ostrovit-300g-nutriversum",
-      "in_stock": true,
-      "date_scraped": "2026-11-06"
-    },
-    {
-      "id": "fitlab_critical-whey-2kg-gratis-kreatin-applied-nutritiontm",
-      "name": "Critical whey 2kg + gratis KREATIN - Applied Nutrition™",
-      "store": "FitLab",
-      "store_url": "https://fitlab.rs",
-      "category": "Najprodavanije",
-      "image_url": "https://fitlab.rs/products/2026/05/critical-whey-2-27kg-gratis-creatine-applied-nutrition-poklon-kreatin-1779444220724.jpeg",
-      "original_price": 7790.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://fitlab.rs/sr/proizvodi/critical-whey-2-27kg-gratis-creatine-applied-nutrition",
       "in_stock": true,
       "date_scraped": "2026-11-06"
     },
@@ -1173,7 +1173,7 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/the-amino-whey-hydro-hidrolizovani-whey-protein-za-misicni-rast",
-      "in_stock": true,
+      "in_stock": false,
       "date_scraped": "2026-11-06"
     },
     {
@@ -8013,7 +8013,7 @@
       "discount_percent": 10,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/ostrovit-cink-pikolinat-200-tableta-za-imunitet-i-kozu",
-      "in_stock": false,
+      "in_stock": true,
       "date_scraped": "2026-11-06"
     },
     {
@@ -8178,7 +8178,7 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/ostrovit-folna-kiselina-90-tableta-podrska-za-trudnice-i-zdravlje-celija",
-      "in_stock": false,
+      "in_stock": true,
       "date_scraped": "2026-11-06"
     },
     {
@@ -8977,21 +8977,6 @@
       "date_scraped": "2026-11-06"
     },
     {
-      "id": "exyu-fitness_nutrex-lipo-6-intense-uc",
-      "name": "Nutrex Lipo 6 Intense  UC",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/nutrex-lipo-intese.webp",
-      "original_price": 4900.0,
-      "discount_price": 4300.0,
-      "discount_percent": 12,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/sagorevaci-masti/kompleksni-sagorevaci-masti/nutrex-lipo-6-intense-uc/",
-      "in_stock": true,
-      "date_scraped": "2026-11-06"
-    },
-    {
       "id": "exyu-fitness_active-pharma-magnesium-bisglicynate",
       "name": "Active Pharma Magnesium Bisglicynate",
       "store": "ExYu Fitness",
@@ -9003,6 +8988,21 @@
       "discount_percent": 17,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/zdravlje/active-pharma-magnesium-bisglicynate/",
+      "in_stock": true,
+      "date_scraped": "2026-11-06"
+    },
+    {
+      "id": "exyu-fitness_nutrex-lipo-6-intense-uc",
+      "name": "Nutrex Lipo 6 Intense  UC",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/nutrex-lipo-intese.webp",
+      "original_price": 4900.0,
+      "discount_price": 4300.0,
+      "discount_percent": 12,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/sagorevaci-masti/kompleksni-sagorevaci-masti/nutrex-lipo-6-intense-uc/",
       "in_stock": true,
       "date_scraped": "2026-11-06"
     },
@@ -10694,8 +10694,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/5081-home_default/basic-core-shorts-sorc-za-trening.jpg",
       "original_price": 1990.0,
-      "discount_price": 1691.5,
-      "discount_percent": 15,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/katalog/1731-4603-basic-core-shorts-sorc-za-trening.html#/2-velicina-m/11-boja-crna",
       "in_stock": true,
@@ -13284,9 +13284,9 @@
   ],
   "weekly_summary": {
     "week_of": "2026-11-02",
-    "generated_at": "2026-11-06 13:32",
+    "generated_at": "2026-11-06 22:36",
     "total_products": 884,
-    "total_discounted": 373,
+    "total_discounted": 372,
     "avg_discount_percent": 15.6,
     "top_discounts": [
       {
@@ -13622,9 +13622,9 @@
         "avg_discount": 15.6
       },
       "Ogistra Nutrition": {
-        "count": 32,
+        "count": 31,
         "store_url": "https://www.ogistra-nutrition-shop.com",
-        "avg_discount": 38.8
+        "avg_discount": 39.5
       },
       "Spartan Shop": {
         "count": 5,
@@ -13803,8 +13803,8 @@
         "avg_discount": 11.0
       },
       "Ostalo": {
-        "count": 32,
-        "avg_discount": 38.8
+        "count": 31,
+        "avg_discount": 39.5
       },
       "Kreatin": {
         "count": 2,
@@ -13888,7 +13888,7 @@
     "Ogistra Nutrition": {
       "total": 32,
       "with_prices": 32,
-      "with_discounts": 32,
+      "with_discounts": 31,
       "status": "ok"
     },
     "SuperProtein": {
