@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-07T12:12:16.464843",
+  "scraped_at": "2026-11-07T21:18:05.273189",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -19,7 +19,7 @@
   ],
   "stores_failed": [],
   "total_products": 885,
-  "total_discounted": 373,
+  "total_discounted": 372,
   "products": [
     {
       "id": "fitlab_critical-whey-2kg-gratis-amino-fuel-91g-applied-nutritiontm",
@@ -2193,7 +2193,7 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/solgar-cink-pikolinat-22-mg-podrska-imunitetu-i-zdravlju-koze-100-tableta",
-      "in_stock": true,
+      "in_stock": false,
       "date_scraped": "2026-11-07"
     },
     {
@@ -8542,6 +8542,21 @@
       "date_scraped": "2026-11-07"
     },
     {
+      "id": "dobrobit_kaltex-probiotic-kids-probiotik-za-decu-sa-10-milijardi-zivih-kultura",
+      "name": "Kaltex Probiotic KIDS – Probiotik za Decu sa 10 Milijardi Živih Kultura",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Probiotici",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/Kids-PROBIOTIC_1200x1200-px_JPEG.webp?v=1794070805",
+      "original_price": 820.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/kaltex-probiotic-kids-probiotik-za-decu-sa-10-milijardi-zivih-kultura",
+      "in_stock": true,
+      "date_scraped": "2026-11-07"
+    },
+    {
       "id": "exyu-fitness_vitalikum-mega-paket-suplemenata",
       "name": "Vitalikum Mega paket Suplemenata",
       "store": "ExYu Fitness",
@@ -9052,21 +9067,6 @@
       "date_scraped": "2026-11-07"
     },
     {
-      "id": "exyu-fitness_vitalikum-maca-matrix",
-      "name": "Vitalikum Maca Matrix",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/maca_matrix_60_caps.webp",
-      "original_price": 1350.0,
-      "discount_price": 1200.0,
-      "discount_percent": 11,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/tvoji-ciljevi/suplementi-za-bolje-zdravlje/vitalikum-maca-matrix/",
-      "in_stock": true,
-      "date_scraped": "2026-11-07"
-    },
-    {
       "id": "exyu-fitness_vitalikum-crea-beta-matrix",
       "name": "Vitalikum Crea Beta Matrix",
       "store": "ExYu Fitness",
@@ -9078,6 +9078,21 @@
       "discount_percent": 11,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/kreatin/kreatini-novije-generacije/vitalikum-crea-beta-matrix/",
+      "in_stock": true,
+      "date_scraped": "2026-11-07"
+    },
+    {
+      "id": "exyu-fitness_vitalikum-maca-matrix",
+      "name": "Vitalikum Maca Matrix",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/maca_matrix_60_caps.webp",
+      "original_price": 1350.0,
+      "discount_price": 1200.0,
+      "discount_percent": 11,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/tvoji-ciljevi/suplementi-za-bolje-zdravlje/vitalikum-maca-matrix/",
       "in_stock": true,
       "date_scraped": "2026-11-07"
     },
@@ -9157,6 +9172,21 @@
       "date_scraped": "2026-11-07"
     },
     {
+      "id": "exyu-fitness_naughty-boy-omega-3",
+      "name": "Naughty Boy Omega 3",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/Omega-3-90-caps_tfkh-en.webp",
+      "original_price": 2500.0,
+      "discount_price": 2300.0,
+      "discount_percent": 8,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/zdravlje/naughty-boy-omega-3/",
+      "in_stock": true,
+      "date_scraped": "2026-11-07"
+    },
+    {
       "id": "exyu-fitness_superior-whey-core-5000g",
       "name": "Superior Whey Core, 5000g",
       "store": "ExYu Fitness",
@@ -9217,21 +9247,6 @@
       "date_scraped": "2026-11-07"
     },
     {
-      "id": "exyu-fitness_dymatize-elite-whey-protein",
-      "name": "Dymatize Elite Whey Protein",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/elite-whey-protein-2.1-kg-4231.webp",
-      "original_price": 11900.0,
-      "discount_price": 10500.0,
-      "discount_percent": 12,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/proteini/whey-protein/dymatize-elite-whey-protein-2-1-kg/",
-      "in_stock": false,
-      "date_scraped": "2026-11-07"
-    },
-    {
       "id": "exyu-fitness_tesla-iso-zero-100",
       "name": "Tesla Iso Zero 100",
       "store": "ExYu Fitness",
@@ -9243,21 +9258,6 @@
       "discount_percent": 24,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/proteini/tesla-iso-zero-100/",
-      "in_stock": false,
-      "date_scraped": "2026-11-07"
-    },
-    {
-      "id": "exyu-fitness_dymatize-iso-100-hydrolyzed-protein-22-kg",
-      "name": "Dymatize ISO-100 Hydrolyzed Protein 2,2 kg",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/iso-100-hydrolyzed-protein-2-2-kg-4233.webp",
-      "original_price": 12500.0,
-      "discount_price": 11500.0,
-      "discount_percent": 8,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/proteini/whey-protein-isolate/dymatize-iso-100-hydrolyzed-protein-2-2-kg/",
       "in_stock": false,
       "date_scraped": "2026-11-07"
     },
@@ -13299,9 +13299,9 @@
   ],
   "weekly_summary": {
     "week_of": "2026-11-02",
-    "generated_at": "2026-11-07 12:12",
+    "generated_at": "2026-11-07 21:18",
     "total_products": 885,
-    "total_discounted": 373,
+    "total_discounted": 372,
     "avg_discount_percent": 15.6,
     "top_discounts": [
       {
@@ -13627,9 +13627,9 @@
         "avg_discount": 10.2
       },
       "ExYu Fitness": {
-        "count": 66,
+        "count": 65,
         "store_url": "https://www.exyu-fitness.rs",
-        "avg_discount": 14.3
+        "avg_discount": 14.4
       },
       "AMG Sport": {
         "count": 47,
@@ -13762,7 +13762,7 @@
         "avg_discount": 22.0
       },
       "Rasprodaja": {
-        "count": 65,
+        "count": 64,
         "avg_discount": 14.3
       },
       "Kratak rok": {
@@ -13877,15 +13877,15 @@
       "status": "ok"
     },
     "Dobrobit": {
-      "total": 504,
-      "with_prices": 504,
+      "total": 505,
+      "with_prices": 505,
       "with_discounts": 168,
       "status": "ok"
     },
     "ExYu Fitness": {
-      "total": 74,
-      "with_prices": 74,
-      "with_discounts": 74,
+      "total": 73,
+      "with_prices": 73,
+      "with_discounts": 73,
       "status": "ok"
     },
     "LAMA": {
