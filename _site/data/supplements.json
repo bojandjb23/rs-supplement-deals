@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-10T14:01:31.751901",
+  "scraped_at": "2026-11-10T22:42:07.364557",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -18,7 +18,7 @@
     "X Sport"
   ],
   "stores_failed": [],
-  "total_products": 923,
+  "total_products": 924,
   "total_discounted": 403,
   "products": [
     {
@@ -4878,7 +4878,7 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/m-e-v-feller-coq10-100mg-za-zdravlje-srca-i-kardiovaskularni-sistem",
-      "in_stock": true,
+      "in_stock": false,
       "date_scraped": "2026-11-10"
     },
     {
@@ -5293,9 +5293,9 @@
       "store_url": "https://dobrobit.rs",
       "category": "Kolagen",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/solgar-collagen-hyaluronic-acid-complex-30-tableta.webp?v=1732460450",
-      "original_price": 6300.0,
-      "discount_price": 5850.0,
-      "discount_percent": 7,
+      "original_price": 6450.0,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/solgar-kolagen-hijaluronski-kompleks-podrska-kozi-zglobovima-i-hidrataciji",
       "in_stock": true,
@@ -8827,6 +8827,21 @@
       "date_scraped": "2026-11-10"
     },
     {
+      "id": "exyu-fitness_nutriversum-tst-complex-210-gr",
+      "name": "Nutriversum TST Complex 210 gr",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/tst-complex-210-gr-4117.webp",
+      "original_price": 2490.0,
+      "discount_price": 2100.0,
+      "discount_percent": 16,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/regulatori-hormona/nutriversum-tst-complex-210-gr/",
+      "in_stock": true,
+      "date_scraped": "2026-11-10"
+    },
+    {
       "id": "exyu-fitness_ostrovit-omega-3-extreme-professional-90-kapsula",
       "name": "Ostrovit Omega 3 Extreme Professional, 90 kapsula",
       "store": "ExYu Fitness",
@@ -9187,6 +9202,21 @@
       "date_scraped": "2026-11-10"
     },
     {
+      "id": "exyu-fitness_ostrovit-boron-3-mg-vege",
+      "name": "Ostrovit Boron 3 mg Vege",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/12/ostrovit-boron.webp",
+      "original_price": 1490.0,
+      "discount_price": 1340.0,
+      "discount_percent": 10,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/tvoji-ciljevi/suplementi-za-bolje-zdravlje/ostrovit-boron-3-mg-vege/",
+      "in_stock": true,
+      "date_scraped": "2026-11-10"
+    },
+    {
       "id": "exyu-fitness_superior-whey-core-5000g",
       "name": "Superior Whey Core, 5000g",
       "store": "ExYu Fitness",
@@ -9303,21 +9333,6 @@
       "discount_percent": 60,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/zdravlje/vitalikum-antioxidant-matrix-90-caps/",
-      "in_stock": false,
-      "date_scraped": "2026-11-10"
-    },
-    {
-      "id": "exyu-fitness_nutriversum-tst-complex-210-gr",
-      "name": "Nutriversum TST Complex 210 gr",
-      "store": "ExYu Fitness",
-      "store_url": "https://www.exyu-fitness.rs",
-      "category": "Rasprodaja",
-      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/10/tst-complex-210-gr-4117.webp",
-      "original_price": 2490.0,
-      "discount_price": 2100.0,
-      "discount_percent": 16,
-      "currency": "RSD",
-      "product_url": "https://www.exyu-fitness.rs/regulatori-hormona/nutriversum-tst-complex-210-gr/",
       "in_stock": false,
       "date_scraped": "2026-11-10"
     },
@@ -13869,8 +13884,8 @@
   ],
   "weekly_summary": {
     "week_of": "2026-11-09",
-    "generated_at": "2026-11-10 14:01",
-    "total_products": 923,
+    "generated_at": "2026-11-10 22:42",
+    "total_products": 924,
     "total_discounted": 403,
     "avg_discount_percent": 17.6,
     "top_discounts": [
@@ -14192,14 +14207,14 @@
         "avg_discount": 22.0
       },
       "Dobrobit": {
-        "count": 168,
+        "count": 167,
         "store_url": "https://dobrobit.rs",
         "avg_discount": 10.3
       },
       "ExYu Fitness": {
-        "count": 68,
+        "count": 69,
         "store_url": "https://www.exyu-fitness.rs",
-        "avg_discount": 15.6
+        "avg_discount": 15.5
       },
       "LAMA": {
         "count": 30,
@@ -14241,8 +14256,8 @@
         "avg_discount": 13.9
       },
       "Kolagen": {
-        "count": 7,
-        "avg_discount": 13.9
+        "count": 6,
+        "avg_discount": 15.0
       },
       "Proteini": {
         "count": 7,
@@ -14337,8 +14352,8 @@
         "avg_discount": 22.0
       },
       "Rasprodaja": {
-        "count": 68,
-        "avg_discount": 15.6
+        "count": 69,
+        "avg_discount": 15.5
       },
       "Ostalo": {
         "count": 61,
@@ -14442,13 +14457,13 @@
     "Dobrobit": {
       "total": 505,
       "with_prices": 505,
-      "with_discounts": 168,
+      "with_discounts": 167,
       "status": "ok"
     },
     "ExYu Fitness": {
-      "total": 81,
-      "with_prices": 81,
-      "with_discounts": 80,
+      "total": 82,
+      "with_prices": 82,
+      "with_discounts": 81,
       "status": "ok"
     },
     "LAMA": {
