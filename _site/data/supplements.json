@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-11T13:19:26.810038",
+  "scraped_at": "2026-11-11T23:56:15.366555",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -18,8 +18,8 @@
     "X Sport"
   ],
   "stores_failed": [],
-  "total_products": 890,
-  "total_discounted": 372,
+  "total_products": 893,
+  "total_discounted": 374,
   "products": [
     {
       "id": "fitlab_critical-whey-2kg-gratis-amino-fuel-91g-applied-nutritiontm",
@@ -8932,6 +8932,21 @@
       "date_scraped": "2026-11-11"
     },
     {
+      "id": "exyu-fitness_extrifit-v52-vita-forte-complex-60tabrok127",
+      "name": "Extrifit V52 Vita Forte Complex 60tab(rok1/27)",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/extrifit-v52.webp",
+      "original_price": 2950.0,
+      "discount_price": 2360.0,
+      "discount_percent": 20,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/zdravlje/vitamini/extrifit-v52-vita-forte-complex-60tab/",
+      "in_stock": true,
+      "date_scraped": "2026-11-11"
+    },
+    {
       "id": "exyu-fitness_maxler-carnitine-3000-500-mlrok-127",
       "name": "Maxler Carnitine 3000, 500 ml(rok 1/27)",
       "store": "ExYu Fitness",
@@ -9063,6 +9078,21 @@
       "discount_percent": 12,
       "currency": "RSD",
       "product_url": "https://www.exyu-fitness.rs/sagorevaci-masti/kompleksni-sagorevaci-masti/nutrex-lipo-6-intense-uc/",
+      "in_stock": true,
+      "date_scraped": "2026-11-11"
+    },
+    {
+      "id": "exyu-fitness_zoomad-labs-oneraw-glutaminerok-127",
+      "name": "Zoomad Labs OneRaw Glutamine(rok 1/27)",
+      "store": "ExYu Fitness",
+      "store_url": "https://www.exyu-fitness.rs",
+      "category": "Rasprodaja",
+      "image_url": "https://www.exyu-fitness.rs/images/thumbnails/225/225/detailed/11/one-raw-glutamine.webp",
+      "original_price": 3290.0,
+      "discount_price": 2630.0,
+      "discount_percent": 20,
+      "currency": "RSD",
+      "product_url": "https://www.exyu-fitness.rs/suplementi/zoomad-labs-oneraw-glutamine/",
       "in_stock": true,
       "date_scraped": "2026-11-11"
     },
@@ -10312,6 +10342,21 @@
       "date_scraped": "2026-11-11"
     },
     {
+      "id": "ogistra-nutrition_gut-bundle-probiotic-digestive-enzyme",
+      "name": "GUT BUNDLE - PROBIOTIC + DIGESTIVE ENZYME®",
+      "store": "Ogistra Nutrition",
+      "store_url": "https://www.ogistra-nutrition-shop.com",
+      "category": "Ostalo",
+      "image_url": "https://www.ogistra-nutrition-shop.com/4372-home_default/gut-bundle-probiotic-digestive-enzyme.jpg",
+      "original_price": 4550.0,
+      "discount_price": 3640.0,
+      "discount_percent": 20,
+      "currency": "RSD",
+      "product_url": "https://www.ogistra-nutrition-shop.com/super-akcije/1302-gut-bundle-probiotic-digestive-enzyme.html",
+      "in_stock": true,
+      "date_scraped": "2026-11-11"
+    },
+    {
       "id": "ogistra-nutrition_l-glutamine-1000g-the-nutrition",
       "name": "L-GLUTAMINE 1000G - THE NUTRITION",
       "store": "Ogistra Nutrition",
@@ -10784,8 +10829,8 @@
       "category": "Ostalo",
       "image_url": "https://www.ogistra-nutrition-shop.com/5081-home_default/basic-core-shorts-sorc-za-trening.jpg",
       "original_price": 1990.0,
-      "discount_price": 1691.5,
-      "discount_percent": 15,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://www.ogistra-nutrition-shop.com/katalog/1731-4603-basic-core-shorts-sorc-za-trening.html#/2-velicina-m/11-boja-crna",
       "in_stock": true,
@@ -13374,9 +13419,9 @@
   ],
   "weekly_summary": {
     "week_of": "2026-11-09",
-    "generated_at": "2026-11-11 13:19",
-    "total_products": 890,
-    "total_discounted": 372,
+    "generated_at": "2026-11-11 23:56",
+    "total_products": 893,
+    "total_discounted": 374,
     "avg_discount_percent": 15.9,
     "top_discounts": [
       {
@@ -13702,9 +13747,9 @@
         "avg_discount": 10.4
       },
       "ExYu Fitness": {
-        "count": 69,
+        "count": 71,
         "store_url": "https://www.exyu-fitness.rs",
-        "avg_discount": 15.5
+        "avg_discount": 15.6
       },
       "AMG Sport": {
         "count": 47,
@@ -13714,7 +13759,7 @@
       "Ogistra Nutrition": {
         "count": 32,
         "store_url": "https://www.ogistra-nutrition-shop.com",
-        "avg_discount": 38.8
+        "avg_discount": 38.9
       },
       "Spartan Shop": {
         "count": 3,
@@ -13837,8 +13882,8 @@
         "avg_discount": 22.0
       },
       "Rasprodaja": {
-        "count": 69,
-        "avg_discount": 15.5
+        "count": 71,
+        "avg_discount": 15.6
       },
       "Aminokiseline u prahu": {
         "count": 8,
@@ -13890,7 +13935,7 @@
       },
       "Ostalo": {
         "count": 32,
-        "avg_discount": 38.8
+        "avg_discount": 38.9
       },
       "Kreatin": {
         "count": 2,
@@ -13946,9 +13991,9 @@
       "status": "ok"
     },
     "ExYu Fitness": {
-      "total": 82,
-      "with_prices": 82,
-      "with_discounts": 81,
+      "total": 86,
+      "with_prices": 86,
+      "with_discounts": 85,
       "status": "ok"
     },
     "LAMA": {
@@ -13964,8 +14009,8 @@
       "status": "ok"
     },
     "Ogistra Nutrition": {
-      "total": 32,
-      "with_prices": 32,
+      "total": 33,
+      "with_prices": 33,
       "with_discounts": 32,
       "status": "ok"
     },
