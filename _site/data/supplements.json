@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-17T01:21:01.308535",
+  "scraped_at": "2026-11-17T15:15:50.962813",
   "stores_scraped": [
     "Supplement Store",
     "GymBeam",
@@ -19,7 +19,7 @@
   ],
   "stores_failed": [],
   "total_products": 919,
-  "total_discounted": 403,
+  "total_discounted": 401,
   "products": [
     {
       "id": "fitlab_critical-whey-2kg-gratis-amino-fuel-91g-applied-nutritiontm",
@@ -1822,21 +1822,6 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_ostrovit-kolagen-400g-8700-mg-hidrolizovanog-kolagena-500-mg-vitamina-c-po-dozi",
-      "name": "OstroVit Kolagen 400g – 8.700 mg hidrolizovanog kolagena + 500 mg vitamina C po dozi",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Kolagen",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-kolagen-400g-malina.webp?v=1778226745",
-      "original_price": 3200.0,
-      "discount_price": 2720.0,
-      "discount_percent": 15,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/ostrovit-kolagen-vitamin-c-400g-breskva-za-kozu-i-zglobove",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
       "id": "dobrobit_yamamoto-nutrition-iso-fuji-izolat-proteina-surutke-visoke-cistoce-2kg-sumsko-voce",
       "name": "Yamamoto Nutrition Iso-FUJI – Izolat Proteina Surutke Visoke Čistoće - 2kg / Šumsko voće",
       "store": "Dobrobit",
@@ -1983,6 +1968,21 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/yamamoto-nutrition-iso-fuji-izolat-proteina-surutke-visoke-cistoce",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_ostrovit-kolagen-400g-8700-mg-hidrolizovanog-kolagena-500-mg-vitamina-c-po-dozi",
+      "name": "OstroVit Kolagen 400g – 8.700 mg hidrolizovanog kolagena + 500 mg vitamina C po dozi",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Kolagen",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-kolagen-400g-malina.webp?v=1778226745",
+      "original_price": 3200.0,
+      "discount_price": 2720.0,
+      "discount_percent": 15,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/ostrovit-kolagen-vitamin-c-400g-breskva-za-kozu-i-zglobove",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -2159,25 +2159,10 @@
       "category": "Omega masne kiseline",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/OstroVit-Omega-3-Extreme-90-capsules-25585_1.png?v=1789479611",
       "original_price": 2520.0,
-      "discount_price": 2160.0,
-      "discount_percent": 14,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/ostrovit-omega-3-extreme-90-kapsula-podrska-srcu-mozgu-i-imunitetu",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
-      "id": "dobrobit_now-foods-inositol-500-mg-podrska-membranskoj-funkciji",
-      "name": "NOW Foods Inositol 500 mg - Podrška Membranskoj Funkciji",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Akcije",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/now-foods-inositol-500-mg-100-kapsula.png?v=1730987619",
-      "original_price": 1990.0,
-      "discount_price": 1860.0,
-      "discount_percent": 7,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/now-foods-inositol-500-mg-podrska-membranskoj-funkciji",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -2208,6 +2193,21 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/qnt-creatine-monohydrate-cisti-kreatin-za-snagu-i-izdrzljivost",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_now-foods-inositol-500-mg-podrska-membranskoj-funkciji",
+      "name": "NOW Foods Inositol 500 mg - Podrška Membranskoj Funkciji",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Akcije",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/now-foods-inositol-500-mg-100-kapsula.png?v=1730987619",
+      "original_price": 1990.0,
+      "discount_price": 1860.0,
+      "discount_percent": 7,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/now-foods-inositol-500-mg-podrska-membranskoj-funkciji",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -2467,6 +2467,21 @@
       "date_scraped": "2026-11-17"
     },
     {
+      "id": "dobrobit_ostrovit-ksm-66-asvaganda-120-kapsula-za-otpornost-na-stres-i-energiju",
+      "name": "OstroVit KSM-66 Ašvaganda 120 Kapsula – Za Otpornost na Stres i Energiju",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Ašvaganda",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-ksm-66-ashvaganda-120-kapsula.png?v=1734006697",
+      "original_price": 3300.0,
+      "discount_price": 2970.0,
+      "discount_percent": 10,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/ostrovit-ksm-66-asvaganda-120-kapsula-za-otpornost-na-stres-i-energiju",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
       "id": "dobrobit_now-foods-nac-600-mg-sa-selenom-podrska-za-detoksikaciju-i-imunitet-100",
       "name": "NOW Foods NAC 600 mg sa Selenom – Podrška za Detoksikaciju i Imunitet - 100",
       "store": "Dobrobit",
@@ -2494,21 +2509,6 @@
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/now-foods-nac-600-mg-sa-selenom-podrska-za-detoksikaciju-i-imunitet",
       "in_stock": false,
-      "date_scraped": "2026-11-17"
-    },
-    {
-      "id": "dobrobit_ostrovit-ksm-66-asvaganda-120-kapsula-za-otpornost-na-stres-i-energiju",
-      "name": "OstroVit KSM-66 Ašvaganda 120 Kapsula – Za Otpornost na Stres i Energiju",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Ašvaganda",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-ksm-66-ashvaganda-120-kapsula.png?v=1734006697",
-      "original_price": 3300.0,
-      "discount_price": 2970.0,
-      "discount_percent": 10,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/ostrovit-ksm-66-asvaganda-120-kapsula-za-otpornost-na-stres-i-energiju",
-      "in_stock": true,
       "date_scraped": "2026-11-17"
     },
     {
@@ -2542,51 +2542,6 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_now-foods-biotin-5000-mcg-podrska-energiji-i-imunoloskom-sistemu-60",
-      "name": "NOW Foods Biotin 5000 mcg – Podrška Energiji i Imunološkom Sistemu - 60",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Vitamini",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/now-foods-biotin-5000-mcg-60-kapsula.png?v=1731185940",
-      "original_price": 1670.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/now-foods-biotin-5000-mcg-podrska-energiji-i-imunoloskom-sistemu",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
-      "id": "dobrobit_now-foods-biotin-5000-mcg-podrska-energiji-i-imunoloskom-sistemu-120",
-      "name": "NOW Foods Biotin 5000 mcg – Podrška Energiji i Imunološkom Sistemu - 120",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Vitamini",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/now-foods-biotin-5000-mcg-120-kapsula.png?v=1731185940",
-      "original_price": 2750.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/now-foods-biotin-5000-mcg-podrska-energiji-i-imunoloskom-sistemu",
-      "in_stock": false,
-      "date_scraped": "2026-11-17"
-    },
-    {
-      "id": "dobrobit_ostrovit-msm-plus-300-g-natural-podrska-zglobovima-kozi-i-kosi",
-      "name": "OstroVit MSM Plus 300 g Natural – Podrška Zglobovima, Koži i Kosi",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Kolagen",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-msm-plus-300-g-natural.png?v=1734104397",
-      "original_price": 2100.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/ostrovit-msm-plus-300-g-natural-podrska-zglobovima-kozi-i-kosi",
-      "in_stock": false,
-      "date_scraped": "2026-11-17"
-    },
-    {
       "id": "dobrobit_now-foods-melatonin-3-mg-prirodna-podrska-za-zdrav-san-60",
       "name": "NOW Foods Melatonin 3 mg – Prirodna Podrška za Zdrav San - 60",
       "store": "Dobrobit",
@@ -2613,6 +2568,36 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/now-foods-melatonin-3-mg-prirodna-podrska-za-zdrav-san",
+      "in_stock": false,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_now-foods-biotin-5000-mcg-podrska-energiji-i-imunoloskom-sistemu-60",
+      "name": "NOW Foods Biotin 5000 mcg – Podrška Energiji i Imunološkom Sistemu - 60",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Vitamini",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/now-foods-biotin-5000-mcg-60-kapsula.png?v=1731185940",
+      "original_price": 1670.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/now-foods-biotin-5000-mcg-podrska-energiji-i-imunoloskom-sistemu",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_now-foods-biotin-5000-mcg-podrska-energiji-i-imunoloskom-sistemu-120",
+      "name": "NOW Foods Biotin 5000 mcg – Podrška Energiji i Imunološkom Sistemu - 120",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Vitamini",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/now-foods-biotin-5000-mcg-120-kapsula.png?v=1731185940",
+      "original_price": 2750.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/now-foods-biotin-5000-mcg-podrska-energiji-i-imunoloskom-sistemu",
       "in_stock": false,
       "date_scraped": "2026-11-17"
     },
@@ -2658,21 +2643,6 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/biovital-bioactive-magnezijum-bisglicinat-200-mg",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
-      "id": "dobrobit_ostrovit-magnezijum-citrat-200-g-natural-podrska-misicima-i-nervnom-sistemu",
-      "name": "OstroVit Magnezijum Citrat 200 g Natural – Podrška Mišićima i Nervnom Sistemu",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Magnezijum",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-magnezijum-citrat-200g.webp?v=1750935211",
-      "original_price": 1890.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/ostrovit-magnezijum-citrat-400-mg-b6-energija-i-podrska-nervnom-sistemu-1",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -2737,6 +2707,21 @@
       "date_scraped": "2026-11-17"
     },
     {
+      "id": "dobrobit_ostrovit-magnezijum-citrat-200-g-natural-podrska-misicima-i-nervnom-sistemu",
+      "name": "OstroVit Magnezijum Citrat 200 g Natural – Podrška Mišićima i Nervnom Sistemu",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Magnezijum",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-magnezijum-citrat-200g.webp?v=1750935211",
+      "original_price": 1890.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/ostrovit-magnezijum-citrat-400-mg-b6-energija-i-podrska-nervnom-sistemu-1",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
       "id": "dobrobit_now-foods-clinical-strength-prostate-health-podrska-zdravlju-prostate",
       "name": "NOW Foods Clinical Strength Prostate Health - Podrška Zdravlju Prostate",
       "store": "Dobrobit",
@@ -2797,21 +2782,6 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_qnt-multivitamin-mens-esencijalni-vitamini-i-minerali-za-muskarce",
-      "name": "QNT Multivitamin Men’s – Esencijalni vitamini i minerali za muškarce",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Vitamini",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/qnt-care-multivitamini-za-muskarce-60-kapsula.webp?v=1741955115",
-      "original_price": 1980.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/qnt-multivitamin-men-s-esencijalni-vitamini-i-minerali-za-muskarce",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
       "id": "dobrobit_bioandina-crna-maka-kompleks-60-kapsula-za-plodnost-i-mentalni-fokus",
       "name": "Bioandina Crna Maka Kompleks, 60 Kapsula – Za Plodnost i Mentalni Fokus",
       "store": "Dobrobit",
@@ -2827,17 +2797,17 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_ostrovit-fat-burner-for-women-60-kapsula-sagorevac-masti-za-zene-sa-8-aktivnih-sastojaka",
-      "name": "OstroVit Fat Burner for Women 60 kapsula – Sagorevač masti za žene sa 8 aktivnih sastojaka",
+      "id": "dobrobit_qnt-multivitamin-mens-esencijalni-vitamini-i-minerali-za-muskarce",
+      "name": "QNT Multivitamin Men’s – Esencijalni vitamini i minerali za muškarce",
       "store": "Dobrobit",
       "store_url": "https://dobrobit.rs",
-      "category": "Mršavljenje",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/OstroVit-Fat-Burner-for-women-60-capsules-_1.png?v=1738452394",
-      "original_price": 2450.0,
-      "discount_price": 2090.0,
-      "discount_percent": 15,
+      "category": "Vitamini",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/qnt-care-multivitamini-za-muskarce-60-kapsula.webp?v=1741955115",
+      "original_price": 1980.0,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/ostrovit-fat-burner-for-women-60-kapsula-sagorevac-masti-za-zene-sa-8-aktivnih-sastojaka",
+      "product_url": "https://dobrobit.rs/products/qnt-multivitamin-men-s-esencijalni-vitamini-i-minerali-za-muskarce",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -2857,17 +2827,17 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_ostrovit-omega-3-90-kapsula-za-srce-mozak-i-zdravlje-zglobova",
-      "name": "OstroVit Omega 3 90 Kapsula – Za Srce, Mozak i Zdravlje Zglobova",
+      "id": "dobrobit_ostrovit-fat-burner-for-women-60-kapsula-sagorevac-masti-za-zene-sa-8-aktivnih-sastojaka",
+      "name": "OstroVit Fat Burner for Women 60 kapsula – Sagorevač masti za žene sa 8 aktivnih sastojaka",
       "store": "Dobrobit",
       "store_url": "https://dobrobit.rs",
-      "category": "Omega masne kiseline",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/eng_pm_OstroVit-Omega-3-90-capsules-11194_1.png?v=1737129582",
-      "original_price": 980.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "category": "Mršavljenje",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/OstroVit-Fat-Burner-for-women-60-capsules-_1.png?v=1738452394",
+      "original_price": 2450.0,
+      "discount_price": 2090.0,
+      "discount_percent": 15,
       "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/ostrovit-omega-3-90-kapsula-za-srce-mozak-i-zdravlje-zglobova",
+      "product_url": "https://dobrobit.rs/products/ostrovit-fat-burner-for-women-60-kapsula-sagorevac-masti-za-zene-sa-8-aktivnih-sastojaka",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -2902,6 +2872,21 @@
       "date_scraped": "2026-11-17"
     },
     {
+      "id": "dobrobit_ostrovit-omega-3-90-kapsula-za-srce-mozak-i-zdravlje-zglobova",
+      "name": "OstroVit Omega 3 90 Kapsula – Za Srce, Mozak i Zdravlje Zglobova",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Omega masne kiseline",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/eng_pm_OstroVit-Omega-3-90-capsules-11194_1.png?v=1737129582",
+      "original_price": 980.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/ostrovit-omega-3-90-kapsula-za-srce-mozak-i-zdravlje-zglobova",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
       "id": "dobrobit_haya-labs-acetyl-l-karnitin-1000-mg-povecanje-energije-i-sagorevanje-masti",
       "name": "Haya Labs Acetyl L-Karnitin 1000 mg – Povećanje energije i sagorevanje masti",
       "store": "Dobrobit",
@@ -2917,21 +2902,6 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_7nutrition-vitamin-d3-2000-iu-120-kapsula-podrska-imunitetu-i-kostima",
-      "name": "7Nutrition Vitamin D3 2000 IU, 120 Kapsula – Podrška Imunitetu i Kostima",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Vitamini",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/7nutrition-vitamin-d3-2000-iu-120-kapsula.png?v=1740950793",
-      "original_price": 1300.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/7nutrition-vitamin-d3-2000-iu-120-kapsula-podrska-imunitetu-i-kostima",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
       "id": "dobrobit_ostrovit-ubichinon-q10-vege-60-kapsula-prirodna-energija-i-podrska-za-zdravlje",
       "name": "OstroVit Ubichinon Q10 VEGE 60 kapsula – Prirodna Energija i Podrška za Zdravlje",
       "store": "Dobrobit",
@@ -2943,6 +2913,21 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/ostrovit-ubichinon-q10-vege-60-kapsula-prirodna-energija-i-podrska-za-zdravlje",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_7nutrition-vitamin-d3-2000-iu-120-kapsula-podrska-imunitetu-i-kostima",
+      "name": "7Nutrition Vitamin D3 2000 IU, 120 Kapsula – Podrška Imunitetu i Kostima",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Vitamini",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/7nutrition-vitamin-d3-2000-iu-120-kapsula.png?v=1740950793",
+      "original_price": 1300.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/7nutrition-vitamin-d3-2000-iu-120-kapsula-podrska-imunitetu-i-kostima",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -3284,8 +3269,8 @@
       "category": "Akcije",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/swanson-indole-3-carbinol-200-mg-resveratrol.png?v=1732789325",
       "original_price": 3190.0,
-      "discount_price": 3030.0,
-      "discount_percent": 5,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/swanson-indole-3-carbinol-resveratrol-60-kapsula-hormonska-ravnoteza",
       "in_stock": true,
@@ -3322,21 +3307,6 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_7nutrition-omega-3-110-kapsula-podrska-srcu-i-mozgu",
-      "name": "7Nutrition Omega 3, 110 Kapsula - Podrška Srcu i Mozgu",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Omega masne kiseline",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/7nutrition-omega3-100-vege-caps-dobrobit.webp?v=1749123030",
-      "original_price": 2500.0,
-      "discount_price": 2250.0,
-      "discount_percent": 10,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/7nutrition-omega-3-100-kapsula-podrska-srcu-i-mozgu",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
       "id": "dobrobit_now-foods-vitamin-a-10000-iu-podrska-imunitetu-i-vidu",
       "name": "NOW Foods Vitamin A 10,000 IU – Podrška Imunitetu i Vidu",
       "store": "Dobrobit",
@@ -3352,17 +3322,17 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_terranova-vitamin-d3-1000-iu-k2-50-mcg-kompleks-50-kapsula",
-      "name": "Terranova Vitamin D3 1000 IU & K2 50 mcg Kompleks, 50 Kapsula",
+      "id": "dobrobit_7nutrition-omega-3-110-kapsula-podrska-srcu-i-mozgu",
+      "name": "7Nutrition Omega 3, 110 Kapsula - Podrška Srcu i Mozgu",
       "store": "Dobrobit",
       "store_url": "https://dobrobit.rs",
-      "category": "Akcije",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-vitamin-d3-1000-iu-k2-50-mg-kompleks-50-kapsula.jpg?v=1733069347",
-      "original_price": 3235.0,
-      "discount_price": null,
-      "discount_percent": 0,
+      "category": "Omega masne kiseline",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/7nutrition-omega3-100-vege-caps-dobrobit.webp?v=1749123030",
+      "original_price": 2500.0,
+      "discount_price": 2250.0,
+      "discount_percent": 10,
       "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/terranova-vitamin-d3-1000-iu-k2-50-mcg-kompleks-50-kapsula",
+      "product_url": "https://dobrobit.rs/products/7nutrition-omega-3-100-kapsula-podrska-srcu-i-mozgu",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -3378,6 +3348,21 @@
       "discount_percent": 10,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/now-foods-saw-palmetto-550-mg-prirodna-podrska-za-prostatu",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_terranova-vitamin-d3-1000-iu-k2-50-mcg-kompleks-50-kapsula",
+      "name": "Terranova Vitamin D3 1000 IU & K2 50 mcg Kompleks, 50 Kapsula",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Akcije",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-vitamin-d3-1000-iu-k2-50-mg-kompleks-50-kapsula.jpg?v=1733069347",
+      "original_price": 3235.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/terranova-vitamin-d3-1000-iu-k2-50-mcg-kompleks-50-kapsula",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -3472,21 +3457,6 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_maxler-kre-alkalyn-120-kapsula-alkalni-kreatin-za-vrhunske-rezultate",
-      "name": "Maxler Kre-Alkalyn, 120 Kapsula – Alkalni Kreatin Za Vrhunske Rezultate",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Kreatin",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/maxler-kre-alkalyn-120-kapsula.jpg?v=1739720594",
-      "original_price": 3360.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/maxler-kre-alkalyn-120-kapsula-alkalni-kreatin-za-vrhunske-rezultate",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
       "id": "dobrobit_now-foods-magnezijum-400-mg-podrska-za-misice-i-energiju",
       "name": "NOW Foods Magnezijum 400 mg – Podrška za Mišiće i Energiju",
       "store": "Dobrobit",
@@ -3498,6 +3468,21 @@
       "discount_percent": 6,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/now-foods-magnezijum-400-mg-podrska-za-misice-i-energiju",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_maxler-kre-alkalyn-120-kapsula-alkalni-kreatin-za-vrhunske-rezultate",
+      "name": "Maxler Kre-Alkalyn, 120 Kapsula – Alkalni Kreatin Za Vrhunske Rezultate",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Kreatin",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/maxler-kre-alkalyn-120-kapsula.jpg?v=1739720594",
+      "original_price": 3360.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/maxler-kre-alkalyn-120-kapsula-alkalni-kreatin-za-vrhunske-rezultate",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -3517,21 +3502,6 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_solgar-kalcijum-magnezijum-plus-cink-podrska-kostima-misicima-i-imunitetu",
-      "name": "Solgar Kalcijum Magnezijum Plus Cink – Podrška Kostima, Mišićima i Imunitetu",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Kalcijum",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/solgar-kalcijum-magnezijum-plus-cink-100-tableta_519202c9-b000-4e58-9196-cdbf0e0b6d3d.webp?v=1732109341",
-      "original_price": 2050.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/solgar-kalcijum-magnezijum-plus-cink-podrska-kostima-misicima-i-imunitetu",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
       "id": "dobrobit_swanson-selenium-complex-200-mcg-podrska-imunitetu-i-antioksidativna-zastita",
       "name": "Swanson Selenium Complex, 200 mcg – Podrška Imunitetu i Antioksidativna Zaštita",
       "store": "Dobrobit",
@@ -3543,6 +3513,21 @@
       "discount_percent": 16,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/swanson-selenium-complex-200-mcg-podrska-imunitetu-i-antioksidativna-zastita",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_solgar-kalcijum-magnezijum-plus-cink-podrska-kostima-misicima-i-imunitetu",
+      "name": "Solgar Kalcijum Magnezijum Plus Cink – Podrška Kostima, Mišićima i Imunitetu",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Kalcijum",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/solgar-kalcijum-magnezijum-plus-cink-100-tableta_519202c9-b000-4e58-9196-cdbf0e0b6d3d.webp?v=1732109341",
+      "original_price": 2050.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/solgar-kalcijum-magnezijum-plus-cink-podrska-kostima-misicima-i-imunitetu",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -3637,21 +3622,6 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_ultimate-nutrition-clean-whey-cist-i-kvalitetan-protein-za-brzi-oporavak-misica",
-      "name": "Ultimate Nutrition Clean Whey – Čist i Kvalitetan Protein za Brži Oporavak Mišića",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Proteini",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/26145_CleanWhey910gVan-940x1018-339521.webp?v=1738854192",
-      "original_price": 6200.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/ultimate-nutrition-clean-whey-cist-i-kvalitetan-protein-za-brzi-oporavak-misica",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
       "id": "dobrobit_master-of-pharmacy-magnezijum-duo-60-tableta-za-ravnotezu-elektrolita-i-zdravlje-kostiju",
       "name": "Master of Pharmacy Magnezijum Duo 60 Tableta – Za Ravnotežu Elektrolita i Zdravlje Kostiju",
       "store": "Dobrobit",
@@ -3663,6 +3633,21 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/m-e-v-feller-magnezijum-duo-60-tableta-za-ravnotezu-elektrolita-i-zdravlje-kostiju",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_ultimate-nutrition-clean-whey-cist-i-kvalitetan-protein-za-brzi-oporavak-misica",
+      "name": "Ultimate Nutrition Clean Whey – Čist i Kvalitetan Protein za Brži Oporavak Mišića",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Proteini",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/26145_CleanWhey910gVan-940x1018-339521.webp?v=1738854192",
+      "original_price": 6200.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/ultimate-nutrition-clean-whey-cist-i-kvalitetan-protein-za-brzi-oporavak-misica",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -3763,7 +3748,7 @@
       "store_url": "https://dobrobit.rs",
       "category": "Omega masne kiseline",
       "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/solgar-full-spectrum-omega-salmon-oil.webp?v=1738365903",
-      "original_price": 5650.0,
+      "original_price": 5800.0,
       "discount_price": null,
       "discount_percent": 0,
       "currency": "RSD",
@@ -3918,6 +3903,21 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-folat-kompleks-400-mg-50-kapsula-podrska-energiji-i-vitalnosti",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_ostrovit-fat-burner-60-kapsula-prirodna-podrska-za-sagorevanje-masti",
+      "name": "OstroVit Fat Burner 60 Kapsula – Prirodna Podrška za Sagorevanje Masti",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Akcije",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-fat-burner-vege-60-kapsula.jpg?v=1734038698",
+      "original_price": 2400.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/ostrovit-fat-burner-60-kapsula-prirodna-podrska-za-sagorevanje-masti",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -4129,21 +4129,6 @@
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/qnt-prime-whey-protein-proteinski-prah-sa-whey-izolatom",
       "in_stock": false,
-      "date_scraped": "2026-11-17"
-    },
-    {
-      "id": "dobrobit_ostrovit-fat-burner-60-kapsula-prirodna-podrska-za-sagorevanje-masti",
-      "name": "OstroVit Fat Burner 60 Kapsula – Prirodna Podrška za Sagorevanje Masti",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Akcije",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-fat-burner-vege-60-kapsula.jpg?v=1734038698",
-      "original_price": 2400.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/ostrovit-fat-burner-60-kapsula-prirodna-podrska-za-sagorevanje-masti",
-      "in_stock": true,
       "date_scraped": "2026-11-17"
     },
     {
@@ -4687,21 +4672,6 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_terranova-coq10-kompleks-100-mg-50-kapsula-energija-i-srcana-podrska",
-      "name": "Terranova CoQ10 Kompleks 100 mg, 50 Kapsula - Energija i Srčana Podrška",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Koenzim Q10",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-koenzim-q10-100-mg-50-kapsula.jpg?v=1732966258",
-      "original_price": 4940.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/terranova-coq10-kompleks-100-mg-50-kapsula-energija-i-srcana-podrska",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
       "id": "dobrobit_qnt-vegan-protein-biljni-proteinski-sejk-za-misice-i-energiju",
       "name": "QNT Vegan Protein – Biljni Proteinski Šejk za Mišiće i Energiju",
       "store": "Dobrobit",
@@ -4713,6 +4683,21 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/qnt-vegan-protein-biljni-proteinski-sejk-za-misice-i-energiju",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_terranova-coq10-kompleks-100-mg-50-kapsula-energija-i-srcana-podrska",
+      "name": "Terranova CoQ10 Kompleks 100 mg, 50 Kapsula - Energija i Srčana Podrška",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Koenzim Q10",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-koenzim-q10-100-mg-50-kapsula.jpg?v=1732966258",
+      "original_price": 4940.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/terranova-coq10-kompleks-100-mg-50-kapsula-energija-i-srcana-podrska",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -4744,6 +4729,36 @@
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-b-kompleks-sa-vitaminom-c-50-kapsula-podrska-energiji-i-imunitetu",
       "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_now-foods-sunflower-lecithin-1200-mg-podrska-nervnom-sistemu-100",
+      "name": "NOW Foods Sunflower Lecithin 1200 mg - Podrška Nervnom Sistemu - 100",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Akcije",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/now-foods-sunflower-lecithin-1200-mg-100-softgels.png?v=1730986027",
+      "original_price": 1990.0,
+      "discount_price": 1760.0,
+      "discount_percent": 12,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/now-foods-sunflower-lecithin-1200-mg-podrska-nervnom-sistemu",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_now-foods-sunflower-lecithin-1200-mg-podrska-nervnom-sistemu-200",
+      "name": "NOW Foods Sunflower Lecithin 1200 mg - Podrška Nervnom Sistemu - 200",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Akcije",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/now-foods-sunflower-lecithin-1200-mg-200-softgels.png?v=1730986027",
+      "original_price": 4100.0,
+      "discount_price": 3950.0,
+      "discount_percent": 4,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/now-foods-sunflower-lecithin-1200-mg-podrska-nervnom-sistemu",
+      "in_stock": false,
       "date_scraped": "2026-11-17"
     },
     {
@@ -4792,6 +4807,21 @@
       "date_scraped": "2026-11-17"
     },
     {
+      "id": "dobrobit_kaltex-probiotic-md-60-milijardi-meta-detox-slim-active-formula",
+      "name": "Kaltex PROBIOTIC MD 60 Milijardi: META-DETOX & SLIM-ACTIVE Formula",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Probiotici",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/probiotic-md-20-kaps.webp?v=1764107271",
+      "original_price": 2370.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/kaltex-probiotic-md-60-milijardi",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
       "id": "dobrobit_solgar-b-complex-sa-vitaminom-c-podrska-energiji-i-smanjenju-stresa-100",
       "name": "Solgar B-Complex sa Vitaminom C – Podrška Energiji i Smanjenju Stresa - 100",
       "store": "Dobrobit",
@@ -4819,21 +4849,6 @@
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/solgar-b-complex-stress-formula-podrska-energiji-i-smanjenju-stresa",
       "in_stock": false,
-      "date_scraped": "2026-11-17"
-    },
-    {
-      "id": "dobrobit_kaltex-probiotic-md-60-milijardi-meta-detox-slim-active-formula",
-      "name": "Kaltex PROBIOTIC MD 60 Milijardi: META-DETOX & SLIM-ACTIVE Formula",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Probiotici",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/probiotic-md-20-kaps.webp?v=1764107271",
-      "original_price": 2370.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/kaltex-probiotic-md-60-milijardi",
-      "in_stock": true,
       "date_scraped": "2026-11-17"
     },
     {
@@ -4867,51 +4882,6 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_basic-supplements-bcaa-pro-811-napredna-formula-za-misicni-oporavak-i-rast",
-      "name": "Basic Supplements BCAA PRO 8:1:1 – Napredna Formula za Mišićni Oporavak i Rast",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Amino kiseline",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/bcaa-pro-811-basic-supplements-zelena-jabuka.png?v=1739903148",
-      "original_price": 2350.0,
-      "discount_price": 2190.0,
-      "discount_percent": 7,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/basic-supplements-bcaa-pro-8-1-1-napredna-formula-za-misicni-oporavak-i-rast",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
-      "id": "dobrobit_now-foods-sunflower-lecithin-1200-mg-podrska-nervnom-sistemu-100",
-      "name": "NOW Foods Sunflower Lecithin 1200 mg - Podrška Nervnom Sistemu - 100",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Akcije",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/now-foods-sunflower-lecithin-1200-mg-100-softgels.png?v=1730986027",
-      "original_price": 1990.0,
-      "discount_price": 1760.0,
-      "discount_percent": 12,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/now-foods-sunflower-lecithin-1200-mg-podrska-nervnom-sistemu",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
-      "id": "dobrobit_now-foods-sunflower-lecithin-1200-mg-podrska-nervnom-sistemu-200",
-      "name": "NOW Foods Sunflower Lecithin 1200 mg - Podrška Nervnom Sistemu - 200",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Akcije",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/now-foods-sunflower-lecithin-1200-mg-200-softgels.png?v=1730986027",
-      "original_price": 4100.0,
-      "discount_price": 3950.0,
-      "discount_percent": 4,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/now-foods-sunflower-lecithin-1200-mg-podrska-nervnom-sistemu",
-      "in_stock": false,
-      "date_scraped": "2026-11-17"
-    },
-    {
       "id": "dobrobit_master-of-pharmacy-coq10-100mg-za-zdravlje-srca-i-kardiovaskularni-sistem-30",
       "name": "Master of Pharmacy CoQ10 100mg – Za Zdravlje Srca i Kardiovaskularni Sistem - 30",
       "store": "Dobrobit",
@@ -4938,7 +4908,22 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/m-e-v-feller-coq10-100mg-za-zdravlje-srca-i-kardiovaskularni-sistem",
-      "in_stock": false,
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_basic-supplements-bcaa-pro-811-napredna-formula-za-misicni-oporavak-i-rast",
+      "name": "Basic Supplements BCAA PRO 8:1:1 – Napredna Formula za Mišićni Oporavak i Rast",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Amino kiseline",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/bcaa-pro-811-basic-supplements-zelena-jabuka.png?v=1739903148",
+      "original_price": 2350.0,
+      "discount_price": 2190.0,
+      "discount_percent": 7,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/basic-supplements-bcaa-pro-8-1-1-napredna-formula-za-misicni-oporavak-i-rast",
+      "in_stock": true,
       "date_scraped": "2026-11-17"
     },
     {
@@ -4957,21 +4942,6 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_nutriversum-joint-guard-gold-120-tableta-podrska-zdravlju-zglobova-i-hrskavica",
-      "name": "Nutriversum Joint Guard Gold 120 Tableta – Podrška Zdravlju Zglobova i Hrskavica",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Akcije",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/joint_guard_gold_120.jpg?v=1739175295",
-      "original_price": 2400.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/nutriversum-joint-guard-gold-120-tableta-podrska-zdravlju-zglobova-i-hrskavica",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
       "id": "dobrobit_now-foods-tribulus-1000-mg-dvostruka-snaga-za-reproduktivno-zdravlje",
       "name": "NOW Foods Tribulus 1000 mg - Dvostruka Snaga Za Reproduktivno Zdravlje",
       "store": "Dobrobit",
@@ -4983,6 +4953,21 @@
       "discount_percent": 9,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/now-foods-tribulus-1000-mg-dvostruka-snaga-za-reproduktivno-zdravlje",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_nutriversum-joint-guard-gold-120-tableta-podrska-zdravlju-zglobova-i-hrskavica",
+      "name": "Nutriversum Joint Guard Gold 120 Tableta – Podrška Zdravlju Zglobova i Hrskavica",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Akcije",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/joint_guard_gold_120.jpg?v=1739175295",
+      "original_price": 2400.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/nutriversum-joint-guard-gold-120-tableta-podrska-zdravlju-zglobova-i-hrskavica",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -5017,6 +5002,21 @@
       "date_scraped": "2026-11-17"
     },
     {
+      "id": "dobrobit_now-foods-saccharomyces-boulardii-probiotik-za-zdravlje-creva",
+      "name": "NOW Foods Saccharomyces Boulardii – Probiotik Za Zdravlje Creva",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Probiotici",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/now-foods-saccharomyces-boulardii-60-kapsula.png?v=1737534100",
+      "original_price": 3390.0,
+      "discount_price": 3180.0,
+      "discount_percent": 6,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/now-foods-saccharomyces-boulardii-probiotik-za-zdravlje-creva",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
       "id": "dobrobit_haya-labs-high-potency-vitamin-c-1000mg-imunitet-i-izdrzljivost-250",
       "name": "Haya Labs High Potency Vitamin C 1000mg – Imunitet i Izdržljivost - 250",
       "store": "Dobrobit",
@@ -5047,21 +5047,6 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_now-foods-saccharomyces-boulardii-probiotik-za-zdravlje-creva",
-      "name": "NOW Foods Saccharomyces Boulardii – Probiotik Za Zdravlje Creva",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Probiotici",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/now-foods-saccharomyces-boulardii-60-kapsula.png?v=1737534100",
-      "original_price": 3390.0,
-      "discount_price": 3180.0,
-      "discount_percent": 6,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/now-foods-saccharomyces-boulardii-probiotik-za-zdravlje-creva",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
       "id": "dobrobit_now-foods-omega-3-6-9-1000-mg-za-zdravu-kozu-i-imunitet",
       "name": "NOW Foods Omega 3-6-9 1000 mg – Za Zdravu Kožu i Imunitet",
       "store": "Dobrobit",
@@ -5073,6 +5058,36 @@
       "discount_percent": 11,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/now-foods-omega-3-6-9-1000-mg-za-zdravu-kozu-i-imunitet",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_solgar-skin-nails-hair-advanced-msm-formula-zdravlje-koze-kose-i-noktiju",
+      "name": "Solgar Skin, Nails & Hair, Advanced MSM Formula – Zdravlje Kože, Kose i Noktiju",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Akcije",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/solgar-skin-nails-hair-advanced-msm-formula-60-tableta.webp?v=1732185236",
+      "original_price": 2600.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/solgar-skin-nails-hair-advanced-msm-formula-zdravlje-koze-kose-i-noktiju",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_now-foods-l-carnitine-500-mg-povecajte-energiju-i-sagorevanje-masti",
+      "name": "NOW Foods L-Carnitine 500 mg – Povećajte Energiju i Sagorevanje Masti",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "L-karnitin",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/now-foods-l-carnitine-500-mg.png?v=1737550526",
+      "original_price": 3690.0,
+      "discount_price": 3390.0,
+      "discount_percent": 8,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/now-foods-l-carnitine-500-mg-povecajte-energiju-i-sagorevanje-masti",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -5104,36 +5119,6 @@
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/now-foods-hijaluronska-kiselina-50-mg-podrska-zglobovima-i-hidrataciji-koze",
       "in_stock": false,
-      "date_scraped": "2026-11-17"
-    },
-    {
-      "id": "dobrobit_solgar-skin-nails-hair-advanced-msm-formula-zdravlje-koze-kose-i-noktiju",
-      "name": "Solgar Skin, Nails & Hair, Advanced MSM Formula – Zdravlje Kože, Kose i Noktiju",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Akcije",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/solgar-skin-nails-hair-advanced-msm-formula-60-tableta.webp?v=1732185236",
-      "original_price": 2600.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/solgar-skin-nails-hair-advanced-msm-formula-zdravlje-koze-kose-i-noktiju",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
-      "id": "dobrobit_now-foods-l-carnitine-500-mg-povecajte-energiju-i-sagorevanje-masti",
-      "name": "NOW Foods L-Carnitine 500 mg – Povećajte Energiju i Sagorevanje Masti",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "L-karnitin",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/now-foods-l-carnitine-500-mg.png?v=1737550526",
-      "original_price": 3690.0,
-      "discount_price": 3390.0,
-      "discount_percent": 8,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/now-foods-l-carnitine-500-mg-povecajte-energiju-i-sagorevanje-masti",
-      "in_stock": true,
       "date_scraped": "2026-11-17"
     },
     {
@@ -5332,6 +5317,21 @@
       "date_scraped": "2026-11-17"
     },
     {
+      "id": "dobrobit_now-foods-8-billion-acidophilus-bifidus-zdrava-crevna-flora",
+      "name": "NOW Foods 8 Billion Acidophilus & Bifidus – Zdrava Crevna Flora",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Probiotici",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/now-foods-8-billion-acidophilus-bifidus.png?v=1736544860",
+      "original_price": 2390.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/now-foods-8-billion-acidophilus-bifidus-zdrava-crevna-flora",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
       "id": "dobrobit_solgar-vitamin-d3-10-mcg-400-iu-podrska-zdravlju-kostiju-i-imunitetu-100",
       "name": "Solgar Vitamin D3, 10 mcg (400 IU) – Podrška Zdravlju Kostiju i Imunitetu - 100",
       "store": "Dobrobit",
@@ -5422,21 +5422,6 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_solgar-nutri-nano-coq-10-koenzim-za-zdravlje-srca-i-povecanu-energiju",
-      "name": "Solgar Nutri-Nano CoQ-10 – Koenzim Za Zdravlje Srca i Povećanu Energiju",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Koenzim Q10",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/solgar-nutri-nano-q10.jpg?v=1738355223",
-      "original_price": 7500.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/solgar-nutri-nano-coq-10-koenzim-za-zdravlje-srca-i-povecanu-energiju",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
       "id": "dobrobit_solgar-hrom-pikolinat-100-mcg-za-normalnu-koncentraciju-glukoze-u-krvi",
       "name": "Solgar Hrom Pikolinat 100 mcg – Za Normalnu Koncentraciju Glukoze u Krvi",
       "store": "Dobrobit",
@@ -5452,17 +5437,17 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_master-of-pharmacy-vitamin-b-kompleks-c-60-tableta-podrska-nervnom-sistemu-i-energiji",
-      "name": "Master of Pharmacy Vitamin B Kompleks + C 60 Tableta – Podrška Nervnom Sistemu i Energiji",
+      "id": "dobrobit_solgar-nutri-nano-coq-10-koenzim-za-zdravlje-srca-i-povecanu-energiju",
+      "name": "Solgar Nutri-Nano CoQ-10 – Koenzim Za Zdravlje Srca i Povećanu Energiju",
       "store": "Dobrobit",
       "store_url": "https://dobrobit.rs",
-      "category": "Vitamini",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/master-of-pharmacy-vitamin-b-complex-sa-vitaminom-c-60-tableta-dobrobit.webp?v=1757253733",
-      "original_price": 1960.0,
+      "category": "Koenzim Q10",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/solgar-nutri-nano-q10.jpg?v=1738355223",
+      "original_price": 7500.0,
       "discount_price": null,
       "discount_percent": 0,
       "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/m-e-v-feller-vitamin-b-kompleks-c-60-tableta-podrska-nervnom-sistemu-i-energiji",
+      "product_url": "https://dobrobit.rs/products/solgar-nutri-nano-coq-10-koenzim-za-zdravlje-srca-i-povecanu-energiju",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -5497,6 +5482,21 @@
       "date_scraped": "2026-11-17"
     },
     {
+      "id": "dobrobit_master-of-pharmacy-vitamin-b-kompleks-c-60-tableta-podrska-nervnom-sistemu-i-energiji",
+      "name": "Master of Pharmacy Vitamin B Kompleks + C 60 Tableta – Podrška Nervnom Sistemu i Energiji",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Vitamini",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/master-of-pharmacy-vitamin-b-complex-sa-vitaminom-c-60-tableta-dobrobit.webp?v=1757253733",
+      "original_price": 1960.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/m-e-v-feller-vitamin-b-kompleks-c-60-tableta-podrska-nervnom-sistemu-i-energiji",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
       "id": "dobrobit_now-foods-vitamin-b-1-100-mg-podrska-za-energiju-i-nervni-sistem",
       "name": "NOW Foods Vitamin B-1 100 mg – Podrška Za Energiju i Nervni Sistem",
       "store": "Dobrobit",
@@ -5523,21 +5523,6 @@
       "discount_percent": 12,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/now-foods-taurine-500-mg-amino-kiselina-za-zdravlje-nervnog-sistema",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
-      "id": "dobrobit_now-foods-8-billion-acidophilus-bifidus-zdrava-crevna-flora",
-      "name": "NOW Foods 8 Billion Acidophilus & Bifidus – Zdrava Crevna Flora",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Probiotici",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/now-foods-8-billion-acidophilus-bifidus.png?v=1736544860",
-      "original_price": 2390.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/now-foods-8-billion-acidophilus-bifidus-zdrava-crevna-flora",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -5613,21 +5598,6 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/kaltex-probiotic-prebiotic-10-milijardi",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
-      "id": "dobrobit_haya-labs-bromelain-500mg-60-kapsula-apsorpcija-proteina-i-imunitet",
-      "name": "Haya Labs Bromelain 500mg 60 kapsula – Apsorpcija Proteina i Imunitet",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Akcije",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/16183_pm_bromnew.jpg?v=1738664739",
-      "original_price": 2100.0,
-      "discount_price": 1940.0,
-      "discount_percent": 8,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/haya-labs-bromelain-500mg-60-kapsula-apsorpcija-proteina-i-imunitet",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -5722,6 +5692,21 @@
       "date_scraped": "2026-11-17"
     },
     {
+      "id": "dobrobit_haya-labs-bromelain-500mg-60-kapsula-apsorpcija-proteina-i-imunitet",
+      "name": "Haya Labs Bromelain 500mg 60 kapsula – Apsorpcija Proteina i Imunitet",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Akcije",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/16183_pm_bromnew.jpg?v=1738664739",
+      "original_price": 2100.0,
+      "discount_price": 1940.0,
+      "discount_percent": 8,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/haya-labs-bromelain-500mg-60-kapsula-apsorpcija-proteina-i-imunitet",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
       "id": "dobrobit_now-foods-l-arginin-double-strength-1000-mg-podrska-za-energiju-i-cirkulaciju",
       "name": "NOW Foods L-Arginin Double Strength 1,000 mg – Podrška za Energiju i Cirkulaciju",
       "store": "Dobrobit",
@@ -5733,21 +5718,6 @@
       "discount_percent": 10,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/now-foods-l-arginin-double-strength-1-000-mg-podrska-za-energiju-i-cirkulaciju",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
-      "id": "dobrobit_swanson-vitamin-d3-2000-iu-50-mcg-250-kapsula-veca-potencija",
-      "name": "Swanson Vitamin D3, 2000 IU (50 mcg), 250 Kapsula - Veća Potencija",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Akcije",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/swanson-d3-2000iu-dobrobit.webp?v=1742646965",
-      "original_price": 2950.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/swanson-vitamin-d3-2000-iu-50-mcg-250-kapsula-veca-potencija",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -5782,17 +5752,17 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_solgar-tecni-vitamin-d3-625-mcg-2500-iu-za-zdravlje-kostiju-i-zglobova",
-      "name": "Solgar Tečni Vitamin D3 62,5 mcg (2500 IU) – Za Zdravlje Kostiju i Zglobova",
+      "id": "dobrobit_swanson-vitamin-d3-2000-iu-50-mcg-250-kapsula-veca-potencija",
+      "name": "Swanson Vitamin D3, 2000 IU (50 mcg), 250 Kapsula - Veća Potencija",
       "store": "Dobrobit",
       "store_url": "https://dobrobit.rs",
       "category": "Akcije",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/liquid-vitamin-d3-2500-ui-62-5-mcg-solgar-59-ml.jpg?v=1738365006",
-      "original_price": 2900.0,
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/swanson-d3-2000iu-dobrobit.webp?v=1742646965",
+      "original_price": 2950.0,
       "discount_price": null,
       "discount_percent": 0,
       "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/solgar-tekuci-vitamin-d3-62-5-mcg-2500-iu-za-zdravlje-kostiju-i-zglobova",
+      "product_url": "https://dobrobit.rs/products/swanson-vitamin-d3-2000-iu-50-mcg-250-kapsula-veca-potencija",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -5812,6 +5782,21 @@
       "date_scraped": "2026-11-17"
     },
     {
+      "id": "dobrobit_solgar-selen-bez-kvasca-100-mcg-podrska-imunitetu-i-antioksidativnoj-zastiti",
+      "name": "Solgar Selen, Bez Kvasca, 100 mcg – Podrška Imunitetu i Antioksidativnoj Zaštiti",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Selen",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/solgar-selenium-100-mcg-100-tableta.webp?v=1732035451",
+      "original_price": 2450.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/solgar-selen-bez-kvasca-100-mcg-podrska-imunitetu-i-antioksidativnoj-zastiti",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
       "id": "dobrobit_bioandina-premium-mix-aktivirana-maka-60-kapsula-hormonska-ravnoteza",
       "name": "Bioandina Premium Mix Aktivirana Maka, 60 Kapsula – Hormonska Ravnoteža",
       "store": "Dobrobit",
@@ -5827,17 +5812,17 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_ostrovit-inozitol-magnezijum-glicinat-vitamin-d3-podrska-nervnom-sistemu",
-      "name": "OstroVit Inozitol + Magnezijum Glicinat + Vitamin D3 – Podrška Nervnom Sistemu",
+      "id": "dobrobit_solgar-tecni-vitamin-d3-625-mcg-2500-iu-za-zdravlje-kostiju-i-zglobova",
+      "name": "Solgar Tečni Vitamin D3 62,5 mcg (2500 IU) – Za Zdravlje Kostiju i Zglobova",
       "store": "Dobrobit",
       "store_url": "https://dobrobit.rs",
       "category": "Akcije",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-glicinat-inozitol-vitamin-d3-4000-iu.png?v=1775502431",
-      "original_price": 6210.0,
-      "discount_price": 4990.0,
-      "discount_percent": 20,
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/liquid-vitamin-d3-2500-ui-62-5-mcg-solgar-59-ml.jpg?v=1738365006",
+      "original_price": 2900.0,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/ostrovit-inozitol-magnezijum-glicinat-vitamin-d3",
+      "product_url": "https://dobrobit.rs/products/solgar-tekuci-vitamin-d3-62-5-mcg-2500-iu-za-zdravlje-kostiju-i-zglobova",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -5853,6 +5838,21 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-omega-3-6-7-9-ulje-250-ml-podrska-srcu-i-kozi",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_ostrovit-inozitol-magnezijum-glicinat-vitamin-d3-podrska-nervnom-sistemu",
+      "name": "OstroVit Inozitol + Magnezijum Glicinat + Vitamin D3 – Podrška Nervnom Sistemu",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Akcije",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-glicinat-inozitol-vitamin-d3-4000-iu.png?v=1775502431",
+      "original_price": 6210.0,
+      "discount_price": 4990.0,
+      "discount_percent": 20,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/ostrovit-inozitol-magnezijum-glicinat-vitamin-d3",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -5928,21 +5928,6 @@
       "discount_percent": 14,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/haya-labs-magnesium-citrate-200mg-podrska-kostima-i-energiji",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
-      "id": "dobrobit_solgar-prirodni-beta-karoten-60-kapsula-zastita-koze-i-ocuvanje-zdravlja",
-      "name": "Solgar Prirodni Beta Karoten, 60 Kapsula – Zaštita Kože i Očuvanje Zdravlja",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Akcije",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/solgar-beta-karoten-60-kapsula.webp?v=1745583838",
-      "original_price": 2750.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/solgar-prirodni-beta-karoten-60-kapsula-zastita-koze-i-ocuvanje-zdravlja",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -6067,17 +6052,17 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_now-foods-5-htp-50-mg-podrska-dobrom-raspolozenju",
-      "name": "NOW Foods 5-HTP 50 mg – Podrška Dobrom Raspoloženju",
+      "id": "dobrobit_solgar-prirodni-beta-karoten-60-kapsula-zastita-koze-i-ocuvanje-zdravlja",
+      "name": "Solgar Prirodni Beta Karoten, 60 Kapsula – Zaštita Kože i Očuvanje Zdravlja",
       "store": "Dobrobit",
       "store_url": "https://dobrobit.rs",
       "category": "Akcije",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/now-foods-5-htp-50-mg-30-kapsula.png?v=1736539195",
-      "original_price": 1350.0,
-      "discount_price": 1240.0,
-      "discount_percent": 8,
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/solgar-beta-karoten-60-kapsula.webp?v=1745583838",
+      "original_price": 2750.0,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/now-foods-5-htp-50-mg-podrska-dobrom-raspolozenju",
+      "product_url": "https://dobrobit.rs/products/solgar-prirodni-beta-karoten-60-kapsula-zastita-koze-i-ocuvanje-zdravlja",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -6093,6 +6078,21 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/salvit-omega-vit-d-15ml-kompleks-za-decu-sa-omega-3-i-vitaminom-d",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_now-foods-5-htp-50-mg-podrska-dobrom-raspolozenju",
+      "name": "NOW Foods 5-HTP 50 mg – Podrška Dobrom Raspoloženju",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Akcije",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/now-foods-5-htp-50-mg-30-kapsula.png?v=1736539195",
+      "original_price": 1350.0,
+      "discount_price": 1240.0,
+      "discount_percent": 8,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/now-foods-5-htp-50-mg-podrska-dobrom-raspolozenju",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -6127,21 +6127,6 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_solgar-selen-bez-kvasca-100-mcg-podrska-imunitetu-i-antioksidativnoj-zastiti",
-      "name": "Solgar Selen, Bez Kvasca, 100 mcg – Podrška Imunitetu i Antioksidativnoj Zaštiti",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Selen",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/solgar-selenium-100-mcg-100-tableta.webp?v=1732035451",
-      "original_price": 2450.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/solgar-selen-bez-kvasca-100-mcg-podrska-imunitetu-i-antioksidativnoj-zastiti",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
       "id": "dobrobit_ostrovit-creatine-monohydrate-bundle-paket-za-maksimalnu-snagu-i-misicni-volumen",
       "name": "OstroVit Creatine Monohydrate Bundle – Paket za maksimalnu snagu i mišićni volumen",
       "store": "Dobrobit",
@@ -6172,21 +6157,6 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_haya-labs-100-quercetin-500mg-podrska-imunitetu-i-smanjenje-upala",
-      "name": "Haya Labs 100% Quercetin 500mg – Podrška Imunitetu i Smanjenje Upala",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Akcije",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/2001-quercetin-500-mg.jpg?v=1738616367",
-      "original_price": 2890.0,
-      "discount_price": 2590.0,
-      "discount_percent": 10,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/haya-labs-100-quercetin-500mg-podrska-imunitetu-i-smanjenje-upala",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
       "id": "dobrobit_master-of-pharmacy-ginkgo-biloba-60-tableta-za-poboljsanje-kognitivnih-funkcija-i-cirkulacije",
       "name": "Master of Pharmacy Ginkgo Biloba 60 Tableta – Za Poboljšanje Kognitivnih Funkcija i Cirkulacije",
       "store": "Dobrobit",
@@ -6198,6 +6168,21 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/m-e-v-feller-ginkgo-biloba-60-tableta-za-poboljsanje-kognitivnih-funkcija-i-cirkulacije",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_haya-labs-100-quercetin-500mg-podrska-imunitetu-i-smanjenje-upala",
+      "name": "Haya Labs 100% Quercetin 500mg – Podrška Imunitetu i Smanjenje Upala",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Akcije",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/2001-quercetin-500-mg.jpg?v=1738616367",
+      "original_price": 2890.0,
+      "discount_price": 2590.0,
+      "discount_percent": 10,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/haya-labs-100-quercetin-500mg-podrska-imunitetu-i-smanjenje-upala",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -6307,6 +6292,21 @@
       "date_scraped": "2026-11-17"
     },
     {
+      "id": "dobrobit_swanson-acetyl-l-carnitine-500-mg-podrska-energiji-i-funkciji-mozga",
+      "name": "Swanson Acetyl L-Carnitine 500 mg – Podrška Energiji i Funkciji Mozga",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "L-karnitin",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/swanson-acetyl-l-carnitine-dobrobit.webp?v=1742596597",
+      "original_price": 3690.0,
+      "discount_price": 3520.0,
+      "discount_percent": 5,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/swanson-acetyl-l-carnitine-500-mg-podrska-energiji-i-funkciji-mozga",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
       "id": "dobrobit_solgar-formula-v-vm-75-multivitamini-sa-helat-mineralima-podrska-zdravlju-90",
       "name": "Solgar Formula V Vm-75, Multivitamini Sa Helat Mineralima –  Podrška Zdravlju - 90",
       "store": "Dobrobit",
@@ -6367,17 +6367,17 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_swanson-acetyl-l-carnitine-500-mg-podrska-energiji-i-funkciji-mozga",
-      "name": "Swanson Acetyl L-Carnitine 500 mg – Podrška Energiji i Funkciji Mozga",
+      "id": "dobrobit_terranova-living-multinutrient-50-kapsula-sveobuhvatna-dnevna-podrska",
+      "name": "Terranova Living Multinutrient, 50 Kapsula - Sveobuhvatna Dnevna Podrška",
       "store": "Dobrobit",
       "store_url": "https://dobrobit.rs",
-      "category": "L-karnitin",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/swanson-acetyl-l-carnitine-dobrobit.webp?v=1742596597",
-      "original_price": 3690.0,
-      "discount_price": 3520.0,
-      "discount_percent": 5,
+      "category": "Akcije",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-living-multinutrient-kompleks-50-kapsula.jpg?v=1733051183",
+      "original_price": 3055.0,
+      "discount_price": null,
+      "discount_percent": 0,
       "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/swanson-acetyl-l-carnitine-500-mg-podrska-energiji-i-funkciji-mozga",
+      "product_url": "https://dobrobit.rs/products/terranova-living-multinutrient-50-kapsula-sveobuhvatna-dnevna-podrska",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -6532,21 +6532,6 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_terranova-living-multinutrient-50-kapsula-sveobuhvatna-dnevna-podrska",
-      "name": "Terranova Living Multinutrient, 50 Kapsula - Sveobuhvatna Dnevna Podrška",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Akcije",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-living-multinutrient-kompleks-50-kapsula.jpg?v=1733051183",
-      "original_price": 3055.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/terranova-living-multinutrient-50-kapsula-sveobuhvatna-dnevna-podrska",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
       "id": "dobrobit_now-foods-chlorella-1000-mg-prirodna-podrska-za-detoksikaciju-i-energiju",
       "name": "NOW Foods Chlorella 1000 mg - Prirodna Podrška Za Detoksikaciju i Energiju",
       "store": "Dobrobit",
@@ -6562,21 +6547,6 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_solgar-magnezijum-sa-vitaminom-b6-energija-i-podrska-za-misice",
-      "name": "Solgar Magnezijum sa vitaminom B6 – Energija i Podrška za Mišiće",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Magnezijum",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/magnezijum-vitamin-b6-tablete.webp?v=1731856995",
-      "original_price": 1750.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/solgar-magnezijum-sa-vitaminom-b6-100-tableta",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
       "id": "dobrobit_nutriversum-koenzim-q10-vita-53mg-60-kapsula-za-zdravlje-srca-i-energiju",
       "name": "Nutriversum Koenzim Q10 Vita 53mg, 60 Kapsula – Za Zdravlje Srca i Energiju",
       "store": "Dobrobit",
@@ -6588,6 +6558,21 @@
       "discount_percent": 10,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/nutriversum-koenzim-q10-vita-53mg-60-kapsula-za-zdravlje-srca-i-energiju",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_solgar-magnezijum-sa-vitaminom-b6-energija-i-podrska-za-misice",
+      "name": "Solgar Magnezijum sa vitaminom B6 – Energija i Podrška za Mišiće",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Magnezijum",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/magnezijum-vitamin-b6-tablete.webp?v=1731856995",
+      "original_price": 1750.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/solgar-magnezijum-sa-vitaminom-b6-100-tableta",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -6952,21 +6937,6 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_ultimate-nutrition-prostar-100-casein-protein-oporavak-i-zastita-misica",
-      "name": "Ultimate Nutrition Prostar 100% Casein Protein - Oporavak i Zaštita Mišića",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Kazein",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ultimate-nutrition-prostar-casein-protein-vanilla-creme-2-27-kg.webp?v=1749541525",
-      "original_price": 12890.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/ultimate-nutrition-prostar-100-casein-protein-oporavak-i-zastita-misica",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
       "id": "dobrobit_now-foods-kalcijum-i-magnezijum-podrska-kostima-i-imunitetu-120",
       "name": "NOW Foods Kalcijum i Magnezijum – Podrška Kostima i Imunitetu - 120",
       "store": "Dobrobit",
@@ -7008,6 +6978,21 @@
       "discount_percent": 10,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/qnt-eroxa-prirodna-podrska-energiji-i-vitalnosti",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_ultimate-nutrition-prostar-100-casein-protein-oporavak-i-zastita-misica",
+      "name": "Ultimate Nutrition Prostar 100% Casein Protein - Oporavak i Zaštita Mišića",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Kazein",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ultimate-nutrition-prostar-casein-protein-vanilla-creme-2-27-kg.webp?v=1749541525",
+      "original_price": 12890.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/ultimate-nutrition-prostar-100-casein-protein-oporavak-i-zastita-misica",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -7237,21 +7222,6 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_kaltex-s-boulardii-efikasna-zastita-od-dijareje-i-obnova-crevne-sluzokoze",
-      "name": "Kaltex S. BOULARDII: Efikasna Zaštita od Dijareje i Obnova Crevne Sluzokože",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Probiotici",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/s-boulardii-prebiotic.webp?v=1764107054",
-      "original_price": 790.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/kaltex-s-boulardii-efikasna-zastita-od-dijareje",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
       "id": "dobrobit_ultimate-muscle-duo-whey-kreatin-za-snagu-i-rast-misica",
       "name": "Ultimate Muscle Duo – Whey + Kreatin za Snagu i Rast Mišića",
       "store": "Dobrobit",
@@ -7263,6 +7233,21 @@
       "discount_percent": 10,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/ultimate-muscle-duo-snaga-i-rast-u-jednom-paketu",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_kaltex-s-boulardii-efikasna-zastita-od-dijareje-i-obnova-crevne-sluzokoze",
+      "name": "Kaltex S. BOULARDII: Efikasna Zaštita od Dijareje i Obnova Crevne Sluzokože",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Probiotici",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/s-boulardii-prebiotic.webp?v=1764107054",
+      "original_price": 790.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/kaltex-s-boulardii-efikasna-zastita-od-dijareje",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -7477,21 +7462,6 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_ostrovit-bcaa-2011-400-g-creamy-strawberry-aminokiseline-za-regeneraciju-i-energiju",
-      "name": "OstroVit BCAA 20:1:1 400 g Creamy Strawberry – Aminokiseline za regeneraciju i energiju",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Amino kiseline",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/OstroVit-BCAA-20-1-1-400-g-_1.png?v=1738428881",
-      "original_price": 2750.0,
-      "discount_price": 2590.0,
-      "discount_percent": 6,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/ostrovit-bcaa-20-1-1-400-g-creamy-strawberry-aminokiseline-za-regeneraciju-i-energiju",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
       "id": "dobrobit_solgar-kalcijum-citrat-sa-vitaminom-d3-podrska-zdravlju-kostiju-i-zuba-60",
       "name": "Solgar Kalcijum Citrat sa Vitaminom D3 – Podrška Zdravlju Kostiju i Zuba - 60",
       "store": "Dobrobit",
@@ -7537,6 +7507,21 @@
       "date_scraped": "2026-11-17"
     },
     {
+      "id": "dobrobit_ostrovit-bcaa-2011-400-g-creamy-strawberry-aminokiseline-za-regeneraciju-i-energiju",
+      "name": "OstroVit BCAA 20:1:1 400 g Creamy Strawberry – Aminokiseline za regeneraciju i energiju",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Amino kiseline",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/OstroVit-BCAA-20-1-1-400-g-_1.png?v=1738428881",
+      "original_price": 2750.0,
+      "discount_price": 2590.0,
+      "discount_percent": 6,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/ostrovit-bcaa-20-1-1-400-g-creamy-strawberry-aminokiseline-za-regeneraciju-i-energiju",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
       "id": "dobrobit_terranova-antioksidativni-nutrijent-kompleks-50-kapsula-zastita-celija",
       "name": "Terranova Antioksidativni Nutrijent Kompleks, 50 Kapsula - Zaštita Ćelija",
       "store": "Dobrobit",
@@ -7567,21 +7552,6 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_terranova-beta-glukani-kompleks-250-mg-50-kapsula-imunitetska-podrska",
-      "name": "Terranova Beta Glukani Kompleks 250 mg, 50 Kapsula - Imunitetska Podrška",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Akcije",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-beta-glukani-250-mg-50-kapsula.jpg?v=1732965020",
-      "original_price": 3940.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/terranova-beta-glukani-kompleks-250-mg-50-kapsula-imunitetska-podrska",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
       "id": "dobrobit_7nutrition-liver-complex-60-kapsula-napredna-formula-za-podrsku-jetri",
       "name": "7Nutrition Liver Complex, 60 Kapsula – Napredna Formula za Podršku Jetri",
       "store": "Dobrobit",
@@ -7593,6 +7563,21 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/7nutrition-liver-complex-60-kapsula-napredna-formula-za-podrsku-jetri",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_terranova-beta-glukani-kompleks-250-mg-50-kapsula-imunitetska-podrska",
+      "name": "Terranova Beta Glukani Kompleks 250 mg, 50 Kapsula - Imunitetska Podrška",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Akcije",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/terranova-beta-glukani-250-mg-50-kapsula.jpg?v=1732965020",
+      "original_price": 3940.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/terranova-beta-glukani-kompleks-250-mg-50-kapsula-imunitetska-podrska",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -7627,21 +7612,6 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_ostrovit-siberian-ginseng-120-tableta-prirodna-energija-i-podrska-imunitetu",
-      "name": "OstroVit Siberian Ginseng 120 Tableta - Prirodna Energija i Podrška Imunitetu",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Ašvaganda",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-siberian-ginseng-120-tableta_17ea430a-6100-4266-8caf-2186953bd651.png?v=1734111569",
-      "original_price": 2100.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/ostrovit-siberian-ginseng-120-tableta-prirodna-energija-i-podrska-imunitetu",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
       "id": "dobrobit_solgar-beta-glukan-60-tableta-podrska-imunitetu-i-zdravlju-celija",
       "name": "Solgar Beta Glukan, 60 Tableta – Podrška Imunitetu i Zdravlju Ćelija",
       "store": "Dobrobit",
@@ -7653,6 +7623,21 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/solgar-beta-glukan-60-tableta-podrska-imunitetu-i-zdravlju-celija",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_ostrovit-siberian-ginseng-120-tableta-prirodna-energija-i-podrska-imunitetu",
+      "name": "OstroVit Siberian Ginseng 120 Tableta - Prirodna Energija i Podrška Imunitetu",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Ašvaganda",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-siberian-ginseng-120-tableta_17ea430a-6100-4266-8caf-2186953bd651.png?v=1734111569",
+      "original_price": 2100.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/ostrovit-siberian-ginseng-120-tableta-prirodna-energija-i-podrska-imunitetu",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -7732,21 +7717,6 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "dobrobit_vitamin-c-1000mg-100-tableta-podrska-imunitetu",
-      "name": "Vitamin C 1000mg, 100 tableta – Podrška Imunitetu",
-      "store": "Dobrobit",
-      "store_url": "https://dobrobit.rs",
-      "category": "Vitamini",
-      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/vitamin-c-1000mg-100-tableta.jpg?v=1739276908",
-      "original_price": 1200.0,
-      "discount_price": 980.0,
-      "discount_percent": 18,
-      "currency": "RSD",
-      "product_url": "https://dobrobit.rs/products/vitamin-c-1000mg-100-tableta-podrska-imunitetu",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
       "id": "dobrobit_terranova-beta-karoten-50-kapsula-prirodna-zastita-za-oci-i-kozu",
       "name": "Terranova Beta Karoten, 50 Kapsula – Prirodna Zaštita Za Oči i Kožu",
       "store": "Dobrobit",
@@ -7758,6 +7728,21 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/terranova-beta-karoten-50-kapsula-prirodna-zastita-za-oci-i-kozu",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
+      "id": "dobrobit_vitamin-c-1000mg-100-tableta-podrska-imunitetu",
+      "name": "Vitamin C 1000mg, 100 tableta – Podrška Imunitetu",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Vitamini",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/vitamin-c-1000mg-100-tableta.jpg?v=1739276908",
+      "original_price": 1200.0,
+      "discount_price": 980.0,
+      "discount_percent": 18,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/vitamin-c-1000mg-100-tableta-podrska-imunitetu",
       "in_stock": true,
       "date_scraped": "2026-11-17"
     },
@@ -8047,6 +8032,21 @@
       "date_scraped": "2026-11-17"
     },
     {
+      "id": "dobrobit_ostrovit-msm-plus-300-g-natural-podrska-zglobovima-kozi-i-kosi",
+      "name": "OstroVit MSM Plus 300 g Natural – Podrška Zglobovima, Koži i Kosi",
+      "store": "Dobrobit",
+      "store_url": "https://dobrobit.rs",
+      "category": "Kolagen",
+      "image_url": "https://cdn.shopify.com/s/files/1/0651/5402/3584/files/ostrovit-msm-plus-300-g-natural.png?v=1734104397",
+      "original_price": 2100.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://dobrobit.rs/products/ostrovit-msm-plus-300-g-natural-podrska-zglobovima-kozi-i-kosi",
+      "in_stock": false,
+      "date_scraped": "2026-11-17"
+    },
+    {
       "id": "dobrobit_ostrovit-mct-ulje-500-ml-natural-bolja-energija-i-podrska-metabolizmu",
       "name": "OstroVit MCT Ulje 500 ml Natural – Bolja Energija i Podrška Metabolizmu",
       "store": "Dobrobit",
@@ -8328,7 +8328,7 @@
       "discount_percent": 0,
       "currency": "RSD",
       "product_url": "https://dobrobit.rs/products/solgar-natural-astaksantin-5-mg-mocan-antioksidans-za-zdravlje-koze-i-ociju",
-      "in_stock": false,
+      "in_stock": true,
       "date_scraped": "2026-11-17"
     },
     {
@@ -11617,21 +11617,6 @@
       "date_scraped": "2026-11-17"
     },
     {
-      "id": "spartan-shop_theanine-l-teanin-neproteinska-aminokiselina-60-kapsula",
-      "name": "Theanine (L-teanin, neproteinska aminokiselina) – 60 kapsula",
-      "store": "Spartan Shop",
-      "store_url": "https://suplementi-spartanshop.rs",
-      "category": "Aminokiseline",
-      "image_url": "https://suplementi-spartanshop.rs/wp-content/uploads/2025/06/63041-300x300.jpeg",
-      "original_price": 1500.0,
-      "discount_price": null,
-      "discount_percent": 0,
-      "currency": "RSD",
-      "product_url": "https://suplementi-spartanshop.rs/proizvod/theanine-l-teanin-neproteinska-aminokiselina-60-kapsula/",
-      "in_stock": true,
-      "date_scraped": "2026-11-17"
-    },
-    {
       "id": "spartan-shop_mass-gainer-5000-g",
       "name": "Mass Gainer – 5000 g",
       "store": "Spartan Shop",
@@ -13687,6 +13672,21 @@
       "date_scraped": "2026-11-17"
     },
     {
+      "id": "spartan-shop_dy-helanke-i-top",
+      "name": "DY helanke i top",
+      "store": "Spartan Shop",
+      "store_url": "https://suplementi-spartanshop.rs",
+      "category": "Fitnes Oprema",
+      "image_url": "https://suplementi-spartanshop.rs/wp-content/uploads/2023/05/dy-helanke-i-top-300x300.jpg",
+      "original_price": 3900.0,
+      "discount_price": null,
+      "discount_percent": 0,
+      "currency": "RSD",
+      "product_url": "https://suplementi-spartanshop.rs/proizvod/dy-helanke-i-top/",
+      "in_stock": true,
+      "date_scraped": "2026-11-17"
+    },
+    {
       "id": "x-sport_ultimate-nutrition-creatine-monohydrate-300g",
       "name": "Ultimate Nutrition Creatine Monohydrate (300g)",
       "store": "X Sport",
@@ -13809,10 +13809,10 @@
   ],
   "weekly_summary": {
     "week_of": "2026-11-16",
-    "generated_at": "2026-11-17 01:21",
+    "generated_at": "2026-11-17 15:15",
     "total_products": 919,
-    "total_discounted": 403,
-    "avg_discount_percent": 17.7,
+    "total_discounted": 401,
+    "avg_discount_percent": 17.8,
     "top_discounts": [
       {
         "id": "lama_fat-burnervege-60-kapsula",
@@ -14132,7 +14132,7 @@
         "avg_discount": 21.1
       },
       "Dobrobit": {
-        "count": 165,
+        "count": 163,
         "store_url": "https://dobrobit.rs",
         "avg_discount": 10.4
       },
@@ -14177,8 +14177,8 @@
         "avg_discount": 15.0
       },
       "Akcije": {
-        "count": 87,
-        "avg_discount": 13.9
+        "count": 86,
+        "avg_discount": 14.0
       },
       "Proteini": {
         "count": 10,
@@ -14197,20 +14197,20 @@
         "avg_discount": 10.2
       },
       "Omega masne kiseline": {
-        "count": 14,
-        "avg_discount": 12.8
+        "count": 13,
+        "avg_discount": 12.7
       },
       "Cink": {
         "count": 1,
         "avg_discount": 10.0
       },
-      "Amino kiseline": {
-        "count": 19,
-        "avg_discount": 9.4
-      },
       "Ašvaganda": {
         "count": 4,
         "avg_discount": 9.2
+      },
+      "Amino kiseline": {
+        "count": 19,
+        "avg_discount": 9.4
       },
       "Selen": {
         "count": 4,
@@ -14248,13 +14248,13 @@
         "count": 5,
         "avg_discount": 7.0
       },
-      "Hijaluronska kiselina": {
-        "count": 3,
-        "avg_discount": 12.0
-      },
       "L-karnitin": {
         "count": 2,
         "avg_discount": 6.5
+      },
+      "Hijaluronska kiselina": {
+        "count": 3,
+        "avg_discount": 12.0
       },
       "Kurkumin": {
         "count": 1,
@@ -14390,7 +14390,7 @@
     "Dobrobit": {
       "total": 504,
       "with_prices": 504,
-      "with_discounts": 165,
+      "with_discounts": 163,
       "status": "ok"
     },
     "ExYu Fitness": {
